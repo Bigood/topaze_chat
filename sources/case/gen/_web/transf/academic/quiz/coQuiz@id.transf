@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/coQuiz.model"/>
+	<sm:axis code="id"/>
+	<sm:content format="text">
+		<sm:for codes="trainUcMcqSur trainUcMcqMur trainUcField trainUcNumerical trainUcCloze">
+			<sm:callSubModel axis="id"/>
+		</sm:for>
+	</sm:content>
+</sm:compositionXhtmlTransf>

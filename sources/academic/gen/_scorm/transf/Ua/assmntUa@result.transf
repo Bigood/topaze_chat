@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" info="Résultat de l'évaluation dans le tpl Page (multi-SCO)">
+	<sm:model sc:refUri="/academic/model/Ua/assmntUa.model"/>
+	<sm:axis code="result"/>
+	<sm:navigation>
+		<sm:page template="page">
+			<sm:title>
+				<sm:fixedTitle value="￼;Résultats du test￼"/>
+			</sm:title>
+			<sm:mainZone format="xhtml">
+				<sm:for codes="quiz">
+					<sm:callSubModel axis="score"/>
+				</sm:for>
+				<sm:WHeadingBlock widgetClass="mainContent">
+					<sm:title>
+						<sm:fixedTitle value="￼;Résultats du test￼"/>
+					</sm:title>
+					<sm:WFreeBlock>
+						<div xmlns="http://www.w3.org/1999/xhtml" class="bkSolResOut">
+							<sm:Widget sc:refUri="/academic/gen/_scorm/widg/scormSaveScore.uiwidget"/>
+							<sm:callModel>
+								<sm:current axis="score"/>
+							</sm:callModel>
+						</div>
+					</sm:WFreeBlock>
+					<sm:WFreeBlock>
+						<div xmlns="http://www.w3.org/1999/xhtml" class="resultE">
+							<sm:choose>
+								<sm:when sc:refUri="/academic/gen/_web/cnd/solAssmntUa.cond">
+									<sm:Widget sc:refUri="/academic/gen/_web/widg/nav/gotoSol.uiwidget"/>
+								</sm:when>
+							</sm:choose>
+							<sm:WSimpleBlock widgetClass="btnHomeEFrm">
+								<sm:WLink widgetClass="btnHomeE">
+									<sm:label>
+										<sm:fixedString value="￼;Retour à la page d'accueil ￼"/>
+									</sm:label>
+									<sm:link>
+										<sm:callModel>
+											<sm:current navCtx="newRoot"/>
+										</sm:callModel>
+									</sm:link>
+								</sm:WLink>
+							</sm:WSimpleBlock>
+						</div>
+					</sm:WFreeBlock>
+				</sm:WHeadingBlock>
+			</sm:mainZone>
+		</sm:page>
+		<sm:for codes="quiz">
+			<sm:page template="player">
+				<sm:title>
+					<sm:fixedTitle value="￼;Solution d'exercice￼"/>
+				</sm:title>
+				<sm:mainZone format="xhtml">
+					<sm:callSubModel axis="sol"/>
+				</sm:mainZone>
+				<sm:zone key="counter" format="xhtml">
+					<sm:WSimpleBlock widgetClass="evalCounter">
+						<sm:Widget sc:refUri="/academic/gen/_web/widg/eval/evalCounterSol.uiwidget"/>
+					</sm:WSimpleBlock>
+				</sm:zone>
+			</sm:page>
+		</sm:for>
+		<sm:page template="page">
+			<sm:title>
+				<sm:fixedTitle value="￼;Fin du test￼"/>
+			</sm:title>
+			<sm:mainZone format="xhtml">
+				<sm:for codes="quiz">
+					<sm:callSubModel axis="score"/>
+				</sm:for>
+				<sm:WHeadingBlock widgetClass="mainContent">
+					<sm:title>
+						<sm:fixedTitle value="￼;Fin du test￼"/>
+					</sm:title>
+					<sm:WSimpleBlock widgetClass="btnHomeEFrm">
+						<sm:WLink widgetClass="btnHomeE">
+							<sm:label>
+								<sm:fixedString value="￼;Retour à la page d'accueil ￼"/>
+							</sm:label>
+							<sm:link>
+								<sm:callModel>
+									<sm:current navCtx="newRoot"/>
+								</sm:callModel>
+							</sm:link>
+						</sm:WLink>
+					</sm:WSimpleBlock>
+				</sm:WHeadingBlock>
+			</sm:mainZone>
+		</sm:page>
+	</sm:navigation>
+</sm:compositionXhtmlTransf>

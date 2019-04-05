@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><sma:assmntUnitMcqOdTransf xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/mcqSur.model"/>
+	<sm:content>
+		<sm:callQuestionModel axis="notImp"/>
+		<sm:WQcmTable style="mainTable">
+			<sm:WChoiceLines id="line2" showSolution="no">
+				<sm:choiceBody>
+					<sm:callLabelModel/>
+				</sm:choiceBody>
+				<sm:imgChecked sc:refUri="/academic/gen/_od/transf/_res/qcu_true.jpg"/>
+				<sm:imgUnchecked sc:refUri="/academic/gen/_od/transf/_res/qcu_false.jpg"/>
+			</sm:WChoiceLines>
+		</sm:WQcmTable>
+	</sm:content>
+</sma:assmntUnitMcqOdTransf>

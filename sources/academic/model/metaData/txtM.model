@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:dataFormPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="￼;Propriétés de texte￼">
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="txtM" itemExtension="xml"/>
+	<sm:structure>
+		<sm:subData code="lang" name="￼;Langue￼" occurrence="one">
+			<sm:allowedDataModel sc:refUri="/academic/model/metaData/langM.model"/>
+		</sm:subData>
+	</sm:structure>
+	<sm:storage/>
+</sm:dataFormPrim>

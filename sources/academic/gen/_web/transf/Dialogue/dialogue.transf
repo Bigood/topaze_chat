@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/Dialogue/dialogue.model"/>
+	<sm:content format="xhtml">
+		<sm:inDataOrder>
+			<sm:for codes="pGauche">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_web/widg/util/personnageGaucheBlock.uiwidget">
+							<sm:xhtmlContentZone key="zClass">
+								<sm:WFreeBlock>personnage_gauche</sm:WFreeBlock>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zImage">
+								<!--<sm:WFreeBlock xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:title>
+		<sm:partTitle format="shortTitleText"/>
+	</sm:title>
+</sm:WFreeBlock>-->
+								<sm:callPartMeta axis="image"/>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zPrenom">
+								<!--<sm:WFreeBlock xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:title>
+		<sm:partTitle format="fullTitleText"/>
+	</sm:title>
+</sm:WFreeBlock>-->
+								<sm:callPartMeta axis="prenom"/>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zCo">
+								<sm:callSubModel/>
+							</sm:xhtmlContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="pDroite">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_web/widg/util/personnageDroiteBlock.uiwidget">
+							<sm:xhtmlContentZone key="zClass">
+								<sm:WFreeBlock>personnage_droite</sm:WFreeBlock>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zImage">
+								<sm:callPartMeta axis="image"/>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zPrenom">
+								<sm:callPartMeta axis="prenom"/>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zCo">
+								<sm:callSubModel/>
+							</sm:xhtmlContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+		</sm:inDataOrder>
+	</sm:content>
+</sm:compositionXhtmlTransf>

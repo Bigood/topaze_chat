@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeXslWebSiteTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/case/model/co/quiz/mcqSurPts.model"/>
+	<sm:axis code="id"/>
+	<sm:content>
+		<sm:xsl sc:refUri="/case/gen/_web/transf/co/quiz/quiz@id.xsl"/>
+	</sm:content>
+</sm:freeXslWebSiteTransf>

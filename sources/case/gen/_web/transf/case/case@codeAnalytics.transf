@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/case/model/case.model"/>
+	<sm:axis code="codeAnalytics"/>
+	<sm:content format="xhtml">
+		<sm:choose>
+			<sm:when xpath="opa:caseM/sp:codeAnalytics!=''">
+				<!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1551288814451" updateTime="1554284594122">Inclusion du script s'il y a un code de tracking renseigné</comment></comment>-->
+				<sm:WFreeBlock>
+					<script xmlns="http://www.w3.org/1999/xhtml">
+						<addAttribute name="async"></addAttribute>
+						<addAttribute name="src">https://www.googletagmanager.com/gtag/js?id=<sm:dynamicString>
+								<sm:freeSelect xpath="opa:caseM/sp:codeAnalytics"/>
+							</sm:dynamicString></addAttribute>
+					</script>
+					<script xmlns="http://www.w3.org/1999/xhtml">if(!document.location.host.match(/(127\.0\.0\.1|localhost|\.local)/)){
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '<sm:dynamicString>
+							<sm:freeSelect xpath="opa:caseM/sp:codeAnalytics"/>
+						</sm:dynamicString>');
+}</script>
+				</sm:WFreeBlock>
+			</sm:when>
+		</sm:choose>
+	</sm:content>
+</sm:compositionXhtmlTransf>

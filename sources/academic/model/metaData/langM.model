@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:dataFormPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="Propriété de langue">
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="langM" itemExtension="xml"/>
+	<sm:structure>
+		<sm:field code="code" name="Code" occurrence="zeroOrOne" family="content">
+			<sm:string/>
+		</sm:field>
+	</sm:structure>
+	<sm:storage/>
+	<sm:authoring>
+		<sm:formEditor indentXml="true">
+			<sm:xmlEditor sc:refUri="/academic/model/_edt/metaData/langM.xed"/>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:dataFormPrim>

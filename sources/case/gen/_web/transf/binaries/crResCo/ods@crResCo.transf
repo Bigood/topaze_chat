@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/binaries/ods/ods.model"/>
+	<sm:axis code="crResCo"/>
+	<sm:content>
+		<sm:WTooltip widgetClass="crResTt">
+			<sm:label class="crResOds">
+				<sm:title>
+					<sm:binaryTitle/>
+					<sm:binaryFileName format="trimExtension"/>
+				</sm:title>
+			</sm:label>
+			<sm:tooltip>
+				<sm:behavior trigger="onclick" sticky="true"/>
+				<sm:position>
+					<sm:free/>
+				</sm:position>
+				<sm:basket key="footnotes" render="asTooltip"/>
+				<sm:ttContent>
+					<sm:callModel>
+						<sm:current/>
+					</sm:callModel>
+				</sm:ttContent>
+			</sm:tooltip>
+		</sm:WTooltip>
+	</sm:content>
+</sm:binaryXhtmlTransf>

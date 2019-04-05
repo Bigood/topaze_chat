@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sma:scormGenDeploy xmlns:sma="kelis.fr:scenari/modeling/assessment" code="packScorm12" name="￼;packaging SCORM 1.2￼">
+	<sm:scormVersion xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+		<sm:scorm12>
+			<sm:code/>
+			<sm:title/>
+		</sm:scorm12>
+	</sm:scormVersion>
+	<sm:override xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" sc:refUri="/academic/gen/_scorm/genDeploy/scorm12.doss"/>
+</sma:scormGenDeploy>

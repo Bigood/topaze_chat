@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><sma:assmntCompositionDhtmlTransf xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Ua/assmntUa.model"/>
+	<sm:axis code="score"/>
+	<sm:scenario>
+		<sm:sequence code="score">
+			<sm:saveData>
+				<sm:scoreSessionKey>
+					<sm:fixedKey value="eval"/>
+				</sm:scoreSessionKey>
+			</sm:saveData>
+			<sm:scoreComputing>
+				<sm:computeScoreSubAssmnt codes="quiz">
+					<sm:scoreSessionKey>
+						<sm:fixedKey value="eval"/>
+					</sm:scoreSessionKey>
+				</sm:computeScoreSubAssmnt>
+			</sm:scoreComputing>
+			<sm:onEnter>
+				<sm:setCompletionStatus status="complete">
+					<sm:responseSessionKey>
+						<sm:fixedKey value="eval"/>
+					</sm:responseSessionKey>
+				</sm:setCompletionStatus>
+				<!--Score global de l'eval -> envoi SCORM-->
+				<sm:jsEval>window.scGlobalEval = this;</sm:jsEval>
+			</sm:onEnter>
+		</sm:sequence>
+	</sm:scenario>
+	<sm:assmntBody>
+		<div xmlns="http://www.w3.org/1999/xhtml" class="info">
+			<sm:WScore sm:id="score">
+				<sm:scoreText>
+					<sm:scaleScore min="0" max="100" step="1">
+						<sm:display class="answBest" scoreMoreThan="99" prefix="￼;Vous avez bien répondu à toutes les questions!￼" valueFormat="hidden"/>
+						<sm:display class="answGood" scoreMoreThan="49" scoreLessOrEqualThan="99" prefix="￼;Vous avez obtenu... ￼" valueFormat="numeric" suffix="￼;% de bonnes réponses.￼"/>
+						<sm:display class="answBad" scoreLessOrEqualThan="49" prefix="￼;Vous avez obtenu... ￼" valueFormat="numeric" suffix="￼;% de bonnes réponses.￼"/>
+					</sm:scaleScore>
+				</sm:scoreText>
+			</sm:WScore>
+			<sm:WFeedback widgetClass="feedback">
+				<sm:callFeedbackModel/>
+			</sm:WFeedback>
+		</div>
+	</sm:assmntBody>
+</sma:assmntCompositionDhtmlTransf>

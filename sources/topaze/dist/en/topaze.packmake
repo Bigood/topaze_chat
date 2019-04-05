@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:packMake xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:wspDef sc:refUri="/topaze/topaze.wspdef" lang="en-US">
+		<sm:localization defaultLang="en-US">
+			<sm:model>
+				<sm:locale sc:refUri="/topaze/dist/en/model.locale"/>
+			</sm:model>
+		</sm:localization>
+	</sm:wspDef>
+</sm:packMake>

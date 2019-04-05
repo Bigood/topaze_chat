@@ -1,0 +1,85 @@
+/* Outline Menu CSS */
+
+ul.sw_ueMnuFull_navList{
+	list-style: none;
+	margin: 0px 0px;
+	padding: 0px 0px 0px 5px;
+}
+ul.sw_ueMnuFull_navList ul{
+	list-style: none;
+	margin: 2px 0px 0px 0px;
+	padding: 0px 0px 0px 18px;
+}
+ul.sw_ueMnuFull_navList li{
+	margin: 0px 0px 2px 0px;
+	padding: 0px 0px 0px 0px;
+}
+ul.sw_ueMnuFull_navList .mnu_sel_yes,
+ul.sw_ueMnuFull_navList .mnu_sel_no{
+	text-decoration: none;
+	display: block;
+	min-height: 20px;
+	color: black;
+	padding-left: 27px;
+}
+ul.sw_ueMnuFull_navList .mnu_sel_yes span,
+ul.sw_ueMnuFull_navList .mnu_sel_no span{
+	display: block;
+	padding: 2px 0px;
+}
+ul.sw_ueMnuFull_navList a:hover{
+	color: #7B8820;
+}
+ul.sw_ueMnuFull_navList .mnu_sel_yes span{
+	display: block;
+	background-color: #7B8820;
+	color: white;
+	padding-left: 5px;
+	margin-left: -5px;
+	-moz-border-radius:10px
+}
+ul.sw_ueMnuFull_navList > li > span.mnu_b {
+	background: url(../img/mnu/mnuOp.gif) no-repeat center left !important;
+}
+ul.sw_ueMnuFull_navList .mnu_intro, ul.sw_ueMnu_navList .mnu_obj {
+	/* si on ne met pas !important, IE6 ignore les images personnalisées */
+	background: url(../img/deco/introMnu.png) no-repeat center left !important;
+}
+ul.sw_ueMnuFull_navList .mnu_conclu {
+	background: url(../img/deco/concluMnu.png) no-repeat center left !important;
+}
+ul.sw_ueMnuFull_navList .mnu_expUc {
+	background: url(../img/deco/expUcMnu.png) no-repeat center left !important;
+}
+ul.sw_ueMnuFull_navList .mnu_practUc {
+	background: url(../img/deco/practUcMnu.png) no-repeat center left !important;
+}
+ul.sw_ueMnuFull_navList .mnu_trainUc {
+	background: url(../img/deco/trainUcMnu.png) no-repeat center left !important;
+}
+ul.sw_ueMnuFull_navList .mnu_assmntUa {
+	background: url(../img/deco/assmntUaMnu.png) no-repeat center left !important;
+}
+ul.sw_ueMnuFull_navList .mnu_quest {
+	background: url(../img/deco/questMnu.png) no-repeat center left !important;
+}
+ul.sw_ueMnuFull_navList .mnu_obj {
+	background: url(../img/deco/objPedMnu.png) no-repeat top left !important;
+}
+ul.sw_ueMnuFull_navList .mnu_courseUa.mnu_l,
+ul.sw_ueMnuFull_navList .mnu_ueDiv.mnu_l {
+	background: url(../img/mnu/mnuCl.gif) no-repeat center left;
+}
+ul.sw_ueMnuFull_navList .mnu_courseUa.mnu_b,
+ul.sw_ueMnuFull_navList .mnu_ueDiv.mnu_b {
+	background: url(../img/mnu/mnuOp.gif) no-repeat center left;
+}
+ul.sw_ueMnuFull_navList .mnu_courseUa.mnu_sel_yes,
+ul.sw_ueMnuFull_navList .mnu_ueDiv.mnu_sel_yes {
+	background: url(../img/mnu/mnuOpDyn.gif) no-repeat center left;
+}
+ul.sw_ueMnuFull_navList span.mnu_cursor {
+	display: none;
+}
+ul.sw_ueMnuFull_navList span.mnu_sel_yes span.mnu_cursor {
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:dataFormXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/case/model/arc/arcLnkM.model"/>
+	<sm:content>
+		<sm:forField codes="trans">
+			<sm:WBlock widgetClass="arcTrans">
+				<sm:fieldValueOtherType/>
+			</sm:WBlock>
+		</sm:forField>
+	</sm:content>
+</sm:dataFormXhtmlTransf>

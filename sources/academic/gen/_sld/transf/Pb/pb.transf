@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Pb/pb.model"/>
+	<sm:content format="xhtml">
+		<sm:inDataOrder>
+			<sm:for codes="info">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultShort/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBk.uiwidget">
+							<sm:xhtmlContentZone key="co">
+								<sm:WHeadingBlock widgetClass="bkBase" class="bkInfo">
+									<sm:title>
+										<sm:partTitle/>
+									</sm:title>
+									<sm:callSubModel axis="co"/>
+								</sm:WHeadingBlock>
+							</sm:xhtmlContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="def">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultShort/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBk.uiwidget">
+							<sm:xhtmlContentZone key="co">
+								<sm:WHeadingBlock widgetClass="bkBase" class="bkBp bkDef">
+									<sm:title>
+										<sm:partTitle/>
+									</sm:title>
+									<sm:callSubModel axis="co"/>
+								</sm:WHeadingBlock>
+							</sm:xhtmlContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="ex">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultShort/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBk.uiwidget">
+							<sm:xhtmlContentZone key="co">
+								<sm:WHeadingBlock widgetClass="bkBase" class="bkBp bkEx">
+									<sm:title>
+										<sm:partTitle/>
+									</sm:title>
+									<sm:callSubModel axis="co"/>
+								</sm:WHeadingBlock>
+							</sm:xhtmlContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="rem">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultShort/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBk.uiwidget">
+							<sm:xhtmlContentZone key="co">
+								<sm:WHeadingBlock widgetClass="bkBase" class="bkBp bkRem">
+									<sm:title>
+										<sm:partTitle/>
+									</sm:title>
+									<sm:callSubModel axis="co"/>
+								</sm:WHeadingBlock>
+							</sm:xhtmlContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="adv">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultShort/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBk.uiwidget">
+							<sm:xhtmlContentZone key="co">
+								<sm:WHeadingBlock widgetClass="bkBase" class="bkBp bkAdv">
+									<sm:title>
+										<sm:partTitle/>
+									</sm:title>
+									<sm:callSubModel axis="co"/>
+								</sm:WHeadingBlock>
+							</sm:xhtmlContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="warning">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultShort/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBk.uiwidget">
+							<sm:xhtmlContentZone key="co">
+								<sm:WHeadingBlock widgetClass="bkBase" class="bkBp bkWarning">
+									<sm:title>
+										<sm:partTitle/>
+									</sm:title>
+									<sm:callSubModel axis="co"/>
+								</sm:WHeadingBlock>
+							</sm:xhtmlContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="comp">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultShort/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBk.uiwidget">
+							<sm:xhtmlContentZone key="co">
+								<sm:WHeadingBlock widgetClass="bkBase" class="bkBp bkComp">
+									<sm:title>
+										<sm:partTitle/>
+									</sm:title>
+									<sm:callSubModel axis="co"/>
+								</sm:WHeadingBlock>
+							</sm:xhtmlContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="meth">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultShort/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBk.uiwidget">
+							<sm:xhtmlContentZone key="co">
+								<sm:WHeadingBlock widgetClass="bkBase" class="bkBp bkMeth">
+									<sm:title>
+										<sm:partTitle/>
+									</sm:title>
+									<sm:callSubModel axis="co"/>
+								</sm:WHeadingBlock>
+							</sm:xhtmlContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="remind">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultShort/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBk.uiwidget">
+							<sm:xhtmlContentZone key="co">
+								<sm:WHeadingBlock widgetClass="bkBase" class="bkBp bkRemind">
+									<sm:title>
+										<sm:partTitle/>
+									</sm:title>
+									<sm:callSubModel axis="co"/>
+								</sm:WHeadingBlock>
+							</sm:xhtmlContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="basic">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultShort/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBk.uiwidget">
+							<sm:xhtmlContentZone key="co">
+								<sm:WHeadingBlock widgetClass="bkBase" class="bkBp bkBasic">
+									<sm:title>
+										<sm:partTitle/>
+									</sm:title>
+									<sm:callSubModel axis="co"/>
+								</sm:WHeadingBlock>
+							</sm:xhtmlContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="syntax">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultShort/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBk.uiwidget">
+							<sm:xhtmlContentZone key="co">
+								<sm:WHeadingBlock widgetClass="bkBase" class="bkBp bkSyntax">
+									<sm:title>
+										<sm:partTitle/>
+									</sm:title>
+									<sm:callSubModel axis="co"/>
+								</sm:WHeadingBlock>
+							</sm:xhtmlContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="legal">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultShort/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBk.uiwidget">
+							<sm:xhtmlContentZone key="co">
+								<sm:WHeadingBlock widgetClass="bkBase" class="bkBp bkLegal">
+									<sm:title>
+										<sm:partTitle/>
+									</sm:title>
+									<sm:callSubModel axis="co"/>
+								</sm:WHeadingBlock>
+							</sm:xhtmlContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="simul">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultShort/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBk.uiwidget">
+							<sm:xhtmlContentZone key="co">
+								<sm:WHeadingBlock widgetClass="bkBase" class="bkBp bkSimul">
+									<sm:title>
+										<sm:partTitle/>
+									</sm:title>
+									<sm:callSubModel axis="co"/>
+								</sm:WHeadingBlock>
+							</sm:xhtmlContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+		</sm:inDataOrder>
+	</sm:content>
+</sm:compositionXhtmlTransf>

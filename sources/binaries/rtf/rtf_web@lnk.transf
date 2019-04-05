@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:binaryXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/binaries/rtf/rtf.model"/>
+	<sm:axis code="lnk"/>
+	<sm:content>
+		<sm:WLink widgetClass="sfile_rtf_lnk_lnk sfile_lnk">
+			<sm:label>
+				<sm:title>
+					<sm:binaryTitle/>
+					<sm:binaryFileName/>
+				</sm:title>
+			</sm:label>
+			<sm:labelTitle>
+				<sm:title>
+					<sm:binaryTitle suffix="￼; (nouvelle fenêtre)￼"/>
+				</sm:title>
+			</sm:labelTitle>
+			<sm:link target="newWindow">
+				<sm:binaryUrl/>
+			</sm:link>
+		</sm:WLink>
+	<!--ATTENTION l'élément suivant à été ajouté en XSL par la dérivation.--><sm:callModel xmlns:op="utc.fr:ics/opale3" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sext="http://www.utc.fr/ics/scenari/v3/modeling/extension"><sm:current axis="credits"/></sm:callModel></sm:content>
+</sm:binaryXhtmlTransf>

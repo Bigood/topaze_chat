@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:titleOdTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/metaData/sTitle.model"/>
+	<sm:content>
+		<sm:WParagraph display="ifNotNull">
+			<sm:getFullTitle/>
+		</sm:WParagraph>
+	</sm:content>
+</sm:titleOdTransf>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:dataFormPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="￼;Métadonnées￼">
+	<sm:help quickHelp="￼;Contient les métadonnées de la division￼"/>
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="ueDivM" itemExtension="xml"/>
+	<sm:structure>
+		<sm:field code="title" name="￼;Titre￼" occurrence="one">
+			<sm:string/>
+		</sm:field>
+		<sm:field code="sTitle" name="￼;Titre court￼" occurrence="zeroOrOne">
+			<sm:string/>
+		</sm:field>
+	</sm:structure>
+	<sm:storage>
+		<sm:fullTitleBuilder>
+			<sm:fieldValue refCode="title"/>
+		</sm:fullTitleBuilder>
+		<sm:shortTitleBuilder returnFullTitleIfEmpty="yes">
+			<sm:fieldValue refCode="sTitle"/>
+		</sm:shortTitleBuilder>
+	</sm:storage>
+	<sm:authoring>
+		<sm:formEditor indentXml="true">
+			<sm:stringField refCode="title" defaultStyle="property" textStyle="color :#6286cc ;"/>
+			<sm:stringField refCode="sTitle" defaultStyle="property" textStyle="color :#6286cc ;"/>
+		</sm:formEditor>
+		
+	</sm:authoring>
+</sm:dataFormPrim>

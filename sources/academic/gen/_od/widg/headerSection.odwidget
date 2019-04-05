@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openOdWidget code="WHeaderSection" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:content>
+		<sm:WParagraph style="breakNewSection" display="always"/>
+		<sm:WSection style="pageTitleSct">
+			<sm:choose>
+				<sm:when xpath="computeStrAgent('odContentZone_addInTdm')='true'">
+					<sm:WParagraph style="pageTitle">
+						<sm:callZone key="zTitle"/>
+					</sm:WParagraph>
+				</sm:when>
+				<sm:otherwise>
+					<sm:WParagraph style="pageTitleNoTdm">
+						<sm:callZone key="zTitle"/>
+					</sm:WParagraph>
+				</sm:otherwise>
+			</sm:choose>
+			<sm:WParagraph style="pageId" display="always">
+				<sm:callZone key="zPage"/>
+			</sm:WParagraph>
+		</sm:WSection>
+		<sm:WParagraph style="spaceAfter" display="always"/>
+	</sm:content>
+</sm:openOdWidget>

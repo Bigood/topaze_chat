@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:webSiteGenerator xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="caseWeb" name="Publication web">
+	<sm:icon sc:refUri="/case/gen/progress/web/desktop-icon.png"/>
+	<sm:modelRoot>
+		<sm:allowedModel sc:refUri="/case/model/case.model"/>
+	</sm:modelRoot>
+	<sm:mode standard="HTML 5" debug="no"/>
+	<sm:uiFrame sc:refUri="/case/gen/progress/web/caseWeb.uiframe"/>
+	<sm:transformerList sc:refUri="/case/gen/progress/web/caseWeb.transflist"/>
+	<sm:uiTemplateList>
+		<sm:uiTemplate code="home" sc:refUri="/case/gen/progress/web/tpl/home.uitemplate"/>
+		<sm:uiTemplate code="topaze" sc:refUri="/case/gen/progress/web/tpl/topaze.uitemplate"/>
+		<sm:uiTemplate code="page" sc:refUri="/case/gen/progress/web/tpl/uePage.uitemplate"/>
+		<sm:uiTemplate code="ueStart" sc:refUri="/case/gen/progress/web/tpl/ueStart.uitemplate"/>
+		<sm:uiTemplate code="subWin" sc:refUri="/case/gen/progress/web/tpl/subWin.uitemplate"/>
+		<sm:uiTemplate code="ref" sc:refUri="/case/gen/progress/web/tpl/ref.uitemplate"/>
+		<sm:uiTemplate code="index" sc:refUri="/case/gen/progress/web/tpl/index.uitemplate"/>
+		<sm:uiTemplate code="pageList" sc:refUri="/case/gen/progress/web/tpl/pageList.uitemplate"/>
+	</sm:uiTemplateList>
+	<sm:defaultSkin sc:refUri="/case/gen/progress/web/caseWeb.skin.doss" name="￼;Classique￼"/>
+</sm:webSiteGenerator>

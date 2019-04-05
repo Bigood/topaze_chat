@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:sendServerGenDeploy xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="ftpGenDeploy" name="￼;Déploiement FTP￼">
+	<sm:protocol>
+		<sm:ftp>
+			<sm:url writable="true"/>
+			<sm:basedir writable="true"/>
+			<sm:login writable="true"/>
+			<sm:password writable="true"/>
+			<sm:mode defaultValue="passive" writable="true"/>
+		</sm:ftp>
+	</sm:protocol>
+</sm:sendServerGenDeploy>

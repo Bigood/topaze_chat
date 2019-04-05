@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:sourceCodePrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="￼;Listing informatique￼">
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="code" itemExtension="xml"/>
+	<sm:structure>
+		<sm:code langChoiceName="￼;Langage￼">
+			<sm:standardMimeType mimeType="text/x-csrc"/>
+			<sm:standardMimeType mimeType="text/x-c++src"/>
+			<sm:standardMimeType mimeType="text/x-csharp"/>
+			<sm:standardMimeType mimeType="text/x-java"/>
+			<sm:mimeTypeSeparator/>
+			<sm:standardMimeType mimeType="text/css"/>
+			<sm:standardMimeType mimeType="text/html"/>
+			<sm:standardMimeType mimeType="text/javascript"/>
+			<sm:mimeTypeSeparator/>
+			<sm:standardMimeType mimeType="text/x-php"/>
+			<sm:standardMimeType mimeType="application/x-httpd-php"/>
+			<sm:mimeTypeSeparator/>
+			<sm:standardMimeType mimeType="text/x-sh"/>
+			<sm:standardMimeType mimeType="text/x-perl"/>
+			<sm:standardMimeType mimeType="text/x-python"/>
+			<sm:standardMimeType mimeType="text/x-ruby"/>
+			<sm:standardMimeType mimeType="text/x-vb"/>
+			<sm:mimeTypeSeparator/>
+			<sm:standardMimeType mimeType="text/x-sql"/>
+			<sm:standardMimeType mimeType="text/x-plsql"/>
+			<sm:mimeTypeSeparator/>
+			<sm:standardMimeType mimeType="text/x-stex"/>
+			<sm:standardMimeType mimeType="application/xml"/>
+			<sm:standardMimeType mimeType="application/xml-dtd"/>
+			<sm:mimeTypeSeparator/>
+			<sm:standardMimeType mimeType="text/x-ini"/>
+			<sm:standardMimeType mimeType="text/x-properties"/>
+			<sm:mimeTypeSeparator/>
+			<sm:standardMimeType mimeType="text/plain"/>
+		</sm:code>
+	</sm:structure>
+	<sm:authoring>
+		<sm:icon sc:refUri="/academic/model/_ico/codeSmall.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;code￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:formEditor indentXml="true">
+			<sm:sourceCode tagStyle="font-family:arial;font-size:1.8em; background-color:#359632; color:white; -moz-border-radius:5px; -moz-margin-start:2px; -moz-padding-start:4px; -moz-padding-end:4px;">
+				<sm:iconTag sc:refUri="/academic/model/_ico/codeBig.png"/>
+			</sm:sourceCode>
+			<sm:code tagStyle="color:#8f8f8f;font-weight:normal;" textStyle="font-family:monospace;-moz-tab-size: 2; direction:ltr;"/>
+			<sm:langChoice attrStyle="color:#5F5F5F"/>
+		</sm:formEditor>
+		<sm:formEditor key="intern" indentXml="true">
+			<sm:code tagStyle="margin-left:3px;color:#8f8f8f;font-weight:normal;" textStyle="font-family:monospace;-moz-tab-size: 2; direction:ltr;">
+				<sm:iconTag sc:refUri="/academic/model/_ico/codeSmall.png"/>
+			</sm:code>
+			<sm:langChoice attrStyle="color:#5F5F5F"/>
+		</sm:formEditor>
+		<sm:previewMini>
+			<sm:codePreview/>
+		</sm:previewMini>
+	</sm:authoring>
+</sm:sourceCodePrim>

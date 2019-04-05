@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/quiz/utils/clozeTxt.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/quiz/utils/label.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/quiz/utils/labelImg.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/quiz/utils/labelTxt.transf"/>
+</sm:transformerList>

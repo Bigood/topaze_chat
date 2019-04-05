@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="tplMgr">
+	<sm:widgetPublishFiles sc:refUri="/case/gen/progress/web/wdt/mgr/tplMgr.doss"/>
+	<sm:fillTemplateBuffers>
+		<sm:standardLibrary codeLib="PaLib"/>
+		<sm:standardLibrary codeLib="TiLib"/>
+		<sm:standardLibrary codeLib="SiLib"/>
+		<sm:postXslFragment keyXsl="xhtml">&lt;xsl:template match="div[contains(@id,'tplRgt')]"&gt;
+  &lt;xsl:variable name="vArcType" select="returnFirst(substring-after(descendant::scBlock[contains(@class,'arcBk')]/@class,'arcBk'),'noArc')"/&gt;
+  &lt;xsl:copy&gt;
+    &lt;xsl:apply-templates select="@*"/&gt;
+    &lt;xsl:attribute name="class"&gt;&lt;xsl:value-of select="concat(@class,' ',$vArcType)"/&gt;Fra&lt;/xsl:attribute&gt;
+    &lt;xsl:apply-overlays/&gt;
+    &lt;xsl:apply-templates/&gt;
+  &lt;/xsl:copy&gt;
+&lt;/xsl:template&gt; </sm:postXslFragment>
+		<sm:postXslFragment keyXsl="xhtml">&lt;xsl:template match="div[contains(@id,'tplMain')]"&gt;
+  &lt;xsl:variable name="vIsUeMnu" select="count(descendant::scBlock[contains(@class,'ueMnu')])&amp;gt;0"/&gt;
+  &lt;xsl:copy&gt;
+    &lt;xsl:apply-templates select="@*"/&gt;
+    &lt;xsl:if test="$vIsUeMnu"&gt;&lt;xsl:attribute name="class"&gt;&lt;xsl:value-of select="si($vIsUeMnu,'ueMnuFra ')"/&gt;&lt;/xsl:attribute&gt;&lt;/xsl:if&gt;
+    &lt;xsl:apply-overlays/&gt;
+    &lt;xsl:apply-templates/&gt;
+  &lt;/xsl:copy&gt;
+&lt;/xsl:template&gt;</sm:postXslFragment>
+		<sm:postXslFragment keyXsl="xhtml">&lt;xsl:overlay match="body" priority="100"&gt;
+	&lt;xsl:value-of select="execute(java:append($vBufJs, 'tplMgr.init();'))"/&gt;
+&lt;/xsl:overlay&gt;</sm:postXslFragment>
+		<sm:postXslFragment keyXsl="xhtml">&lt;xsl:template match="resources "&gt;
+	&lt;xsl:value-of select="execute(si(not(getEntryBuffer('resources')), initBuffer('resources', java:java.util.HashMap.new())))"/&gt;
+	&lt;xsl:value-of select="execute(setEntryBuffer('resources', concat(string(@title),'§',string(@parentstep),'§',string(@parenttitle)), concat(string(@url),'§',.)))"/&gt;
+&lt;/xsl:template&gt;</sm:postXslFragment>
+		<sm:linkScript path="tplMgr.js" pathFrom="localPublishFiles" sortKey="Z"/>
+	</sm:fillTemplateBuffers>
+	<sm:content/>
+</sm:openUiWidget>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/binaries/doc/doc.model"/>
+	<sm:axis code="crResCo"/>
+	<sm:content>
+		<sm:callModel>
+			<sm:current axis="lnk"/>
+		</sm:callModel>
+	</sm:content>
+</sm:binaryXhtmlTransf>

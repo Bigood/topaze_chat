@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/coQuiz.model"/>
+	<sm:axis code="sol"/>
+	<sm:content format="xhtml">
+		<sm:WSimpleBlock widgetClass="coQuiz">
+			<sm:WSimpleBlock widgetClass="coQuizQuest">
+				<sm:for codes="quest">
+					<sm:WFreeBlock>
+						<div xmlns="http://www.w3.org/1999/xhtml" class="question">
+							<h1 class="question_ti">
+								<span>￼;Énoncé général￼</span>
+							</h1>
+							<div class="question_co" sm:id="question">
+								<sm:callSubModel/>
+							</div>
+						</div>
+					</sm:WFreeBlock>
+				</sm:for>
+			</sm:WSimpleBlock>
+			<sm:WSimpleBlock widgetClass="coQuizList">
+				<sm:inDataOrder>
+					<sm:for codes="trainUcMcqSur">
+						<sm:WHeadingBlock widgetClass="subQuiz">
+							<sm:title>
+								<sm:subModelTitle/>
+								<sm:fixedTitle value="￼;Exercice￼"/>
+							</sm:title>
+							<sm:callSubModel axis="sol"/>
+						</sm:WHeadingBlock>
+					</sm:for>
+					<sm:for codes="trainUcMcqMur">
+						<sm:WHeadingBlock widgetClass="subQuiz">
+							<sm:title>
+								<sm:subModelTitle/>
+								<sm:fixedTitle value="￼;Exercice￼"/>
+							</sm:title>
+							<sm:callSubModel axis="sol"/>
+						</sm:WHeadingBlock>
+					</sm:for>
+					<sm:for codes="trainUcField">
+						<sm:WHeadingBlock widgetClass="subQuiz">
+							<sm:title>
+								<sm:subModelTitle/>
+								<sm:fixedTitle value="￼;Exercice￼"/>
+							</sm:title>
+							<sm:callSubModel axis="sol"/>
+						</sm:WHeadingBlock>
+					</sm:for>
+					<sm:for codes="trainUcNumerical">
+						<sm:WHeadingBlock widgetClass="subQuiz">
+							<sm:title>
+								<sm:subModelTitle/>
+								<sm:fixedTitle value="￼;Exercice￼"/>
+							</sm:title>
+							<sm:callSubModel axis="sol"/>
+						</sm:WHeadingBlock>
+					</sm:for>
+					<sm:for codes="trainUcCloze">
+						<sm:WHeadingBlock widgetClass="subQuiz">
+							<sm:title>
+								<sm:subModelTitle/>
+								<sm:fixedTitle value="￼;Exercice￼"/>
+							</sm:title>
+							<sm:callSubModel axis="sol"/>
+						</sm:WHeadingBlock>
+					</sm:for>
+				</sm:inDataOrder>
+			</sm:WSimpleBlock>
+		</sm:WSimpleBlock>
+	</sm:content>
+</sm:compositionXhtmlTransf>

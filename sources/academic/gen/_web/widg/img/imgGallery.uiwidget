@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="imgGallery" info="Image gallery (requires scImgMgr)">
+	<sm:fillTemplateBuffers>
+		<sm:postXslFragment keyXsl="xhtml">&lt;xsl:overlay match="a[containWord(@class, 'galPvLnk')]"&gt;
+  &lt;xsl:attribute name="onclick"&gt;scImgMgr.loading(); return false;&lt;/xsl:attribute&gt;
+&lt;/xsl:overlay&gt;</sm:postXslFragment>
+		<sm:otherBuffers keyBuffer="js.postLink">scImgMgr.registerGallery("des:div.galFra");
+</sm:otherBuffers>
+	</sm:fillTemplateBuffers>
+	<sm:content>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/img/scImgMgr.uiwidget"/>
+		<div xmlns="http://www.w3.org/1999/xhtml" class="galFra" style="position: relative;">
+			<sm:callZone key="zPv"/>
+			<div class="galClr"/>
+			<noscript>
+				<em class="noscript">￼;Cette galerie utilise Javascript pour un affichage optimal.￼</em>
+			</noscript>
+		</div>
+	</sm:content>
+</sm:openUiWidget>

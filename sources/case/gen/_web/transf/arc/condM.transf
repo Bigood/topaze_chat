@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:dataFormXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" info="todo">
+	<sm:model sc:refUri="/case/model/arc/condM.model"/>
+</sm:dataFormXhtmlTransf>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:dataFormPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Condition calculée￼">
+	<sm:identification targetNamespace="kelis.fr:opa" targetPrefix="opa" code="condM" itemExtension="xml"/>
+	<!--Passer en freePrim pour ajouter des imbrications de and / or / not de plusieurs formules ?-->
+	<sm:structure>
+		<sm:field code="left" name="￼;Indicateur, variable, étape de quiz, applet￼" occurrence="one" family="property">
+			<sm:help quickHelp="￼;Calcul sur un Indicateur, une variable apprenant ou une étape de quizz￼"/>
+			<sm:refItem>
+				<sm:allowedModel sc:refUri="/case/model/index/autoIndex.model"/>
+				<sm:allowedModel sc:refUri="/case/model/index/userIndex.model"/>
+				<sm:allowedModel sc:refUri="/case/model/index/userVar.model"/>
+				<sm:allowedModel sc:refUri="/case/model/index/autoVar.model"/>
+				<sm:allowedModel sc:refUri="/academic/model/Re/applet/applet.model"/>
+				<sm:allowedModel sc:refUri="/case/model/node/assmntNode.model"/>
+			</sm:refItem>
+		</sm:field>
+		<sm:field code="op" name="￼;Opérateur￼" occurrence="one" family="property">
+			<sm:help quickHelp="￼;ATTENTION : si votre indicateur est une moyenne, il retourne un pourcentage. L'opérateur &quot;Indicateur, applet&quot; doit cependant être utilisé.￼"/>
+			<sm:enum>
+				<sm:option key="%&gt;" name="￼;% d'une étape de quiz &gt; à￼"/>
+				<sm:option key="%&gt;=" name="￼;% d'une étape de quiz &gt;= à￼"/>
+				<sm:option key="%=" name="￼;% d'une étape de quiz = à￼"/>
+				<sm:option key="%&lt;" name="￼;% d'une étape de quiz &lt; à￼"/>
+				<sm:option key="%&lt;=" name="￼;% d'une étape de quiz &lt;= à￼"/>
+				<sm:option key="&gt;" name="￼;Indicateur, applet supérieur à￼"/>
+				<sm:option key="&gt;=" name="￼;Indicateur, applet supérieur ou égal à￼"/>
+				<sm:option key="=" name="￼;Indicateur, applet égal à￼"/>
+				<sm:option key="&lt;" name="￼;Indicateur, applet inférieur à￼"/>
+				<sm:option key="&lt;=" name="￼;Indicateur, applet inférieur ou égal à￼"/>
+				<sm:option key="s=" name="￼;Variable égale à￼"/>
+			</sm:enum>
+		</sm:field>
+		<sm:field code="right" name="￼;Valeur￼" occurrence="one" family="property">
+			<sm:string/>
+		</sm:field>
+	</sm:structure>
+	<sm:storage/>
+	<sm:authoring>
+		<sm:formEditor indentXml="true">
+			<sm:stringField refCode="left" defaultStyle="property" textStyle="color :#6286cc ;"/>
+			<sm:enumField refCode="op" defaultStyle="property">
+				<!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1428661676673">Avoir le quickHelp en desc pose des problèmes de perfs quand il passe à la ligne.</comment></comment>-->
+				<!--<sm:help xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:quickHelp>
+		<sm:description style="color:#666;"/>
+	</sm:quickHelp>
+</sm:help>-->
+			</sm:enumField>
+			<sm:stringField refCode="right" defaultStyle="property" textStyle="color :#6286cc ;"/>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:dataFormPrim>

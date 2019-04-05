@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openOdWidget code="WIntro" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:content>
+		<sm:choose>
+			<sm:when keyZone="content">
+				<sm:WSection style="intro">
+					<sm:WParagraph style="carBeforeIntro" display="always"/>
+					<sm:callZone key="content"/>
+				</sm:WSection>
+			</sm:when>
+		</sm:choose>
+	</sm:content>
+</sm:openOdWidget>

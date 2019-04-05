@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="tocMgr">
+	<sm:widgetPublishFiles sc:refUri="/academic/gen/_sld/widg/nav/tocMgr.doss"/>
+	<sm:fillTemplateBuffers>
+		<sm:standardLibrary codeLib="PaLib"/>
+		<sm:standardLibrary codeLib="TiLib"/>
+		<sm:standardLibrary codeLib="SiLib"/>
+		<sm:postXslFragment keyXsl="xhtml">&lt;xsl:overlay match="body"&gt;
+	&lt;xsl:value-of select="execute(java:append($vBufJs, 'tocMgr.init();'))"/&gt;
+&lt;/xsl:overlay&gt;
+</sm:postXslFragment>
+		<sm:linkScript path="tocMgr.js" pathFrom="localPublishFiles" sortKey="AA"/>
+		<sm:linkScript path="tocMgr.locale.js" pathFrom="localPublishFiles" sortKey="AA1"/>
+	</sm:fillTemplateBuffers>
+	<sm:content>
+		<div xmlns="http://www.w3.org/1999/xhtml" class="tplTocOff" id="tplToc">
+			<div id="tplTocCo">
+				<div id="tplTocScroll">
+					<sm:Widget sc:refUri="/academic/gen/_sld/widg/nav/toc.uiwidget"/>
+				</div>
+			</div>
+		</div>
+	</sm:content>
+</sm:openUiWidget>

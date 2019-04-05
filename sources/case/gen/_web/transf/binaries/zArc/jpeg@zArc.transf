@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/binaries/jpg/jpeg.model"/>
+	<sm:axis code="zArc"/>
+	<sm:content>
+		<sm:WImage>
+			<sm:binaryUrl>
+				<sm:imageTransform>
+					<sm:sizeBounds maxWidthInPx="180" maxHeightInPx="100"/>
+					<sm:outputJPEG/>
+				</sm:imageTransform>
+			</sm:binaryUrl>
+			<sm:declareSize/>
+		</sm:WImage>
+		<sm:callModel>
+			<sm:current axis="credits"/>
+		</sm:callModel>
+	</sm:content>
+</sm:binaryXhtmlTransf>

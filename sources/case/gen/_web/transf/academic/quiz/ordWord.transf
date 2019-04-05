@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sma:assmntUnitMlqDhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns="http://www.w3.org/1999/xhtml" info="exercice d'entrainement, boutons solution score et reset, fonctions jouer - reset - afficher Solutions - masquer Solutions">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/ordWord.model"/>
+	<sm:scenario>
+		<sm:sequence>
+			<sm:loadData>
+				<sm:responseSessionKey>
+					<sm:jsExpression expId="sessKeyQuiz">topazeMgr.fSessKeyQuiz</sm:jsExpression>
+				</sm:responseSessionKey>
+			</sm:loadData>
+			<sm:saveData>
+				<sm:responseSessionKey>
+					<sm:refExp refExpId="sessKeyQuiz"/>
+				</sm:responseSessionKey>
+				<sm:scoreSessionKey>
+					<sm:refExp refExpId="sessKeyQuiz"/>
+				</sm:scoreSessionKey>
+			</sm:saveData>
+			<sm:scoreComputing>
+				<sm:orderingScoring algorithm="distance"/>
+			</sm:scoreComputing>
+		</sm:sequence>
+	</sm:scenario>
+	<sm:publicFunctions>
+		<sm:function fctName="reset">
+			<sm:resetSession response="yes" score="no">
+				<sm:sessionKey>
+					<sm:refExp refExpId="sessKeyQuiz"/>
+				</sm:sessionKey>
+			</sm:resetSession>
+		</sm:function>
+	</sm:publicFunctions>
+	<sm:assmntBody>
+		<div>
+			<div class="headerQ">
+				<div sm:id="question" class="question">
+					<sm:addSrcPath/>
+					<sm:callQuestionModel/>
+				</div>
+			</div>
+			<sm:WLabelsBasket tagName="div" widgetClass="ddBasket">
+				<sm:WDragDropContainer tagName="div" dropMode="append" onDragOverClass="ddBasketDragOver" widgetClass="ddBasketCatch">
+					<sm:WContainer tagName="div" widgetClass="ddBasketCont">
+						<sm:forRandomLabel>
+							<sm:WDraggableLabel tagName="div" onDragClass="ddLabelDrag" widgetClass="ddLabel">
+								<sm:callLabelModel/>
+							</sm:WDraggableLabel>
+						</sm:forRandomLabel>
+					</sm:WContainer>
+					<sm:WIfContainerEmpty tagName="div" widgetClass="ddBasketIfEmpty">
+						<span>￼;Plus d'éléments à ordonner￼</span>
+					</sm:WIfContainerEmpty>
+					<div class="ddBasketEnd"></div>
+				</sm:WDragDropContainer>
+			</sm:WLabelsBasket>
+			<sm:WResponseArea tagName="div" widgetClass="ddRepArea">
+				<sm:WDragDropContainer tagName="div" dropMode="ordered" onDragOverClass="ddCatchDragOver" widgetClass="ddDropCatch">
+					<sm:WContainer tagName="div" widgetClass="ddDropCont"/>
+					<sm:WIfContainerEmpty tagName="div" widgetClass="ddDropContIfEmpty">
+						<span>￼;Déposez ici￼</span>
+					</sm:WIfContainerEmpty>
+					<div class="ddCatchDragEnd"></div>
+				</sm:WDragDropContainer>
+			</sm:WResponseArea>
+		</div>
+	</sm:assmntBody>
+</sma:assmntUnitMlqDhtmlTransf>

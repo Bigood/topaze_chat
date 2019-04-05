@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="persistDataUi">
+	<sm:content>
+		<div xmlns="http://www.w3.org/1999/xhtml" id="gotoLastLocation" style="display: none;">
+			<a class="btnLast" href="#" onclick="scServices.scPreload.goTo(scServices.locationStorage.getLocation()); return false;" title="￼Retrouver la dernière page consultée de l'étude de cas￼">￼;Ouvrir la dernière page consultée￼</a>
+			<div class="showPlan">
+				<sm:callModel>
+					<sm:root axis="toolMnuHome"/>
+				</sm:callModel>
+			</div>
+		</div>
+		<div xmlns="http://www.w3.org/1999/xhtml" id="resetStorageData" style="display: none;">
+			<a class="btnReset" href="#" onclick="scServices.storage.resetData();scServices.assmntMgr.reloadData();scServices.scPreload.reload();return false;" title="￼Effacer définitivement toutes mes productions relatives à cette étude de cas￼">￼;Réinitialiser￼</a>
+		</div>
+		<script xmlns="http://www.w3.org/1999/xhtml" type="text/JavaScript">scOnLoads[scOnLoads.length] = {
+ loadSortKey :"ZZZ",
+ onLoad: function() {
+  if(scServices.locationStorage &amp;&amp; scServices.locationStorage.getLocation()) {
+   sc$("gotoLastLocation").style.display = "";
+   if(scServices.storage &amp;&amp; scServices.storage.isStorageActive() &amp;&amp; !scServices.scorm2k4) sc$("resetStorageData").style.display = "";
+  }
+ }
+}</script>
+	</sm:content>
+</sm:openUiWidget>

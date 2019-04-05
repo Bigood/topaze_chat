@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sext="http://www.utc.fr/ics/scenari/v3/modeling/extension" sext:assmnt="true" name="￼;Indicateur apprenant￼" category="￼;Etude de cas￼">
+	<sm:help quickHelp="￼;Définit un indicateur saisi par l'apprenant￼"/>
+	<sm:identification targetNamespace="kelis.fr:opa" targetPrefix="opa" code="userIndex" itemExtension="ind"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/case/model/index/userIndexM.model" usage="required"/>
+	</sm:structure>
+	<sm:authoring>
+		<sm:icon sc:refUri="/case/auth/ico/indUser.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;Indicateur￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:formEditor indentXml="true">
+			<sm:composition>
+				<sm:standardWidget tagStyle="font-family:arial;font-size:20px; background-color:#446e43; color:white; -moz-border-radius:5px; padding-left:4px; padding-right:4px">
+					<sm:iconTag sc:refUri="/case/auth/ui/indUser.png"/>
+				</sm:standardWidget>
+			</sm:composition>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:compositionPrim>

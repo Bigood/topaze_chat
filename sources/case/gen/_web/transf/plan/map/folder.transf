@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/case/model/plan/map/folder.model"/>
+	<sm:navigation>
+		<sm:folder>
+			<sm:title>
+				<sm:compositionTitle/>
+				<sm:fixedTitle value="￼;[Sans titre]￼"/>
+			</sm:title>
+			<sm:for codes="node sub">
+				<sm:callSubModel/>
+			</sm:for>
+		</sm:folder>
+	</sm:navigation>
+</sm:compositionXhtmlTransf>

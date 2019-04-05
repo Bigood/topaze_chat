@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:videoPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Vidéo MOV - dépréciée￼" category="￼;Ressources￼">
+	<sm:identification extensions="mov" mimeTypes="video/quicktime"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/academic/model/metaData/binAltM.model" usage="optional"/>
+	</sm:structure>
+	<sm:authoring>
+		<sm:preview>
+			<sm:htmlViewer>
+				<sm:fromBinary/>
+			</sm:htmlViewer>
+		</sm:preview>
+		<sm:icon sc:refUri="/binaries/mov/_res/mov.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;video￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+	</sm:authoring>
+</sm:videoPrim>

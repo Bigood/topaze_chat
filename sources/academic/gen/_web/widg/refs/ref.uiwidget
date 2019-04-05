@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:crossRefTableUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="ref">
+	<sm:refEntries key="ref">
+		<sm:callableModel sc:refUri="/academic/model/Re/refs/ref.model"/>
+	</sm:refEntries>
+	<sm:sortEntries>
+		<sm:alphaNonCaseSensitive>
+			<sm:callEntryTitle type="fullTitleText" axis=""/>
+		</sm:alphaNonCaseSensitive>
+	</sm:sortEntries>
+	<sm:content>
+		<ifText xmlns="http://www.w3.org/1999/xhtml">
+			<dl>
+				<sm:forEntry>
+					<dt class="idxEntryTi">
+						<sm:callEntryTitle type="fullTitleText"/>
+					</dt>
+					<dd class="idxFra">
+						<!--<span xmlns="http://www.w3.org/1999/xhtml" sm:commonClass="idxEntryTi" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling"><sm:callEntryTitle type="fullTitleText"/></span>-->
+						<div class="idxEntryCo">
+							<sm:callEntryContent/>
+						</div>
+						<sm:WCollapsableBlock class="cbkClosed" widgetClass="idxEntryCallers collapse">
+							<sm:label>￼;Référents￼</sm:label>
+							<sm:labelTitle>￼;Cliquez ici pour voir les référents...￼</sm:labelTitle>
+							<sm:content>
+								<sm:forCaller>
+									<div class="idxEntryCaller">
+										<sm:WidgetInCallerContext sc:refUri="/academic/gen/_web/widg/refs/stack.uiwidget"/>
+										<span class="stackSep"> &gt; </span>
+										<sm:WLinkCaller widgetClass="idxEntryCallerLnk">
+											<sm:label>
+												<sm:titlePageCaller/>
+											</sm:label>
+											<sm:link/>
+										</sm:WLinkCaller>
+									</div>
+								</sm:forCaller>
+							</sm:content>
+						</sm:WCollapsableBlock>
+					</dd>
+				</sm:forEntry>
+			</dl>
+		</ifText>
+	</sm:content>
+</sm:crossRefTableUiWidget>

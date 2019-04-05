@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:videoPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Vidéo RM - dépréciée￼" category="￼;Ressources￼">
+	<sm:help quickHelp="￼; Ressource au format RealMedia. ￼"/>
+	<sm:identification extensions="rm" mimeTypes="video/x-pn-realaudio"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/academic/model/metaData/binAltM.model" usage="optional"/>
+	</sm:structure>
+	<sm:authoring>
+		<sm:icon sc:refUri="/binaries/rm/_res/rm.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;video￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+	</sm:authoring>
+</sm:videoPrim>

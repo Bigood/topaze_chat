@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformer sc:refUri="/case/gen/_web/transf/co/quiz/mcqMurMap.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/co/quiz/mcqMurMap@id.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/co/quiz/mcqMurMap@sol.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/co/quiz/mcqMurMap@val.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/co/quiz/mcqMurSum.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/co/quiz/mcqMurSum@id.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/co/quiz/mcqMurSum@sol.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/co/quiz/mcqMurSum@val.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/co/quiz/mcqSurPts.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/co/quiz/mcqSurPts@id.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/co/quiz/mcqSurPts@sol.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/co/quiz/mcqSurPts@val.transf"/>
+</sm:transformerList>

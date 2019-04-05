@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:dataFormPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="￼;Paramètre dynamique￼">
+	<sm:identification targetNamespace="kelis.fr:opa" targetPrefix="opa" code="dynParamM" itemExtension="xml"/>
+	<sm:structure>
+		<sm:field code="name" name="￼;Nom￼" occurrence="one">
+			<sm:string/>
+		</sm:field>
+	</sm:structure>
+	<sm:storage/>
+</sm:dataFormPrim>

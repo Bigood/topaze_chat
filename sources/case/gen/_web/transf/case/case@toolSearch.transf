@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/case/model/case.model"/>
+	<sm:axis code="toolSearch"/>
+	<sm:content format="xhtml">
+		<sm:WFreeBlock>
+			<a xmlns="http://www.w3.org/1999/xhtml" class="btnTool btnSearch" href="#" onclick="searchMgr.xLoadIndex(); tplMgr.tglLft(); searchMgr.focus(); return false;" title="￼Rechercher￼">
+				<span>￼;Rechercher￼</span>
+			</a>
+			<div xmlns="http://www.w3.org/1999/xhtml" id="schBox"/>
+		</sm:WFreeBlock>
+	</sm:content>
+</sm:compositionXhtmlTransf>

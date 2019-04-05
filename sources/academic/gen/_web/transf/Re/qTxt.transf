@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:textXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Re/qTxt.model"/>
+	<sm:content classConstructionType="legacy">
+		<sm:paraTag tagName="p"/>
+		<sm:listTags>
+			<sm:itemizedListTag/>
+			<sm:orderedListTag/>
+		</sm:listTags>
+		<sm:uLinkTag widgetClass="op_qTxt ttSimple" role="acr" tagName="a">
+			<sm:refItem crossRefEntries="acr">
+				<sm:label>
+					<sm:textLink/>
+				</sm:label>
+				<sm:tooltip>
+					<sm:behavior trigger="onmouseover"/>
+					<sm:position>
+						<sm:relativeToAnchor vertical="belowElement" verticalOffset="5"/>
+					</sm:position>
+					<sm:basket key="footnotes"/>
+					<sm:ttContent>
+						<sm:callSubModel/>
+					</sm:ttContent>
+				</sm:tooltip>
+			</sm:refItem>
+		</sm:uLinkTag>
+		<sm:uLinkTag widgetClass="op_qTxt tooltip" role="glos" tagName="a">
+			<sm:refItem crossRefEntries="glos">
+				<sm:label>
+					<sm:textLink/>
+				</sm:label>
+				<sm:labelTitle>
+					<sm:subModelTitle suffix="￼;...￼"/>
+				</sm:labelTitle>
+				<sm:tooltip>
+					<sm:behavior trigger="onclick" sticky="true"/>
+					<sm:position>
+						<sm:relativeToAnchor vertical="belowElement"/>
+					</sm:position>
+					<sm:basket key="footnotes"/>
+					<sm:closeButton caption="x" title="￼;Fermer￼"/>
+					<sm:ttTitle>
+						<sm:subModelTitle/>
+					</sm:ttTitle>
+					<sm:ttContent>
+						<sm:callSubModel/>
+					</sm:ttContent>
+				</sm:tooltip>
+			</sm:refItem>
+		</sm:uLinkTag>
+		<sm:uLinkTag widgetClass="op_qTxt tooltip" role="bib" tagName="a">
+			<sm:refItem>
+				<sm:label>
+					<sm:callSubModel axis="crTag"/>
+					<sm:textLink/>
+				</sm:label>
+				<sm:labelTitle>
+					<sm:subModelTitle suffix="￼;...￼"/>
+				</sm:labelTitle>
+				<sm:tooltip>
+					<sm:behavior trigger="onclick" sticky="true"/>
+					<sm:position>
+						<sm:relativeToAnchor vertical="belowElement"/>
+					</sm:position>
+					<sm:basket key="footnotes"/>
+					<sm:closeButton caption="x" title="￼;Fermer￼"/>
+					<sm:ttTitle>
+						<sm:subModelTitle/>
+					</sm:ttTitle>
+					<sm:ttContent>
+						<sm:callSubModel/>
+					</sm:ttContent>
+				</sm:tooltip>
+			</sm:refItem>
+		</sm:uLinkTag>
+		<sm:uLinkTag widgetClass="op_qTxt tooltip" role="ref" tagName="a">
+			<sm:refItem crossRefEntries="ref">
+				<sm:label>
+					<sm:textLink/>
+				</sm:label>
+				<sm:labelTitle>
+					<sm:subModelTitle/>
+					<sm:fixedString value="￼;...￼"/>
+				</sm:labelTitle>
+				<sm:tooltip>
+					<sm:behavior trigger="onclick" sticky="true"/>
+					<sm:position>
+						<sm:relativeToAnchor vertical="belowElement"/>
+					</sm:position>
+					<sm:basket key="footnotes"/>
+					<sm:closeButton caption="x" title="￼;Fermer￼"/>
+					<sm:ttTitle>
+						<sm:subModelTitle/>
+					</sm:ttTitle>
+					<sm:ttContent>
+						<sm:callSubModel/>
+					</sm:ttContent>
+				</sm:tooltip>
+			</sm:refItem>
+		</sm:uLinkTag>
+		<sm:uLinkTag widgetClass="op_qTxt ttSimple" role="docLnk" tagName="a">
+			<sm:choose>
+				<sm:when sc:refUri="/academic/gen/_web/cnd/hasLegalInfo.cond">
+					<sm:refItem>
+						<sm:label>
+							<sm:textLink/>
+						</sm:label>
+						<sm:labelTitle>
+							<sm:subModelTitle suffix="￼; (nouvelle fenêtre)￼"/>
+						</sm:labelTitle>
+						<sm:link target="newWindow">
+							<sm:callSubModel axis="url" navCtx="newRoot"/>
+						</sm:link>
+						<sm:tooltip widgetClass="tt">
+							<sm:behavior trigger="onmouseover"/>
+							<sm:position>
+								<sm:relativeToAnchor vertical="belowElement" verticalOffset="5"/>
+							</sm:position>
+							<sm:basket key="footnotes"/>
+							<sm:ttContent>
+								<sm:callSubModel axis="legal"/>
+							</sm:ttContent>
+						</sm:tooltip>
+					</sm:refItem>
+				</sm:when>
+				<sm:otherwise>
+					<sm:refItem>
+						<sm:label>
+							<sm:textLink/>
+						</sm:label>
+						<sm:labelTitle>
+							<sm:subModelTitle suffix="￼; (nouvelle fenêtre)￼"/>
+						</sm:labelTitle>
+						<sm:link target="newWindow">
+							<sm:callSubModel axis="url" navCtx="newRoot"/>
+						</sm:link>
+					</sm:refItem>
+				</sm:otherwise>
+			</sm:choose>
+		</sm:uLinkTag>
+		<sm:uLinkTag widgetClass="op_qTxt ttSimple" role="resLnk" tagName="a">
+			<sm:choose>
+				<sm:when sc:refUri="/academic/gen/_web/cnd/hasLegalInfo.cond">
+					<sm:refItem>
+						<sm:label>
+							<sm:textLink/>
+						</sm:label>
+						<sm:labelTitle>
+							<sm:subModelTitle suffix="￼; (nouvelle fenêtre)￼"/>
+						</sm:labelTitle>
+						<sm:link target="newWindow">
+							<sm:callSubModel axis="url" navCtx="newRoot"/>
+						</sm:link>
+						<sm:tooltip widgetClass="tt">
+							<sm:behavior trigger="onmouseover"/>
+							<sm:position>
+								<sm:relativeToAnchor vertical="belowElement" verticalOffset="5"/>
+							</sm:position>
+							<sm:basket key="footnotes"/>
+							<sm:ttContent>
+								<sm:callSubModel axis="legal"/>
+							</sm:ttContent>
+						</sm:tooltip>
+					</sm:refItem>
+				</sm:when>
+				<sm:otherwise>
+					<sm:refItem>
+						<sm:label>
+							<sm:textLink/>
+						</sm:label>
+						<sm:labelTitle>
+							<sm:subModelTitle suffix="￼; (nouvelle fenêtre)￼"/>
+						</sm:labelTitle>
+						<sm:link target="newWindow">
+							<sm:callSubModel axis="url" navCtx="newRoot"/>
+						</sm:link>
+					</sm:refItem>
+				</sm:otherwise>
+			</sm:choose>
+		</sm:uLinkTag>
+		<sm:uLinkTag role="ucLnk" tagName="a">
+			<sm:refItem crossRefEntries="ucLnk">
+				<sm:label>
+					<sm:textLink/>
+				</sm:label>
+				<sm:labelTitle>
+					<sm:subModelTitle suffix="￼; (nouvelle fenêtre)￼"/>
+				</sm:labelTitle>
+				<sm:link target="subWindow">
+					<sm:behavior addLinkInHref="yes"/>
+					<sm:callSubModel axis="ref" navCtx="newRoot"/>
+				</sm:link>
+			</sm:refItem>
+		</sm:uLinkTag>
+		<sm:phraseTag role="url" tagName="none">
+			<sm:Widget sc:refUri="/academic/gen/_web/widg/util/urlM.uiwidget"/>
+		</sm:phraseTag>
+		<sm:inlineStyleTag role="emp" tagName="strong"/>
+		<sm:inlineStyleTag role="spec" tagName="em">
+			<sm:Widget sc:refUri="/academic/gen/_web/widg/util/txtLangAttr.uiwidget"/>
+		</sm:inlineStyleTag>
+		<sm:inlineStyleTag role="code" tagName="code"/>
+		<sm:textLeafTag role="exp" tagName="sup"/>
+		<sm:textLeafTag role="ind" tagName="sub"/>
+		<sm:textLeafTag role="mathtex">
+			<sm:Widget sc:refUri="/math/latex/mathTexInline_web.uiwidget"/>
+		</sm:textLeafTag>
+		<sm:inlineImgTag role="form">
+			<sm:choose>
+				<sm:when xpath="ancestor::sc:uLink or ancestor::sc:phrase[@role='url']">
+					<sm:callSubModel axis="inlineBasic"/>
+				</sm:when>
+				<sm:otherwise>
+					<sm:callSubModel axis="inline"/>
+				</sm:otherwise>
+			</sm:choose>
+		</sm:inlineImgTag>
+		<sm:inlineImgTag role="ico">
+			<sm:choose>
+				<sm:when xpath="ancestor::sc:uLink or ancestor::sc:phrase[@role='url']">
+					<sm:callSubModel axis="inlineBasic"/>
+				</sm:when>
+				<sm:otherwise>
+					<sm:callSubModel axis="inline"/>
+				</sm:otherwise>
+			</sm:choose>
+		</sm:inlineImgTag>
+	</sm:content>
+</sm:textXhtmlTransf>

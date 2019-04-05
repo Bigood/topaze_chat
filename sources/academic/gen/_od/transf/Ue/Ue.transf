@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionOdtTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0">
+	<sm:model sc:refUri="/academic/model/Ue/ue.model"/>
+	<sm:content>
+		<sm:for codes="obj">
+			<sm:Widget sc:refUri="/academic/gen/_od/widg/headerSection.odwidget">
+				<sm:odContentZone key="addInTdm">
+					<sm:fixedString value="true"/>
+				</sm:odContentZone>
+				<sm:odContentZone key="zTitle">
+					<sm:WInline globalStyle="titreObjectifs">
+						<sm:fixedString value="￼;Objectifs￼"/>
+					</sm:WInline>
+				</sm:odContentZone>
+			</sm:Widget>
+			<sm:WSection globalStyle="sectionObjectifs">
+				<sm:label/>
+				<sm:callSubModel/>
+			</sm:WSection>
+		</sm:for>
+		<sm:for codes="intro">
+			<sm:choose>
+				<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+					<sm:Widget sc:refUri="/academic/gen/_od/widg/headerSection.odwidget">
+						<sm:odContentZone key="addInTdm">
+							<sm:fixedString value="true"/>
+						</sm:odContentZone>
+						<sm:odContentZone key="zTitle">
+							<sm:fixedString value="￼;Introduction￼"/>
+						</sm:odContentZone>
+					</sm:Widget>
+					<sm:callSubModel/>
+				</sm:when>
+			</sm:choose>
+		</sm:for>
+		<sm:for codes="genRef">
+			<sm:callSubModel/>
+		</sm:for>
+		<sm:callCompositionMeta axis="keywds"/>
+		<sm:inDataOrder>
+			<sm:for codes="courseUa assmntUa div courseUc">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:heading>
+							<sm:title>
+								<sm:subModelTitle/>
+								<sm:fixedTitle value="￼;Section￼"/>
+							</sm:title>
+							<sm:Widget sc:refUri="/academic/gen/_od/widg/headerSection.odwidget">
+								<sm:odContentZone key="addInTdm">
+									<sm:fixedString value="true"/>
+								</sm:odContentZone>
+								<sm:odContentZone key="zTitle">
+									<sm:WInline style="hidden">
+										<!--Obligé pour la tdm-->
+										<sm:dynamicString>
+											<sm:refHeading format="number" level="1"/>
+										</sm:dynamicString>
+										<sm:fixedString value="￼; - ￼"/>
+									</sm:WInline>
+									<sm:dynamicString>
+										<sm:refHeading format="name" level="1"/>
+									</sm:dynamicString>
+								</sm:odContentZone>
+								<sm:odContentZone key="zPage">
+									<sm:dynamicString>
+										<sm:refHeading format="number" level="1"/>
+									</sm:dynamicString>
+								</sm:odContentZone>
+							</sm:Widget>
+							<sm:WSection style="sectionToc">
+								<sm:label/>
+								<sm:choose>
+									<sm:when xpath="name()='sp:courseUa' or name()='sp:div'">
+										<sm:WTableOfContents style="subSectionTitleList">
+											<sm:title/>
+										</sm:WTableOfContents>
+										<sm:WParagraph style="spaceAfterToc" display="always"/>
+									</sm:when>
+								</sm:choose>
+							</sm:WSection>
+							<sm:WSection style="chapterContent">
+								<sm:label/>
+								<sm:choose>
+									<sm:when xpath="name()='sp:courseUc'">
+										<sm:dataBlock category="uc">
+											<sm:overrideContentDeclaration>
+												<sm:callBlockData/>
+											</sm:overrideContentDeclaration>
+											<sm:blockId>
+												<sm:subModelId/>
+											</sm:blockId>
+											<sm:label>
+												<sm:title>
+													<sm:subModelTitle/>
+												</sm:title>
+											</sm:label>
+											<sm:data>
+												<sm:callSubModel/>
+											</sm:data>
+										</sm:dataBlock>
+									</sm:when>
+									<sm:otherwise>
+										<sm:callSubModel/>
+									</sm:otherwise>
+								</sm:choose>
+							</sm:WSection>
+						</sm:heading>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="practUc">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:heading>
+							<sm:title>
+								<sm:subModelTitle prefix="￼;Exercice : ￼"/>
+								<sm:fixedTitle value="￼;Exercice￼"/>
+							</sm:title>
+							<sm:Widget sc:refUri="/academic/gen/_od/widg/headerSection.odwidget">
+								<sm:odContentZone key="addInTdm">
+									<sm:fixedString value="true"/>
+								</sm:odContentZone>
+								<sm:odContentZone key="zTitle">
+									<sm:WInline style="hidden">
+										<!--Obligé pour la tdm-->
+										<sm:dynamicString>
+											<sm:refHeading format="number" level="1"/>
+										</sm:dynamicString>
+										<sm:fixedString value="￼; - ￼"/>
+									</sm:WInline>
+									<sm:dynamicString>
+										<sm:refHeading format="name" level="1"/>
+									</sm:dynamicString>
+								</sm:odContentZone>
+								<sm:odContentZone key="zPage">
+									<sm:dynamicString>
+										<sm:refHeading format="number" level="1"/>
+									</sm:dynamicString>
+								</sm:odContentZone>
+							</sm:Widget>
+							<sm:WSection style="sectionToc">
+								<sm:label/>
+								<sm:choose>
+									<sm:when xpath="name()='sp:courseUa' or name()='sp:assmntUa' or name()='sp:div'">
+										<sm:WTableOfContents style="subSectionTitleList">
+											<sm:title/>
+										</sm:WTableOfContents>
+										<sm:WParagraph style="spaceAfterToc" display="always"/>
+									</sm:when>
+								</sm:choose>
+							</sm:WSection>
+							<sm:WSection style="chapterContent">
+								<sm:label/>
+								<sm:callSubModel/>
+							</sm:WSection>
+						</sm:heading>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="trainUcMcgSur trainUcMcgMur trainUcMcqSur trainUcMcqMur trainUcMatch trainUcOrdWord trainUcCloze trainUcField trainUcNumerical trainUcCoQuiz">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:heading>
+							<sm:title>
+								<sm:subModelTitle prefix="￼;Exercice : ￼"/>
+								<sm:fixedTitle value="￼;Exercice￼"/>
+							</sm:title>
+							<sm:Widget sc:refUri="/academic/gen/_od/widg/headerSection.odwidget">
+								<sm:odContentZone key="addInTdm">
+									<sm:fixedString value="true"/>
+								</sm:odContentZone>
+								<sm:odContentZone key="zTitle">
+									<sm:WInline style="hidden">
+										<!--Obligé pour la tdm-->
+										<sm:dynamicString>
+											<sm:refHeading format="number" level="1"/>
+										</sm:dynamicString>
+										<sm:fixedString value="￼; - ￼"/>
+									</sm:WInline>
+									<sm:dynamicString>
+										<sm:refHeading format="name" level="1"/>
+									</sm:dynamicString>
+								</sm:odContentZone>
+								<sm:odContentZone key="zPage">
+									<sm:dynamicString>
+										<sm:refHeading format="number" level="1"/>
+									</sm:dynamicString>
+								</sm:odContentZone>
+							</sm:Widget>
+							<sm:WSection style="sectionToc">
+								<sm:label/>
+							</sm:WSection>
+							<sm:WSection style="chapterContent">
+								<sm:label/>
+								<sm:callSubModelMeta axis="objs"/>
+								<sm:callSubModelMeta axis="keywds"/>
+								<sm:choose>
+									<sm:when sc:refUri="/academic/gen/_od/_cnd/filters/solQuiz.cond">
+										<sm:dataBlock category="solution">
+											<sm:blockId>
+												<sm:subModelId/>
+											</sm:blockId>
+											<sm:label>
+												<sm:title>
+													<sm:compositionTitle/>
+												</sm:title>
+											</sm:label>
+											<sm:data>
+												<sm:callSubModel axis="asw"/>
+											</sm:data>
+										</sm:dataBlock>
+									</sm:when>
+								</sm:choose>
+								<sm:callSubModel/>
+							</sm:WSection>
+						</sm:heading>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+		</sm:inDataOrder>
+		<sm:for codes="conclu">
+			<sm:choose>
+				<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+					<sm:Widget sc:refUri="/academic/gen/_od/widg/headerSection.odwidget">
+						<sm:odContentZone key="addInTdm">
+							<sm:fixedString value="true"/>
+						</sm:odContentZone>
+						<sm:odContentZone key="zTitle">
+							<sm:fixedString value="￼;Conclusion￼"/>
+						</sm:odContentZone>
+					</sm:Widget>
+					<sm:callSubModel/>
+				</sm:when>
+			</sm:choose>
+		</sm:for>
+		<!--Tout ce qui suit est de l'ordre des annexes. Utile pour que le titre en header soit correcte-->
+		<sm:heading>
+			<sm:title>
+				<sm:fixedTitle value="￼;Annexes￼"/>
+			</sm:title>
+		</sm:heading>
+	</sm:content>
+</sm:compositionOdtTransf>

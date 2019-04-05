@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:dataFormOdTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" info="Contenu de la référence">
+	<sm:model sc:refUri="/academic/model/Re/refs/refM.model"/>
+	<sm:axis code="content"/>
+	<sm:content>
+		<sm:forField codes="desc">
+			<sm:fieldValueOtherType/>
+		</sm:forField>
+	</sm:content>
+</sm:dataFormOdTransf>

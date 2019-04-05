@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformerList sc:refUri="/academic/gen/_web/transf/metaData.transflist"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/metaData/animM@legal.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/metaData/audioM@legal.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/metaData/binDocM@legal.transf"/>
+	<sm:transformerList sc:refUri="/academic/gen/_web/transf/Pb.transflist"/>
+	<sm:transformerList sc:refUri="/academic/gen/_web/transf/Dialogue.transflist"/>
+	<sm:transformerList sc:refUri="/academic/gen/_web/transf/Re.transflist"/>
+	<sm:transformerList info="Uc">
+		<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/expUc/expUcDiv.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/expUc/expUcDivM.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/expUc/expUc@ref.transf"/>
+		<sm:transformerList sc:refUri="/case/gen/_web/transf/academic/quiz.transflist"/>
+		<sm:transformerList sc:refUri="/case/gen/_web/transf/academic/Uc.transflist"/>
+	</sm:transformerList>
+	<sm:transformerList info="credits" sc:refUri="/academic/gen/_web/transf/@credits.transflist"/>
+	<sm:transformerList info="Opale (pour heavyNode)">
+		<sm:transformerList info="Ua">
+			<!--on ne traite pas les assmntUa-->
+			<sm:transformer sc:refUri="/academic/gen/_web/transf/Ua/courseUa.transf"/>
+		</sm:transformerList>
+		<sm:transformerList info="Uc">
+			<!--on ne traite pas trainUc-->
+			<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/expUc/expUc.transf"/>
+			<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/practUc/practUc.transf"/>
+			<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/practUc/practUcQ.transf"/>
+		</sm:transformerList>
+		<sm:transformerList info="Ue">
+			<sm:transformer sc:refUri="/academic/gen/_web/transf/Ue/ue.transf"/>
+			<sm:transformer sc:refUri="/academic/gen/_web/transf/Ue/ueDiv.transf"/>
+			<sm:transformer sc:refUri="/academic/gen/_web/transf/Ue/ueDivM.transf"/>
+			<sm:transformer sc:refUri="/academic/gen/_web/transf/Ue/ueM.transf"/>
+		</sm:transformerList>
+		<!--Maj 05/10/2010
+Intégration des exos opale dans le heavyNode-->
+		<sm:transformerList info="Quiz OPALE">
+			<sm:transformerList>
+				<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/quiz/cloze.transf"/>
+				<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/quiz/field.transf"/>
+				<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/quiz/match.transf"/>
+				<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/quiz/mcgMur.transf"/>
+				<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/quiz/mcgSur.transf"/>
+				<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/quiz/mcqMur.transf"/>
+				<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/quiz/mcqSur.transf"/>
+				<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/quiz/ordWord.transf"/>
+			</sm:transformerList>
+			<sm:transformerList sc:refUri="/academic/gen/_web/transf/Uc/quiz@nav.transflist"/>
+			<sm:transformerList sc:refUri="/academic/gen/_web/transf/Uc/quiz@reset.transflist"/>
+			<sm:transformerList sc:refUri="/academic/gen/_web/transf/Uc/quiz@score.transflist"/>
+		</sm:transformerList>
+	</sm:transformerList>
+</sm:transformerList>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:dataFormPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="Filtre par version">
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="filter" itemExtension="xml"/>
+	<sm:structure>
+		<sm:field code="exclude" name="Exclu de la version" occurrence="zeroOrMore" family="content">
+			<sm:enum>
+				<sm:option key="standard" name="Standard"/>
+				<sm:option key="short" name="Courte"/>
+			</sm:enum>
+		</sm:field>
+	</sm:structure>
+	<sm:storage/>
+	<sm:authoring>
+		<sm:formEditor indentXml="true">
+			<sm:xmlEditor sc:refUri="/academic/model/_edt/filters/filter.xed"/>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:dataFormPrim>

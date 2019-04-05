@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:outlineUiWidget code="child" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:scope>
+		<sm:directChildren/>
+	</sm:scope>
+	<sm:treeContent>
+		<div class="childs" xmlns="http://www.w3.org/1999/xhtml">
+			<div class="childs_co">
+				<div class="childs_co_co">
+					<sm:outline>
+						<sm:classes>
+							<sm:selected prefix="mnu_sel_" onContainer="no" onRoot="no" onEntry="yes" onList="no" onChildContainers="no"/>
+							<sm:ownerClasses onEntry="yes"/>
+						</sm:classes>
+					</sm:outline>
+				</div>
+			</div>
+		</div>
+	</sm:treeContent>
+</sm:outlineUiWidget>

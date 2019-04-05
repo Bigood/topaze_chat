@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openOdWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="Wref">
+	<sm:content>
+		<sm:WTable style="ref">
+			<sm:WTableRow id="row2">
+				<sm:WTableCell id="cell2">
+					<sm:WParagraph style="refTitle">
+						<sm:callZone key="zContent"/>
+					</sm:WParagraph>
+				</sm:WTableCell>
+				<sm:WTableCell id="cell3">
+					<sm:callZone key="zTitle"/>
+				</sm:WTableCell>
+			</sm:WTableRow>
+		</sm:WTable>
+	</sm:content>
+</sm:openOdWidget>

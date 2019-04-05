@@ -1,0 +1,208 @@
+/**************** HTML ******************/
+html {
+	font: caption;
+	font-size:9pt;
+	height: 100%;
+	color: black;
+	background-color: #FDFDFD;
+}
+body{
+	margin: 0px;
+	cursor: default;
+	height: 100%;
+	min-width: 500px;
+}
+h1, h2 {
+	margin: 15px 0px 3px 0px;
+	color: #003E80;
+} 
+
+/*************** STRUCT ******************/
+
+#tplPage{
+	position: absolute;
+	top:0px;
+	left:0px;
+	bottom:0px;
+	right:0px;
+}
+#tplTitle{
+	margin: 10px;
+}
+#tplTitleLogo{
+	float: left;
+	margin-right: 3px;
+}
+#tplTitleMain{
+	display: block;
+	font-size: 2em;
+	font-weight: bold;
+	color: #003E80;
+}
+#tplTitlesub{
+	font-size: 1.2em;
+	font-style: italic;
+	color: Gray;
+}
+#tplHeadInfo{
+	min-height: 26px;
+	border-bottom: 2px solid #edb77d;
+	padding-top: 3px;
+	padding-left: 5px;
+}
+#tplHeadInfo > span{
+	display: block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 5px;
+	font-style: italic;
+}
+
+#tplTabs{
+	position: absolute;
+	top:80px;
+	left:10px;
+	bottom:10px;
+	right:10px;
+}
+#tplTabBar{
+	position: absolute;
+	top:0px;
+	left:48px;
+	height:30px;
+	right:0px;
+	display: table-cell;
+	vertical-align: bottom;
+}
+#tplTabCo{
+	clear: both;
+	border: 2px solid silver;
+	border-radius: 10px 10px 10px 10px;
+	background-color: #F7F7F7;
+	position: absolute;
+	top:28px;
+	left:0px;
+	bottom:0px;
+	right:0px;
+}
+#tplTabCoScroll{
+	position: absolute;
+	top:5px;
+	left:0px;
+	bottom:5px;
+	right:5px;
+	overflow: auto;
+	padding-right:5px;
+	padding-left:0px;
+}
+#tplTabCoFrame{
+	position: absolute;
+	top:5px;
+	left:5px;
+	bottom:5px;
+	right:5px;
+}
+#tplTabCoFrame iframe{
+	position: absolute;
+	width:100%;
+	height:100%;
+	border:0px;
+	background-color: transparent;
+}
+
+/*************** TAB BAR *****************/
+
+
+ .tabSel_yes,
+.tabSel_no{
+	display: block;
+	float: left;
+	border-top: 2px solid silver;
+	border-left: 2px solid silver;
+	border-right: 2px solid silver;
+	border-radius: 8px 8px 0px 0px;
+	margin-right: 3px;
+	padding: 3px;
+	font-size: 1.2em;
+	height:20px;
+	line-height:20px;
+}
+
+.tabSel_yes{
+	border-bottom: 2px solid #F7F7F7;
+	background-color: #F7F7F7;
+}
+.tabSel_no{
+	border-bottom: 2px solid silver;
+	background-color: #DBDBDB;
+	text-decoration: none;
+	color: inherit;
+}
+
+/*************** Styles *****************/
+
+.tabCoBk_co {
+	margin-left: 10px;
+}
+
+.flowBk {
+	margin: 3px 0px 5px 0px;
+}
+
+.flowBk_co {
+}
+.flowBk_ti {
+	color: Gray;
+	font-style: italic; 
+}
+
+.dk_text_ul {
+	text-decoration: underline;
+	color: #003E80;
+}
+.dk_text_is_imp {
+	font-weight:bold;
+	color:#003E80;
+}
+.dk_text_tim_iconButton img{
+	vertical-align: middle;
+}
+a .dk_text_tim_iconButton img{
+	border:0px none;
+}
+
+.dk_pwM_cpyRgt {
+	display: block;
+	color: Gray;
+}
+.dk_pwM_descBk {
+	margin-top: 10px;
+}
+.aboutBk {
+	margin-left: 10px;
+}
+.aboutTi {
+	font-size: 1.2em;
+	color: #003E80;
+	margin-top: 10px;
+	margin-left: -10px;
+}
+.dk_pwM_aut {
+	background-image: url(../img/bullet.png);
+	background-position: left center;
+	background-repeat: no-repeat;
+	padding-left: 11px;
+	margin-right: 6px;
+}
+.dk_wspM_name {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #003E80;
+}
+.aboutTab{
+	padding-left: 10px;
+}
+.imp{
+	font-weight: bold;
+}
+

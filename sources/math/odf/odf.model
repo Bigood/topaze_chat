@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Équation mathématique OpenDocument￼" category="￼;Math￼">
+	<sm:help quickHelp="￼; Ressource au format Open Document Formular￼"/>
+	<sm:identification extensions="odf" mimeTypes="application/vnd.oasis.opendocument.formula"/>
+	<sm:structure/>
+	<sm:storage>
+		<sm:glimpseImage>
+			<sm:fromBinary>
+				<sm:freeTransform code="od2img" options="outType=PNG&amp;sizeRules=Px(ScSCS(fontPt'10')Bounds(maxW'360'maxH'160'))"/>
+			</sm:fromBinary>
+		</sm:glimpseImage>
+	</sm:storage>
+	<sm:authoring>
+		<sm:preview>
+			<sm:imageViewer>
+				<sm:fromBinary>
+					<sm:freeTransform code="od2img" options="outType=PNG&amp;sizeRules=Px(ScSCS(fontPt'10')Bounds(maxW'550'maxH'550'))"/>
+				</sm:fromBinary>
+			</sm:imageViewer>
+		</sm:preview>
+		<sm:previewMini>
+			<sm:imageViewer>
+				<sm:fromBinary>
+					<sm:freeTransform code="od2img" options="outType=PNG&amp;sizeRules=Px(ScSCS(fontPt'10')Bounds(maxW'360'maxH'160'))"/>
+				</sm:fromBinary>
+			</sm:imageViewer>
+		</sm:previewMini>
+		<sm:icon sc:refUri="/math/odf/_res/odf.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;math￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:emptyFile sc:refUri="/math/odf/_res/empty.odf"/>
+	</sm:authoring>
+</sm:binaryPrim>

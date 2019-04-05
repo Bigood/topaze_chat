@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:navUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="homeBtn">
+	<sm:scope>
+		<sm:all startAtLevel="0"/>
+	</sm:scope>
+	<sm:selectPage>
+		<sm:step>
+			<sm:home/>
+		</sm:step>
+	</sm:selectPage>
+	<sm:content>
+		<sm:ifPageFound>
+			<sm:WLink widgetClass="homeBtn">
+				<sm:label>
+					<sm:callModel>
+						<sm:root axis="lblBtnHome"/>
+					</sm:callModel>
+				</sm:label>
+				<sm:labelTitle>￼;Accueil￼</sm:labelTitle>
+				<sm:link target="sameWindow"/>
+			</sm:WLink>
+		</sm:ifPageFound>
+	</sm:content>
+</sm:navUiWidget>

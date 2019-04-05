@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:textXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/case/model/re/rTxt.model"/>
+	<sm:content classConstructionType="legacy">
+		<sm:paraTag tagName="p"/>
+		<sm:listTags>
+			<sm:itemizedListTag/>
+			<sm:orderedListTag/>
+		</sm:listTags>
+		<sm:tableTag widgetClass="op_txt table" targetFontSizeInPt="11.5">
+			<sm:captionTag/>
+			<sm:columnTag/>
+			<sm:rowTag/>
+			<sm:rowTag role="head" preferedCellTagName="th"/>
+			<sm:cellTag/>
+			<sm:cellTag role="num"/>
+			<sm:cellTag role="word"/>
+		</sm:tableTag>
+		<sm:extBlockTag role="img">
+			<sm:captionBlockTag/>
+			<sm:callSubModel/>
+		</sm:extBlockTag>
+		<sm:extBlockTag role="anim">
+			<sm:captionBlockTag/>
+			<sm:callSubModel/>
+		</sm:extBlockTag>
+		<sm:uLinkTag role="url">
+			<sm:externalUrl>
+				<sm:label>
+					<sm:textLink/>
+				</sm:label>
+				<sm:link target="newWindow"/>
+			</sm:externalUrl>
+		</sm:uLinkTag>
+		<sm:inlineStyleTag role="quote" tagName="q">
+			<sm:textWrapper prefix="￼;« ￼" suffix="￼; »￼"/>
+		</sm:inlineStyleTag>
+		<sm:inlineStyleTag role="emp" tagName="strong"/>
+		<sm:inlineStyleTag role="spec" tagName="em"/>
+		<sm:inlineStyleTag role="code" tagName="code"/>
+		<sm:textLeafTag role="mathtex">
+			<sm:Widget sc:refUri="/math/latex/mathTexInline_web.uiwidget"/>
+		</sm:textLeafTag>
+		<sm:textLeafTag role="exp" tagName="sup"/>
+		<sm:textLeafTag role="ind" tagName="sub"/>
+		<sm:inlineImgTag role="form">
+			<sm:callSubModel axis="inline"/>
+		</sm:inlineImgTag>
+		<sm:inlineImgTag role="ico">
+			<sm:callSubModel axis="inline"/>
+		</sm:inlineImgTag>
+	</sm:content>
+</sm:textXhtmlTransf>

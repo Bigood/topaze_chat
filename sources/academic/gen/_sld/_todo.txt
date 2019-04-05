@@ -1,0 +1,3 @@
+=> Finaliser la publi :
+	* eSite
+	* revoir & contrôler la publi des binaries non présents dans Optim.

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/root/webRoot.model"/>
+	<sm:axis code="quit"/>
+	<sm:navigation>
+		<sm:page template="quit" step="1">
+			<sm:title>
+				<sm:fixedTitle value="￼;Quitter￼"/>
+			</sm:title>
+			<sm:mainZone format="xhtml">
+				<sm:WHeadingBlock widgetClass="quitContent">
+					<sm:title>
+						<sm:fixedTitle value="￼;Vous venez de quitter ce module￼"/>
+					</sm:title>
+					<sm:WFreeBlock>
+						<div xmlns="http://www.w3.org/1999/xhtml" class="quitDetail">￼;Vous pouvez clore cette page, ou charger un autre module.￼</div>
+					</sm:WFreeBlock>
+				</sm:WHeadingBlock>
+			</sm:mainZone>
+		</sm:page>
+	</sm:navigation>
+</sm:compositionXhtmlTransf>

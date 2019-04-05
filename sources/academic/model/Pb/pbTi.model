@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:dataFormPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="￼;Titre Balise Pédagogique￼">
+	<sm:help quickHelp="￼;Donner un titre à la balise pédagogique￼"/>
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="pbTi" itemExtension="xml"/>
+	<sm:structure>
+		<sm:subData code="filters" name="￼;Filtres￼" occurrence="zeroOrOne">
+			<sm:allowedDataModel sc:refUri="/academic/model/_edt/filters/filter.model"/>
+		</sm:subData>
+		<sm:field code="title" name="￼;Titre￼" occurrence="zeroOrOne" family="property">
+			<sm:string/>
+		</sm:field>
+	</sm:structure>
+	<sm:storage>
+		<sm:fullTitleBuilder>
+			<sm:fieldValue refCode="title"/>
+		</sm:fullTitleBuilder>
+	</sm:storage>
+	<sm:authoring>
+		<sm:formEditor indentXml="true">
+			<sm:stringField refCode="title" defaultStyle="property" tagStyle="color:gray" textStyle="color :#6286cc ;"/>
+			<sm:subData refCode="filters" editMode="hideRootLevel" defaultStyle="property" tagStyle="font-size:0.6em; margin: 0px; padding:0px;color:#8f8f8f;"/>
+		</sm:formEditor>
+		
+	</sm:authoring>
+</sm:dataFormPrim>

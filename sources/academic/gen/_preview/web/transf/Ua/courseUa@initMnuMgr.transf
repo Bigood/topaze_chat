@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:freeXslWebSiteTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Ua/courseUa.model"/>
+	<sm:axis code="initMnuMgr"/>
+	<sm:content>
+		<sm:xsl sc:refUri="/academic/gen/_preview/web/transf/Ua/courseUa@initMnuMgr.xsl"/>
+		<sm:callModel sc:refUri="/academic/model/Ua/courseUa.model" axis="outline" codeView="navigation"/>
+	</sm:content>
+</sm:freeXslWebSiteTransf>

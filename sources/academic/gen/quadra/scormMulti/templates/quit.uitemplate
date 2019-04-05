@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiTemplate xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" pageUnicityCriterion="hierarchicalContext">
+	<sm:head>
+		<sm:windowTitle>
+			<sm:rootTitle type="fullTitle"/>
+			<sm:fixedString value=" - "/>
+			<sm:pageTitle/>
+		</sm:windowTitle>
+		<sm:meta name="author">
+			<sm:callRootModel axis="author"/>
+		</sm:meta>
+		<sm:meta name="keywords">
+			<sm:callRootModel axis="keywds"/>
+		</sm:meta>
+		<sm:meta name="date">
+			<sm:callRootModel axis="date"/>
+		</sm:meta>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/tpl/htmlMeta.uiwidget"/>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/tpl/html5shiv.uiwidget"/>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/tplDynElts/centerContent.uiwidget"/>
+		<sm:styleSheet src="css/html.css" srcFrom="skin" media="all"/>
+		<sm:styleSheet src="site/stylesSco/scorm_page.css" srcFrom="publishFiles"/>
+		<sm:styleSheet src="css/buttons.css" srcFrom="skin" media="screen"/>
+		<sm:styleSheet src="css/transf.css" srcFrom="skin" media="all"/>
+		<sm:styleSheet src="css/indexes.css" srcFrom="skin"/>
+		<sm:WXhtmlFragment>&lt;!--[if IE]&gt;</sm:WXhtmlFragment>
+		<sm:styleSheet src="css/ie.css" srcFrom="skin" media="screen"/>
+		<sm:WXhtmlFragment>&lt;![endif]--&gt;&lt;!--[if lt IE 7]&gt;</sm:WXhtmlFragment>
+		<sm:styleSheet src="site/stylesSco/ie6_scorm_page.css" srcFrom="publishFiles"/>
+		<sm:WXhtmlFragment>&lt;![endif]--&gt;</sm:WXhtmlFragment>
+		<sm:styleSheet src="css/print.css" srcFrom="skin" media="print"/>
+	</sm:head>
+	<sm:body>
+		<scBlock xmlns="http://www.w3.org/1999/xhtml" id="tplFra" class="multiSco">
+			<div id="tplCo">
+				<sm:Widget sc:refUri="/academic/gen/_scorm/widg/quitBtn.uiwidget"/>
+				<div id="tplCoMarginW">
+					<div id="tplCoFlexTop"></div>
+					<sm:callMainZone format="xhtml"/>
+				</div>
+			</div>
+		</scBlock>
+		<sm:script src="js/skin.js" srcFrom="skin" type="text/JavaScript"/>
+	</sm:body>
+</sm:openUiTemplate>

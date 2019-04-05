@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionOdtTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0">
+	<sm:model sc:refUri="/academic/model/Pb/pb.model"/>
+	<sm:content>
+		<sm:inDataOrder>
+			<sm:for codes="info">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_od/widg/pb.odwidget">
+							<sm:odContentZone key="zContent">
+								<sm:Widget sc:refUri="/academic/gen/_od/widg/pbTitle.odwidget">
+									<sm:odContentZone key="zValue">
+										<sm:dynamicString>
+											<sm:freeSelect xpath="op:pbTi/sp:title"/>
+										</sm:dynamicString>
+									</sm:odContentZone>
+								</sm:Widget>
+								<sm:callSubModel/>
+							</sm:odContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="def">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_od/widg/pb.odwidget">
+							<sm:odContentZone key="zContent">
+								<sm:WSection style="pbDef">
+									<sm:label>
+										<sm:fixedTitle value="￼;def￼"/>
+									</sm:label>
+									<sm:WFlowArea style="pbDefArea">
+										<sm:label/>
+									</sm:WFlowArea>
+									<sm:Widget sc:refUri="/academic/gen/_od/widg/pbTitle.odwidget">
+										<sm:odContentZone key="zKey">
+											<sm:fixedString value="￼;Définition￼"/>
+										</sm:odContentZone>
+										<sm:odContentZone key="zValue">
+											<sm:dynamicString>
+												<sm:freeSelect xpath="op:pbTi/sp:title"/>
+											</sm:dynamicString>
+										</sm:odContentZone>
+									</sm:Widget>
+									<sm:callSubModel/>
+								</sm:WSection>
+							</sm:odContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="ex">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_od/widg/pb.odwidget">
+							<sm:odContentZone key="zContent">
+								<sm:WSection style="pbEx">
+									<sm:label>
+										<sm:fixedTitle value="￼;ex￼"/>
+									</sm:label>
+									<sm:WFlowArea style="pbExArea">
+										<sm:label/>
+									</sm:WFlowArea>
+									<sm:Widget sc:refUri="/academic/gen/_od/widg/pbTitle.odwidget">
+										<sm:odContentZone key="zKey">
+											<sm:fixedString value="￼;Exemple￼"/>
+										</sm:odContentZone>
+										<sm:odContentZone key="zValue">
+											<sm:dynamicString>
+												<sm:freeSelect xpath="op:pbTi/sp:title"/>
+											</sm:dynamicString>
+										</sm:odContentZone>
+									</sm:Widget>
+									<sm:callSubModel/>
+								</sm:WSection>
+							</sm:odContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="rem">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_od/widg/pb.odwidget">
+							<sm:odContentZone key="zContent">
+								<sm:WSection style="pbRem">
+									<sm:label>
+										<sm:fixedTitle value="￼;rem￼"/>
+									</sm:label>
+									<sm:WFlowArea style="pbRemArea">
+										<sm:label/>
+									</sm:WFlowArea>
+									<sm:Widget sc:refUri="/academic/gen/_od/widg/pbTitle.odwidget">
+										<sm:odContentZone key="zKey">
+											<sm:fixedString value="￼;Remarque￼"/>
+										</sm:odContentZone>
+										<sm:odContentZone key="zValue">
+											<sm:dynamicString>
+												<sm:freeSelect xpath="op:pbTi/sp:title"/>
+											</sm:dynamicString>
+										</sm:odContentZone>
+									</sm:Widget>
+									<sm:callSubModel/>
+								</sm:WSection>
+							</sm:odContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="adv">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_od/widg/pb.odwidget">
+							<sm:odContentZone key="zContent">
+								<sm:WSection style="pbAdv">
+									<sm:label>
+										<sm:fixedTitle value="￼;adv￼"/>
+									</sm:label>
+									<sm:WFlowArea style="pbAdvArea">
+										<sm:label/>
+									</sm:WFlowArea>
+									<sm:Widget sc:refUri="/academic/gen/_od/widg/pbTitle.odwidget">
+										<sm:odContentZone key="zKey">
+											<sm:fixedString value="￼;Conseil￼"/>
+										</sm:odContentZone>
+										<sm:odContentZone key="zValue">
+											<sm:dynamicString>
+												<sm:freeSelect xpath="op:pbTi/sp:title"/>
+											</sm:dynamicString>
+										</sm:odContentZone>
+									</sm:Widget>
+									<sm:callSubModel/>
+								</sm:WSection>
+							</sm:odContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="warning">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_od/widg/pb.odwidget">
+							<sm:odContentZone key="zContent">
+								<sm:WSection style="pbWarning">
+									<sm:label>
+										<sm:fixedTitle value="￼;warning￼"/>
+									</sm:label>
+									<sm:WFlowArea style="pbWarningArea">
+										<sm:label/>
+									</sm:WFlowArea>
+									<sm:Widget sc:refUri="/academic/gen/_od/widg/pbTitle.odwidget">
+										<sm:odContentZone key="zKey">
+											<sm:fixedString value="￼;Attention￼"/>
+										</sm:odContentZone>
+										<sm:odContentZone key="zValue">
+											<sm:dynamicString>
+												<sm:freeSelect xpath="op:pbTi/sp:title"/>
+											</sm:dynamicString>
+										</sm:odContentZone>
+									</sm:Widget>
+									<sm:callSubModel/>
+								</sm:WSection>
+							</sm:odContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="comp">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_od/widg/pb.odwidget">
+							<sm:odContentZone key="zContent">
+								<sm:WSection style="pbComp">
+									<sm:label>
+										<sm:fixedTitle value="￼;comp￼"/>
+									</sm:label>
+									<sm:WFlowArea style="pbCompArea">
+										<sm:label/>
+									</sm:WFlowArea>
+									<sm:Widget sc:refUri="/academic/gen/_od/widg/pbTitle.odwidget">
+										<sm:odContentZone key="zKey">
+											<sm:fixedString value="￼;Complément￼"/>
+										</sm:odContentZone>
+										<sm:odContentZone key="zValue">
+											<sm:dynamicString>
+												<sm:freeSelect xpath="op:pbTi/sp:title"/>
+											</sm:dynamicString>
+										</sm:odContentZone>
+									</sm:Widget>
+									<sm:callSubModel/>
+								</sm:WSection>
+							</sm:odContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="meth">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_od/widg/pb.odwidget">
+							<sm:odContentZone key="zContent">
+								<sm:WSection style="pbMeth">
+									<sm:label>
+										<sm:fixedTitle value="￼;meth￼"/>
+									</sm:label>
+									<sm:WFlowArea style="pbMethArea">
+										<sm:label/>
+									</sm:WFlowArea>
+									<sm:Widget sc:refUri="/academic/gen/_od/widg/pbTitle.odwidget">
+										<sm:odContentZone key="zKey">
+											<sm:fixedString value="￼;Méthode￼"/>
+										</sm:odContentZone>
+										<sm:odContentZone key="zValue">
+											<sm:dynamicString>
+												<sm:freeSelect xpath="op:pbTi/sp:title"/>
+											</sm:dynamicString>
+										</sm:odContentZone>
+									</sm:Widget>
+									<sm:callSubModel/>
+								</sm:WSection>
+							</sm:odContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="remind">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_od/widg/pb.odwidget">
+							<sm:odContentZone key="zContent">
+								<sm:WSection style="pbRemind">
+									<sm:label>
+										<sm:fixedTitle value="￼;remind￼"/>
+									</sm:label>
+									<sm:WFlowArea style="pbRemindArea">
+										<sm:label/>
+									</sm:WFlowArea>
+									<sm:Widget sc:refUri="/academic/gen/_od/widg/pbTitle.odwidget">
+										<sm:odContentZone key="zKey">
+											<sm:fixedString value="￼;Rappel￼"/>
+										</sm:odContentZone>
+										<sm:odContentZone key="zValue">
+											<sm:dynamicString>
+												<sm:freeSelect xpath="op:pbTi/sp:title"/>
+											</sm:dynamicString>
+										</sm:odContentZone>
+									</sm:Widget>
+									<sm:callSubModel/>
+								</sm:WSection>
+							</sm:odContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="basic">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_od/widg/pb.odwidget">
+							<sm:odContentZone key="zContent">
+								<sm:WSection style="pbBasic">
+									<sm:label>
+										<sm:fixedTitle value="￼;basic￼"/>
+									</sm:label>
+									<sm:WFlowArea style="pbBasicArea">
+										<sm:label/>
+									</sm:WFlowArea>
+									<sm:Widget sc:refUri="/academic/gen/_od/widg/pbTitle.odwidget">
+										<sm:odContentZone key="zKey">
+											<sm:fixedString value="￼;Fondamental￼"/>
+										</sm:odContentZone>
+										<sm:odContentZone key="zValue">
+											<sm:dynamicString>
+												<sm:freeSelect xpath="op:pbTi/sp:title"/>
+											</sm:dynamicString>
+										</sm:odContentZone>
+									</sm:Widget>
+									<sm:callSubModel/>
+								</sm:WSection>
+							</sm:odContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="syntax">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_od/widg/pb.odwidget">
+							<sm:odContentZone key="zContent">
+								<sm:WSection style="pbSyntax">
+									<sm:label>
+										<sm:fixedTitle value="￼;syntax￼"/>
+									</sm:label>
+									<sm:WFlowArea style="pbSyntaxArea">
+										<sm:label/>
+									</sm:WFlowArea>
+									<sm:Widget sc:refUri="/academic/gen/_od/widg/pbTitle.odwidget">
+										<sm:odContentZone key="zKey">
+											<sm:fixedString value="￼;Syntaxe￼"/>
+										</sm:odContentZone>
+										<sm:odContentZone key="zValue">
+											<sm:dynamicString>
+												<sm:freeSelect xpath="op:pbTi/sp:title"/>
+											</sm:dynamicString>
+										</sm:odContentZone>
+									</sm:Widget>
+									<sm:callSubModel/>
+								</sm:WSection>
+							</sm:odContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="legal">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_od/widg/pb.odwidget">
+							<sm:odContentZone key="zContent">
+								<sm:WSection style="pbLegal">
+									<sm:label>
+										<sm:fixedTitle value="￼;legal￼"/>
+									</sm:label>
+									<sm:WFlowArea style="pbLegalArea">
+										<sm:label/>
+									</sm:WFlowArea>
+									<sm:Widget sc:refUri="/academic/gen/_od/widg/pbTitle.odwidget">
+										<sm:odContentZone key="zKey">
+											<sm:fixedString value="￼;Texte légal￼"/>
+										</sm:odContentZone>
+										<sm:odContentZone key="zValue">
+											<sm:dynamicString>
+												<sm:freeSelect xpath="op:pbTi/sp:title"/>
+											</sm:dynamicString>
+										</sm:odContentZone>
+									</sm:Widget>
+									<sm:callSubModel/>
+								</sm:WSection>
+							</sm:odContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="simul">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_od/widg/pb.odwidget">
+							<sm:odContentZone key="zContent">
+								<sm:WSection style="pbSimul">
+									<sm:label>
+										<sm:fixedTitle value="￼;simul￼"/>
+									</sm:label>
+									<sm:WFlowArea style="pbSimulArea">
+										<sm:label/>
+									</sm:WFlowArea>
+									<sm:Widget sc:refUri="/academic/gen/_od/widg/pbTitle.odwidget">
+										<sm:odContentZone key="zKey">
+											<sm:fixedString value="￼;Simulateur￼"/>
+										</sm:odContentZone>
+										<sm:odContentZone key="zValue">
+											<sm:dynamicString>
+												<sm:freeSelect xpath="op:pbTi/sp:title"/>
+											</sm:dynamicString>
+										</sm:odContentZone>
+									</sm:Widget>
+									<sm:callSubModel/>
+								</sm:WSection>
+							</sm:odContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+		</sm:inDataOrder>
+	</sm:content>
+</sm:compositionOdtTransf>

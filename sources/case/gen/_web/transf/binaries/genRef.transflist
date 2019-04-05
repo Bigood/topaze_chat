@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformer sc:refUri="/case/gen/_web/transf/binaries/genRef/avi@genRef.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/binaries/genRef/doc@genRef.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/binaries/genRef/eWeb@genRef.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/binaries/genRef/flash@genRef.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/binaries/genRef/flv@genRef.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/binaries/genRef/gif@genRef.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/binaries/genRef/jpeg@genRef.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/binaries/genRef/mov@genRef.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/binaries/genRef/mp3@genRef.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/binaries/genRef/mpg@genRef.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/binaries/genRef/odg@genRef.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/binaries/genRef/odp@genRef.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/binaries/genRef/ods@genRef.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/binaries/genRef/odt@genRef.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/binaries/genRef/opus@genRef.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/binaries/genRef/pdf@genRef.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/binaries/genRef/png@genRef.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/binaries/genRef/ppt@genRef.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/binaries/genRef/rm@genRef.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/binaries/genRef/webm@genRef.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/binaries/genRef/wmv@genRef.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/binaries/genRef/xls@genRef.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/binaries/genRef/zip@genRef.transf"/>
+</sm:transformerList>

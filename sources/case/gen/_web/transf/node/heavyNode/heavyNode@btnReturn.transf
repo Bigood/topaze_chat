@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/case/model/node/heavyNode.model"/>
+	<sm:axis code="btnReturn"/>
+	<sm:content format="xhtml">
+		<sm:WLink widgetClass="btnNav btnReturn">
+			<sm:label>
+				<sm:title>
+					<sm:fixedTitle value="￼;Retour au menu￼"/>
+				</sm:title>
+			</sm:label>
+			<sm:labelTitle>
+				<sm:title>
+					<sm:compositionTitle prefix="￼;Retour au menu de l'étape (￼" suffix="￼;)￼"/>
+					<sm:fixedTitle value="￼;Retour au menu de l'étape￼"/>
+				</sm:title>
+			</sm:labelTitle>
+			<sm:link>
+				<sm:lookForExistingModelPage>
+					<sm:target>
+						<sm:current axis="nav"/>
+					</sm:target>
+					<sm:navContext>
+						<sm:currentNav/>
+					</sm:navContext>
+				</sm:lookForExistingModelPage>
+			</sm:link>
+		</sm:WLink>
+	</sm:content>
+</sm:compositionXhtmlTransf>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Ua/assmntUa.model"/>
+	<sm:axis code="result"/>
+	<sm:navigation>
+		<sm:page template="eval">
+			<sm:title>
+				<sm:fixedTitle value="￼;Résultats du test￼"/>
+			</sm:title>
+			<sm:mainZone format="xhtml">
+				<sm:for codes="quiz">
+					<sm:callSubModel axis="score"/>
+				</sm:for>
+				<sm:WHeadingBlock widgetClass="mainContent">
+					<sm:title>
+						<sm:fixedTitle value="￼;Résultats du test￼"/>
+					</sm:title>
+					<sm:WFreeBlock>
+						<div xmlns="http://www.w3.org/1999/xhtml" class="bkSolResOut">
+							<sm:callModel>
+								<sm:current axis="score"/>
+							</sm:callModel>
+						</div>
+					</sm:WFreeBlock>
+					<sm:WFreeBlock>
+						<div xmlns="http://www.w3.org/1999/xhtml" class="resultE">
+							<sm:choose>
+								<sm:when sc:refUri="/academic/gen/_web/cnd/solAssmntUa.cond">
+									<sm:Widget sc:refUri="/academic/gen/_web/widg/nav/gotoSol.uiwidget"/>
+								</sm:when>
+							</sm:choose>
+							<a class="btnCloseE" href="javascript:void(0);" onclick="window.frameElement.hideSubWindow();">￼;Quitter le test￼</a>
+						</div>
+					</sm:WFreeBlock>
+				</sm:WHeadingBlock>
+			</sm:mainZone>
+		</sm:page>
+		<sm:choose>
+			<sm:when sc:refUri="/academic/gen/_web/cnd/solAssmntUa.cond">
+				<sm:for codes="quiz">
+					<sm:page template="player">
+						<sm:title>
+							<sm:fixedTitle value="￼;Solution d'exercice￼"/>
+						</sm:title>
+						<sm:mainZone format="xhtml">
+							<sm:WHeadingBlock>
+								<sm:title>
+									<sm:subModelTitle/>
+								</sm:title>
+								<sm:callSubModel axis="sol"/>
+							</sm:WHeadingBlock>
+						</sm:mainZone>
+						<sm:zone key="counter" format="xhtml">
+							<sm:WSimpleBlock widgetClass="evalCounter">
+								<sm:Widget sc:refUri="/academic/gen/_web/widg/eval/evalCounterSol.uiwidget"/>
+							</sm:WSimpleBlock>
+						</sm:zone>
+					</sm:page>
+				</sm:for>
+				<sm:page template="eval">
+					<sm:title>
+						<sm:fixedTitle value="￼;Fin du test￼"/>
+					</sm:title>
+					<sm:mainZone format="xhtml">
+						<sm:WHeadingBlock widgetClass="mainContent">
+							<sm:title>
+								<sm:fixedTitle value="￼;Fin du test￼"/>
+							</sm:title>
+							<sm:WFreeBlock>
+								<div xmlns="http://www.w3.org/1999/xhtml" class="closeE">
+									<a class="btnCloseE" href="javascript:void(0);" onclick="window.frameElement.hideSubWindow();">￼;Quitter le test￼</a>
+								</div>
+							</sm:WFreeBlock>
+						</sm:WHeadingBlock>
+					</sm:mainZone>
+				</sm:page>
+			</sm:when>
+		</sm:choose>
+	</sm:navigation>
+</sm:compositionXhtmlTransf>

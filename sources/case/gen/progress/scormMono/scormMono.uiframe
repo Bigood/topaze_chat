@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transparentUiFrame xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:uiServices>
+		<sm:uiService sc:refUri="/case/gen/_scormMono/svc/scormMono.uiservice"/>
+		<sm:uiService sc:refUri="/case/gen/_scormMono/svc/scormTopaze.uiservice"/>
+		<sm:uiService sc:refUri="/case/gen/_web/svc/scPreload.uiservice"/>
+		<sm:uiService sc:refUri="/academic/gen/_web/svc/scSearch.uiservice"/>
+	</sm:uiServices>
+	<sm:rootContext>
+		<sm:transparentIframe/>
+	</sm:rootContext>
+	<sm:callRootModel/>
+	<sm:publishFiles sc:refUri="/case/gen/progress/scormMono/scormMono.doss"/>
+	<sm:publishFiles sc:refUri="/case/gen/progress/scormMono/topaze.doss">
+		<sm:callRootModel axis="manifest" codeView="xhtmlContent"/>
+	</sm:publishFiles>
+	<!--Permet d'ouvrir le preview.html au lieu de l'index.html-->
+	<sm:freeInitProperties>destination.root.filepath=preview.html</sm:freeInitProperties>
+</sm:transparentUiFrame>

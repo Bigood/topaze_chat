@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionOdtTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0">
+	<sm:model sc:refUri="/academic/model/Re/refs/ref.model"/>
+	<sm:axis code="genRef"/>
+	<sm:content>
+		<sm:dataBlock category="ref">
+			<sm:overrideContentDeclaration/>
+			<sm:blockId>
+				<sm:compositionId/>
+			</sm:blockId>
+			<sm:label>
+				<sm:title>
+					<sm:compositionTitle/>
+				</sm:title>
+			</sm:label>
+			<sm:data>
+				<sm:callCompositionMeta axis="content"/>
+			</sm:data>
+		</sm:dataBlock>
+	</sm:content>
+</sm:compositionOdtTransf>

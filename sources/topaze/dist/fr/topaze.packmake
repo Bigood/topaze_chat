@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:packMake xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:wspDef sc:refUri="/topaze/topaze.wspdef" lang="fr-FR">
+		<sm:welcomeSite sc:refUri="/topaze/dist/fr/res/pres.site" mainFile="index.html" title="Topaze - accueil"/>
+		<sm:webSite url="http://tice.mines-paristech.fr/projetopa/genDocGuide" title="Topaze - documentation"/>
+	</sm:wspDef>
+</sm:packMake>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/root/webRoot.model"/>
+	<sm:axis code="btnHelp"/>
+	<!--pas de part help dans Opale, mais ceci est gardé en prévision d'extension-->
+	<sm:content format="xhtml">
+		<sm:for codes="help">
+			<sm:WFreeBlock>
+				<span xmlns="http://www.w3.org/1999/xhtml" class="hidden"> | </span>
+			</sm:WFreeBlock>
+			<sm:WLink widgetClass="helpBtn">
+				<sm:label>
+					<sm:callModel>
+						<sm:current axis="lblBtnHelp"/>
+					</sm:callModel>
+				</sm:label>
+				<sm:labelTitle>
+					<sm:title>
+						<sm:fixedTitle value="￼;Aide (nouvelle fenêtre)￼"/>
+					</sm:title>
+				</sm:labelTitle>
+				<sm:link target="newWindow">
+					<sm:behavior addLinkInHref="yes"/>
+					<sm:windowFeatures toolbar="no" menubar="no"/>
+					<sm:page template="tools">
+						<sm:title>
+							<sm:fixedTitle value="￼;Aide￼"/>
+						</sm:title>
+						<sm:outlineClasses>
+							<sm:fixedString value="help"/>
+						</sm:outlineClasses>
+						<sm:mainZone format="xhtml">
+							<sm:callSubModel axis="view"/>
+						</sm:mainZone>
+					</sm:page>
+				</sm:link>
+			</sm:WLink>
+		</sm:for>
+	</sm:content>
+</sm:compositionXhtmlTransf>

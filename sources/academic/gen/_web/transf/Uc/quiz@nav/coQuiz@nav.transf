@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:genericWebSiteTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/coQuiz.model"/>
+	<sm:axis code="nav"/>
+	<sm:navigation>
+		<sm:page template="page">
+			<sm:title>
+				<sm:dynamicString>
+					<sm:freeSelect xpath="if(*[local-name()='exeM']/sp:title,*[local-name()='exeM']/sp:title,&quot;￼Liste d'exercices￼&quot;)"/>
+				</sm:dynamicString>
+			</sm:title>
+			<sm:outlineClasses>
+				<sm:fixedString value="mnu_coQuiz"/>
+			</sm:outlineClasses>
+			<sm:mainZone format="xhtml">
+				<scBlock xmlns="http://www.w3.org/1999/xhtml" class="mainContent coQuizContent">
+					<hx class="mainContent_ti coQuiz">
+						<sm:choose>
+							<sm:when xpath="*[local-name()='exeM']/sp:title">
+								<sm:callModel view="fullTitleText">
+									<sm:current/>
+								</sm:callModel>
+							</sm:when>
+							<sm:otherwise>￼;Exercice￼</sm:otherwise>
+						</sm:choose>
+					</hx>
+					<sm:Widget sc:refUri="/academic/gen/_web/widg/util/noJsWarn.uiwidget"/>
+					<sm:Widget sc:refUri="/academic/gen/_web/widg/refs/kwrdEntries.uiwidget"/>
+					<div class="divQuiz">
+						<sm:choose>
+							<sm:when sc:refUri="/academic/gen/_web/cnd/solQuiz.cond">
+								<sm:callModel view="xhtmlContent">
+									<sm:current/>
+								</sm:callModel>
+							</sm:when>
+							<sm:otherwise>
+								<sm:callModel view="xhtmlContent">
+									<sm:current axis="noSol"/>
+								</sm:callModel>
+							</sm:otherwise>
+						</sm:choose>
+					</div>
+				</scBlock>
+			</sm:mainZone>
+			<sm:zone key="zIconPage" format="xhtml">
+				<div xmlns="http://www.w3.org/1999/xhtml" class="decoTrainUc"/>
+			</sm:zone>
+			<sm:zone key="zLegal" format="xhtml">
+				<sm:callModel view="xhtmlContent">
+					<sm:current axis="legal"/>
+				</sm:callModel>
+			</sm:zone><!--ATTENTION l'élément suivant à été ajouté en XSL par la dérivation.--><sm:zone xmlns:op="utc.fr:ics/opale3" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sext="http://www.utc.fr/ics/scenari/v3/modeling/extension" format="xhtml" key="zCoach"><sm:callModel><sm:lookForAscendants axis="coach" direction="currentToRoot"><sm:callableModel sc:refUri="/case/model/node/heavyNode.model"/></sm:lookForAscendants></sm:callModel></sm:zone>
+			<sm:zone key="zKeywords" format="text">
+				<sm:callModel view="xhtmlContent">
+					<sm:root axis="keywds"/>
+				</sm:callModel>
+				<sm:callModel view="xhtmlContent">
+					<sm:current axis="keywds"/>
+				</sm:callModel>
+			</sm:zone>
+		</sm:page>
+	</sm:navigation>
+</sm:genericWebSiteTransf>

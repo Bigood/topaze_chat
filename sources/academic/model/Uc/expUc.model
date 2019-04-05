@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionPrim name="￼;Grain de contenu￼" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:help quickHelp="￼;Contient du contenu expositif￼"/>
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="expUc" itemExtension="xml"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/academic/model/metaData/uM.model" usage="required"/>
+		<sm:part code="pb" name="￼;Contenu￼" family="content" internalized="always" usage="optional">
+			<sm:allowedModel sc:refUri="/academic/model/Pb/pb.model"/>
+			<sm:allowedModel sc:refUri="/academic/model/Dialogue/dialogue.model"/>
+		</sm:part>
+		<sm:set usage="optional">
+			<sm:part code="div" name="￼;Partie￼" family="sub-level" internalized="always">
+				<sm:help quickHelp="￼;Structure le grain pédagogique et contient du contenu expositif￼"/>
+				<sm:meta sc:refUri="/academic/model/_edt/filters/filter.model" usage="optional"/>
+				<sm:allowedModel sc:refUri="/academic/model/Uc/expUcDiv.model"/>
+			</sm:part>
+		</sm:set>
+	</sm:structure>
+	<sm:authoring>
+		<sm:icon sc:refUri="/academic/model/_ico/expUcSmall.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼?note=utilis%C3%A9%20dans%20un%20nom%20de%20fichier%20(sans%20accent%20ou%20caract%C3%A8res%20sp%C3%A9ciaux%20!);grain￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:formEditor indentXml="true">
+			<sm:composition>
+				<sm:standardWidget tagStyle="font-family:arial;font-size:1.8em; background-color:#4668ad; color:white; -moz-border-radius:5px; -moz-padding-start:4px; -moz-padding-end:4px;">
+					<sm:iconTag sc:refUri="/academic/model/_ico/expUc.png"/>
+				</sm:standardWidget>
+			</sm:composition>
+			<sm:part refCode="pb">
+				<sm:hiddenWidget hideChildren="no"/>
+			</sm:part>
+			<sm:part refCode="div">
+				<sm:stylableWidget displayMode="auto">
+					<sm:styles>
+						<sm:container style="border:3px dotted #8f8f8f;margin-top:3px;margin-bottom:3px;">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/partieBig.png"/>
+								<sm:name style="margin-left:5px; color:#8f8f8f; font-size:1.4em; font-family:arial"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container style="border-color:#c1c1c1;">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/partieBigFade.png"/>
+								<sm:name style="color:#c1c1c1;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openBig.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed" statusCondition="empty">
+						<sm:container style="border:none;margin:0px;">
+							<sm:head>
+								<sm:name style="font-size:0.8em;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+		</sm:formEditor>
+		<sm:formEditor key="internalise" indentXml="true">
+			<sm:part refCode="pb">
+				<sm:hiddenWidget hideChildren="no"/>
+			</sm:part>
+			<sm:part refCode="div">
+				<sm:stylableWidget displayMode="auto">
+					<sm:styles>
+						<sm:container style="border:2px dotted #8f8f8f;margin-top:3px;margin-bottom:3px;">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/partieSmall.png"/>
+								<sm:name style="margin-left:5px; color:#8f8f8f;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container style="border-color:#c1c1c1;">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/partieSmallFade.png"/>
+								<sm:name style="color:#c1c1c1"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openSmall.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed" statusCondition="empty">
+						<sm:container style="border:none;margin:0px;">
+							<sm:head>
+								<sm:name style="font-size:0.8em;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+		</sm:formEditor>
+		<!--ATTENTION l'élément suivant a été ajouté en XSL par la dérivation.-->
+		<sm:formEditor key="expNodeIntern" indentXml="true">
+			<sm:composition>
+				<sm:callMetaEditor key="expNodeIntern"/>
+			</sm:composition>
+			<sm:part refCode="pb">
+				<sm:hiddenWidget hideChildren="no"/>
+			</sm:part>
+			<sm:part refCode="div">
+				<sm:stylableWidget displayMode="auto">
+					<sm:styles>
+						<sm:container style="border:2px dotted #8f8f8f;margin-top:3px;margin-bottom:3px;">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/partieSmall.png"/>
+								<sm:name style="margin-left:5px; color:#8f8f8f;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container style="border-color:#c1c1c1;">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/partieSmallFade.png"/>
+								<sm:name style="color:#c1c1c1"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openSmall.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:compositionPrim>

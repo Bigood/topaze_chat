@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Fichier SRT￼" category="￼;Ressources￼">
+	<sm:help quickHelp="￼;SRT est un format standard de sous-titres.￼"/>
+	<sm:identification extensions="srt" mimeTypes="text/plain"/>
+	<sm:structure/>
+	<sm:authoring>
+		<sm:preview>
+			<sm:htmlViewer>
+				<sm:fromBinary/>
+			</sm:htmlViewer>
+		</sm:preview>
+		<sm:icon sc:refUri="/binaries/srt/res/srt.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;res￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+	</sm:authoring>
+</sm:binaryPrim>

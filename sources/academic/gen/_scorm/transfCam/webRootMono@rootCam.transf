@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><sma:scormCamCompoWebSiteTransf xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/root/webRoot.model"/>
+	<sm:axis code="rootCam"/>
+	<sm:fullTitleText>
+		<sm:callSubModel codes="ue" axis="title"/>
+	</sm:fullTitleText>
+	<sm:shortTitleText>
+		<sm:callSubModel codes="ue" axis="sTitle"/>
+	</sm:shortTitleText>
+	<sm:camOrganization>
+		<sm:itemSco>
+			<sm:title>
+				<sm:compositionTitle/>
+				<sm:fixedTitle value="￼;[Contenu non titré]￼"/>
+			</sm:title>
+			<sm:itemBody>
+				<sm:callModel>
+					<sm:current axis="rootModel"/>
+				</sm:callModel>
+			</sm:itemBody>
+		</sm:itemSco>
+	</sm:camOrganization>
+</sma:scormCamCompoWebSiteTransf>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Document PDF￼" category="￼;Ressources￼">
+	<sm:help quickHelp="￼; Ressource au format PDF. ￼"/>
+	<sm:identification extensions="pdf" mimeTypes="application/pdf"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/academic/model/metaData/binDocM.model" usage="optional"/>
+	</sm:structure>
+	<sm:authoring>
+		<!--Preview PDF = crash sous mac si plugin non installé-->
+		<!--
+
+<sm:previewBlock xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+
+	<sm:htmlViewer>
+
+		<sm:fromBinary/>
+
+	</sm:htmlViewer>
+
+</sm:previewBlock>-->
+		<sm:icon sc:refUri="/binaries/pdf/_res/pdf.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;res￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+	</sm:authoring>
+</sm:binaryPrim>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="accessBtns">
+	<sm:fillTemplateBuffers>
+		<!--Adaptation du menu d'accessibilité-->
+		<sm:postXslFragment keyXsl="xhtml">&lt;xsl:template match="ul[contains(@id,'accessibility')]"&gt;
+	&lt;xsl:variable name="vHasMnu" select="//div[@id='tplMnu']/descendant::text()[string-length(normalize-space())&amp;gt;0]"/&gt;
+	&lt;xsl:variable name="vHasNav" select="//div[@id='tplRgt']/descendant::a[containWord(@class,'navBtn')]"/&gt;
+	&lt;xsl:variable name="vHasTls" select="//div[@id='tplLft']/descendant::a[containWord(@class,'modeBtn')]"/&gt;
+	&lt;xsl:copy&gt;
+		&lt;xsl:apply-templates select="@*"/&gt;
+		&lt;xsl:apply-overlays/&gt;
+		&lt;xsl:apply-templates select="*[contains(@class, 'Content')]"/&gt;
+		&lt;xsl:if test="$vHasMnu"&gt;
+			&lt;xsl:apply-templates select="*[contains(@class, 'Menu')]"/&gt;
+		&lt;/xsl:if&gt;
+		&lt;xsl:if test="$vHasNav"&gt;
+			&lt;xsl:apply-templates select="*[contains(@class, 'Nav')]"/&gt;
+		&lt;/xsl:if&gt;
+		&lt;xsl:if test="$vHasTls"&gt;
+			&lt;xsl:apply-templates select="*[contains(@class, 'Tools')]"/&gt;
+		&lt;/xsl:if&gt;
+		&lt;xsl:apply-templates select="*[contains(@class, 'Foot')]"/&gt;
+	&lt;/xsl:copy&gt;
+&lt;/xsl:template&gt;
+</sm:postXslFragment>
+	</sm:fillTemplateBuffers>
+	<sm:content>
+		<ul xmlns="http://www.w3.org/1999/xhtml" id="accessibility">
+			<li class="tplWaiContent">
+				<a class="waiBtn contentWaiBtn" href="#content" title="￼;aller au contenu￼">
+					<span>￼;contenu￼</span>
+				</a>
+			</li>
+			<li class="tplWaiMenu">
+				<a class="waiBtn menuWaiBtn" href="#menu" title="￼;aller au menu￼">
+					<span>￼;menu￼</span>
+				</a>
+			</li>
+			<li class="tplWaiNav">
+				<a class="waiBtn navWaiBtn" href="#navigation" title="￼;aller à la navigation￼">
+					<span>￼;navigation￼</span>
+				</a>
+			</li>
+			<li class="tplWaiTools">
+				<a class="waiBtn toolsWaiBtn" href="#tools" title="￼;aller aux outils￼">
+					<span>￼;outils￼</span>
+				</a>
+			</li>
+			<li class="tplWaiFoot">
+				<a class="waiBtn footWaiBtn" href="#footer" title="￼;aller au pied de page￼">
+					<span>￼;pied de page￼</span>
+				</a>
+			</li>
+		</ul>
+	</sm:content>
+</sm:openUiWidget>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryOdTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/math/latex/mathTex.model"/>
+	<!--Suppression pour éviter les sous titres formule : formule 1-->
+	<!--
+
+<sm:fullTitleText xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+
+	<sm:fixedString value="￼;Formule￼"/>
+
+</sm:fullTitleText>-->
+	<sm:content>
+		<sm:WImage globalStyle="viewPicture">
+			<sm:binaryUrl>
+				<sm:freeTransform code="latex2img" options="resolution=300&amp;scale=1.2"/>
+				<sm:imageTransform>
+					<sm:scale ratio="1" sourceDpi="300"/>
+					<sm:dimBounds unit="cm" maxWidth="15" maxHeight="22"/>
+					<sm:outputPNG/>
+				</sm:imageTransform>
+			</sm:binaryUrl>
+		</sm:WImage>
+	</sm:content>
+</sm:binaryOdTransf>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Classeur Microsoft Excel￼" category="￼;Ressources￼">
+	<sm:help quickHelp="￼; Ressource au format Microsoft Excel. ￼"/>
+	<sm:identification extensions="xls" mimeTypes="application/vnd.ms-excel"/>
+	<sm:identification extensions="xlsx" mimeTypes="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/academic/model/metaData/binDocM.model" usage="optional"/>
+	</sm:structure>
+	<sm:authoring>
+		<sm:icon sc:refUri="/binaries/xls/_res/xls.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;res￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:emptyFile sc:refUri="/binaries/xls/_res/empty.xls" extension="xls"/>
+		<sm:emptyFile sc:refUri="/binaries/xls/_res/empty.xlsx" extension="xlsx"/>
+	</sm:authoring>
+</sm:binaryPrim>

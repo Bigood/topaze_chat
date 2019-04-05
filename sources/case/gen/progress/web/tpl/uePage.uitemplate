@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiTemplate xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" pageUnicityCriterion="hierarchicalContext" info="Page pour les ressources OPALE">
+	<sm:head>
+		<sm:windowTitle>
+			<sm:rootTitle type="fullTitle"/>
+			<sm:fixedString value=" - "/>
+			<sm:pageTitle/>
+		</sm:windowTitle>
+		<sm:meta name="keywords">
+			<sm:callRootModel axis="keywds"/>
+		</sm:meta>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/tpl/htmlMeta.uiwidget"/>
+		<sm:styleSheet src="css/html.css" srcFrom="skin"/>
+		<sm:styleSheet src="css/struct.css" srcFrom="skin"/>
+		<sm:styleSheet src="css/struct_page.css" srcFrom="skin"/>
+		<sm:styleSheet src="css/transf.css" srcFrom="skin"/>
+		<sm:styleSheet src="css/btn.css" srcFrom="skin"/>
+		<sm:styleSheet src="css/indexes.css" srcFrom="skin"/>
+		<sm:styleSheet src="css/assmnt.css" srcFrom="skin"/>
+		<sm:styleSheet src="ue/css/assmnt_train.css" srcFrom="skin"/>
+		<sm:styleSheet src="ue/css/buttons.css" srcFrom="skin"/>
+		<sm:styleSheet src="ue/css/mnu_child.css" srcFrom="skin"/>
+		<sm:styleSheet src="ue/css/mnu_page.css" srcFrom="skin"/>
+		<sm:styleSheet src="ue/css/transf.css" srcFrom="publishFiles"/>
+		<sm:Widget sc:refUri="/case/gen/_web/wdt/mgr/histMgr.uiwidget"/>
+		<sm:Widget sc:refUri="/case/gen/_web/wdt/mgr/topazeMgr.uiwidget"/>
+		<sm:Widget sc:refUri="/case/gen/progress/web/wdt/mgr/tplMgr.uiwidget"/>
+		<sm:Widget sc:refUri="/case/gen/_web/wdt/search/indexContent.uiwidget"/>
+		<sm:Widget sc:refUri="/case/gen/_web/wdt/search/searchMgr.uiwidget"/>
+		<sm:Widget sc:refUri="/case/gen/_web/wdt/util/pageDescJason.uiwidget"/>
+		<sm:callRootModel axis="genSpecific" navCtx="preserveCurrent"/>
+	</sm:head>
+	<sm:body>
+		<div xmlns="http://www.w3.org/1999/xhtml" id="tplFra" class="uePage">
+			<div id="tplTop">
+				<div class="titleRoot">
+					<span>
+						<sm:title>
+							<sm:rootTitle type="fullTitle"/>
+						</sm:title>
+					</span>
+				</div>
+			</div>
+			<div id="tplMain">
+				<sm:choose>
+					<sm:when sc:refUri="/case/gen/_web/cnd/heavySpider.cond">
+						<div id="tplCo" class="spider">
+							<sm:callMainZone format="xhtml"/>
+							<sm:WBasket key="footnotes" widgetClass="footnotes" tagName="ol" suppressIfEmpty="yes"/>
+						</div>
+					</sm:when>
+					<sm:otherwise>
+						<sm:Widget sc:refUri="/case/gen/_web/wdt/ue/ueMnuMgr.uiwidget"/>
+						<div id="tplCo" class="tplCoMnuOn outline">
+							<sm:callMainZone format="xhtml"/>
+							<sm:WBasket key="footnotes" widgetClass="footnotes" tagName="ol" suppressIfEmpty="yes"/>
+						</div>
+					</sm:otherwise>
+				</sm:choose>
+			</div>
+			<div id="tplLft" class="barClosed">
+				<sm:Widget sc:refUri="/case/gen/progress/web/wdt/btn/btnsLft.uiwidget"/>
+				<div class="lftCo">
+					<sm:callRootModel axis="tools"/>
+					<sm:Widget sc:refUri="/case/gen/_web/wdt/btns/tplNav.uiwidget"/>
+				</div>
+			</div>
+			<div id="tplRgt" class="barClosed">
+				<sm:Widget sc:refUri="/case/gen/progress/web/wdt/btn/btnsRgt.uiwidget"/>
+				<div class="rgtCo">
+					<div id="tplArc" style="visibility:hidden;">
+						<sm:choose>
+							<sm:when sc:refUri="/case/gen/_web/cnd/heavySpider.cond">
+								<sm:Widget sc:refUri="/case/gen/_web/wdt/ue/ueReturn.uiwidget"/>
+							</sm:when>
+							<sm:otherwise>
+								<sm:Widget sc:refUri="/case/gen/_web/wdt/ue/ueArc.uiwidget"/>
+							</sm:otherwise>
+						</sm:choose>
+					</div>
+					<sm:callZone key="zCoach" format="xhtml"/>
+				</div>
+			</div>
+		</div>
+		<sm:script src="js/skin.js" srcFrom="skin" type="text/JavaScript"/>
+	</sm:body>
+</sm:openUiTemplate>

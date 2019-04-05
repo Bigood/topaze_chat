@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:outlineUiWidget code="evalCounter" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:scope>
+		<sm:all startAtLevel="0"/>
+	</sm:scope>
+	<sm:freeProgressStatus numPagesToExcludeAfter="1">
+		<sm:xsl sc:refUri="/academic/gen/_web/widg/eval/evalCounter.xsl"/>
+	</sm:freeProgressStatus>
+</sm:outlineUiWidget>

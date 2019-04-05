@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="markedPageBtn">
+	<sm:widgetPublishFiles sc:refUri="/academic/gen/_scorm/widg/markedPageBtn.doss"/>
+	<sm:fillTemplateBuffers>
+		<sm:standardLibrary codeLib="PaLib"/>
+		<!--Ajout init JS de tplMgr à la page.-->
+		<sm:postXslFragment keyXsl="xhtml">&lt;xsl:overlay match="body" priority="100"&gt;
+	&lt;xsl:value-of select="execute(java:append($vBufJs, 'markedPageMgr.init();'))"/&gt;
+&lt;/xsl:overlay&gt;</sm:postXslFragment>
+		<sm:linkScript path="markedPageMgr.js" pathFrom="localPublishFiles" sortKey="A"/>
+	</sm:fillTemplateBuffers>
+	<sm:content>
+		<span xmlns="http://www.w3.org/1999/xhtml" id="markedPageBtn">
+			<a href="#" onclick="markedPageMgr.toggleMarkCurrentPage(); return false;" title="￼Page vue￼">
+				<span>￼?note=Page%20vue;vu￼</span>
+			</a>
+		</span>
+	</sm:content>
+</sm:openUiWidget>

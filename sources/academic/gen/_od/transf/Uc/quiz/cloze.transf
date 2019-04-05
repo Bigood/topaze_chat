@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><sma:assmntUnitEditOdTransf xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/cloze.model"/>
+	<sm:content>
+		<sm:callQuestionModel axis="notImp"/>
+		<sm:WInputZone>
+			<sm:gapInText>
+				<sm:callTextModel/>
+			</sm:gapInText>
+		</sm:WInputZone>
+	</sm:content>
+</sma:assmntUnitEditOdTransf>

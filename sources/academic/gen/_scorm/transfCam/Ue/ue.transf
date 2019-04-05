@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><sma:scormCamCompoWebSiteTransf xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/Ue/ue.model"/>
+	<sm:camOrganization>
+		<sm:callModel>
+			<sm:current axis="refGen"/>
+		</sm:callModel>
+		<sm:itemSco>
+			<sm:title>
+				<sm:fixedTitle value="￼;Accueil￼"/>
+			</sm:title>
+			<sm:itemBody>
+				<sm:callModel>
+					<sm:root axis="home"/>
+				</sm:callModel>
+			</sm:itemBody>
+		</sm:itemSco>
+		<sm:choose>
+			<sm:when codes="obj">
+				<sm:itemSco>
+					<sm:title>
+						<sm:fixedTitle value="￼;Objectifs￼"/>
+					</sm:title>
+					<sm:itemBody>
+						<sm:callModel>
+							<sm:current axis="obj"/>
+						</sm:callModel>
+					</sm:itemBody>
+				</sm:itemSco>
+			</sm:when>
+		</sm:choose>
+		<sm:for codes="intro">
+			<sm:choose>
+				<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+					<sm:itemSco>
+						<sm:title>
+							<sm:fixedTitle value="￼;Introduction￼"/>
+						</sm:title>
+						<sm:itemBody>
+							<sm:callSubModel axis="intro"/>
+						</sm:itemBody>
+					</sm:itemSco>
+				</sm:when>
+			</sm:choose>
+		</sm:for>
+		<sm:inDataOrder>
+			<sm:for codes="div courseUa">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:callSubModel/>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="courseUc trainUc practUc assmntUa">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:itemSco>
+							<sm:title>
+								<sm:subModelTitle/>
+								<sm:fixedTitle value="￼;[Contenu non titré]￼"/>
+							</sm:title>
+							<sm:itemBody>
+								<sm:callSubModel/>
+							</sm:itemBody>
+						</sm:itemSco>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="trainUcMcqSur trainUcMcgSur trainUcMcqMur trainUcMcgMur trainUcMatch trainUcOrdWord trainUcCloze trainUcField trainUcNumerical trainUcCoQuiz">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:itemSco>
+							<sm:title>
+								<sm:dynamicString>
+									<sm:freeSelect xpath="if(getFullTitleText(gotoSubModel()),concat('Exercice : ',getFullTitleText(gotoSubModel())),'Exercice')"/>
+								</sm:dynamicString>
+							</sm:title>
+							<sm:itemBody>
+								<sm:callSubModel axis="nav"/>
+							</sm:itemBody>
+						</sm:itemSco>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+		</sm:inDataOrder>
+		<sm:for codes="conclu">
+			<sm:choose>
+				<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+					<sm:itemSco>
+						<sm:title>
+							<sm:fixedTitle value="￼;Conclusion￼"/>
+						</sm:title>
+						<sm:itemBody>
+							<sm:callSubModel axis="conclu"/>
+						</sm:itemBody>
+					</sm:itemSco>
+				</sm:when>
+			</sm:choose>
+		</sm:for>
+	</sm:camOrganization>
+</sma:scormCamCompoWebSiteTransf>

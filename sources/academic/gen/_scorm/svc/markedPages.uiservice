@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeUiService code="markedPages" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:publicService key="markedPages"/>
+	<sm:serviceFiles sc:refUri="/academic/gen/_scorm/svc/markedPage.doss">
+		<sm:linkScriptForDeclaringService path="markedPage.js" sortKey="XmarkedPage"/>
+	</sm:serviceFiles>
+</sm:freeUiService>

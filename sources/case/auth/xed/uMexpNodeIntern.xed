@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeXed xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:se="http://www.utc.fr/ics/scenari/v3/editing" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" code="op_uM">
+	<sm:namespaceToDeclare prefix="op" ns="utc.fr:ics/opale3"/>
+	<sm:namespaceToDeclare prefix="sp" ns="http://www.utc.fr/ics/scenari/v3/primitive"/>
+	<se:editor se:namespaces="true">
+    <se:lib xmlns:se="http://www.utc.fr/ics/scenari/v3/editing">
+        <element se:declareNs="op sp sc" se:title="Métadonnées" se:name="op:uM" se:bind="element"
+            se:id="op_uM">
+            <childs>
+                <se:ref se:refid="s_content"/>
+            </childs>
+        </element>
+        <hiddenElement se:declareNs="op sp sc" se:title="Métadonnées" se:name="op:uM"
+            se:bind="element" se:id="op_uM:hideHeader">
+            <childs>
+                <se:ref se:refid="s_content"/>
+            </childs>
+        </hiddenElement>
+        <se:template se:id="s_content">
+<hiddenElement se:bind="element" se:name="sp:title" se:card="?"/>
+<hiddenElement se:bind="element" se:name="sp:sTitle" se:card="?"/>
+<hiddenElement se:bind="element" se:name="sp:info" se:card="?"/>
+
+        
+
+
+
+        </se:template>
+    </se:lib>
+
+	</se:editor>
+</sm:freeXed>

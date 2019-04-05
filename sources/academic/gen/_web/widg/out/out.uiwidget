@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:outlineUiWidget code="mnu" info="Menu de navigation" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:scope>
+		<sm:all startAtLevel="1"/>
+	</sm:scope>
+	<sm:freeContent>
+		<sm:xsl sc:refUri="/academic/gen/_web/widg/out/out.xsl"/>
+	</sm:freeContent>
+</sm:outlineUiWidget>

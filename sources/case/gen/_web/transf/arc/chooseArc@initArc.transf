@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeXslWebSiteTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/case/model/arc/chooseArc.model"/>
+	<sm:axis code="initArc"/>
+	<sm:content>
+		<sm:xsl sc:refUri="/case/gen/_web/transf/arc/chooseArc@initArc.xsl"/>
+		<sm:callModel sc:refUri="/case/model/index/autoIndex.model" axis="calc" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/case/model/node/assmntNode.model" axis="initArc" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/case/model/node/expNode.model" axis="initArc" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/case/model/node/heavyNode.model" axis="initArc" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/case/model/node/navNode.model" axis="initArc" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/case/model/index/autoIndex.model" axis="initArc" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/case/model/index/userIndex.model" axis="initArc" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/academic/model/Re/applet/applet.model" axis="initArc" codeView="xhtmlContent"/>
+	</sm:content>
+</sm:freeXslWebSiteTransf>

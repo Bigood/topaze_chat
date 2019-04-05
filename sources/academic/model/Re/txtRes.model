@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="￼;Texte illustré￼">
+	<sm:help quickHelp="￼;Insérer un texte accompagné d'une illustration (à droite ou à gauche)￼"/>
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="txtRes" itemExtension="xml"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/academic/model/Re/txtResM.model" usage="required"/>
+		<sm:part code="txt" name="￼;Texte￼" family="content" internalized="always" usage="required">
+			<sm:allowedModel sc:refUri="/academic/model/Re/txt.model"/>
+		</sm:part>
+		<sm:part code="img" name="￼;Image d'illustration￼" family="content" internalized="never" usage="required">
+			<sm:help quickHelp="￼;Insérer une image à une résolution de 300 dpi￼"/>
+			<sm:allowedModel sc:refUri="/binaries/png/png.model"/>
+			<sm:allowedModel sc:refUri="/binaries/jpg/jpeg.model"/>
+			<sm:allowedModel sc:refUri="/binaries/gif/gif.model"/>
+		</sm:part>
+	</sm:structure>
+	<sm:authoring>
+		<sm:formEditor indentXml="true">
+			<sm:part refCode="txt">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/icoTexte.png"/>
+								<sm:name style="display:none"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/icoTexteFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openSmall.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="img">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/icoImage.png"/>
+								<sm:name style="display:none"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/icoImageFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:compositionPrim>

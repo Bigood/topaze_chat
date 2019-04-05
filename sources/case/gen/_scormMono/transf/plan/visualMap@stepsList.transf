@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeXslWebSiteTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/case/model/plan/visualMap/visualMap.model"/>
+	<sm:axis code="stepsList"/>
+	<sm:content>
+		<sm:xsl sc:refUri="/case/gen/_scormMono/transf/plan/visualMap@stepsList.xsl"/>
+		<sm:callModel sc:refUri="/case/model/plan/visualMap/nodeLink.model" codeView="xhtmlContent"/>
+	</sm:content>
+</sm:freeXslWebSiteTransf>

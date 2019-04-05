@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeXed xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:se="http://www.utc.fr/ics/scenari/v3/editing" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" code="op_langM">
+	<sm:normalInternalizedEditor id="op_langM"/>
+	<sm:hideHeaderInternalizedEditor id="op_langM"/>
+	<sm:namespaceToDeclare prefix="op" ns="utc.fr:ics/opale3"/>
+	<sm:namespaceToDeclare prefix="sp" ns="http://www.utc.fr/ics/scenari/v3/primitive"/>
+	<sm:namespaceToDeclare prefix="xul" ns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"/>
+	<se:editor se:namespaces="true">
+		<se:lib>
+			<hiddenElement se:id="op_langM" se:bind="element" se:declareNs="sp op sc" se:title="￼Propriété de langue￼" se:name="op:langM">
+				<childs>
+					<se:ref se:refid="s_content"/>
+				</childs>
+			</hiddenElement>
+			<hiddenElement se:id="op_langM:hideHeader" se:bind="element" se:declareNs="sp op sc" se:title="￼Propriété de langue￼" se:name="op:langM">
+				<childs>
+					<se:ref se:refid="s_content"/>
+				</childs>
+			</hiddenElement>
+			<se:template se:id="s_content">
+				<element se:bind="element" class="property" startAt="80" se:title="￼Langue (code)￼" se:name="sp:code" se:card="?" orientation="horizontal">
+					<childs>
+						<contentElement se:bind="text" class="property">
+							<textInput trim="true" notnull="true" frenchPonct="false" filterRegExp="^[a-z]{2}(-[A-Z]{2})*$" autocompleteProviderXPath="../xul:fixedProvider"/>
+							<fixedProvider>
+								<fpItem value="ar"/>
+								<fpItem value="de"/>
+								<fpItem value="el"/>
+								<fpItem value="en"/>
+								<fpItem value="es"/>
+								<fpItem value="fi"/>
+								<fpItem value="fr"/>
+								<fpItem value="hu"/>
+								<fpItem value="it"/>
+								<fpItem value="ja"/>
+								<fpItem value="la"/>
+								<fpItem value="nl"/>
+								<fpItem value="pt"/>
+								<fpItem value="ro"/>
+								<fpItem value="ru"/>
+								<fpItem value="zh"/>
+							</fixedProvider>
+						</contentElement>
+						<description style="color:silver;font-style: italic;">￼Code de langue ISO639 ou RFC1766 de la forme "en" ou "pt-BR".￼</description>
+					</childs>
+				</element>
+			</se:template>
+		</se:lib>
+	</se:editor>
+</sm:freeXed>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="searchMgr">
+	<sm:widgetPublishFiles sc:refUri="/academic/gen/_web/widg/search/searchMgr.doss"/>
+	<sm:fillTemplateBuffers>
+		<sm:standardLibrary codeLib="PaLib"/>
+		<sm:standardLibrary codeLib="DynUiMgr"/>
+		<sm:linkScript path="searchMgr.js" pathFrom="localPublishFiles" sortKey="B"/>
+	</sm:fillTemplateBuffers>
+	<sm:content/>
+</sm:openUiWidget>

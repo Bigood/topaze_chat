@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Migration Opale 3.4.xxx -> Opale 3.5.000" default="main" basedir=".">
+
+	<restrict id="scenari.wsp.src.all">
+		<srcNode refid="scenari.wsp.src"/>
+		<name name="*.*"/>
+	</restrict>
+	
+	<target name="main">
+		<echo>####### MIGRATION de Opale 3.4.xxx -> Opale 3.5.000</echo>
+		<tstamp><format property="timestamp" pattern="yyMMdd-HHmm"/></tstamp>
+		
+		<echo>--- Fin de la migration ---</echo>
+	</target>
+	
+	
+</project>

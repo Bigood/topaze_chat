@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/math/odf/odf.model"/>
+	<sm:content>
+		<sm:WCaptionBlock widgetClass="resInFlow" position="bottom">
+			<sm:caption>
+				<sm:WFreeBlock>
+					<span xmlns="http://www.w3.org/1999/xhtml" class="capTi">
+						<sm:title>
+							<sm:binaryMeta/>
+						</sm:title>
+					</span>
+				</sm:WFreeBlock>
+				<sm:callBinaryMeta axis="info"/>
+			</sm:caption>
+			<sm:content>
+				<sm:chooseOnBinary>
+					<sm:binary>
+						<sm:odSize>
+							<sm:scaleFromStandardCharSize/>
+						</sm:odSize>
+					</sm:binary>
+					<sm:whenSize widthOver="genProp('bin.size-int',630)*1.1" heightOver="genProp('bin.size-int',630)*1.1">
+						<sm:WImage>
+							<sm:binaryUrl>
+								<sm:odTransform>
+									<sm:scaleFromStandardCharSize/>
+									<sm:sizeBounds maxWidthInPx="genProp('bin.size-int',630)" maxHeightInPx="genProp('bin.size-int',630)"/>
+									<sm:outputPNG/>
+								</sm:odTransform>
+							</sm:binaryUrl>
+							<sm:alt>
+								<sm:callBinaryMeta axis="alt"/>
+							</sm:alt>
+							<sm:declareSize/>
+							<sm:linkOverImage class="imgZoom">
+								<sm:binaryUrl>
+									<sm:odTransform>
+										<sm:scaleFromStandardCharSize/>
+										<sm:sizeBounds maxWidthInPx="genProp('bin.size.zoom-int',1200)" maxHeightInPx="genProp('bin.size.zoom-int',1200)"/>
+										<sm:outputPNG/>
+									</sm:odTransform>
+								</sm:binaryUrl>
+							</sm:linkOverImage>
+						</sm:WImage>
+					</sm:whenSize>
+					<sm:otherwise>
+						<sm:WImage>
+							<sm:binaryUrl>
+								<sm:odTransform>
+									<sm:scaleFromStandardCharSize/>
+									<sm:sizeBounds maxWidthInPx="genProp('bin.size-int',630)" maxHeightInPx="genProp('bin.size-int',630)"/>
+									<sm:outputPNG/>
+								</sm:odTransform>
+							</sm:binaryUrl>
+							<sm:alt>
+								<sm:callBinaryMeta axis="alt"/>
+							</sm:alt>
+							<sm:declareSize/>
+						</sm:WImage>
+					</sm:otherwise>
+				</sm:chooseOnBinary>
+			</sm:content>
+		</sm:WCaptionBlock>
+	</sm:content>
+</sm:binaryXhtmlTransf>

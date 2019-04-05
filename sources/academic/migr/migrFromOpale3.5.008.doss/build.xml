@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Migration Opale 3.5.008 -> Opale 3.5.009" default="main" basedir=".">
+
+	<restrict id="scenari.wsp.src.all">
+		<srcNode refid="scenari.wsp.src"/>
+		<name name="*.*"/>
+	</restrict>
+	
+	<restrict id="scenari.wsp.src.xml">
+		<srcNode refid="scenari.wsp.src"/>
+		<or>
+			<name name="*.xml"/>
+			<name name="*.applet"/>
+			<name name="*.mWeb"/>
+			<name name="*.ref"/>
+			<name name="*.publi"/>
+			<name name="*.quiz"/>
+		</or>
+	</restrict>
+	
+	<target name="main">
+		<echo>####### MIGRATION de Opale 3.5.008 -> Opale 3.5.009</echo>
+		<tstamp><format property="timestamp" pattern="yyMMdd-HHmm"/></tstamp>
+		
+		<!-- # XSL de migration -->
+		<echo>=> migration des paramètres de odRoot ...</echo>
+		<migrateXsl style="${basedir}/3.5/odRoot-settings.xsl" filterXPath="//op:odRootM/sp:annsettings" filterXPathNs="op:utc.fr:ics/opale3;sc:http://www.utc.fr/ics/scenari/v3/core;sp:http://www.utc.fr/ics/scenari/v3/primitive">
+			<restrict>
+				<srcNode refid="scenari.wsp.src"/>
+				<name name="*.publi"/>
+			</restrict>
+		</migrateXsl>
+
+		<!-- # XSL de migration -->
+		<echo>=> migration des paramètres de webRoot ...</echo>
+		<migrateXsl style="${basedir}/3.5/webRoot-settings.xsl" filterXPath="//op:webRootM/sp:settings[sp:solution or sp:autoEvalSol]" filterXPathNs="op:utc.fr:ics/opale3;sc:http://www.utc.fr/ics/scenari/v3/core;sp:http://www.utc.fr/ics/scenari/v3/primitive">
+			<restrict>
+				<srcNode refid="scenari.wsp.src"/>
+				<name name="*.publi"/>
+			</restrict>
+		</migrateXsl>
+
+		<echo>--- Fin de la migration ---</echo>
+	</target>
+	
+	
+</project>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="centerContentEval">
+	<sm:fillTemplateBuffers>
+		<sm:postXslFragment keyXsl="xhtml">&lt;xsl:overlay match="body"&gt;
+	&lt;xsl:value-of select="execute(java:append($vBufJs, 'new scSiRuleAutoMarginW(&amp;quot;tplCoMarginW&amp;quot;,(tplMgr.fScreenTouch?&amp;quot;ide:tplCo&amp;quot;:&amp;quot;bod:&amp;quot;),true,450,100);'))"/&gt;
+	&lt;xsl:value-of select="execute(java:append($vBufJs, 'new scSiRuleFlexH(&amp;quot;tplCoFlexTop&amp;quot;,(tplMgr.fScreenTouch?&amp;quot;ide:tplCo&amp;quot;:&amp;quot;bod:&amp;quot;),true,.3);'))"/&gt;
+&lt;/xsl:overlay&gt;</sm:postXslFragment>
+	</sm:fillTemplateBuffers>
+	<sm:content>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/tplDynElts/dynSizes.uiwidget"/>
+	</sm:content>
+</sm:openUiWidget>

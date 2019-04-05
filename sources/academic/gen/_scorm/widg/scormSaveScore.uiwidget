@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="scormSaveScore">
+	<sm:content>
+		<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">var scormSaveScorm = scOnLoads[scOnLoads.length] = {
+onLoad : function() {
+   var vScore = Math.round( (scGlobalEval.fScorePts - scGlobalEval.fMinPts) / (scGlobalEval.fMaxPts - scGlobalEval.fMinPts) * 100);
+   if(scServices.scorm2k4 &amp;&amp; scServices.scorm2k4.isScorm2k4Active()) {
+	var vApi = scServices.scorm2k4.getScorm2k4API();
+	vApi.SetValue("cmi.score.scaled", vScore/100 );
+	vApi.SetValue("cmi.score.raw", scGlobalEval.fScorePts );
+	vApi.SetValue("cmi.score.min", scGlobalEval.fMinPts );
+	vApi.SetValue("cmi.score.max", scGlobalEval.fMaxPts );
+	var vPassingScore = vApi.GetValue("cmi.scaled_passing_score") || 1;
+	vApi.SetValue("cmi.success_status", vScore/100&gt;=vPassingScore ? "passed" : "failed");
+	if(scServices.completionStorage) scServices.completionStorage.commit(false);
+	scServices.assmntMgr.commit(true) ;// set des données + commit scorm
+   } else if(scServices.scorm12 &amp;&amp; scServices.scorm12.isScorm12Active()) {
+	var vApi = scServices.scorm12.getScorm12API();
+	vApi.LMSSetValue("cmi.core.score.raw", vScore);
+	vApi.LMSSetValue("cmi.core.score.min", 0 );
+	vApi.LMSSetValue("cmi.core.score.max", 100 );
+	if(scServices.completionStorage) scServices.completionStorage.commit(false)
+	scServices.assmntMgr.commit(true) ;// set des données + commit scorm
+   }
+ },
+ loadSortKey : "ZZ"
+}
+</script>
+	</sm:content>
+</sm:openUiWidget>

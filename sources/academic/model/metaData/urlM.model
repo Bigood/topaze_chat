@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:dataFormPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="￼;Url￼">
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="urlM" itemExtension="xml"/>
+	<sm:structure>
+		<sm:field code="url" name="￼;Url, adresse web￼" occurrence="one">
+			<sm:help quickHelp="￼;Permet de saisir l'adresse de la source sur internet.￼"/>
+			<sm:url/>
+		</sm:field>
+		<sm:field code="title" name="￼;Titre￼" occurrence="zeroOrOne">
+			<sm:help quickHelp="￼;Permet de saisir un libellé du site web, définissant son contenu.￼"/>
+			<sm:string/>
+		</sm:field>
+		<sm:group code="doc" name="￼;Compléments pour un document lié￼" occurrence="zeroOrOne">
+			<sm:help quickHelp="￼;Permet de saisir des précisions si l'url conduit à un document bureautique.￼"/>
+			<sm:field code="type" name="￼;Format du document (PDF...)￼" occurrence="zeroOrOne">
+				<sm:help quickHelp="￼;Permet de définir le format du document (PDF, RTF...).￼"/>
+				<sm:string/>
+			</sm:field>
+			<sm:field code="weight" name="￼;Poids￼" occurrence="zeroOrOne">
+				<sm:help quickHelp="￼;Permet de saisir le poids (en kO) du document, afin d'anticiper le temps de téléchargement.￼"/>
+				<sm:string/>
+			</sm:field>
+			<sm:subData code="lang" name="￼;Langue￼" occurrence="zeroOrOne">
+				<sm:help quickHelp="￼;Permet de préciser le code de la langue du fichier, notamment pour les lecteurs d'écran. Une liste de suggestions apparaît au fur et à mesure de la saisie. ￼"/>
+				<sm:allowedDataModel sc:refUri="/academic/model/metaData/langM.model"/>
+			</sm:subData>
+		</sm:group>
+	</sm:structure>
+	<sm:storage>
+		<sm:fullTitleBuilder>
+			<sm:fieldValue refCode="title"/>
+		</sm:fullTitleBuilder>
+	</sm:storage>
+	<sm:authoring>
+		<sm:formEditor indentXml="true">
+			<sm:urlField refCode="url" defaultStyle="property"/>
+			<sm:subData refCode="lang" editMode="hideRootLevel" defaultStyle="property"/>
+			<sm:group refCode="doc" displayMode="openedByDefault" defaultStyle="property"/>
+			<sm:stringField refCode="type" defaultStyle="property"/>
+			<sm:stringField refCode="weight" defaultStyle="property"/>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:dataFormPrim>

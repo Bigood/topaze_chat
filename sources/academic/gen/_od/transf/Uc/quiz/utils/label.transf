@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionOdtTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/utils/label.model"/>
+	<sm:content>
+		<sm:for codes="*">
+			<sm:callSubModel/>
+		</sm:for>
+	</sm:content>
+</sm:compositionOdtTransf>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><sma:assmntCompositionDhtmlTransf xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns="http://www.w3.org/1999/xhtml">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/coQuiz.model"/>
+	<sm:axis code="score"/>
+	<sm:scenario>
+		<sm:sequence code="score">
+			<sm:saveData>
+				<sm:scoreSessionKey>
+					<sm:fixedKey value="eval"/>
+				</sm:scoreSessionKey>
+			</sm:saveData>
+			<sm:scoreComputing>
+				<sm:computeScoreSubAssmnt codes="trainUcMcqSur trainUcMcqMur trainUcField trainUcNumerical trainUcCloze">
+					<sm:scoreSessionKey>
+						<sm:fixedKey value="eval"/>
+					</sm:scoreSessionKey>
+				</sm:computeScoreSubAssmnt>
+				<sm:postProcessing>
+					<sm:fixBounds minPoints="0" maxPoints="1" scoreModulation="proportionnal"/>
+				</sm:postProcessing>
+			</sm:scoreComputing>
+			<sm:onEnter>
+				<sm:setCompletionStatus status="complete">
+					<sm:responseSessionKey>
+						<sm:fixedKey value="eval"/>
+					</sm:responseSessionKey>
+				</sm:setCompletionStatus>
+			</sm:onEnter>
+		</sm:sequence>
+	</sm:scenario>
+	<sm:assmntBody>
+		<sm:callModel>
+			<sm:current axis="scoreSub"/>
+		</sm:callModel>
+	</sm:assmntBody>
+</sma:assmntCompositionDhtmlTransf>

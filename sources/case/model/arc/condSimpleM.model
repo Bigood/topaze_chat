@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:dataFormPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="￼;Condition sur une étape visitée￼">
+	<sm:identification targetNamespace="kelis.fr:opa" targetPrefix="opa" code="condSimpleM" itemExtension="xml"/>
+	<!--Passer en freePrim pour ajouter des imbrications de and / or / not de plusieurs formules ?-->
+	<sm:structure>
+		<sm:field code="left" name="￼;Étape￼" occurrence="one" family="property">
+			<sm:refItem>
+				<sm:allowedModel sc:refUri="/case/model/node/expNode.model"/>
+				<sm:allowedModel sc:refUri="/case/model/node/heavyNode.model"/>
+				<sm:allowedModel sc:refUri="/case/model/node/assmntNode.model"/>
+				<sm:allowedModel sc:refUri="/case/model/node/navNode.model"/>
+			</sm:refItem>
+		</sm:field>
+		<sm:field code="right" name="￼;Vue￼" occurrence="one" family="property">
+			<sm:enum>
+				<sm:option key="1" name="￼;Oui￼"/>
+				<sm:option key="0" name="￼;Non￼"/>
+			</sm:enum>
+		</sm:field>
+	</sm:structure>
+	<sm:storage/>
+	<sm:authoring>
+		<sm:formEditor indentXml="true">
+			<sm:stringField refCode="left" defaultStyle="property" textStyle="color :#6286cc ;"/>
+			<sm:enumField refCode="right" defaultStyle="property"/>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:dataFormPrim>

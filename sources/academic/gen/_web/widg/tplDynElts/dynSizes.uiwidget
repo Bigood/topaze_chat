@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="dynSizes" info="Widget utilitaire posant dynSizes.js qui est urilisé par d'autres widgets">
+	<sm:widgetPublishFiles sc:refUri="/academic/gen/_web/widg/tplDynElts/dynSizes.doss"/>
+	<sm:fillTemplateBuffers>
+		<sm:standardLibrary codeLib="PaLib"/>
+		<sm:standardLibrary codeLib="SiLib"/>
+		<sm:linkScript path="dynSizes.js" pathFrom="localPublishFiles" sortKey="AA"/>
+	</sm:fillTemplateBuffers>
+	<sm:content/>
+</sm:openUiWidget>

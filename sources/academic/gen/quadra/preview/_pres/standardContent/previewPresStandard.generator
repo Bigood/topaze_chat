@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:interactiveGenerator xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="previewPresStandard" name="￼;Prévisualisation SLIDESHOW (Version &quot;standard&quot;)￼">
+	<sm:modelRoot>
+		<sm:allowedModel sc:refUri="/academic/model/root/presRoot.model"/>
+	</sm:modelRoot>
+	<sm:mode standard="HTML 5" debug="no"/>
+	<sm:uiFrame>
+		<sm:none>
+			<sm:callRootModel axis="root"/>
+		</sm:none>
+	</sm:uiFrame>
+	<sm:transformerList>
+		<sm:transformerList info="sld" sc:refUri="/academic/gen/quadra/pres/pres.transflist"/>
+		<sm:transformerList info="Surcharges">
+			<sm:transformerList info="binaries" sc:refUri="/academic/gen/quadra/preview/_common/binaries/transf.transflist"/>
+		</sm:transformerList>
+		<sm:transformerList info="Filter">
+			<sm:transformer sc:refUri="/academic/gen/quadra/preview/_pres/standardContent/@rootFilter/presRoot@rootFilter.transf"/>
+		</sm:transformerList>
+	</sm:transformerList>
+	<sm:uiTemplateList>
+		<sm:uiTemplate code="root" sc:refUri="/academic/gen/quadra/pres/templates/root.uitemplate"/>
+		<sm:uiTemplate code="slide" sc:refUri="/academic/gen/quadra/pres/templates/slide.uitemplate"/>
+		<sm:uiTemplate code="ref" sc:refUri="/academic/gen/quadra/pres/templates/ref.uitemplate"/>
+	</sm:uiTemplateList>
+	<sm:defaultSkin sc:refUri="/academic/gen/quadra/pres/pres.skin.doss" name="￼;Quadra￼"/>
+</sm:interactiveGenerator>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:dataFormXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/case/model/caseM.model"/>
+	<sm:axis code="home"/>
+	<sm:content>
+		<sm:forField codes="homeUrl">
+			<sm:fieldValueOtherType/>
+		</sm:forField>
+	</sm:content>
+</sm:dataFormXhtmlTransf>

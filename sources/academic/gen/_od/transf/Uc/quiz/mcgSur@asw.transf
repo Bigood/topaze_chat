@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><sma:assmntUnitGmcqOdTransf xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/mcgSur.model"/>
+	<sm:axis code="asw"/>
+	<sm:content>
+		<sm:WChoiceHighlightedImage globalStyle="viewPicture">
+			<sm:callBackgroundImageModel/>
+			<sm:choiceArea>
+				<sm:solutionHighlight>
+					<sm:area strokeWidth="1" strokeColorChecked="#66C" fillColorChecked="#0F02" strokeColorUnchecked="#66C" fillColorUnchecked="#F002"/>
+					<sm:label format="1" fontSizeInPt="10" fontColorChecked="white" fillColorChecked="#66C" fontColorUnchecked="white" fillColorUnchecked="#66C"/>
+				</sm:solutionHighlight>
+			</sm:choiceArea>
+		</sm:WChoiceHighlightedImage>
+		<sm:WQcmTable style="mainTable">
+			<sm:WChoiceLines id="line2" showSolution="yes">
+				<sm:choiceBody>
+					<sm:WParagraph globalStyle="mainTableChoiceNumber">
+						<sm:choiceNumber format="1" prefix="￼;Zone ￼"/>
+					</sm:WParagraph>
+					<sm:callLabelModel/>
+					<sm:callExplanationModel axis="notImp"/>
+				</sm:choiceBody>
+				<sm:imgChecked sc:refUri="/academic/gen/_od/transf/_res/qcu_true.jpg"/>
+				<sm:imgUnchecked sc:refUri="/academic/gen/_od/transf/_res/qcu_false.jpg"/>
+			</sm:WChoiceLines>
+		</sm:WQcmTable>
+		<sm:callGlobalExplanationModel/>
+	</sm:content>
+</sma:assmntUnitGmcqOdTransf>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="Ressources">
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="res" itemExtension="xml"/>
+	<sm:structure>
+		<sm:set usage="required">
+			<sm:part code="txt" name="￼;Texte￼" family="content" internalized="always">
+				<sm:allowedModel sc:refUri="/academic/model/Re/txt.model"/>
+			</sm:part>
+			<sm:part code="txtRes" name="￼;Texte illustré￼" family="content" internalized="always">
+				<sm:allowedModel sc:refUri="/academic/model/Re/txtRes.model"/>
+			</sm:part>
+			<sm:part code="res" name="￼;Ressource￼" family="content" internalized="never">
+				<sm:help quickHelp="￼;La ressource multimédia s'affiche dans la page web courante ou dans une nouvelle fenêtre via un lien. Par défaut, la ressource est embarquée ...￼"/>
+				<sm:meta sc:refUri="/academic/model/metaData/resInfoM.model" usage="required"/>
+				<sm:allowedModel sc:refUri="/binaries/avi/avi.model"/>
+				<sm:allowedModel sc:refUri="/binaries/flv/flv.model"/>
+				<sm:allowedModel sc:refUri="/binaries/mp4/mp4.model"/>
+				<sm:allowedModel sc:refUri="/binaries/mov/mov.model"/>
+				<sm:allowedModel sc:refUri="/binaries/mpg/mpg.model"/>
+				<sm:allowedModel sc:refUri="/binaries/rm/rm.model"/>
+				<sm:allowedModel sc:refUri="/binaries/webm/webm.model"/>
+				<sm:allowedModel sc:refUri="/binaries/wmv/wmv.model"/>
+				<sm:allowedModel sc:refUri="/binaries/mp3/mp3.model"/>
+				<sm:allowedModel sc:refUri="/binaries/opus/opus.model"/>
+				<sm:allowedModel sc:refUri="/binaries/gif/gif.model"/>
+				<sm:allowedModel sc:refUri="/binaries/jpg/jpeg.model"/>
+				<sm:allowedModel sc:refUri="/binaries/png/png.model"/>
+				<sm:allowedModel sc:refUri="/binaries/odg/odg.model"/>
+				<sm:allowedModel sc:refUri="/binaries/ods/ods.model"/>
+				<sm:allowedModel sc:refUri="/binaries/oga/oga.model"/>
+				<sm:allowedModel sc:refUri="/binaries/flash/flash.model"/>
+				<sm:allowedModel sc:refUri="/academic/model/Re/eSite/eSite.model"/>
+				<sm:allowedModel sc:refUri="/academic/model/Re/mediaWeb/mediaWeb.model"/>
+				<sm:allowedModel sc:refUri="/academic/model/Re/gallery.model"/>
+				<sm:allowedModel sc:refUri="/math/odf/odf.model"/>
+				<sm:allowedModel sc:refUri="/math/latex/mathTex.model"/>
+				<sm:allowedModel sc:refUri="/academic/model/Re/applet/applet.model"/>
+			</sm:part>
+			<sm:part code="int" name="￼;Fichier en téléchargement￼" family="content" internalized="never">
+				<sm:help quickHelp="￼;Le document ou la ressource est proposée en téléchargement￼"/>
+				<sm:meta sc:refUri="/academic/model/metaData/instructionM.model" usage="required"/>
+				<sm:allowedModel sc:refUri="/binaries/odp/odp.model"/>
+				<sm:allowedModel sc:refUri="/binaries/ods/ods.model"/>
+				<sm:allowedModel sc:refUri="/binaries/odt/odt.model"/>
+				<sm:allowedModel sc:refUri="/binaries/odg/odg.model"/>
+				<sm:allowedModel sc:refUri="/binaries/pdf/pdf.model"/>
+				<sm:allowedModel sc:refUri="/binaries/ppt/ppt.model"/>
+				<sm:allowedModel sc:refUri="/binaries/xls/xls.model"/>
+				<sm:allowedModel sc:refUri="/binaries/doc/doc.model"/>
+				<sm:allowedModel sc:refUri="/binaries/rtf/rtf.model"/>
+				<sm:allowedModel sc:refUri="/binaries/zip/zip.model"/>
+				<sm:allowedModel sc:refUri="/binaries/avi/avi.model"/>
+				<sm:allowedModel sc:refUri="/binaries/flv/flv.model"/>
+				<sm:allowedModel sc:refUri="/binaries/mp4/mp4.model"/>
+				<sm:allowedModel sc:refUri="/binaries/mov/mov.model"/>
+				<sm:allowedModel sc:refUri="/binaries/mpg/mpg.model"/>
+				<sm:allowedModel sc:refUri="/binaries/rm/rm.model"/>
+				<sm:allowedModel sc:refUri="/binaries/webm/webm.model"/>
+				<sm:allowedModel sc:refUri="/binaries/wmv/wmv.model"/>
+				<sm:allowedModel sc:refUri="/binaries/mp3/mp3.model"/>
+				<sm:allowedModel sc:refUri="/binaries/oga/oga.model"/>
+				<sm:allowedModel sc:refUri="/binaries/opus/opus.model"/>
+				<sm:allowedModel sc:refUri="/binaries/flash/flash.model"/>
+				<sm:allowedModel sc:refUri="/binaries/undef/undefBinary.model"/>
+			</sm:part>
+			<sm:part code="listing" name="￼;Listing informatique￼" family="content" internalized="userDependent">
+				<sm:allowedModel sc:refUri="/academic/model/Re/code.model"/>
+			</sm:part>
+			<sm:part code="bkquote" name="￼;Citation pluriparagraphe￼" internalized="always">
+				<sm:allowedModel sc:refUri="/academic/model/Re/qTxt.model"/>
+			</sm:part>
+			<sm:part code="filtered" name="￼;Contenu filtrable￼" internalized="always">
+				<sm:meta sc:refUri="/academic/model/_edt/filters/filter.model" usage="optional"/>
+				<sm:allowedModel sc:refUri="/academic/model/Re/res.model"/>
+			</sm:part>
+		</sm:set>
+	</sm:structure>
+	<sm:authoring>
+		<sm:formEditor indentXml="true">
+			<sm:part refCode="txt">
+				<sm:stylableWidget displayMode="openedByDefault">
+					<sm:styles>
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/icoTexte.png"/>
+								<sm:name style="display:none"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/icoTexteFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openSmall.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="txtRes">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/icoTexte.png"/>
+								<sm:name style="display:none"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/icoTexteFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openSmall.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="int">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/icoDoc.png"/>
+								<sm:name style="margin-left:5px; color:#8f8f8f;font-weight:normal;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/icoDocFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openSmall.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="listing">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/icoListing.png"/>
+								<sm:name style="margin-left:5px; color:#8f8f8f;font-weight:normal;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/icoListingFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openSmall.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+				<sm:callSubModelEditor key="intern"/>
+			</sm:part>
+			<sm:part refCode="bkquote">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="-moz-border-start-color: #d5def0;">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/icoBkquote.png"/>
+								<sm:name style="display:none"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/icoBkquoteFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openSmall.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="res">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/icoSite.png"/>
+								<sm:name style="margin-left:5px; color:#8f8f8f;font-weight:normal;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/icoSiteFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openSmall.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="filtered">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/icoFiltered.png"/>
+								<sm:name style="margin-left:5px; color:#8f8f8f;font-weight:normal;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/icoFilteredFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openSmall.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:compositionPrim>

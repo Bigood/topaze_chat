@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/case/model/scormRoot.model"/>
+	<sm:axis code="rootFilter"/>
+	<sm:shortTitleText>
+		<sm:callSubModel codes="case" axis="rootFilter"/>
+	</sm:shortTitleText>
+	<sm:content format="xhtml"/>
+</sm:compositionXhtmlTransf>

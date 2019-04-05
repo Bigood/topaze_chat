@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<structure xmlns:java="http://xml.apache.org/xslt/java" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:sfile="http://www.utc.fr/ics/scenari/v3/file" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" version="1.0" codecomposant="concat(getIdNode(.), '_Acredits')" racine="/sfile:*" code="xxxBinaries_Acredits">
+  <valeur code="codeMeta">
+    <source type="xpath-statique">concat(getIdFromPath(concat('src:', java:getSrcUri(srcFileAgent()), '/meta.xml')), '_meta')</source>
+  </valeur>
+  <valeur code="fullTitleText">
+    <source type="xpath-dynamique">computeStrAgent(concat('@', computeStrAgent('//codeMeta'), '/fullTitleText'))</source>
+  </valeur>
+  <valeur code="shortTitleText">
+    <source type="xpath-dynamique">computeStrAgent(concat('@', computeStrAgent('//codeMeta'), '/shortTitleText'))</source>
+  </valeur>
+  <valeur code="xhtmlContent">
+    <source type="xslOnSrc-dynamique">
+      <xsl:stylesheet xmlns:op="utc.fr:ics/opale3" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:sfm="http://www.utc.fr/ics/scenari/v3/filemeta" xmlns:java="http://xml.apache.org/xslt/java" exclude-result-prefixes="sc sp sfm op" version="1.0">
+        <xsl:output omit-xml-declaration="yes" indent="no" method="xml"/>
+        <xsl:param name="vDialog"/>
+        <xsl:param name="vAgent"/>
+        <xsl:variable name="vIsImage" select="containWord('png gif jpg_jpeg',local-name())"/>
+        <xsl:template match="*">
+          <xsl:variable name="vCc" select="computeStrAgent(concat('@', getIdFromPath(concat('src:', java:getSrcUri(srcFileAgent()), '/meta.xml')), '_meta_Alegal/xhtmlContent'))"/>
+          <xsl:if test="$vCc">
+            <div class="resCredits resType_{local-name()}">
+              <a class="resCreditsLnk {if($vIsImage,'imgZoomNoTi imgZoom','')}" target="_blank" title="￼Cliquez pour visualiser la ressource (nouvelle fenêtre)￼">
+                <xsl:attribute name="href">
+                  <xsl:value-of select="computeStrAgent('//', concat( 'res:src=src:', java:getSrcUri(srcFileAgent()), '/', java:getSrcName(srcFileAgent()), ''))"/>
+                </xsl:attribute>
+                <span>
+                  <xsl:value-of select="computeStrAgent('//fullTitleText')"/>
+                </span>
+              </a>
+              <xsl:value-of disable-output-escaping="yes" select="$vCc"/>
+            </div>
+          </xsl:if>
+        </xsl:template>
+      </xsl:stylesheet>
+    </source>
+  </valeur>
+</structure>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><sma:scormCamCompoWebSiteTransf xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/Ue/ueDiv.model"/>
+	<sm:camOrganization>
+		<sm:itemFolder>
+			<sm:title>
+				<sm:compositionTitle format="shortTitleText"/>
+			</sm:title>
+			<sm:children>
+				<sm:for codes="intro">
+					<sm:choose>
+						<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+							<sm:itemSco>
+								<sm:title>
+									<sm:fixedTitle value="￼;Introduction￼"/>
+								</sm:title>
+								<sm:itemBody>
+									<sm:callSubModel axis="intro"/>
+								</sm:itemBody>
+							</sm:itemSco>
+						</sm:when>
+					</sm:choose>
+				</sm:for>
+				<sm:inDataOrder>
+					<sm:for codes="div courseUa">
+						<sm:choose>
+							<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+								<sm:callSubModel/>
+							</sm:when>
+						</sm:choose>
+					</sm:for>
+					<sm:for codes="courseUc trainUc practUc assmntUa">
+						<sm:choose>
+							<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+								<sm:itemSco>
+									<sm:title>
+										<sm:subModelTitle format="shortTitleText"/>
+										<sm:fixedTitle value="￼;[Contenu non titré]￼"/>
+									</sm:title>
+									<sm:itemBody>
+										<sm:callSubModel/>
+									</sm:itemBody>
+								</sm:itemSco>
+							</sm:when>
+						</sm:choose>
+					</sm:for>
+					<sm:for codes="trainUcMcqSur trainUcMcgSur trainUcMcqMur trainUcMcgMur trainUcMatch trainUcOrdWord trainUcCloze trainUcField trainUcNumerical trainUcCoQuiz">
+						<sm:choose>
+							<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+								<sm:itemSco>
+									<sm:title>
+										<sm:dynamicString>
+											<sm:freeSelect xpath="if(getFullTitleText(gotoSubModel()),concat('Exercice : ',getFullTitleText(gotoSubModel())),'Exercice')"/>
+										</sm:dynamicString>
+									</sm:title>
+									<sm:itemBody>
+										<sm:callSubModel axis="nav"/>
+									</sm:itemBody>
+								</sm:itemSco>
+							</sm:when>
+						</sm:choose>
+					</sm:for>
+				</sm:inDataOrder>
+				<sm:for codes="conclu">
+					<sm:choose>
+						<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+							<sm:itemSco>
+								<sm:title>
+									<sm:fixedTitle value="￼;Conclusion￼"/>
+								</sm:title>
+								<sm:itemBody>
+									<sm:callSubModel axis="conclu"/>
+								</sm:itemBody>
+							</sm:itemSco>
+						</sm:when>
+					</sm:choose>
+				</sm:for>
+			</sm:children>
+		</sm:itemFolder>
+	</sm:camOrganization>
+</sma:scormCamCompoWebSiteTransf>

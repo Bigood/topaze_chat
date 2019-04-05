@@ -1,0 +1,895 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="Balises pédagogiques">
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="pb" itemExtension="xml"/>
+	<sm:structure>
+		<sm:set usage="required">
+			<sm:part code="info" name="￼;Information￼" family="content" internalized="always">
+				<sm:meta sc:refUri="/academic/model/Pb/pbTi.model" usage="required"/>
+				<sm:allowedModel sc:refUri="/academic/model/Re/res.model"/>
+			</sm:part>
+			<sm:part code="def" name="￼;Définition￼" family="content" internalized="always">
+				<sm:meta sc:refUri="/academic/model/Pb/pbTi.model" usage="required"/>
+				<sm:allowedModel sc:refUri="/academic/model/Re/res.model"/>
+			</sm:part>
+			<sm:part code="ex" name="￼;Exemple￼" family="content" internalized="always">
+				<sm:meta sc:refUri="/academic/model/Pb/pbTi.model" usage="required"/>
+				<sm:allowedModel sc:refUri="/academic/model/Re/res.model"/>
+			</sm:part>
+			<sm:part code="rem" name="￼;Remarque￼" family="content" internalized="always">
+				<sm:meta sc:refUri="/academic/model/Pb/pbTi.model" usage="required"/>
+				<sm:allowedModel sc:refUri="/academic/model/Re/res.model"/>
+			</sm:part>
+			<sm:part code="adv" name="￼;Conseil￼" family="content" internalized="always">
+				<sm:meta sc:refUri="/academic/model/Pb/pbTi.model" usage="required"/>
+				<sm:allowedModel sc:refUri="/academic/model/Re/res.model"/>
+			</sm:part>
+			<sm:part code="warning" name="￼;Attention￼" family="content" internalized="always">
+				<sm:meta sc:refUri="/academic/model/Pb/pbTi.model" usage="required"/>
+				<sm:allowedModel sc:refUri="/academic/model/Re/res.model"/>
+			</sm:part>
+			<sm:part code="comp" name="￼;Complément￼" family="content" internalized="always">
+				<sm:meta sc:refUri="/academic/model/Pb/pbTi.model" usage="required"/>
+				<sm:allowedModel sc:refUri="/academic/model/Re/res.model"/>
+			</sm:part>
+			<sm:part code="meth" name="￼;Méthode￼" family="content" internalized="always">
+				<sm:meta sc:refUri="/academic/model/Pb/pbTi.model" usage="required"/>
+				<sm:allowedModel sc:refUri="/academic/model/Re/res.model"/>
+			</sm:part>
+			<sm:part code="remind" name="￼;Rappel￼" family="content" internalized="always">
+				<sm:meta sc:refUri="/academic/model/Pb/pbTi.model" usage="required"/>
+				<sm:allowedModel sc:refUri="/academic/model/Re/res.model"/>
+			</sm:part>
+			<sm:part code="basic" name="￼;Fondamental￼" family="content" internalized="always">
+				<sm:meta sc:refUri="/academic/model/Pb/pbTi.model" usage="required"/>
+				<sm:allowedModel sc:refUri="/academic/model/Re/res.model"/>
+			</sm:part>
+			<sm:part code="syntax" name="￼;Syntaxe￼" family="content" internalized="always">
+				<sm:meta sc:refUri="/academic/model/Pb/pbTi.model" usage="required"/>
+				<sm:allowedModel sc:refUri="/academic/model/Re/res.model"/>
+			</sm:part>
+			<sm:part code="legal" name="￼;Texte légal￼" family="content" internalized="always">
+				<sm:meta sc:refUri="/academic/model/Pb/pbTi.model" usage="required"/>
+				<sm:allowedModel sc:refUri="/academic/model/Re/res.model"/>
+			</sm:part>
+			<sm:part code="simul" name="￼;Simulation￼" family="content" internalized="always">
+				<sm:meta sc:refUri="/academic/model/Pb/pbTi.model" usage="required"/>
+				<sm:allowedModel sc:refUri="/academic/model/Re/res.model"/>
+			</sm:part>
+		</sm:set>
+	</sm:structure>
+	<sm:authoring>
+		<sm:formEditor indentXml="true">
+			<sm:part refCode="def">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="-moz-border-start:4px solid #99b1da; margin-top:5px; margin-bottom:5px;">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/PBdefinition.png"/>
+								<sm:name style="margin-left:5px; color:#99b1da; font-size:1.3em; font-family:arial, sans-serif;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container style="-moz-border-start:4px solid #cad7ec;">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/PBdefinitionFade.png"/>
+								<sm:name style="color:#b9c5da; font-weight:bold;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openBig.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+				<sm:changeTo name="￼;en Information￼">
+					<sm:switchPart refCode="info"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Exemple￼">
+					<sm:switchPart refCode="ex"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Remarque￼">
+					<sm:switchPart refCode="rem"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Conseil￼">
+					<sm:switchPart refCode="adv"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Attention￼">
+					<sm:switchPart refCode="warning"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Complément￼">
+					<sm:switchPart refCode="comp"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Méthode￼">
+					<sm:switchPart refCode="meth"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Rappel￼">
+					<sm:switchPart refCode="remind"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Fondamental￼">
+					<sm:switchPart refCode="basic"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Syntaxe￼">
+					<sm:switchPart refCode="syntax"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Texte légal￼">
+					<sm:switchPart refCode="legal"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Simulation￼">
+					<sm:switchPart refCode="simul"/>
+				</sm:changeTo>
+			</sm:part>
+			<sm:part refCode="ex">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="-moz-border-start:4px solid #99b1da; margin-top:5px; margin-bottom:5px;">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/PBexemple.png"/>
+								<sm:name style="margin-left:5px; color:#99b1da; font-size:1.3em; font-family:arial, sans-serif;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container style="-moz-border-start:4px solid #cad7ec;">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/PBexempleFade.png"/>
+								<sm:name style="color:#b9c5da; font-weight:bold;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openBig.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+				<sm:changeTo name="￼;en Information￼">
+					<sm:switchPart refCode="info"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Définition￼">
+					<sm:switchPart refCode="def"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Remarque￼">
+					<sm:switchPart refCode="rem"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Conseil￼">
+					<sm:switchPart refCode="adv"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Attention￼">
+					<sm:switchPart refCode="warning"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Complément￼">
+					<sm:switchPart refCode="comp"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Méthode￼">
+					<sm:switchPart refCode="meth"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Rappel￼">
+					<sm:switchPart refCode="remind"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Fondamental￼">
+					<sm:switchPart refCode="basic"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Syntaxe￼">
+					<sm:switchPart refCode="syntax"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Texte légal￼">
+					<sm:switchPart refCode="legal"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Simulation￼">
+					<sm:switchPart refCode="simul"/>
+				</sm:changeTo>
+			</sm:part>
+			<sm:part refCode="rem">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="-moz-border-start:4px solid #99b1da; margin-top:5px; margin-bottom:5px;">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/PBremarque.png"/>
+								<sm:name style="margin-left:5px; color:#99b1da; font-size:1.3em; font-family:arial, sans-serif;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container style="-moz-border-start:4px solid #cad7ec;">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/PBremarqueFade.png"/>
+								<sm:name style="color:#b9c5da; font-weight:bold;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openBig.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+				<sm:changeTo name="￼;en Information￼">
+					<sm:switchPart refCode="info"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Définition￼">
+					<sm:switchPart refCode="def"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Exemple￼">
+					<sm:switchPart refCode="ex"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Conseil￼">
+					<sm:switchPart refCode="adv"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Attention￼">
+					<sm:switchPart refCode="warning"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Complément￼">
+					<sm:switchPart refCode="comp"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Méthode￼">
+					<sm:switchPart refCode="meth"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Rappel￼">
+					<sm:switchPart refCode="remind"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Fondamental￼">
+					<sm:switchPart refCode="basic"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Syntaxe￼">
+					<sm:switchPart refCode="syntax"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Texte légal￼">
+					<sm:switchPart refCode="legal"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Simulation￼">
+					<sm:switchPart refCode="simul"/>
+				</sm:changeTo>
+			</sm:part>
+			<sm:part refCode="adv">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="-moz-border-start:4px solid #99b1da; margin-top:5px; margin-bottom:5px;">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/PBconseil.png"/>
+								<sm:name style="margin-left:5px; color:#99b1da; font-size:1.3em; font-family:arial, sans-serif;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container style="-moz-border-start:4px solid #cad7ec;">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/PBconseilFade.png"/>
+								<sm:name style="color:#b9c5da; font-weight:bold;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openBig.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+				<sm:changeTo name="￼;en Information￼">
+					<sm:switchPart refCode="info"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Définition￼">
+					<sm:switchPart refCode="def"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Exemple￼">
+					<sm:switchPart refCode="ex"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Remarque￼">
+					<sm:switchPart refCode="rem"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Attention￼">
+					<sm:switchPart refCode="warning"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Complément￼">
+					<sm:switchPart refCode="comp"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Méthode￼">
+					<sm:switchPart refCode="meth"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Rappel￼">
+					<sm:switchPart refCode="remind"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Fondamental￼">
+					<sm:switchPart refCode="basic"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Syntaxe￼">
+					<sm:switchPart refCode="syntax"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Texte légal￼">
+					<sm:switchPart refCode="legal"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Simulation￼">
+					<sm:switchPart refCode="simul"/>
+				</sm:changeTo>
+			</sm:part>
+			<sm:part refCode="warning">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="-moz-border-start:4px solid #de0004; margin-top:5px; margin-bottom:5px">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/PBattention.png"/>
+								<sm:name style="margin-left:5px; color:#de0004; font-size:1.3em; font-family:arial, sans-serif;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container style="-moz-border-start:4px solid #cb8486">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/PBattentionFade.png"/>
+								<sm:name style="color:#cb8486; font-weight:bold;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openBig.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+				<sm:changeTo name="￼;en Information￼">
+					<sm:switchPart refCode="info"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Définition￼">
+					<sm:switchPart refCode="def"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Exemple￼">
+					<sm:switchPart refCode="ex"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Remarque￼">
+					<sm:switchPart refCode="rem"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Conseil￼">
+					<sm:switchPart refCode="adv"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Complément￼">
+					<sm:switchPart refCode="comp"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Méthode￼">
+					<sm:switchPart refCode="meth"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Rappel￼">
+					<sm:switchPart refCode="remind"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Fondamental￼">
+					<sm:switchPart refCode="basic"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Syntaxe￼">
+					<sm:switchPart refCode="syntax"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Texte légal￼">
+					<sm:switchPart refCode="legal"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Simulation￼">
+					<sm:switchPart refCode="simul"/>
+				</sm:changeTo>
+			</sm:part>
+			<sm:part refCode="comp">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="-moz-border-start:4px solid #99b1da; margin-top:5px; margin-bottom:5px;">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/PBcomplement.png"/>
+								<sm:name style="margin-left:5px; color:#99b1da; font-size:1.3em; font-family:arial, sans-serif;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container style="-moz-border-start:4px solid #cad7ec;">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/PBcomplementFade.png"/>
+								<sm:name style="color:#b9c5da; font-weight:bold;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openBig.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+				<sm:changeTo name="￼;en Information￼">
+					<sm:switchPart refCode="info"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Définition￼">
+					<sm:switchPart refCode="def"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Exemple￼">
+					<sm:switchPart refCode="ex"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Remarque￼">
+					<sm:switchPart refCode="rem"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Conseil￼">
+					<sm:switchPart refCode="adv"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Attention￼">
+					<sm:switchPart refCode="warning"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Méthode￼">
+					<sm:switchPart refCode="meth"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Rappel￼">
+					<sm:switchPart refCode="remind"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Fondamental￼">
+					<sm:switchPart refCode="basic"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Syntaxe￼">
+					<sm:switchPart refCode="syntax"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Texte légal￼">
+					<sm:switchPart refCode="legal"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Simulation￼">
+					<sm:switchPart refCode="simul"/>
+				</sm:changeTo>
+			</sm:part>
+			<sm:part refCode="meth">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="-moz-border-start:4px solid #99b1da; margin-top:5px; margin-bottom:5px;">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/PBoutilMethodo.png"/>
+								<sm:name style="margin-left:5px; color:#99b1da; font-size:1.3em; font-family:arial, sans-serif;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container style="-moz-border-start:4px solid #cad7ec;">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/PBoutilMethodoFade.png"/>
+								<sm:name style="color:#b9c5da; font-weight:bold;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openBig.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+				<sm:changeTo name="￼;en Information￼">
+					<sm:switchPart refCode="info"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Définition￼">
+					<sm:switchPart refCode="def"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Exemple￼">
+					<sm:switchPart refCode="ex"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Remarque￼">
+					<sm:switchPart refCode="rem"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Conseil￼">
+					<sm:switchPart refCode="adv"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Attention￼">
+					<sm:switchPart refCode="warning"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Complément￼">
+					<sm:switchPart refCode="comp"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Rappel￼">
+					<sm:switchPart refCode="remind"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Fondamental￼">
+					<sm:switchPart refCode="basic"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Syntaxe￼">
+					<sm:switchPart refCode="syntax"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Texte légal￼">
+					<sm:switchPart refCode="legal"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Simulation￼">
+					<sm:switchPart refCode="simul"/>
+				</sm:changeTo>
+			</sm:part>
+			<sm:part refCode="remind">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="-moz-border-start:4px solid #99b1da; margin-top:5px; margin-bottom:5px;">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/PBrappel.png"/>
+								<sm:name style="margin-left:5px; color:#99b1da; font-size:1.3em; font-family:arial, sans-serif;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container style="-moz-border-start:4px solid #cad7ec;">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/PBrappelFade.png"/>
+								<sm:name style="color:#b9c5da; font-weight:bold;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openBig.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+				<sm:changeTo name="￼;en Information￼">
+					<sm:switchPart refCode="info"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Définition￼">
+					<sm:switchPart refCode="def"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Exemple￼">
+					<sm:switchPart refCode="ex"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Remarque￼">
+					<sm:switchPart refCode="rem"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Conseil￼">
+					<sm:switchPart refCode="adv"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Attention￼">
+					<sm:switchPart refCode="warning"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Complément￼">
+					<sm:switchPart refCode="comp"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Méthode￼">
+					<sm:switchPart refCode="meth"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Fondamental￼">
+					<sm:switchPart refCode="basic"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Syntaxe￼">
+					<sm:switchPart refCode="syntax"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Texte légal￼">
+					<sm:switchPart refCode="legal"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Simulation￼">
+					<sm:switchPart refCode="simul"/>
+				</sm:changeTo>
+			</sm:part>
+			<sm:part refCode="basic">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="-moz-border-start:4px solid #99b1da; margin-top:5px; margin-bottom:5px;">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/PBfondamental.png"/>
+								<sm:name style="margin-left:5px; color:#99b1da; font-size:1.3em; font-family:arial, sans-serif;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container style="-moz-border-start:4px solid #cad7ec;">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/PBfondamentalFade.png"/>
+								<sm:name style="color:#b9c5da; font-weight:bold;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openBig.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+				<sm:changeTo name="￼;en Information￼">
+					<sm:switchPart refCode="info"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Définition￼">
+					<sm:switchPart refCode="def"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Exemple￼">
+					<sm:switchPart refCode="ex"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Remarque￼">
+					<sm:switchPart refCode="rem"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Conseil￼">
+					<sm:switchPart refCode="adv"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Attention￼">
+					<sm:switchPart refCode="warning"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Complément￼">
+					<sm:switchPart refCode="comp"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Méthode￼">
+					<sm:switchPart refCode="meth"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Rappel￼">
+					<sm:switchPart refCode="remind"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Syntaxe￼">
+					<sm:switchPart refCode="syntax"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Texte légal￼">
+					<sm:switchPart refCode="legal"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Simulation￼">
+					<sm:switchPart refCode="simul"/>
+				</sm:changeTo>
+			</sm:part>
+			<sm:part refCode="syntax">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="-moz-border-start:4px solid #99b1da; margin-top:5px; margin-bottom:5px;">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/PBsyntaxe.png"/>
+								<sm:name style="margin-left:5px; color:#99b1da; font-size:1.3em; font-family:arial, sans-serif;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container style="-moz-border-start:4px solid #cad7ec;">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/PBsyntaxeFade.png"/>
+								<sm:name style="color:#b9c5da; font-weight:bold;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openBig.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+				<sm:changeTo name="￼;en Information￼">
+					<sm:switchPart refCode="info"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Définition￼">
+					<sm:switchPart refCode="def"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Exemple￼">
+					<sm:switchPart refCode="ex"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Remarque￼">
+					<sm:switchPart refCode="rem"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Conseil￼">
+					<sm:switchPart refCode="adv"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Attention￼">
+					<sm:switchPart refCode="warning"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Complément￼">
+					<sm:switchPart refCode="comp"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Méthode￼">
+					<sm:switchPart refCode="meth"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Rappel￼">
+					<sm:switchPart refCode="remind"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Fondamental￼">
+					<sm:switchPart refCode="basic"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Texte légal￼">
+					<sm:switchPart refCode="legal"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Simulation￼">
+					<sm:switchPart refCode="simul"/>
+				</sm:changeTo>
+			</sm:part>
+			<sm:part refCode="legal">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="-moz-border-start:4px solid #99b1da; margin-top:5px; margin-bottom:5px;">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/PBtexteLegal.png"/>
+								<sm:name style="margin-left:5px; color:#99b1da; font-size:1.3em; font-family:arial, sans-serif;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container style="-moz-border-start:4px solid #cad7ec;">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/PBtexteLegalFade.png"/>
+								<sm:name style="color:#b9c5da; font-weight:bold;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openBig.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+				<sm:changeTo name="￼;en Information￼">
+					<sm:switchPart refCode="info"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Définition￼">
+					<sm:switchPart refCode="def"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Exemple￼">
+					<sm:switchPart refCode="ex"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Remarque￼">
+					<sm:switchPart refCode="rem"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Conseil￼">
+					<sm:switchPart refCode="adv"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Attention￼">
+					<sm:switchPart refCode="warning"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Complément￼">
+					<sm:switchPart refCode="comp"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Méthode￼">
+					<sm:switchPart refCode="meth"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Rappel￼">
+					<sm:switchPart refCode="remind"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Fondamental￼">
+					<sm:switchPart refCode="basic"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Syntaxe￼">
+					<sm:switchPart refCode="syntax"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Simulation￼">
+					<sm:switchPart refCode="simul"/>
+				</sm:changeTo>
+			</sm:part>
+			<sm:part refCode="simul">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="-moz-border-start:4px solid #99b1da; margin-top:5px; margin-bottom:5px;">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/PBsimulation.png"/>
+								<sm:name style="margin-left:5px; color:#99b1da; font-size:1.3em; font-family:arial, sans-serif;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container style="-moz-border-start:4px solid #cad7ec;">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/PBsimulationFade.png"/>
+								<sm:name style="color:#b9c5da; font-weight:bold;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openBig.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+				<sm:changeTo name="￼;en Information￼">
+					<sm:switchPart refCode="info"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Définition￼">
+					<sm:switchPart refCode="def"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Exemple￼">
+					<sm:switchPart refCode="ex"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Remarque￼">
+					<sm:switchPart refCode="rem"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Conseil￼">
+					<sm:switchPart refCode="adv"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Attention￼">
+					<sm:switchPart refCode="warning"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Complément￼">
+					<sm:switchPart refCode="comp"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Méthode￼">
+					<sm:switchPart refCode="meth"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Rappel￼">
+					<sm:switchPart refCode="remind"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Fondamental￼">
+					<sm:switchPart refCode="basic"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Syntaxe￼">
+					<sm:switchPart refCode="syntax"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Texte légal￼">
+					<sm:switchPart refCode="legal"/>
+				</sm:changeTo>
+			</sm:part>
+			<sm:part refCode="info">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:5px; margin-bottom:5px;">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/information.png"/>
+								<sm:name style="margin-left:5px; color:#8f8f8f; font-size:1.3em; font-family:arial, sans-serif;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/informationFade.png"/>
+								<sm:name style="color:#cccccc; font-weight:bold;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openBig.png"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+				<sm:changeTo name="￼;en Définition￼">
+					<sm:switchPart refCode="def"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Exemple￼">
+					<sm:switchPart refCode="ex"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Remarque￼">
+					<sm:switchPart refCode="rem"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Conseil￼">
+					<sm:switchPart refCode="adv"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Attention￼">
+					<sm:switchPart refCode="warning"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Complément￼">
+					<sm:switchPart refCode="comp"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Méthode￼">
+					<sm:switchPart refCode="meth"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Rappel￼">
+					<sm:switchPart refCode="remind"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Fondamental￼">
+					<sm:switchPart refCode="basic"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Syntaxe￼">
+					<sm:switchPart refCode="syntax"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Texte légal￼">
+					<sm:switchPart refCode="legal"/>
+				</sm:changeTo>
+				<sm:changeTo name="￼;en Simulation￼">
+					<sm:switchPart refCode="simul"/>
+				</sm:changeTo>
+			</sm:part>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:compositionPrim>

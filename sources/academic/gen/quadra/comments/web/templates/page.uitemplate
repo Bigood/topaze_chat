@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiTemplate xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" pageUnicityCriterion="hierarchicalContext">
+	<sm:head>
+		<sm:windowTitle>
+			<sm:rootTitle type="fullTitle"/>
+			<sm:fixedString value=" - "/>
+			<sm:pageTitle/>
+		</sm:windowTitle>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/tpl/tplMgr.uiwidget"/>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/tplDynElts/centerContent.uiwidget"/>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/out/outMgr.uiwidget"/>
+		<sm:styleSheet src="css/html.css" srcFrom="skin" media="all"/>
+		<sm:styleSheet src="css/struct_page.css" srcFrom="skin" media="screen"/>
+		<sm:styleSheet src="css/buttons.css" srcFrom="skin" media="screen"/>
+		<sm:styleSheet src="css/mnu_page.css" srcFrom="skin" media="screen"/>
+		<sm:styleSheet src="css/mnu_child.css" srcFrom="skin" media="screen"/>
+		<sm:styleSheet src="css/transf.css" srcFrom="skin" media="all"/>
+		<sm:styleSheet src="css/indexes.css" srcFrom="skin"/>
+		<sm:styleSheet src="css/assmnt.css" srcFrom="skin"/>
+		<sm:styleSheet src="css/assmnt_train.css" srcFrom="skin"/>
+		<sm:styleSheet src="css/sub_windows.css" srcFrom="skin" media="screen"/>
+		<sm:styleSheet src="css/print.css" srcFrom="skin" media="print"/>
+		<!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1363955285539">Pour couche commentaires</comment></comment>-->
+		<sm:Widget sc:refUri="/academic/gen/_comments/widg/scCommentMgr.uiwidget"/>
+		<sm:Widget sc:refUri="/academic/gen/quadra/comments/web/widg/scCommentWdgWeb.uiwidget"/>
+	</sm:head>
+	<sm:body>
+		<scBlock xmlns="http://www.w3.org/1999/xhtml" id="tplFra">
+			<div id="tplTop">
+				<hx id="titleRoot">
+					<span>
+						<sm:title>
+							<sm:rootTitle type="fullTitle"/>
+						</sm:title>
+					</span>
+				</hx>
+				<sm:Widget sc:refUri="/academic/gen/quadra/comments/web/widg/commentsBtn.uiwidget"/>
+			</div>
+			<div id="tplLft"></div>
+			<div id="tplMain" class="tplMainMnu_open">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_preview/web/cnd/rootIsExpuUc.cond">
+						<addAttribute name="class">tplMainMnu_closed</addAttribute>
+					</sm:when>
+					<sm:otherwise>
+						<div id="tplMnu">
+							<hr class="hidden" />
+							<a id="menu" class="accessAnc" name="menu" href="#menu"></a>
+							<strong class="hidden">￼?note=note%20descriptif%20de%20page%20HTML;Menu : ￼</strong>
+							<sm:Widget sc:refUri="/academic/gen/_web/widg/tplDynElts/dynSizes.uiwidget"/>
+							<div class="mnuBlock"></div>
+							<div class="mnuFra">
+								<sm:Widget sc:refUri="/academic/gen/_web/widg/out/out.uiwidget"/>
+							</div>
+							<div id="tplIco">
+								<sm:callZone key="zIconPage" format="xhtml"/>
+							</div>
+						</div>
+					</sm:otherwise>
+				</sm:choose>
+				<div id="tplCo">
+					<div class="scroller">
+						<hr class="hidden" />
+						<a id="content" class="accessAnc" name="content" href="#content"></a>
+						<strong class="hidden">￼?note=note%20descriptif%20de%20page%20HTML;Contenu : ￼</strong>
+						<div id="tplCoMarginW" style="">
+							<div id="tplCoFlexTop"></div>
+							<!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1363955285539" updateTime="1395741841720">#mgrContainer, bout de script, et #commentContainer pour couche commentaires</comment></comment>-->
+							<div id="mgrContainer">
+								<sm:WXhtmlFragment>&lt;script&gt;
+var currentMgr = new scCommentMgr.Mgr('mgrContainer', null, null); //deux derniers param servent pour écarter des choses de la mécanique de commentaires, un pour el namespace, l'autre pour el xpath, normalement ça ne sert à rien, on gère ça côté client si y'a besoin
+document.getElementById('mgrContainer').mgr = currentMgr;
+&lt;/script&gt;</sm:WXhtmlFragment>
+								<sm:callMainZone format="xhtml"/>
+								<sm:WBasket key="footnotes" widgetClass="footnotes" tagName="ol" suppressIfEmpty="yes"/>
+							</div>
+						</div>
+						<div id="tplCoSpacer"></div>
+					</div>
+				</div>
+			</div>
+			<div id="tplRgt">
+				<hr class="hidden" />
+				<a id="navigation" class="accessAnc" name="navigation" href="#navigation"></a>
+				<strong class="hidden">￼?note=note%20descriptif%20de%20page%20HTML;Navigation : ￼</strong>
+				<sm:Widget sc:refUri="/academic/gen/_web/widg/nav/prev.uiwidget"/>
+				<span class="hidden"> | </span>
+				<sm:Widget sc:refUri="/academic/gen/_web/widg/nav/next.uiwidget"/>
+			</div>
+			<div id="tplBtm">
+				<hr class="hidden" />
+				<a id="footer" class="accessAnc" name="footer" href="#footer"></a>
+				<span id="tplBtmLeft">
+					<sm:callRootModel axis="btnHelp"/>
+					<span class="hidden"> | </span>
+					<sm:WButton class="printBtn">
+						<sm:label>
+							<sm:callRootModel axis="lblBtnPrint"/>
+						</sm:label>
+						<sm:labelTitle>￼;Imprimer la page￼</sm:labelTitle>
+						<sm:action>
+							<sm:print/>
+						</sm:action>
+					</sm:WButton>
+				</span>
+				<span id="tplBtmIn">
+					<span class="hidden"> | </span>
+					<sm:callZone key="zLegal" format="xhtml"/>
+					<span class="hidden"> | </span>
+					<sm:Widget sc:refUri="/academic/gen/_web/widg/tpl/madeWithSc.uiwidget"/>
+				</span>
+			</div>
+		</scBlock>
+		<sm:script src="js/skin.js" srcFrom="skin" type="text/JavaScript"/>
+	</sm:body>
+</sm:openUiTemplate>

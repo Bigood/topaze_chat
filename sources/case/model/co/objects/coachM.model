@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:dataFormPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;coachM￼">
+	<sm:identification targetNamespace="kelis.fr:opa" targetPrefix="opa" code="coachM" itemExtension="xml"/>
+	<sm:structure>
+		<sm:group code="val" name="￼;Échelle de valeur￼" occurrence="oneOrMore">
+			<sm:help quickHelp="￼;Bornes incluses￼"/>
+			<sm:field code="min" name="￼;Valeur minimum￼" occurrence="one">
+				<sm:string/>
+			</sm:field>
+			<sm:field code="max" name="￼;Valeur maximum￼" occurrence="one">
+				<sm:string/>
+			</sm:field>
+			<sm:field code="img" name="￼;Image￼" occurrence="one">
+				<sm:refItem>
+					<sm:allowedModel sc:refUri="/binaries/gif/gif.model"/>
+					<sm:allowedModel sc:refUri="/binaries/jpg/jpeg.model"/>
+					<sm:allowedModel sc:refUri="/binaries/png/png.model"/>
+				</sm:refItem>
+			</sm:field>
+		</sm:group>
+	</sm:structure>
+	<sm:storage/>
+	<sm:authoring>
+		<sm:formEditor indentXml="true">
+			<sm:stringField refCode="val" defaultStyle="property" tagStyle="color: #476042;"/>
+			<sm:stringField refCode="min" defaultStyle="property" tagStyle="color: #476042;"/>
+			<sm:group refCode="max" defaultStyle="property" tagStyle="color: #476042;"/>
+			<sm:stringField refCode="img" defaultStyle="property" tagStyle="color: #476042;"/>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:dataFormPrim>

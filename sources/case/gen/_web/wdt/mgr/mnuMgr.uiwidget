@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="mnuMgr">
+	<sm:widgetPublishFiles sc:refUri="/case/gen/_web/wdt/mgr/mnuMgr.doss"/>
+	<sm:fillTemplateBuffers>
+		<sm:standardLibrary codeLib="PaLib"/>
+		<sm:postXslFragment keyXsl="xhtml">&lt;xsl:overlay match="body"&gt;
+  &lt;xsl:value-of select="execute(java:append($vBufJs, 'mnuMgr.init();'))"/&gt;
+&lt;/xsl:overlay&gt;</sm:postXslFragment>
+		<sm:linkScript path="mnuMgr.js" pathFrom="localPublishFiles" sortKey="m"/>
+	</sm:fillTemplateBuffers>
+	<sm:content/>
+</sm:openUiWidget>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="scHPS" info="SCENARI HTML Presentation system - base libraries">
+	<sm:widgetPublishFiles sc:refUri="/academic/gen/_sld/widg/mgr/scHPS.doss"/>
+	<sm:fillTemplateBuffers>
+		<sm:standardLibrary codeLib="TiLib"/>
+		<sm:standardLibrary codeLib="PaLib"/>
+		<sm:standardLibrary codeLib="SiLib"/>
+		<sm:linkScript path="scHPS.js" pathFrom="localPublishFiles" sortKey="AA"/>
+		<sm:linkScript path="scHPS.locale.js" pathFrom="localPublishFiles" sortKey="AA1"/>
+	</sm:fillTemplateBuffers>
+	<sm:content/>
+</sm:openUiWidget>

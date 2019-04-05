@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="quitBtn">
+	<sm:widgetBsFragment contentFormat="xhtml">&lt;source type="xsl-dynamique"&gt;
+&lt;xsl:stylesheet xmlns:java="http://xml.apache.org/xslt/java" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" exclude-result-prefixes="sc java xhtml" version="1.0"&gt;
+	&lt;xsl:output omit-xml-declaration="yes" indent="no" method="xml"/&gt;
+	&lt;xsl:param name="vAgent"/&gt;
+	&lt;xsl:param name="vDialog"/&gt;
+	&lt;xsl:variable select="idExportAgentHier(dialog(pathAgent(.)))" name="vIdAgent"/&gt;
+	&lt;xsl:template match="*"&gt;
+		&lt;span xmlns="http://www.w3.org/1999/xhtml" id="quitBtn"&gt;
+			&lt;a class="quitBtn" href="{computeStrDialog(concat('/', concat('@', getIdFromPath(concat('src:', java:getSrcUri(srcFileAgent('@@')))), '_Aquit')), 'act:')}" title="￼Quitter￼" target="_parent"&gt;
+				&lt;span&gt;￼;Quitter￼&lt;/span&gt;
+			&lt;/a&gt;
+		&lt;/span&gt;
+	&lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;
+&lt;/source&gt;
+
+
+</sm:widgetBsFragment>
+	<sm:callableModel sc:refUri="/academic/model/root/webRoot.model" view="navigation" axis="quit"/>
+</sm:freeUiWidget>

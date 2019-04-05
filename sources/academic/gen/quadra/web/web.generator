@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:webSiteGenerator xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="web" name="￼;Publication Web￼">
+	<sm:icon sc:refUri="/academic/model/_ico/gen/webGen.png"/>
+	<sm:modelRoot>
+		<sm:allowedModel sc:refUri="/academic/model/root/webRoot.model"/>
+		<sm:allowedModel sc:refUri="/academic/model/Ue/ue.model"/>
+	</sm:modelRoot>
+	<sm:mode standard="HTML 5" debug="no"/>
+	<sm:uiFrame sc:refUri="/academic/gen/quadra/web/web.uiframe"/>
+	<sm:transformerList sc:refUri="/academic/gen/quadra/web/web.transflist"/>
+	<sm:uiTemplateList>
+		<sm:uiTemplate code="page" sc:refUri="/academic/gen/quadra/web/templates/page.uitemplate"/>
+		<sm:uiTemplate code="home" sc:refUri="/academic/gen/quadra/web/templates/home.uitemplate"/>
+		<sm:uiTemplate code="tools" sc:refUri="/academic/gen/quadra/web/templates/tools.uitemplate"/>
+		<sm:uiTemplate code="eval" sc:refUri="/academic/gen/quadra/web/templates/eval.uitemplate"/>
+		<sm:uiTemplate code="ref" sc:refUri="/academic/gen/quadra/web/templates/ref.uitemplate"/>
+		<sm:uiTemplate code="player" sc:refUri="/academic/gen/quadra/web/templates/evalPlayer.uitemplate"/>
+		<sm:uiTemplate code="json" sc:refUri="/academic/gen/quadra/web/templates/json.uitemplate"/>
+		<sm:uiTemplate code="index" sc:refUri="/academic/gen/quadra/web/templates/index.uitemplate"/>
+	</sm:uiTemplateList>
+	<sm:defaultSkin sc:refUri="/academic/gen/quadra/web/web.skin.doss" name="￼;Quadra￼"/>
+</sm:webSiteGenerator>

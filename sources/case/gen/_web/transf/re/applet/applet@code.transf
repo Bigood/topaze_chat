@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeXslWebSiteTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/Re/applet/applet.model"/>
+	<sm:axis code="code"/>
+	<sm:content>
+		<sm:xsl sc:refUri="/case/gen/_web/transf/re/applet/applet@code.xsl"/>
+		<sm:callModel sc:refUri="/academic/model/Re/applet/jar.model" axis="url" codeView="navigation"/>
+		<sm:callModel sc:refUri="/case/model/index/autoIndex.model" axis="id" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/case/model/index/userIndex.model" axis="id" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/case/model/index/autoVar.model" axis="id" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/case/model/index/userVar.model" axis="id" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/academic/model/Re/applet/applet.model" axis="id" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/case/model/index/autoIndex.model" axis="type" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/case/model/index/userIndex.model" axis="type" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/case/model/index/autoVar.model" axis="type" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/case/model/index/userVar.model" axis="type" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/academic/model/Re/applet/applet.model" axis="type" codeView="xhtmlContent"/>
+	</sm:content>
+</sm:freeXslWebSiteTransf>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="keywords">
+	<sm:widgetBsFragment contentFormat="xhtml">&lt;source type="xsl-dynamique"&gt;
+&lt;xsl:stylesheet xmlns:java="http://xml.apache.org/xslt/java" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" exclude-result-prefixes="sc java xhtml" version="1.0"&gt;
+	&lt;xsl:output omit-xml-declaration="yes" indent="no" method="xml"/&gt;
+	&lt;xsl:param name="vAgent"/&gt;
+	&lt;xsl:param name="vDialog"/&gt;
+	&lt;xsl:variable select="idExportAgentHier(dialog(pathAgent(.)))" name="vIdAgent"/&gt;
+	&lt;xsl:template match="*"&gt;
+		&lt;xsl:variable select="java:com.scenari.m.ge.generator.web.CrossRefEntry.getIndexAsString($vDialog, 'keywords', true(), 'A', 'A[min=5][offIfOne][range=AZ]', '')" name="vIndex"/&gt;
+		&lt;xsl:for-each select="$vIndex/index"&gt;
+			&lt;ifText&gt;
+				&lt;div class="refOutline"&gt;
+					&lt;xsl:for-each select="categ"&gt;
+						&lt;span class="refOutlineEntry"&gt;
+							&lt;xsl:choose&gt;
+								&lt;xsl:when test="entry"&gt;
+									&lt;a href="#categ{$vIdAgent}_{generate-id(.)}"&gt;
+										&lt;xsl:value-of select="@label"/&gt;
+									&lt;/a&gt;
+								&lt;/xsl:when&gt;
+								&lt;xsl:otherwise&gt;
+									&lt;span&gt;
+										&lt;xsl:value-of select="@label"/&gt;
+									&lt;/span&gt;
+								&lt;/xsl:otherwise&gt;
+							&lt;/xsl:choose&gt;
+						&lt;/span&gt;
+					&lt;/xsl:for-each&gt;
+				&lt;/div&gt;
+			&lt;/ifText&gt;
+			&lt;xsl:for-each select="categ[entry]"&gt;
+				&lt;div id="categ{$vIdAgent}_{generate-id(.)}" class="refCateg"&gt;
+					&lt;xsl:value-of select="@label"/&gt;
+				&lt;/div&gt;
+				&lt;div&gt;
+					&lt;xsl:apply-templates mode="index_N44" select="entry"/&gt;
+				&lt;/div&gt;
+			&lt;/xsl:for-each&gt;
+			&lt;ifText&gt;
+				&lt;div&gt;
+					&lt;xsl:apply-templates mode="index_N44" select="entry"/&gt;
+				&lt;/div&gt;
+			&lt;/ifText&gt;
+		&lt;/xsl:for-each&gt;
+	&lt;/xsl:template&gt;
+	&lt;xsl:template mode="index_N44" match="entry"&gt;
+		&lt;crossRefEntry idEntry="{@value}"&gt;
+			&lt;div class="idxFra"&gt;
+				&lt;div class="idxEntryTi"&gt;&lt;xsl:value-of select="@value"/&gt;&lt;/div&gt;
+				&lt;xsl:for-each select="caller"&gt;
+					&lt;div class="idxEntryCaller"&gt;
+						&lt;xsl:value-of disable-output-escaping="yes" select="computeStr(agent('widgetStack',$vAgent), dialog(string(@dialog)))"/&gt;
+						&lt;span class="stackSep"&gt; &amp;gt; &lt;/span&gt;
+						&lt;a class="idxEntryCallerLnk" href="{substring-before(@url,'#')}" target="_self"&gt;
+							&lt;span&gt;
+								&lt;xsl:value-of select="@titlePage"/&gt;
+							&lt;/span&gt;
+						&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/xsl:for-each&gt;
+			&lt;/div&gt;
+		&lt;/crossRefEntry&gt;
+	&lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;
+&lt;/source&gt;
+
+
+<sm:subWidget code="widgetStack">
+			<sm:Widget sc:refUri="/academic/gen/_web/widg/refs/stack.uiwidget"/>
+		</sm:subWidget></sm:widgetBsFragment>
+</sm:freeUiWidget>

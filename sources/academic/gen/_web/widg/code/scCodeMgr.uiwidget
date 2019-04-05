@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="scCodeMgr" info="SCENARI Javascript source code manager">
+	<sm:widgetPublishFiles sc:refUri="/academic/gen/_web/widg/code/scCodeMgr.doss"/>
+	<sm:fillTemplateBuffers>
+		<sm:standardLibrary codeLib="PaLib"/>
+		<sm:standardLibrary codeLib="DynUiMgr"/>
+		<sm:postXslFragment keyXsl="xhtml">&lt;xsl:overlay match="body"&gt;
+  &lt;xsl:value-of select="execute(java:append($vBufJs, 'scCodeMgr.init();'))"/&gt;
+&lt;/xsl:overlay&gt;</sm:postXslFragment>
+		<sm:linkScript path="scCodeMgr.js" pathFrom="localPublishFiles" sortKey="B"/>
+		<sm:linkStyle path="scCodeMgr.css" pathFrom="localPublishFiles"/>
+		<sm:otherBuffers keyBuffer="js.postLink">scCodeMgr.registerCode("des:div.code");
+</sm:otherBuffers>
+	</sm:fillTemplateBuffers>
+	<sm:content/>
+</sm:openUiWidget>

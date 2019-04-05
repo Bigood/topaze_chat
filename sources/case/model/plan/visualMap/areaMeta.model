@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:dataFormPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="￼;Zone￼">
+	<sm:identification targetNamespace="kelis.fr:opa" targetPrefix="opa" code="areaMeta" itemExtension="xml"/>
+	<sm:structure>
+		<sm:field code="shape" name="￼;Forme￼" occurrence="one">
+			<sm:enum>
+				<sm:option key="rect" name="￼;Rectangle￼"/>
+				<sm:option key="circle" name="￼;Cercle￼"/>
+				<sm:option key="poly" name="￼;Polygone￼"/>
+			</sm:enum>
+		</sm:field>
+		<sm:field code="coords" name="￼;Coordonnées￼" occurrence="one">
+			<sm:string/>
+		</sm:field>
+	</sm:structure>
+	<sm:storage/>
+</sm:dataFormPrim>

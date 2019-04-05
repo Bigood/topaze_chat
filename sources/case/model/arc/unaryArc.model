@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Enchaînement simple￼" category="￼;Etude de cas￼">
+	<sm:identification targetNamespace="kelis.fr:opa" targetPrefix="opa" code="unaryArc" itemExtension="xml"/>
+	<sm:structure>
+		<sm:part code="next" name="￼;Étape suivante￼" family="content" internalized="never" usage="required">
+			<sm:meta sc:refUri="/case/model/arc/arcLnkM.model" usage="required"/>
+			<sm:allowedModel sc:refUri="/case/model/node/expNode.model"/>
+			<sm:allowedModel sc:refUri="/case/model/node/assmntNode.model"/>
+			<sm:allowedModel sc:refUri="/case/model/node/heavyNode.model"/>
+			<sm:allowedModel sc:refUri="/case/model/node/navNode.model"/>
+		</sm:part>
+	</sm:structure>
+	<sm:authoring>
+		<sm:icon sc:refUri="/academic/model/_ico/courseUaSmall.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;Cours￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:formEditor indentXml="true">
+			<sm:composition>
+				<sm:standardWidget tagStyle="color : #4668ad">
+					<sm:iconTag sc:refUri="/case/auth/ui/unaryArc.png"/>
+				</sm:standardWidget>
+			</sm:composition>
+			<sm:part refCode="next">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container>
+							<sm:head>
+								<sm:name style="margin-left:5px; color:#8f8f8f; font-size:16px; font-family:arial"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:name style="color:#c1c1c1"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openBig.png"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:compositionPrim>

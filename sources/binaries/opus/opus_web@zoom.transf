@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:binaryXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/binaries/opus/opus.model"/>
+	<sm:axis code="zoom"/>
+	<sm:content>
+		<sm:WLink widgetClass="sfile_opus_zoom_lnk sfile_lnk">
+			<sm:label>
+				<sm:title>
+					<sm:binaryTitle/>
+				</sm:title>
+			</sm:label>
+			<sm:labelTitle>
+				<sm:title>
+					<sm:binaryTitle suffix="￼; (nouvelle fenêtre)￼"/>
+				</sm:title>
+			</sm:labelTitle>
+			<sm:link target="newWindow" windowName="zoom">
+				<sm:behavior addLinkInHref="yes"/>
+				<sm:position>
+					<sm:centerScreen width="300" height="20"/>
+				</sm:position>
+				<sm:windowFeatures scrollbars="no"/>
+				<sm:binaryUrl>
+					<!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1411489194232">TODO : passer en template spécifique pour axis zoom ?</comment></comment>-->
+				</sm:binaryUrl>
+			</sm:link>
+		</sm:WLink>
+		<sm:callBinaryMeta axis="info"/>
+	<!--ATTENTION l'élément suivant à été ajouté en XSL par la dérivation.--><sm:callModel xmlns:op="utc.fr:ics/opale3" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sext="http://www.utc.fr/ics/scenari/v3/modeling/extension"><sm:current axis="credits"/></sm:callModel></sm:content>
+</sm:binaryXhtmlTransf>

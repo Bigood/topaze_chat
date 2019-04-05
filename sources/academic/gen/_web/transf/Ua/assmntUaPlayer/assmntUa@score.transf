@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><sma:assmntCompositionDhtmlTransf xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns="http://www.w3.org/1999/xhtml">
+	<sm:model sc:refUri="/academic/model/Ua/assmntUa.model"/>
+	<sm:axis code="score"/>
+	<sm:scenario>
+		<sm:sequence code="score">
+			<sm:saveData>
+				<sm:scoreSessionKey>
+					<sm:fixedKey value="eval"/>
+				</sm:scoreSessionKey>
+			</sm:saveData>
+			<sm:scoreComputing>
+				<sm:computeScoreSubAssmnt codes="quiz">
+					<sm:scoreSessionKey>
+						<sm:fixedKey value="eval"/>
+					</sm:scoreSessionKey>
+				</sm:computeScoreSubAssmnt>
+			</sm:scoreComputing>
+			<sm:onEnter>
+				<sm:setCompletionStatus status="complete">
+					<sm:responseSessionKey>
+						<sm:fixedKey value="eval"/>
+					</sm:responseSessionKey>
+				</sm:setCompletionStatus>
+				<!--Score global de l'eval replacé sur window pour traitement éventuel (envoi scorm...)-->
+				<sm:jsEval>this.computeScore();
+window.fMinPts = this.fMinPts;
+window.fScorePts = this.fScorePts;
+window.fMaxPts = this.fMaxPts;
+
+if(typeof parent.markedPageMgr != "undefined") parent.markedPageMgr.addPageMarkedStatus(parent.document.location.href, true);</sm:jsEval>
+			</sm:onEnter>
+		</sm:sequence>
+	</sm:scenario>
+	<sm:assmntBody>
+		<div class="infoScore">
+			<sm:WScore sm:id="score">
+				<sm:scoreText>
+					<sm:scaleScore min="0" max="100" step="1">
+						<sm:display scoreMoreThan="99" prefix="￼;Vous avez bien répondu à toutes les questions!￼" valueFormat="hidden" class="answBest"/>
+						<sm:display scoreMoreThan="49" scoreLessOrEqualThan="99" prefix="￼;Vous avez obtenu... ￼" valueFormat="numeric" suffix="￼;% de bonnes réponses.￼" class="answGood"/>
+						<sm:display scoreLessOrEqualThan="49" prefix="￼;Vous avez obtenu... ￼" valueFormat="numeric" suffix="￼;% de bonnes réponses.￼" class="answBad"/>
+					</sm:scaleScore>
+				</sm:scoreText>
+			</sm:WScore>
+			<sm:WFeedback widgetClass="feedback">
+				<sm:callFeedbackModel/>
+			</sm:WFeedback>
+		</div>
+	</sm:assmntBody>
+</sma:assmntCompositionDhtmlTransf>

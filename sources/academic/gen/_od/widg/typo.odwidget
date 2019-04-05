@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openOdWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="WTypo">
+	<sm:content>
+		<sm:WParagraph globalStyle="spaceBeforeKeep" display="always"/>
+		<sm:WSection style="typoSection">
+			<sm:callZone key="zPrefix"/>
+			<sm:choose>
+				<sm:when xpath="computeStrAgent('odContentZone_zPrefixIco')='def'">
+					<sm:WParagraph style="typDef" display="always"/>
+				</sm:when>
+				<sm:when xpath="computeStrAgent('odContentZone_zPrefixIco')='ex'">
+					<sm:WParagraph style="typEx" display="always"/>
+				</sm:when>
+				<sm:when xpath="computeStrAgent('odContentZone_zPrefixIco')='rem'">
+					<sm:WParagraph style="typRem" display="always"/>
+				</sm:when>
+				<sm:when xpath="computeStrAgent('odContentZone_zPrefixIco')='adv'">
+					<sm:WParagraph style="typAdv" display="always"/>
+				</sm:when>
+				<sm:when xpath="computeStrAgent('odContentZone_zPrefixIco')='warning'">
+					<sm:WParagraph style="typWarning" display="always"/>
+				</sm:when>
+				<sm:when xpath="computeStrAgent('odContentZone_zPrefixIco')='comp'">
+					<sm:WParagraph style="typComp" display="always"/>
+				</sm:when>
+				<sm:when xpath="computeStrAgent('odContentZone_zPrefixIco')='meth'">
+					<sm:WParagraph style="typMeth" display="always"/>
+				</sm:when>
+				<sm:when xpath="computeStrAgent('odContentZone_zPrefixIco')='remind'">
+					<sm:WParagraph style="typRemind" display="always"/>
+				</sm:when>
+				<sm:when xpath="computeStrAgent('odContentZone_zPrefixIco')='basic'">
+					<sm:WParagraph style="typBasic" display="always"/>
+				</sm:when>
+				<sm:when xpath="computeStrAgent('odContentZone_zPrefixIco')='syntax'">
+					<sm:WParagraph style="typSyntax" display="always"/>
+				</sm:when>
+				<sm:when xpath="computeStrAgent('odContentZone_zPrefixIco')='legal'">
+					<sm:WParagraph style="typLegal" display="always"/>
+				</sm:when>
+				<sm:when xpath="computeStrAgent('odContentZone_zPrefixIco')='simul'">
+					<sm:WParagraph style="typSimul" display="always"/>
+				</sm:when>
+			</sm:choose>
+			<sm:WParagraph style="colBreak" display="always"/>
+			<sm:WParagraph style="typTxt">
+				<sm:callZone key="zTxt"/>
+			</sm:WParagraph>
+		</sm:WSection>
+	</sm:content>
+</sm:openOdWidget>

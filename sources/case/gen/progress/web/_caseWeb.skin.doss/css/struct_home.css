@@ -1,0 +1,169 @@
+body{
+	margin: 0px 0px 0px 0px;
+}
+#tplFra {
+	position: absolute;
+	height:100%;
+	width:100%;
+	min-width:900px;
+	min-height:360px;
+	overflow: hidden;
+	background-color: white;
+}
+#tplTop {
+	position: absolute;
+	width:100%;
+	height:40px;
+	top:0px;
+	left:0px;
+	color: #627413;
+	text-align: center;
+	font-size:16px;
+	background:url(../img/tplTop.png) bottom repeat-x #E0EDAC;
+}
+.titleRoot{
+	font-size: 2em;
+	text-align: right;
+	padding-right: 10px;
+}
+#tplRgt {
+	position: absolute;
+	width:235px;
+	right:0px;
+	top:45px;
+	bottom:5px;
+	overflow: hidden;
+	text-align: left;
+	background-color: #e3efbf;
+	overflow: hidden;
+	border-left:2px solid #8b9c03;
+	border-top:2px solid #8b9c03;
+	border-bottom:2px solid #8b9c03;
+	-moz-border-radius: 10px 0px 0px 10px;
+	-webkit-border-top-left-radius:10px;
+	-webkit-border-bottom-left-radius:10px;
+	-khtml-border-top-left-radius:10px;
+	-khtml-border-bottom-left-radius:10px;
+	border-top-left-radius:10px;
+	border-bottom-left-radius:10px;
+}
+#tplRgt .rgtCo{
+	position: absolute;
+	width:235px;
+	left:0px;
+	top:20px;
+	bottom:0px;
+}
+#tplRgt .homeNav{
+	position: absolute;
+	width:100%;
+	left:0px;
+	bottom:5px;
+}
+#tplRgt .homeNav.isCoach {
+	bottom: 133px;
+}
+
+.btnStart, .btnLast, .btnPlan, .btnReset{
+	padding-left:47px;
+	display:table-cell;
+	height:45px;
+	margin:5px;
+	vertical-align:middle;
+	font-size:1.2em;
+	text-decoration:none;
+	font-weight:bold;
+	padding-right:5px
+} 
+
+.btnStart{
+	background:url(../img/btnStart.png) 5px center no-repeat;
+	color:#627413;
+} 
+
+.btnLast{
+	background:url(../img/btnLast.png) 5px center no-repeat;
+	color:#740072;
+} 
+.btnPlan{
+	background:url(../img/btnPlan.png) 5px center no-repeat;
+	color:#764646;
+} 
+
+
+
+div#resetStorageData{
+	margin-top:10px;
+}
+
+.btnReset{
+	background:url(../img/reset.png) 5px center no-repeat;
+	height:43px;
+	color:#B46D6F;
+} 
+
+
+
+#tplMain{
+	position: absolute;
+	background-color: white;
+	top:45px;
+	bottom:5px;
+	left: 5px;
+	right:245px;
+	border:2px solid #8b9c03;
+	-moz-border-radius: 10px;
+	-webkit-border-radius:10px;
+	-khtml-border-radius:10px;
+	border-radius:10px;
+}
+
+#tplCo {
+	position: absolute;
+	top:10px;
+	left:0px;
+	right:0px;
+	bottom:10px;
+}
+div.home{
+	position: absolute;
+	height:100%;
+	width:100%;
+	text-align: center;
+}
+div.home_co{
+	text-align: left;
+}
+div.home_ti{
+	position: absolute;
+	width:100%;
+	height:2em;
+}
+div.home_co{
+	position: absolute;
+	left:0px;
+	right:0px;
+	top:2em;
+	bottom:0;
+	overflow: auto;
+	padding:10px
+}
+div.home_ft{
+	position: absolute;
+	width:100%;
+	height:120px;
+	bottom:0px;
+	overflow-x:auto;
+	overflow-y:hidden;
+}
+div.home_ft .part{
+	border-collapse:collapse;
+	border-spacing:0;
+	margin:0;
+	padding:0;
+	height:100%;
+	margin: 0 auto;
+}
+div.home_ft .part td{
+	padding:10px;
+}

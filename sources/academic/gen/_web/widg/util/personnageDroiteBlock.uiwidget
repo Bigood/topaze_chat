@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="pbBlock">
+	<sm:content>
+		<scBlock xmlns="http://www.w3.org/1999/xhtml" class="personnage">
+			<sm:addSrcPath/>
+			<addAttribute name="class">
+				<sm:callZone key="zClass"/> personnage</addAttribute>
+			<sm:choose>
+				<sm:when sc:refUri="/academic/gen/_web/widg/util/utilFree.cond"/>
+			</sm:choose>
+			<div>
+				<addAttribute name="class">
+					<sm:callZone key="zClass"/>_co personnage_co</addAttribute>
+				<sm:callZone key="zCo"/>
+			</div>
+			<div>
+				<addAttribute name="class">
+					<sm:callZone key="zClass"/>_ti personnage_ti</addAttribute>
+				<sm:callZone key="zImage"/>
+				<!--<div xmlns="http://www.w3.org/1999/xhtml" class="personnage_ti_avatar">
+	<addAttribute name="style">background-image:url(<sm:callZone xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" key="zImage"/>);</addAttribute>
+</div>-->
+				<div class="personnage_ti_prenom">
+					<sm:callZone key="zPrenom"/>
+				</div>
+			</div>
+		</scBlock>
+	</sm:content>
+</sm:openUiWidget>

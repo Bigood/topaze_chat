@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:textPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="￼;Citation pluriparagraphe￼" info="Quote Text">
+	<!--Idem op :txt, avec balise quote en moins-->
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="qTxt"/>
+	<sm:structure>
+		<sm:blockTags>
+			<sm:paraTag name="￼;Paragraphe￼">
+				<sm:meta sc:refUri="/academic/model/metaData/txtM.model" usage="optional"/>
+			</sm:paraTag>
+			<sm:itemizedListTag name="￼;Liste à puce￼">
+				<sm:meta sc:refUri="/academic/model/metaData/txtM.model" usage="optional"/>
+				<sm:listItemTag name="￼;Item￼"/>
+			</sm:itemizedListTag>
+			<sm:orderedListTag name="￼;Liste ordonnée￼">
+				<sm:meta sc:refUri="/academic/model/metaData/txtM.model" usage="optional"/>
+				<sm:listItemTag name="￼;Item￼"/>
+			</sm:orderedListTag>
+		</sm:blockTags>
+		<sm:inlineTags>
+			<sm:uLinkTag role="acr" name="￼;Abréviation￼">
+				<sm:refItem>
+					<sm:allowedModel sc:refUri="/academic/model/Re/refs/acr.model"/>
+				</sm:refItem>
+			</sm:uLinkTag>
+			<sm:uLinkTag role="glos" name="￼;Glossaire￼">
+				<sm:refItem>
+					<sm:allowedModel sc:refUri="/academic/model/Re/refs/glos.model"/>
+				</sm:refItem>
+			</sm:uLinkTag>
+			<sm:uLinkTag role="bib" name="￼;Bibliographie￼">
+				<sm:refItem>
+					<sm:allowedModel sc:refUri="/academic/model/Re/refs/bib.model"/>
+				</sm:refItem>
+			</sm:uLinkTag>
+			<sm:uLinkTag role="ref" name="￼;Référence￼">
+				<sm:refItem>
+					<sm:allowedModel sc:refUri="/academic/model/Re/refs/ref.model"/>
+				</sm:refItem>
+			</sm:uLinkTag>
+			<sm:uLinkTag role="docLnk" name="￼;Lien vers un document￼">
+				<sm:refItem>
+					<sm:allowedModel sc:refUri="/binaries/odp/odp.model"/>
+					<sm:allowedModel sc:refUri="/binaries/ods/ods.model"/>
+					<sm:allowedModel sc:refUri="/binaries/odt/odt.model"/>
+					<sm:allowedModel sc:refUri="/binaries/pdf/pdf.model"/>
+					<sm:allowedModel sc:refUri="/binaries/flash/flash.model"/>
+					<sm:allowedModel sc:refUri="/binaries/ppt/ppt.model"/>
+					<sm:allowedModel sc:refUri="/binaries/xls/xls.model"/>
+					<sm:allowedModel sc:refUri="/binaries/doc/doc.model"/>
+					<sm:allowedModel sc:refUri="/binaries/zip/zip.model"/>
+					<sm:allowedModel sc:refUri="/academic/model/Re/eSite/eSite.model"/>
+				</sm:refItem>
+			</sm:uLinkTag>
+			<sm:uLinkTag role="resLnk" name="￼;Renvoi vers une ressource￼">
+				<sm:refItem>
+					<sm:allowedModel sc:refUri="/binaries/png/png.model"/>
+					<sm:allowedModel sc:refUri="/binaries/jpg/jpeg.model"/>
+					<sm:allowedModel sc:refUri="/binaries/gif/gif.model"/>
+					<sm:allowedModel sc:refUri="/binaries/ods/ods.model"/>
+					<sm:allowedModel sc:refUri="/binaries/odg/odg.model"/>
+					<sm:allowedModel sc:refUri="/binaries/avi/avi.model"/>
+					<sm:allowedModel sc:refUri="/binaries/flv/flv.model"/>
+					<sm:allowedModel sc:refUri="/binaries/mp4/mp4.model"/>
+					<sm:allowedModel sc:refUri="/binaries/mov/mov.model"/>
+					<sm:allowedModel sc:refUri="/binaries/mpg/mpg.model"/>
+					<sm:allowedModel sc:refUri="/binaries/rm/rm.model"/>
+					<sm:allowedModel sc:refUri="/binaries/webm/webm.model"/>
+					<sm:allowedModel sc:refUri="/binaries/wmv/wmv.model"/>
+					<sm:allowedModel sc:refUri="/binaries/flash/flash.model"/>
+					<sm:allowedModel sc:refUri="/binaries/mp3/mp3.model"/>
+					<sm:allowedModel sc:refUri="/binaries/oga/oga.model"/>
+					<sm:allowedModel sc:refUri="/binaries/opus/opus.model"/>
+					<sm:allowedModel sc:refUri="/math/odf/odf.model"/>
+					<sm:allowedModel sc:refUri="/academic/model/Re/eSite/eSite.model"/>
+					<sm:allowedModel sc:refUri="/math/latex/mathTex.model"/>
+				</sm:refItem>
+			</sm:uLinkTag>
+			<sm:uLinkTag role="ucLnk" name="￼;Renvoi vers un grain de contenu￼">
+				<sm:refItem>
+					<sm:allowedModel sc:refUri="/academic/model/Uc/expUc.model"/>
+				</sm:refItem>
+			</sm:uLinkTag>
+			<sm:phraseTag role="url" name="￼;Adresse web, email, lien vers un document externe￼">
+				<sm:meta sc:refUri="/academic/model/metaData/urlM.model" usage="required"/>
+			</sm:phraseTag>
+			<sm:inlineStyleTag role="emp" name="￼;Important￼">
+				<sm:meta sc:refUri="/academic/model/metaData/txtM.model" usage="optional"/>
+			</sm:inlineStyleTag>
+			<sm:inlineStyleTag role="spec" name="￼;Terme étranger￼">
+				<sm:meta sc:refUri="/academic/model/metaData/txtM.model" usage="optional"/>
+			</sm:inlineStyleTag>
+			<sm:inlineStyleTag role="code" name="￼;Syntaxe￼"/>
+			<sm:textLeafTag role="exp" name="￼;Exposant￼"/>
+			<sm:textLeafTag role="ind" name="￼?note=Dans%20le%20sens%20%22exposant%2Findice%22&amp;key=indiceTexte;Indice￼"/>
+			<sm:textLeafTag role="mathtex" name="￼;Formule mathématique interne LaTeX￼"/>
+			<sm:inlineImgTag role="form" name="￼;Formule mathématique￼">
+				<sm:allowedModel sc:refUri="/math/odf/odf.model"/>
+				<sm:allowedModel sc:refUri="/math/latex/mathTex.model"/>
+			</sm:inlineImgTag>
+			<sm:inlineImgTag role="ico" name="￼;Imagette￼">
+				<sm:allowedModel sc:refUri="/binaries/png/png.model"/>
+				<sm:allowedModel sc:refUri="/binaries/gif/gif.model"/>
+				<sm:allowedModel sc:refUri="/binaries/jpg/jpeg.model"/>
+			</sm:inlineImgTag>
+		</sm:inlineTags>
+	</sm:structure>
+	<sm:authoring>
+		<sm:formEditor>
+			<sm:insertCharacters>
+				<sm:charGroup name="￼;Caractères spéciaux￼">
+					<sm:char value="©" name="©"/>
+					<sm:char value="®" name="®"/>
+					<sm:char value="™" name="™"/>
+					<sm:char value="œ" name="œ"/>
+					<sm:char value="« " name="«"/>
+					<sm:char value=" »" name="»"/>
+				</sm:charGroup>
+				<sm:charGroup name="￼;Majuscules accentuées￼">
+					<sm:char value="É" name="É"/>
+					<sm:char value="À" name="À"/>
+					<sm:char value="È" name="È"/>
+					<sm:char value="Ç" name="Ç"/>
+					<sm:char value="Ô" name="Ô"/>
+					<sm:char value="Ñ" name="Ñ"/>
+					<sm:char value="Ê" name="Ê"/>
+					<sm:char value="Î" name="Î"/>
+					<sm:char value="Â" name="Â"/>
+					<sm:char value="Û" name="Û"/>
+				</sm:charGroup>
+				<sm:charGroup name="￼;Symboles mathématiques￼">
+					<sm:char value="‰" name="‰"/>
+					<sm:char value="Ø" name="Ø"/>
+					<sm:char value="→" name="→"/>
+					<sm:char value="∞" name="∞"/>
+					<sm:char value="≈" name="≈"/>
+					<sm:char value="±" name="±"/>
+				</sm:charGroup>
+				<sm:charGroup name="￼;Lettres grecques courantes￼">
+					<sm:char value="α" name="α"/>
+					<sm:char value="β" name="β"/>
+					<sm:char value="θ" name="θ"/>
+					<sm:char value="ε" name="ε"/>
+					<sm:char value="φ" name="φ"/>
+					<sm:char value="π" name="π"/>
+					<sm:char value="λ" name="λ"/>
+					<sm:char value="Ρ" name="Ρ"/>
+					<sm:char value="ρ" name="ρ"/>
+					<sm:char value="Ω" name="Ω"/>
+					<sm:char value="ω" name="ω"/>
+					<sm:char value="Δ" name="Δ"/>
+					<sm:char value="δ" name="δ"/>
+				</sm:charGroup>
+				<!--Pour plus de caractères, l'auteur utilisera la table des caractères ou un mml / odf / mtex -->
+				<!--<sm:charGroup xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="Plus ..."><sm:char value="δ" name="δ"/><sm:char value="ξ" name="ξ"/><sm:char value="η" name="η"/><sm:char value="τ" name="τ"/><sm:char value="≡" name="≡"/><sm:char value="⇄" name="⇄"/><sm:char value="∡" name="∡"/></sm:charGroup>-->
+			</sm:insertCharacters>
+			<sm:blocksBehaviors>
+				<sm:itemizedListBehavior>
+					<sm:keyBinding char="L"/>
+				</sm:itemizedListBehavior>
+				<sm:orderedListBehavior>
+					<sm:keyBinding char="O"/>
+				</sm:orderedListBehavior>
+			</sm:blocksBehaviors>
+			<sm:inlineBehaviors>
+				<sm:phraseBehavior role="url" mode="insert">
+					<sm:keyBinding char="U"/>
+				</sm:phraseBehavior>
+				<sm:inlineStyleBehavior role="emp" mode="toggle">
+					<sm:keyBinding char="E"/>
+				</sm:inlineStyleBehavior>
+				<sm:inlineStyleBehavior role="spec" mode="toggle">
+					<sm:keyBinding char="T"/>
+				</sm:inlineStyleBehavior>
+				<sm:textLeafBehavior role="exp" mode="toggle">
+					<sm:keyBinding char="P"/>
+				</sm:textLeafBehavior>
+				<sm:textLeafBehavior role="ind" mode="toggle">
+					<sm:keyBinding char="M"/>
+				</sm:textLeafBehavior>
+				<sm:textLeafBehavior role="mathtex" mode="insert">
+					<sm:keyBinding char="K"/>
+					<sm:controller sc:refUri="/math/latex/mathTexInlineController.doss"/>
+				</sm:textLeafBehavior>
+			</sm:inlineBehaviors>
+			<sm:htmlStyle tag="body">
+				<sm:entryStyle key="direction" value="￼?key=l10n.dir;ltr￼"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="para">
+				<sm:entryStyle key="font-family" value="&quot;Times New Roman&quot;, Times, serif"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="phrase" role="url">
+				<sm:entryStyle key="text-decoration" value="underline"/>
+				<sm:entryStyle key="color" value="#0000EE"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="uLink" role="acr">
+				<sm:entryStyle key="text-decoration" value="underline"/>
+				<sm:entryStyle key="color" value="purple"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="uLink" role="glos">
+				<sm:entryStyle key="text-decoration" value="underline"/>
+				<sm:entryStyle key="color" value="purple"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="uLink" role="bib">
+				<sm:entryStyle key="text-decoration" value="underline"/>
+				<sm:entryStyle key="color" value="purple"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="uLink" role="ref">
+				<sm:entryStyle key="text-decoration" value="underline"/>
+				<sm:entryStyle key="color" value="purple"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="uLink" role="docLnk">
+				<sm:entryStyle key="text-decoration" value="underline"/>
+				<sm:entryStyle key="color" value="purple"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="uLink" role="resLnk">
+				<sm:entryStyle key="text-decoration" value="underline"/>
+				<sm:entryStyle key="color" value="purple"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="uLink" role="ucLnk">
+				<sm:entryStyle key="text-decoration" value="underline"/>
+				<sm:entryStyle key="color" value="green"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="inlineStyle" role="quote">
+				<sm:entryStyle key="font-family" value="&quot;Times New Roman&quot;, Times, serif"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="inlineStyle" role="quote" pseudoClass="before">
+				<sm:entryStyle key="font-weight" value="normal"/>
+				<sm:entryStyle key="content" value="&quot;« &quot;"/>
+				<sm:entryStyle key="color" value="grey"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="inlineStyle" role="quote" pseudoClass="after">
+				<sm:entryStyle key="font-weight" value="normal"/>
+				<sm:entryStyle key="content" value="&quot; »&quot;"/>
+				<sm:entryStyle key="color" value="grey"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="inlineStyle" role="emp">
+				<sm:entryStyle key="font-weight" value="bold"/>
+				<sm:entryStyle key="color" value="Maroon"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="inlineStyle" role="spec">
+				<sm:entryStyle key="font-style" value="italic"/>
+				<sm:entryStyle key="color" value="Maroon"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="inlineStyle" role="code">
+				<sm:entryStyle key="font-family" value="monospace"/>
+				<sm:entryStyle key="color" value="#570302"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="textLeaf" role="exp">
+				<sm:entryStyle key="font-size" value="70%"/>
+				<sm:entryStyle key="vertical-align" value="4px"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="textLeaf" role="ind">
+				<sm:entryStyle key="font-size" value="70%"/>
+				<sm:entryStyle key="vertical-align" value="-4px"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="textLeaf" role="mathtex">
+				<sm:entryStyle key="color" value="#6D2020"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="textLeaf" role="mathtex" pseudoClass="before">
+				<sm:entryStyle key="content" value="'$'"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="textLeaf" role="mathtex" pseudoClass="after">
+				<sm:entryStyle key="content" value="'$'"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="inlineImg" role="ico">
+				<sm:entryStyle key="vertical-align" value="middle"/>
+			</sm:htmlStyle>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:textPrim>

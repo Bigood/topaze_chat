@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:binaryOdTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/binaries/odg/odg.model"/>
+	<sm:axis code="gal"/>
+	<sm:content>
+		<sm:WObject globalStyle="gallery">
+			<sm:binaryUrl>
+				<sm:odTransform>
+					<sm:scaleFromStandardCharSize targetFontSizeInPt="12"/>
+					<sm:dimBounds unit="cm" maxWidth="4.5" maxHeight="6"/>
+				</sm:odTransform>
+			</sm:binaryUrl>
+		</sm:WObject>
+	</sm:content>
+</sm:binaryOdTransf>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="scormPageMgr">
+	<sm:content>
+		<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">// Commit scorm lors de la fermeture des pages
+scOnUnloads[scOnUnloads.length] = {
+	onUnload : function(){
+		// # Compute de certaines valeurs scorm
+		if(scServices.exitModeStorage) scServices.exitModeStorage.commitSessionTime();
+		// # Commit
+		if(scServices.scorm2k4 &amp;&amp; scServices.scorm2k4.isScorm2k4Active()) {
+			var vApi = scServices.scorm2k4.getScorm2k4API();
+			vApi.Commit("");
+		} else if(scServices.scorm12 &amp;&amp; scServices.scorm12.isScorm12Active()) {
+			var vApi = scServices.scorm12.getScorm12API();
+			vApi.LMSCommit("");
+		}
+	},
+ 	unloadSortKey : "ZZ"
+}
+
+// Refresh du completion storage. Commit si première affectation
+scOnLoads[scOnLoads.length] = {
+	onLoad : function(){
+		if (scServices.completionStorage){
+			var vMustCommit= (!scServices.completionStorage.getSavedCompletionStatus() || scServices.completionStorage.getSavedCompletionStatus()=="not attempted") ? true : undefined ;
+			scServices.completionStorage.commit(vMustCommit);
+		}
+
+	},
+ 	loadSortKey : "BBscormPageMgr"
+}
+</script>
+	</sm:content>
+</sm:openUiWidget>

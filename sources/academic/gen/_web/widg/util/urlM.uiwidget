@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="urlM">
+	<sm:widgetBsFragment contentFormat="xhtml">&lt;source type="xslOnSrc-dynamique"&gt;
+	&lt;xsl:stylesheet exclude-result-prefixes="sc sp java op"
+	version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+	xmlns:op="utc.fr:ics/opale3"
+	xmlns:sc="http://www.utc.fr/ics/scenari/v3/core"
+	xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive"
+	xmlns:java="http://xml.apache.org/xslt/java"&gt;
+
+		&lt;xsl:output omit-xml-declaration="yes" indent="no" method="xml" /&gt;
+		&lt;xsl:param name="vDialog" /&gt;
+		&lt;xsl:param name="vAgent" /&gt;
+		&lt;xsl:param name="vArguments" /&gt;
+
+		&lt;xsl:template match="*"&gt;
+			&lt;xsl:variable name="vTitle" select="$vArguments/op:urlM/sp:title"/&gt;
+			&lt;xsl:variable name="vUrl" select="$vArguments/op:urlM/sp:url"/&gt;
+			&lt;xsl:variable name="vType" select="$vArguments/op:urlM/sp:doc/sp:type"/&gt;
+			&lt;xsl:variable name="vWeight" select="$vArguments/op:urlM/sp:doc/sp:weight"/&gt;
+			&lt;xsl:variable name="vCode" select="$vArguments/op:urlM/sp:doc//sp:code"/&gt;
+			&lt;xsl:variable name="vLabelTi" select="if($vTitle,$vTitle,$vUrl)"/&gt;
+			&lt;xsl:variable name="vInfosDoc" select="if($vType or $vWeight or $vCode,concat(' [',if($vType,concat($vType,if($vWeight or $vCode,', '))),if($vWeight,concat($vWeight,if($vWeight or $vCode,', '))),if($vCode,$vCode),']'))"/&gt;
+			&lt;xsl:variable name="vLabelTiFull" select="concat($vLabelTi,$vInfosDoc, ' (nouvelle fenêtre)')"/&gt;
+			&lt;xsl:variable name="vTiFull" select="concat(computeStrAgent('xhtmlContentZone_content', $vArguments),$vInfosDoc)"/&gt;
+			&lt;a class="op_txt_ul" target="_blank" title="{$vLabelTiFull}" href="{$vUrl}"&gt;&lt;xsl:value-of select="$vTiFull" disable-output-escaping="yes"/&gt;&lt;/a&gt;
+		&lt;/xsl:template&gt;
+	&lt;/xsl:stylesheet&gt;
+&lt;/source&gt;</sm:widgetBsFragment>
+</sm:freeUiWidget>

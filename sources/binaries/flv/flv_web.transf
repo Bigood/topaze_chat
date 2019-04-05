@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:binaryXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/binaries/flv/flv.model"/>
+	<sm:fullTitleText>
+		<sm:callBinaryMeta/>
+	</sm:fullTitleText>
+	<sm:shortTitleText>
+		<sm:callBinaryMeta/>
+	</sm:shortTitleText>
+	<sm:content>
+		<sm:WCaptionBlock widgetClass="sfile_flv_resVideo resInFlow" tagName="figure" position="bottom">
+			<sm:caption>
+				<sm:WFreeBlock>
+					<span xmlns="http://www.w3.org/1999/xhtml" class="capTi">
+						<sm:title>
+							<sm:binaryMeta/>
+						</sm:title>
+					</span>
+				</sm:WFreeBlock>
+				<sm:chooseOnBinary>
+					<sm:binary>
+						<sm:flvSize>
+							<sm:scaleFromStandardCharSize/>
+						</sm:flvSize>
+					</sm:binary>
+					<sm:whenSize widthOver="genProp('bin.size-int',630)*1.1" heightOver="genProp('bin.size-int',630)*1.1">
+						<sm:WLink widgetClass="resVideo">
+							<sm:label>
+								<sm:fixedString>￼;[zoom...]￼</sm:fixedString>
+							</sm:label>
+							<sm:labelTitle>
+								<sm:fixedString>￼;Zoom (nouvelle fenêtre)...￼</sm:fixedString>
+							</sm:labelTitle>
+							<sm:link target="newWindow">
+								<sm:WVideoFlv>
+									<sm:binaryUrl>
+										<sm:flvSize/>
+									</sm:binaryUrl>
+									<sm:declareSize/>
+									<sm:player show="always"/>
+									<sm:stopButton cancelLoad="false"/>
+									<sm:volumeButton/>
+									<sm:timeButton/>
+									<sm:loadingBar show="never"/>
+									<sm:configFile format="text" src="player/flv.txt" srcFrom="skin"/>
+								</sm:WVideoFlv>
+							</sm:link>
+						</sm:WLink>
+					</sm:whenSize>
+				</sm:chooseOnBinary>
+				<sm:callBinaryMeta axis="info"/>
+			</sm:caption>
+			<sm:content>
+				<sm:callModel>
+					<sm:current axis="view"/>
+				</sm:callModel>
+			</sm:content>
+		</sm:WCaptionBlock>
+	<!--ATTENTION l'élément suivant à été ajouté en XSL par la dérivation.--><sm:callModel xmlns:op="utc.fr:ics/opale3" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sext="http://www.utc.fr/ics/scenari/v3/modeling/extension"><sm:current axis="credits"/></sm:callModel></sm:content>
+</sm:binaryXhtmlTransf>

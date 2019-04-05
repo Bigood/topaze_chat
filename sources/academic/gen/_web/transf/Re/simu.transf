@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Re/simu.model"/>
+	<sm:content format="xhtml">
+		<sm:WCaptionBlock widgetClass="simu" position="top">
+			<sm:caption>
+				<sm:for codes="eweb">
+					<sm:WLink widgetClass="simuLnkEweb">
+						<sm:label>
+							<sm:callModel>
+								<sm:current axis="title"/>
+							</sm:callModel>
+						</sm:label>
+						<sm:labelTitle>
+							<sm:fixedString value="￼;Cliquez ici pour visualiser la ressource (nouvelle fenêtre)...￼"/>
+						</sm:labelTitle>
+						<sm:link target="newWindow">
+							<sm:behavior addLinkInHref="yes"/>
+							<sm:position>
+								<sm:centerScreen width="800" height="600"/>
+							</sm:position>
+							<sm:windowFeatures scrollbars="yes" resizable="yes"/>
+							<sm:callSubModel axis="url" navCtx="newRoot"/>
+						</sm:link>
+					</sm:WLink>
+				</sm:for>
+				<sm:callCompositionMeta axis="info"/>
+			</sm:caption>
+			<sm:content>
+				<sm:choose>
+					<sm:when codes="acc">
+						<sm:WCollapsableBlock widgetClass="simuExp collapse" class="cbkClosed">
+							<sm:label>
+								<sm:fixedString value="￼;Explications...￼"/>
+							</sm:label>
+							<sm:labelTitle>
+								<sm:fixedString value="￼;Cliquez ici pour visualiser les explications...￼"/>
+							</sm:labelTitle>
+							<sm:content>
+								<sm:for codes="acc">
+									<sm:callSubModel/>
+								</sm:for>
+							</sm:content>
+						</sm:WCollapsableBlock>
+					</sm:when>
+				</sm:choose>
+			</sm:content>
+		</sm:WCaptionBlock>
+	</sm:content>
+</sm:compositionXhtmlTransf>

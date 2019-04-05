@@ -1,0 +1,20 @@
+#animBtn{
+	-moz-appearance: none;
+	background:transparent;
+	border:0;
+	opacity:0.4;
+	cursor:pointer;
+}
+#animBtn:hover{
+	opacity:0.8;
+}
+#animBtn:active{
+	opacity:1;
+}
+#animBtn.play{
+	list-style-image: url(btnPlay.png);
+}
+#animBtn.pause{
+	list-style-image: url(btnPause.png);
+}
+

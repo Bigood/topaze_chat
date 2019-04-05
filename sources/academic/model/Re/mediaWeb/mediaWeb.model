@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="￼;Module web distant￼" category="￼;Ressources￼">
+	<sm:help quickHelp="￼;Permet d'inclure des ressources issues de sites webs externes tels que des vidéos Youtube, des cartes Google Maps etc.￼"/>
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="mediaWeb" itemExtension="mWeb"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/academic/model/metaData/binAltM.model" usage="required"/>
+		<sm:part code="unknown" name="￼;Inclusion web générique￼" family="content" internalized="never" usage="required">
+			<sm:meta sc:refUri="/academic/model/Re/mediaWeb/mwUnM.model" usage="required"/>
+		</sm:part>
+	</sm:structure>
+	<sm:authoring>
+		<sm:icon sc:refUri="/academic/model/_ico/mediaWebSmall.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;web￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:formEditor indentXml="true">
+			<sm:composition>
+				<sm:standardWidget tagStyle="font-family:arial;font-size:1.8em; background-color:#359632; color:white; -moz-border-radius:5px; -moz-padding-start:4px; -moz-padding-end:4px;">
+					<sm:iconTag sc:refUri="/academic/model/_ico/mediaWebBig.png" style="margin-right: 5px;"/>
+				</sm:standardWidget>
+			</sm:composition>
+			<sm:part refCode="unknown">
+				<sm:hiddenWidget hideChildren="no"/>
+			</sm:part>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:compositionPrim>

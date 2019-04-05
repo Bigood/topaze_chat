@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/root/webRoot.model"/>
+	<sm:axis code="btnTools"/>
+	<sm:content format="xhtml">
+		<sm:choose>
+			<sm:when xpath="op:webRootM/sp:settings/sp:quest='yes' or op:webRootM/sp:settings/sp:glos='yes' or op:webRootM/sp:settings/sp:acr='yes' or op:webRootM/sp:settings/sp:ref='yes' or op:webRootM/sp:settings/sp:bib='yes' or op:webRootM/sp:settings/sp:index='yes' or op:webRootM/sp:settings/sp:credits='yes'">
+				<sm:WFreeBlock>
+					<span xmlns="http://www.w3.org/1999/xhtml" class="hidden"> | </span>
+				</sm:WFreeBlock>
+				<sm:WLink widgetClass="toolsBtn saveBtn">
+					<sm:label>
+						<sm:callModel>
+							<sm:current axis="lblBtnTools"/>
+						</sm:callModel>
+					</sm:label>
+					<sm:labelTitle>
+						<sm:title>
+							<sm:fixedTitle value="￼;Outils transverses￼"/>
+						</sm:title>
+					</sm:labelTitle>
+					<sm:link>
+						<sm:callModel>
+							<sm:root axis="tools" navCtx="newRoot"/>
+						</sm:callModel>
+					</sm:link>
+				</sm:WLink>
+			</sm:when>
+		</sm:choose>
+	</sm:content>
+</sm:compositionXhtmlTransf>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionOdtTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0">
+	<sm:model sc:refUri="/academic/model/Re/refs/bib.model"/>
+	<sm:axis code="genRef"/>
+	<sm:content>
+		<sm:choose>
+			<sm:when xpath="op:bibM/sp:type = 'web'">
+				<sm:dataBlock category="web">
+					<sm:overrideContentDeclaration/>
+					<sm:blockId>
+						<sm:compositionId/>
+					</sm:blockId>
+					<sm:sortKey>
+						<sm:title>
+							<sm:compositionTitle format="fullTitleText"/>
+						</sm:title>
+					</sm:sortKey>
+					<sm:label/>
+					<sm:data>
+						<sm:callCompositionMeta axis="content"/>
+					</sm:data>
+				</sm:dataBlock>
+			</sm:when>
+			<sm:otherwise>
+				<sm:dataBlock category="bib">
+					<sm:overrideContentDeclaration/>
+					<sm:blockId>
+						<sm:compositionId/>
+					</sm:blockId>
+					<sm:sortKey>
+						<sm:title>
+							<sm:compositionTitle format="fullTitleText"/>
+						</sm:title>
+					</sm:sortKey>
+					<sm:label/>
+					<sm:data>
+						<sm:callCompositionMeta axis="content"/>
+					</sm:data>
+				</sm:dataBlock>
+			</sm:otherwise>
+		</sm:choose>
+	</sm:content>
+</sm:compositionOdtTransf>

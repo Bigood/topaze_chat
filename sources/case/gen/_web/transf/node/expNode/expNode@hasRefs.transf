@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeXslWebSiteTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/case/model/node/expNode.model"/>
+	<sm:axis code="hasRefs"/>
+	<sm:content>
+		<sm:xsl sc:refUri="/case/gen/_web/transf/node/expNode/expNode@hasRefs.xsl"/>
+		<sm:callModel sc:refUri="/case/model/arc/unaryArc.model" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/case/model/arc/userArc.model" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/case/model/arc/chooseArc.model" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/case/model/arc/endArc.model" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/case/model/arc/mcqMurArc.model" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/case/model/arc/mcqSurArc.model" codeView="xhtmlContent"/>
+	</sm:content>
+</sm:freeXslWebSiteTransf>

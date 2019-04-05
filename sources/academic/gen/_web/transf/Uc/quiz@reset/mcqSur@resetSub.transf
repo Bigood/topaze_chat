@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><sma:assmntUnitMcqDhtmlTransf xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" info="Effacer la session eval">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/mcqSur.model"/>
+	<sm:axis code="resetSub"/>
+	<sm:scenario>
+		<sm:sequence>
+			<sm:initBody>
+				<sm:elementDisplay refId="input" mode="collapsed"/>
+			</sm:initBody>
+		</sm:sequence>
+	</sm:scenario>
+	<sm:publicFunctions>
+		<sm:function fctName="reset">
+			<sm:setCompletionStatus status="notAttempt">
+				<sm:responseSessionKey>
+					<sm:fixedKey value="eval"/>
+				</sm:responseSessionKey>
+			</sm:setCompletionStatus>
+			<sm:resetSession response="yes" score="yes">
+				<sm:sessionKey>
+					<sm:fixedKey value="eval"/>
+				</sm:sessionKey>
+			</sm:resetSession>
+		</sm:function>
+	</sm:publicFunctions>
+	<sm:assmntBody>
+		<sm:WChoiceList sm:id="input">
+			<sm:choiceBody>.</sm:choiceBody>
+		</sm:WChoiceList>
+	</sm:assmntBody>
+</sma:assmntUnitMcqDhtmlTransf>

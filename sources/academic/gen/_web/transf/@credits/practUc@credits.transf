@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Uc/practUc.model"/>
+	<sm:axis code="credits"/>
+	<sm:content format="xhtml">
+		<sm:WHeadingBlock widgetClass="credits">
+			<sm:title>
+				<sm:compositionTitle format="shortTitleText"/>
+			</sm:title>
+			<sm:callCompositionMeta/>
+		</sm:WHeadingBlock>
+	</sm:content>
+</sm:compositionXhtmlTransf>

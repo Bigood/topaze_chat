@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:navUiWidget code="btnRoot" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:scope>
+		<sm:stack/>
+	</sm:scope>
+	<sm:selectPage>
+		<sm:step>
+			<sm:home/>
+		</sm:step>
+	</sm:selectPage>
+	<sm:content>
+		<sm:ifPageFound>
+			<sm:WLink widgetClass="outNav_i" id="btnRoot">
+				<sm:label>￼;Accueil￼</sm:label>
+				<sm:labelTitle>￼;Retourner à l'accueil￼</sm:labelTitle>
+				<sm:link/>
+			</sm:WLink>
+		</sm:ifPageFound>
+	</sm:content>
+</sm:navUiWidget>

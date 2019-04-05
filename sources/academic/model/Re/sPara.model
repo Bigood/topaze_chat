@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:textPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="￼;Paragraphe Simple￼">
+	<sm:help quickHelp="￼;Insérer un paragraphe￼"/>
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="sPara"/>
+	<sm:structure>
+		<sm:inlineTags>
+			<sm:phraseTag role="url" name="￼;Adresse web, email, lien vers un document externe￼">
+				<sm:meta sc:refUri="/academic/model/metaData/urlM.model" usage="required"/>
+			</sm:phraseTag>
+			<sm:inlineStyleTag role="emp" name="￼;Important￼"/>
+			<sm:inlineStyleTag role="spec" name="￼;Terme étranger￼">
+				<sm:meta sc:refUri="/academic/model/metaData/txtM.model" usage="optional"/>
+			</sm:inlineStyleTag>
+		</sm:inlineTags>
+	</sm:structure>
+	<sm:authoring>
+		<sm:formEditor>
+			<sm:insertCharacters>
+				<sm:charGroup name="￼;Caractères spéciaux￼">
+					<sm:char value="©" name="©"/>
+					<sm:char value="®" name="®"/>
+					<sm:char value="™" name="™"/>
+					<sm:char value="œ" name="œ"/>
+					<sm:char value="« " name="«"/>
+					<sm:char value=" »" name="»"/>
+				</sm:charGroup>
+				<sm:charGroup name="￼;Majuscules accentuées￼">
+					<sm:char value="É" name="É"/>
+					<sm:char value="À" name="À"/>
+					<sm:char value="È" name="È"/>
+					<sm:char value="Ç" name="Ç"/>
+					<sm:char value="Ô" name="Ô"/>
+					<sm:char value="Ñ" name="Ñ"/>
+					<sm:char value="Ê" name="Ê"/>
+					<sm:char value="Î" name="Î"/>
+					<sm:char value="Â" name="Â"/>
+					<sm:char value="Û" name="Û"/>
+				</sm:charGroup>
+				<sm:charGroup name="￼;Symboles mathématiques￼">
+					<sm:char value="‰" name="‰"/>
+					<sm:char value="Ø" name="Ø"/>
+					<sm:char value="→" name="→"/>
+					<sm:char value="∞" name="∞"/>
+					<sm:char value="≈" name="≈"/>
+					<sm:char value="±" name="±"/>
+				</sm:charGroup>
+				<sm:charGroup name="￼;Lettres grecques courantes￼">
+					<sm:char value="α" name="α"/>
+					<sm:char value="β" name="β"/>
+					<sm:char value="θ" name="θ"/>
+					<sm:char value="ε" name="ε"/>
+					<sm:char value="φ" name="φ"/>
+					<sm:char value="π" name="π"/>
+					<sm:char value="λ" name="λ"/>
+					<sm:char value="Ρ" name="Ρ"/>
+					<sm:char value="ρ" name="ρ"/>
+					<sm:char value="Ω" name="Ω"/>
+					<sm:char value="ω" name="ω"/>
+					<sm:char value="Δ" name="Δ"/>
+					<sm:char value="δ" name="δ"/>
+				</sm:charGroup>
+				<!--Pour plus de caractères, l'auteur utilisera la table des caractères ou un mml / odf / mtex -->
+				<!--<sm:charGroup xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="Plus ..."><sm:char value="δ" name="δ"/><sm:char value="ξ" name="ξ"/><sm:char value="η" name="η"/><sm:char value="τ" name="τ"/><sm:char value="≡" name="≡"/><sm:char value="⇄" name="⇄"/><sm:char value="∡" name="∡"/></sm:charGroup>-->
+			</sm:insertCharacters>
+			<sm:inlineBehaviors>
+				<sm:phraseBehavior role="url" mode="insert">
+					<sm:keyBinding char="U"/>
+				</sm:phraseBehavior>
+				<sm:inlineStyleBehavior role="emp" mode="toggle">
+					<sm:keyBinding char="E"/>
+				</sm:inlineStyleBehavior>
+				<sm:inlineStyleBehavior role="spec" mode="toggle">
+					<sm:keyBinding char="T"/>
+				</sm:inlineStyleBehavior>
+			</sm:inlineBehaviors>
+			<sm:htmlStyle tag="body">
+				<sm:entryStyle key="direction" value="￼?key=l10n.dir;ltr￼"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="phrase" role="url">
+				<sm:entryStyle key="text-decoration" value="underline"/>
+				<sm:entryStyle key="color" value="#0000EE"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="inlineStyle" role="emp">
+				<sm:entryStyle key="font-weight" value="bold"/>
+				<sm:entryStyle key="color" value="Maroon"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="inlineStyle" role="spec">
+				<sm:entryStyle key="font-style" value="italic"/>
+				<sm:entryStyle key="color" value="Maroon"/>
+			</sm:htmlStyle>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:textPrim>

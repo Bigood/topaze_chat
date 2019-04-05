@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><sma:assmntUnitMlqDhtmlTransf xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/match.model"/>
+	<sm:axis code="score"/>
+	<sm:scenario>
+		<sm:sequence>
+			<sm:loadData>
+				<sm:responseSessionKey>
+					<sm:fixedKey value="eval"/>
+				</sm:responseSessionKey>
+			</sm:loadData>
+			<sm:saveData>
+				<sm:scoreSessionKey>
+					<sm:fixedKey value="eval"/>
+				</sm:scoreSessionKey>
+			</sm:saveData>
+			<sm:scoreComputing>
+				<sm:postProcessing>
+					<sm:fixBounds minPoints="0" maxPoints="1"/>
+				</sm:postProcessing>
+			</sm:scoreComputing>
+		</sm:sequence>
+	</sm:scenario>
+	<sm:assmntBody>
+		<div xmlns="http://www.w3.org/1999/xhtml" style="display: none;">
+			<sm:WLabelsBasket tagName="div">
+				<sm:forRandomLabel>
+					<sm:WDragDropContainer tagName="div" dropMode="ordered">
+						<sm:WContainer tagName="div">
+							<sm:WDraggableLabel tagName="div"/>
+						</sm:WContainer>
+					</sm:WDragDropContainer>
+				</sm:forRandomLabel>
+			</sm:WLabelsBasket>
+			<sm:forGroup>
+				<sm:WResponseArea tagName="div">
+					<sm:WDragDropContainer tagName="div" dropMode="append">
+						<sm:WContainer tagName="div"/>
+					</sm:WDragDropContainer>
+				</sm:WResponseArea>
+			</sm:forGroup>
+		</div>
+	</sm:assmntBody>
+</sma:assmntUnitMlqDhtmlTransf>

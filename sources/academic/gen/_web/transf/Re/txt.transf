@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:textXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Re/txt.model"/>
+	<sm:content classConstructionType="legacy">
+		<sm:paraTag tagName="p"/>
+		<sm:listTags>
+			<sm:itemizedListTag/>
+			<sm:orderedListTag/>
+		</sm:listTags>
+		<sm:tableTag widgetClass="op_txt table" targetFontSizeInPt="11.5">
+			<sm:captionTag/>
+			<sm:columnTag/>
+			<sm:columnTag role="head" preferedCellTagName="th"/>
+			<sm:rowTag/>
+			<sm:rowTag role="head" preferedCellTagName="th"/>
+			<sm:cellTag/>
+			<sm:cellTag role="num"/>
+			<sm:cellTag role="word"/>
+		</sm:tableTag>
+		<sm:uLinkTag widgetClass="op_txt ttSimple" role="acr" tagName="a">
+			<sm:refItem crossRefEntries="acr">
+				<sm:label>
+					<sm:textLink/>
+				</sm:label>
+				<sm:tooltip>
+					<sm:behavior trigger="onmouseover"/>
+					<sm:position>
+						<sm:relativeToAnchor vertical="belowElement" verticalOffset="5"/>
+					</sm:position>
+					<sm:basket key="footnotes"/>
+					<sm:ttContent>
+						<sm:callSubModel/>
+					</sm:ttContent>
+				</sm:tooltip>
+			</sm:refItem>
+		</sm:uLinkTag>
+		<sm:uLinkTag widgetClass="op_txt tooltip" role="glos" tagName="a">
+			<sm:refItem crossRefEntries="glos">
+				<sm:label>
+					<sm:textLink/>
+				</sm:label>
+				<sm:labelTitle>
+					<sm:subModelTitle suffix="￼;...￼"/>
+				</sm:labelTitle>
+				<sm:tooltip>
+					<sm:behavior trigger="onclick" sticky="true"/>
+					<sm:position>
+						<sm:relativeToAnchor vertical="belowElement"/>
+					</sm:position>
+					<sm:basket key="footnotes"/>
+					<sm:closeButton caption="x" title="￼;Fermer￼"/>
+					<sm:ttTitle>
+						<sm:subModelTitle/>
+					</sm:ttTitle>
+					<sm:ttContent>
+						<sm:callSubModel/>
+					</sm:ttContent>
+				</sm:tooltip>
+			</sm:refItem>
+		</sm:uLinkTag>
+		<sm:uLinkTag widgetClass="op_txt tooltip" role="bib" tagName="a">
+			<sm:refItem>
+				<sm:label>
+					<sm:callSubModel axis="crTag"/>
+					<sm:textLink/>
+				</sm:label>
+				<sm:labelTitle>
+					<sm:subModelTitle suffix="￼;...￼"/>
+				</sm:labelTitle>
+				<sm:tooltip>
+					<sm:behavior trigger="onclick" sticky="true"/>
+					<sm:position>
+						<sm:relativeToAnchor vertical="belowElement"/>
+					</sm:position>
+					<sm:basket key="footnotes"/>
+					<sm:closeButton caption="x" title="￼;Fermer￼"/>
+					<sm:ttTitle>
+						<sm:subModelTitle/>
+					</sm:ttTitle>
+					<sm:ttContent>
+						<sm:callSubModel/>
+					</sm:ttContent>
+				</sm:tooltip>
+			</sm:refItem>
+		</sm:uLinkTag>
+		<sm:uLinkTag widgetClass="op_txt tooltip" role="ref" tagName="a">
+			<sm:refItem crossRefEntries="ref">
+				<sm:label>
+					<sm:textLink/>
+				</sm:label>
+				<sm:labelTitle>
+					<sm:subModelTitle/>
+					<sm:fixedString value="￼;...￼"/>
+				</sm:labelTitle>
+				<sm:tooltip>
+					<sm:behavior trigger="onclick" sticky="true"/>
+					<sm:position>
+						<sm:relativeToAnchor vertical="belowElement"/>
+					</sm:position>
+					<sm:basket key="footnotes"/>
+					<sm:closeButton caption="x" title="￼;Fermer￼"/>
+					<sm:ttTitle>
+						<sm:subModelTitle/>
+					</sm:ttTitle>
+					<sm:ttContent>
+						<sm:callSubModel/>
+					</sm:ttContent>
+				</sm:tooltip>
+			</sm:refItem>
+		</sm:uLinkTag>
+		<sm:uLinkTag widgetClass="op_txt ttSimple" role="docLnk" tagName="a">
+			<sm:choose>
+				<sm:when sc:refUri="/academic/gen/_web/cnd/hasLegalInfo.cond">
+					<sm:refItem>
+						<sm:label>
+							<sm:callSubModel axis="ico"/>
+							<sm:textLink/>
+						</sm:label>
+						<sm:labelTitle>
+							<sm:subModelTitle suffix="￼; (nouvelle fenêtre)￼"/>
+						</sm:labelTitle>
+						<sm:link target="newWindow">
+							<sm:callSubModel axis="url" navCtx="newRoot"/>
+						</sm:link>
+						<sm:tooltip widgetClass="tt">
+							<sm:behavior trigger="onmouseover"/>
+							<sm:position>
+								<sm:relativeToAnchor vertical="belowElement" verticalOffset="5"/>
+							</sm:position>
+							<sm:basket key="footnotes"/>
+							<sm:ttContent>
+								<sm:callSubModel axis="legal"/>
+							</sm:ttContent>
+						</sm:tooltip>
+					</sm:refItem>
+				</sm:when>
+				<sm:otherwise>
+					<sm:refItem>
+						<sm:label>
+							<sm:callSubModel axis="ico"/>
+							<sm:textLink/>
+						</sm:label>
+						<sm:labelTitle>
+							<sm:subModelTitle suffix="￼; (nouvelle fenêtre)￼"/>
+						</sm:labelTitle>
+						<sm:link target="newWindow">
+							<sm:callSubModel axis="url" navCtx="newRoot"/>
+						</sm:link>
+					</sm:refItem>
+				</sm:otherwise>
+			</sm:choose>
+		</sm:uLinkTag>
+		<sm:uLinkTag widgetClass="op_txt tooltip" role="resLnk" tagName="a">
+			<sm:choose>
+				<sm:when xpath="typeAgent(concat('@',gotoSubModel()))='op_eSite' or typeAgent(concat('@',gotoSubModel()))='sfile_avi' or typeAgent(concat('@',gotoSubModel()))='sfile_flv' or typeAgent(concat('@',gotoSubModel()))='sfile_mp4_f4v' or typeAgent(concat('@',gotoSubModel()))='sfile_mov' or typeAgent(concat('@',gotoSubModel()))='sfile_mpg_mpeg' or typeAgent(concat('@',gotoSubModel()))='sfile_rm' or typeAgent(concat('@',gotoSubModel()))='sfile_webm' or typeAgent(concat('@',gotoSubModel()))='sfile_wmv' or typeAgent(concat('@',gotoSubModel()))='sfile_flash'">
+					<sm:refItem>
+						<sm:label>
+							<sm:callSubModel axis="ico"/>
+							<sm:textLink/>
+						</sm:label>
+						<sm:labelTitle>
+							<sm:subModelTitle suffix="￼; (nouvelle fenêtre)￼"/>
+						</sm:labelTitle>
+						<sm:link target="subWindow">
+							<sm:behavior addLinkInHref="yes"/>
+							<sm:windowFeatures extraOptions="CLOSEBTNTI :'￼Fermer￼'"/>
+							<sm:lookForExistingSubModelPage axis="ref" navCtx="newRoot">
+								<sm:ifNoPage>
+									<sm:callSubModel axis="ref" navCtx="newRoot"/>
+								</sm:ifNoPage>
+							</sm:lookForExistingSubModelPage>
+						</sm:link>
+					</sm:refItem>
+				</sm:when>
+				<sm:otherwise>
+					<sm:refItem>
+						<sm:label>
+							<sm:callSubModel axis="ico"/>
+							<sm:textLink/>
+						</sm:label>
+						<sm:labelTitle>
+							<sm:subModelTitle/>
+						</sm:labelTitle>
+						<sm:tooltip>
+							<sm:behavior trigger="onclick" sticky="true"/>
+							<sm:position>
+								<sm:relativeToCursor/>
+							</sm:position>
+							<sm:dimensions maxWidth="650" maxHeight="650"/>
+							<sm:basket key="footnotes" addLinkToBasket="yes"/>
+							<sm:closeButton caption="x" title="￼;Fermer￼"/>
+							<sm:ttTitle>
+								<sm:textLink/>
+							</sm:ttTitle>
+							<sm:ttContent>
+								<sm:callSubModel/>
+							</sm:ttContent>
+						</sm:tooltip>
+					</sm:refItem>
+				</sm:otherwise>
+			</sm:choose>
+		</sm:uLinkTag>
+		<sm:uLinkTag role="ucLnk" tagName="a">
+			<sm:refItem crossRefEntries="ucLnk">
+				<sm:label>
+					<sm:textLink/>
+				</sm:label>
+				<sm:labelTitle>
+					<sm:subModelTitle suffix="￼; (nouvelle fenêtre)￼"/>
+				</sm:labelTitle>
+				<sm:link target="subWindow">
+					<sm:behavior addLinkInHref="yes"/>
+					<sm:windowFeatures extraOptions="CLOSEBTNTI :'￼Fermer￼'"/>
+					<sm:callSubModel axis="ref" navCtx="newRoot"/>
+				</sm:link>
+			</sm:refItem>
+		</sm:uLinkTag>
+		<sm:phraseTag role="url" tagName="none">
+			<sm:Widget sc:refUri="/academic/gen/_web/widg/util/urlM.uiwidget"/>
+		</sm:phraseTag>
+		<sm:inlineStyleTag role="quote" tagName="q">
+			<sm:textWrapper prefix="￼;« ￼" suffix="￼; »￼"/>
+		</sm:inlineStyleTag>
+		<sm:inlineStyleTag role="emp" tagName="strong"/>
+		<sm:inlineStyleTag role="spec" tagName="em">
+			<sm:Widget sc:refUri="/academic/gen/_web/widg/util/txtLangAttr.uiwidget"/>
+		</sm:inlineStyleTag>
+		<sm:inlineStyleTag role="code" tagName="code"/>
+		<sm:textLeafTag role="exp" tagName="sup"/>
+		<sm:textLeafTag role="ind" tagName="sub"/>
+		<sm:textLeafTag role="mathtex">
+			<sm:Widget sc:refUri="/math/latex/mathTexInline_web.uiwidget"/>
+		</sm:textLeafTag><!--ATTENTION l'élément suivant à été ajouté en XSL par la dérivation.--><sm:objectLeafTag xmlns:op="utc.fr:ics/opale3" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sext="http://www.utc.fr/ics/scenari/v3/modeling/extension" role="indDisplay"><sm:refItem><sm:label><sm:callSubModel axis="disp"/></sm:label><sm:labelTitle><sm:subModelTitle axis="disp"/></sm:labelTitle></sm:refItem></sm:objectLeafTag><!--ATTENTION l'élément suivant à été ajouté en XSL par la dérivation.--><sm:objectLeafTag xmlns:op="utc.fr:ics/opale3" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sext="http://www.utc.fr/ics/scenari/v3/modeling/extension" role="indField"><sm:refItem><sm:label><sm:callSubModel axis="edit"/></sm:label><sm:labelTitle><sm:subModelTitle axis="edit"/></sm:labelTitle></sm:refItem></sm:objectLeafTag><!--ATTENTION l'élément suivant à été ajouté en XSL par la dérivation.--><sm:objectLeafTag xmlns:op="utc.fr:ics/opale3" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sext="http://www.utc.fr/ics/scenari/v3/modeling/extension" role="varDisplay"><sm:refItem><sm:label><sm:callSubModel axis="disp"/></sm:label><sm:labelTitle><sm:subModelTitle axis="disp"/></sm:labelTitle></sm:refItem></sm:objectLeafTag><!--ATTENTION l'élément suivant à été ajouté en XSL par la dérivation.--><sm:objectLeafTag xmlns:op="utc.fr:ics/opale3" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sext="http://www.utc.fr/ics/scenari/v3/modeling/extension" role="varField"><sm:refItem><sm:label><sm:callSubModel axis="edit"/></sm:label><sm:labelTitle><sm:subModelTitle axis="edit"/></sm:labelTitle></sm:refItem></sm:objectLeafTag>
+		<sm:inlineImgTag role="form">
+			<sm:choose>
+				<sm:when xpath="ancestor::sc:uLink or ancestor::sc:phrase[@role='url']">
+					<sm:callSubModel axis="inlineBasic"/>
+				</sm:when>
+				<sm:otherwise>
+					<sm:callSubModel axis="inline"/>
+				</sm:otherwise>
+			</sm:choose>
+		</sm:inlineImgTag>
+		<sm:inlineImgTag role="ico">
+			<sm:choose>
+				<sm:when xpath="ancestor::sc:uLink or ancestor::sc:phrase[@role='url']">
+					<sm:callSubModel axis="inlineBasic"/>
+				</sm:when>
+				<sm:otherwise>
+					<sm:callSubModel axis="inline"/>
+				</sm:otherwise>
+			</sm:choose>
+		</sm:inlineImgTag>
+	</sm:content>
+</sm:textXhtmlTransf>

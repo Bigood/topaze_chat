@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="resizerInZone" info="Resizer (requires resizerMgr)">
+	<sm:fillTemplateBuffers>
+		<sm:otherBuffers keyBuffer="js.postLink">resizerMgr.registerResources("ide:tplCo",{inLine :1,zneTop:'30'});
+</sm:otherBuffers>
+	</sm:fillTemplateBuffers>
+	<sm:content>
+		<sm:Widget sc:refUri="/case/gen/_web/wdt/util/resizer/resizerMgr.uiwidget"/>
+		<!--resizerInzone permet un resize avec du texte en dessous (inLine :1), à droite (inCol :1). Si rien n'est précisé, la zone de texte n'est pas prise en compte ... Si les deux sont précisé resInline est choisi par défaut.
+resZne et txtZne sont des classes permettant de définir le widget. S'il est necessaire de les changer il est possible de les passer en option de register {resZne,txtZne}
+PS : ne pas oublier dans ce cas de surcharger ces classes dans les css
+
+zneTop permet d'ajouter un top au dessus de resZne
+L'option fulleScreen :1 permet de faire en sorte qu'il n'y ait pas d'ascenseur (dans ce cas seule la div resZne est obligatoire)-->
+		<div xmlns="http://www.w3.org/1999/xhtml" class="resZne">
+			<sm:callZone key="zMap"/>
+		</div>
+		<div xmlns="http://www.w3.org/1999/xhtml" class="txtZne">
+			<sm:callZone key="zHelp"/>
+		</div>
+		<noscript xmlns="http://www.w3.org/1999/xhtml">
+			<em class="noscript">￼;Ce widget utilise Javascript pour un affichage optimal.￼</em>
+		</noscript>
+	</sm:content>
+</sm:openUiWidget>

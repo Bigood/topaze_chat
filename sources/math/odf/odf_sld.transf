@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/math/odf/odf.model"/>
+	<sm:content>
+		<sm:Widget sc:refUri="/binaries/_sld/widg/imgInFlow.uiwidget">
+			<sm:xhtmlContentZone key="img">
+				<sm:WImage widgetClass="imgBase">
+					<sm:binaryUrl>
+						<sm:odTransform>
+							<sm:scale ratio="2"/>
+							<sm:sizeBounds maxWidthInPx="800" maxHeightInPx="533"/>
+							<sm:outputPNG/>
+						</sm:odTransform>
+					</sm:binaryUrl>
+					<sm:declareSize/>
+				</sm:WImage>
+			</sm:xhtmlContentZone>
+			<sm:xhtmlContentZone key="imgOthers">
+				<sm:chooseOnBinary>
+					<sm:binary>
+						<sm:odSize>
+							<sm:scale ratio="2"/>
+						</sm:odSize>
+					</sm:binary>
+					<sm:whenSize widthOver="800" heightOver="533">
+						<sm:WImage>
+							<sm:binaryUrl>
+								<sm:odTransform>
+									<sm:scale ratio="2"/>
+									<sm:sizeBounds maxWidthInPx="1200" maxHeightInPx="800"/>
+									<sm:outputPNG/>
+								</sm:odTransform>
+							</sm:binaryUrl>
+							<sm:declareSize/>
+						</sm:WImage>
+					</sm:whenSize>
+				</sm:chooseOnBinary>
+			</sm:xhtmlContentZone>
+			<sm:xhtmlContentZone key="caption">
+				<sm:WFreeBlock>
+					<sm:callBinaryMeta/>
+				</sm:WFreeBlock>
+			</sm:xhtmlContentZone>
+		</sm:Widget>
+		<!--<sm:Widget xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" sc:refUri="/binaries/_sld/widg/objInFlow.uiwidget" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:xhtmlContentZone key="object">
+		<sm:WFlash widgetClass="embedObj">
+			<sm:binaryUrl>
+				<sm:odTransform>
+					<sm:outputSWF/>
+				</sm:odTransform>
+			</sm:binaryUrl>
+			<sm:declareSize scale="1.5"/>
+			<sm:param name="wmode">
+				<sm:fixedValue value="transparent"/>
+			</sm:param>
+		</sm:WFlash>
+	</sm:xhtmlContentZone>
+	<sm:xhtmlContentZone key="caption">
+		<sm:WFreeBlock>
+			<sm:title>
+				<sm:binaryMeta/>
+			</sm:title>
+		</sm:WFreeBlock>
+	</sm:xhtmlContentZone>
+</sm:Widget>-->
+	</sm:content>
+</sm:binaryXhtmlTransf>

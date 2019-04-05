@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:dataFormOdTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" info="Destiné à la page de crédit des ressources">
+	<sm:model sc:refUri="/academic/model/metaData/binAltM.model"/>
+	<sm:axis code="credit"/>
+	<sm:content>
+		<sm:forSubData codes="info">
+			<sm:callSubModel axis="credit"/>
+		</sm:forSubData>
+	</sm:content>
+</sm:dataFormOdTransf>

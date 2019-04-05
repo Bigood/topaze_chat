@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openOdWidget code="WConclu" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:content>
+		<sm:choose>
+			<sm:when keyZone="content">
+				<sm:WSection style="conclu">
+					<sm:WParagraph style="carBeforeConclu" display="always">
+						<sm:fixedString value="**"/>
+						<sm:formattingMark>
+							<sm:lineBreak/>
+						</sm:formattingMark>
+						<sm:fixedString value="*"/>
+						<sm:formattingMark>
+							<sm:lineBreak/>
+						</sm:formattingMark>
+					</sm:WParagraph>
+					<sm:callZone key="content"/>
+				</sm:WSection>
+			</sm:when>
+		</sm:choose>
+	</sm:content>
+</sm:openOdWidget>

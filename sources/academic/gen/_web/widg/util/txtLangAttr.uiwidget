@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="txtLangAttr" info="Ajoute @lang au tag parent si 'op:txtM/sp:lang/op:langM/sp:code' existe dans le tag en cours">
+	<sm:widgetBsFragment contentFormat="xhtml">&lt;source type="xslOnSrc-dynamique"&gt;
+	&lt;xsl:stylesheet exclude-result-prefixes="sc sp java op"
+	version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+	xmlns:op="utc.fr:ics/opale3"
+	xmlns:sc="http://www.utc.fr/ics/scenari/v3/core"
+	xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive"
+	xmlns:java="http://xml.apache.org/xslt/java"&gt;
+
+		&lt;xsl:output omit-xml-declaration="yes" indent="no" method="xml" /&gt;
+		&lt;xsl:param name="vDialog" /&gt;
+		&lt;xsl:param name="vAgent" /&gt;
+		&lt;xsl:param name="vArguments" /&gt;
+
+		&lt;xsl:template match="*"&gt;
+			&lt;xsl:variable name="vLang" select="$vArguments/op:txtM/sp:lang/op:langM/sp:code"/&gt;
+			&lt;xsl:if test="string-length($vLang)&amp;gt;0"&gt;
+				&lt;addAttribute name="lang"&gt;&lt;xsl:value-of select="$vLang"/&gt;&lt;/addAttribute&gt;
+			&lt;/xsl:if&gt;
+			&lt;xsl:value-of select="computeStrAgent('xhtmlContentZone_content', $vArguments)" disable-output-escaping="yes"/&gt;
+		&lt;/xsl:template&gt;
+	&lt;/xsl:stylesheet&gt;
+&lt;/source&gt;
+</sm:widgetBsFragment>
+</sm:freeUiWidget>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/binaries/eWeb/eWeb.model"/>
+	<sm:axis code="crResCo"/>
+	<sm:content>
+		<sm:WCaptionBlock widgetClass="linkInFlow">
+			<sm:caption/>
+			<sm:content>
+				<sm:WLink widgetClass="sfile_eWeb_lnk_lnk sfile_lnk">
+					<sm:label>
+						<sm:title>
+							<sm:binaryTitle/>
+						</sm:title>
+					</sm:label>
+					<sm:labelTitle>
+						<sm:title>
+							<sm:binaryTitle suffix="￼; (nouvelle fenêtre)￼"/>
+						</sm:title>
+					</sm:labelTitle>
+					<sm:link target="newWindow">
+						<sm:behavior addLinkInHref="yes"/>
+						<sm:position>
+							<sm:centerScreen width="900" height="700"/>
+						</sm:position>
+						<sm:windowFeatures scrollbars="yes" resizable="yes"/>
+						<sm:binaryUrl>
+							<sm:imageSize/>
+						</sm:binaryUrl>
+					</sm:link>
+				</sm:WLink>
+			</sm:content>
+		</sm:WCaptionBlock>
+	</sm:content>
+</sm:binaryXhtmlTransf>

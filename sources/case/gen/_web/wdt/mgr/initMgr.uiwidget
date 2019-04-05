@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="initMgr" info="Adds topazeMgr init JS headers to all pages">
+	<sm:content>
+		<sm:callModel>
+			<sm:lookForAscendants direction="currentToRoot" axis="initMgr">
+				<sm:callableModel sc:refUri="/case/model/node/assmntNode.model"/>
+				<sm:callableModel sc:refUri="/case/model/node/expNode.model"/>
+				<sm:callableModel sc:refUri="/case/model/node/heavyNode.model"/>
+				<sm:callableModel sc:refUri="/case/model/node/navNode.model"/>
+			</sm:lookForAscendants>
+		</sm:callModel>
+	</sm:content>
+</sm:openUiWidget>

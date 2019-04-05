@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionPrim name="Dialogues" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="personnage" itemExtension="xml"/>
+	<sm:structure>
+		<sm:set usage="required">
+			<sm:part code="pDroite" name="Bulle de message à droite" family="content" internalized="always">
+				<sm:meta sc:refUri="/academic/model/Dialogue/dialogueMeta.model" usage="required"/>
+				<sm:allowedModel sc:refUri="/academic/model/Re/res.model"/>
+			</sm:part>
+			<sm:part code="pGauche" name="Bulle de message à gauche" family="content" internalized="always">
+				<sm:meta sc:refUri="/academic/model/Dialogue/dialogueMeta.model" usage="required"/>
+				<sm:allowedModel sc:refUri="/academic/model/Re/res.model"/>
+			</sm:part>
+		</sm:set>
+	</sm:structure>
+	<sm:authoring>
+		<sm:formEditor indentXml="true">
+			<sm:part refCode="pDroite">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="-moz-border-start:4px solid rgb(74, 140, 177); margin-top:5px; margin-bottom:5px;">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/bulle_droite.png"/>
+								<sm:name style="margin-left:5px; color:rgb(74, 140, 177); font-size:1.3em; font-family:arial, sans-serif;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container style="-moz-border-start:4px solid rgb(230, 243, 252);">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/bulle_droite.png"/>
+								<sm:name style="color:rgb(230, 243, 252); font-weight:bold;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openBig.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+				<sm:changeTo name="Bulle de message à gauche">
+					<sm:switchPart refCode="pGauche"/>
+				</sm:changeTo>
+			</sm:part>
+			<sm:part refCode="pGauche">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="-moz-border-start:4px solid rgb(116, 187, 84); margin-top:5px; margin-bottom:5px;">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/bulle_gauche.png"/>
+								<sm:name style="margin-left:5px; color:rgb(116, 187, 84); font-size:1.3em; font-family:arial, sans-serif;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container style="-moz-border-start:4px solid rgb(229, 253, 218);">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/bulle_gauche.png"/>
+								<sm:name style="color:rgb(229, 253, 218); font-weight:bold;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openBig.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+				<sm:changeTo name="Bulle de message à droite">
+					<sm:switchPart refCode="pDroite"/>
+				</sm:changeTo>
+			</sm:part>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:compositionPrim>

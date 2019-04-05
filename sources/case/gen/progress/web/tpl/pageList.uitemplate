@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeUiTemplate xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:templateXsl templateEncoding="UTF-8" pageUnicityCriterion="none" resultEncoding="UTF-8" resultExtension=".txt" resultXslMethod="text">
+		<sm:contentTemplate sc:refUri="/case/gen/progress/web/tpl/pageList.xsl"/>
+	</sm:templateXsl>
+</sm:freeUiTemplate>

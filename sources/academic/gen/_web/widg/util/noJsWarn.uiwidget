@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="noJsWarn">
+	<sm:content>
+		<!--Message de warning ajouté avant tout exercice / évaluation non accessible. Ce message est supprimé au chargement de la page.-->
+		<p xmlns="http://www.w3.org/1999/xhtml" id="noJsWarn">￼;Attention, votre navigateur ne supporte pas le javascript ou celui-ci a été désactivé. Certaines fonctionnalités dynamiques de ce module sont restreintes.￼</p>
+		<script xmlns="http://www.w3.org/1999/xhtml" type="text/JavaScript">var vNoJsWarn = scPaLib.findNode("ide:noJsWarn");
+if (vNoJsWarn &amp;&amp; vNoJsWarn.parentNode) vNoJsWarn.parentNode.removeChild(vNoJsWarn);
+</script>
+	</sm:content>
+</sm:openUiWidget>

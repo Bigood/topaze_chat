@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="Migration Topaze 1.1.0.01 -> Topaze 1.2.0.00" default="main" basedir=".">
+	
+	<target name="main">
+		<echo>####### MIGRATION Topaze 1.1.0.01 -> Topaze 1.2.0.00</echo>
+		<tstamp><format property="timestamp" pattern="yyMMdd-HHmm"/></tstamp>
+		
+		
+		<migrateXsl style="${basedir}/autoIndex.xsl" filterXPath="/sc:item/opa:autoIndex" filterXPathNs="opa:kelis.fr:opa;sc:http://www.utc.fr/ics/scenari/v3/core">
+			<param name="pWspPath" expression="${scenari.wsp.path}"/>
+			<fileset dir="${scenari.wsp.path}" includes="**/*.ind"/>
+		</migrateXsl>
+		
+		<echo>--- Migration terminée ---</echo>
+	</target>
+	
+</project>

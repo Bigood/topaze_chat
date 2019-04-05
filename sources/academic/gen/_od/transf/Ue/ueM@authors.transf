@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:dataFormOdTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" info="Création de la liste des auteurs">
+	<sm:model sc:refUri="/academic/model/Ue/ueM.model"/>
+	<sm:axis code="authors"/>
+	<sm:content>
+		<!--<sm:forSubData xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" codes="info"><sm:callSubModel axis="authors"/></sm:forSubData>-->
+	</sm:content>
+</sm:dataFormOdTransf>

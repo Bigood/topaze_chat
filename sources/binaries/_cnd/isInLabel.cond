@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:genericCond xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="isInLabel">
+	<sm:targetModel>
+		<sm:lookForAscendants direction="currentToRoot">
+			<sm:callableModel sc:refUri="/academic/model/Uc/quiz/utils/labelImg.model"/>
+			<sm:callableModel sc:refUri="/academic/model/Uc/quiz/utils/labelTxt.model"/>
+		</sm:lookForAscendants>
+		<sm:ifNone>
+			<sm:fixedResult return="false"/>
+		</sm:ifNone>
+	</sm:targetModel>
+	<sm:expression>
+		<sm:freeXpath xpath="true()"/>
+	</sm:expression>
+</sm:genericCond>

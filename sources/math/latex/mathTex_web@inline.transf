@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/math/latex/mathTex.model"/>
+	<sm:axis code="inline"/>
+	<sm:content>
+		<sm:Widget sc:refUri="/math/latex/getPng.uiwidget">
+			<sm:xhtmlContentZone key="class">
+				<sm:WFreeBlock>sfile_math_inline</sm:WFreeBlock>
+			</sm:xhtmlContentZone>
+			<sm:xhtmlContentZone key="alt">
+				<sm:callModel>
+					<sm:current axis="altText"/>
+				</sm:callModel>
+			</sm:xhtmlContentZone>
+		</sm:Widget>
+	</sm:content>
+</sm:binaryXhtmlTransf>

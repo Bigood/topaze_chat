@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionOdtTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/coQuiz.model"/>
+	<sm:axis code="asw"/>
+	<sm:content>
+		<sm:inDataOrder>
+			<sm:for codes="trainUcMcqSur">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:WParagraph globalStyle="subQuizTitle">
+							<sm:title>
+								<sm:subModelTitle/>
+								<sm:fixedTitle value="￼;Exercice￼"/>
+							</sm:title>
+						</sm:WParagraph>
+						<sm:callSubModel axis="asw"/>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="trainUcMcqMur">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:WParagraph globalStyle="subQuizTitle">
+							<sm:title>
+								<sm:subModelTitle/>
+								<sm:fixedTitle value="￼;Exercice￼"/>
+							</sm:title>
+						</sm:WParagraph>
+						<sm:callSubModel axis="asw"/>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="trainUcNumerical">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:WParagraph globalStyle="subQuizTitle">
+							<sm:title>
+								<sm:subModelTitle/>
+								<sm:fixedTitle value="￼;Exercice￼"/>
+							</sm:title>
+						</sm:WParagraph>
+						<sm:callSubModel axis="asw"/>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="trainUcField">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:WParagraph globalStyle="subQuizTitle">
+							<sm:title>
+								<sm:subModelTitle/>
+								<sm:fixedTitle value="￼;Exercice￼"/>
+							</sm:title>
+						</sm:WParagraph>
+						<sm:callSubModel axis="asw"/>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="trainUcCloze">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:WParagraph globalStyle="subQuizTitle">
+							<sm:title>
+								<sm:subModelTitle/>
+								<sm:fixedTitle value="￼;Exercice￼"/>
+							</sm:title>
+						</sm:WParagraph>
+						<sm:callSubModel axis="asw"/>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+		</sm:inDataOrder>
+	</sm:content>
+</sm:compositionOdtTransf>

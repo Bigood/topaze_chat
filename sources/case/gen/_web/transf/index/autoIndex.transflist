@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformer sc:refUri="/case/gen/_web/transf/index/autoIndex/autoIndex.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/index/autoIndex/autoIndex@calc.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/index/autoIndex/autoIndex@calcInput.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/index/autoIndex/autoIndex@calcJs.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/index/autoIndex/autoIndex@calcRand.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/index/autoIndex/autoIndex@calcVal.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/index/autoIndex/autoIndex@disp.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/index/autoIndex/autoIndex@id.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/index/autoIndex/autoIndex@initArc.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/index/autoIndex/autoIndex@type.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/index/autoIndex/autoIndex@val.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/index/autoIndex/autoIndexJs@calc.transf"/>
+</sm:transformerList>

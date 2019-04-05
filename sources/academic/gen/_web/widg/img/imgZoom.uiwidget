@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="imgZoom" info="Image zoom (requires scImgMgr)">
+	<sm:fillTemplateBuffers>
+		<sm:postXslFragment keyXsl="xhtml">&lt;xsl:overlay match="a[containWord(@class, 'imgZoom')]"&gt;
+  &lt;xsl:attribute name="onclick"&gt;scImgMgr.loading(); return false;&lt;/xsl:attribute&gt;
+  &lt;xsl:if test="not(containWord(@class, 'imgZoomNoTi'))"&gt;&lt;xsl:attribute name="title"&gt;￼Cliquez pour agrandir (nouvelle fenêtre)￼&lt;/xsl:attribute&gt;&lt;/xsl:if&gt;
+&lt;/xsl:overlay&gt;
+</sm:postXslFragment>
+		<sm:otherBuffers keyBuffer="js.postLink">scImgMgr.registerZoom("des:a.imgZoom",{toolbar:1,mag:1,titlePath:"par:/nsi:/chi:span.capTi"});
+</sm:otherBuffers>
+	</sm:fillTemplateBuffers>
+	<sm:content>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/img/scImgMgr.uiwidget"/>
+	</sm:content>
+</sm:openUiWidget>

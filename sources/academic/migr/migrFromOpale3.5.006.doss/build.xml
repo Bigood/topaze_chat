@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Migration Opale 3.5.006 -> Opale 3.5.007" default="main" basedir=".">
+
+	<restrict id="scenari.wsp.src.all">
+		<srcNode refid="scenari.wsp.src"/>
+		<name name="*.*"/>
+	</restrict>
+
+	<restrict id="scenari.wsp.src.xml">
+		<srcNode refid="scenari.wsp.src"/>
+		<or>
+			<name name="*.xml"/>
+			<name name="*.applet"/>
+			<name name="*.mWeb"/>
+			<name name="*.ref"/>
+			<name name="*.publi"/>
+			<name name="*.quiz"/>
+		</or>
+	</restrict>
+	
+	<target name="main">
+		<echo>####### MIGRATION de Opale 3.5.006 -> Opale 3.5.007</echo>
+		<tstamp><format property="timestamp" pattern="yyMMdd-HHmm"/></tstamp>
+		
+		<!-- # XSL de migration -->
+		<echo>=> migration de sc:uLink[@role='url'] en phrasetag[@role=url] ...</echo>
+		<migrateXsl style="${basedir}/3.5/url-phrase.xsl" filterXPath="//sc:uLink[@role='url' and not(ancestor::op:bibTxt)]" filterXPathNs="op:utc.fr:ics/opale3;sc:http://www.utc.fr/ics/scenari/v3/core;sp:http://www.utc.fr/ics/scenari/v3/primitive">
+			<restrict refid="scenari.wsp.src.xml"/>
+		</migrateXsl>
+
+		<echo>=> migration de binM.model ...</echo>
+		<migrateXsl style="${basedir}/3.5/binM.xsl" filterXPath="//op:binM" filterXPathNs="op:utc.fr:ics/opale3;sc:http://www.utc.fr/ics/scenari/v3/core;sp:http://www.utc.fr/ics/scenari/v3/primitive">
+			<restrict refid="scenari.wsp.src.xml"/>
+		</migrateXsl>
+
+		<echo>=> migration de binAltM.model ...</echo>
+		<migrateXsl style="${basedir}/3.5/binAltM.xsl" filterXPath="//op:binAltM[parent::sfm:avi or parent::sfm:swf or parent::sfm:flv or parent::sfm:mov or parent::sfm:mpg or parent::sfm:rm or parent::sfm:wmv]" filterXPathNs="op:utc.fr:ics/opale3;sc:http://www.utc.fr/ics/scenari/v3/core;sp:http://www.utc.fr/ics/scenari/v3/primitive;sfm:http://www.utc.fr/ics/scenari/v3/filemeta">
+			<restrict refid="scenari.wsp.src.xml"/>
+		</migrateXsl>
+
+		<echo>=> migration de webM, mp4 et mp3 pour accessibilité ...</echo>
+		<migrateXsl style="${basedir}/3.5/metasAlt.xsl" filterXPath="//op:binAltM[parent::sfm:webm or parent::sfm:mp3 or parent::sfm:mp4_f4v]" filterXPathNs="op:utc.fr:ics/opale3;sc:http://www.utc.fr/ics/scenari/v3/core;sp:http://www.utc.fr/ics/scenari/v3/primitive;sfm:http://www.utc.fr/ics/scenari/v3/filemeta">
+			<restrict refid="scenari.wsp.src.xml"/>
+		</migrateXsl>
+
+		<echo>=> migration de pdf, doc, odp, odt, ppt, xls, rtf et zip pour accessibilité...</echo>
+		<migrateXsl style="${basedir}/3.5/metasDoc.xsl" filterXPath="//op:binAltM[parent::sfm:pdf or parent::sfm:doc_docx or parent::sfm:odp or parent::sfm:odt or parent::sfm:ppt_pps_pptx_ppsx or parent::sfm:xls_xlsx or parent::sfm:zip or parent::sfm:rtf]" filterXPathNs="op:utc.fr:ics/opale3;sc:http://www.utc.fr/ics/scenari/v3/core;sp:http://www.utc.fr/ics/scenari/v3/primitive;sfm:http://www.utc.fr/ics/scenari/v3/filemeta">
+			<restrict refid="scenari.wsp.src.xml"/>
+		</migrateXsl>
+		
+		<echo>--- Fin de la migration ---</echo>
+	</target>
+	
+	
+</project>

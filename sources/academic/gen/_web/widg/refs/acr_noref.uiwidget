@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:crossRefTableUiWidget xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" code="acr" info="Abréviations">
+	<sm:refEntries key="acr">
+		<sm:callableModel sc:refUri="/academic/model/Re/refs/acr.model"/>
+	</sm:refEntries>
+	<sm:sortEntries>
+		<sm:alphaNonCaseSensitive>
+			<sm:callEntryTitle type="fullTitleText" axis=""/>
+			<sm:categories>
+				<sm:firstLetter minEntriesByCateg="5" ifOnlyOneCateg="eliminate">
+					<sm:forceCategories from="A" to="Z"/>
+				</sm:firstLetter>
+			</sm:categories>
+		</sm:alphaNonCaseSensitive>
+	</sm:sortEntries>
+	<sm:content>
+		<ifText xmlns="http://www.w3.org/1999/xhtml">
+			<div class="refOutline">
+				<sm:forCateg>
+					<span class="refOutlineEntry">
+						<sm:WCategLink tagNameIfCategEmpty="span">
+							<sm:categLabel/>
+						</sm:WCategLink>
+					</span>
+				</sm:forCateg>
+			</div>
+		</ifText>
+		<sm:forCateg filter="ifContainEntries">
+			<sm:WCategAnchor widgetClass="refCateg" tagName="div">
+				<sm:categLabel/>
+			</sm:WCategAnchor>
+			<dl xmlns="http://www.w3.org/1999/xhtml">
+				<sm:forEntry>
+					<dd class="idxFra">
+						<div class="idxEntryCo">
+							<sm:callEntryContent/>
+						</div>
+					</dd>
+				</sm:forEntry>
+			</dl>
+		</sm:forCateg>
+		<ifText xmlns="http://www.w3.org/1999/xhtml">
+			<dl>
+				<sm:forEntry>
+					<dd class="idxFra">
+						<div class="idxEntryCo">
+							<sm:callEntryContent/>
+						</div>
+					</dd>
+				</sm:forEntry>
+			</dl>
+		</ifText>
+	</sm:content>
+</sm:crossRefTableUiWidget>

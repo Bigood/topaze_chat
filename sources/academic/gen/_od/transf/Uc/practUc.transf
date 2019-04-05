@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionOdtTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0">
+	<sm:model sc:refUri="/academic/model/Uc/practUc.model"/>
+	<sm:content>
+		<sm:inDataOrder>
+			<sm:for codes="desc">
+				<sm:WParagraph style="descTitle">
+					<sm:title>
+						<sm:partTitle/>
+					</sm:title>
+				</sm:WParagraph>
+				<sm:callSubModel/>
+			</sm:for>
+			<sm:for codes="quest">
+				<sm:WParagraph style="questTitle">
+					<sm:fixedString value="￼;Question ￼"/>
+					<sm:dynamicString>
+						<sm:freeSelect xpath="if(count(../sp:quest)&gt;1, count(preceding-sibling::sp:quest)+1)"/>
+					</sm:dynamicString>
+				</sm:WParagraph>
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_od/_cnd/filters/solPractUc.cond">
+						<sm:dataBlock category="solution">
+							<sm:blockId>
+								<sm:subModelId/>
+							</sm:blockId>
+							<sm:label>
+								<sm:title>
+									<sm:compositionTitle/>
+								</sm:title>
+							</sm:label>
+							<sm:data>
+								<sm:callSubModel axis="asw"/>
+							</sm:data>
+						</sm:dataBlock>
+					</sm:when>
+				</sm:choose>
+				<sm:callSubModel/>
+			</sm:for>
+		</sm:inDataOrder>
+	</sm:content>
+</sm:compositionOdtTransf>

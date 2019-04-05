@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformerList sc:refUri="/academic/gen/_web/transf/binaries.transflist"/>
+	<sm:transformerList info="Model specific">
+		<sm:transformerList sc:refUri="/case/gen/_web/transf/binaries/@credits.transflist"/>
+		<sm:transformerList sc:refUri="/case/gen/_web/transf/binaries/coach.transflist"/>
+		<sm:transformerList sc:refUri="/case/gen/_web/transf/binaries/crResCo.transflist"/>
+		<sm:transformerList sc:refUri="/case/gen/_web/transf/binaries/genRef.transflist"/>
+		<sm:transformerList sc:refUri="/case/gen/_web/transf/binaries/logo.transflist"/>
+		<sm:transformerList sc:refUri="/case/gen/_web/transf/binaries/surcharges.transflist"/>
+		<sm:transformerList sc:refUri="/case/gen/_web/transf/binaries/zArc.transflist"/>
+	</sm:transformerList>
+</sm:transformerList>

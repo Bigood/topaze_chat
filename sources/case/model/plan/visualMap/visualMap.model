@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Plan graphique￼">
+	<sm:identification targetNamespace="kelis.fr:opa" targetPrefix="opa" code="visualMap" itemExtension="xml"/>
+	<sm:structure>
+		<sm:part code="image" name="￼;Image￼" internalized="userDependent" usage="required">
+			<sm:allowedModel sc:refUri="/binaries/png/png.model"/>
+			<sm:allowedModel sc:refUri="/binaries/jpg/jpeg.model"/>
+			<sm:allowedModel sc:refUri="/binaries/gif/gif.model"/>
+		</sm:part>
+		<sm:part code="help" name="￼;Texte d'aide￼" internalized="userDependent" usage="optional">
+			<sm:help quickHelp="￼;Zone de texte d'aide en dessous de l'image permettant d'indiquer quoi faire à l'utilisateur. Par exemple : Passer votre souris sur l'image pour voir les interactions possibles ...￼"/>
+			<sm:allowedModel sc:refUri="/academic/model/Re/sTxt.model"/>
+		</sm:part>
+		<sm:set usage="required">
+			<sm:part code="area" name="￼;Zone￼" internalized="userDependent">
+				<sm:meta sc:refUri="/case/model/plan/visualMap/areaMeta.model" usage="required"/>
+				<sm:allowedModel sc:refUri="/case/model/plan/visualMap/nodeLink.model"/>
+			</sm:part>
+		</sm:set>
+	</sm:structure>
+	<sm:authoring>
+		<sm:icon sc:refUri="/case/auth/ico/visualMap.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;map￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:formEditor indentXml="false">
+			<sm:xmlEditor sc:refUri="/case/auth/xed/visualMap.xed"/>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:compositionPrim>

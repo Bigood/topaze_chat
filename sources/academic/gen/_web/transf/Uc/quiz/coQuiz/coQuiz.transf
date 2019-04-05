@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><sma:assmntCompositionDhtmlTransf xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns="http://www.w3.org/1999/xhtml">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/coQuiz.model"/>
+	<sm:scenario>
+		<sm:sequence code="play">
+			<sm:initBody>
+				<sm:buttonDisplay refId="btnQuizT" mode="enabled" toggleStatus="off"/>
+				<sm:elementDisplay refId="btnQuizTCaptionOff" mode="collapsed"/>
+				<sm:elementDisplay refId="btnQuizTCaptionOn" mode="visible"/>
+				<sm:elementDisplay refId="score" mode="invisible"/>
+			</sm:initBody>
+			<sm:saveData>
+				<sm:scoreSessionKey>
+					<sm:fixedKey value=""/>
+				</sm:scoreSessionKey>
+			</sm:saveData>
+			<sm:scoreComputing>
+				<sm:computeScoreSubAssmnt codes="trainUcMcqSur trainUcMcqMur trainUcField trainUcNumerical trainUcCloze">
+					<sm:scoreSessionKey>
+						<sm:fixedKey value=""/>
+					</sm:scoreSessionKey>
+				</sm:computeScoreSubAssmnt>
+				<sm:postProcessing>
+					<sm:restrictMaxPoints moreOrEqualThan="100" scoreModulation="proportionnal"/>
+				</sm:postProcessing>
+			</sm:scoreComputing>
+		</sm:sequence>
+	</sm:scenario>
+	<sm:assmntBody>
+		<div class="bkSolResOut">
+			<div class="bkSolResFra1">
+				<div class="bkSolResFra2">
+					<div class="bkSolResFra3">
+						<div class="bkSolResCo">
+							<div class="btnCorrection">
+								<sm:WToggleButton widgetClass="btnQuiz">
+									<sm:buttonBody>
+										<span class="btnQuizCaption">￼;Correction￼</span>
+									</sm:buttonBody>
+									<sm:buttonTitle>
+										<sm:fixedString value="￼;Afficher le score et la correction￼"/>
+									</sm:buttonTitle>
+									<sm:buttonActionOn>
+										<sm:for codes="trainUcMcqSur trainUcMcqMur trainUcField trainUcNumerical trainUcCloze">
+											<sm:callFunction fctName="displaySol" axis="list"/>
+										</sm:for>
+										<sm:elementDisplay refId="score" mode="visible"/>
+									</sm:buttonActionOn>
+									<sm:buttonActionOff>
+										<sm:for codes="trainUcMcqSur trainUcMcqMur trainUcField trainUcNumerical trainUcCloze">
+											<sm:callFunction fctName="play" axis="list"/>
+										</sm:for>
+										<sm:elementDisplay refId="score" mode="invisible"/>
+									</sm:buttonActionOff>
+								</sm:WToggleButton>
+							</div>
+							<div class="btnReset">
+								<sm:WButton widgetClass="btnQuiz">
+									<sm:buttonBody>
+										<span class="btnQuizCaption">￼;Recommencer￼</span>
+									</sm:buttonBody>
+									<sm:buttonTitle>
+										<sm:fixedString value="￼;Effacer les réponses￼"/>
+									</sm:buttonTitle>
+									<sm:buttonAction>
+										<sm:for codes="trainUcMcqSur trainUcMcqMur trainUcField trainUcNumerical trainUcCloze">
+											<sm:callFunction fctName="reset" axis="list"/>
+										</sm:for>
+										<sm:goToSequence refCode="play"/>
+									</sm:buttonAction>
+								</sm:WButton>
+							</div>
+							<div class="scoreBox">
+								<sm:WScore sm:id="score" widgetClass="score">
+									<sm:scoreText>
+										<sm:scaleScore min="0" max="100" step="1">
+											<sm:display scoreMoreThan="99" valueFormat="numeric" suffix="￼;% de bonnes réponses￼" class="answBest"/>
+											<sm:display scoreMoreThan="49" scoreLessOrEqualThan="99" valueFormat="numeric" suffix="￼;% de bonnes réponses￼" class="answGood"/>
+											<sm:display scoreMoreThan="0" scoreLessOrEqualThan="49" valueFormat="numeric" suffix="￼;% de bonnes réponses￼" class="answBad"/>
+											<sm:display scoreLessOrEqualThan="0" valueFormat="numeric" suffix="￼;% de bonnes réponses￼" class="answWorst"/>
+										</sm:scaleScore>
+									</sm:scoreText>
+								</sm:WScore>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<sm:callModel>
+			<sm:current axis="subQuiz"/>
+		</sm:callModel>
+	</sm:assmntBody>
+</sma:assmntCompositionDhtmlTransf>

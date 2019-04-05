@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:folderPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Dossier du site web￼" category="￼;Ressources￼">
+	<sm:help quickHelp="￼;Site html. La page d'accueil doit être nommée index.html￼"/>
+	<sm:identification extensions="eWeb"/>
+	<sm:structure type="folder">
+		<sm:mainFile name="index.html"/>
+	</sm:structure>
+	<sm:authoring>
+		<sm:icon sc:refUri="/binaries/eWeb/_res/eWeb.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;media￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+	</sm:authoring>
+</sm:folderPrim>

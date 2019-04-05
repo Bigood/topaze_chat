@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="resizerMgr" info="Amélioration - peut-être à mettre en relation avec tutorMgr de Mandra pour la gestion de tout type de resize">
+	<sm:widgetPublishFiles sc:refUri="/case/gen/_web/wdt/util/resizer/resizerMgr.doss"/>
+	<sm:fillTemplateBuffers>
+		<sm:standardLibrary codeLib="PaLib"/>
+		<sm:postXslFragment keyXsl="xhtml">&lt;xsl:overlay match="body"&gt;
+  &lt;xsl:value-of select="execute(java:append($vBufJs, 'resizerMgr.init();'))"/&gt;
+&lt;/xsl:overlay&gt;</sm:postXslFragment>
+		<sm:linkScript path="resizerMgr.js" pathFrom="localPublishFiles" sortKey="A"/>
+	</sm:fillTemplateBuffers>
+	<sm:content/>
+</sm:openUiWidget>

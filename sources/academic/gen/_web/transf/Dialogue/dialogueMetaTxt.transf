@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:textXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/Dialogue/dialogueMetaTxt.model"/>
+	<sm:content classConstructionType="legacy">
+		<sm:paraTag tagName="p"/>
+		<sm:textLeafTag role="ind" tagName="sub"/>
+		<sm:objectLeafTag role="indDisplay">
+			<sm:refItem>
+				<sm:label>
+					<sm:callSubModel axis="disp"/>
+				</sm:label>
+				<sm:labelTitle>
+					<sm:subModelTitle axis="disp"/>
+				</sm:labelTitle>
+			</sm:refItem>
+		</sm:objectLeafTag>
+		<sm:objectLeafTag role="varDisplay">
+			<sm:refItem>
+				<sm:label>
+					<sm:callSubModel axis="disp"/>
+				</sm:label>
+				<sm:labelTitle>
+					<sm:subModelTitle axis="disp"/>
+				</sm:labelTitle>
+			</sm:refItem>
+		</sm:objectLeafTag>
+	</sm:content>
+</sm:textXhtmlTransf>

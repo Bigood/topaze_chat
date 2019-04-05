@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" info="Transformers Web surcharge du générateur web">
+	<sm:transformerList info="re">
+		<sm:transformer sc:refUri="/academic/gen/_scorm/transf/Re/res@conclu.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_scorm/transf/Re/res@intro.transf"/>
+	</sm:transformerList>
+	<sm:transformerList info="root">
+		<sm:transformer sc:refUri="/academic/gen/_scorm/transf/root/webroot.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_scorm/transf/root/webroot@acr.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_scorm/transf/root/webroot@bib.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_scorm/transf/root/webroot@cred.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_scorm/transf/root/webroot@glos.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_scorm/transf/root/webRoot@home.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_scorm/transf/root/webroot@ref.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_scorm/transf/root/webroot@synth.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_scorm/transf/root/webroot@quit.transf"/>
+	</sm:transformerList>
+	<sm:transformerList info="root (meta de publi web extraites pour refaire la pdg)">
+		<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRootM.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRoot@date.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRootM@date.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRoot@author.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRootM@author.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRootM@img.transf"/>
+	</sm:transformerList>
+	<sm:transformerList info="ua">
+		<sm:transformer sc:refUri="/academic/gen/_scorm/transf/Ua/assmntUa.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_scorm/transf/Ua/assmntUa@result.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_scorm/transf/Ua/assmntUa@score.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_scorm/transf/Ua/courseUa@obj.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_scorm/transf/Ua/courseUa@quest.transf"/>
+	</sm:transformerList>
+	<sm:transformerList info="ue">
+		<sm:transformer sc:refUri="/academic/gen/_scorm/transf/Ue/ue@obj.transf"/>
+	</sm:transformerList>
+	<sm:transformerList info="refGen">
+		<sm:transformer sc:refUri="/academic/gen/_scorm/transf/refGen/uXxx@refGen.transf"/>
+	</sm:transformerList>
+</sm:transformerList>

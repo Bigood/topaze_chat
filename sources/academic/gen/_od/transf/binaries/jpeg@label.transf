@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:binaryOdTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/binaries/jpg/jpeg.model"/>
+	<sm:axis code="label"/>
+	<sm:content>
+		<sm:WImage globalStyle="viewPicture">
+			<sm:binaryUrl>
+				<sm:imageTransform>
+					<sm:scaleFromStandardCharSize targetFontSizeInPt="10">
+						<sm:ifNoStandardCharSize>
+							<sm:scale ratio="1" sourceDpiIfNone="300"/>
+						</sm:ifNoStandardCharSize>
+					</sm:scaleFromStandardCharSize>
+					<sm:dimBounds unit="cm" maxWidth="15" maxHeight="22"/>
+					<sm:outputJPEG/>
+				</sm:imageTransform>
+			</sm:binaryUrl>
+		</sm:WImage>
+	</sm:content>
+</sm:binaryOdTransf>

@@ -1,0 +1,25 @@
+
+#tplCo {
+	width: 100%;
+	height: 550px;
+}
+
+.basic_ti, .legal_ti, .complement_ti, .method_ti, .syntax_ti, .simulation_ti,
+.remind_ti, .def_ti, .example_ti, .remark_ti, .advice_ti, .warning_ti,
+.obj_ti, 
+.info_ti{
+	height: 31px;
+}
+
+.question{
+	padding-bottom:20px;
+}
+.divQuiz{
+	position: absolute;
+	width: 550px;
+	height: 520px;
+}
+/* pour aligner les cases à cocher avec le texte et la solution*/
+.choiceList_in input{
+	margin-top: -5px;
+}

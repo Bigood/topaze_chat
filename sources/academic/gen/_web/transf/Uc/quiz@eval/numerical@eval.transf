@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><sma:assmntUnitEditDhtmlTransf xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns="http://www.w3.org/1999/xhtml">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/numerical.model"/>
+	<sm:axis code="eval"/>
+	<sm:scenario>
+		<sm:sequence code="init">
+			<sm:onLoadConditions>
+				<sm:completionStatus operator="isNot" status="complete">
+					<sm:responseSessionKey>
+						<sm:fixedKey value="eval"/>
+					</sm:responseSessionKey>
+				</sm:completionStatus>
+			</sm:onLoadConditions>
+			<sm:loadData>
+				<sm:responseSessionKey>
+					<sm:fixedKey value="eval"/>
+				</sm:responseSessionKey>
+			</sm:loadData>
+			<sm:saveData>
+				<sm:responseSessionKey>
+					<sm:fixedKey value="eval"/>
+				</sm:responseSessionKey>
+			</sm:saveData>
+		</sm:sequence>
+		<sm:sequence code="read">
+			<sm:initBody>
+				<sm:inputInteraction mode="disabled"/>
+			</sm:initBody>
+			<sm:loadData>
+				<sm:responseSessionKey>
+					<sm:fixedKey value="eval"/>
+				</sm:responseSessionKey>
+			</sm:loadData>
+		</sm:sequence>
+	</sm:scenario>
+	<sm:assmntBody>
+		<div class="headerQ">
+			<div sm:id="question" class="question">
+				<sm:callQuestionModel/>
+			</div>
+		</div>
+		<sm:WInputZone>
+			<sm:singleField>
+				<sm:forNumberField codes="asw">
+					<div>
+						<sm:WInputText widgetClass="exoInput"/>
+					</div>
+				</sm:forNumberField>
+			</sm:singleField>
+		</sm:WInputZone>
+	</sm:assmntBody>
+</sma:assmntUnitEditDhtmlTransf>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="￼;Site web￼">
+	<sm:help quickHelp="￼;Insérer un site web embarqué ou affiché dans une nouvelle page￼"/>
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="eSite" itemExtension="xml"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/academic/model/metaData/binAltM.model" usage="required"/>
+		<sm:part code="eweb" name="￼;Site web interactif￼" family="content" internalized="userDependent" usage="required">
+			<sm:meta sc:refUri="/academic/model/metaData/sizeM.model" usage="required"/>
+			<sm:allowedModel sc:refUri="/binaries/eWeb/eWeb.model"/>
+		</sm:part>
+	</sm:structure>
+	<sm:authoring>
+		<sm:icon sc:refUri="/academic/model/_ico/eSite.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;siteEmb￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<!--
+<sm:formEditor xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" indentXml="true">
+	<sm:composition>
+		<sm:standardWidget tagStyle="font-family:arial;font-size:1.8em; background-color:#359632; color:white; -moz-border-radius:5px; -moz-padding-start:4px; -moz-padding-end:4px;">
+			<sm:iconTag sc:refUri="/academic/model/_ico/eSiteBig.png" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" style="margin-right: 5px;"/>
+		</sm:standardWidget>
+	</sm:composition>
+	<sm:part refCode="eweb">
+		<sm:hiddenWidget hideChildren="no"/>
+	</sm:part>
+</sm:formEditor>-->
+		<sm:formEditor indentXml="true">
+			<sm:xmlEditor sc:refUri="/academic/model/Re/eSite/eSite.xed"/>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:compositionPrim>

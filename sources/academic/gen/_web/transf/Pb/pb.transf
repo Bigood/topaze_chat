@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Pb/pb.model"/>
+	<sm:content format="xhtml">
+		<sm:inDataOrder>
+			<sm:for codes="info">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:WHeadingBlock widgetClass="info">
+							<sm:title>
+								<sm:partTitle/>
+							</sm:title>
+							<sm:callSubModel/>
+						</sm:WHeadingBlock>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="def">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_web/widg/util/pbBlock.uiwidget">
+							<sm:xhtmlContentZone key="zClass">
+								<sm:WFreeBlock>def</sm:WFreeBlock>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zType">
+								<sm:WFreeBlock>￼;Définition￼</sm:WFreeBlock>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zTi">
+								<sm:WFreeBlock>
+									<sm:title>
+										<sm:partTitle/>
+									</sm:title>
+								</sm:WFreeBlock>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zCo">
+								<sm:callSubModel/>
+							</sm:xhtmlContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="ex">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_web/widg/util/pbBlock.uiwidget">
+							<sm:xhtmlContentZone key="zClass">
+								<sm:WFreeBlock>example</sm:WFreeBlock>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zType">
+								<sm:WFreeBlock>￼;Exemple￼</sm:WFreeBlock>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zTi">
+								<sm:WFreeBlock>
+									<sm:title>
+										<sm:partTitle/>
+									</sm:title>
+								</sm:WFreeBlock>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zCo">
+								<sm:callSubModel/>
+							</sm:xhtmlContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="rem">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_web/widg/util/pbBlock.uiwidget">
+							<sm:xhtmlContentZone key="zClass">
+								<sm:WFreeBlock>remark</sm:WFreeBlock>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zType">
+								<sm:WFreeBlock>￼;Remarque￼</sm:WFreeBlock>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zTi">
+								<sm:WFreeBlock>
+									<sm:title>
+										<sm:partTitle/>
+									</sm:title>
+								</sm:WFreeBlock>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zCo">
+								<sm:callSubModel/>
+							</sm:xhtmlContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="adv">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_web/widg/util/pbBlock.uiwidget">
+							<sm:xhtmlContentZone key="zClass">
+								<sm:WFreeBlock>advice</sm:WFreeBlock>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zType">
+								<sm:WFreeBlock>￼;Conseil￼</sm:WFreeBlock>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zTi">
+								<sm:WFreeBlock>
+									<sm:title>
+										<sm:partTitle/>
+									</sm:title>
+								</sm:WFreeBlock>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zCo">
+								<sm:callSubModel/>
+							</sm:xhtmlContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="warning">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_web/widg/util/pbBlock.uiwidget">
+							<sm:xhtmlContentZone key="zClass">
+								<sm:WFreeBlock>warning</sm:WFreeBlock>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zType">
+								<sm:WFreeBlock>￼;Attention￼</sm:WFreeBlock>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zTi">
+								<sm:WFreeBlock>
+									<sm:title>
+										<sm:partTitle/>
+									</sm:title>
+								</sm:WFreeBlock>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zCo">
+								<sm:callSubModel/>
+							</sm:xhtmlContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="comp">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_web/widg/util/pbBlock.uiwidget">
+							<sm:xhtmlContentZone key="zClass">
+								<sm:WFreeBlock>complement</sm:WFreeBlock>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zType">
+								<sm:WFreeBlock>￼;Complément￼</sm:WFreeBlock>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zTi">
+								<sm:WFreeBlock>
+									<sm:title>
+										<sm:partTitle/>
+									</sm:title>
+								</sm:WFreeBlock>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zCo">
+								<sm:callSubModel/>
+							</sm:xhtmlContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="meth">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_web/widg/util/pbBlock.uiwidget">
+							<sm:xhtmlContentZone key="zClass">
+								<sm:WFreeBlock>method</sm:WFreeBlock>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zType">
+								<sm:WFreeBlock>￼;Méthode￼</sm:WFreeBlock>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zTi">
+								<sm:WFreeBlock>
+									<sm:title>
+										<sm:partTitle/>
+									</sm:title>
+								</sm:WFreeBlock>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zCo">
+								<sm:callSubModel/>
+							</sm:xhtmlContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="remind">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_web/widg/util/pbBlock.uiwidget">
+							<sm:xhtmlContentZone key="zClass">
+								<sm:WFreeBlock>remind</sm:WFreeBlock>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zType">
+								<sm:WFreeBlock>￼;Rappel￼</sm:WFreeBlock>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zTi">
+								<sm:WFreeBlock>
+									<sm:title>
+										<sm:partTitle/>
+									</sm:title>
+								</sm:WFreeBlock>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zCo">
+								<sm:callSubModel/>
+							</sm:xhtmlContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="basic">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_web/widg/util/pbBlock.uiwidget">
+							<sm:xhtmlContentZone key="zClass">
+								<sm:WFreeBlock>basic</sm:WFreeBlock>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zType">
+								<sm:WFreeBlock>￼;Fondamental￼</sm:WFreeBlock>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zTi">
+								<sm:WFreeBlock>
+									<sm:title>
+										<sm:partTitle/>
+									</sm:title>
+								</sm:WFreeBlock>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zCo">
+								<sm:callSubModel/>
+							</sm:xhtmlContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="syntax">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_web/widg/util/pbBlock.uiwidget">
+							<sm:xhtmlContentZone key="zClass">
+								<sm:WFreeBlock>syntax</sm:WFreeBlock>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zType">
+								<sm:WFreeBlock>￼;Syntaxe￼</sm:WFreeBlock>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zTi">
+								<sm:WFreeBlock>
+									<sm:title>
+										<sm:partTitle/>
+									</sm:title>
+								</sm:WFreeBlock>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zCo">
+								<sm:callSubModel/>
+							</sm:xhtmlContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="legal">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_web/widg/util/pbBlock.uiwidget">
+							<sm:xhtmlContentZone key="zClass">
+								<sm:WFreeBlock>legal</sm:WFreeBlock>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zType">
+								<sm:WFreeBlock>￼;Texte légal￼</sm:WFreeBlock>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zTi">
+								<sm:WFreeBlock>
+									<sm:title>
+										<sm:partTitle/>
+									</sm:title>
+								</sm:WFreeBlock>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zCo">
+								<sm:callSubModel/>
+							</sm:xhtmlContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="simul">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_web/widg/util/pbBlock.uiwidget">
+							<sm:xhtmlContentZone key="zClass">
+								<sm:WFreeBlock>simulation</sm:WFreeBlock>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zType">
+								<sm:WFreeBlock>￼;Simulation￼</sm:WFreeBlock>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zTi">
+								<sm:WFreeBlock>
+									<sm:title>
+										<sm:partTitle/>
+									</sm:title>
+								</sm:WFreeBlock>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zCo">
+								<sm:callSubModel/>
+							</sm:xhtmlContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+		</sm:inDataOrder>
+	</sm:content>
+</sm:compositionXhtmlTransf>

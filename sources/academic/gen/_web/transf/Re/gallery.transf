@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Re/gallery.model"/>
+	<sm:content format="xhtml">
+		<sm:WHeadingBlock widgetClass="gallery">
+			<sm:title>
+				<sm:compositionTitle/>
+			</sm:title>
+			<sm:Widget sc:refUri="/academic/gen/_web/widg/img/imgGallery.uiwidget">
+				<sm:xhtmlContentZone key="zPv">
+					<sm:for codes="img">
+						<sm:WFreeBlock>
+							<span xmlns="http://www.w3.org/1999/xhtml" class="galPv">
+								<sm:callSubModel axis="gal"/>
+							</span>
+						</sm:WFreeBlock>
+					</sm:for>
+				</sm:xhtmlContentZone>
+			</sm:Widget>
+		</sm:WHeadingBlock>
+	</sm:content>
+</sm:compositionXhtmlTransf>

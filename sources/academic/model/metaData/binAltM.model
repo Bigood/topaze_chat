@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:dataFormPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="Propriétés de ressources">
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="binAltM" itemExtension="xml"/>
+	<sm:structure>
+		<sm:field code="title" name="￼;Titre￼" occurrence="zeroOrOne">
+			<sm:string/>
+		</sm:field>
+		<sm:subData code="info" name="Métadonnées communes" occurrence="zeroOrOne">
+			<sm:allowedDataModel sc:refUri="/academic/model/metaData/infoBin.model"/>
+		</sm:subData>
+		<sm:field code="desc" name="￼;Description complète￼" occurrence="zeroOrOne">
+			<sm:otherType sc:refUri="/academic/model/Re/sTxt.model"/>
+		</sm:field>
+		<sm:field code="altStatic" name="￼;Alternative statique￼" occurrence="zeroOrOne">
+			<sm:help quickHelp="￼;Pour les supports non interactifs (papier)￼"/>
+			<sm:otherType sc:refUri="/academic/model/Re/altRes.model"/>
+		</sm:field>
+	</sm:structure>
+	<sm:storage>
+		<sm:fullTitleBuilder>
+			<sm:fieldValue refCode="title"/>
+		</sm:fullTitleBuilder>
+	</sm:storage>
+	<sm:authoring>
+		<sm:formEditor indentXml="true">
+			<sm:stringField refCode="title" defaultStyle="property" textStyle="color :#6286cc ;"/>
+			<sm:subData refCode="info" editMode="hideRootLevel" defaultStyle="property"/>
+			<sm:subData refCode="altStatic" displayMode="openedByDefault" defaultStyle="property" tagStyle="color:#535353;"/>
+			<sm:otherTypeField refCode="desc" displayMode="openedByDefault" defaultStyle="property"/>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:dataFormPrim>

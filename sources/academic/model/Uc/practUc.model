@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="￼;Exercice rédactionnel￼">
+	<sm:help quickHelp="￼;Contient un exercice rédactionnel (type travaux dirigés)￼"/>
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="practUc" itemExtension="xml"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/academic/model/metaData/exeM.model" usage="required"/>
+		<sm:set usage="required">
+			<sm:part code="desc" name="￼;Mise en contexte￼" family="content" internalized="always">
+				<sm:meta sc:refUri="/academic/model/metaData/sTitle.model" usage="optional"/>
+				<sm:allowedModel sc:refUri="/academic/model/Re/res.model"/>
+			</sm:part>
+			<sm:part code="quest" name="￼;Question￼" family="content" internalized="always">
+				<sm:allowedModel sc:refUri="/academic/model/Uc/practUcQ.model"/>
+			</sm:part>
+		</sm:set>
+	</sm:structure>
+	<sm:authoring>
+		<sm:icon sc:refUri="/academic/model/_ico/practUcSmall.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼?note=utilis%C3%A9%20dans%20un%20nom%20de%20fichier%20(sans%20accent%20ou%20caract%C3%A8res%20sp%C3%A9ciaux%20!);exercice￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:formEditor indentXml="true">
+			<sm:composition>
+				<sm:standardWidget tagStyle="font-family:arial;font-size:1.8em; background-color:#4668ad; color:white; -moz-border-radius:5px; -moz-padding-start:4px; -moz-padding-end:4px">
+					<sm:iconTag sc:refUri="/academic/model/_ico/practUc.png"/>
+				</sm:standardWidget>
+			</sm:composition>
+			<sm:part refCode="desc">
+				<sm:stylableWidget displayMode="openedByDefault">
+					<sm:styles>
+						<sm:container style="-moz-border-start:4px solid #668ac7;margin-top:5px;margin-bottom:5px; padding:0px">
+							<sm:head style="background-color:#668ac7; ">
+								<sm:name style="color:white"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openBigWhite.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="quest">
+				<sm:stylableWidget displayMode="openedByDefault">
+					<sm:styles>
+						<sm:container style="-moz-border-start:4px solid #668ac7;margin-top:5px;margin-bottom:5px; padding:0px">
+							<sm:head style="background-color:#668ac7; ">
+								<sm:name style="color:white"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openBigWhite.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+		</sm:formEditor>
+		<sm:formEditor key="internalise" indentXml="true">
+			<sm:part refCode="desc">
+				<sm:stylableWidget displayMode="openedByDefault">
+					<sm:styles>
+						<sm:container style="-moz-border-start:4px solid #dce4f3;margin-top:3px;margin-bottom:3px; padding:0px">
+							<sm:head style="background-color:#dce4f3">
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openSmall.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="quest">
+				<sm:stylableWidget displayMode="openedByDefault">
+					<sm:styles>
+						<sm:container style="-moz-border-start:4px solid #dce4f3;margin-top:3px;margin-bottom:3px; padding:0px">
+							<sm:head style="background-color:#dce4f3">
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openSmall.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:compositionPrim>

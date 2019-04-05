@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:interactiveGenerator xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="caseWebPre" name="￼;Publication web - prévisualisation￼">
+	<sm:modelRoot>
+		<sm:allowedModel sc:refUri="/case/model/case.model"/>
+	</sm:modelRoot>
+	<sm:mode standard="HTML 5" debug="no" addOriginSource="yes"/>
+	<sm:uiFrame>
+		<sm:none lookForInternContext="yes">
+			<sm:uiServices>
+				<sm:uiService sc:refUri="/case/gen/_web/svc/assmnt.uiservice"/>
+			</sm:uiServices>
+			<sm:callRootModel axis="root"/>
+		</sm:none>
+	</sm:uiFrame>
+	<sm:transformerList sc:refUri="/case/gen/progress/web/caseWeb.transflist">
+		<sm:transformerList sc:refUri="/case/gen/progress/web/pre/transf.transflist"/>
+	</sm:transformerList>
+	<sm:uiTemplateList>
+		<sm:uiTemplate code="root" sc:refUri="/case/gen/progress/web/pre/tpl/root.uitemplate"/>
+		<sm:uiTemplate code="home" sc:refUri="/case/gen/progress/web/tpl/home.uitemplate"/>
+		<sm:uiTemplate code="topaze" sc:refUri="/case/gen/progress/web/tpl/topaze.uitemplate"/>
+		<sm:uiTemplate code="page" sc:refUri="/case/gen/progress/web/tpl/uePage.uitemplate"/>
+		<sm:uiTemplate code="ueStart" sc:refUri="/case/gen/progress/web/tpl/ueStart.uitemplate"/>
+		<sm:uiTemplate code="subWin" sc:refUri="/case/gen/progress/web/tpl/subWin.uitemplate"/>
+		<sm:uiTemplate code="ref" sc:refUri="/case/gen/progress/web/tpl/ref.uitemplate"/>
+	</sm:uiTemplateList>
+	<sm:defaultSkin sc:refUri="/case/gen/progress/web/caseWeb.skin.doss" name="￼;Topoze￼"/>
+</sm:interactiveGenerator>

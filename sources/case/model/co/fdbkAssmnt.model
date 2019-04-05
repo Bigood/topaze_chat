@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Feedback des étapes de quiz￼" category="￼;Etude de cas￼">
+	<sm:identification targetNamespace="kelis.fr:opa" targetPrefix="opa" code="fdbkAssmnt" itemExtension="node"/>
+	<sm:structure>
+		<sm:part code="co" name="￼;Contenu￼" family="content" internalized="always" usage="optional">
+			<sm:allowedModel sc:refUri="/academic/model/Re/res.model"/>
+		</sm:part>
+		<sm:part code="arc" name="￼;Enchaînement vers les étapes suivantes ou fin de l'étude de cas￼" family="content" internalized="always" usage="required">
+			<sm:allowedModel sc:refUri="/case/model/arc/unaryArc.model"/>
+			<sm:allowedModel sc:refUri="/case/model/arc/userArc.model"/>
+			<sm:allowedModel sc:refUri="/case/model/arc/chooseArc.model"/>
+			<!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1375375240964">Suppression du endArc sur un node assesment car impossible de remonter le score de l'exercice sur cette étape à cause de la possibilité de bloquer la refaisabilité des exos au bout d'un nombre d'essai.</comment></comment>-->
+			<!--<sm:allowedModel xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" sc:refUri="/case/model/arc/endArc.model" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core"/>-->
+		</sm:part>
+	</sm:structure>
+	<sm:authoring>
+		<sm:icon sc:refUri="/academic/model/_ico/courseUaSmall.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;Noeud￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:formEditor indentXml="true">
+			<sm:part refCode="co">
+				<sm:hiddenWidget hideChildren="no"/>
+			</sm:part>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:compositionPrim>

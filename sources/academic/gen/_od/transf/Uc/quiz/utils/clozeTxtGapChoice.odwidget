@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openOdWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="clozeTxtGapChoice" info="Affichage des trous sans la réponses">
+	<sm:content>
+		<sm:dynamicString>
+			<sm:freeXslFragment>&lt;xsl:choose&gt;
+ &lt;xsl:when test="count(*/sp:options/sp:option)&amp;gt;1"&gt;
+ &lt;xsl:text&gt;[&lt;/xsl:text&gt;
+ &lt;xsl:value-of select="concatExpr(*/sp:options/sp:option, text(), ' | ')"/&gt;
+ &lt;xsl:text&gt;]&lt;/xsl:text&gt;
+ &lt;/xsl:when&gt;
+ &lt;xsl:otherwise&gt;
+ &lt;xsl:text&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&lt;/xsl:text&gt;
+ &lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;</sm:freeXslFragment>
+		</sm:dynamicString>
+	</sm:content>
+</sm:openOdWidget>

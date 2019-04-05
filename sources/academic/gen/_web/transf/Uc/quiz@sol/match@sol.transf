@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?><sma:assmntUnitMlqDhtmlTransf xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns="http://www.w3.org/1999/xhtml">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/match.model"/>
+	<sm:axis code="sol"/>
+	<sm:scenario>
+		<sm:sequence code="init">
+			<sm:initBody>
+				<sm:labelInteraction mode="disabled"/>
+				<sm:resultDisplay mode="addClass"/>
+			</sm:initBody>
+			<sm:loadData>
+				<sm:responseSessionKey>
+					<sm:fixedKey value="eval"/>
+				</sm:responseSessionKey>
+				<sm:scoreSessionKey>
+					<sm:fixedKey value="eval"/>
+				</sm:scoreSessionKey>
+			</sm:loadData>
+			<sm:resultDisplaying classIfRight="ddLabel_Right" classIfWrong="ddLabel_Wrong"/>
+		</sm:sequence>
+	</sm:scenario>
+	<sm:assmntBody>
+		<div class="evalSol">
+			<sm:choose>
+				<sm:when xpath="sc:question">
+					<div sm:id="quest" class="question">
+						<h1 class="question_ti">
+							<span>￼;Énoncé￼</span>
+						</h1>
+						<div sm:id="question" class="question_co">
+							<sm:callQuestionModel/>
+						</div>
+					</div>
+				</sm:when>
+			</sm:choose>
+			<div class="score">
+				<h1 class="score_ti">
+					<span>￼;Résultat￼</span>
+				</h1>
+				<div class="score_co">
+					<sm:WScore widgetClass="scoreEval">
+						<sm:scoreText>
+							<sm:scaleScore min="0" max="100" step="1">
+								<sm:display scoreMoreThan="99" valueFormat="hidden" suffix="￼;Bonne réponse￼" class="answBest"/>
+								<sm:display scoreMoreThan="49" scoreLessOrEqualThan="99" valueFormat="numeric" suffix="￼;% de bonnes réponses￼" class="answGood"/>
+								<sm:display scoreMoreThan="0" scoreLessOrEqualThan="49" valueFormat="numeric" suffix="￼;% de bonnes réponses￼" class="answBad"/>
+								<sm:display scoreLessOrEqualThan="0" valueFormat="hidden" suffix="￼;Mauvaise réponse ￼" class="answWorst"/>
+							</sm:scaleScore>
+						</sm:scoreText>
+					</sm:WScore>
+				</div>
+			</div>
+			<div class="sol">
+				<h1 class="sol_ti">
+					<span>￼;Correction￼</span>
+				</h1>
+				<div class="sol_co">
+					<table class="mtTable">
+						<tr>
+							<td class="mtTdBasketSol"/>
+							<td class="mtTdHeading">￼;Votre réponse￼</td>
+							<td class="mtTdHeading">￼;Solution￼</td>
+						</tr>
+						<tr>
+							<td class="mtTdBasketSol">
+								<sm:WLabelsBasket tagName="div" widgetClass="ddBasket">
+									<sm:WDragDropContainer tagName="div" dropMode="append" onDragOverClass="ddBasketDragOver" widgetClass="ddBasketCatch">
+										<sm:WContainer tagName="div" widgetClass="ddBasketCont">
+											<sm:forRandomLabel>
+												<sm:WDraggableLabel tagName="div" widgetClass="mtLabel">
+													<sm:callLabelModel/>
+												</sm:WDraggableLabel>
+											</sm:forRandomLabel>
+										</sm:WContainer>
+										<sm:WIfContainerEmpty tagName="div" widgetClass="ddBasketIfEmpty">
+											<span>￼;Plus d'éléments à catégoriser￼</span>
+										</sm:WIfContainerEmpty>
+										<div class="ddBasketEnd"/>
+									</sm:WDragDropContainer>
+								</sm:WLabelsBasket>
+							</td>
+							<td class="mtTdSol">
+								<sm:forGroup>
+									<sm:WResponseArea tagName="div" widgetClass="ddRepArea">
+										<sm:WDragDropContainer tagName="div" dropMode="append" onDragOverClass="ddCatchDragOver" widgetClass="ddDropCatch">
+											<div class="ddDropTi">
+												<sm:callTargetModel/>
+											</div>
+											<sm:WContainer tagName="div" widgetClass="ddDropCont"/>
+											<sm:WIfContainerEmpty tagName="div" widgetClass="ddDropContIfEmpty">
+												<span>￼;Déposez ici￼</span>
+											</sm:WIfContainerEmpty>
+											<div class="ddCatchDragEnd"/>
+										</sm:WDragDropContainer>
+									</sm:WResponseArea>
+								</sm:forGroup>
+							</td>
+							<td class="mtTdSol">
+								<sm:forGroup>
+									<sm:WSolution tagName="div" widgetClass="ddRepArea">
+										<div class="ddDropCatch">
+											<div class="ddDropTi">
+												<sm:callTargetModel/>
+											</div>
+											<div class="ddDropCont">
+												<sm:forLabel>
+													<div class="mtLabelSol">
+														<sm:callLabelModel/>
+													</div>
+												</sm:forLabel>
+											</div>
+											<div class="ddCatchDragEnd"/>
+										</div>
+									</sm:WSolution>
+								</sm:forGroup>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<sm:choose>
+				<sm:when xpath="sc:globalExplanation">
+					<sm:WGlobalExplanation widgetClass="explain">
+						<h1 class="explain_ti">
+							<span>￼;Explications￼</span>
+						</h1>
+						<div class="explain_co">
+							<sm:callExplanationModel/>
+						</div>
+					</sm:WGlobalExplanation>
+				</sm:when>
+			</sm:choose>
+		</div>
+	</sm:assmntBody>
+</sma:assmntUnitMlqDhtmlTransf>

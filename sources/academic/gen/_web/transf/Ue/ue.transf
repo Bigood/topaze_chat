@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Ue/ue.model"/>
+	<sm:navigation>
+		<sm:choose>
+			<!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1360775085445">Test s'il y a une entrée dans le contenu pour éviter de retourner une erreur</comment></comment>-->
+			<sm:when xpath="op:ueM/following-sibling::*/* or op:ueM/following-sibling::*[@sc:refUri]">
+				<sm:folder>
+					<sm:title>
+						<sm:compositionTitle format="shortTitleText"/>
+						<sm:fixedTitle value="￼;[Module]￼"/>
+					</sm:title>
+					<sm:for codes="obj">
+						<sm:page template="page">
+							<sm:title>
+								<sm:fixedTitle value="￼;Objectifs￼"/>
+							</sm:title>
+							<sm:outlineClasses>
+								<sm:fixedString value="mnu_obj"/>
+							</sm:outlineClasses>
+							<sm:mainZone format="xhtml">
+								<sm:WHeadingBlock widgetClass="mainContent">
+									<sm:title>
+										<sm:fixedTitle value="￼;Objectifs￼"/>
+									</sm:title>
+									<sm:callSubModel/>
+									<sm:callModel>
+										<sm:current axis="genRef"/>
+									</sm:callModel>
+								</sm:WHeadingBlock>
+							</sm:mainZone>
+							<sm:zone key="zIconPage" format="xhtml">
+								<sm:WSimpleBlock widgetClass="decoIntro"/>
+							</sm:zone>
+							<sm:zone key="zLegal" format="xhtml">
+								<sm:callModel>
+									<sm:current axis="legal"/>
+								</sm:callModel>
+							</sm:zone><!--ATTENTION l'élément suivant à été ajouté en XSL par la dérivation.--><sm:zone xmlns:op="utc.fr:ics/opale3" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sext="http://www.utc.fr/ics/scenari/v3/modeling/extension" format="xhtml" key="zCoach"><sm:callModel><sm:lookForAscendants axis="coach" direction="currentToRoot"><sm:callableModel sc:refUri="/case/model/node/heavyNode.model"/></sm:lookForAscendants></sm:callModel></sm:zone>
+							<sm:zone key="zKeywords" format="text">
+								<sm:callModel>
+									<sm:current axis="keywds"/>
+								</sm:callModel>
+							</sm:zone>
+						</sm:page>
+					</sm:for>
+					<sm:choose>
+						<!--S'il y a des obj, alors les genRefs de l'ue seront appelees depuis la page d'obj, sinon depuis l'intro-->
+						<sm:when codes="obj">
+							<sm:for codes="intro">
+								<sm:choose>
+									<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+										<sm:page template="page">
+											<sm:title>
+												<sm:fixedTitle value="￼;Introduction￼"/>
+											</sm:title>
+											<sm:outlineClasses>
+												<sm:fixedString value="mnu_intro"/>
+											</sm:outlineClasses>
+											<sm:mainZone format="xhtml">
+												<sm:WHeadingBlock widgetClass="mainContent">
+													<sm:title>
+														<sm:fixedTitle value="￼;Introduction￼"/>
+													</sm:title>
+													<sm:callSubModel/>
+												</sm:WHeadingBlock>
+											</sm:mainZone>
+											<sm:zone key="zIconPage" format="xhtml">
+												<sm:WSimpleBlock widgetClass="decoIntro"/>
+											</sm:zone>
+											<sm:zone key="zLegal" format="xhtml">
+												<sm:callModel>
+													<sm:current axis="legal"/>
+												</sm:callModel>
+											</sm:zone><!--ATTENTION l'élément suivant à été ajouté en XSL par la dérivation.--><sm:zone xmlns:op="utc.fr:ics/opale3" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sext="http://www.utc.fr/ics/scenari/v3/modeling/extension" format="xhtml" key="zCoach"><sm:callModel><sm:lookForAscendants axis="coach" direction="currentToRoot"><sm:callableModel sc:refUri="/case/model/node/heavyNode.model"/></sm:lookForAscendants></sm:callModel></sm:zone>
+											<sm:zone key="zKeywords" format="text">
+												<sm:callModel>
+													<sm:current axis="keywds"/>
+												</sm:callModel>
+											</sm:zone>
+										</sm:page>
+									</sm:when>
+								</sm:choose>
+							</sm:for>
+						</sm:when>
+						<sm:otherwise>
+							<sm:for codes="intro">
+								<sm:choose>
+									<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+										<sm:page template="page">
+											<sm:title>
+												<sm:fixedTitle value="￼;Introduction￼"/>
+											</sm:title>
+											<sm:outlineClasses>
+												<sm:fixedString value="mnu_intro"/>
+											</sm:outlineClasses>
+											<sm:mainZone format="xhtml">
+												<sm:WHeadingBlock widgetClass="mainContent">
+													<sm:title>
+														<sm:fixedTitle value="￼;Introduction￼"/>
+													</sm:title>
+													<sm:callSubModel/>
+												</sm:WHeadingBlock>
+												<sm:callModel>
+													<sm:current axis="genRef"/>
+												</sm:callModel>
+											</sm:mainZone>
+											<sm:zone key="zIconPage" format="xhtml">
+												<sm:WSimpleBlock widgetClass="decoIntro"/>
+											</sm:zone>
+											<sm:zone key="zLegal" format="xhtml">
+												<sm:callModel>
+													<sm:current axis="legal"/>
+												</sm:callModel>
+											</sm:zone><!--ATTENTION l'élément suivant à été ajouté en XSL par la dérivation.--><sm:zone xmlns:op="utc.fr:ics/opale3" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sext="http://www.utc.fr/ics/scenari/v3/modeling/extension" format="xhtml" key="zCoach"><sm:callModel><sm:lookForAscendants axis="coach" direction="currentToRoot"><sm:callableModel sc:refUri="/case/model/node/heavyNode.model"/></sm:lookForAscendants></sm:callModel></sm:zone>
+											<sm:zone key="zKeywords" format="text">
+												<sm:callModel>
+													<sm:current axis="keywds"/>
+												</sm:callModel>
+											</sm:zone>
+										</sm:page>
+									</sm:when>
+								</sm:choose>
+							</sm:for>
+						</sm:otherwise>
+					</sm:choose>
+					<sm:inDataOrder>
+						<sm:for codes="div courseUa assmntUa courseUc practUc">
+							<sm:choose>
+								<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+									<sm:callSubModel/>
+								</sm:when>
+							</sm:choose>
+						</sm:for>
+						<sm:for codes="trainUcMcqSur trainUcMcgSur trainUcMcqMur trainUcMcgMur trainUcMatch trainUcOrdWord trainUcCloze trainUcField trainUcNumerical trainUcCoQuiz">
+							<!--Pour que la gestion des éléments légaux contextuels à un item fonctionne correctement, chaque item DOIT poser sa propre page.-->
+							<sm:choose>
+								<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+									<sm:callSubModel axis="nav"/>
+								</sm:when>
+							</sm:choose>
+						</sm:for>
+					</sm:inDataOrder>
+					<sm:for codes="conclu">
+						<sm:choose>
+							<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+								<sm:page template="page">
+									<sm:title>
+										<sm:fixedTitle value="￼;Conclusion￼"/>
+									</sm:title>
+									<sm:outlineClasses>
+										<sm:fixedString value="mnu_conclu"/>
+									</sm:outlineClasses>
+									<sm:mainZone format="xhtml">
+										<sm:WHeadingBlock widgetClass="mainContent">
+											<sm:title>
+												<sm:fixedTitle value="￼;Conclusion￼"/>
+											</sm:title>
+											<sm:callSubModel/>
+										</sm:WHeadingBlock>
+									</sm:mainZone>
+									<sm:zone key="zIconPage" format="xhtml">
+										<sm:WSimpleBlock widgetClass="decoConclu"/>
+									</sm:zone>
+									<sm:zone key="zLegal" format="xhtml">
+										<sm:callModel>
+											<sm:current axis="legal"/>
+										</sm:callModel>
+									</sm:zone><!--ATTENTION l'élément suivant à été ajouté en XSL par la dérivation.--><sm:zone xmlns:op="utc.fr:ics/opale3" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sext="http://www.utc.fr/ics/scenari/v3/modeling/extension" format="xhtml" key="zCoach"><sm:callModel><sm:lookForAscendants axis="coach" direction="currentToRoot"><sm:callableModel sc:refUri="/case/model/node/heavyNode.model"/></sm:lookForAscendants></sm:callModel></sm:zone>
+									<sm:zone key="zKeywords" format="text">
+										<sm:callModel>
+											<sm:current axis="keywds"/>
+										</sm:callModel>
+									</sm:zone>
+								</sm:page>
+							</sm:when>
+						</sm:choose>
+					</sm:for>
+					<sm:callModel>
+						<sm:current axis="outJson"/>
+					</sm:callModel>
+				</sm:folder>
+			</sm:when>
+			<sm:otherwise>
+				<sm:page template="page">
+					<sm:title>
+						<sm:compositionTitle format="shortTitleText"/>
+						<sm:fixedTitle value="￼;[Module]￼"/>
+					</sm:title>
+					<sm:mainZone format="xhtml">
+						<sm:WHeadingBlock>
+							<sm:title>
+								<sm:fixedTitle value="￼;Erreur - aucun item n'a été saisi￼"/>
+							</sm:title>
+						</sm:WHeadingBlock>
+					</sm:mainZone>
+				</sm:page>
+			</sm:otherwise>
+		</sm:choose>
+	</sm:navigation>
+</sm:compositionXhtmlTransf>

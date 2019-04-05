@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" info="Surcharges">
+	<sm:transformerList sc:refUri="/academic/gen/_preview/web/transf/Pb.transflist"/>
+	<sm:transformerList sc:refUri="/academic/gen/_preview/web/transf/Ua.transflist"/>
+	<sm:transformerList sc:refUri="/academic/gen/_preview/web/transf/Uc.transflist"/>
+	<sm:transformerList sc:refUri="/academic/gen/_preview/web/transf/Ue.transflist"/>
+</sm:transformerList>

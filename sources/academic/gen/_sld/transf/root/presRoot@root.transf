@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/root/presRoot.model"/>
+	<sm:axis code="root"/>
+	<sm:fullTitleText>
+		<sm:callSubModel codes="ue"/>
+	</sm:fullTitleText>
+	<sm:shortTitleText>
+		<sm:callSubModel codes="ue"/>
+	</sm:shortTitleText>
+	<sm:navigation>
+		<sm:for codes="ue">
+			<sm:callSubModel axis="root"/>
+		</sm:for>
+	</sm:navigation>
+</sm:compositionXhtmlTransf>

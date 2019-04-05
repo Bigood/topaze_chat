@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="resizer" info="Resizer (requires resizerMgr)">
+	<sm:fillTemplateBuffers>
+		<sm:otherBuffers keyBuffer="js.postLink">resizerMgr.registerResources("des:.resInFlow");
+</sm:otherBuffers>
+	</sm:fillTemplateBuffers>
+	<sm:content>
+		<sm:Widget sc:refUri="/case/gen/_web/wdt/util/resizer/resizerMgr.uiwidget"/>
+		<noscript xmlns="http://www.w3.org/1999/xhtml">
+			<em class="noscript">￼;Ce widget utilise Javascript pour un affichage optimal.￼</em>
+		</noscript>
+	</sm:content>
+</sm:openUiWidget>

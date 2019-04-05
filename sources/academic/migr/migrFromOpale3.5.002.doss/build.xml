@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Migration Opale 3.5.002 -> Opale 3.5.003" default="main" basedir=".">
+
+	<restrict id="scenari.wsp.src.all">
+		<srcNode refid="scenari.wsp.src"/>
+		<name name="*.*"/>
+	</restrict>
+	
+	<restrict id="scenari.wsp.src.xml">
+		<srcNode refid="scenari.wsp.src"/>
+		<or>
+			<name name="*.xml"/>
+			<name name="*.applet"/>
+			<name name="*.mWeb"/>
+			<name name="*.ref"/>
+			<name name="*.publi"/>
+			<name name="*.quiz"/>
+		</or>
+	</restrict>
+	
+	<target name="main">
+		<echo>####### MIGRATION de Opale 3.5.002 -> Opale 3.5.003</echo>
+		<tstamp><format property="timestamp" pattern="yyMMdd-HHmm"/></tstamp>
+		
+		<!-- # XSL de migration -->
+		<echo>=> migration de sc:uLink en sc:uLink[@role='url'] ...</echo>
+		<migrateXsl style="${basedir}/3.5/url-role.xsl" filterXPath="//sc:uLink[not(@role)]" filterXPathNs="op:utc.fr:ics/opale3;sc:http://www.utc.fr/ics/scenari/v3/core;sp:http://www.utc.fr/ics/scenari/v3/primitive">
+			<restrict refid="scenari.wsp.src.xml"/>
+		</migrateXsl>
+		
+		<echo>--- Fin de la migration ---</echo>
+	</target>
+	
+	
+</project>

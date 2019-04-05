@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:outlineUiWidget code="tools" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:scope>
+		<sm:minimalist startAtLevel="0"/>
+	</sm:scope>
+	<sm:treeContent>
+		<sm:outline>
+			<sm:label>
+				<span class="mnu_cursor" xmlns="http://www.w3.org/1999/xhtml"/>
+				<sm:title xmlns="http://www.w3.org/1999/xhtml"/>
+			</sm:label>
+			<sm:classes>
+				<sm:selected prefix="mnu_sel_" onContainer="no" onRoot="no" onEntry="yes" onList="no" onChildContainers="no"/>
+				<sm:ownerClasses onEntry="yes"/>
+			</sm:classes>
+		</sm:outline>
+	</sm:treeContent>
+</sm:outlineUiWidget>

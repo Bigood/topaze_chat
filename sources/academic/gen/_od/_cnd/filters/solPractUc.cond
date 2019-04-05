@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:genericCond xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="pubSolPractUc" info="Publish solution of practUc?">
+	<sm:targetModel>
+		<sm:root/>
+		<sm:ifNone>
+			<sm:fixedResult return="true"/>
+		</sm:ifNone>
+	</sm:targetModel>
+	<sm:expression>
+		<sm:freeXpath xpath="not(op:odRootM/sp:settings/sp:solPractUc='no')">
+			<sm:extraNamespace prefix="op" namespace="utc.fr:ics/opale3"/>
+		</sm:freeXpath>
+	</sm:expression>
+</sm:genericCond>

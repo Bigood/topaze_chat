@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeXed xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:se="http://www.utc.fr/ics/scenari/v3/editing" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" code="visualMap">
+	<sm:namespaceToDeclare prefix="sp" ns="http://www.utc.fr/ics/scenari/v3/primitive"/>
+	<sm:namespaceToDeclare prefix="opa" ns="kelis.fr:opa"/>
+	<se:editor se:namespaces="true">
+		<se:uiLib se:src="chrome://scenarixedlib/content/libUiExtra/spTeEditor/spTeEditor.uilib.xml">
+			<se:style>@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@namespace se url("http://www.utc.fr/ics/scenari/v3/editing");
+
+spTeStructUri{
+ -moz-binding: url("chrome://scenariWsp/content/widgets/xed/libUiWsp/widgets/spTeEditor.xbl.xml#spTeStructUri");
+}</se:style>
+		</se:uiLib>
+		<se:lib>
+			<dropPasteItem se:id="opa_visualMap" se:bind="element" childrenRoot="true" regexpSgn=".*@opa_visualMap\b.*" se:declareNs="opa sp sc" se:title="￼Plan graphique￼" se:name="opa:visualMap">
+				<element styleTag="font-family:arial;font-size:20px; background-color:#446e43; color:white; -moz-border-radius:5px; padding-left:4px; padding-right:4px">
+					<childs>
+						<se:ref se:refid="s_content"/>
+					</childs>
+				</element>
+			</dropPasteItem>
+			<dropPasteItem se:id="opa_visualMap:hideHeader" se:bind="element" childrenRoot="true" regexpSgn=".*@opa_visualMap\b.*" se:declareNs="opa sp sc" se:title="￼Plan graphique￼" se:name="opa:visualMap">
+				<hiddenElement>
+					<childs>
+						<se:ref se:refid="s_content"/>
+					</childs>
+				</hiddenElement>
+			</dropPasteItem>
+			<se:template se:id="s_content">
+				<element se:bind="elementSubtree" se:card="1" se:title="￼Image￼" se:name="sp:image" se:threshold="500" opened="true" styleTag="color:#446e43;">
+					<atts>
+						<spTeStructUri se:bind="attribute" idSpTeEditor="spTeEditor" se:name="sc:refUri" se:title="Ref" spTeStructType="imageUri" transform="transform=img2img&amp;outType=PNG">
+							<ptritem notnull="true" regexpSgn=".*@sfile_gif\b.*|.*@sfile_jpg_jpeg\b.*|.*@sfile_png\b.*" features=";hidePreview;"/>
+						</spTeStructUri>
+					</atts>
+					<childs/>
+				</element>
+				<element se:bind="elementSubtree" se:card="?" se:title="￼Texte d'aide￼" se:name="sp:help" tooltipTag="￼Zone de texte d'aide en dessous de l'image permettant d'indiquer quoi faire à l'utilisateur. Par exemple : Passer votre souris sur l'image pour voir les interactions possibles ...￼" styleTag="color:#446e43;">
+					<childs>
+						<sm:refModel sc:refUri="/academic/model/Re/sTxt.model" sm:editorType="hideHeader"/>
+					</childs>
+				</element>
+				<spTeEditorFixedIFrame se:bind="current" id="spTeEditor" iframeSrc="chrome://scenariXedLib/content/libUiExtra/2dEditor/map/spTeEditor.xul" iframeStyle="-moz-box-flex:1;" imgTransform="transform=img2img&amp;outType=PNG"/>
+				<se:choice se:card="+">
+					<spTeStructDomFragment se:bind="element" se:title="￼Zone￼" se:name="sp:area" spTeStructType="area" xpathBindFragment="descendant::*[local-name()='boxStatic']" styleTag="color:#446e43;">
+						<element class="content" styleTag="color:#446e43; font-weight:bold;font-size:1.2em;">
+							<childs>
+								<boxStatic se:bind="subtree" se:name="opa:areaMeta"/>
+								<sm:refModel sc:refUri="/case/model/plan/visualMap/nodeLink.model" sm:editorType="hideHeader"/>
+							</childs>
+						</element>
+					</spTeStructDomFragment>
+				</se:choice>
+				<insert se:bind="current"/>
+			</se:template>
+		</se:lib>
+		<xmlview se:bind="document">
+			<hiddenElement se:bind="element" se:title="￼Item￼" se:name="sc:item">
+				<childs>
+					<dropPasteItem se:bind="element" childrenRoot="true" regexpSgn=".*@opa_visualMap\b.*" se:declareNs="opa sp sc" se:title="￼Plan graphique￼" se:name="opa:visualMap">
+						<element opened="always" insert="collapsed" styleTag="font-family:arial;font-size:20px; background-color:#446e43; color:white; -moz-border-radius:5px; padding-left:4px; padding-right:4px">
+							<childs>
+								<se:ref se:refid="s_content"/>
+							</childs>
+						</element>
+					</dropPasteItem>
+				</childs>
+			</hiddenElement>
+		</xmlview>
+	</se:editor>
+</sm:freeXed>

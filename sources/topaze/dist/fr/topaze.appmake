@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:appMake xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:models>
+		<sm:wspDef sc:refUri="/topaze/topaze.wspdef" lang="fr-FR" key="topaze">
+			<sm:welcomeSite sc:refUri="/topaze/dist/fr/res/pres.site" mainFile="index.html" title="Topaze - accueil"/>
+			<sm:webSite url="http://tice.mines-paristech.fr/projetopa/genDocGuide" title="Topaze - documentation"/>
+		</sm:wspDef>
+	</sm:models>
+	<sm:scKit sc:refUri=""/>
+	<sm:description name="Topaze" publisher="Kelis">
+		<sm:copyright>© 2008-2015 Les contributeurs. Tous droits réservés.</sm:copyright>
+		<sm:license>scenari-platform.org "Topaze" END-USER SOFTWARE LICENSE AGREEMENT
+
+A source code version of Topaze that you may use, modify and 
+distribute is available to you free-of-charge from 
+http://scenari-platform.org/svn/topaze/trunk/model 
+under the MPL 1.1, GPL 2.0, LGPL 2.1 or CeCILL 2.O license.
+The accompanying executable code version of Topaze and related 
+documentation (the "product") is made available to you under the terms ofthis 
+Topaze end-user software license agreement (the "agreement").
+By selecting the "accept" option, or by installing or using Topaze, 
+you are consenting to be bound by the agreement. 
+If you do not agree to the terms and conditions of this agreement, do not 
+selecting the "accept" option, and do not install or use any part of 
+Topaze.
+During the Topaze installation process, and at later times, you may 
+be given the option of installing additional components from third-party 
+software providers. The installation and use of those third-party components 
+may be governed by additional license agreements.
+
+1. LICENSE GRANT. scenari-platform.org grants you a non-exclusive license to 
+ use the executable code version of the product. This agreement will also 
+ govern any software upgrades provided by scenari-platform.org that replace 
+ and/or supplement the original product, unless such upgrades are accompanied 
+ by a separate license, in which case the terms of that license will govern.
+
+2. TERMINATION. If you breach this agreement your right to use the product will 
+ terminate immediately and without notice, but all provisions of this 
+ agreement except the license grant (paragraph 1) will survive termination 
+ and continue in effect. Upon termination, you must destroy all copies of the 
+ product.
+
+3. PROPRIETARY RIGHTS. Portions of the Product are available in source code form
+ under the terms of the MPL 1.1, GPL 2.0, LGPL 2.1 or CeCILL 2.O 
+ (collectively,"open source licenses") from 
+ http://scenari-platform.org/svn/topaze/ 
+ Nothing in this agreement will be construed to limit any rights granted 
+ under the open source licenses. Subject to the foregoing, 
+ scenari-platform.org, for itself and on behalf of its licensors, hereby 
+ reserves all intellectual property rights in the product, except for the 
+ rights expressly granted in this agreement. You may not remove or alter any 
+ trademark, logo, copyright or other proprietary notice in or on the product. 
+ This license does not grant you any right to use the trademarks, service 
+ marks or logos of scenari-platform.org or its licensors.
+
+4. DISCLAIMER OF WARRANTY. The product is provided "as is" with all faults. To 
+ the extent permitted by law, scenari-platform.org and scenari-platform.org's 
+ licensors hereby disclaim all warranties, whether express or implied, 
+ including without limitation warranties that the product is free of defects, 
+ merchantable, fit for a particular purpose and non-infringing. You bear 
+ entire risk as to selecting the product for your purposes and as to the 
+ quality and performance of the product. This limitation will apply 
+ notwithstanding the failure of essential purpose of any remedy. Some 
+ jurisdictions do not allow the exclusion or limitation of implied warranties,
+ so this disclaimer may not apply to you.
+
+5. LIMITATION OF LIABILITY. Except as required by law, scenari-platform.org will
+ not be liable for any indirect, special, incidental, consequential or 
+ exemplary damages arising out of or in any way relating to this agreement or 
+ the use of or inability to use the product, including without limitation 
+ damages for loss of goodwill, work stoppage, lost profits, loss of data, and 
+ computer failure or malfunction, even if advised of the possibility of such 
+ damages and regardless of the theory (contract, tort or otherwise) upon 
+ which such claim is based.
+ </sm:license>
+		<sm:version stage="final" major="1" medium="4" minor="018" minorLength="1"/>
+		<sm:shortDescription>Etude de cas</sm:shortDescription>
+		<sm:aboutImage sc:refUri="/topaze/dist/_res/about.png"/>
+	</sm:description>
+	<sm:localization defaultLang="fr-FR" lang="fr-FR"/>
+	<sm:make>
+		<sm:makeWin>
+			<sm:description>
+				<sm:icon sc:refUri="/topaze/dist/_res/app/icon.ico"/>
+			</sm:description>
+			<sm:makeX86/>
+		</sm:makeWin>
+		<sm:makeLin>
+			<sm:description>
+				<sm:icon sc:refUri="/topaze/dist/_res/app/icon.png"/>
+			</sm:description>
+			<sm:makeX86/>
+			<sm:makeX64/>
+		</sm:makeLin>
+		<sm:makeMac>
+			<sm:description>
+				<sm:icon sc:refUri="/topaze/dist/_res/app/icon.icns"/>
+			</sm:description>
+		</sm:makeMac>
+	</sm:make>
+	<sm:modules>
+		<sm:proxy/>
+		<sm:embeddedServer type="fs">
+			<sm:createDefaultWsp code="Topaze">
+				<sm:definition>
+					<sm:refWspDef key="topaze"/>
+				</sm:definition>
+			</sm:createDefaultWsp>
+		</sm:embeddedServer>
+	</sm:modules>
+</sm:appMake>

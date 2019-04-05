@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionOdtTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0">
+	<sm:model sc:refUri="/academic/model/Re/txtRes.model"/>
+	<sm:content>
+		<!--Utile car OD ne possède pas de style @spaceBefore sur les sections...-->
+		<sm:WParagraph globalStyle="spaceBeforeKeep" display="always"/>
+		<!--# copyright-->
+		<sm:for codes="img">
+			<sm:dataBlock category="cprRes">
+				<sm:blockId>
+					<sm:subModelId/>
+				</sm:blockId>
+				<sm:label>
+					<sm:title>
+						<sm:subModelTitle/>
+					</sm:title>
+				</sm:label>
+				<sm:data>
+					<sm:callSubModelMeta axis="credit"/>
+				</sm:data>
+			</sm:dataBlock>
+		</sm:for>
+		<!--Obligé d'encapsuler dans un tableau pour maitriser l'étendue du wrap texte / image-->
+		<sm:WBox style="bxTxtRes">
+			<sm:choose>
+				<sm:when xpath="op:txtResM/sp:pos='rgt'">
+					<sm:for codes="img">
+						<sm:dataBlock category="res">
+							<sm:overrideContentDeclaration>
+								<sm:callBlockData/>
+							</sm:overrideContentDeclaration>
+							<sm:blockId>
+								<sm:subModelId/>
+							</sm:blockId>
+							<sm:label>
+								<sm:title>
+									<sm:subModelTitle/>
+								</sm:title>
+							</sm:label>
+							<sm:data>
+								<sm:WCaptionBlock style="resRight">
+									<sm:title>
+										<sm:subModelTitle format="shortTitleText"/>
+									</sm:title>
+									<sm:caption category="img"/>
+									<sm:callSubModel axis="txtRes"/>
+								</sm:WCaptionBlock>
+							</sm:data>
+						</sm:dataBlock>
+					</sm:for>
+					<sm:for codes="txt">
+						<sm:callSubModel/>
+					</sm:for>
+				</sm:when>
+				<sm:otherwise>
+					<sm:for codes="img">
+						<sm:dataBlock category="res">
+							<sm:overrideContentDeclaration>
+								<sm:callBlockData/>
+							</sm:overrideContentDeclaration>
+							<sm:blockId>
+								<sm:subModelId/>
+							</sm:blockId>
+							<sm:label>
+								<sm:title>
+									<sm:subModelTitle/>
+								</sm:title>
+							</sm:label>
+							<sm:data>
+								<sm:WCaptionBlock style="resLeft">
+									<sm:title>
+										<sm:subModelTitle format="shortTitleText"/>
+									</sm:title>
+									<sm:caption category="img"/>
+									<sm:callSubModel axis="txtRes"/>
+								</sm:WCaptionBlock>
+							</sm:data>
+						</sm:dataBlock>
+					</sm:for>
+					<sm:for codes="txt">
+						<sm:callSubModel/>
+					</sm:for>
+				</sm:otherwise>
+			</sm:choose>
+		</sm:WBox>
+	</sm:content>
+</sm:compositionOdtTransf>

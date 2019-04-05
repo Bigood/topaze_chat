@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Dossier du plan de l'étude de cas￼" category="￼;Etude de cas￼">
+	<sm:identification targetNamespace="kelis.fr:opa" targetPrefix="opa" code="folder" itemExtension="case"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/case/model/plan/map/folderM.model" usage="required"/>
+		<sm:set usage="required">
+			<sm:part code="node" name="￼;Étape￼" family="sub-level" internalized="never">
+				<sm:allowedModel sc:refUri="/case/model/node/expNode.model"/>
+				<sm:allowedModel sc:refUri="/case/model/node/assmntNode.model"/>
+				<sm:allowedModel sc:refUri="/case/model/node/heavyNode.model"/>
+				<sm:allowedModel sc:refUri="/case/model/node/navNode.model"/>
+			</sm:part>
+			<sm:part code="sub" name="￼;Sous-dossier￼" family="sub-level" internalized="always">
+				<sm:allowedModel sc:refUri="/case/model/plan/map/folder.model"/>
+			</sm:part>
+		</sm:set>
+	</sm:structure>
+	<sm:authoring>
+		<sm:icon sc:refUri="/academic/model/_ico/courseUaSmall.png"/>
+		<sm:formEditor indentXml="true">
+			<sm:part refCode="node">
+				<sm:stylableWidget displayMode="auto">
+					<sm:styles>
+						<sm:container style="border:2px dotted #8f8f8f;margin-top:3px;margin-bottom:3px;">
+							<sm:head>
+								<sm:name style="margin-left:5px; color:#8f8f8f;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container style="border-color:#c1c1c1;">
+							<sm:head>
+								<sm:name style="color:#c1c1c1"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openSmall.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="sub">
+				<sm:stylableWidget displayMode="auto">
+					<sm:styles>
+						<sm:container style="border:2px dotted #8f8f8f;margin-top:3px;margin-bottom:3px;">
+							<sm:head>
+								<sm:name style="margin-left:5px; color:#8f8f8f;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container style="border-color:#c1c1c1;">
+							<sm:head>
+								<sm:name style="color:#c1c1c1"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openSmall.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:compositionPrim>

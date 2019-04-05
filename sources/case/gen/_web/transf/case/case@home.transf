@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/case/model/case.model"/>
+	<sm:axis code="home"/>
+	<sm:content format="xhtml">
+		<sm:choose>
+			<sm:when xpath="opa:caseM/sp:homeUrl!=''">
+				<!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1551288814451">Afficher le bouton uniquement s'il n'y a pas les boutons de navigation de configurés, pour éviter l'overlap</comment></comment>-->
+				<sm:WFreeBlock>
+					<a xmlns="http://www.w3.org/1999/xhtml" class="homeBtn">
+						<addAttribute name="href">
+							<sm:dynamicString>
+								<sm:freeSelect xpath="opa:caseM/sp:homeUrl"/>
+							</sm:dynamicString>
+						</addAttribute>
+						<span class="btnLbl">
+							<sm:choose>
+								<sm:when xpath="opa:caseM/sp:homeTitle!=''">
+									<sm:WFreeBlock>
+										<sm:dynamicString>
+											<sm:freeSelect xpath="opa:caseM/sp:homeTitle"/>
+										</sm:dynamicString>
+									</sm:WFreeBlock>
+								</sm:when>
+								<sm:otherwise>
+									<sm:WFreeBlock>Accueil</sm:WFreeBlock>
+								</sm:otherwise>
+							</sm:choose>
+						</span>
+					</a>
+				</sm:WFreeBlock>
+			</sm:when>
+		</sm:choose>
+	</sm:content>
+</sm:compositionXhtmlTransf>

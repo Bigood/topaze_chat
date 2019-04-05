@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Mascotte￼">
+	<sm:identification targetNamespace="kelis.fr:opa" targetPrefix="opa" code="coach" itemExtension="xml"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/case/model/co/objects/coachM.model" usage="required"/>
+		<sm:part code="index" name="￼;Indicateur￼" internalized="never" usage="required">
+			<sm:allowedModel sc:refUri="/case/model/index/autoIndex.model"/>
+			<sm:allowedModel sc:refUri="/case/model/index/userIndex.model"/>
+			<sm:allowedModel sc:refUri="/academic/model/Re/applet/applet.model"/>
+		</sm:part>
+	</sm:structure>
+	<sm:authoring>
+		<sm:icon sc:refUri="/case/auth/ico/tutor_icon.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;mascotte￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:formEditor indentXml="false">
+			<sm:composition>
+				<sm:standardWidget tagStyle="font-family:arial;font-size:20px; background-color:#446e43; color:white; -moz-border-radius:5px; padding-left:4px; padding-right:4px">
+					<sm:iconTag sc:refUri="/case/auth/ui/tutor.png"/>
+				</sm:standardWidget>
+			</sm:composition>
+			<sm:part refCode="index">
+				<sm:stylableWidget displayMode="auto">
+					<sm:styles>
+						<sm:container style="margin-top:10px; margin-bottom:10px; padding-left:5px">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/case/auth/ico/ind.png"/>
+								<sm:name style="margin-left:5px; color:#446e43; font-size:18px; font-family:arial"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:compositionPrim>

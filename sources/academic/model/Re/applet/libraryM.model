@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:dataFormPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="￼;Librairie de l'applet￼">
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="libraryM" itemExtension="xml"/>
+	<sm:structure>
+		<sm:field code="code" name="￼;Classe de démarrage￼" occurrence="one">
+			<sm:string/>
+		</sm:field>
+	</sm:structure>
+	<sm:storage/>
+</sm:dataFormPrim>

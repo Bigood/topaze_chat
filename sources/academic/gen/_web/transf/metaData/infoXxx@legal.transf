@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:freeXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" info="Récupération des infos légaux les plus proches parmis les encètre d'un item donné.">
+	<sm:model sc:refUri="/academic/model/metaData/infoBin.model"/>
+	<sm:model sc:refUri="/academic/model/metaData/info.model"/>
+	<sm:axis code="legal"/>
+	<sm:bs sc:refUri="/academic/gen/_web/transf/metaData/infoXxx@legal.doss" bsPath="op_infoXxx_Alegal.xml"/>
+	<sm:view code="xhtmlContent">
+		<sm:callModel sc:refUri="/academic/model/Re/sPara.model" codeView="xhtmlContent"/>
+	</sm:view>
+</sm:freeXhtmlTransf>

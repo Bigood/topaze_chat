@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:textPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Variable Javascript calculé automatiquement￼">
+	<sm:identification targetNamespace="kelis.fr:opa" targetPrefix="opa" code="autoVarJs"/>
+	<sm:structure>
+		<sm:blockTags>
+			<sm:paraTag name="￼;ligne￼"/>
+		</sm:blockTags>
+		<sm:inlineTags>
+			<sm:textLeafTag role="comment" name="￼;Commentaire￼"/>
+			<sm:objectLeafTag role="input" name="￼;Intrant￼">
+				<sm:meta sc:refUri="/case/model/index/jsInputM.model" usage="optional"/>
+				<sm:refItem>
+					<sm:allowedModel sc:refUri="/case/model/co/quiz/mcqSurPts.model"/>
+					<sm:allowedModel sc:refUri="/case/model/co/quiz/mcqMurSum.model"/>
+					<sm:allowedModel sc:refUri="/case/model/co/quiz/mcqMurMap.model"/>
+					<sm:allowedModel sc:refUri="/academic/model/Uc/quiz/mcqSur.model"/>
+					<sm:allowedModel sc:refUri="/academic/model/Uc/quiz/mcgSur.model"/>
+					<sm:allowedModel sc:refUri="/academic/model/Uc/quiz/mcqMur.model"/>
+					<sm:allowedModel sc:refUri="/academic/model/Uc/quiz/mcgMur.model"/>
+					<sm:allowedModel sc:refUri="/academic/model/Uc/quiz/match.model"/>
+					<sm:allowedModel sc:refUri="/academic/model/Uc/quiz/ordWord.model"/>
+					<sm:allowedModel sc:refUri="/academic/model/Uc/quiz/cloze.model"/>
+					<sm:allowedModel sc:refUri="/academic/model/Uc/quiz/numerical.model"/>
+					<sm:allowedModel sc:refUri="/academic/model/Uc/quiz/field.model"/>
+					<sm:allowedModel sc:refUri="/case/model/node/assmntNode.model"/>
+					<sm:allowedModel sc:refUri="/case/model/node/expNode.model"/>
+					<sm:allowedModel sc:refUri="/case/model/node/heavyNode.model"/>
+					<sm:allowedModel sc:refUri="/case/model/node/navNode.model"/>
+					<sm:allowedModel sc:refUri="/case/model/index/autoIndex.model"/>
+					<sm:allowedModel sc:refUri="/case/model/index/userIndex.model"/>
+					<sm:allowedModel sc:refUri="/academic/model/Re/applet/applet.model"/>
+				</sm:refItem>
+			</sm:objectLeafTag>
+			<sm:objectLeafTag role="inputVar" name="￼;Variable￼">
+				<sm:refItem>
+					<sm:allowedModel sc:refUri="/case/model/index/autoVar.model"/>
+					<sm:allowedModel sc:refUri="/case/model/index/userVar.model"/>
+				</sm:refItem>
+			</sm:objectLeafTag>
+		</sm:inlineTags>
+	</sm:structure>
+	<sm:authoring>
+		<sm:formEditor>
+			<sm:insertCharacters>
+				<sm:charGroup name="￼;Espaces￼">
+					<sm:char value=" " name="￼;Indentation￼"/>
+				</sm:charGroup>
+			</sm:insertCharacters>
+			<sm:inlineBehaviors>
+				<sm:textLeafBehavior role="comment" mode="toggle">
+					<sm:keyBinding char="M"/>
+				</sm:textLeafBehavior>
+			</sm:inlineBehaviors>
+			<sm:writingAids spellCheck="no" autoInsertions="no"/>
+			<sm:htmlStyle tag="para">
+				<sm:entryStyle key="font-family" value="monospace"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="textLeaf" role="comment">
+				<sm:entryStyle key="color" value="#2E968E"/>
+				<sm:entryStyle key="font-style" value="italic"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="textLeaf" role="comment" pseudoClass="before">
+				<sm:entryStyle key="content" value="&quot;/*&quot;"/>
+				<sm:entryStyle key="color" value="#2E968E"/>
+				<sm:entryStyle key="font-style" value="italic"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="textLeaf" role="comment" pseudoClass="after">
+				<sm:entryStyle key="content" value="&quot;*/&quot;"/>
+				<sm:entryStyle key="color" value="#2E968E"/>
+				<sm:entryStyle key="font-style" value="italic"/>
+			</sm:htmlStyle>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:textPrim>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="￼;Site interactif et simulateur￼">
+	<sm:help quickHelp="￼;Insérer un site interactif ou un simulateur (par exemple, un site web interactif, ...)￼"/>
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="simu" itemExtension="xml"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/academic/model/metaData/binAltM.model" usage="required"/>
+		<sm:part code="acc" name="￼;Explication￼" family="content" internalized="always" usage="optional">
+			<sm:allowedModel sc:refUri="/academic/model/Re/res.model"/>
+		</sm:part>
+		<sm:alternative usage="required">
+			<sm:part code="eweb" name="￼;Site web interactif￼" family="content" internalized="userDependent">
+				<sm:allowedModel sc:refUri="/binaries/eWeb/eWeb.model"/>
+			</sm:part>
+		</sm:alternative>
+	</sm:structure>
+	<sm:authoring>
+		<sm:icon sc:refUri="/academic/model/_ico/simu.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;siteSimu￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:formEditor indentXml="true">
+			<sm:composition>
+				<sm:standardWidget tagStyle="font-family:arial;font-size:1.8em; background-color:#359632; color:white; -moz-border-radius:5px; -moz-padding-start:4px; -moz-padding-end:4px;">
+					<sm:iconTag sc:refUri="/academic/model/_ico/simuBig.png"/>
+				</sm:standardWidget>
+			</sm:composition>
+			<sm:part refCode="eweb">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/eWeb.png"/>
+								<sm:name style="display:none"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:compositionPrim>

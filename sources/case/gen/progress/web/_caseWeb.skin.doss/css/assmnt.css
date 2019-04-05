@@ -1,0 +1,534 @@
+/* Règles des exercices */
+
+.quizBk{
+	margin-left :15px;
+	margin-right:15px;
+	
+}
+
+.quizBkInList{
+	border-bottom:1px dotted #627413;
+	margin-bottom:10px;
+	padding-bottom:25px;
+}
+
+.questCoQuiz{
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 20px;
+	border-bottom: 1px dotted grey;
+}
+
+a.btnQuizMde{
+	position: absolute;
+	right: 20px;
+	top: 5px;
+}
+
+
+.headerQ{
+	font-size: 1.1em;
+	color: #627000;
+}
+
+.scoreEval{
+	text-align: justify;
+	font-size: 1.2em;
+	margin: 0.2em 1em 0.7em 1em;
+}
+
+.answBad{
+	color:red
+}
+
+.answBest{
+	color:#008000
+}
+
+.answGood{
+	color: #4e8000
+}
+
+.infoScore{
+	font-size:14px;
+}
+.assmntNodeFdbk{
+	border-bottom: 1px dotted grey;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+.WFeedbackEntry p{
+	margin-left:10px;
+	margin-right:10px;
+	font-size:12px;
+	font-style: italic;
+	color:gray;
+}
+.chExpln{
+	font-style:italic;
+}
+.collapse .question {
+	margin-bottom: 0em;
+}
+a.gExpln_open,
+a.gExpln_closed{
+	color:#7B8820;
+	text-decoration:none;
+	margin-left:25px;
+}
+.gExpln_open{
+	font-weight:bold;
+}
+.gExpln_co {
+	border:1px solid #7B8820;
+	margin-left:25px;
+	margin-right:10px;
+	padding:2px 10px;
+	color:gray;
+	-moz-border-radius: 8px;
+	-khtml-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:3px;
+	-moz-box-shadow: 0px 0px 5px #888;
+	-khtml-box-shadow: 0px 0px 5px #888;
+	-webkit-box-shadow: 0px 0px 5px #888;
+	margin-top:7px;
+}
+/* EDIT */
+
+.tatInput {
+	background-color: #F2FBFA;
+	background: url(../img/quiz/edit.gif) no-repeat;
+	padding: 1px 2px 1px 18px;
+	white-space: pre;
+	border: 1px solid silver;
+	width: 150px;
+	font-weight: bold;
+}
+
+.tatSol {
+	margin: 0px 3px; 
+	border: 2px solid #FF8C00;
+	color: #FF8C00;
+	font-style: italic;
+	padding: 2px;
+	background: White;
+}
+
+.assmntResult_0 input {
+	color: #ff4a3e;
+	border: 2px solid #ff4a3e;
+	text-decoration: line-through blink;
+	cursor: default;
+}
+
+.assmntResult_1 input {
+	color: #00aa00;
+	border: 2px solid #00aa00;
+	cursor: default;
+}
+
+.gapAnswer,
+.exoSol{
+	margin-left: 0.2em;
+	margin-right: 0.5em;
+	font-style: italic;
+	font-weight: bold;
+	color: #FF4500;
+}
+
+.exoAsw {
+	margin-top: 0.5em;
+}
+.exoSol {
+	padding: 0 0 0 0.2em;
+}
+.el_open_exoSol {
+	color: #79ACF7;
+	font-style: normal;
+}
+.ere_cTxt_tl_gap span {
+	padding: 0em 0.3em 0em 0.3em;
+}
+
+.ere_cTxt_tl_gap span input {
+	padding-left: 0.1em;
+}
+
+.exoInput {
+	padding-left: 1em;
+	margin-left: 2em;
+}
+.el_open_exoInput {
+	width: 80%;
+	height: 100px;
+}
+.field_div {
+	font-size: 1.3em;
+	font-weight: bold;
+	margin-top: 0.7em;
+	margin-bottom: 0.3em;
+
+}
+
+.field_child {
+	margin-left: 1.5em;
+}
+
+.field_child .field_div {
+	margin-bottom: 0.1em;
+	font-size: 1.1em;
+	font-style: italic;
+	display: list-item;
+	list-style: disc inside;
+}
+/* ====== MCQ ====== */
+
+.choiceList {
+	margin-left: 1.5em;
+	margin-top: 0.5em;
+}
+
+.collapse .choiceList {
+	margin-top: 0.5em;
+	margin-bottom: 0em;
+	margin-left: 0em;
+	padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+.label {
+	padding: 0px;
+	margin-bottom: 0px;
+	height: auto;
+	font-size: 1em;
+}
+.label p {
+	padding: 0 0 0 0;
+	text-indent: 0;
+	margin: 0 0 0 0;
+	line-height: normal;
+}
+
+.choice {
+	display: inline;
+	padding: 0px;
+	height: auto;
+}
+
+.choiceList_in {
+	vertical-align: top;
+	height: auto;
+	margin-right: 13px;
+	padding-right: 17px;
+
+}
+
+*+html .choiceList_in input{
+	border:0px;
+	position: relative;
+	top:-4px
+}
+
+.choiceList_la {
+	height: auto;
+	margin-top: 1em;
+}
+
+td.choiceList_la p {
+	padding: 0 0 0 0.3em;
+	margin: -5px 0 1em 0;
+}
+
+.choiceList_in input {
+	vertical-align: top;
+	margin-top: -2px;
+}
+
+tr.choiceList_ch {
+	margin-bottom: 0.5em;
+}
+
+/* MCQ stylage des solutions */
+.assmntSolCheck .choiceList_in {
+ 	background-image: url(../img/quiz/boxchk.gif);
+	background-repeat: no-repeat;
+	background-position: top right;	
+}
+
+.assmntSolUnche .choiceList_in {
+	background-image: url(../img/quiz/boxunchk.gif);
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+
+.assmntSolWrong td.choiceList_in {
+	background-image: url(../img/quiz/radiounchk.gif);
+	background-repeat: no-repeat;
+	background-position: top right ;
+}
+
+.assmntSolRight td.choiceList_in {
+	background-image: url(../img/quiz/radiochk.gif);
+	background-repeat: no-repeat;
+	background-position: top right ;
+}	
+
+/* ====== MLQ ====== */
+
+
+.op_labelTxt_p {
+	text-align: left;
+}
+
+/* Glisser Deposer */
+
+.mtTable {
+	width:100%;
+	border-collapse: separate;
+	border-spacing:5px;
+}
+.mtTable td {
+	vertical-align: top;
+}
+
+.mtTdBasket {
+}
+
+.mtTdBasket {
+	width:30%;
+	padding: 0px;
+	margin: 0px;
+}
+.mtTdBasketSol {
+	display: none;
+}
+.mtTdArrow {
+	width: 20px;
+	background-image:url("../img/quiz/dragArrow.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.mtTdSol{
+	width:50%;
+}
+
+.mtTdDropCont {
+	padding: 0px;
+	margin: 0px;
+}
+.mtTdBasket .ddBasket {
+	min-height:250px;
+}
+.mtTdBasket .ddBasketCatch {
+	min-height:250px;
+}
+.mtTdHeading {
+	text-align: center;
+}
+.olTableSol {
+	width: 100%;
+}
+.olTdSolHead{
+	width: 9em;
+}
+.ddBasket{
+	margin-bottom: 5px;
+}
+.ddBasketCatch {
+	border: 1px solid #6e4345;
+}
+.ddBasketCont {
+	padding: 2px;
+}
+.ddBasketSol {
+	display: none;
+}
+
+
+.ddRepArea {
+	margin-bottom:5px;
+}
+.ddDropCatch {
+	border: 1px solid #6e4345;
+}
+.mtTdDropCont .ddDropCatch,
+.mtTdSol .ddDropCatch{
+	-moz-border-radius-topleft:10px;
+	-moz-border-radius-topright:10px;
+}
+.ddDropCont {
+	padding: 2px;
+}
+
+.mtLabel p, .mtLabelSol p {
+	text-indent: 0;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	font-size: 1.1em;
+}
+.ddLabel p, .ddLabelSol p {
+	text-indent: 0;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	font-size: 1.1em;
+}
+
+
+
+/*encadré gris des étiquettes */
+.ddLabel {
+	text-align: center;
+	border: 1px solid Gray;
+	background-color: White;
+	padding: 2px;
+	width: 10em;
+	cursor: move;
+	margin: 0.1em 0.1em 0.2em 0.1em;
+	float: left;
+}
+.ddLabelSol {
+	text-align: center;
+	border: 1px solid Gray;
+	background-color: White;
+	padding: 2px;
+	width: 10em;
+	cursor: default;
+	margin: 0.1em 0.1em 0.2em 0.1em;
+	float: left;
+}
+
+
+.mtLabel {
+	float: left;
+	padding: 2px;
+	margin: 2px;
+	border: 1px solid Gray;
+	background-color: white;
+	cursor: move;
+}
+.mtLabel span.myTT_a {
+	cursor: move;
+}
+.mtLabelSol {
+	float: left;
+	padding: 2px;
+	margin: 2px;
+	border: 1px solid Gray;
+	background-color: white;
+	cursor: default;
+}
+.mtLabelSol span.myTT_a {
+	cursor: default;
+}
+
+
+
+/*encadré rose des étiquettes */
+.ddLabelDrag {
+	border: 1px solid #F08080;
+}
+
+.olLabelDrag p {
+	border: 1px solid #F08080;
+}
+
+/* DragOver classes: pour le panier de propositions et pour les réponses */
+
+.ddBasketDragOver,
+.ddCatchDragOver {
+	background-color: #e3efbf;
+	border: 1px solid #446e43;
+}
+
+/* propositions et réponses */
+.ddBasketCont div.ddLabel,
+.ddDropCont div.ddLabel {
+	float: left;
+}
+
+/* fin du panier */
+.ddBasketEnd,
+.ddCatchDragEnd {
+	clear: both;
+}
+
+/* titres des catégories et des étiquettes  */
+.ddDropTi p, .ddLabel p, .ddLabelSol p {
+	margin: 0px;
+	text-align: center;
+}
+
+
+/* Si le panier de propositions est vide */
+.ddBasketIfEmpty {
+	clear: both;
+	font-style: italic;
+	font-size: 0.9em;
+	color: Gray;
+	text-align: center;
+	padding: 5px 0px;
+}
+
+
+
+/* En gris ... */
+.ddDropTi {
+	font-weight: bold;
+	background-color: #798900;
+	color: white;
+	text-align: center;
+	-moz-border-radius-topleft:10px;
+	-moz-border-radius-topright:10px;
+}
+
+.ddDropContIfEmpty {
+	height: 27px;
+	background: url("../img/quiz/drop.gif") no-repeat center;
+}
+.mtTdSol .ddDropContIfEmpty,
+.olTableSol .ddDropContIfEmpty{
+	background: inherit;
+}
+.ddDropContIfEmpty span {
+	display: none;
+}
+
+
+/* encadré vert si la réponse est juste */
+.ddLabel_Right,
+.assmntResult_Right {
+	cursor: default;
+	padding: 1px;
+	border: 2px solid #00aa00;
+}
+.ddLabel_Right span.myTT_a,
+.assmntResult_Right span.myTT_a {
+	cursor: default;
+}
+
+/*encadré rouge si la réponse est fausse */
+.ddLabel_Wrong,
+.assmntResult_Wrong {
+	cursor: default;
+	padding: 1px;
+	border: 2px solid #ff4a3e;
+}
+.ddLabel_Wrong span.myTT_a,
+.assmntResult_Wrong span.myTT_a {
+	cursor: default;
+}
+.scoreBox {
+    border: 1px solid #7B8820;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 0 5px #888888;
+    -moz-box-shadow: 0 0 5px #888888;
+    -webkit-box-shadow: 0 0 5px #888888;
+    font-size: 14px;
+    font-weight: bold;
+    margin: auto;
+    padding: 5px 0;
+    text-align: center;
+    width: 220px;
+}

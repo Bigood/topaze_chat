@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformer sc:refUri="/academic/gen/_sld/transf/Uc/quiz/cloze/cloze.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_sld/transf/Uc/quiz/cloze/cloze@bkCnt.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_sld/transf/Uc/quiz/cloze/cloze@bkCntInt.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_sld/transf/Uc/quiz/cloze/cloze@nav.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_sld/transf/Uc/quiz/cloze/cloze@quizIn.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_sld/transf/Uc/quiz/cloze/cloze@quizOut.transf"/>
+</sm:transformerList>

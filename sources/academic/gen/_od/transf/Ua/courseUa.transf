@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionOdtTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0">
+	<sm:model sc:refUri="/academic/model/Ua/courseUa.model"/>
+	<sm:content>
+		<sm:for codes="genRef">
+			<sm:callSubModel/>
+		</sm:for>
+		<sm:for codes="obj">
+			<sm:WBox style="objBox">
+				<sm:title>
+					<sm:fixedTitle value="￼;Objectifs￼"/>
+				</sm:title>
+				<sm:callSubModel axis="imp"/>
+			</sm:WBox>
+		</sm:for>
+		<sm:callCompositionMeta axis="keywds"/>
+		<sm:inDataOrder>
+			<sm:for codes="intro">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_od/widg/intro.odwidget">
+							<sm:odContentZone key="content">
+								<sm:callSubModel/>
+							</sm:odContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="courseUc">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:heading display="always">
+							<sm:title>
+								<sm:subModelTitle/>
+							</sm:title>
+							<sm:dataBlock category="uc">
+								<sm:overrideContentDeclaration>
+									<sm:callBlockData/>
+								</sm:overrideContentDeclaration>
+								<sm:blockId>
+									<sm:subModelId/>
+								</sm:blockId>
+								<sm:label>
+									<sm:title>
+										<sm:subModelTitle/>
+									</sm:title>
+								</sm:label>
+								<sm:data>
+									<sm:callSubModel/>
+								</sm:data>
+							</sm:dataBlock>
+						</sm:heading>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="practUc">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:heading display="always">
+							<sm:title>
+								<sm:subModelTitle/>
+								<sm:fixedTitle value="￼;Exercice￼"/>
+							</sm:title>
+							<sm:callSubModel/>
+						</sm:heading>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="trainUcMcgSur trainUcMcgMur trainUcMcqSur trainUcMcqMur trainUcMatch trainUcOrdWord trainUcCloze trainUcField trainUcNumerical trainUcCoQuiz">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:heading display="always">
+							<sm:title>
+								<sm:subModelTitle prefix="￼;Exercice : ￼"/>
+								<sm:fixedTitle value="￼;Exercice￼"/>
+							</sm:title>
+							<sm:callSubModelMeta axis="objs"/>
+							<sm:callSubModelMeta axis="keywds"/>
+							<sm:choose>
+								<sm:when sc:refUri="/academic/gen/_od/_cnd/filters/solQuiz.cond">
+									<sm:dataBlock category="solution">
+										<sm:blockId>
+											<sm:subModelId/>
+										</sm:blockId>
+										<sm:label>
+											<sm:title>
+												<sm:compositionTitle/>
+											</sm:title>
+										</sm:label>
+										<sm:data>
+											<sm:callSubModel axis="asw"/>
+										</sm:data>
+									</sm:dataBlock>
+								</sm:when>
+							</sm:choose>
+							<sm:callSubModel/>
+						</sm:heading>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="conclu">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:Widget sc:refUri="/academic/gen/_od/widg/conclu.odwidget">
+							<sm:odContentZone key="content">
+								<sm:callSubModel/>
+							</sm:odContentZone>
+						</sm:Widget>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="quest">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:dataBlock category="synth">
+							<sm:blockId>
+								<sm:subModelId/>
+							</sm:blockId>
+							<sm:label>
+								<sm:title>
+									<sm:compositionTitle/>
+								</sm:title>
+							</sm:label>
+							<sm:data>
+								<sm:callSubModel/>
+							</sm:data>
+						</sm:dataBlock>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+		</sm:inDataOrder>
+		<sm:choose>
+			<sm:when codes="quest">
+				<sm:WParagraph style="emptyParagraph" display="always">
+					<!--# Indispensable pour contourner bug OO. les références sont insérées dans des paragraphes placés en "hidden"... mais dans ce cas, OO ne prend pas en compte le marginTop du paragraphe qui suit... (cf. http://www.openoffice.org/issues/show_bug.cgi?id=85056)-->
+				</sm:WParagraph>
+			</sm:when>
+		</sm:choose>
+	</sm:content>
+</sm:compositionOdtTransf>

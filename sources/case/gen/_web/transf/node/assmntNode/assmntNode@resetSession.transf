@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sma:assmntCompositionDhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns="http://www.w3.org/1999/xhtml">
+	<sm:model sc:refUri="/case/model/node/assmntNode.model"/>
+	<sm:axis code="resetSession"/>
+	<sm:scenario>
+		<sm:sequence>
+			<sm:onExit>
+				<sm:for codes="quiz">
+					<sm:callFunction fctName="reset"/>
+				</sm:for>
+			</sm:onExit>
+		</sm:sequence>
+	</sm:scenario>
+	<sm:assmntBody/>
+</sma:assmntCompositionDhtmlTransf>

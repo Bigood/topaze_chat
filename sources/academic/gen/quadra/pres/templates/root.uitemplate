@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiTemplate xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" pageUnicityCriterion="hierarchicalContext">
+	<sm:head>
+		<sm:windowTitle>
+			<sm:pageTitle/>
+		</sm:windowTitle>
+		<sm:meta name="author">
+			<sm:callRootModel axis="author"/>
+		</sm:meta>
+		<sm:meta name="keywords">
+			<sm:callRootModel axis="keywds"/>
+		</sm:meta>
+		<sm:meta name="date">
+			<sm:callRootModel axis="date"/>
+		</sm:meta>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/tpl/htmlMeta.uiwidget"/>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/tpl/revisedMeta.uiwidget"/>
+		<sm:styleSheet src="css/rootHtml.css" srcFrom="skin" title="modeHTML" rel="stylesheet" media="screen"/>
+		<sm:styleSheet src="css/rootSS.css" srcFrom="skin" title="modeSS" rel="alternate stylesheet" media="screen"/>
+		<sm:WXhtmlFragment>&lt;!--[if IE]&gt;</sm:WXhtmlFragment>
+		<sm:styleSheet src="css/ie.css" srcFrom="skin"/>
+		<sm:WXhtmlFragment>&lt;![endif]--&gt;&lt;!--[if lt IE 7]&gt;</sm:WXhtmlFragment>
+		<sm:styleSheet src="css/ie6.css" srcFrom="skin"/>
+		<sm:WXhtmlFragment>&lt;![endif]--&gt;</sm:WXhtmlFragment>
+		<sm:Widget sc:refUri="/academic/gen/_sld/widg/mgr/scHPSRoot.uiwidget"/>
+	</sm:head>
+	<sm:body>
+		<sm:Widget sc:refUri="/academic/gen/_sld/widg/nav/progMgr.uiwidget"/>
+		<div xmlns="http://www.w3.org/1999/xhtml" id="tplRootPge">
+			<div id="tplSldFra" class="tplSldFraTocOff">
+				<div id="tplHomeSlide" class="ssSlide">
+					<sm:callMainZone format="xhtml"/>
+				</div>
+			</div>
+			<hr class="hidden" />
+			<strong class="hidden">￼;Navigation :￼</strong>
+			<div id="tplRootNav">
+				<sm:Widget sc:refUri="/academic/gen/_sld/widg/nav/btnNxt.uiwidget"/>
+			</div>
+			<hr class="hidden" />
+			<strong class="hidden">￼;Plan :￼</strong>
+			<sm:Widget sc:refUri="/academic/gen/_sld/widg/nav/tocMgr.uiwidget"/>
+			<div id="tplTools">
+				<sm:Widget sc:refUri="/academic/gen/_sld/widg/nav/btnModeSs.uiwidget"/>
+			</div>
+		</div>
+		<ifText xmlns="http://www.w3.org/1999/xhtml">
+			<hr class="hidden" />
+			<div id="tplFootBanner" class="tplFootBannerTocOff">
+				<sm:callZone key="zLegal" format="xhtml"/>
+			</div>
+		</ifText>
+		<div xmlns="http://www.w3.org/1999/xhtml" id="tplZoomFra">
+			<div class="tplZoomOvr"></div>
+			<div id="tplZoomCo"></div>
+		</div>
+		<sm:script src="js/root.js" srcFrom="skin" type="text/JavaScript"/>
+	</sm:body>
+</sm:openUiTemplate>

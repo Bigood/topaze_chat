@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Re/res.model"/>
+	<sm:axis code="intro"/>
+	<sm:navigation>
+		<sm:page template="page">
+			<sm:title>
+				<sm:fixedTitle value="￼;Introduction￼"/>
+			</sm:title>
+			<sm:mainZone format="xhtml">
+				<sm:WHeadingBlock widgetClass="mainContent">
+					<sm:title>
+						<sm:fixedTitle value="￼;Introduction￼"/>
+					</sm:title>
+					<sm:callModel>
+						<sm:current/>
+					</sm:callModel>
+				</sm:WHeadingBlock>
+			</sm:mainZone>
+		</sm:page>
+	</sm:navigation>
+</sm:compositionXhtmlTransf>

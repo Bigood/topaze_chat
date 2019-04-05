@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sext="http://www.utc.fr/ics/scenari/v3/modeling/extension" sext:assmnt="true" name="￼;Étape de quiz￼" category="￼;Etude de cas￼">
+	<sm:help quickHelp="￼;Contient un exercice interactif￼"/>
+	<sm:identification targetNamespace="kelis.fr:opa" targetPrefix="opa" code="assmntNode" itemExtension="node"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/case/model/node/assmntNodeM.model" usage="required"/>
+		<sm:part code="obj" name="￼;Objectifs de l'étape￼" family="content" internalized="always" usage="optional">
+			<sm:allowedModel sc:refUri="/academic/model/Re/sTxt.model"/>
+		</sm:part>
+		<sm:part code="intro" name="￼;Introduction￼" family="content" internalized="always" usage="optional">
+			<sm:allowedModel sc:refUri="/academic/model/Re/res.model"/>
+		</sm:part>
+		<sm:set usage="required">
+			<sm:part sext:assmnt="true" code="quiz" name="￼;Quiz￼" family="content" internalized="userDependent">
+				<sm:allowedModel sc:refUri="/case/model/co/quiz/mcqSurPts.model"/>
+				<sm:allowedModel sc:refUri="/case/model/co/quiz/mcqMurSum.model"/>
+				<sm:allowedModel sc:refUri="/case/model/co/quiz/mcqMurMap.model"/>
+				<sm:allowedModel sc:refUri="/academic/model/Uc/quiz/mcqSur.model"/>
+				<sm:allowedModel sc:refUri="/academic/model/Uc/quiz/mcgSur.model" restrictUserDep="neverInternalized"/>
+				<sm:allowedModel sc:refUri="/academic/model/Uc/quiz/mcqMur.model"/>
+				<sm:allowedModel sc:refUri="/academic/model/Uc/quiz/mcgMur.model" restrictUserDep="neverInternalized"/>
+				<sm:allowedModel sc:refUri="/academic/model/Uc/quiz/match.model"/>
+				<sm:allowedModel sc:refUri="/academic/model/Uc/quiz/ordWord.model"/>
+				<sm:allowedModel sc:refUri="/academic/model/Uc/quiz/cloze.model"/>
+				<sm:allowedModel sc:refUri="/academic/model/Uc/quiz/numerical.model"/>
+				<sm:allowedModel sc:refUri="/academic/model/Uc/quiz/field.model"/>
+				<sm:allowedModel sc:refUri="/academic/model/Uc/quiz/coQuiz.model"/>
+			</sm:part>
+		</sm:set>
+		<sm:part code="genRef" name="￼;Références Générales￼" family="content" internalized="always" usage="optional">
+			<sm:allowedModel sc:refUri="/case/model/co/genRef.model"/>
+		</sm:part>
+		<sm:feedbackModel name="￼;Feedback￼" sc:refUri="/case/model/co/fdbkAssmnt.model" usage="required">
+			<sm:scaledScoreIntervals>
+				<sm:interval name="￼;Intervalle (basé sur le % de réussite)￼" min="0" max="100" step="10" displayFormat="numeric">
+					<sm:scoreMoreThan name="￼;Strict. supérieur à￼"/>
+					<sm:scoreMoreOrEqualThan name="￼;Supérieur ou égal à￼"/>
+					<sm:scoreLessThan name="￼;Strict. inférieur à￼"/>
+					<sm:scoreLessOrEqualThan name="￼;Inférieur ou égal à￼"/>
+				</sm:interval>
+			</sm:scaledScoreIntervals>
+		</sm:feedbackModel>
+		<sm:constraint>
+			<sm:forbidSameItemTwice refCodes="quiz"/>
+		</sm:constraint>
+	</sm:structure>
+	<sm:authoring>
+		<sm:icon sc:refUri="/case/auth/ico/assmntNode.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;Etape￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:formEditor indentXml="true">
+			<sm:composition>
+				<sm:standardWidget tagStyle="font-family:arial;font-size:20px; background-color:#446e43; color:white; -moz-border-radius:5px; padding-left:4px; padding-right:4px">
+					<sm:iconTag sc:refUri="/case/auth/ui/assmntNode.png"/>
+				</sm:standardWidget>
+			</sm:composition>
+			<sm:part refCode="intro">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:10px; margin-bottom:10px; border-left-width:4px; padding-left:5px">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/introMedium.png"/>
+								<sm:name style="margin-left:5px; color:#446e43; font-size:18px; font-family:arial"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/introMediumFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openBig.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="obj">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:10px; margin-bottom:10px; border-left-width:4px; padding-left:5px">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/objPedagoMedium.png"/>
+								<sm:name style="margin-left:5px; color:#446e43; font-size:18px; font-family:arial"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/objPedagoMediumFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openBig.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="quiz">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:10px; margin-bottom:10px; border-left-width:4px; padding-left:5px">
+							<sm:head style="-moz-border-radius:10px 0px 0px 10px; background-color:#e7e7e7">
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/quizMedium.png"/>
+								<sm:name style="margin-left:5px; color:#446e43; font-size:18px; font-family:arial"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/quizMediumFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openBig.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="genRef">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:10px; margin-bottom:10px; border-left-width:4px; padding-left:5px">
+							<sm:head style="-moz-border-radius:10px; background-color:#f1d1f9">
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/refGenMedium.png"/>
+								<sm:name style="margin-left:5px; color:#a056b0; font-size:1.6em; font-family:arial"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/refGenMediumFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openBig.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+		</sm:formEditor>
+		<sm:formEditor key="internalise" indentXml="true">
+			<sm:part refCode="intro">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:5px; margin-bottom:5px; border-left-width:4px; padding-left:5px">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/introSmall.png"/>
+								<sm:name style="margin-left:5px; color:#446e43;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/introSmallFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openSmall.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="obj">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:5px; margin-bottom:5px; border-left-width:4px; padding-left:5px">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/objPedagoSmall.png"/>
+								<sm:name style="margin-left:5px; color:#446e43;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/objPedagoSmallFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openSmall.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="quiz">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:5px; margin-bottom:5px; border-left-width:4px; padding-left:5px">
+							<sm:head style="-moz-border-radius:10px 0px 0px 10px; background-color:#e7e7e7">
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/quizSmall.png"/>
+								<sm:name style="margin-left:5px; color:#446e43;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/quizSmallFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openSmall.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="genRef">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:5px; margin-bottom:5px; border-left-width:4px; padding-left:5px">
+							<sm:head style="-moz-border-radius:10px; background-color:#f1d1f9">
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/refGenSmall.png"/>
+								<sm:name style="margin-left:5px; color:#a056b0;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/refGenSmallFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openSmall.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:compositionPrim>

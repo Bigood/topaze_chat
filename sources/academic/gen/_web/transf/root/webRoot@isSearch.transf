@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:freeXslWebSiteTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/root/webRoot.model"/>
+	<sm:axis code="isSearch"/>
+	<sm:content>
+		<sm:xsl sc:refUri="/academic/gen/_web/transf/root/webRoot@isSearch.xsl"/>
+		<sm:postXsl key="xhtml">
+			<sm:freeTemplates>&lt;xsl:template match="optScSearch"&gt;
+	&lt;xsl:value-of select="execute(java:append($vBufJs, concat('searchMgr.init(&amp;quot;ide:tplTop/chi:div.searchFra&amp;quot;, &amp;quot;ide:tplTop/chi:div.searchResults&amp;quot;,{searchType:&amp;quot;',@searchType,'&amp;quot;});')))"/&gt;
+	&lt;xsl:apply-templates select="node()"/&gt;
+&lt;/xsl:template&gt;
+</sm:freeTemplates>
+		</sm:postXsl>
+		<sm:callModel sc:refUri="/academic/model/root/webRoot.model" axis="initSearchMgr" codeView="xhtmlContent"/>
+	</sm:content>
+</sm:freeXslWebSiteTransf>

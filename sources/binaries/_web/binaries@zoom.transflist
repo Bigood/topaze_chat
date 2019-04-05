@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformer sc:refUri="/binaries/avi/avi_web@zoom.transf"/>
+	<sm:transformer sc:refUri="/binaries/eWeb/eWeb_web@zoom.transf"/>
+	<sm:transformer sc:refUri="/binaries/flash/flash_web@zoom.transf"/>
+	<sm:transformer sc:refUri="/binaries/flv/flv_web@zoom.transf"/>
+	<sm:transformer sc:refUri="/binaries/mov/mov_web@zoom.transf"/>
+	<sm:transformer sc:refUri="/binaries/mp4/mp4_web@zoom.transf"/>
+	<sm:transformer sc:refUri="/binaries/mpg/mpg_web@zoom.transf"/>
+	<sm:transformer sc:refUri="/binaries/ods/ods_web@zoom.transf"/>
+	<sm:transformer sc:refUri="/binaries/opus/opus_web@zoom.transf"/>
+	<sm:transformer sc:refUri="/binaries/rm/rm_web@zoom.transf"/>
+	<sm:transformer sc:refUri="/binaries/webm/webm_web@zoom.transf"/>
+	<sm:transformer sc:refUri="/binaries/wmv/wmv_web@zoom.transf"/>
+	<sm:transformer sc:refUri="/binaries/oga/oga_web@zoom.transf"/>
+	<sm:transformer sc:refUri="/binaries/odg/odg_web@zoom.transf"/>
+	<sm:transformer sc:refUri="/binaries/gif/gif_web@zoom.transf"/>
+	<sm:transformer sc:refUri="/binaries/jpg/jpeg_web@zoom.transf"/>
+	<sm:transformer sc:refUri="/binaries/png/png_web@zoom.transf"/>
+	<sm:transformer sc:refUri="/binaries/mp3/mp3_web@zoom.transf"/>
+</sm:transformerList>

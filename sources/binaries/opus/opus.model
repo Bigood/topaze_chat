@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:audioPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Audio OPUS￼" category="￼;Ressources￼">
+	<sm:help quickHelp="￼;ATTENTION : Format pris en charge uniquement sur Firefox et Chrome.￼"/>
+	<sm:identification extensions="opus" mimeTypes="audio/opus"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/academic/model/metaData/binAltM.model" usage="optional"/>
+	</sm:structure>
+	<sm:authoring>
+		<sm:icon sc:refUri="/binaries/opus/_res/opus.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;audio￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+	</sm:authoring>
+</sm:audioPrim>

@@ -1,0 +1,14 @@
+body{
+	margin: 0px 0px 0px 0px;
+	background-color: white;
+}
+#tplCo {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	overflow: auto;
+	padding-top: 50px;
+}
+

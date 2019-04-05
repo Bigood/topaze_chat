@@ -1,0 +1,71 @@
+#tplMain{
+	border:2px solid #798900;
+	-moz-border-radius: 10px;
+	-webkit-border-radius:10px;
+	-khtml-border-radius:10px;
+	border-radius:10px;
+}
+#tplMnu {
+	position: absolute;
+	top:0px;
+	left:0px;
+	bottom:0px;
+	overflow: hidden;
+}
+#tplMnu.tplMnuOn {
+	width:220px;
+}
+#tplMnu.tplMnuOff {
+	width:20px;
+}
+#tplMnuCo{
+	position: absolute;
+	top:0px;
+	left:0px;
+	right:20px;
+	bottom:0px;
+}
+#tplMnuScroll{
+	position: absolute;
+	top:20px;
+	left:0px;
+	right:0px;
+	bottom:20px;
+	padding-right: 3px;
+}
+div.ueMnuSrlUp{
+	position: absolute;
+	top:0px;
+	left:0px;
+	right:0px;
+	height:20px;
+	text-align: center;
+}
+div.ueMnuSrlDwn{
+	position: absolute;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	height:20px;
+	text-align: center;
+}
+a.btnMnuTglOn,
+a.btnMnuTglOff{
+	position: absolute;
+	right:0px;
+	width:20px;
+	height:30px;
+	top: 50%;
+	margin-top:-15px;
+}
+
+
+#tplCo.spider {
+	left:0px;
+}
+#tplCo.outline.tplCoMnuOn {
+	left:220px;
+}
+#tplCo.outline.tplCoMnuOff {
+	left:20px;
+}

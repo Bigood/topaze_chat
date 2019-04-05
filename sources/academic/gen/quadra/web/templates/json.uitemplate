@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeUiTemplate xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:templateXsl templateEncoding="UTF-8" pageUnicityCriterion="hierarchicalContext" resultEncoding="UTF-8" resultExtension=".txt" resultXslMethod="text">
+		<sm:contentTemplate sc:refUri="/academic/gen/quadra/web/templates/json.xsl"/>
+		<sm:postXsl key="xhtml">
+			<sm:standardXhtmlTemplates/>
+			<sm:freeTemplates>&lt;xsl:template match="root"&gt;
+  &lt;xsl:apply-templates/&gt;
+&lt;/xsl:template&gt;
+&lt;xsl:template match="serialize"&gt;
+  &lt;xsl:variable name="vFragment"&gt;
+    &lt;redirect:serialize omit-xml-declaration="yes" method="html"&gt;
+      &lt;xsl:apply-templates/&gt;
+    &lt;/redirect:serialize&gt;
+  &lt;/xsl:variable&gt;
+  &lt;xsl:value-of select="escapeJs(normalize-space($vFragment))"/&gt;
+&lt;/xsl:template&gt;
+</sm:freeTemplates>
+		</sm:postXsl>
+	</sm:templateXsl>
+</sm:freeUiTemplate>

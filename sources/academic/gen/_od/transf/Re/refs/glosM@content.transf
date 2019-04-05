@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:dataFormOdTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" info="Contenu du glossaire">
+	<sm:model sc:refUri="/academic/model/Re/refs/glosM.model"/>
+	<sm:axis code="content"/>
+	<sm:content>
+		<sm:WParagraph style="glosTerm">
+			<sm:forField codes="term">
+				<sm:fieldValueString/>
+			</sm:forField>
+		</sm:WParagraph>
+		<sm:forField codes="def">
+			<sm:WSection style="glosDef">
+				<sm:fieldValueOtherType/>
+			</sm:WSection>
+		</sm:forField>
+	</sm:content>
+</sm:dataFormOdTransf>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="mathTexInline">
+	<sm:widgetBsFragment contentFormat="xhtml">&lt;!-- parametres --&gt;
+&lt;valeur code="maxWidth"&gt;&lt;source&gt;600&lt;/source&gt;&lt;/valeur&gt;&lt;!-- en px --&gt;
+&lt;valeur code="maxHeight"&gt;&lt;source&gt;200&lt;/source&gt;&lt;/valeur&gt;&lt;!-- en px --&gt;
+&lt;valeur code="scale"&gt;&lt;source&gt;1.3&lt;/source&gt;&lt;/valeur&gt;
+
+&lt;source type="composition-dynamique" xmlns:java="http://xml.apache.org/xslt/java"&gt;
+	&lt;c:composition xmlns:c="composition"&gt;
+		&lt;img class="sfile_math_inline" lookForAlt="{donnee?type=xpath-dynamique:computeStrAgent('//fullTitleText')}" src="{donnee?type=xpath-dynamique:computeStrAgent('//', concat('res:src=src:', java:getSrcUri(srcFileAgent()), ';transform=latex2img&amp;amp;content=', computeStrAgent('Latex', string($vArguments)),'&amp;amp;resolution=96&amp;amp;scale=',computeStrAgent('scale'), '&amp;amp;fileExt=.png&amp;amp;'))}" style="vertical-align:-{donnee?type=xpath-dynamique:computeStrAgent('Dep', string($vArguments))}px;"/&gt;
+	&lt;/c:composition&gt;
+&lt;/source&gt;
+
+&lt;valeur code="Latex"&gt;
+   &lt;source type="xpath-dynamique"&gt;java:java.net.URLEncoder.encode(string($vArguments), 'UTF-8')&lt;/source&gt;
+&lt;/valeur&gt;
+
+&lt;valeur code="Dep"&gt;
+   &lt;source type="xpath-dynamique"&gt;number(computeStrAgent('//', concat('get:src:', java:getSrcUri(srcFileAgent()), '?transform=latex2img&amp;amp;content=', computeStrAgent('../Latex', string($vArguments)),'&amp;amp;resolution=96&amp;amp;scale=',computeStrAgent('../scale'), '&amp;amp;outType=DIMS&amp;amp;outRules=Str(pattern''!dpx'')')))&lt;/source&gt;
+&lt;/valeur&gt;
+</sm:widgetBsFragment>
+</sm:freeUiWidget>

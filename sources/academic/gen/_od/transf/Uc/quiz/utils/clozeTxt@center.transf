@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?><sma:assmntGapInTextOdTransf xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/utils/clozeTxt.model"/>
+	<sm:axis code="center"/>
+	<sm:gapsDefinition>
+		<sm:textLeafTagAsGap role="gap" globalStyle="txtGap">
+			<sm:Widget sc:refUri="/academic/gen/_od/transf/Uc/quiz/utils/clozeTxtGapChoice.odwidget">
+				<sm:odContentZone key="gapValue"/>
+			</sm:Widget>
+		</sm:textLeafTagAsGap>
+	</sm:gapsDefinition>
+	<sm:staticContent>
+		<sm:paraTag/>
+		<sm:listTags>
+			<sm:itemizedListTag/>
+			<sm:orderedListTag/>
+		</sm:listTags>
+		<!--Pas d'imbrication des tableaux
+<sm:tableTag xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" targetFontSizeInPt="10">
+	
+</sm:tableTag>-->
+		<sm:extBlockTag role="mp3">
+			<sm:callSubModel/>
+		</sm:extBlockTag>
+		<sm:uLinkTag role="acr">
+			<sm:WInline globalStyle="txtAcr">
+				<sm:textLink/>
+				<sm:dataBlock category="acr">
+					<sm:blockId>
+						<sm:callSubModelId/>
+					</sm:blockId>
+					<sm:sortKey>
+						<sm:subModelTitle format="shortTitleText"/>
+					</sm:sortKey>
+					<sm:label>
+						<sm:subModelTitle/>
+					</sm:label>
+					<sm:data>
+						<sm:callSubModelMeta axis="content"/>
+					</sm:data>
+				</sm:dataBlock>
+			</sm:WInline>
+		</sm:uLinkTag>
+		<sm:uLinkTag role="glos">
+			<sm:WInline globalStyle="txtGlos">
+				<sm:textLink/>
+				<sm:dataBlock category="glos">
+					<sm:blockId>
+						<sm:callSubModelId/>
+					</sm:blockId>
+					<sm:label>
+						<sm:subModelTitle/>
+					</sm:label>
+					<sm:data>
+						<sm:callSubModelMeta axis="content"/>
+					</sm:data>
+				</sm:dataBlock>
+			</sm:WInline>
+		</sm:uLinkTag>
+		<sm:uLinkTag role="bib">
+			<sm:WInline globalStyle="txtBib">
+				<sm:textLink/>
+				<sm:dataBlock category="bib">
+					<sm:blockId>
+						<sm:callSubModelId/>
+					</sm:blockId>
+					<sm:sortKey>
+						<sm:subModelTitle format="fullTitleText"/>
+					</sm:sortKey>
+					<sm:label>
+						<sm:subModelTitle format="shortTitleText"/>
+					</sm:label>
+					<sm:data>
+						<sm:callSubModelMeta axis="content"/>
+					</sm:data>
+				</sm:dataBlock>
+			</sm:WInline>
+		</sm:uLinkTag>
+		<sm:uLinkTag role="ref">
+			<sm:WInline globalStyle="txtRef">
+				<sm:textLink/>
+				<sm:dataBlock category="ref">
+					<sm:blockId>
+						<sm:callSubModelId/>
+					</sm:blockId>
+					<sm:label>
+						<sm:subModelTitle/>
+					</sm:label>
+					<sm:data>
+						<sm:callSubModelMeta axis="content"/>
+					</sm:data>
+				</sm:dataBlock>
+			</sm:WInline>
+		</sm:uLinkTag>
+		<sm:uLinkTag role="docLnk">
+			<sm:WInline globalStyle="txtDocLnk">
+				<sm:textLink/>
+				<sm:fixedString value="￼; (￼"/>
+				<sm:subModelTitle format="shortTitleText"/>
+				<sm:fixedString value="￼;)￼"/>
+			</sm:WInline>
+		</sm:uLinkTag>
+		<sm:uLinkTag role="resLnk">
+			<sm:WInline globalStyle="txtResLnk">
+				<sm:textLink/>
+			</sm:WInline>
+			<sm:dataBlock category="res">
+				<sm:blockId>
+					<sm:callSubModelId/>
+				</sm:blockId>
+				<sm:label>
+					<sm:subModelTitle/>
+				</sm:label>
+				<sm:data>
+					<sm:callSubModel/>
+				</sm:data>
+			</sm:dataBlock>
+		</sm:uLinkTag>
+		<sm:uLinkTag role="ucLnk">
+			<sm:WInline globalStyle="txtUcLnk">
+				<sm:textLink/>
+			</sm:WInline>
+			<sm:dataBlock category="uc">
+				<sm:blockId>
+					<sm:callSubModelId/>
+				</sm:blockId>
+				<sm:label>
+					<sm:subModelTitle/>
+				</sm:label>
+				<sm:data>
+					<sm:callSubModel/>
+				</sm:data>
+			</sm:dataBlock>
+		</sm:uLinkTag>
+		<sm:phraseTag role="url">
+			<sm:Widget sc:refUri="/academic/gen/_od/widg/urlM.odwidget"/>
+		</sm:phraseTag>
+		<sm:inlineStyleTag role="quote" globalStyle="txtQuote">
+			<sm:textWrapper prefix="￼;« ￼" suffix="￼; »￼"/>
+		</sm:inlineStyleTag>
+		<sm:inlineStyleTag role="emp" globalStyle="txtEmp"/>
+		<sm:inlineStyleTag role="spec" globalStyle="txtSpec"/>
+		<sm:inlineStyleTag role="representative" globalStyle="txtRepresentative"/>
+		<sm:inlineStyleTag role="code" globalStyle="txtCode"/>
+		<sm:textLeafTag role="exp" globalStyle="txtExp"/>
+		<sm:textLeafTag role="ind" globalStyle="txtInd"/>
+		<sm:textLeafTag role="mathtex">
+			<sm:Widget sc:refUri="/math/latex/mathTexInline_od.odwidget">
+				<sm:odContentZone key="zMathTex"/>
+			</sm:Widget>
+		</sm:textLeafTag>
+		<sm:inlineImgTag role="form" axis="inline"/>
+		<sm:inlineImgTag role="ico" axis="inline"/>
+	</sm:staticContent>
+</sma:assmntGapInTextOdTransf>

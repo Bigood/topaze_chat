@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/case/model/arc/chooseArc.model"/>
+	<sm:content format="xhtml">
+		<sm:WHeadingBlock widgetClass="arcBk" class="chooseArc">
+			<sm:title>
+				<sm:fixedTitle value="￼;Prochaine étape￼"/>
+			</sm:title>
+			<sm:WFreeBlock>
+				<ul xmlns="http://www.w3.org/1999/xhtml" class="arcList">
+					<sm:for codes="next">
+						<sm:WFreeBlock>
+							<li>
+								<sm:callPartMeta/>
+								<sm:WLink widgetClass="btnNav btnNext">
+									<sm:label>
+										<sm:choose>
+											<sm:when xpath="descendant::sp:imgTrans">
+												<sm:choose>
+													<sm:when xpath="descendant::sp:imgTrans/sp:type='add'">
+														<sm:WFreeBlock>
+															<sm:title>
+																<sm:subModelTitle format="shortTitleText"/>
+															</sm:title>
+															<span class="imgTransWTitle">
+																<sm:callPartMeta axis="imgTrans"/>
+															</span>
+														</sm:WFreeBlock>
+													</sm:when>
+													<sm:otherwise>
+														<sm:WFreeBlock>
+															<span class="imgTrans">
+																<sm:callPartMeta axis="imgTrans"/>
+															</span>
+														</sm:WFreeBlock>
+													</sm:otherwise>
+												</sm:choose>
+											</sm:when>
+											<sm:otherwise>
+												<sm:WFreeBlock>
+													<sm:title>
+														<sm:subModelTitle format="shortTitleText"/>
+													</sm:title>
+												</sm:WFreeBlock>
+											</sm:otherwise>
+										</sm:choose>
+									</sm:label>
+									<sm:labelTitle>
+										<sm:title>
+											<sm:subModelTitle/>
+										</sm:title>
+									</sm:labelTitle>
+									<sm:link>
+										<sm:callSubModel navCtx="preserveCurrent"/>
+									</sm:link>
+								</sm:WLink>
+							</li>
+						</sm:WFreeBlock>
+					</sm:for>
+					<sm:for codes="otherwise">
+						<sm:WFreeBlock>
+							<li>
+								<sm:callPartMeta/>
+								<sm:WLink widgetClass="btnNav btnNext">
+									<sm:label>
+										<sm:choose>
+											<sm:when xpath="descendant::sp:imgTrans">
+												<sm:choose>
+													<sm:when xpath="descendant::sp:imgTrans/sp:type='add'">
+														<sm:WFreeBlock>
+															<sm:title>
+																<sm:subModelTitle format="shortTitleText"/>
+															</sm:title>
+															<span class="imgTransWTitle">
+																<sm:callPartMeta axis="imgTrans"/>
+															</span>
+														</sm:WFreeBlock>
+													</sm:when>
+													<sm:otherwise>
+														<sm:WFreeBlock>
+															<span class="imgTrans">
+																<sm:callPartMeta axis="imgTrans"/>
+															</span>
+														</sm:WFreeBlock>
+													</sm:otherwise>
+												</sm:choose>
+											</sm:when>
+											<sm:otherwise>
+												<sm:WFreeBlock>
+													<sm:title>
+														<sm:subModelTitle format="shortTitleText"/>
+													</sm:title>
+												</sm:WFreeBlock>
+											</sm:otherwise>
+										</sm:choose>
+									</sm:label>
+									<sm:labelTitle>
+										<sm:title>
+											<sm:subModelTitle/>
+										</sm:title>
+									</sm:labelTitle>
+									<sm:link>
+										<sm:callSubModel navCtx="preserveCurrent"/>
+									</sm:link>
+								</sm:WLink>
+							</li>
+						</sm:WFreeBlock>
+					</sm:for>
+				</ul>
+			</sm:WFreeBlock>
+		</sm:WHeadingBlock>
+		<sm:callModel>
+			<sm:current axis="initArc"/>
+		</sm:callModel>
+	</sm:content>
+</sm:compositionXhtmlTransf>

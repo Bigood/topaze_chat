@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeUiService xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="lmsHack" info="Déclaration d'un service JS qui sera surchargé dans le GenDeploy dédié à chaque LMS.">
+	<sm:serviceFiles sc:refUri="/academic/gen/_scorm/svc/lmsHack.doss">
+		<sm:linkScriptForDeclaringService path="lmsHack.js" sortKey="Zscorm"/>
+	</sm:serviceFiles>
+</sm:freeUiService>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformer sc:refUri="/academic/gen/_sld/transf/Uc/practUc/practUc.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_sld/transf/Uc/practUc/practUc@bkCnt.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_sld/transf/Uc/practUc/practUc@nav.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_sld/transf/Uc/practUc/practUcQ.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_sld/transf/Uc/practUc/practUcQ@bkCnt.transf"/>
+</sm:transformerList>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Références Générales￼">
+	<sm:identification targetNamespace="kelis.fr:opa" targetPrefix="opa" code="genRef" itemExtension="xml"/>
+	<sm:structure>
+		<sm:set usage="required">
+			<sm:part code="ref" name="￼;Référence￼" family="content" internalized="never">
+				<sm:allowedModel sc:refUri="/binaries/avi/avi.model"/>
+				<sm:allowedModel sc:refUri="/binaries/doc/doc.model"/>
+				<sm:allowedModel sc:refUri="/binaries/flash/flash.model"/>
+				<sm:allowedModel sc:refUri="/binaries/eWeb/eWeb.model"/>
+				<sm:allowedModel sc:refUri="/binaries/flv/flv.model"/>
+				<sm:allowedModel sc:refUri="/binaries/gif/gif.model"/>
+				<sm:allowedModel sc:refUri="/binaries/jpg/jpeg.model"/>
+				<sm:allowedModel sc:refUri="/binaries/mov/mov.model"/>
+				<sm:allowedModel sc:refUri="/binaries/mp3/mp3.model"/>
+				<sm:allowedModel sc:refUri="/binaries/mpg/mpg.model"/>
+				<sm:allowedModel sc:refUri="/binaries/odg/odg.model"/>
+				<sm:allowedModel sc:refUri="/binaries/odp/odp.model"/>
+				<sm:allowedModel sc:refUri="/binaries/ods/ods.model"/>
+				<sm:allowedModel sc:refUri="/binaries/odt/odt.model"/>
+				<sm:allowedModel sc:refUri="/binaries/pdf/pdf.model"/>
+				<sm:allowedModel sc:refUri="/binaries/png/png.model"/>
+				<sm:allowedModel sc:refUri="/binaries/ppt/ppt.model"/>
+				<sm:allowedModel sc:refUri="/binaries/rm/rm.model"/>
+				<sm:allowedModel sc:refUri="/binaries/wmv/wmv.model"/>
+				<sm:allowedModel sc:refUri="/binaries/xls/xls.model"/>
+				<sm:allowedModel sc:refUri="/binaries/zip/zip.model"/>
+				<sm:allowedModel sc:refUri="/academic/model/Re/refs/bib.model"/>
+				<sm:allowedModel sc:refUri="/academic/model/Re/refs/glos.model"/>
+				<sm:allowedModel sc:refUri="/academic/model/Re/refs/acr.model"/>
+				<sm:allowedModel sc:refUri="/academic/model/Uc/expUc.model"/>
+			</sm:part>
+		</sm:set>
+	</sm:structure>
+	<sm:authoring>
+		<sm:formEditor indentXml="true">
+			<sm:part refCode="ref">
+				<sm:standardWidget tagStyle="color:#a056b0; font-family:arial"/>
+			</sm:part>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:compositionPrim>

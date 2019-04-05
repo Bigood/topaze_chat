@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="html5shiv" info="Tags métas génériques à ajouter au pages web générés par Opale">
+	<!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1386582610479">Code JS qui déclare les elements HTML5 dans IE &lt; 9 - c.f. : https://code.google.com/p/html5shiv</comment></comment>-->
+	<sm:widgetPublishFiles sc:refUri="/academic/gen/_web/widg/tpl/htm5shiv.doss"/>
+	<sm:fillTemplateBuffers>
+		<sm:postXslFragment keyXsl="xhtml"><!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1386583218869">Ajoute un commentaire conditionnel IE &lt; 9 autour de l'inclusion de html5shiv</comment></comment>-->&lt;xsl:template match="script[contains(@src,'html5shiv.js')]"&gt;
+&lt;xsl:variable name="vHtml5shiv"&gt;&lt;redirect:serialize omit-xml-declaration="yes" method="html"&gt;&lt;xsl:copy&gt;&lt;xsl:apply-templates select="@*"/&gt;&lt;/xsl:copy&gt;&lt;/redirect:serialize&gt;&lt;/xsl:variable&gt;
+&lt;xsl:comment&gt;&lt;![CDATA[[if lt IE 9]&gt;]]&gt;&lt;xsl:value-of select="$vHtml5shiv"/&gt;&lt;![CDATA[&lt;![endif]]]&gt;&lt;/xsl:comment&gt;
+&lt;/xsl:template&gt;</sm:postXslFragment>
+		<sm:linkScript path="html5shiv.js" pathFrom="localPublishFiles" sortKey="0"/>
+	</sm:fillTemplateBuffers>
+	<sm:content/>
+</sm:openUiWidget>

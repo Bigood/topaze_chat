@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<structure xmlns:java="http://xml.apache.org/xslt/java" 
+				xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" 
+				xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" 
+				xmlns:op="utc.fr:ics/opale3"
+				version="1.0" 
+				codecomposant="concat(getIdNode(..), '_Akeywds')" 
+				racine="//op:ue|//op:courseUa|//op:assmntUa|//op:expUc|//op:vidUc|//op:practUc|//op:mcqSur|//op:mcqMur|//op:match|//op:ordWord|//op:cloze|//op:field|//op:coQuiz" 
+				code="op_xxx_Akeywds">
+
+	<valeur code="xhtmlContent" racine="op:*/sp:info/op:info[sp:keywds]" >
+		<source type="inclusion-dynamique">
+			<source type="xsl-statique">
+				<xsl:stylesheet version="1.0" 
+					xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" 
+					xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  
+					xmlns:op="utc.fr:ics/opale3" 
+					xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" 
+					xmlns:xhtml="http://www.w3.org/1999/xhtml" 
+					exclude-result-prefixes="sc sp op xhtml">
+					<xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no" omit-xml-declaration="yes"/>
+					
+					<xsl:param name="vComp"/>
+					<xsl:param name="vAgent"/>
+				
+					<xsl:template match="op:info">
+						<xsl:for-each select="sp:keywds/op:keywds/sp:keywd"><xsl:value-of select="text()"/>, </xsl:for-each>
+					</xsl:template>
+				</xsl:stylesheet>
+			</source>
+		</source>
+	</valeur>
+</structure>

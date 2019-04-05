@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiTemplate xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" pageUnicityCriterion="none">
+	<sm:head>
+		<sm:windowTitle>
+			<sm:pageTitle/>
+		</sm:windowTitle>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/tpl/htmlMeta.uiwidget"/>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/tpl/revisedMeta.uiwidget"/>
+		<sm:styleSheet src="css/html.css" srcFrom="skin"/>
+		<sm:styleSheet src="css/indexes.css" srcFrom="skin"/>
+		<sm:styleSheet src="css/transf.css" srcFrom="skin"/>
+		<sm:styleSheet src="css/btn.css" srcFrom="skin"/>
+		<sm:styleSheet src="css/mnu.css" srcFrom="skin"/>
+		<sm:styleSheet src="css/struct_subWin.css" srcFrom="skin"/>
+		<sm:Widget sc:refUri="/case/gen/_web/wdt/mgr/histMgr.uiwidget"/>
+		<sm:Widget sc:refUri="/case/gen/progress/web/wdt/mgr/subWinMgr.uiwidget"/>
+	</sm:head>
+	<sm:body>
+		<div xmlns="http://www.w3.org/1999/xhtml" id="tplFra">
+			<sm:callMainZone format="xhtml"/>
+			<sm:WBasket key="footnotes" widgetClass="footnotes" tagName="ol" suppressIfEmpty="yes"/>
+		</div>
+		<sm:script src="js/skin.js" srcFrom="skin" type="text/JavaScript"/>
+	</sm:body>
+</sm:openUiTemplate>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformer sc:refUri="/case/gen/_web/transf/arc/arcLnkCondM.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/arc/arcLnkCondM@imgTrans.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/arc/arcLnkM.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/arc/arcLnkM@imgTrans.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/arc/chooseArc.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/arc/chooseArc@initArc.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/arc/condM.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/arc/endArc.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/arc/mcqMurArc.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/arc/mcqSurArc.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/arc/unaryArc.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/arc/userArc.transf"/>
+</sm:transformerList>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/root/webRoot.model"/>
+	<sm:axis code="mnuModeTools"/>
+	<sm:content format="xhtml">
+		<sm:WFreeBlock>
+			<ul xmlns="http://www.w3.org/1999/xhtml" class="mnuMode">
+				<li>
+					<sm:WLink widgetClass="modeBtn playBtn resumeBtn">
+						<sm:label>
+							<sm:callModel>
+								<sm:current axis="lblBtnPlay"/>
+							</sm:callModel>
+						</sm:label>
+						<sm:labelTitle>
+							<sm:title>
+								<sm:fixedTitle value="￼;Cours￼"/>
+							</sm:title>
+						</sm:labelTitle>
+						<sm:link>
+							<sm:callModel>
+								<sm:root navCtx="newRoot"/>
+							</sm:callModel>
+						</sm:link>
+					</sm:WLink>
+				</li>
+				<li>
+					<span class="toolsBtnSel">
+						<sm:callModel>
+							<sm:current axis="lblBtnToolsSel"/>
+						</sm:callModel>
+					</span>
+				</li>
+			</ul>
+		</sm:WFreeBlock>
+	</sm:content>
+</sm:compositionXhtmlTransf>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><sma:assmntUnitMlqPrim xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Catégorisation￼" category="￼;Exercices￼">
+	<sm:help quickHelp="￼;Regroupement d'étiquettes￼"/>
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="match" itemExtension="quiz"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/academic/model/metaData/exeM.model"/>
+		<sm:questionModel name="￼;Consigne￼" sc:refUri="/academic/model/Re/res.model" usage="optional"/>
+		<sm:interaction>
+			<sm:matchTarget>
+				<sm:group name="￼;Cible￼" min="2">
+					<sm:targetModel name="￼;Libellé de la cible￼" sc:refUri="/academic/model/Uc/quiz/utils/label.model"/>
+					<sm:labelModel name="￼;Etiquette￼" min="0" sc:refUri="/academic/model/Uc/quiz/utils/label.model"/>
+				</sm:group>
+			</sm:matchTarget>
+		</sm:interaction>
+		<sm:globalExplanationModel name="￼;Explication￼" sc:refUri="/academic/model/Re/res.model" usage="optional"/>
+	</sm:structure>
+	<sm:authoring>
+		<sm:icon sc:refUri="/academic/model/_ico/matchSmall.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼?note=utilis%C3%A9%20dans%20un%20nom%20de%20fichier%20(sans%20accent%20ou%20caract%C3%A8res%20sp%C3%A9ciaux%20!);categ￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:formEditor indentXml="true">
+			<sm:assmntUnitMlq tagStyle="font-family:arial;font-size:1.8em; background-color:#4668ad; color:white; -moz-border-radius:5px; -moz-padding-start:4px; -moz-padding-end:4px">
+				<sm:iconTag sc:refUri="/academic/model/_ico/match.png"/>
+			</sm:assmntUnitMlq>
+		</sm:formEditor>
+	</sm:authoring>
+</sma:assmntUnitMlqPrim>

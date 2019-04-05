@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:dataFormOdTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Re/refs/bibM.model"/>
+	<sm:fullTitleText>
+		<!--Permet un classement par type dans le dataBlock-->
+		<sm:fieldValueString refCode="type"/>
+		<sm:fieldValueString refCode="id"/>
+	</sm:fullTitleText>
+	<sm:shortTitleText>
+		<sm:fieldValueString refCode="id"/>
+	</sm:shortTitleText>
+	<sm:content>
+		<!--<sm:dataBlock xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" category="bib"><sm:label><sm:title><sm:dataFormTitle/></sm:title></sm:label><sm:data><sm:callModel><sm:current axis="content"/></sm:callModel></sm:data></sm:dataBlock>-->
+	</sm:content>
+</sm:dataFormOdTransf>

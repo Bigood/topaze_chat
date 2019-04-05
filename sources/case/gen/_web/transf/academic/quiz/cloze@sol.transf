@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sma:assmntUnitEditDhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns="http://www.w3.org/1999/xhtml">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/cloze.model"/>
+	<sm:axis code="sol"/>
+	<sm:scenario>
+		<sm:sequence>
+			<sm:initBody>
+				<sm:inputInteraction mode="disabled"/>
+				<sm:solutionDisplay ifRight="visible" ifNotBestResponse="visible"/>
+				<sm:resultDisplay mode="addClass"/>
+			</sm:initBody>
+			<sm:loadData>
+				<sm:responseSessionKey>
+					<sm:jsExpression expId="sessKeyQuiz">topazeMgr.fSessKeyQuiz</sm:jsExpression>
+				</sm:responseSessionKey>
+			</sm:loadData>
+			<sm:saveData>
+				<sm:responseSessionKey>
+					<sm:refExp refExpId="sessKeyQuiz"/>
+				</sm:responseSessionKey>
+				<sm:scoreSessionKey>
+					<sm:refExp refExpId="sessKeyQuiz"/>
+				</sm:scoreSessionKey>
+			</sm:saveData>
+			<sm:scoreComputing>
+				<sm:pointsPerField defaultPointsIfRight="1" defaultPointsIfWrong="0"/>
+			</sm:scoreComputing>
+			<sm:resultDisplaying>
+				<sm:rangesClass prefixClass="assmntResult_" rangesCount="3"/>
+			</sm:resultDisplaying>
+		</sm:sequence>
+	</sm:scenario>
+	<sm:assmntBody>
+		<div class="scoreBox">
+			<sm:WScore sm:id="score" widgetClass="score">
+				<sm:scoreText>
+					<sm:scaleScore min="0" max="100" step="1">
+						<sm:display scoreMoreThan="99" valueFormat="numeric" suffix="￼;% de bonnes réponses￼" class="answBest"/>
+						<sm:display scoreMoreThan="49" scoreLessOrEqualThan="99" valueFormat="numeric" suffix="￼;% de bonnes réponses￼" class="answGood"/>
+						<sm:display scoreLessOrEqualThan="49" valueFormat="numeric" suffix="￼;% de bonnes réponses￼" class="answBad"/>
+					</sm:scaleScore>
+				</sm:scoreText>
+			</sm:WScore>
+		</div>
+		<div class="exo_co">
+			<div sm:id="quest" class="headerQ">
+				<div sm:id="question" class="question">
+					<sm:addSrcPath/>
+					<sm:callQuestionModel/>
+				</div>
+			</div>
+			<sm:WFeedback widgetClass="feed">
+				<sm:callFeedbackModel/>
+			</sm:WFeedback>
+			<sm:WInputZone>
+				<sm:gapInText>
+					<sm:callTextModel/>
+				</sm:gapInText>
+			</sm:WInputZone>
+			<sm:WGlobalExplanation widgetClass="gExpln">
+				<sm:addSrcPath/>
+				<a class="gExpln_closed" title="￼Explication Générale￼" onclick="scDynUiMgr.collBlkToggle(this, scPaLib.findNode('chl:div',this.parentNode),'gExpln_open','gExpln_closed');return false;" href="#" style="display: block;">
+					<span class="gExpln_ti">
+						<span class="gExpln_tiIn">￼;Explication Générale￼</span>
+					</span>
+				</a>
+				<div class="gExpln_co" style="display: none;">
+					<sm:callExplanationModel/>
+				</div>
+			</sm:WGlobalExplanation>
+		</div>
+	</sm:assmntBody>
+</sma:assmntUnitEditDhtmlTransf>

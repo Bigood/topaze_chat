@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:genericWebSiteTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/numerical.model"/>
+	<sm:axis code="bkCntInt"/>
+	<sm:content format="text">
+		<sm:dynamicString>
+			<sm:freeXslFragment> &lt;xsl:for-each select="sc:question"&gt;
+ &lt;xsl:value-of select="execute(java:hIncreaseOne(getDialogVar('vBkCounter')))"/&gt;
+ &lt;/xsl:for-each&gt;
+
+</sm:freeXslFragment>
+		</sm:dynamicString>
+		<sm:choose>
+			<sm:when sc:refUri="/academic/gen/_sld/cnd/includeSol.cond">
+				<sm:dynamicString>
+					<sm:freeXslFragment> &lt;xsl:for-each select="sp:asw"&gt;
+ &lt;xsl:value-of select="execute(java:hIncreaseOne(getDialogVar('vBkCounter')))"/&gt;
+ &lt;/xsl:for-each&gt;
+ &lt;xsl:for-each select="sc:globalExplanation"&gt;
+ &lt;xsl:value-of select="execute(java:hIncreaseOne(getDialogVar('vBkCounter')))"/&gt;
+ &lt;/xsl:for-each&gt;
+</sm:freeXslFragment>
+				</sm:dynamicString>
+			</sm:when>
+		</sm:choose>
+	</sm:content>
+</sm:genericWebSiteTransf>

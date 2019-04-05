@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openOdWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="WPb">
+	<sm:content>
+		<sm:choose>
+			<!--# Insertion d'un espace SSi on n'est pas en première position-->
+			<sm:when xpath="preceding-sibling::sp:*">
+				<sm:WParagraph globalStyle="spaceBeforeKeep" display="always">
+					<!--Utile car :
+- on désire un espacement sans le bg porté par le content
+- OO ne gère pas la liaison tite-contenu lorsque l'on a une section aussitot aprés un titre (http://www.openoffice.org/issues/show_bug.cgi?id=81957)-->
+				</sm:WParagraph>
+			</sm:when>
+			<sm:otherwise>
+				<sm:WParagraph globalStyle="spaceBeforeKeepSmall" display="always"/>
+			</sm:otherwise>
+		</sm:choose>
+		<sm:callZone key="zContent"/>
+	</sm:content>
+</sm:openOdWidget>

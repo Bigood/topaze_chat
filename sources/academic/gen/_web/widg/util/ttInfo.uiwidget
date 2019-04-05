@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="ttInfo">
+	<sm:content>
+		<span xmlns="http://www.w3.org/1999/xhtml" class="hidden"> | </span>
+		<sm:WTooltip widgetClass="tooltip" tagName="a">
+			<sm:label>
+				<span xmlns="http://www.w3.org/1999/xhtml" class="ttInfo_a">
+					<sm:callModel>
+						<sm:root axis="lblBtnTtInfo"/>
+					</sm:callModel>
+				</span>
+			</sm:label>
+			<sm:labelTitle>￼;Informations complémentaires...￼</sm:labelTitle>
+			<sm:tooltip>
+				<sm:behavior trigger="onclick" showTime="10000" sticky="true"/>
+				<sm:position>
+					<sm:relativeToAnchor horizontal="rightOfElement" vertical="topAlign"/>
+				</sm:position>
+				<sm:dimensions maxWidth="300"/>
+				<sm:basket key="footnotes" render="asTooltip" itemKey="info"/>
+				<sm:closeButton caption="x" title="￼;Fermer￼"/>
+				<sm:ttTitle>
+					<sm:callZone key="ttTitle"/>
+				</sm:ttTitle>
+				<sm:ttContent>
+					<sm:callZone key="ttContent"/>
+				</sm:ttContent>
+			</sm:tooltip>
+		</sm:WTooltip>
+	</sm:content>
+</sm:openUiWidget>

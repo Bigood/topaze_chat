@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:binaryXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/binaries/jpg/jpeg.model"/>
+	<sm:axis code="nav"/>
+	<sm:navigation>
+		<sm:binaryUrl>
+			<sm:imageTransform>
+				<sm:scaleFromStandardCharSize>
+					<sm:ifNoStandardCharSize>
+						<sm:scaleFromDpi targetDpi="96">
+							<sm:ifNoDpiInfo>
+								<sm:scale ratio="0.35"/>
+							</sm:ifNoDpiInfo>
+						</sm:scaleFromDpi>
+					</sm:ifNoStandardCharSize>
+				</sm:scaleFromStandardCharSize>
+				<sm:sizeBounds maxWidthInPx="630" maxHeightInPx="630"/>
+				<sm:outputJPEG/>
+			</sm:imageTransform>
+		</sm:binaryUrl>
+	</sm:navigation>
+</sm:binaryXhtmlTransf>

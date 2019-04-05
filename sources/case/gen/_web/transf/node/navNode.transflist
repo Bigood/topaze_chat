@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/navNode/navNode.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/navNode/navNode@coach.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/navNode/navNode@hasRefs.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/navNode/navNode@id.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/navNode/navNode@initArc.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/navNode/navNode@initArcStatus.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/navNode/navNode@initMgr.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/navNode/navNode@noClick.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/navNode/navNode@val.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/navNode/navNodeM.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/navNode/navNodeM@coach.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/navNode/navNodeM@noClick.transf"/>
+</sm:transformerList>

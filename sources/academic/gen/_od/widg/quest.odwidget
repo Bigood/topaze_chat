@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openOdWidget code="WQuest" info="Question de synthèse" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:content>
+		<sm:WBox style="questBox">
+			<!--<sm:WParagraph xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" style="titleQuest"><sm:callZone key="title"/></sm:WParagraph>-->
+			<sm:callZone key="content"/>
+			<sm:WParagraph style="answer" display="always"/>
+		</sm:WBox>
+	</sm:content>
+</sm:openOdWidget>

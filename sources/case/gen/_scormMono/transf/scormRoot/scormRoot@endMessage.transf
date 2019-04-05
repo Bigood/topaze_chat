@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/case/model/scormRoot.model"/>
+	<sm:axis code="endMessage"/>
+	<sm:content format="xhtml">
+		<sm:callCompositionMeta axis="endMessage"/>
+	</sm:content>
+</sm:compositionXhtmlTransf>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Re/refs/acr.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Re/refs/acr@genRef.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Re/refs/acrM.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Re/refs/bib.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Re/refs/bib@crTag.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Re/refs/bib@genRef.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Re/refs/bibM.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Re/refs/bibTxt.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Re/refs/genRef.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Re/refs/glos.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Re/refs/glos@genRef.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Re/refs/glosM.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Re/refs/ref.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Re/refs/ref@genRef.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Re/refs/refM.transf"/>
+</sm:transformerList>

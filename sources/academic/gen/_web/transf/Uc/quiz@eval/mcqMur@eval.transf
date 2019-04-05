@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><sma:assmntUnitMcqDhtmlTransf xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/mcqMur.model"/>
+	<sm:axis code="eval"/>
+	<sm:scenario>
+		<sm:sequence code="init">
+			<sm:onLoadConditions>
+				<sm:completionStatus operator="isNot" status="complete">
+					<sm:responseSessionKey>
+						<sm:fixedKey value="eval"/>
+					</sm:responseSessionKey>
+				</sm:completionStatus>
+			</sm:onLoadConditions>
+			<sm:loadData>
+				<sm:responseSessionKey>
+					<sm:fixedKey value="eval"/>
+				</sm:responseSessionKey>
+			</sm:loadData>
+			<sm:saveData>
+				<sm:responseSessionKey>
+					<sm:fixedKey value="eval"/>
+				</sm:responseSessionKey>
+			</sm:saveData>
+		</sm:sequence>
+		<sm:sequence code="read">
+			<sm:initBody>
+				<sm:choiceInteraction mode="disabled"/>
+			</sm:initBody>
+			<sm:loadData>
+				<sm:responseSessionKey>
+					<sm:fixedKey value="eval"/>
+				</sm:responseSessionKey>
+			</sm:loadData>
+		</sm:sequence>
+	</sm:scenario>
+	<sm:assmntBody>
+		<div xmlns="http://www.w3.org/1999/xhtml" class="headerQ">
+			<div class="question" sm:id="question">
+				<sm:callQuestionModel/>
+			</div>
+		</div>
+		<div xmlns="http://www.w3.org/1999/xhtml" sm:id="choiceList">
+			<sm:WChoiceList widgetClass="choiceList">
+				<sm:choiceBody>
+					<div class="choice" sm:id="choice">
+						<div class="label" sm:id="label">
+							<sm:callLabelModel/>
+						</div>
+					</div>
+				</sm:choiceBody>
+			</sm:WChoiceList>
+		</div>
+	</sm:assmntBody>
+</sma:assmntUnitMcqDhtmlTransf>

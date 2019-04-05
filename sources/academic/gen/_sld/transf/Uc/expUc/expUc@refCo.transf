@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Uc/expUc.model"/>
+	<sm:axis code="refCo"/>
+	<sm:content format="xhtml">
+		<sm:WFreeBlock>
+			<scBlock xmlns="http://www.w3.org/1999/xhtml">
+				<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssSlide.uiwidget">
+					<sm:xhtmlContentZone key="co">
+						<sm:WFreeBlock>
+							<div class="slideBk">
+								<hx class="slideBk_ti">
+									<sm:title>
+										<sm:compositionTitle/>
+									</sm:title>
+								</hx>
+								<div class="slideBk_co">
+									<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBkRoot.uiwidget">
+										<sm:xhtmlContentZone key="co">
+											<sm:for codes="pb">
+												<sm:callSubModel/>
+											</sm:for>
+										</sm:xhtmlContentZone>
+									</sm:Widget>
+								</div>
+							</div>
+						</sm:WFreeBlock>
+					</sm:xhtmlContentZone>
+				</sm:Widget>
+				<sm:for codes="div">
+					<sm:choose>
+						<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultShort/include.cond">
+							<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssSlide.uiwidget">
+								<sm:xhtmlContentZone key="co">
+									<sm:WHeadingBlock widgetClass="slideBk">
+										<sm:title>
+											<sm:subModelTitle/>
+										</sm:title>
+										<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBkRoot.uiwidget">
+											<sm:xhtmlContentZone key="co">
+												<sm:callSubModel/>
+											</sm:xhtmlContentZone>
+										</sm:Widget>
+									</sm:WHeadingBlock>
+									<!--
+<sm:WFreeBlock xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<scBlock xmlns="http://www.w3.org/1999/xhtml" class="slideBk">
+		<hx class="slideBk_ti">
+			<sm:title>
+				<sm:subModelTitle/>
+			</sm:title>
+		</hx>
+		<div class="slideBk_co">
+			<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBkRoot.uiwidget" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+				<sm:xhtmlContentZone key="co">
+					<sm:callSubModel/>
+				</sm:xhtmlContentZone>
+			</sm:Widget>
+		</div>
+	</scBlock>
+</sm:WFreeBlock>-->
+								</sm:xhtmlContentZone>
+							</sm:Widget>
+						</sm:when>
+					</sm:choose>
+				</sm:for>
+			</scBlock>
+		</sm:WFreeBlock>
+	</sm:content>
+</sm:compositionXhtmlTransf>

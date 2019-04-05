@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformer sc:refUri="/academic/gen/_od/transf/root/odRoot.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_od/transf/root/odRoot@cpyL.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_od/transf/root/odRoot@cpyR.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_od/transf/root/odRoot@licences.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_od/transf/root/odRoot@rootFilter.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_od/transf/root/odRootM.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_od/transf/root/odRootM@authors.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_od/transf/root/odRootM@cpyL.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_od/transf/root/odRootM@cpyR.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_od/transf/root/odRootM@date.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_od/transf/root/odRootM@coll.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_od/transf/root/odRootM@id.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_od/transf/root/odRootM@licences.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_od/transf/root/odRootM@logo.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_od/transf/root/odRootM@metaDesc.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_od/transf/root/odRootM@version.transf"/>
+</sm:transformerList>

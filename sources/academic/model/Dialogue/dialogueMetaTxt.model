@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:textPrim name="￼;Texte￼" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="personnageMetaTxt"/>
+	<sm:structure>
+		<sm:blockTags>
+			<sm:paraTag name="￼;Paragraphe￼"/>
+		</sm:blockTags>
+		<sm:inlineTags>
+			<!--ATTENTION l'élément suivant à été ajouté en XSL par la dérivation.-->
+			<sm:objectLeafTag role="indDisplay" name="￼;Indicateur affiché￼">
+				<sm:refItem>
+					<sm:allowedModel sc:refUri="/case/model/index/autoIndex.model"/>
+					<sm:allowedModel sc:refUri="/case/model/index/userIndex.model"/>
+					<sm:allowedModel sc:refUri="/academic/model/Re/applet/applet.model"/>
+				</sm:refItem>
+			</sm:objectLeafTag>
+			<!--ATTENTION l'élément suivant à été ajouté en XSL par la dérivation.-->
+			<sm:objectLeafTag role="varDisplay" name="￼;Variable affiché￼">
+				<sm:refItem>
+					<sm:allowedModel sc:refUri="/case/model/index/autoVar.model"/>
+					<sm:allowedModel sc:refUri="/case/model/index/userVar.model"/>
+				</sm:refItem>
+			</sm:objectLeafTag>
+		</sm:inlineTags>
+	</sm:structure>
+	<sm:authoring>
+		<sm:formEditor>
+			<sm:insertCharacters>
+				<sm:charGroup name="￼;Caractères spéciaux￼">
+					<sm:char value="©" name="©"/>
+					<sm:char value="®" name="®"/>
+					<sm:char value="™" name="™"/>
+					<sm:char value="œ" name="œ"/>
+					<sm:char value="« " name="«"/>
+					<sm:char value=" »" name="»"/>
+				</sm:charGroup>
+				<sm:charGroup name="￼;Majuscules accentuées￼">
+					<sm:char value="É" name="É"/>
+					<sm:char value="À" name="À"/>
+					<sm:char value="È" name="È"/>
+					<sm:char value="Ç" name="Ç"/>
+					<sm:char value="Ô" name="Ô"/>
+					<sm:char value="Ñ" name="Ñ"/>
+					<sm:char value="Ê" name="Ê"/>
+					<sm:char value="Î" name="Î"/>
+					<sm:char value="Â" name="Â"/>
+					<sm:char value="Û" name="Û"/>
+				</sm:charGroup>
+				<sm:charGroup name="￼;Symboles mathématiques￼">
+					<sm:char value="‰" name="‰"/>
+					<sm:char value="Ø" name="Ø"/>
+					<sm:char value="→" name="→"/>
+					<sm:char value="∞" name="∞"/>
+					<sm:char value="≈" name="≈"/>
+					<sm:char value="±" name="±"/>
+				</sm:charGroup>
+				<sm:charGroup name="￼;Lettres grecques courantes￼">
+					<sm:char value="α" name="α"/>
+					<sm:char value="β" name="β"/>
+					<sm:char value="θ" name="θ"/>
+					<sm:char value="ε" name="ε"/>
+					<sm:char value="φ" name="φ"/>
+					<sm:char value="π" name="π"/>
+					<sm:char value="λ" name="λ"/>
+					<sm:char value="Ρ" name="Ρ"/>
+					<sm:char value="ρ" name="ρ"/>
+					<sm:char value="Ω" name="Ω"/>
+					<sm:char value="ω" name="ω"/>
+					<sm:char value="Δ" name="Δ"/>
+					<sm:char value="δ" name="δ"/>
+				</sm:charGroup>
+				<!--Pour plus de caractères, l'auteur utilisera la table des caractères ou un mml / odf / mtex -->
+				<!--<sm:charGroup xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="Plus ..."><sm:char value="δ" name="δ"/><sm:char value="ξ" name="ξ"/><sm:char value="η" name="η"/><sm:char value="τ" name="τ"/><sm:char value="≡" name="≡"/><sm:char value="⇄" name="⇄"/><sm:char value="∡" name="∡"/></sm:charGroup>-->
+			</sm:insertCharacters>
+			<sm:inlineBehaviors>
+				<sm:textLeafBehavior role="ind" mode="toggle">
+					<sm:keyBinding char="M"/>
+				</sm:textLeafBehavior>
+			</sm:inlineBehaviors>
+			<sm:htmlStyle tag="body">
+				<sm:entryStyle key="direction" value="￼?key=l10n.dir;ltr￼"/>
+			</sm:htmlStyle>
+			<!--ATTENTION l'élément suivant à été ajouté en XSL par la dérivation.-->
+			<!--ATTENTION l'élément suivant à été ajouté en XSL par la dérivation.-->
+			<sm:htmlStyle tag="objectLeaf" role="indDisplay">
+				<sm:entryStyle key="background-color" value="#e1e8f9"/>
+			</sm:htmlStyle>
+			<!--ATTENTION l'élément suivant à été ajouté en XSL par la dérivation.-->
+			<!--ATTENTION l'élément suivant à été ajouté en XSL par la dérivation.-->
+			<sm:htmlStyle tag="objectLeaf" role="varDisplay">
+				<sm:entryStyle key="background-color" value="#e1e8f9"/>
+			</sm:htmlStyle>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:textPrim>

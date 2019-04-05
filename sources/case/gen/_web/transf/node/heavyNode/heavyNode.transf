@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/case/model/node/heavyNode.model"/>
+	<sm:fullTitleText>
+		<sm:callCompositionMeta/>
+	</sm:fullTitleText>
+	<sm:shortTitleText>
+		<sm:callCompositionMeta/>
+	</sm:shortTitleText>
+	<sm:folder>
+		<sm:title>
+			<sm:callModel view="fullTitleText">
+				<sm:current axis="nav"/>
+			</sm:callModel>
+		</sm:title>
+		<sm:outlineClasses>
+			<sm:callCompositionMeta axis="noClick"/>
+		</sm:outlineClasses>
+		<sm:folderPreview>
+			<sm:page template="ueStart">
+				<sm:mainZone format="xhtml">
+					<sm:WLink widgetClass="ueStart">
+						<sm:label/>
+						<sm:link>
+							<sm:callModel>
+								<sm:current axis="nav" navCtx="newRoot"/>
+							</sm:callModel>
+						</sm:link>
+					</sm:WLink>
+					<sm:for codes="genRef">
+						<sm:callSubModel/>
+					</sm:for>
+				</sm:mainZone>
+				<sm:zone key="zLegal" format="xhtml">
+					<sm:callModel>
+						<sm:root axis="legal"/>
+					</sm:callModel>
+				</sm:zone>
+			</sm:page>
+		</sm:folderPreview>
+	</sm:folder>
+</sm:compositionXhtmlTransf>

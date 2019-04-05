@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformerList sc:refUri="/academic/gen/_web/transf/binaries.transflist"/>
+	<sm:transformerList sc:refUri="/academic/gen/_web/transf/metaData.transflist"/>
+	<sm:transformerList sc:refUri="/academic/gen/_web/transf/Pb.transflist"/>
+	<sm:transformerList sc:refUri="/academic/gen/_web/transf/Re.transflist"/>
+	<!--ne pas déclarer les transformers root, sinon conflit de crossref-->
+	<!--<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" info="root"/>-->
+	<sm:transformerList sc:refUri="/academic/gen/_web/transf/Ua.transflist"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRoot@autoEvalSol.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRoot@rootFilter.transf"/>
+	<sm:transformerList sc:refUri="/academic/gen/_web/transf/Uc.transflist"/>
+	<!--<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" sc:refUri="/academic/gen/_web/transf/Ue.transflist"/>-->
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Ue/ueDivM.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Ue/ue@title.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Ue/ue@sTitle.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Ue/ueM.transf"/>
+	<sm:transformerList sc:refUri="/academic/gen/_web/transf/@synth.transflist"/>
+	<sm:transformerList sc:refUri="/academic/gen/_web/transf/@credits.transflist"/>
+</sm:transformerList>

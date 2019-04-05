@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><sma:assmntUnitGmcqHtmlTransf xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns="http://www.w3.org/1999/xhtml">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/mcgSur.model"/>
+	<sm:axis code="img"/>
+	<sm:content>
+		<sm:Widget sc:refUri="/binaries/_sld/widg/imgInFlowDyn.uiwidget">
+			<sm:xhtmlContentZone key="img">
+				<sm:WChoiceHighlightedImage>
+					<sm:callBackgroundImageModel axis="nav"/>
+					<sm:choiceArea>
+						<sm:simpleHighlight>
+							<sm:area strokeWidth="1" strokeColor="gray" fillColor="#FFF6"/>
+							<sm:label format="1" fontSizeInPt="20" fontColor="white" fillColor="#999A"/>
+						</sm:simpleHighlight>
+					</sm:choiceArea>
+				</sm:WChoiceHighlightedImage>
+			</sm:xhtmlContentZone>
+			<sm:xhtmlContentZone key="imgLarge">
+				<sm:WChoiceHighlightedImage>
+					<sm:callBackgroundImageModel axis="navLarge"/>
+					<sm:choiceArea>
+						<sm:simpleHighlight>
+							<sm:area strokeWidth="2" strokeColor="gray" fillColor="#FFF6"/>
+							<sm:label format="1" fontSizeInPt="30" fontColor="white" fillColor="#999A"/>
+						</sm:simpleHighlight>
+					</sm:choiceArea>
+				</sm:WChoiceHighlightedImage>
+			</sm:xhtmlContentZone>
+			<sm:xhtmlContentZone key="caption">
+				<sm:callBackgroundImageModel axis="title"/>
+			</sm:xhtmlContentZone>
+		</sm:Widget>
+	</sm:content>
+</sma:assmntUnitGmcqHtmlTransf>

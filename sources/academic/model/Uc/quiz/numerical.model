@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><sma:assmntUnitEditPrim xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Question à réponse numérique￼" category="￼;Exercices￼">
+	<sm:help quickHelp="￼;Question avec un champ numérique éditable￼"/>
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="numerical" itemExtension="quiz"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/academic/model/metaData/exeM.model"/>
+		<sm:questionModel name="￼;Énoncé￼" sc:refUri="/academic/model/Re/res.model" usage="required"/>
+		<sm:globalExplanationModel name="￼;Explication￼" sc:refUri="/academic/model/Re/res.model" usage="optional"/>
+		<sm:interaction>
+			<sm:singleField>
+				<sm:numberField code="asw" name="￼;Réponse correcte￼">
+					<sm:help quickHelp="￼;Spécifiez la ou les conditions numériques qui doivent être remplies ainsi que la bonne réponse ￼"/>
+					<sm:solution/>
+				</sm:numberField>
+			</sm:singleField>
+		</sm:interaction>
+	</sm:structure>
+	<sm:authoring>
+		<sm:icon sc:refUri="/academic/model/_ico/numericalSmall.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼?note=utilis%C3%A9%20dans%20un%20nom%20de%20fichier%20(sans%20accent%20ou%20caract%C3%A8res%20sp%C3%A9ciaux%20!);num￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:formEditor indentXml="true">
+			<sm:assmntUnitEdit tagStyle="font-family:arial;font-size:1.8em; background-color:#4668ad; color:white; -moz-border-radius:5px; -moz-padding-start:4px; -moz-padding-end:4px">
+				<sm:iconTag sc:refUri="/academic/model/_ico/numerical.png"/>
+			</sm:assmntUnitEdit>
+		</sm:formEditor>
+	</sm:authoring>
+</sma:assmntUnitEditPrim>

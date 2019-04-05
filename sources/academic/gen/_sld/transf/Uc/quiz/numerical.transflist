@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformer sc:refUri="/academic/gen/_sld/transf/Uc/quiz/numerical/numerical.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_sld/transf/Uc/quiz/numerical/numerical@bkCnt.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_sld/transf/Uc/quiz/numerical/numerical@bkCntInt.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_sld/transf/Uc/quiz/numerical/numerical@nav.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_sld/transf/Uc/quiz/numerical/numerical@quizIn.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_sld/transf/Uc/quiz/numerical/numerical@quizOut.transf"/>
+</sm:transformerList>

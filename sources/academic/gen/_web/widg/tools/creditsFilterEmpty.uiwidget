@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="creditsFilterEmpty" info="Elimine tous les titres du plan qui n'ont aucune définition de crédit">
+	<sm:fillTemplateBuffers>
+		<sm:postXslFragment keyXsl="xhtml">	&lt;xsl:template match="scBlock[containWord(@class, 'credits')]"&gt;
+			&lt;xsl:if test="descendant::text()[not(starts-with(local-name(../..), 'h'))][not(isWhiteSpace(.))] or descendant::img"&gt;
+				&lt;div&gt;
+					&lt;xsl:apply-templates select="@*"/&gt;
+					&lt;xsl:apply-overlays/&gt;
+					&lt;xsl:apply-templates/&gt;
+				&lt;/div&gt;
+			&lt;/xsl:if&gt;
+	&lt;/xsl:template&gt;	</sm:postXslFragment>
+	</sm:fillTemplateBuffers>
+	<sm:content/>
+</sm:openUiWidget>

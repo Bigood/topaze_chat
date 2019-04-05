@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="btnsRgt">
+	<sm:content>
+		<a xmlns="http://www.w3.org/1999/xhtml" class="btnRgtTgl" href="#" onclick="return tplMgr.tglRgt();" title="Afficher les étapes suivantes.">
+			<span>￼;Etapes￼</span>
+		</a>
+		<a xmlns="http://www.w3.org/1999/xhtml" class="btnRgtMore" href="#" onclick="return tplMgr.rgtMore();" title="Agrandir ce volet">
+			<span>￼;+￼</span>
+		</a>
+		<a xmlns="http://www.w3.org/1999/xhtml" class="btnRgtLess" href="#" onclick="return tplMgr.rgtLess();" title="Diminuer ce volet">
+			<span>￼;-￼</span>
+		</a>
+	</sm:content>
+</sm:openUiWidget>

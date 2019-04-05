@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:textOdTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/utils/labelTxt.model"/>
+	<sm:axis code="imp"/>
+	<sm:content>
+		<sm:paraTag/>
+		<sm:uLinkTag role="acr">
+			<sm:WInline globalStyle="txtAcr">
+				<sm:textLink/>
+				<sm:dataBlock category="acr">
+					<sm:blockId>
+						<sm:callSubModelId/>
+					</sm:blockId>
+					<sm:sortKey>
+						<sm:subModelTitle format="shortTitleText"/>
+					</sm:sortKey>
+					<sm:label>
+						<sm:subModelTitle/>
+					</sm:label>
+					<sm:data>
+						<sm:callSubModelMeta axis="content"/>
+					</sm:data>
+				</sm:dataBlock>
+			</sm:WInline>
+		</sm:uLinkTag>
+		<sm:uLinkTag role="glos">
+			<sm:WInline globalStyle="txtGlos">
+				<sm:textLink/>
+				<sm:dataBlock category="glos">
+					<sm:blockId>
+						<sm:callSubModelId/>
+					</sm:blockId>
+					<sm:label>
+						<sm:subModelTitle/>
+					</sm:label>
+					<sm:data>
+						<sm:callSubModelMeta axis="content"/>
+					</sm:data>
+				</sm:dataBlock>
+			</sm:WInline>
+		</sm:uLinkTag>
+		<sm:uLinkTag role="ref">
+			<sm:WInline globalStyle="txtRef">
+				<sm:textLink/>
+				<sm:dataBlock category="ref">
+					<sm:blockId>
+						<sm:callSubModelId/>
+					</sm:blockId>
+					<sm:label>
+						<sm:subModelTitle/>
+					</sm:label>
+					<sm:data>
+						<sm:callSubModelMeta axis="content"/>
+					</sm:data>
+				</sm:dataBlock>
+			</sm:WInline>
+		</sm:uLinkTag>
+		<sm:inlineStyleTag role="quote" globalStyle="txtQuote">
+			<sm:textWrapper prefix="￼;« ￼" suffix="￼; »￼"/>
+		</sm:inlineStyleTag>
+		<sm:inlineStyleTag role="emp" globalStyle="txtEmp"/>
+		<sm:inlineStyleTag role="spec" globalStyle="txtSpec"/>
+		<sm:inlineStyleTag role="code" globalStyle="txtCode"/>
+		<sm:textLeafTag role="exp" globalStyle="txtExp"/>
+		<sm:textLeafTag role="ind" globalStyle="txtInd"/>
+		<sm:textLeafTag role="mathtex">
+            <sm:Widget sc:refUri="/math/latex/mathTexInline_od.odwidget">
+                <sm:odContentZone key="zMathTex"/>
+            </sm:Widget>
+        </sm:textLeafTag>
+		<sm:inlineImgTag role="form" axis="inline"/>
+		<sm:inlineImgTag role="ico" axis="inline"/>
+	</sm:content>
+</sm:textOdTransf>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="outMgr">
+	<sm:widgetPublishFiles sc:refUri="/academic/gen/_web/widg/out/outMgr.doss"/>
+	<sm:fillTemplateBuffers>
+		<sm:standardLibrary codeLib="PaLib"/>
+		<sm:standardLibrary codeLib="SiLib"/>
+		<sm:standardLibrary codeLib="TiLib"/>
+		<sm:postXslFragment keyXsl="xhtml"><!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1375457338791">Déclaration des sections importantes pour la création du menu : main, mnu et le menu</comment></comment>-->&lt;xsl:overlay match="body"&gt;
+  &lt;xsl:value-of select="execute(java:append($vBufJs, 'outMgr.init(&amp;quot;ide:tplMain&amp;quot;,&amp;quot;ide:tplMnu&amp;quot;,&amp;quot;ide:tplMnu/des:ul.mnu&amp;quot;);'))"/&gt;
+&lt;/xsl:overlay&gt;</sm:postXslFragment>
+		<sm:linkScript path="outMgr.js" pathFrom="localPublishFiles" sortKey="B"/>
+	</sm:fillTemplateBuffers>
+	<sm:content>
+		<script xmlns="http://www.w3.org/1999/xhtml" type="text/JavaScript">
+			<sm:callModel>
+				<sm:root axis="initOutMgr"/>
+			</sm:callModel>
+		</script>
+	</sm:content>
+</sm:openUiWidget>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Ue/ue.model"/>
+	<sm:axis code="root"/>
+	<sm:navigation>
+		<sm:page template="root">
+			<sm:title>
+				<sm:compositionTitle/>
+				<sm:fixedTitle value="￼;Présentation￼"/>
+			</sm:title>
+			<sm:outlineClasses>
+				<sm:fixedString value="pres bkCnt_1"/>
+			</sm:outlineClasses>
+			<sm:mainZone format="xhtml">
+				<sm:WHeadingBlock widgetClass="sldHome">
+					<sm:title>
+						<sm:compositionTitle/>
+					</sm:title>
+					<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBkRoot.uiwidget">
+						<sm:xhtmlContentZone key="co">
+							<sm:callModel>
+								<sm:current/>
+							</sm:callModel>
+						</sm:xhtmlContentZone>
+					</sm:Widget>
+				</sm:WHeadingBlock>
+			</sm:mainZone>
+			<sm:zone key="zLegal" format="xhtml">
+				<sm:callModel>
+					<sm:current axis="legal"/>
+				</sm:callModel>
+			</sm:zone>
+		</sm:page>
+		<sm:callModel>
+			<sm:current axis="nav"/>
+		</sm:callModel>
+		<sm:callModel>
+			<sm:root axis="navContact"/>
+		</sm:callModel>
+	</sm:navigation>
+</sm:compositionXhtmlTransf>

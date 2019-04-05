@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:audioPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Audio MP3￼" category="￼;Ressources￼">
+	<sm:help quickHelp="￼;Ressource audio au format MP3￼"/>
+	<sm:identification extensions="mp3" mimeTypes="audio/mpeg"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/academic/model/metaData/audioM.model" usage="optional"/>
+	</sm:structure>
+	<sm:authoring>
+		<sm:preview>
+			<sm:mp3Viewer>
+				<sm:fromBinary/>
+			</sm:mp3Viewer>
+		</sm:preview>
+		<sm:previewMini>
+			<sm:mp3Viewer>
+				<sm:fromBinary/>
+			</sm:mp3Viewer>
+		</sm:previewMini>
+		<sm:icon sc:refUri="/binaries/mp3/_res/mp3.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;audio￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+	</sm:authoring>
+</sm:audioPrim>

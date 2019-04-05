@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<structure xmlns:c="composition" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" version="1.0" codecomposant="concat(getIdNode(..), '_meta_Alegal')" racine="//op:infoBin|//op:info" code="op_infoBin_Alegal" xmlns:op="utc.fr:ics/opale3" xmlns:java="http://xml.apache.org/xsl0t/java">
+	<intitule type="resultat-dynamique">agent=//fullTitleText</intitule>
+	<valeur code="fullTitleText"/>
+	<valeur code="shortTitleText"/>
+
+	<valeur code="xhtmlContent">
+		<source type="inclusion-dynamique">
+			<source type="xsl-statique">
+				<xsl:stylesheet version="1.0" 
+					xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" 
+					xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+					xmlns:op="utc.fr:ics/opale3" 
+					xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" 
+					xmlns:xhtml="http://www.w3.org/1999/xhtml" 
+					exclude-result-prefixes="sc sp op xhtml">
+					<xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no" omit-xml-declaration="yes"/>
+					<xsl:param name="vComp"/>
+					<xsl:param name="vAgent"/>
+					<xsl:template match="*">
+						<xsl:if test="sp:cc or sp:cpyrgt">
+							<span class="legalInfo">
+									[![agent=@<xsl:value-of select="getIdNode(sp:cpyrgt)"/>/xhtmlContent]!]
+								<xsl:if test="sp:cc"><span class="hidden"> | </span></xsl:if>
+									<xsl:apply-templates select="sp:cc"/>
+							</span>
+						</xsl:if>
+					</xsl:template>
+					<xsl:template match="sp:cc">
+						<xsl:variable name="vLicLang" select="'￼?note=Langue%20par%20defaut%20des%20pages%20html&amp;key=defaultWebLangCode;fr￼'"/>
+						<xsl:variable name="vLicVers" select="returnFirst(../sp:ccVersion, '4.0')"/>
+						<xsl:variable name="vLicTitle">
+							<xsl:choose>
+								<xsl:when test="string(.)='zero'">￼Creative Commons Zéro￼</xsl:when>
+								<xsl:when test="string(.)='by'">￼Paternité￼</xsl:when>
+								<xsl:when test="string(.)='by-nc'">￼Paternité - Pas d'Utilisation Commerciale￼</xsl:when>
+								<xsl:when test="string(.)='by-nc-nd'">￼Paternité - Pas d'Utilisation Commerciale - Pas de Modification￼</xsl:when>
+								<xsl:when test="string(.)='by-nc-sa'">￼Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique￼</xsl:when>
+								<xsl:when test="string(.)='by-nd'">￼Paternité - Pas de Modification￼</xsl:when>
+								<xsl:when test="string(.)='by-sa'">￼Paternité - Partage des Conditions Initiales à l'Identique￼</xsl:when>
+								<xsl:when test="string(.)='gnu-fdl'">￼Licence de documentation libre GNU￼</xsl:when>
+								<xsl:otherwise>￼Licence : Domaine Public￼</xsl:otherwise>
+							</xsl:choose>
+						</xsl:variable>
+						<xsl:variable name="vLicUrl">
+							<xsl:choose>
+								<xsl:when test="string(.)='gnu-fdl'">http://www.gnu.org/licenses/fdl.html</xsl:when>
+								<xsl:when test="string(.)='publicdomain' or string(.)='zero'">http://creativecommons.org/licenses/<xsl:value-of select="."/>/1.0/deed.<xsl:value-of select="$vLicLang"/></xsl:when>
+								<xsl:otherwise>http://creativecommons.org/licenses/<xsl:value-of select="."/>/<xsl:value-of select="$vLicVers"/>/deed.<xsl:value-of select="$vLicLang"/></xsl:otherwise>
+							</xsl:choose>
+						</xsl:variable>
+						<a rel="license" href="{$vLicUrl}" target="_blank" class="cc-button" title="{$vLicTitle} ￼(nouvelle fenêtre)￼">
+							<img alt="{$vLicTitle}" width="80" height="15" src="[![agent=../banners]!]/{.}.png"/>
+						</a>
+					</xsl:template>
+				</xsl:stylesheet>
+			</source>
+		</source>
+	</valeur>
+	<valeur code="banners">
+		<source type="xpath-dynamique">computeStrAgent('//', "pubres:/site/skin/img/lic")</source>
+	</valeur>
+</structure>
+
+

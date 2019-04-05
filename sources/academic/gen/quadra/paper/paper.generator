@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:odGenerator xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" code="paper" name="￼;Publication Texte OpenDocument￼">
+	<sm:icon sc:refUri="/academic/model/_ico/gen/paperGen.png"/>
+	<sm:modelRoot>
+		<sm:allowedModel sc:refUri="/academic/model/root/odRoot.model"/>
+		<sm:allowedModel sc:refUri="/academic/model/Ue/ue.model"/>
+	</sm:modelRoot>
+	<sm:transformerList>
+		<sm:transformerList info="academic">
+			<sm:transformerList sc:refUri="/academic/gen/_od/transf/_tl.transflist"/>
+		</sm:transformerList>
+		<sm:transformerList>
+			<sm:transformerList sc:refUri="/academic/gen/quadra/paper/transf/_tl.transflist"/>
+		</sm:transformerList>
+		<sm:transformerList info="modelet">
+			<sm:transformerList info="binaries" sc:refUri="/binaries/_od/binaries.transflist"/>
+			<sm:transformerList info="binaries inline" sc:refUri="/binaries/_od/binaries@inline.transflist"/>
+			<sm:transformerList sc:refUri="/binaries/_od/binaries@gal.transflist"/>
+			<sm:transformerList info="math" sc:refUri="/math/_od/math.transflist"/>
+			<sm:transformerList info="math inline" sc:refUri="/math/_od/math@inline.transflist"/>
+		</sm:transformerList>
+	</sm:transformerList>
+	<sm:odTemplate sc:refUri="/academic/gen/quadra/paper/paper.odtemplate"/>
+	<sm:defaultSkin sc:refUri="/academic/gen/quadra/paper/paper.skin.odt" name="￼;Quadra￼"/>
+	<sm:mode debug="no"/>
+	<sm:output format="odt" openDocumentEditor="LO4.x"/>
+	<sm:layoutOptimisations>
+		<sm:keepEnumTitle/>
+	</sm:layoutOptimisations>
+</sm:odGenerator>

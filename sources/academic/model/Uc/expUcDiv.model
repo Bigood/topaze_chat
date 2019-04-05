@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionPrim name="￼;Partie￼" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:help quickHelp="￼;Créer une partie dans l'unité de contenu￼"/>
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="expUcDiv" itemExtension="xml"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/academic/model/Uc/expUcDivM.model" usage="required"/>
+		<sm:part code="pb" name="￼;Contenu￼" family="content" internalized="always" usage="optional">
+			<sm:allowedModel sc:refUri="/academic/model/Pb/pb.model"/>
+			<sm:allowedModel sc:refUri="/academic/model/Dialogue/dialogue.model"/>
+		</sm:part>
+		<sm:set usage="optional">
+			<sm:part code="div" name="￼;Sous-partie￼" family="sub-level" internalized="always">
+				<sm:meta sc:refUri="/academic/model/_edt/filters/filter.model" usage="optional"/>
+				<sm:allowedModel sc:refUri="/academic/model/Uc/expUcDiv.model"/>
+			</sm:part>
+		</sm:set>
+	</sm:structure>
+	<sm:authoring>
+		<sm:formEditor indentXml="true">
+			<sm:part refCode="pb">
+				<sm:hiddenWidget hideChildren="no"/>
+			</sm:part>
+			<sm:part refCode="div">
+				<sm:stylableWidget displayMode="auto">
+					<sm:styles>
+						<sm:container style="border:2px dotted #8f8f8f;margin-top:3px;margin-bottom:3px;">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/partieSmall.png"/>
+								<sm:name style="margin-left:5px; color:#8f8f8f;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container style="border-color:#c1c1c1;">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/partieSmallFade.png"/>
+								<sm:name style="color:#c1c1c1"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openSmall.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed" statusCondition="empty">
+						<sm:container style="border:none;margin:0px;">
+							<sm:head>
+								<sm:name style="font-size:0.8em;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:compositionPrim>

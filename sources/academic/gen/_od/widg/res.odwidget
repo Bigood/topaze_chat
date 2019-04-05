@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openOdWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="WRes">
+	<sm:content>
+		<sm:choose>
+			<sm:when keyZone="content">
+				<sm:WParagraph globalStyle="spaceBeforeKeep" display="always">
+					<!--Le spaceBefore sur une frame entraine un freeze d'OO, et/ou un déplacement de cette frame anarchique => contournement en insérant un paragraphe vide au dessus-->
+				</sm:WParagraph>
+				<sm:choose>
+					<sm:when xpath=".//sp:index='form'">
+						<sm:WCaptionBlock style="res">
+							<sm:title>
+								<sm:callZone key="title"/>
+							</sm:title>
+							<sm:caption category="math"/>
+							<sm:callZone key="content"/>
+						</sm:WCaptionBlock>
+					</sm:when>
+					<sm:when xpath=".//sp:index='tab'">
+						<sm:WCaptionBlock style="res">
+							<sm:title>
+								<sm:callZone key="title"/>
+							</sm:title>
+							<sm:caption category="tab"/>
+							<sm:callZone key="content"/>
+						</sm:WCaptionBlock>
+					</sm:when>
+					<sm:when xpath=".//sp:index='graph'">
+						<sm:WCaptionBlock style="res">
+							<sm:title>
+								<sm:callZone key="title"/>
+							</sm:title>
+							<sm:caption category="graph"/>
+							<sm:callZone key="content"/>
+						</sm:WCaptionBlock>
+					</sm:when>
+					<sm:when xpath=".//sp:index='anim'">
+						<sm:WCaptionBlock style="res">
+							<sm:title>
+								<sm:callZone key="title"/>
+							</sm:title>
+							<sm:caption category="anim"/>
+							<sm:callZone key="content"/>
+						</sm:WCaptionBlock>
+					</sm:when>
+					<sm:when xpath=".//sp:index='img'">
+						<sm:WCaptionBlock style="res">
+							<sm:title>
+								<sm:callZone key="title"/>
+							</sm:title>
+							<sm:caption category="img"/>
+							<sm:callZone key="content"/>
+						</sm:WCaptionBlock>
+					</sm:when>
+					<!--
+<sm:when xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xpath=".//sp:index='none'">
+	<sm:WCaptionBlock style="res">
+		<sm:title>
+			<sm:callZone key="title"/>
+		</sm:title>
+		<sm:callZone key="content"/>
+	</sm:WCaptionBlock>
+</sm:when>-->
+					<sm:when xpath="name()='sp:res'">
+						<sm:WCaptionBlock style="res">
+							<sm:title>
+								<sm:callZone key="title"/>
+							</sm:title>
+							<sm:callZone key="content"/>
+						</sm:WCaptionBlock>
+						<!--<sm:choose xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:when xpath="containWord('sfile_odf mathTex', srcFields(srcFileAgent(concat('@', getIdFromPath(@sc:refUri))), 'itModel'))">
+		<sm:WCaptionBlock style="res">
+			<sm:title>
+				<sm:callZone key="title"/>
+			</sm:title>
+			<sm:caption category="math"/>
+			<sm:callZone key="content"/>
+		</sm:WCaptionBlock>
+	</sm:when>
+	<sm:when xpath="containWord('sfile_ods', srcFields(srcFileAgent(concat('@', getIdFromPath(@sc:refUri))), 'itModel'))">
+		<sm:WCaptionBlock style="res">
+			<sm:title>
+				<sm:callZone key="title"/>
+			</sm:title>
+			<sm:caption category="tab"/>
+			<sm:callZone key="content"/>
+		</sm:WCaptionBlock>
+	</sm:when>
+	<sm:when xpath="containWord('sfile_odg', srcFields(srcFileAgent(concat('@', getIdFromPath(@sc:refUri))), 'itModel'))">
+		<sm:WCaptionBlock style="res">
+			<sm:title>
+				<sm:callZone key="title"/>
+			</sm:title>
+			<sm:caption category="graph"/>
+			<sm:callZone key="content"/>
+		</sm:WCaptionBlock>
+	</sm:when>
+	<sm:when xpath="containWord('sfile_gif sfile_jpg_jpeg sfile_png', srcFields(srcFileAgent(concat('@', getIdFromPath(@sc:refUri))), 'itModel'))">
+		<sm:WCaptionBlock style="res">
+			<sm:title>
+				<sm:callZone key="title"/>
+			</sm:title>
+			<sm:caption category="img"/>
+			<sm:callZone key="content"/>
+		</sm:WCaptionBlock>
+	</sm:when>
+	<sm:otherwise>
+		<sm:WCaptionBlock style="res">
+			<sm:title>
+				<sm:callZone key="title"/>
+			</sm:title>
+			<sm:caption category="anim"/>
+			<sm:callZone key="content"/>
+		</sm:WCaptionBlock>
+	</sm:otherwise>
+</sm:choose>-->
+					</sm:when>
+					<sm:when xpath="name()='sp:int'">
+						<sm:WCaptionBlock style="res">
+							<sm:title>
+								<sm:callZone key="title"/>
+							</sm:title>
+							<sm:caption category="doc"/>
+							<sm:callZone key="content"/>
+						</sm:WCaptionBlock>
+					</sm:when>
+					<sm:otherwise>
+						<sm:callZone key="content"/>
+					</sm:otherwise>
+				</sm:choose>
+			</sm:when>
+		</sm:choose>
+	</sm:content>
+</sm:openOdWidget>

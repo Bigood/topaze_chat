@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/root/webRoot.model"/>
+	<sm:axis code="rootModel"/>
+	<sm:fullTitleText>
+		<sm:callSubModel codes="ue" axis="title"/>
+	</sm:fullTitleText>
+	<sm:shortTitleText>
+		<sm:callSubModel codes="ue" axis="sTitle"/>
+	</sm:shortTitleText>
+	<sm:navigation>
+		<sm:page template="home">
+			<sm:title>
+				<sm:compositionTitle format="fullTitleText" axis="rootModel"/>
+				<sm:fixedTitle value="￼;[sans titre]￼"/>
+			</sm:title>
+			<sm:mainZone format="xhtml">
+				<sm:callCompositionMeta/>
+				<sm:for codes="ue">
+					<sm:callSubModel axis="home"/>
+				</sm:for>
+			</sm:mainZone>
+			<sm:zone key="zImg" format="xhtml">
+				<sm:callCompositionMeta axis="img"/>
+			</sm:zone>
+			<sm:zone key="zNav" format="xhtml">
+				<sm:callModel>
+					<sm:current axis="rootModelNav"/>
+				</sm:callModel>
+			</sm:zone>
+			<sm:zone key="zLegal" format="xhtml">
+				<sm:for codes="ue">
+					<sm:callSubModel axis="rootLegal"/>
+				</sm:for>
+			</sm:zone>
+		</sm:page>
+	</sm:navigation>
+</sm:compositionXhtmlTransf>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget code="imgInFlow" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:content>
+		<sm:Widget sc:refUri="/binaries/_sld/widg/imgConfig.uiwidget"/>
+		<div class="ssCutable imgInFlow" xmlns="http://www.w3.org/1999/xhtml">
+			<div class="resFra">
+				<sm:callZone key="img"/>
+				<a class="zoom" href="#" title="￼Zoom...￼" style="display:none;">
+					<span>￼;Zoom￼</span>
+				</a>
+			</div>
+			<div class="imgOthers" style="visibility: hidden; position:absolute; top:-10000px; left-10000px;">
+				<sm:callZone key="imgOthers"/>
+			</div>
+			<div class="caption">
+				<sm:callZone key="caption"/>
+			</div>
+		</div>
+	</sm:content>
+</sm:openUiWidget>

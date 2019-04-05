@@ -1,0 +1,3 @@
+bgcolor1=5c595a
+bgcolor2=5c595a
+playercolor=5c595a

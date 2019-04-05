@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:genericCond xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="includeInShortQuest" info="Include in short publication in sp:quest">
+	<sm:targetModel>
+		<sm:current/>
+		<sm:ifNone>
+			<sm:fixedResult return="true"/>
+		</sm:ifNone>
+	</sm:targetModel>
+	<sm:expression>
+		<sm:freeXpath xpath="not(sp:quest/op:filter/sp:exclude[text()='short'])">
+			<sm:extraNamespace prefix="op" namespace="utc.fr:ics/opale3"/>
+		</sm:freeXpath>
+	</sm:expression>
+</sm:genericCond>

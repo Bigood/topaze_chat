@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="tplNav">
+	<sm:content>
+		<div xmlns="http://www.w3.org/1999/xhtml" id="tplNav">
+			<div id="backBtn" style="visibility:hidden;">
+				<a href="#" onclick="tplMgr.back(); return false;" title="￼Revenir à la page précédente dans l'historique￼">
+					<span>￼;Retour￼</span>
+				</a>
+			</div>
+			<div id="nextBtn" style="visibility:hidden;">
+				<a href="#" onclick="tplMgr.next(); return false;" title="￼Avancer à la page suivante dans l'historique￼">
+					<span>￼;Suivant￼</span>
+				</a>
+			</div>
+		</div>
+	</sm:content>
+</sm:openUiWidget>

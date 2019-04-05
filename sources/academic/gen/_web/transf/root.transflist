@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRoot.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRoot@autoEvalSol.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRoot@rootFilter.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRoot@initOutMgr.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRoot@rootModel.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRoot@rootModelNav.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRoot@tools.transf"/>
+	<sm:transformerList>
+		<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRoot@lblBtnTtInfo.transf"/>
+	</sm:transformerList>
+	<sm:transformerList>
+		<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRoot@index.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRoot@initSearchMgr.transf"/>
+	</sm:transformerList>
+</sm:transformerList>

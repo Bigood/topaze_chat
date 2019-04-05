@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiTemplate xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" pageUnicityCriterion="none" info="Start page OPALE">
+	<sm:head>
+		<sm:windowTitle>
+			<sm:rootTitle type="fullTitle"/>
+			<sm:fixedString value=" - "/>
+			<sm:pageTitle/>
+		</sm:windowTitle>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/tpl/htmlMeta.uiwidget"/>
+		<sm:Widget sc:refUri="/case/gen/_web/wdt/mgr/histMgr.uiwidget"/>
+	</sm:head>
+	<sm:body>
+		<div xmlns="http://www.w3.org/1999/xhtml" style="visibility:hidden;">
+			<sm:callMainZone format="xhtml"/>
+		</div>
+		<sm:Widget sc:refUri="/case/gen/_web/wdt/ue/ueStart.uiwidget"/>
+		<sm:script src="js/skin.js" srcFrom="skin" type="text/JavaScript"/>
+	</sm:body>
+</sm:openUiTemplate>

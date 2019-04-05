@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Ue/ue@btnHelp.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Ue/ue@btnHome.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Ue/ue@btnTools.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Ue/ue@rootLegal.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Ue/ue@keywds.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Ue/ue@btnHomeSel.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Ue/ueM@keywds.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Ue/ue@mnuModePage.transf"/>
+	<sm:transformerList>
+		<sm:transformer sc:refUri="/academic/gen/_web/transf/Ue/ue@lblBtnHelp.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_web/transf/Ue/ue@lblBtnHome.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_web/transf/Ue/ue@lblBtnHomeSel.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_web/transf/Ue/ue@lblBtnNext.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_web/transf/Ue/ue@lblBtnNextNo.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_web/transf/Ue/ue@lblBtnPlaySel.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_web/transf/Ue/ue@lblBtnPrev.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_web/transf/Ue/ue@lblBtnPrevNo.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_web/transf/Ue/ue@lblBtnPrint.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_web/transf/Ue/ue@lblBtnPrintSubWin.transf"/>
+	</sm:transformerList>
+</sm:transformerList>

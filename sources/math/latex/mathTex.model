@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- * LICENCE[[
+ * Version: MPL 1.1/GPL 2.0/LGPL 2.1/CeCILL 2.0 
+ *
+ * The contents of this file are subject to the Mozilla Public License Version 
+ * 1.1 (the "License"); you may not use this file except in compliance with 
+ * the License. You may obtain a copy of the License at http://www.mozilla.org/MPL/ 
+ * 
+ * Software distributed under the License is distributed on an "AS IS" basis, 
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License 
+ * for the specific language governing rights and limitations under the 
+ * License. 
+ * 
+ * The Original Code is keli.fr code. 
+ * 
+ * The Initial Developer of the Original Code is 
+ * antoine.pourchez@kelis.fr on behalf of USTL / SEMM (http://semm.univ-lille1.fr)
+ * 
+ * Portions created by the Initial Developer are Copyright (C) 2005 
+ * the Initial Developer. All Rights Reserved. 
+ * 
+ * Contributor(s): 
+ * 
+ * 
+ * Alternatively, the contents of this file may be used under the terms of 
+ * either of the GNU General Public License Version 2 or later (the "GPL"), 
+ * or the GNU Lesser General Public License Version 2.1 or later (the "LGPL"), 
+ * or the CeCILL Licence Version 2.0 (http://www.cecill.info/licences.en.html), 
+ * in which case the provisions of the GPL, the LGPL or the CeCILL are applicable 
+ * instead of those above. If you wish to allow use of your version of this file 
+ * only under the terms of either the GPL or the LGPL, and not to allow others 
+ * to use your version of this file under the terms of the MPL, indicate your 
+ * decision by deleting the provisions above and replace them with the notice 
+ * and other provisions required by the GPL or the LGPL. If you do not delete 
+ * the provisions above, a recipient may use your version of this file under 
+ * the terms of any one of the MPL, the GPL, the LGPL or the CeCILL.
+ * ]]LICENCE
+ -->
+<sm:freePrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" codeModel="mathTex" isInternalizable="no" qNameTagRoot="sfile:mathTex" name="￼;Équation mathématique LaTeX￼" primitiveSignature="@sm_binaryPrim#Class:Content:Public#Glimpse:Img">
+	<sm:namespaceToDeclare prefix="sfile" ns="http://www.utc.fr/ics/scenari/v3/file"/>
+	<sm:links/>
+	<sm:storageSheet>
+		<sm:standAloneItem>
+			<sm:ss sc:refUri="/math/latex/_res/model/ss.txt" encoding="UTF-8"/>
+		</sm:standAloneItem>
+	</sm:storageSheet>
+	<sm:editionSheet>
+		<sm:standAloneItem>
+			<sm:icon sc:refUri="/math/latex/_res/model/ico.doss"/>
+			<sm:registerModelInPack>vModel = new ModelRes( "[![agent=//codeModel]!]",
+		"[![agent=//iconFolderPath]!]",
+		"[![agent=//nameModelInJs]!]",
+		"[![agent=//mainview.xul;arguments=act:]!]",
+		"[![agent=//prefixChromeUrl]!]/mathTex/preview.xul",
+		"transform=facet&amp;facet=glimpse",
+		["application/x-latex"]
+		 )
+	.setSgn("[![agent=//sgn]!]")
+	.setExts([".mtex"]);
+[![if;agent=extPointsFromWsp]!]vModel.addModelExtPointsLoader(function(pModelExtPoints){[![agent=extPointsFromWsp]!]});[![endif]!]
+vPack.registerModel(vModel); </sm:registerModelInPack>
+			<sm:creatorItemInPack>new CreatorItem4(vModel, "math{optionalCounter}", "string", "")</sm:creatorItemInPack>
+			<sm:mainView sc:refUri="/math/latex/_res/model/es/mainview.txt" encoding="UTF-8"/>
+		</sm:standAloneItem>
+		<sm:staticFile sc:refUri="/math/latex/_res/model/es/preview.xul" destPath="preview.xul"/>
+		<sm:staticFile sc:refUri="/math/latex/_res/model/es/sctabMathTexEditor.xbl.xml" destPath="sctabMathTexEditor.xbl.xml"/>
+	</sm:editionSheet>
+</sm:freePrim>

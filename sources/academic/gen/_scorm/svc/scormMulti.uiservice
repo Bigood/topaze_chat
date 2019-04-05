@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sma:dataUiService xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sma="kelis.fr:scenari/modeling/assessment" code="scormMulti">
+	<sm:physicalStorageLayer>
+		<sm:scorm12/>
+		<sm:scorm2k4/>
+	</sm:physicalStorageLayer>
+	<sm:logicalStorageLayer>
+		<sm:suspendDataStorage/>
+		<sm:completionStorage storeProgression="yes"/>
+		<sm:exitModeStorage>
+			<sm:sessionTime/>
+			<sm:exitStatus/>
+		</sm:exitModeStorage>
+	</sm:logicalStorageLayer>
+	<sm:businessLayer>
+		<sm:assmntMgr/>
+	</sm:businessLayer>
+</sma:dataUiService>

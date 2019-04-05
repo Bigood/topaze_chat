@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/quiz@sol/cloze@sol.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/quiz@sol/coQuiz@sol.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/quiz@sol/field@sol.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/quiz@sol/match@sol.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/quiz@sol/mcgMur@sol.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/quiz@sol/mcgSur@sol.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/quiz@sol/mcqMur@sol.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/quiz@sol/mcqSur@sol.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/quiz@sol/numerical@sol.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/quiz@sol/ordWord@sol.transf"/>
+</sm:transformerList>

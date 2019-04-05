@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionOdtTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0">
+	<sm:model sc:refUri="/academic/model/Re/mediaWeb/mediaWeb.model"/>
+	<sm:fullTitleText>
+		<sm:dynamicString>
+			<sm:freeXslFragment>&lt;!-- TODO3.7 : enrichir fullTitleText pour éviter ce free --&gt;
+&lt;xsl:choose&gt;
+ &lt;xsl:when test="computeStrAgent('//metaAgt', 'fullTitleText')"&gt;&lt;xsl:value-of select="computeStrAgent('//metaAgt', 'fullTitleText')"/&gt; (&lt;xsl:value-of select="substring-before(java:getSrcName(srcFileAgent()), '.')"/&gt;)&lt;/xsl:when&gt;
+ &lt;xsl:otherwise&gt;&lt;xsl:value-of select="substring-before(java:getSrcName(srcFileAgent()), '.')"/&gt;&lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;</sm:freeXslFragment>
+		</sm:dynamicString>
+	</sm:fullTitleText>
+	<sm:content>
+		<sm:Widget sc:refUri="/binaries/_od/widgets/noIncludeRes.odwidget">
+			<sm:odContentZone key="zData">
+				<sm:fixedString value="￼;Cf. &quot;￼"/>
+				<sm:title>
+					<sm:compositionTitle/>
+				</sm:title>
+				<sm:fixedString value="￼;&quot;￼"/>
+			</sm:odContentZone>
+		</sm:Widget>
+	</sm:content>
+</sm:compositionOdtTransf>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><sma:assmntUnitMcqPrim xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Question à Choix Multiple￼" category="￼;Exercices￼">
+	<sm:help quickHelp="￼;Questionnaire à choix multiple￼"/>
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="mcqMur" itemExtension="quiz"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/academic/model/metaData/exeM.model"/>
+		<sm:questionModel name="￼;Énoncé￼" sc:refUri="/academic/model/Re/res.model"/>
+		<sm:choices name="￼;Choix￼">
+			<sm:choice name="￼;Réponse￼" min="2" max="10">
+				<sm:choiceLabelModel name="￼;Libellé￼" sc:refUri="/academic/model/Re/txt.model"/>
+				<sm:choiceExplanationModel name="￼;Explication￼" sc:refUri="/academic/model/Re/txt.model" usage="optional"/>
+			</sm:choice>
+		</sm:choices>
+		<sm:globalExplanationModel name="￼;Explication globale￼" sc:refUri="/academic/model/Re/res.model" usage="optional"/>
+		<sm:solution name="￼;Solution￼">
+			<sm:multipleUserResponse>
+				<sm:booleanScoring/>
+			</sm:multipleUserResponse>
+		</sm:solution>
+	</sm:structure>
+	<sm:authoring>
+		<sm:icon sc:refUri="/academic/model/_ico/mcqMurSmall.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼?note=utilis%C3%A9%20dans%20un%20nom%20de%20fichier%20(sans%20accent%20ou%20caract%C3%A8res%20sp%C3%A9ciaux%20!);qcm￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:formEditor indentXml="true">
+			<sm:assmntUnitMcq tagStyle="font-family:arial;font-size:1.8em; background-color:#4668ad; color:white; -moz-border-radius:5px; -moz-padding-start:4px; -moz-padding-end:4px">
+				<sm:iconTag sc:refUri="/academic/model/_ico/mcqMur.png"/>
+			</sm:assmntUnitMcq>
+		</sm:formEditor>
+	</sm:authoring>
+</sma:assmntUnitMcqPrim>

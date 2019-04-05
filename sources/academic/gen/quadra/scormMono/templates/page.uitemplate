@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiTemplate xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" pageUnicityCriterion="hierarchicalContext">
+	<sm:head>
+		<sm:windowTitle>
+			<sm:rootTitle type="fullTitle"/>
+			<sm:fixedString value=" - "/>
+			<sm:pageTitle/>
+		</sm:windowTitle>
+		<sm:meta name="author">
+			<sm:callRootModel axis="author"/>
+		</sm:meta>
+		<sm:meta name="keywords">
+			<sm:callZone key="zKeywords" format="text"/>
+		</sm:meta>
+		<sm:meta name="date">
+			<sm:callRootModel axis="date"/>
+		</sm:meta>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/tpl/htmlMeta.uiwidget"/>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/tpl/revisedMeta.uiwidget"/>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/tpl/html5shiv.uiwidget"/>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/util/startLinkMeta.uiwidget"/>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/tpl/tplMgr.uiwidget"/>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/tplDynElts/centerContent.uiwidget"/>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/out/outMgr.uiwidget"/>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/search/index.uiwidget"/>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/search/searchMgr.uiwidget"/>
+		<sm:Widget sc:refUri="/academic/gen/_scorm/widg/scormPageMgr.uiwidget"/>
+		<sm:styleSheet src="css/html.css" srcFrom="skin" media="all"/>
+		<sm:styleSheet src="css/struct_page.css" srcFrom="skin" media="screen"/>
+		<sm:styleSheet src="css/buttons.css" srcFrom="skin" media="screen"/>
+		<sm:styleSheet src="css/mnu_page.css" srcFrom="skin" media="screen"/>
+		<sm:styleSheet src="css/mnu_child.css" srcFrom="skin" media="screen"/>
+		<sm:styleSheet src="css/transf.css" srcFrom="skin" media="all"/>
+		<sm:styleSheet src="css/indexes.css" srcFrom="skin"/>
+		<sm:styleSheet src="css/assmnt.css" srcFrom="skin"/>
+		<sm:styleSheet src="css/assmnt_train.css" srcFrom="skin"/>
+		<sm:styleSheet src="css/sub_windows.css" srcFrom="skin" media="screen"/>
+		<sm:styleSheet src="css/annot.css" srcFrom="skin" media="screen"/>
+		<sm:styleSheet src="css/markedPage.css" srcFrom="skin" media="screen"/>
+		<sm:styleSheet src="css/search.css" srcFrom="skin" media="screen"/>
+		<sm:WXhtmlFragment>&lt;!--[if IE]&gt;</sm:WXhtmlFragment>
+		<sm:styleSheet src="css/ie.css" srcFrom="skin" media="screen"/>
+		<sm:WXhtmlFragment>&lt;![endif]--&gt;&lt;!--[if lt IE 7]&gt;</sm:WXhtmlFragment>
+		<sm:styleSheet src="css/ie6_page.css" srcFrom="skin" media="screen"/>
+		<sm:styleSheet src="css/ie6_sub_windows.css" srcFrom="skin" media="all"/>
+		<sm:WXhtmlFragment>&lt;![endif]--&gt;</sm:WXhtmlFragment>
+		<sm:styleSheet src="css/print.css" srcFrom="skin" media="print"/>
+	</sm:head>
+	<sm:body>
+		<scBlock xmlns="http://www.w3.org/1999/xhtml" id="tplFra" class="tplPge">
+			<div id="tplTop">
+				<sm:Widget sc:refUri="/academic/gen/_web/widg/tpl/accessBtns.uiwidget"/>
+				<sm:Widget sc:refUri="/academic/gen/_web/widg/tpl/noscriptWarn.uiwidget"/>
+				<hx id="titleRoot">
+					<span>
+						<sm:title>
+							<sm:rootTitle type="fullTitle"/>
+						</sm:title>
+					</span>
+					<sm:Widget sc:refUri="/academic/gen/_scorm/widg/markedPageBtn.uiwidget"/>
+				</hx>
+				<sm:callRootModel axis="isSearch"/>
+				<sm:Widget sc:refUri="/academic/gen/_scorm/widg/annotBtn.uiwidget"/>
+				<sm:Widget sc:refUri="/academic/gen/_scorm/widg/quitBtn.uiwidget"/>
+			</div>
+			<div id="tplLft">
+				<hr class="hidden" />
+				<a id="tools" class="accessAnc" name="tools" href="#tools"></a>
+				<strong class="hidden">￼?note=note%20descriptif%20de%20page%20HTML;Mode : ￼</strong>
+				<sm:callRootModel axis="mnuModePage"/>
+			</div>
+			<div id="tplMain" class="tplMainMnu_open">
+				<div id="tplMnu">
+					<hr class="hidden" />
+					<a id="menu" class="accessAnc" name="menu" href="#menu"></a>
+					<strong class="hidden">￼?note=note%20descriptif%20de%20page%20HTML;Menu : ￼</strong>
+					<sm:Widget sc:refUri="/academic/gen/_web/widg/tplDynElts/dynSizes.uiwidget"/>
+					<div class="mnuBlock"></div>
+					<div class="mnuFra">
+						<sm:Widget sc:refUri="/academic/gen/_scorm/widg/out.uiwidget"/>
+					</div>
+					<div id="tplIco">
+						<sm:callZone key="zIconPage" format="xhtml"/>
+					</div>
+				</div>
+				<div id="tplCo">
+					<div class="scroller">
+						<hr class="hidden" />
+						<a id="content" class="accessAnc" name="content" href="#content"></a>
+						<strong class="hidden">￼?note=note%20descriptif%20de%20page%20HTML;Contenu : ￼</strong>
+						<div id="tplCoMarginW" style="">
+							<div id="tplCoFlexTop"></div>
+							<sm:callMainZone format="xhtml"/>
+							<sm:WBasket key="footnotes" widgetClass="footnotes" tagName="ol" suppressIfEmpty="yes"/>
+						</div>
+						<div id="tplCoSpacer"></div>
+					</div>
+				</div>
+			</div>
+			<div id="tplRgt">
+				<hr class="hidden" />
+				<a id="navigation" class="accessAnc" name="navigation" href="#navigation"></a>
+				<strong class="hidden">￼?note=note%20descriptif%20de%20page%20HTML;Navigation : ￼</strong>
+				<sm:Widget sc:refUri="/academic/gen/_web/widg/nav/prev.uiwidget"/>
+				<span class="hidden"> | </span>
+				<sm:Widget sc:refUri="/academic/gen/_web/widg/nav/next.uiwidget"/>
+			</div>
+			<div id="tplBtm">
+				<hr class="hidden" />
+				<a id="footer" class="accessAnc" name="footer" href="#footer"></a>
+				<span id="tplBtmLeft">
+					<sm:callRootModel axis="btnHome"/>
+					<sm:callRootModel axis="btnHelp"/>
+					<span class="hidden"> | </span>
+					<sm:WButton class="printBtn">
+						<sm:label>
+							<sm:callRootModel axis="lblBtnPrint"/>
+						</sm:label>
+						<sm:labelTitle>￼;Imprimer la page￼</sm:labelTitle>
+						<sm:action>
+							<sm:print/>
+						</sm:action>
+					</sm:WButton>
+				</span>
+				<span id="tplBtmIn">
+					<span class="hidden"> | </span>
+					<sm:callZone key="zLegal" format="xhtml"/>
+					<span class="hidden"> | </span>
+					<sm:Widget sc:refUri="/academic/gen/_web/widg/tpl/madeWithSc.uiwidget"/>
+				</span>
+			</div>
+		</scBlock>
+		<sm:script src="js/skin.js" srcFrom="skin" type="text/JavaScript"/>
+	</sm:body>
+</sm:openUiTemplate>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Re/eSite/eSite.model"/>
+	<sm:content format="xhtml">
+		<sm:WCaptionBlock widgetClass="resInFlow" position="bottom">
+			<sm:caption>
+				<sm:title>
+					<sm:compositionTitle/>
+				</sm:title>
+				<sm:callCompositionMeta axis="info"/>
+			</sm:caption>
+			<sm:content>
+				<sm:for codes="eweb">
+					<sm:WSimpleBlock>
+						<sm:WFreeBlock>
+							<addAttribute xmlns="http://www.w3.org/1999/xhtml" name="class">
+								<sm:dynamicString>
+									<sm:freeSelect xpath="concat('eWeb',if(.//sp:width,'',' eWeb_wide'))"/>
+								</sm:dynamicString>
+							</addAttribute>
+						</sm:WFreeBlock>
+						<sm:callPartMeta axis="style"/>
+						<sm:callSubModel axis="view"/>
+					</sm:WSimpleBlock>
+				</sm:for>
+			</sm:content>
+		</sm:WCaptionBlock>
+	</sm:content>
+</sm:compositionXhtmlTransf>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformer sc:refUri="/case/gen/_scormMono/transf/scormRoot/scormRoot.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_scormMono/transf/scormRoot/scormRoot@endMessage.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_scormMono/transf/scormRoot/scormRoot@followedSteps.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_scormMono/transf/scormRoot/scormRoot@indexesCalc.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_scormMono/transf/scormRoot/scormRoot@indexesList.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_scormMono/transf/scormRoot/scormRoot@initSearch.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_scormMono/transf/scormRoot/scormRoot@keywds.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_scormMono/transf/scormRoot/scormRoot@legal.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_scormMono/transf/scormRoot/scormRoot@manifest.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_scormMono/transf/scormRoot/scormRoot@pageList.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_scormMono/transf/scormRoot/scormRoot@parcours.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_scormMono/transf/scormRoot/scormRoot@register.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_scormMono/transf/scormRoot/scormRoot@rootFilter.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_scormMono/transf/scormRoot/scormRoot@toolMnuHome.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_scormMono/transf/scormRoot/scormRoot@tools.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_scormMono/transf/scormRoot/scormRootM.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_scormMono/transf/scormRoot/scormRootM@endMessage.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_scormMono/transf/scormRoot/scormRootM@parcours.transf"/>
+</sm:transformerList>

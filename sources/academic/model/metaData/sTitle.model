@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:titlePrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="￼;Titre￼">
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="sTitle"/>
+	<sm:structure>
+		<sm:fullTitleTag name="￼;principal￼"/>
+	</sm:structure>
+</sm:titlePrim>

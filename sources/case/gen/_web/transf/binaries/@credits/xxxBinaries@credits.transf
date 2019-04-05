@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/binaries/avi/avi.model"/>
+	<sm:model sc:refUri="/binaries/doc/doc.model"/>
+	<sm:model sc:refUri="/binaries/flash/flash.model"/>
+	<sm:model sc:refUri="/binaries/flv/flv.model"/>
+	<sm:model sc:refUri="/binaries/gif/gif.model"/>
+	<sm:model sc:refUri="/binaries/jpg/jpeg.model"/>
+	<sm:model sc:refUri="/binaries/mov/mov.model"/>
+	<sm:model sc:refUri="/binaries/mp3/mp3.model"/>
+	<sm:model sc:refUri="/binaries/mp4/mp4.model"/>
+	<sm:model sc:refUri="/binaries/mpg/mpg.model"/>
+	<sm:model sc:refUri="/binaries/odg/odg.model"/>
+	<sm:model sc:refUri="/binaries/odp/odp.model"/>
+	<sm:model sc:refUri="/binaries/ods/ods.model"/>
+	<sm:model sc:refUri="/binaries/odt/odt.model"/>
+	<sm:model sc:refUri="/binaries/opus/opus.model"/>
+	<sm:model sc:refUri="/binaries/pdf/pdf.model"/>
+	<sm:model sc:refUri="/binaries/png/png.model"/>
+	<sm:model sc:refUri="/binaries/ppt/ppt.model"/>
+	<sm:model sc:refUri="/binaries/rm/rm.model"/>
+	<sm:model sc:refUri="/binaries/webm/webm.model"/>
+	<sm:model sc:refUri="/binaries/wmv/wmv.model"/>
+	<sm:model sc:refUri="/binaries/xls/xls.model"/>
+	<sm:model sc:refUri="/binaries/zip/zip.model"/>
+	<sm:axis code="credits"/>
+	<sm:bs sc:refUri="/case/gen/_web/transf/binaries/@credits/xxxBinaries@credits.doss" bsPath="bs.xml"/>
+	<sm:view code="xhtmlContent">
+		<sm:callModel sc:refUri="/academic/model/metaData/animM.model" axis="legal" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/academic/model/metaData/audioM.model" axis="legal" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/academic/model/metaData/imgM.model" axis="legal" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/academic/model/metaData/binDocM.model" axis="legal" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/academic/model/metaData/binAltM.model" axis="legal" codeView="xhtmlContent"/>
+	</sm:view>
+</sm:freeXhtmlTransf>

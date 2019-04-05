@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:wspDefinition xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" keyWsp="TopazeGEVPI" name="TopazeGEVPI" defaultWspCode="TopazeGEVPI" majorVersion="1" mediumVersion="4" minorVersion="021">
+	<sm:publicClasses>
+		<sm:group name="￼;Étude de cas et ses étapes￼" sortKey="A">
+			<sm:class sc:refUri="/case/model/case.model" access="readWrite" sortKey="A">
+				<sm:mainView>
+					<sm:formEditorTab name="￼;Edition￼" idInView="tabEdit" display="visible" formEditorKey=""/>
+					<sm:blocksTab name="￼;Aperçu Web Topaze￼" label="￼;Aperçu￼" display="visible" idInView="tabPreWeb">
+						<sm:displayingBlock name="￼;Aperçu Web Topaze￼" idInView="bkPreWebStandard" displayMode="lockedOpen">
+							<sm:toolbar skinMenu="yes" homeButton="yes" openButton="yes" copyButton="yes" reloadButton="no" navButtons="no"/>
+							<sm:interactiveGenerator sc:refUri="/case/gen/progress/web/pre/caseWebPre.generator"/>
+						</sm:displayingBlock>
+					</sm:blocksTab>
+					<sm:blocksTab name="￼;Publications￼" label="￼;Publi.￼" display="visible" idInView="tabPub">
+						<sm:generatorsBlock name="￼;Publications￼" displayMode="lockedOpen">
+							<sm:genBox>
+								<sm:generator sc:refUri="/case/gen/progress/web/caseWeb.generator"/>
+							</sm:genBox>
+						</sm:generatorsBlock>
+					</sm:blocksTab>
+					<sm:blocksTab name="￼;Informations techniques￼" label="￼;Infos.￼" display="extra" idInView="tabInfo">
+						<sm:technicalInfoBlock name="￼;Informations techniques￼" idInView="bkTech" displayMode="lockedOpen"/>
+					</sm:blocksTab>
+					<sm:textEditorTab name="￼;Édition texte￼" label="￼;Texte￼" idInView="tabTxt" display="extra"/>
+				</sm:mainView>
+			</sm:class>
+			<sm:class sc:refUri="/case/model/node/expNode.model" access="readWrite" sortKey="B"/>
+			<sm:class sc:refUri="/case/model/node/assmntNode.model" access="readWrite" sortKey="C"/>
+			<sm:class sc:refUri="/case/model/node/heavyNode.model" access="readWrite" sortKey="D"/>
+			<sm:class sc:refUri="/case/model/node/navNode.model" access="readWrite" sortKey="E"/>
+		</sm:group>
+		<sm:group name="￼;Indicateurs￼" sortKey="B">
+			<sm:class sc:refUri="/case/model/index/autoIndex.model" access="readWrite" sortKey="A"/>
+			<sm:class sc:refUri="/case/model/index/userIndex.model" access="readWrite" sortKey="B"/>
+		</sm:group>
+		<sm:group name="￼;Variables￼" sortKey="C">
+			<sm:class sc:refUri="/case/model/index/autoVar.model" access="readWrite" sortKey="A"/>
+			<sm:class sc:refUri="/case/model/index/userVar.model" access="readWrite" sortKey="B"/>
+		</sm:group>
+		<sm:group name="￼;Contenus￼" sortKey="D">
+			<sm:group name="￼;Ressources Riches￼" displayMode="open" sortKey="B">
+				<sm:class sc:refUri="/academic/model/Ue/ue.model" access="readWrite" sortKey="A">
+					<sm:mainView>
+						<sm:formEditorTab name="￼;Édition￼" idInView="tabEdit" display="visible" formEditorKey=""/>
+						<sm:blocksTab name="￼;Aperçu Web Opale￼" label="￼;Aperçu￼" display="visible" idInView="tabPreWeb">
+							<sm:displayingBlock name="￼;Aperçu Web Opale (Version &quot;standard&quot;)￼" idInView="bkPreWebStandard" displayMode="openedByDefault">
+								<sm:toolbar skinMenu="yes" homeButton="yes" openButton="yes" copyButton="yes" reloadButton="yes" navButtons="yes"/>
+								<sm:interactiveGenerator sc:refUri="/academic/gen/quadra/preview/_web/standardContent/previewWebStandard.generator"/>
+							</sm:displayingBlock>
+							<sm:displayingBlock name="￼;Aperçu Web Opale (Version &quot;courte&quot;)￼" idInView="bkPreWebCourt" displayMode="memorized">
+								<sm:toolbar skinMenu="yes" homeButton="yes" openButton="yes" copyButton="yes" reloadButton="yes" navButtons="yes"/>
+								<sm:interactiveGenerator sc:refUri="/academic/gen/quadra/preview/_web/shortContent/previewWebShort.generator"/>
+							</sm:displayingBlock>
+						</sm:blocksTab>
+						<sm:blocksTab name="￼;Informations techniques￼" label="￼;Infos.￼" display="extra" idInView="tabInfo">
+							<sm:technicalInfoBlock name="￼;Informations techniques￼" idInView="bkTech" displayMode="lockedOpen"/>
+						</sm:blocksTab>
+						<sm:textEditorTab name="￼;Édition texte￼" label="￼;Texte￼" idInView="tabTxt" display="extra"/>
+					</sm:mainView>
+				</sm:class>
+				<sm:class sc:refUri="/academic/model/Ue/ueDiv.model" access="readWrite" sortKey="B">
+					<sm:mainView>
+						<sm:formEditorTab name="￼;Édition￼" idInView="tabEdit" display="visible" formEditorKey=""/>
+						<sm:blocksTab name="￼;Aperçu Web Opale￼" label="￼;Aperçu￼" display="visible" idInView="tabPreWeb">
+							<sm:displayingBlock name="￼;Aperçu Web Opale (Version &quot;standard&quot;)￼" idInView="bkPreWebStandard" displayMode="openedByDefault">
+								<sm:toolbar skinMenu="yes" homeButton="yes" openButton="yes" copyButton="yes" reloadButton="yes" navButtons="yes"/>
+								<sm:interactiveGenerator sc:refUri="/academic/gen/quadra/preview/_web/standardContent/previewWebStandard.generator"/>
+							</sm:displayingBlock>
+							<sm:displayingBlock name="￼;Aperçu Web Opale (Version &quot;courte&quot;)￼" idInView="bkPreWebCourt" displayMode="memorized">
+								<sm:toolbar skinMenu="yes" homeButton="yes" openButton="yes" copyButton="yes" reloadButton="yes" navButtons="yes"/>
+								<sm:interactiveGenerator sc:refUri="/academic/gen/quadra/preview/_web/shortContent/previewWebShort.generator"/>
+							</sm:displayingBlock>
+						</sm:blocksTab>
+						<sm:blocksTab name="￼;Informations techniques￼" label="￼;Infos.￼" display="extra" idInView="tabInfo">
+							<sm:technicalInfoBlock name="￼;Informations techniques￼" idInView="bkTech" displayMode="lockedOpen"/>
+						</sm:blocksTab>
+						<sm:textEditorTab name="￼;Édition texte￼" label="￼;Texte￼" idInView="tabTxt" display="extra"/>
+					</sm:mainView>
+				</sm:class>
+				<sm:class sc:refUri="/academic/model/Ua/courseUa.model" access="readWrite" sortKey="C">
+					<sm:mainView>
+						<sm:formEditorTab name="￼;Édition￼" idInView="tabEdit" display="visible" formEditorKey=""/>
+						<sm:blocksTab name="￼;Aperçu Web Opale￼" label="￼;Aperçu￼" display="visible" idInView="tabPreWeb">
+							<sm:displayingBlock name="￼;Aperçu Web Opale (Version &quot;standard&quot;)￼" idInView="bkPreWebStandard" displayMode="openedByDefault">
+								<sm:toolbar skinMenu="yes" homeButton="yes" openButton="yes" copyButton="yes" reloadButton="yes" navButtons="yes"/>
+								<sm:interactiveGenerator sc:refUri="/academic/gen/quadra/preview/_web/standardContent/previewWebStandard.generator"/>
+							</sm:displayingBlock>
+							<sm:displayingBlock name="￼;Aperçu Web Opale (Version &quot;courte&quot;)￼" idInView="bkPreWebCourt" displayMode="memorized">
+								<sm:toolbar skinMenu="yes" homeButton="yes" openButton="yes" copyButton="yes" reloadButton="yes" navButtons="yes"/>
+								<sm:interactiveGenerator sc:refUri="/academic/gen/quadra/preview/_web/shortContent/previewWebShort.generator"/>
+							</sm:displayingBlock>
+						</sm:blocksTab>
+						<sm:blocksTab name="￼;Informations techniques￼" label="￼;Infos.￼" display="extra" idInView="tabInfo">
+							<sm:technicalInfoBlock name="￼;Informations techniques￼" idInView="bkTech" displayMode="lockedOpen"/>
+						</sm:blocksTab>
+						<sm:textEditorTab name="￼;Édition texte￼" label="￼;Texte￼" idInView="tabTxt" display="extra"/>
+					</sm:mainView>
+				</sm:class>
+				<sm:group name="￼;Grains￼" displayMode="closed" sortKey="D">
+					<sm:class sc:refUri="/academic/model/Uc/expUc.model" access="readWrite" sortKey="A">
+						<sm:mainView>
+							<sm:formEditorTab name="￼;Édition￼" idInView="tabEdit" display="visible" formEditorKey=""/>
+							<sm:blocksTab name="￼;Aperçu Web Opale￼" label="￼;Aperçu￼" display="visible" idInView="tabPreWeb">
+								<sm:displayingBlock name="￼;Aperçu Web Opale (Version &quot;standard&quot;)￼" idInView="bkPreWebStandard" displayMode="openedByDefault">
+									<sm:toolbar skinMenu="yes" homeButton="yes" openButton="yes" copyButton="yes" reloadButton="yes" navButtons="yes"/>
+									<sm:interactiveGenerator sc:refUri="/academic/gen/quadra/preview/_web/standardContent/previewWebStandard.generator"/>
+								</sm:displayingBlock>
+								<sm:displayingBlock name="￼;Aperçu Web Opale (Version &quot;courte&quot;)￼" idInView="bkPreWebCourt" displayMode="memorized">
+									<sm:toolbar skinMenu="yes" homeButton="yes" openButton="yes" copyButton="yes" reloadButton="yes" navButtons="yes"/>
+									<sm:interactiveGenerator sc:refUri="/academic/gen/quadra/preview/_web/shortContent/previewWebShort.generator"/>
+								</sm:displayingBlock>
+							</sm:blocksTab>
+							<sm:blocksTab name="￼;Informations techniques￼" label="￼;Infos.￼" display="extra" idInView="tabInfo">
+								<sm:technicalInfoBlock name="￼;Informations techniques￼" idInView="bkTech" displayMode="lockedOpen"/>
+							</sm:blocksTab>
+							<sm:textEditorTab name="￼;Édition texte￼" label="￼;Texte￼" idInView="tabTxt" display="extra"/>
+						</sm:mainView>
+					</sm:class>
+					<sm:class sc:refUri="/academic/model/Uc/practUc.model" access="readWrite" sortKey="B"/>
+					<sm:class sc:refUri="/academic/model/Ua/assmntUa.model" access="readWrite" sortKey="C"/>
+				</sm:group>
+			</sm:group>
+			<sm:group name="￼;Quiz Topaze (à points pondérés)￼" displayMode="closed" sortKey="C">
+				<sm:class sc:refUri="/case/model/co/quiz/mcqSurPts.model" access="readWrite" sortKey="A"/>
+				<sm:class sc:refUri="/case/model/co/quiz/mcqMurSum.model" access="readWrite" sortKey="B"/>
+				<sm:class sc:refUri="/case/model/co/quiz/mcqMurMap.model" access="readWrite" sortKey="C"/>
+			</sm:group>
+			<sm:group name="￼;Quiz Opale (juste / faux)￼" displayMode="closed" sortKey="D">
+				<sm:class sc:refUri="/academic/model/Uc/quiz/mcqSur.model" access="readWrite" sortKey="A"/>
+				<sm:class sc:refUri="/academic/model/Uc/quiz/mcqMur.model" access="readWrite" sortKey="B"/>
+				<sm:class sc:refUri="/academic/model/Uc/quiz/match.model" access="readWrite" sortKey="C"/>
+				<sm:class sc:refUri="/academic/model/Uc/quiz/ordWord.model" access="readWrite" sortKey="D"/>
+				<sm:class sc:refUri="/academic/model/Uc/quiz/cloze.model" access="readWrite" sortKey="E"/>
+				<sm:class sc:refUri="/academic/model/Uc/quiz/field.model" access="readWrite" sortKey="F"/>
+				<sm:class sc:refUri="/academic/model/Uc/quiz/numerical.model" access="readWrite" sortKey="G"/>
+				<sm:class sc:refUri="/academic/model/Uc/quiz/coQuiz.model" access="readWrite" sortKey="H"/>
+				<sm:group name="￼;Exercices graphiques￼" displayMode="open" sortKey="I">
+					<sm:class sc:refUri="/academic/model/Uc/quiz/mcgSur.model" access="readWrite" sortKey="A"/>
+					<sm:class sc:refUri="/academic/model/Uc/quiz/mcgMur.model" access="readWrite" sortKey="B"/>
+				</sm:group>
+			</sm:group>
+			<sm:class sc:refUri="/case/model/plan/visualMap/visualMap.model" access="readWrite" sortKey="E"/>
+			<sm:class sc:refUri="/case/model/co/objects/coach.model" access="readWrite" sortKey="V"/>
+		</sm:group>
+		<sm:group name="￼;Références￼" sortKey="E">
+			<sm:class sc:refUri="/academic/model/Re/refs/acr.model" access="readWrite" sortKey="A"/>
+			<sm:class sc:refUri="/academic/model/Re/refs/glos.model" access="readWrite" sortKey="B"/>
+			<sm:class sc:refUri="/academic/model/Re/refs/bib.model" access="readWrite" sortKey="C"/>
+		</sm:group>
+		<sm:group name="￼;Ressources￼" displayMode="closed" sortKey="F">
+			<sm:group name="￼;Images￼" displayMode="open" sortKey="A">
+				<sm:class sc:refUri="/binaries/jpg/jpeg.model" access="readWrite" sortKey="A"/>
+				<sm:class sc:refUri="/binaries/gif/gif.model" access="readWrite" sortKey="B"/>
+				<sm:class sc:refUri="/binaries/png/png.model" access="readWrite" sortKey="C"/>
+			</sm:group>
+			<sm:group name="￼;Schémas vectoriels￼" displayMode="open" sortKey="B">
+				<sm:class sc:refUri="/binaries/odg/odg.model" access="readWrite" sortKey="A"/>
+			</sm:group>
+			<sm:group name="￼;Tableaux￼" displayMode="open" sortKey="C">
+				<sm:class sc:refUri="/binaries/ods/ods.model" access="readWrite" sortKey="A"/>
+			</sm:group>
+			<sm:group name="￼;Formules Mathématiques￼" displayMode="closed" sortKey="E">
+				<sm:class sc:refUri="/math/odf/odf.model" access="readWrite" sortKey="A"/>
+				<sm:class sc:refUri="/math/latex/mathTex.model" access="readWrite" sortKey="B"/>
+			</sm:group>
+			<sm:group name="￼;Vidéos, sons, interactions￼" displayMode="closed" sortKey="D">
+				<sm:class sc:refUri="/binaries/mp3/mp3.model" access="readWrite" sortKey="A"/>
+				<sm:class sc:refUri="/binaries/oga/oga.model" access="readWrite" sortKey="B"/>
+				<sm:class sc:refUri="/binaries/opus/opus.model" access="readWrite" sortKey="C"/>
+				<sm:class sc:refUri="/binaries/flash/flash.model" access="readWrite" sortKey="D"/>
+				<sm:class sc:refUri="/binaries/avi/avi.model" access="readWrite" sortKey="E"/>
+				<sm:class sc:refUri="/binaries/flv/flv.model" access="readWrite" sortKey="F"/>
+				<sm:class sc:refUri="/binaries/mp4/mp4.model" access="readWrite" sortKey="G"/>
+				<sm:class sc:refUri="/binaries/mov/mov.model" access="readWrite" sortKey="H"/>
+				<sm:class sc:refUri="/binaries/mpg/mpg.model" access="readWrite" sortKey="I"/>
+				<sm:class sc:refUri="/binaries/rm/rm.model" access="readWrite" sortKey="J"/>
+				<sm:class sc:refUri="/binaries/webm/webm.model" access="readWrite" sortKey="K"/>
+				<sm:class sc:refUri="/binaries/wmv/wmv.model" access="readWrite" sortKey="L"/>
+				<sm:class sc:refUri="/academic/model/Re/eSite/eSite.model" access="readWrite" sortKey="M"/>
+				<sm:class sc:refUri="/binaries/eWeb/eWeb.model" access="readWrite" sortKey="N"/>
+				<sm:class sc:refUri="/academic/model/Re/mediaWeb/mediaWeb.model" access="readWrite" sortKey="O"/>
+				<sm:class sc:refUri="/academic/model/Re/gallery.model" access="readWrite" sortKey="P"/>
+				<sm:class sc:refUri="/academic/model/Re/simu.model" access="readWriteNoCreator" sortKey="G"/>
+			</sm:group>
+			<sm:group name="￼;Documents bureautiques￼" displayMode="closed" sortKey="F">
+				<sm:class sc:refUri="/binaries/doc/doc.model" access="readWrite" sortKey="A"/>
+				<sm:class sc:refUri="/binaries/xls/xls.model" access="readWrite" sortKey="B"/>
+				<sm:class sc:refUri="/binaries/ppt/ppt.model" access="readWrite" sortKey="C"/>
+				<sm:class sc:refUri="/binaries/odp/odp.model" access="readWrite" sortKey="D"/>
+				<sm:class sc:refUri="/binaries/odt/odt.model" access="readWrite" sortKey="E"/>
+				<sm:class sc:refUri="/binaries/pdf/pdf.model" access="readWrite" sortKey="F"/>
+				<sm:class sc:refUri="/binaries/zip/zip.model" access="readWrite" sortKey="G"/>
+			</sm:group>
+			<sm:group name="￼;Ressources techniques￼" displayMode="closed" sortKey="G">
+				<sm:class sc:refUri="/academic/model/Re/code.model" access="readWrite" sortKey="A"/>
+				<sm:group name="￼;Applets￼" displayMode="closed" sortKey="B">
+					<sm:class sc:refUri="/academic/model/Re/applet/applet.model" access="readWrite" sortKey="A"/>
+					<sm:class sc:refUri="/academic/model/Re/applet/jar.model" access="readWrite" sortKey="B"/>
+				</sm:group>
+			</sm:group>
+		</sm:group>
+		<sm:group name="￼;Exports￼" displayMode="closed" sortKey="G">
+			<sm:class sc:refUri="/case/model/scormRoot.model" access="readWrite">
+				<sm:mainView>
+					<sm:formEditorTab name="￼;Edition￼" idInView="tabEdit" display="visible" formEditorKey=""/>
+					<sm:blocksTab name="￼;Informations techniques￼" label="￼;Infos.￼" display="extra" idInView="tabInfo">
+						<sm:technicalInfoBlock name="￼;Informations techniques￼" idInView="bkTech" displayMode="lockedOpen"/>
+					</sm:blocksTab>
+					<sm:blocksTab name="￼;Publications￼" label="￼;Publi.￼" display="visible" idInView="tabPub">
+						<sm:generatorsBlock name="￼;Publications￼" displayMode="lockedOpen">
+							<sm:genBox>
+								<sm:generator sc:refUri="/case/gen/progress/scormMono/scormMono.generator"/>
+								<sm:deployment sc:refUri="/academic/gen/_scorm/genDeploy/packScorm2k4.genDeploy"/>
+							</sm:genBox>
+						</sm:generatorsBlock>
+					</sm:blocksTab>
+					<sm:textEditorTab name="￼;Édition texte￼" label="￼;Texte￼" idInView="tabTxt" display="extra"/>
+				</sm:mainView>
+			</sm:class>
+		</sm:group>
+		<sm:group name="￼;Métadonnées pré-renseignées￼" displayMode="closed" sortKey="H">
+			<sm:class sc:refUri="/academic/model/metaData/info.model" access="readWrite" sortKey="A"/>
+			<sm:class sc:refUri="/academic/model/metaData/infoBin.model" access="readWrite" sortKey="B"/>
+		</sm:group>
+		<sm:class sc:refUri="/binaries/undef/undefBinary.model" access="readWriteNoCreator" sortKey="I">
+			<sm:mainView>
+				<sm:formEditorTab name="￼;Propriétés￼" idInView="tabEdit" display="visible" formEditorKey=""/>
+			</sm:mainView>
+		</sm:class>
+		<sm:class sc:refUri="/binaries/undef/xml.model" access="readWriteNoCreator" sortKey="J"/>
+	</sm:publicClasses>
+	<sm:defaultMainView>
+		<sm:formEditorTab name="￼;Édition￼" idInView="tabEdit" display="visible" formEditorKey="" usedIn="nonBinaryClasses"/>
+		<sm:blocksTab name="￼;Visualisation￼" label="￼;Visu.￼" idInView="tabView" display="visible" usedIn="binaryClasses">
+			<sm:block name="￼;Dimensions￼" code="size" idInView="bkSize" displayMode="openedByDefault" usedIn="binaryClasses"/>
+			<sm:previewBlock name="￼;Aperçu￼" idInView="bkPreview" displayMode="openedByDefault"/>
+			<sm:technicalInfoBlock name="￼;Informations techniques￼" idInView="bkTech" displayMode="closedByDefault" usedIn="allClasses"/>
+		</sm:blocksTab>
+		<sm:formEditorTab name="￼;Propriétés￼" label="￼;Props.￼" idInView="tabEdit" display="visible" formEditorKey="" usedIn="binaryClasses"/>
+		<sm:blocksTab name="￼;Informations techniques￼" label="￼;Infos.￼" idInView="tabInfo" display="extra" usedIn="nonBinaryClasses">
+			<sm:technicalInfoBlock name="￼;Informations techniques￼" idInView="bkTech" displayMode="lockedOpen" usedIn="allClasses"/>
+		</sm:blocksTab>
+		<sm:textEditorTab name="￼;Édition texte￼" label="￼;Texte￼" idInView="tabTxt" display="extra"/>
+	</sm:defaultMainView>
+	<sm:wspUi>
+		<sm:freeUiOverlay targetUri="chrome://scenariWsp/content/desks/wspDesk/extTarget.js">(function(){
+//Affiche les critère avancés de recherche
+extPoints.setPref("criterions.advanced", 101, true);
+//Déclare les namespaces pour la recherche xpath avancée
+extPoints.addToList("namespaces.defaultList", "op", 101, "utc.fr:ics/opale3");
+extPoints.addToList("namespaces.defaultList", "opa", 101, "kelis.fr:opa");
+extPoints.addToList("namespaces.defaultList", "sc", 101, "http://www.utc.fr/ics/scenari/v3/core");
+extPoints.addToList("namespaces.defaultList", "sp", 101, "http://www.utc.fr/ics/scenari/v3/primitive");
+})();</sm:freeUiOverlay>
+	</sm:wspUi>
+	<sm:migration>
+		<sm:update sc:refUri="/case/_migr/migrFromTopaze_1.0.1.00.doss">
+			<sm:from key="Topaze" majorVersion="1" mediumVersion="0" minorVersion="100" scenariVersion="3.6"/>
+			<sm:to key="Topaze" majorVersion="1" mediumVersion="0" minorVersion="902" scenariVersion="3.7"/>
+		</sm:update>
+		<sm:update sc:refUri="/case/_migr/migrFromTopaze_1.1.0.01.doss">
+			<sm:from key="Topaze" majorVersion="1" mediumVersion="1" minorVersion="001" scenariVersion="3.7"/>
+			<sm:to key="Topaze" majorVersion="1" mediumVersion="2" minorVersion="000" scenariVersion="3.7"/>
+		</sm:update>
+		<sm:update sc:refUri="/case/_migr/migrFromTopaze_1.2.0.00.doss">
+			<sm:from key="Topaze" majorVersion="1" mediumVersion="2" minorVersion="000" scenariVersion="3.7"/>
+			<sm:to key="Topaze" majorVersion="1" mediumVersion="2" minorVersion="001" scenariVersion="3.7"/>
+		</sm:update>
+		<sm:update sc:refUri="/academic/migr/migrFromOpale3.3.xxx.doss">
+			<sm:from key="Topaze" majorVersion="1" mediumVersion="2" minorVersion="001" scenariVersion="3.7"/>
+			<sm:to key="Topaze" majorVersion="1" mediumVersion="2" minorVersion="002" scenariVersion="3.7"/>
+		</sm:update>
+		<sm:update sc:refUri="/case/_migr/migrFromTopaze_1.2.0.09.doss">
+			<sm:from key="Topaze" majorVersion="1" mediumVersion="2" minorVersion="009" scenariVersion="3.7"/>
+			<sm:to key="Topaze" majorVersion="1" mediumVersion="3" minorVersion="000" scenariVersion="4.0"/>
+		</sm:update>
+		<sm:update sc:refUri="/academic/migr/migrFromOpale3.5.000.doss">
+			<sm:from key="Topaze" majorVersion="1" mediumVersion="3" minorVersion="101" scenariVersion="4.0"/>
+			<sm:to key="Topaze" majorVersion="1" mediumVersion="3" minorVersion="102" scenariVersion="4.1"/>
+		</sm:update>
+		<sm:update sc:refUri="/academic/migr/migrFromOpale3.5.002.doss">
+			<sm:from key="Topaze" majorVersion="1" mediumVersion="3" minorVersion="102" scenariVersion="4.1"/>
+			<sm:to key="Topaze" majorVersion="1" mediumVersion="3" minorVersion="103" scenariVersion="4.1"/>
+		</sm:update>
+		<sm:update sc:refUri="/academic/migr/migrFromOpale3.5.006.doss">
+			<sm:from key="Topaze" majorVersion="1" mediumVersion="3" minorVersion="103" scenariVersion="4.1"/>
+			<sm:to key="Topaze" majorVersion="1" mediumVersion="3" minorVersion="104" scenariVersion="4.1"/>
+		</sm:update>
+		<sm:update sc:refUri="/case/_migr/migrFromTopaze_1.3.1.01.doss">
+			<sm:from key="Topaze" majorVersion="1" mediumVersion="3" minorVersion="104" scenariVersion="4.1"/>
+			<sm:to key="Topaze" majorVersion="1" mediumVersion="4" minorVersion="000" scenariVersion="4.1"/>
+		</sm:update>
+		<sm:update sc:refUri="/academic/migr/migrFromOpale3.5.008.doss">
+			<sm:from key="Topaze" majorVersion="1" mediumVersion="4" minorVersion="000" scenariVersion="4.1"/>
+			<sm:to key="Topaze" majorVersion="1" mediumVersion="4" minorVersion="001" scenariVersion="4.1"/>
+		</sm:update>
+		<sm:update sc:refUri="/academic/migr/migrFromOpale3.5.009.doss">
+			<sm:from key="Topaze" majorVersion="1" mediumVersion="4" minorVersion="001" scenariVersion="4.1"/>
+			<sm:to key="Topaze" majorVersion="1" mediumVersion="4" minorVersion="003" scenariVersion="4.1"/>
+		</sm:update>
+	</sm:migration>
+</sm:wspDefinition>

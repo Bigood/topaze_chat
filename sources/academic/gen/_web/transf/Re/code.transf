@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:sourceCodeHtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Re/code.model"/>
+	<sm:content>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<sm:addSrcPath/>
+			<sm:Widget sc:refUri="/academic/gen/_web/widg/code/scCodeMgr.uiwidget"/>
+			<div class="code">
+				<sm:WFormatedCodeBlock widgetClass="code-form" lineNumbers="yes"/>
+				<sm:WRawCodeBlock widgetClass="code-raw noIndex" hidden="yes"/>
+			</div>
+		</div>
+	</sm:content>
+</sm:sourceCodeHtmlTransf>

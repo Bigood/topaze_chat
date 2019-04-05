@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Ua/assmntUa.model"/>
+	<sm:content format="xhtml">
+		<sm:for codes="obj">
+			<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBk.uiwidget">
+				<sm:xhtmlContentZone key="co">
+					<sm:WHeadingBlock widgetClass="bkBase" class="BkObj">
+						<sm:title>
+							<sm:fixedTitle value="￼;Objectifs￼"/>
+						</sm:title>
+						<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBkCo.uiwidget">
+							<sm:xhtmlContentZone key="co">
+								<sm:callSubModel/>
+							</sm:xhtmlContentZone>
+						</sm:Widget>
+					</sm:WHeadingBlock>
+				</sm:xhtmlContentZone>
+			</sm:Widget>
+		</sm:for>
+		<sm:for codes="intro">
+			<sm:choose>
+				<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultShort/include.cond">
+					<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBk.uiwidget">
+						<sm:xhtmlContentZone key="co">
+							<sm:WHeadingBlock widgetClass="bkBase" class="bkIntro">
+								<sm:title>
+									<sm:fixedTitle value="￼;Introduction￼"/>
+								</sm:title>
+								<sm:callSubModel axis="co"/>
+							</sm:WHeadingBlock>
+						</sm:xhtmlContentZone>
+					</sm:Widget>
+				</sm:when>
+			</sm:choose>
+		</sm:for>
+		<sm:for codes="quiz">
+			<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssContainer.uiwidget">
+				<sm:xhtmlContentZone key="co">
+					<sm:WHeadingBlock widgetClass="bkBase" class="bkAssmntQuiz">
+						<sm:title>
+							<sm:subModelTitle/>
+						</sm:title>
+						<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBkRoot.uiwidget">
+							<sm:xhtmlContentZone key="co">
+								<sm:callSubModel axis="quizIn"/>
+							</sm:xhtmlContentZone>
+						</sm:Widget>
+					</sm:WHeadingBlock>
+				</sm:xhtmlContentZone>
+			</sm:Widget>
+		</sm:for>
+		<sm:choose>
+			<sm:when sc:refUri="/academic/gen/_sld/cnd/includeSol.cond">
+				<sm:for codes="quiz">
+					<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssContainer.uiwidget">
+						<sm:xhtmlContentZone key="co">
+							<sm:WHeadingBlock widgetClass="bkBase" class="bkAssmntSol">
+								<sm:title>
+									<sm:subModelTitle/>
+								</sm:title>
+								<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBkRoot.uiwidget">
+									<sm:xhtmlContentZone key="co">
+										<sm:callSubModel axis="quizOut"/>
+									</sm:xhtmlContentZone>
+								</sm:Widget>
+							</sm:WHeadingBlock>
+						</sm:xhtmlContentZone>
+					</sm:Widget>
+				</sm:for>
+			</sm:when>
+		</sm:choose>
+	</sm:content>
+</sm:compositionXhtmlTransf>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bindings xmlns="http://www.mozilla.org/xbl" xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" xmlns:xbl="http://www.mozilla.org/xbl" xmlns:html="http://www.w3.org/1999/xhtml">
+	<binding id="eweb" extends="chrome://scenarixedlib/content/libUiBase/widgets/xedUiBase.xbl.xml#boundedElement">
+		<content orient="vertical" flex="1">
+			<children/>
+			<xul:hbox>
+				<xul:vbox flex="0">
+					<xul:iframe anonid="previewFrame" class="fragPreview" src="" flex="1"/>
+				</xul:vbox>
+				<xul:spacer flex="1" anonid="previewSpacer"/>
+			</xul:hbox>
+		</content>
+		<implementation>
+			<field name="fPreviewFrame">document.getAnonymousElementByAttribute(this, "anonid", "previewFrame")</field>
+			<field name="fPreviewSpacer">document.getAnonymousElementByAttribute(this, "anonid", "previewSpacer")</field>
+			<field name="fSitePtr">xed.getBind(this).getElementsByAttribute("eWebPtr", "true")[0]</field>
+			<field name="fHeightInput">xed.getBind(this).getElementsByAttribute("heightInput", "true")[0]</field>
+			<field name="fWidthInput">xed.getBind(this).getElementsByAttribute("widthInput", "true")[0]</field>
+			<method name="onxedload"><!-- Init - called on xed load -->
+				<body><![CDATA[
+					try{
+						//log.info("eSite.onxedload");
+						this.fPreviewFrame.docShell.allowJavascript = true;
+						var vXbl = this;
+						var vSizeElement = xed.getBind(this).getElementsByAttribute("sizeElt", "true")[0];
+						vSizeElement.addEventListener("XEDDataChange", function(pEvt){vXbl.xedChanged(pEvt);}, false);
+						this.fSitePtr.addItemInfoListener(function(){vXbl.refresh();});
+						this.fHeightInput.addInputObserver(this);
+						this.fWidthInput.addInputObserver(this);
+
+						if (!xed.getBind(this.fHeightInput).fValue) xed.getBind(this.fHeightInput).fValue = "400";
+						
+						this.fPreviewFrame.parentNode.height = xed.getBind(this.fHeightInput).fValue;
+						var vWidth = xed.getBind(this.fWidthInput).fValue;
+						this.fPreviewFrame.parentNode.width = vWidth;
+						this.fPreviewFrame.parentNode.flex = (vWidth ? 0 : 1);
+						this.fPreviewSpacer.flex = (vWidth ? 1 : 0);
+						this.refresh();
+					} catch(e){xed.debug("ERROR - eSite.onxedload: "+e)}
+				]]></body>
+			</method>
+			<method name="inputEdited"><!-- Resize the preview frame when the size inputs are edited -->
+				<body><![CDATA[
+					try{
+						//log.info("eSite.inputEdited");
+						this.fPreviewFrame.parentNode.height = this.fHeightInput.getInputValue();
+						var vWidth = (this.fWidthInput && this.fWidthInput.getInputValue ? this.fWidthInput.getInputValue() : "0");
+						var vXedWidth = xed.getBind(this.fWidthInput).fValue;
+						this.fPreviewFrame.parentNode.width = vWidth;
+						this.fPreviewFrame.parentNode.flex = (vXedWidth ? 0 : 1);
+						this.fPreviewSpacer.flex = (vXedWidth ? 1 : 0);
+						} catch(e){xed.debug("ERROR - eSite.inputEdited: "+e)}
+				]]></body>
+			</method>
+			<method name="xedChanged">
+				<parameter name="pEvt"/>
+				<body><![CDATA[
+					//log.info("eSite.xedChanged");
+					if (pEvt.target.getAttribute("widthElt")){
+						this.fWidthInput = xed.getBind(this).getElementsByAttribute("widthInput", "true")[0];
+						this.fWidthInput.addInputObserver(this);
+						this.inputEdited();
+					}
+				]]></body>
+			</method>
+			<method name="refresh"><!-- Refresh the preview frame -->
+				<body><![CDATA[
+					try{
+						//log.info("eSite.refresh");
+						var vUriItem = this.fSitePtr.getSrcUri();
+						var vIndex = "";
+						if (vUriItem && vUriItem.length>0)  vIndex = document.fUriObject.getContentUrlByFullUri(wsp.buildFullUri(document.fUriObject.getWspCd(), vUriItem + "/index.html"));
+						this.fPreviewFrame.setAttribute("src", vIndex);
+					} catch(e){xed.debug("ERROR - eSite.refresh: "+e)}
+				]]></body>
+			</method>
+			<method name="autoSize"><!-- Update de height of the preview frame -->
+				<body><![CDATA[
+					try{
+						//log.info("eSite.autoSize");
+						var vHeight = document.fPreviewFrame.contentDocument.body.scrollHeight;
+						if (vHeight != this.fPreviewHeight){
+							document.fPreviewFrame.parentNode.height = 100;
+							document.fPreviewFrame.parentNode.height = vHeight+2;
+							this.fPreviewHeight = vHeight;
+						}
+					} catch(e){xed.debug("ERROR - eSite.autoSize: "+e)}
+				]]></body>
+			</method>
+		</implementation>
+	</binding>
+</bindings>
+
+

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="￼;Support Web￼">
+	<sm:help quickHelp="￼;Permet de publier le support Web￼"/>
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="webRoot" itemExtension="publi"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/academic/model/root/webRootM.model" usage="required"/>
+		<sm:part code="ue" name="￼;Module Opale￼" family="sub-level" internalized="never" usage="required">
+			<sm:allowedModel sc:refUri="/academic/model/Ue/ue.model"/>
+		</sm:part>
+	</sm:structure>
+	<sm:authoring>
+		<sm:icon sc:refUri="/academic/model/_ico/gen/web.png"/>
+		<sm:itemNameCreator>
+			<sm:folderName/>
+			<sm:fixedString value="￼;_￼"/>
+			<sm:fixedString value="￼?note=utilis%C3%A9%20dans%20un%20nom%20de%20fichier%20(sans%20accent%20ou%20caract%C3%A8res%20sp%C3%A9ciaux%20!);web￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:formEditor indentXml="true">
+			<sm:composition>
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/gen/webBig.png"/>
+								<sm:name style="font-family:arial;font-size:1.8em; background-color:#c70000; color:white; -moz-border-radius:5px; -moz-padding-start:4px; -moz-padding-end:4px; margin-left:5px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:composition>
+			<sm:part refCode="ue">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="-moz-border-radius:25px 25px 25px 25px; border:4px solid #a7a9ac; margin-left:10px;margin-right:10px; margin-top:10px">
+							<sm:head style="margin-top:5px; margin-bottom:5px">
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/ueMedium.png"/>
+								<sm:name style="margin-left:5px; color:#4668ad; font-size:1.6em; font-family:arial"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/ueMediumFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:compositionPrim>

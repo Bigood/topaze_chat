@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transparentUiFrame xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:uiServices>
+		<sm:uiService sc:refUri="/academic/gen/_web/svc/assmnt.uiservice"/>
+		<sm:uiService sc:refUri="/academic/gen/_web/svc/scSearch.uiservice"/>
+	</sm:uiServices>
+	<sm:rootContext>
+		<sm:none lookForInternContext="yes"/>
+	</sm:rootContext>
+	<sm:callRootModel axis="rootModel"/>
+</sm:transparentUiFrame>

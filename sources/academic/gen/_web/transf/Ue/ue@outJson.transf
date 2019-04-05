@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:genericWebSiteTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Ue/ue.model"/>
+	<sm:axis code="outJson"/>
+	<sm:navigation>
+		<sm:page template="json">
+			<sm:title/>
+			<sm:outlineClasses>
+				<sm:fixedString value="hidden"/>
+			</sm:outlineClasses>
+			<sm:mainZone format="text">
+				<sm:Widget sc:refUri="/academic/gen/_web/widg/out/outJson.uiwidget"/>
+			</sm:mainZone>
+		</sm:page>
+	</sm:navigation>
+</sm:genericWebSiteTransf>

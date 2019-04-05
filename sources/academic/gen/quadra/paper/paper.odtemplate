@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:odTemplateText xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0">
+	<sm:properties>
+		<sm:meta name="title">
+			<sm:rootTitle format="fullTitleText"/>
+		</sm:meta>
+		<sm:meta name="description">
+			<sm:callRootModelMeta axis="metaDesc"/>
+		</sm:meta>
+	</sm:properties>
+	<sm:contentView>
+		<sm:heading/>
+		<sm:defaultStyle/>
+		<sm:footnote/>
+	</sm:contentView>
+	<sm:contentStruct>
+		<sm:WPageMaster style="content">
+			<sm:pagesLayout>
+				<sm:mainStylePage header="hide" footer="hide"/>
+				<sm:stylePage style="typo" header="hide" footer="hide"/>
+				<sm:stylePage style="section" header="hide" footer="show"/>
+				<sm:stylePage style="left" header="show" footer="show"/>
+				<sm:stylePage style="right" header="show" footer="show"/>
+			</sm:pagesLayout>
+			<sm:header>
+				<sm:headerContentLeft>
+					<sm:left>
+						<sm:WArea style="partTitleLeft">
+							<sm:WParagraph style="partTitleLeftP">
+								<sm:dynamicString>
+									<sm:refHeading format="name" level="1"/>
+								</sm:dynamicString>
+							</sm:WParagraph>
+						</sm:WArea>
+					</sm:left>
+				</sm:headerContentLeft>
+				<sm:headerContentRight>
+					<sm:left>
+						<sm:WArea style="partTitleRight">
+							<sm:WParagraph style="partTitleRightP">
+								<sm:dynamicString>
+									<sm:refHeading format="name" level="1"/>
+								</sm:dynamicString>
+							</sm:WParagraph>
+						</sm:WArea>
+					</sm:left>
+				</sm:headerContentRight>
+			</sm:header>
+			<sm:body>
+				<!--# Page de garde-->
+				<sm:WFlowTextArea style="title">
+					<sm:rootTitle format="fullTitleText"/>
+				</sm:WFlowTextArea>
+				<sm:WFlowArea style="licence">
+					<sm:callRootModelMeta axis="licences"/>
+				</sm:WFlowArea>
+				<sm:WFlowArea style="author">
+					<sm:callRootModelMeta axis="authors"/>
+				</sm:WFlowArea>
+				<sm:WFlowArea style="coll">
+					<sm:callRootModelMeta axis="coll"/>
+				</sm:WFlowArea>
+				<sm:WFlowArea style="date">
+					<sm:callRootModelMeta axis="date"/>
+				</sm:WFlowArea>
+				<sm:WFlowArea style="id">
+					<sm:callRootModelMeta axis="id"/>
+				</sm:WFlowArea>
+				<sm:WFlowArea style="version">
+					<sm:callRootModelMeta axis="version"/>
+				</sm:WFlowArea>
+				<sm:WFlowArea style="logo">
+					<sm:callRootModelMeta axis="logo"/>
+				</sm:WFlowArea>
+				<!--# Conventions typographiques-->
+				<sm:choose>
+					<sm:when xpath="/*/*/op:odRootM/sp:typo='yes'">
+						<sm:WParagraph style="typoTitle">
+							<sm:fixedString value="￼;Légende￼"/>
+						</sm:WParagraph>
+						<sm:choose>
+							<sm:when xpath="/*/*/op:odRootM/sp:settings/sp:glos='yes'">
+								<sm:Widget sc:refUri="/academic/gen/_od/widg/typo.odwidget">
+									<sm:odContentZone key="zPrefix">
+										<sm:WParagraph style="ctRef">
+											<sm:fixedString value=""/>
+										</sm:WParagraph>
+									</sm:odContentZone>
+									<sm:odContentZone key="zTxt">
+										<sm:fixedString value="￼;Entrée du glossaire￼"/>
+									</sm:odContentZone>
+								</sm:Widget>
+							</sm:when>
+						</sm:choose>
+						<sm:choose>
+							<sm:when xpath="/*/*/op:odRootM/sp:settings/sp:acr='yes'">
+								<sm:Widget sc:refUri="/academic/gen/_od/widg/typo.odwidget">
+									<sm:odContentZone key="zPrefix">
+										<sm:WParagraph style="ctRef">
+											<sm:fixedString value=""/>
+										</sm:WParagraph>
+									</sm:odContentZone>
+									<sm:odContentZone key="zTxt">
+										<sm:fixedString value="￼;Abréviation￼"/>
+									</sm:odContentZone>
+								</sm:Widget>
+							</sm:when>
+						</sm:choose>
+						<sm:choose>
+							<sm:when xpath="/*/*/op:odRootM/sp:settings/sp:bib='yes'">
+								<sm:Widget sc:refUri="/academic/gen/_od/widg/typo.odwidget">
+									<sm:odContentZone key="zPrefix">
+										<sm:WParagraph style="ctRef">
+											<sm:fixedString value=""/>
+										</sm:WParagraph>
+									</sm:odContentZone>
+									<sm:odContentZone key="zTxt">
+										<sm:fixedString value="￼;Référence Bibliographique￼"/>
+									</sm:odContentZone>
+								</sm:Widget>
+							</sm:when>
+						</sm:choose>
+						<sm:choose>
+							<sm:when xpath="/*/*/op:odRootM/sp:settings/sp:ref='yes'">
+								<sm:Widget sc:refUri="/academic/gen/_od/widg/typo.odwidget">
+									<sm:odContentZone key="zPrefix">
+										<sm:WParagraph style="ctRef">
+											<sm:fixedString value=""/>
+										</sm:WParagraph>
+									</sm:odContentZone>
+									<sm:odContentZone key="zTxt">
+										<sm:fixedString value="￼;Référence générale￼"/>
+									</sm:odContentZone>
+								</sm:Widget>
+							</sm:when>
+						</sm:choose>
+					</sm:when>
+				</sm:choose>
+				<!--# Table des matières-->
+				<sm:Widget sc:refUri="/academic/gen/_od/widg/headerSection.odwidget">
+					<sm:odContentZone key="addInTdm">
+						<sm:fixedString value="false"/>
+					</sm:odContentZone>
+					<sm:odContentZone key="zTitle">
+						<sm:fixedString value="￼;Table des matières￼"/>
+					</sm:odContentZone>
+				</sm:Widget>
+				<sm:WTableOfContents style="toc"/>
+				<!--# Contenu-->
+				<sm:callRootModel/>
+				<!--# Ressources pointées non affichées dans le contenu-->
+				<sm:showDataBlocks refCategory="res" hideIfNoBlocks="yes">
+					<sm:heading>
+						<sm:title>
+							<sm:fixedString value="￼;Ressources annexes￼"/>
+						</sm:title>
+						<sm:Widget sc:refUri="/academic/gen/_od/widg/headerSection.odwidget">
+							<sm:odContentZone key="addInTdm">
+								<sm:fixedString value="true"/>
+							</sm:odContentZone>
+							<sm:odContentZone key="zTitle">
+								<sm:fixedString value="￼;Ressources annexes￼"/>
+							</sm:odContentZone>
+						</sm:Widget>
+						<sm:WSection style="resContent">
+							<sm:forEachBlock>
+								<sm:WParagraph style="resTitle">
+									<sm:WInline style="puceRes">
+										<sm:fixedString value="- "/>
+									</sm:WInline>
+									<sm:callBlockLabel/>
+								</sm:WParagraph>
+								<sm:WSection globalStyle="indentContent">
+									<sm:callBlockData/>
+								</sm:WSection>
+							</sm:forEachBlock>
+						</sm:WSection>
+					</sm:heading>
+				</sm:showDataBlocks>
+				<!--# Questions de synthèse-->
+				<sm:choose>
+					<sm:when xpath="/*/*/op:odRootM/sp:settings/sp:quest='yes'">
+						<sm:showDataBlocks refCategory="synth" hideIfNoBlocks="yes">
+							<sm:heading>
+								<sm:title>
+									<sm:fixedString value="￼;Questions de synthèse￼"/>
+								</sm:title>
+								<sm:Widget sc:refUri="/academic/gen/_od/widg/headerSection.odwidget">
+									<sm:odContentZone key="addInTdm">
+										<sm:fixedString value="true"/>
+									</sm:odContentZone>
+									<sm:odContentZone key="zTitle">
+										<sm:fixedString value="￼;Questions de synthèse￼"/>
+									</sm:odContentZone>
+								</sm:Widget>
+								<sm:WSection style="synthContent">
+									<sm:forEachBlock>
+										<sm:Widget sc:refUri="/academic/gen/_od/widg/quest.odwidget">
+											<sm:odContentZone key="title">
+												<sm:dynamicString>
+													<sm:freeXslFragment>￼@raw?syntax=xml;</sm:freeXslFragment>
+												</sm:dynamicString>
+												<sm:fixedString value="Question "/>
+												<sm:callBlockPosition numbering="1"/>
+												<sm:dynamicString>
+													<sm:freeXslFragment>￼</sm:freeXslFragment>
+												</sm:dynamicString>
+											</sm:odContentZone>
+											<sm:odContentZone key="content">
+												<sm:callBlockData/>
+											</sm:odContentZone>
+										</sm:Widget>
+									</sm:forEachBlock>
+								</sm:WSection>
+							</sm:heading>
+						</sm:showDataBlocks>
+					</sm:when>
+				</sm:choose>
+				<!--# Solution des exercices-->
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_od/_cnd/filters/publishSol.cond">
+						<sm:showDataBlocks refCategory="solution" hideIfNoBlocks="yes">
+							<sm:heading>
+								<sm:title>
+									<sm:fixedString value="￼;Solution des exercices￼"/>
+								</sm:title>
+								<sm:Widget sc:refUri="/academic/gen/_od/widg/headerSection.odwidget">
+									<sm:odContentZone key="addInTdm">
+										<sm:fixedString value="true"/>
+									</sm:odContentZone>
+									<sm:odContentZone key="zTitle">
+										<sm:fixedString value="￼;Solution des exercices￼"/>
+									</sm:odContentZone>
+								</sm:Widget>
+								<sm:WSection style="solExContent">
+									<sm:forEachBlock>
+										<sm:WParagraph style="titleSolEx">
+											<sm:dynamicString>
+												<sm:freeXslFragment>￼@raw?syntax=xml;</sm:freeXslFragment>
+											</sm:dynamicString>
+											<sm:WInline style="puceSolEx">
+												<sm:fixedString value="&gt; "/>
+											</sm:WInline>
+											<sm:WInline style="numSolution">
+												<sm:fixedString value="Solution n°"/>
+												<sm:callBlockPosition numbering="1"/>
+											</sm:WInline>
+											<sm:WInline style="titleSolExRef">
+												<sm:fixedString value=" (exercice p. "/>
+												<sm:callBlockPages separator=","/>
+												<sm:fixedString value=")"/>
+											</sm:WInline>
+											<sm:dynamicString>
+												<sm:freeXslFragment>￼</sm:freeXslFragment>
+											</sm:dynamicString>
+										</sm:WParagraph>
+										<sm:WSection globalStyle="indentContent">
+											<sm:callBlockData/>
+										</sm:WSection>
+									</sm:forEachBlock>
+								</sm:WSection>
+							</sm:heading>
+						</sm:showDataBlocks>
+					</sm:when>
+				</sm:choose>
+				<!--# Glossaire-->
+				<sm:choose>
+					<sm:when xpath="/*/*/op:odRootM/sp:settings/sp:glos='yes'">
+						<sm:showDataBlocks refCategory="glos" hideIfNoBlocks="yes">
+							<sm:heading>
+								<sm:title>
+									<sm:fixedString value="￼;Glossaire￼"/>
+								</sm:title>
+								<sm:Widget sc:refUri="/academic/gen/_od/widg/headerSection.odwidget">
+									<sm:odContentZone key="addInTdm">
+										<sm:fixedString value="true"/>
+									</sm:odContentZone>
+									<sm:odContentZone key="zTitle">
+										<sm:fixedString value="￼;Glossaire￼"/>
+									</sm:odContentZone>
+								</sm:Widget>
+								<sm:WSection style="glosContent">
+									<sm:forEachBlock>
+										<sm:callBlockData/>
+									</sm:forEachBlock>
+								</sm:WSection>
+							</sm:heading>
+						</sm:showDataBlocks>
+					</sm:when>
+				</sm:choose>
+				<!--# Liste des abréviations-->
+				<sm:choose>
+					<sm:when xpath="/*/*/op:odRootM/sp:settings/sp:acr='yes'">
+						<sm:showDataBlocks refCategory="acr" hideIfNoBlocks="yes">
+							<sm:heading>
+								<sm:title>
+									<sm:fixedString value="￼;Signification des abréviations￼"/>
+								</sm:title>
+								<sm:Widget sc:refUri="/academic/gen/_od/widg/headerSection.odwidget">
+									<sm:odContentZone key="addInTdm">
+										<sm:fixedString value="true"/>
+									</sm:odContentZone>
+									<sm:odContentZone key="zTitle">
+										<sm:fixedString value="￼;Signification des abréviations￼"/>
+									</sm:odContentZone>
+								</sm:Widget>
+								<sm:WSection style="acrContent">
+									<sm:forEachBlock>
+										<sm:callBlockData/>
+									</sm:forEachBlock>
+								</sm:WSection>
+							</sm:heading>
+						</sm:showDataBlocks>
+					</sm:when>
+				</sm:choose>
+				<!--# Reference-->
+				<sm:choose>
+					<sm:when xpath="/*/*/op:odRootM/sp:settings/sp:ref='yes'">
+						<sm:showDataBlocks refCategory="ref" hideIfNoBlocks="yes">
+							<sm:heading>
+								<sm:title>
+									<sm:fixedString value="￼;Références￼"/>
+								</sm:title>
+								<sm:Widget sc:refUri="/academic/gen/_od/widg/headerSection.odwidget">
+									<sm:odContentZone key="addInTdm">
+										<sm:fixedString value="true"/>
+									</sm:odContentZone>
+									<sm:odContentZone key="zTitle">
+										<sm:fixedString value="￼;Références￼"/>
+									</sm:odContentZone>
+								</sm:Widget>
+								<sm:WSection style="refContent">
+									<sm:forEachBlock>
+										<sm:WParagraph globalStyle="spaceBeforeKeep" display="always"/>
+										<sm:Widget sc:refUri="/academic/gen/_od/widg/ref.odwidget">
+											<sm:odContentZone key="zTitle">
+												<sm:fixedString value="["/>
+												<sm:WInline style="refLabel">
+													<sm:callBlockLabel/>
+												</sm:WInline>
+												<sm:fixedString value="]"/>
+											</sm:odContentZone>
+											<sm:odContentZone key="zContent">
+												<sm:callBlockData/>
+											</sm:odContentZone>
+										</sm:Widget>
+									</sm:forEachBlock>
+								</sm:WSection>
+							</sm:heading>
+						</sm:showDataBlocks>
+					</sm:when>
+				</sm:choose>
+				<!--# Bibliographie-->
+				<sm:choose>
+					<sm:when xpath="/*/*/op:odRootM/sp:settings/sp:bib='yes'">
+						<sm:showDataBlocks refCategory="bib" hideIfNoBlocks="yes">
+							<sm:heading>
+								<sm:title>
+									<sm:fixedString value="￼;Bibliographie￼"/>
+								</sm:title>
+								<sm:Widget sc:refUri="/academic/gen/_od/widg/headerSection.odwidget">
+									<sm:odContentZone key="addInTdm">
+										<sm:fixedString value="true"/>
+									</sm:odContentZone>
+									<sm:odContentZone key="zTitle">
+										<sm:fixedString value="￼;Bibliographie￼"/>
+									</sm:odContentZone>
+								</sm:Widget>
+								<sm:WSection style="bibContent">
+									<sm:forEachBlock>
+										<sm:WSection style="bibEntry">
+											<sm:callBlockData/>
+										</sm:WSection>
+									</sm:forEachBlock>
+								</sm:WSection>
+							</sm:heading>
+						</sm:showDataBlocks>
+						<sm:showDataBlocks refCategory="web" hideIfNoBlocks="yes">
+							<sm:heading>
+								<sm:title>
+									<sm:fixedString value="￼;Webographie￼"/>
+								</sm:title>
+								<sm:Widget sc:refUri="/academic/gen/_od/widg/headerSection.odwidget">
+									<sm:odContentZone key="addInTdm">
+										<sm:fixedString value="true"/>
+									</sm:odContentZone>
+									<sm:odContentZone key="zTitle">
+										<sm:fixedString value="￼;Webographie￼"/>
+									</sm:odContentZone>
+								</sm:Widget>
+								<sm:WSection style="bibContent">
+									<sm:forEachBlock>
+										<sm:WSection style="bibEntry">
+											<sm:callBlockData/>
+										</sm:WSection>
+									</sm:forEachBlock>
+								</sm:WSection>
+							</sm:heading>
+						</sm:showDataBlocks>
+					</sm:when>
+				</sm:choose>
+				<!--# Index-->
+				<sm:choose>
+					<sm:when xpath="/*/*/op:odRootM/sp:settings/sp:index='yes'">
+						<sm:showDataBlocks refCategory="keywd" hideIfNoBlocks="yes">
+							<sm:heading>
+								<sm:title>
+									<sm:fixedString value="￼;Index￼"/>
+								</sm:title>
+								<sm:Widget sc:refUri="/academic/gen/_od/widg/headerSection.odwidget">
+									<sm:odContentZone key="addInTdm">
+										<sm:fixedString value="true"/>
+									</sm:odContentZone>
+									<sm:odContentZone key="zTitle">
+										<sm:fixedString value="￼;Index￼"/>
+									</sm:odContentZone>
+								</sm:Widget>
+								<sm:WSection style="indexContent">
+									<sm:forEachBlock>
+										<sm:WParagraph style="paraKeyword">
+											<sm:WInline style="labelKeyword">
+												<sm:callBlockLabel/>
+											</sm:WInline>
+											<sm:WInline style="underlineKeyword">
+												<sm:formattingMark>
+													<sm:tabulation/>
+												</sm:formattingMark>
+											</sm:WInline>
+											<sm:WInline style="pageKeyword">
+												<sm:dynamicString>
+													<sm:freeXslFragment>￼@raw?syntax=xml;</sm:freeXslFragment>
+												</sm:dynamicString>
+												<sm:fixedString value=" p."/>
+												<sm:callBlockPages separator=", "/>
+												<sm:dynamicString>
+													<sm:freeXslFragment>￼</sm:freeXslFragment>
+												</sm:dynamicString>
+											</sm:WInline>
+										</sm:WParagraph>
+									</sm:forEachBlock>
+								</sm:WSection>
+							</sm:heading>
+						</sm:showDataBlocks>
+					</sm:when>
+				</sm:choose>
+				<!--# Crédit des ressources-->
+				<sm:choose>
+					<sm:when xpath="/*/*/op:odRootM/sp:settings/sp:resource='yes'">
+						<sm:showDataBlocks refCategory="cprRes" hideIfNoBlocks="yes">
+							<sm:heading>
+								<sm:title>
+									<sm:fixedString value="￼;Crédit des ressources￼"/>
+								</sm:title>
+								<sm:Widget sc:refUri="/academic/gen/_od/widg/headerSection.odwidget">
+									<sm:odContentZone key="addInTdm">
+										<sm:fixedString value="true"/>
+									</sm:odContentZone>
+									<sm:odContentZone key="zTitle">
+										<sm:fixedString value="￼;Crédit des ressources￼"/>
+									</sm:odContentZone>
+								</sm:Widget>
+								<sm:WSection style="ressContent">
+									<sm:forEachBlock>
+										<sm:WParagraph style="titleRes">
+											<sm:WInline style="ressLabel">
+												<sm:callBlockLabel/>
+											</sm:WInline>
+											<sm:WInline style="ressPage">
+												<sm:dynamicString>
+													<sm:freeXslFragment>￼@raw?syntax=xml;</sm:freeXslFragment>
+												</sm:dynamicString>
+												<sm:fixedString value=" p. "/>
+												<sm:callBlockPages separator=","/>
+												<sm:dynamicString>
+													<sm:freeXslFragment>￼</sm:freeXslFragment>
+												</sm:dynamicString>
+											</sm:WInline>
+										</sm:WParagraph>
+										<sm:WSection globalStyle="indentContent">
+											<sm:callBlockData/>
+										</sm:WSection>
+									</sm:forEachBlock>
+								</sm:WSection>
+							</sm:heading>
+						</sm:showDataBlocks>
+					</sm:when>
+				</sm:choose>
+				<!--# UC pointés non affichés dans le contenu-->
+				<sm:choose>
+					<sm:when xpath="not(/*/*/op:odRootM/sp:settings/sp:uc='no')">
+						<sm:showDataBlocks refCategory="uc" hideIfNoBlocks="yes">
+							<sm:heading>
+								<sm:title>
+									<sm:fixedString value="￼;Contenus annexes￼"/>
+								</sm:title>
+								<sm:Widget sc:refUri="/academic/gen/_od/widg/headerSection.odwidget">
+									<sm:odContentZone key="addInTdm">
+										<sm:fixedString value="true"/>
+									</sm:odContentZone>
+									<sm:odContentZone key="zTitle">
+										<sm:fixedString value="￼;Contenus annexes￼"/>
+									</sm:odContentZone>
+								</sm:Widget>
+								<sm:WSection style="ucContent">
+									<sm:forEachBlock>
+										<sm:WParagraph style="resTitle">
+											<sm:WInline style="puceRes">
+												<sm:fixedString value="- "/>
+											</sm:WInline>
+											<sm:callBlockLabel/>
+										</sm:WParagraph>
+										<sm:WSection globalStyle="indentContent">
+											<sm:callBlockData/>
+										</sm:WSection>
+									</sm:forEachBlock>
+								</sm:WSection>
+							</sm:heading>
+						</sm:showDataBlocks>
+					</sm:when>
+				</sm:choose>
+			</sm:body>
+			<sm:footer>
+				<sm:footerContentLeft>
+					<sm:left>
+						<sm:WArea style="cpyL">
+							<sm:callRootModelMeta axis="cpyL"/>
+						</sm:WArea>
+						<sm:WArea style="pageL">
+							<sm:WParagraph style="page" display="always">
+								<sm:dynamicString>
+									<sm:pageNumber/>
+								</sm:dynamicString>
+							</sm:WParagraph>
+						</sm:WArea>
+					</sm:left>
+				</sm:footerContentLeft>
+				<sm:footerContentRight>
+					<sm:left>
+						<sm:WArea style="cpyR">
+							<sm:callRootModelMeta axis="cpyR"/>
+						</sm:WArea>
+						<sm:WArea style="pageR">
+							<sm:WParagraph style="page" display="always">
+								<sm:dynamicString>
+									<sm:pageNumber/>
+								</sm:dynamicString>
+							</sm:WParagraph>
+						</sm:WArea>
+					</sm:left>
+				</sm:footerContentRight>
+			</sm:footer>
+		</sm:WPageMaster>
+	</sm:contentStruct>
+	<sm:sequenceDeclaration category="math" prefix="￼;Formule ￼" numbering="1" separator="  "/>
+	<sm:sequenceDeclaration category="tab" prefix="￼;Tableau ￼" numbering="1" separator="  "/>
+	<sm:sequenceDeclaration category="graph" prefix="￼;Graphique ￼" numbering="1" separator="  "/>
+	<sm:sequenceDeclaration category="img" prefix="￼;Image ￼" numbering="1" separator=" "/>
+	<sm:sequenceDeclaration category="anim" prefix="￼;Animation ￼" numbering="1" separator="  "/>
+	<sm:sequenceDeclaration category="doc" prefix="￼;Document ￼" numbering="1" separator="  "/>
+	<sm:dataBlockDeclaration category="acr" sort="ascending" hideSameBlock="yes" hideEmptyBlocks="yes">
+		<sm:conditionalContent>
+			<!--NOTE : pb avec le comportement précédent (affichage de la signification niquement au prmeier appel). Pb qd 1er appel dans refgenerale. Nécessite une évolution de modeling pour pouvoir exclure ces cas d'appel-->
+			<sm:dataShow>
+				<sm:ifDataIsShow>
+					<sm:WInline style="refIco">
+						<sm:hyperlink>
+							<sm:label>
+								<sm:fixedString value=""/>
+							</sm:label>
+							<sm:link>
+								<sm:toBlock position="firstCallData"/>
+							</sm:link>
+						</sm:hyperlink>
+					</sm:WInline>
+				</sm:ifDataIsShow>
+				<sm:ifDataIsNotShow/>
+			</sm:dataShow>
+		</sm:conditionalContent>
+	</sm:dataBlockDeclaration>
+	<sm:dataBlockDeclaration category="bib" sort="ascending" hideSameBlock="yes" hideEmptyBlocks="yes">
+		<sm:conditionalContent>
+			<sm:dataShow>
+				<sm:ifDataIsShow>
+					<sm:WInline style="refIco">
+						<sm:hyperlink>
+							<sm:label>
+								<sm:fixedString value=""/>
+							</sm:label>
+							<sm:link>
+								<sm:toBlock position="firstCallData"/>
+							</sm:link>
+						</sm:hyperlink>
+					</sm:WInline>
+				</sm:ifDataIsShow>
+				<sm:ifDataIsNotShow/>
+			</sm:dataShow>
+		</sm:conditionalContent>
+	</sm:dataBlockDeclaration>
+	<sm:dataBlockDeclaration category="web" sort="ascending" hideSameBlock="yes" hideEmptyBlocks="yes">
+		<sm:conditionalContent>
+			<sm:dataShow>
+				<sm:ifDataIsShow>
+					<sm:WInline style="refIco">
+						<sm:hyperlink>
+							<sm:label>
+								<sm:fixedString value=""/>
+							</sm:label>
+							<sm:link>
+								<sm:toBlock position="firstCallData"/>
+							</sm:link>
+						</sm:hyperlink>
+					</sm:WInline>
+				</sm:ifDataIsShow>
+				<sm:ifDataIsNotShow/>
+			</sm:dataShow>
+		</sm:conditionalContent>
+	</sm:dataBlockDeclaration>
+	<sm:dataBlockDeclaration category="glos" sort="ascending" hideSameBlock="yes" hideEmptyBlocks="yes">
+		<sm:conditionalContent>
+			<sm:dataShow>
+				<sm:ifDataIsShow>
+					<sm:WInline style="refIco">
+						<sm:hyperlink>
+							<sm:label>
+								<sm:fixedString value=""/>
+							</sm:label>
+							<sm:link>
+								<sm:toBlock position="firstCallData"/>
+							</sm:link>
+						</sm:hyperlink>
+					</sm:WInline>
+				</sm:ifDataIsShow>
+				<sm:ifDataIsNotShow/>
+			</sm:dataShow>
+		</sm:conditionalContent>
+	</sm:dataBlockDeclaration>
+	<sm:dataBlockDeclaration category="ref" sort="ascending" hideSameBlock="yes" hideEmptyBlocks="yes">
+		<sm:conditionalContent>
+			<sm:dataShow>
+				<sm:ifDataIsShow>
+					<sm:WInline style="refLabelExp">
+						<sm:callBlockLabel/>
+					</sm:WInline>
+					<sm:WInline style="refIco">
+						<sm:hyperlink>
+							<sm:label>
+								<sm:fixedString value=""/>
+							</sm:label>
+							<sm:link>
+								<sm:toBlock position="firstCallData"/>
+							</sm:link>
+						</sm:hyperlink>
+					</sm:WInline>
+				</sm:ifDataIsShow>
+				<sm:ifDataIsNotShow/>
+			</sm:dataShow>
+		</sm:conditionalContent>
+	</sm:dataBlockDeclaration>
+	<sm:dataBlockDeclaration category="solution" sort="none" hideSameBlock="yes" hideEmptyBlocks="yes">
+		<sm:conditionalContent>
+			<sm:dataShow>
+				<sm:ifDataIsShow>
+					<sm:WParagraph style="refSolution">
+						<sm:WInline style="puceRef">
+							<sm:fixedString value="["/>
+						</sm:WInline>
+						<sm:dynamicString>
+							<sm:freeXslFragment>￼@raw?syntax=xml;</sm:freeXslFragment>
+						</sm:dynamicString>
+						<sm:fixedString value="Solution n°"/>
+						<sm:callBlockPosition numbering="1"/>
+						<sm:fixedString value=" p "/>
+						<sm:refBlock position="firstCallData">
+							<sm:blockPage/>
+						</sm:refBlock>
+						<sm:dynamicString>
+							<sm:freeXslFragment>￼</sm:freeXslFragment>
+						</sm:dynamicString>
+						<sm:WInline style="puceRef">
+							<sm:fixedString value="]"/>
+						</sm:WInline>
+					</sm:WParagraph>
+				</sm:ifDataIsShow>
+				<sm:ifDataIsNotShow/>
+			</sm:dataShow>
+		</sm:conditionalContent>
+	</sm:dataBlockDeclaration>
+	<sm:dataBlockDeclaration category="cprRes" sort="none" hideSameBlock="yes" hideEmptyBlocks="yes">
+		<sm:noContent/>
+	</sm:dataBlockDeclaration>
+	<sm:dataBlockDeclaration category="keywd" sort="ascending" hideSameBlock="yes" hideEmptyBlocks="no">
+		<sm:noContent/>
+	</sm:dataBlockDeclaration>
+	<sm:dataBlockDeclaration category="synth" sort="none" hideSameBlock="yes" hideEmptyBlocks="yes">
+		<sm:noContent/>
+	</sm:dataBlockDeclaration>
+	<sm:dataBlockDeclaration category="res" sort="none" hideSameBlock="yes" hideEmptyBlocks="yes" hideBlockIfShowInContent="yes">
+		<sm:content>
+			<sm:WInline style="linkRes">
+				<sm:hyperlink>
+					<sm:label>
+						<sm:dynamicString>
+							<sm:freeXslFragment>￼@raw?syntax=xml;</sm:freeXslFragment>
+						</sm:dynamicString>
+						<sm:fixedString value=" (cf. "/>
+						<sm:callBlockLabel/>
+						<sm:fixedString value=" p "/>
+						<sm:refBlock position="firstCallData">
+							<sm:blockPage/>
+						</sm:refBlock>
+						<sm:fixedString value=")"/>
+						<sm:dynamicString>
+							<sm:freeXslFragment>￼</sm:freeXslFragment>
+						</sm:dynamicString>
+					</sm:label>
+					<sm:link>
+						<sm:toBlock position="firstCallData"/>
+					</sm:link>
+				</sm:hyperlink>
+			</sm:WInline>
+		</sm:content>
+	</sm:dataBlockDeclaration>
+	<sm:dataBlockDeclaration category="uc" sort="none" hideSameBlock="yes" hideEmptyBlocks="yes" hideBlockIfShowInContent="yes">
+		<sm:conditionalContent>
+			<sm:dataShow>
+				<sm:ifDataIsShow>
+					<sm:hyperlink>
+						<sm:label>
+							<sm:dynamicString>
+								<sm:freeXslFragment>￼@raw?syntax=xml;</sm:freeXslFragment>
+							</sm:dynamicString>
+							<sm:fixedString value=" - p."/>
+							<sm:refBlock position="firstCallData">
+								<sm:blockPage/>
+							</sm:refBlock>
+							<sm:dynamicString>
+								<sm:freeXslFragment>￼</sm:freeXslFragment>
+							</sm:dynamicString>
+						</sm:label>
+						<sm:link>
+							<sm:toBlock position="firstCallData"/>
+						</sm:link>
+					</sm:hyperlink>
+				</sm:ifDataIsShow>
+				<sm:ifDataIsNotShow/>
+			</sm:dataShow>
+		</sm:conditionalContent>
+	</sm:dataBlockDeclaration>
+</sm:odTemplateText>

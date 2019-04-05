@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><sma:assmntUnitMlqOdTransf xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/ordWord.model"/>
+	<sm:axis code="asw"/>
+	<sm:content>
+		<sm:WList style="listOrderWordAsw">
+			<sm:forLabel display="inDataOrder">
+				<sm:WListItem>
+					<sm:callLabelModel/>
+				</sm:WListItem>
+			</sm:forLabel>
+		</sm:WList>
+		<sm:callGlobalExplanationModel/>
+	</sm:content>
+</sma:assmntUnitMlqOdTransf>

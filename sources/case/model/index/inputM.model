@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:dataFormPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Formule à appliquer à chaque input￼">
+	<sm:identification targetNamespace="kelis.fr:opa" targetPrefix="opa" code="inputM" itemExtension="xml"/>
+	<sm:structure>
+		<sm:setOf code="form" name="￼;Formule￼" occurrence="zeroOrOne">
+			<sm:field code="rate" name="￼;Coefficient multiplicateur￼">
+				<sm:string/>
+			</sm:field>
+			<sm:field code="translate" name="￼;Addition d'une valeur￼">
+				<sm:string/>
+			</sm:field>
+			<sm:group code="map" name="￼;Réaffectation par bornes￼">
+				<sm:field code="sup" name="￼;Si strictement supérieur à￼" occurrence="zeroOrOne">
+					<sm:string/>
+				</sm:field>
+				<sm:field code="inf" name="￼;Si strictement inférieur à￼" occurrence="zeroOrOne">
+					<sm:string/>
+				</sm:field>
+				<sm:field code="val" name="￼;Valeur affectée￼" occurrence="one">
+					<sm:string/>
+				</sm:field>
+			</sm:group>
+			<sm:group code="limit" name="￼;Limite entre deux valeurs￼">
+				<sm:field code="map" name="￼;Bornes￼" occurrence="one">
+					<sm:enum>
+						<sm:option key="int" name="￼;Comprises entre (bornes incluses)￼"/>
+						<sm:option key="ext" name="￼;Non comprises entre (bornes non incluses)￼"/>
+					</sm:enum>
+				</sm:field>
+				<sm:field code="min" name="￼;Valeur minimum￼" occurrence="one">
+					<sm:string/>
+				</sm:field>
+				<sm:field code="max" name="￼;Valeur maximum￼" occurrence="one">
+					<sm:string/>
+				</sm:field>
+				<sm:field code="val" name="￼;Valeur affectée￼" occurrence="one">
+					<sm:string/>
+				</sm:field>
+			</sm:group>
+		</sm:setOf>
+	</sm:structure>
+	<sm:storage/>
+</sm:dataFormPrim>

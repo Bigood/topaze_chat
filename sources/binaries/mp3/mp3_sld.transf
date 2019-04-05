@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:binaryXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/binaries/mp3/mp3.model"/>
+	<sm:fullTitleText>
+		<sm:callBinaryMeta/>
+	</sm:fullTitleText>
+	<sm:shortTitleText>
+		<sm:callBinaryMeta/>
+	</sm:shortTitleText>
+	<sm:content>
+		<sm:WCaptionBlock widgetClass="resInFlow" class="ssCutable ssFixedHeight" position="bottom">
+			<sm:caption>
+				<sm:title>
+					<sm:binaryMeta/>
+				</sm:title>
+			</sm:caption>
+			<sm:content>
+				<sm:WFreeBlock>
+					<audio xmlns="http://www.w3.org/1999/xhtml" controls="controls">
+						<source onerror="tplMgr.xMediaFallback(this.parentNode)">
+							<addAttribute name="src">
+								<sm:binaryUrl/>
+							</addAttribute>
+						</source>
+						<sm:WAudioMp3>
+							<sm:binaryUrl/>
+							<sm:declareSize width="400" height="30"/>
+							<sm:stopButton/>
+							<sm:volumeButton/>
+							<sm:configFile format="text" src="player/mp3.txt" srcFrom="skin"/>
+						</sm:WAudioMp3>
+					</audio>
+				</sm:WFreeBlock>
+			</sm:content>
+		</sm:WCaptionBlock>
+	<!--ATTENTION l'élément suivant à été ajouté en XSL par la dérivation.--><sm:callModel xmlns:op="utc.fr:ics/opale3" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sext="http://www.utc.fr/ics/scenari/v3/modeling/extension"><sm:current axis="credits"/></sm:callModel></sm:content>
+</sm:binaryXhtmlTransf>

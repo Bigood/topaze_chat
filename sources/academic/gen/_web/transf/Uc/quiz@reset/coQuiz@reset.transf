@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><sma:assmntCompositionDhtmlTransf xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns="http://www.w3.org/1999/xhtml">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/coQuiz.model"/>
+	<sm:axis code="reset"/>
+	<sm:scenario>
+		<sm:sequence/>
+	</sm:scenario>
+	<sm:publicFunctions>
+		<sm:function fctName="reset">
+			<sm:for codes="trainUcMcqSur trainUcMcqMur trainUcField trainUcNumerical trainUcCloze">
+				<sm:callFunction fctName="reset" axis="resetSub"/>
+			</sm:for>
+		</sm:function>
+	</sm:publicFunctions>
+	<sm:assmntBody>
+		<sm:callModel>
+			<sm:current axis="resetSub"/>
+		</sm:callModel>
+	</sm:assmntBody>
+</sma:assmntCompositionDhtmlTransf>

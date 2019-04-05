@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:genericWebSiteTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/mcgMur.model"/>
+	<sm:axis code="nav"/>
+	<sm:navigation>
+		<sm:page template="page">
+			<sm:title>
+				<sm:dynamicString>
+					<sm:freeSelect xpath="if(op:exeM/sp:title,concat('￼Exercice : ￼',op:exeM/sp:title),'￼Exercice￼')"/>
+				</sm:dynamicString>
+			</sm:title>
+			<sm:outlineClasses>
+				<sm:fixedString value="mnu_trainUc"/>
+			</sm:outlineClasses>
+			<sm:mainZone format="xhtml">
+				<scBlock xmlns="http://www.w3.org/1999/xhtml" class="mainContent">
+					<sm:choose>
+						<sm:when xpath="op:exeM/sp:title">
+							<hx class="mainContent_ti">
+								<sm:callModel view="fullTitleText">
+									<sm:current/>
+								</sm:callModel>
+							</hx>
+						</sm:when>
+					</sm:choose>
+					<sm:Widget sc:refUri="/academic/gen/_web/widg/util/noJsWarn.uiwidget"/>
+					<sm:Widget sc:refUri="/academic/gen/_web/widg/refs/kwrdEntries.uiwidget"/>
+					<!--ATTENTION l'élément suivant à été modifié en XSL par la dérivation.--><div xmlns="" xmlns:op="utc.fr:ics/opale3" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sext="http://www.utc.fr/ics/scenari/v3/modeling/extension" class="divQuiz"><sm:callModel view="xhtmlContent"><sm:current axis="quizOpale"/></sm:callModel></div>
+				</scBlock>
+			</sm:mainZone>
+			<sm:zone key="zIconPage" format="xhtml">
+				<div xmlns="http://www.w3.org/1999/xhtml" class="decoTrainUc"/>
+			</sm:zone>
+			<sm:zone key="zLegal" format="xhtml">
+				<sm:callModel view="xhtmlContent">
+					<sm:current axis="legal"/>
+				</sm:callModel>
+			</sm:zone><!--ATTENTION l'élément suivant à été ajouté en XSL par la dérivation.--><sm:zone xmlns:op="utc.fr:ics/opale3" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sext="http://www.utc.fr/ics/scenari/v3/modeling/extension" format="xhtml" key="zCoach"><sm:callModel><sm:lookForAscendants axis="coach" direction="currentToRoot"><sm:callableModel sc:refUri="/case/model/node/heavyNode.model"/></sm:lookForAscendants></sm:callModel></sm:zone>
+			<sm:zone key="zKeywords" format="text">
+				<sm:callModel view="xhtmlContent">
+					<sm:root axis="keywds"/>
+				</sm:callModel>
+				<sm:callModel view="xhtmlContent">
+					<sm:current axis="keywds"/>
+				</sm:callModel>
+			</sm:zone>
+		</sm:page>
+	</sm:navigation>
+</sm:genericWebSiteTransf>

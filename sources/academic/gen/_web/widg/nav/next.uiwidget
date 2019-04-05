@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:navUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="next">
+	<sm:scope>
+		<sm:customized>
+			<sm:scopeStartingPoint>
+				<sm:fromAbsoluteTop descendantOffset="0" includeInScope="yes"/>
+			</sm:scopeStartingPoint>
+			<sm:ancestorEndingPoint/>
+			<sm:currentAndAncestorSiblings>
+				<sm:siblingsStartingPoint direction="scopeStartingPointToCurrent" offset="0">
+					<sm:stopAtModel sc:refUri="/academic/model/Ue/ue.model" axis="outline" includeInScope="no"/>
+				</sm:siblingsStartingPoint>
+				<sm:siblingsEndingPoint direction="currentToScopeStartingPoint" offset="0">
+					<sm:stopAtModel sc:refUri="/academic/model/Ue/ue.model" axis="outline" includeInScope="no"/>
+				</sm:siblingsEndingPoint>
+			</sm:currentAndAncestorSiblings>
+			<sm:currentDescendants/>
+		</sm:customized>
+	</sm:scope>
+	<sm:selectPage>
+		<sm:step>
+			<sm:next>
+				<sm:excludeModel sc:refUri="/academic/model/Ue/ue.model" axis="outJson"/>
+			</sm:next>
+		</sm:step>
+	</sm:selectPage>
+	<sm:content>
+		<sm:ifPageFound>
+			<sm:WLink widgetClass="navBtn nextBtn btnNxt">
+				<sm:label>
+					<sm:callModel>
+						<sm:root axis="lblBtnNext"/>
+					</sm:callModel>
+				</sm:label>
+				<sm:labelTitle>￼;Suivant (￼<sm:targetTitle/>)</sm:labelTitle>
+				<sm:link target="sameWindow"/>
+			</sm:WLink>
+		</sm:ifPageFound>
+		<sm:ifPageNotFound>
+			<span xmlns="http://www.w3.org/1999/xhtml" class="noNextBtn">
+				<sm:callModel>
+					<sm:root axis="lblBtnNextNo"/>
+				</sm:callModel>
+			</span>
+		</sm:ifPageNotFound>
+	</sm:content>
+</sm:navUiWidget>

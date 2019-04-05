@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:binaryXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/binaries/mp3/mp3.model"/>
+	<sm:axis code="zoom"/>
+	<sm:content>
+		<sm:WLink widgetClass="sfile_mp3_zoom_lnk sfile_lnk">
+			<sm:label>
+				<sm:title>
+					<sm:binaryTitle/>
+				</sm:title>
+			</sm:label>
+			<sm:labelTitle>
+				<sm:title>
+					<sm:binaryTitle suffix="￼; (nouvelle fenêtre)￼"/>
+				</sm:title>
+			</sm:labelTitle>
+			<sm:link target="newWindow" windowName="zoom">
+				<sm:behavior addLinkInHref="yes"/>
+				<sm:position>
+					<sm:centerScreen width="300" height="20"/>
+				</sm:position>
+				<sm:windowFeatures scrollbars="no"/>
+				<sm:WAudioMp3 widgetClass="resAudio">
+					<sm:binaryUrl/>
+					<sm:alt>
+						<sm:callBinaryMeta axis="alt"/>
+					</sm:alt>
+					<sm:declareSize width="300"/>
+					<sm:stopButton/>
+					<sm:volumeButton/>
+					<sm:configFile format="text" src="player/mp3.txt" srcFrom="skin"/>
+				</sm:WAudioMp3>
+			</sm:link>
+		</sm:WLink>
+		<sm:callBinaryMeta axis="info"/>
+	<!--ATTENTION l'élément suivant à été ajouté en XSL par la dérivation.--><sm:callModel xmlns:op="utc.fr:ics/opale3" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sext="http://www.utc.fr/ics/scenari/v3/modeling/extension"><sm:current axis="credits"/></sm:callModel></sm:content>
+</sm:binaryXhtmlTransf>

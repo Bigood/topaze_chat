@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget code="indexContent" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:fillTemplateBuffers>
+		<sm:postXslFragment keyXsl="xhtml">&lt;xsl:overlay match=&quot;div[containWord( @id, 'tplMain')]&quot;>
+   &lt;xsl:apply-templates mode=&quot;index&quot;/>
+&lt;/xsl:overlay>
+
+&lt;xsl:template match=&quot;*[containWord(@class,'noIndex')]&quot; mode=&quot;index&quot;/>
+&lt;xsl:template match=&quot;scTooltipTitle&quot; mode=&quot;index&quot;/>
+&lt;xsl:template match=&quot;scTooltipContent&quot; mode=&quot;index&quot;/>
+&lt;xsl:template match=&quot;addAttribute&quot; mode=&quot;index&quot;/>
+&lt;xsl:template match=&quot;script&quot; mode=&quot;index&quot;/>
+&lt;xsl:template match=&quot;noscript&quot; mode=&quot;index&quot;/>
+&lt;xsl:template match=&quot;text()&quot; mode=&quot;index&quot;>
+  &lt;xsl:value-of select=&quot;execute(java:com.scenari.m.ge.pages.SearchIndexPage.indexText($vDialog, 'index', 'indexBuffer', 'fullText', string(.)))&quot;/>
+&lt;/xsl:template>
+&lt;xsl:template match=&quot;*&quot; mode=&quot;index&quot;>
+  &lt;xsl:apply-templates mode=&quot;index&quot;/>
+&lt;/xsl:template>
+</sm:postXslFragment>
+	</sm:fillTemplateBuffers>
+	<sm:content/>
+</sm:openUiWidget>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:dataFormPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="￼;Paramétrage du support Présentation￼">
+	<sm:help quickHelp="￼;Permet de paramétrer les éléments que l'on souhaite faire apparaître dans la publication Présentation￼"/>
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="presRootM" itemExtension="xml"/>
+	<sm:structure>
+		<sm:field code="version" name="￼;Version￼" occurrence="zeroOrOne" family="property">
+			<sm:string/>
+		</sm:field>
+		<sm:field code="date" name="￼;Date de publication du support￼" occurrence="zeroOrOne" family="property">
+			<sm:string/>
+		</sm:field>
+		<sm:field code="auth" name="￼;Auteurs et copyrights￼" occurrence="zeroOrOne">
+			<sm:otherType sc:refUri="/academic/model/Re/sTxt.model"/>
+		</sm:field>
+		<sm:field code="contact" name="￼;Contact￼" occurrence="zeroOrOne">
+			<sm:otherType sc:refUri="/academic/model/Re/sTxt.model"/>
+		</sm:field>
+		<sm:field code="contentFilter" name="￼;Sélection du contenu￼" occurrence="zeroOrOne" family="property">
+			<sm:help quickHelp="￼;Sélection du contenu à inclure ou à exclure de la publication￼"/>
+			<sm:enum>
+				<sm:option key="short" name="￼;Version &quot;courte&quot;￼"/>
+				<sm:option key="standard" name="￼;Version &quot;standard&quot;￼"/>
+			</sm:enum>
+		</sm:field>
+		<sm:group code="settings" name="￼;Paramétrage￼" occurrence="zeroOrOne">
+			<sm:field code="solution" name="￼;Publier les solutions des exercices￼" occurrence="zeroOrOne" family="property">
+				<sm:enum>
+					<sm:option key="yes" name="￼;Oui￼"/>
+					<sm:option key="no" name="￼;Non￼"/>
+				</sm:enum>
+			</sm:field>
+		</sm:group>
+	</sm:structure>
+	<sm:storage/>
+</sm:dataFormPrim>

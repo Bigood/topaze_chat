@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sma:assmntUnitMcqPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sma="kelis.fr:scenari/modeling/assessment" name="￼;Question à Choix Unique à points￼" category="￼;Exercices￼">
+	<sm:help quickHelp="￼;Questionnaire à choix unique￼"/>
+	<sm:identification targetNamespace="kelis.fr:opa" targetPrefix="opa" code="mcqSurPts" itemExtension="quiz"/>
+	<sm:structure>
+		<sm:questionModel name="￼;Énoncé￼" sc:refUri="/academic/model/Re/res.model"/>
+		<sm:choices name="￼;Choix￼">
+			<sm:choice name="￼;Réponse￼" min="2" max="5">
+				<sm:choiceLabelModel name="￼;Libellé￼" sc:refUri="/academic/model/Re/txt.model"/>
+				<sm:choiceExplanationModel name="￼;Explication￼" sc:refUri="/academic/model/Re/txt.model" usage="optional"/>
+			</sm:choice>
+		</sm:choices>
+		<sm:globalExplanationModel name="￼;Explication globale￼" sc:refUri="/academic/model/Re/res.model" usage="optional"/>
+		<sm:solution name="￼;Solution￼">
+			<sm:singleUserResponse>
+				<sm:numericScoring name="￼;Score￼" step="1" default="1" displayFormat="numeric">
+					<sm:feedbackModel name="￼;Feedback￼" sc:refUri="/academic/model/Re/res.model" usage="optional"/>
+				</sm:numericScoring>
+			</sm:singleUserResponse>
+		</sm:solution>
+	</sm:structure>
+	<sm:authoring>
+		<sm:icon sc:refUri="/academic/model/_ico/mcqSurSmall.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;QCU￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:formEditor indentXml="true">
+			<sm:assmntUnitMcq tagStyle="font-family:arial;font-size:20px; background-color:#4668ad; color:white; -moz-border-radius:5px; padding-left:4px; padding-right:4px" fullTitleStyle="color:#513245;font-size:1.7em;font-weight:bold; text-align:center;">
+				<sm:iconTag sc:refUri="/academic/model/_ico/mcqSur.png"/>
+			</sm:assmntUnitMcq>
+		</sm:formEditor>
+	</sm:authoring>
+</sma:assmntUnitMcqPrim>

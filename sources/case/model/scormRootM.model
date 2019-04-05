@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:dataFormPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;scormRootM￼">
+	<sm:identification targetNamespace="kelis.fr:opa" targetPrefix="opa" code="scormRootM" itemExtension="xml"/>
+	<sm:structure>
+		<sm:field code="routes" name="￼;Suivre le parcours de l'étudiant￼" occurrence="zeroOrOne">
+			<sm:help quickHelp="￼;Non par défaut￼"/>
+			<sm:enum>
+				<sm:option key="yes" name="￼;Oui￼"/>
+				<sm:option key="no" name="￼;Non￼"/>
+			</sm:enum>
+		</sm:field>
+		<sm:field code="timeBeforeStopChrono" name="￼;Temps d'inactivité avant interruption du décompte du temps (en secondes)￼" occurrence="zeroOrOne">
+			<sm:help quickHelp="￼;30 secondes par défaut.￼"/>
+			<sm:string/>
+		</sm:field>
+		<sm:field code="globalIndex" name="￼;Indicateur de résultats￼" occurrence="zeroOrOne">
+			<sm:refItem>
+				<sm:allowedModel sc:refUri="/case/model/index/autoIndex.model"/>
+				<sm:allowedModel sc:refUri="/case/model/index/userIndex.model"/>
+				<sm:allowedModel sc:refUri="/academic/model/Re/applet/applet.model"/>
+			</sm:refItem>
+		</sm:field>
+		<sm:group code="indexes" name="￼;Indicateurs à suivre￼" occurrence="zeroOrOne">
+			<sm:field code="index" name="￼;Indicateur￼" occurrence="oneOrMore">
+				<sm:refItem>
+					<sm:allowedModel sc:refUri="/case/model/index/autoIndex.model"/>
+					<sm:allowedModel sc:refUri="/case/model/index/userIndex.model"/>
+					<sm:allowedModel sc:refUri="/academic/model/Re/applet/applet.model"/>
+				</sm:refItem>
+			</sm:field>
+		</sm:group>
+		<sm:group code="steps" name="￼;Étapes à suivre dans Moodle￼" occurrence="zeroOrOne">
+			<sm:field code="step" name="￼;Étape￼" occurrence="oneOrMore">
+				<sm:refItem>
+					<sm:allowedModel sc:refUri="/case/model/node/assmntNode.model"/>
+					<sm:allowedModel sc:refUri="/case/model/node/expNode.model"/>
+					<sm:allowedModel sc:refUri="/case/model/node/heavyNode.model"/>
+					<sm:allowedModel sc:refUri="/case/model/node/navNode.model"/>
+				</sm:refItem>
+			</sm:field>
+		</sm:group>
+		<sm:field code="endMessage" name="￼;Message de fin de parcours￼" occurrence="zeroOrOne">
+			<sm:help quickHelp="￼;Par défaut, &quot;Terminer et enregistrer votre parcours&quot;￼"/>
+			<sm:string/>
+		</sm:field>
+	</sm:structure>
+	<sm:storage/>
+	<sm:authoring>
+		<sm:formEditor indentXml="true">
+			<sm:group refCode="indexes" defaultStyle="property"/>
+			<sm:stringField refCode="index" autoRepeatField="yes" defaultStyle="property" textStyle="color :#6286cc ;"/>
+			<sm:stringField refCode="globalIndex" defaultStyle="property" textStyle="color :#6286cc ;"/>
+			<sm:stringField refCode="endMessage" defaultStyle="property" textStyle="color :#6286cc ;"/>
+			<sm:group refCode="steps" defaultStyle="property"/>
+			<sm:stringField refCode="step" autoRepeatField="yes" defaultStyle="property" textStyle="color :#6286cc ;"/>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:dataFormPrim>

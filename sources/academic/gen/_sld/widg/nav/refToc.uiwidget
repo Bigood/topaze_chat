@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:localOutlineUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="refToc">
+	<sm:content>
+		<sm:choose>
+			<sm:whenOutlineNotEmpty>
+				<div xmlns="http://www.w3.org/1999/xhtml" class="refToc">
+					<div class="refToc_ti">
+						<strong>￼;Contenu￼</strong>
+					</div>
+					<sm:localOutline>
+						<sm:nodeArch>
+							<sm:constraints>
+								<sm:depth max="1"/>
+							</sm:constraints>
+							<sm:unorderedList rootElt="none"/>
+						</sm:nodeArch>
+						<sm:nodeArch>
+							<sm:constraints>
+								<sm:depth min="1"/>
+							</sm:constraints>
+							<sm:inline rootElt="none">
+								<sm:noChildren/>
+							</sm:inline>
+						</sm:nodeArch>
+						<sm:classes>
+							<sm:depth prefix="loDepth_" onChildContainers="yes"/>
+							<sm:targetClasses onEntry="yes"/>
+						</sm:classes>
+					</sm:localOutline>
+				</div>
+				<sm:includeContent/>
+			</sm:whenOutlineNotEmpty>
+			<sm:otherwise>
+				<sm:includeContent/>
+			</sm:otherwise>
+		</sm:choose>
+	</sm:content>
+</sm:localOutlineUiWidget>

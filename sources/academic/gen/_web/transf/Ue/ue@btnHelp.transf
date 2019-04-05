@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Ue/ue.model"/>
+	<sm:axis code="btnHelp"/>
+	<!--pas de part help dans Opale, mais ceci est gardé en prévision d'extension-->
+	<sm:content format="xhtml"/>
+</sm:compositionXhtmlTransf>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="￼;Glossaire￼">
+	<sm:help quickHelp="￼;Renseigner une entrée de type glossaire￼"/>
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="glos" itemExtension="ref"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/academic/model/Re/refs/glosM.model" usage="required"/>
+	</sm:structure>
+	<sm:authoring>
+		<sm:icon sc:refUri="/academic/model/_ico/glossaireSmall.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼?note=utilis%C3%A9%20dans%20un%20nom%20de%20fichier%20(sans%20accent%20ou%20caract%C3%A8res%20sp%C3%A9ciaux%20!);glossaire￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:formEditor indentXml="true">
+			<sm:composition>
+				<sm:standardWidget tagStyle="font-family:arial;font-size:1.8em; background-color:#a056b0; color:white; -moz-border-radius:5px; -moz-padding-start:4px; -moz-padding-end:4px">
+					<sm:iconTag sc:refUri="/academic/model/_ico/glossaire.png"/>
+				</sm:standardWidget>
+			</sm:composition>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:compositionPrim>

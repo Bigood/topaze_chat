@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/math/latex/mathTex.model"/>
+	<sm:axis code="inline"/>
+	<sm:content>
+		<sm:Widget sc:refUri="/binaries/_sld/widg/imgInline.uiwidget">
+			<sm:xhtmlContentZone key="img">
+				<sm:Widget sc:refUri="/math/latex/getPng.uiwidget">
+					<sm:xhtmlContentZone key="scale">
+						<sm:WFreeBlock>2</sm:WFreeBlock>
+					</sm:xhtmlContentZone>
+					<sm:xhtmlContentZone key="class">
+						<sm:WFreeBlock>imgBase</sm:WFreeBlock>
+					</sm:xhtmlContentZone>
+				</sm:Widget>
+			</sm:xhtmlContentZone>
+			<sm:xhtmlContentZone key="imgOthers">
+				<sm:Widget sc:refUri="/math/latex/getPng.uiwidget">
+					<sm:xhtmlContentZone key="scale">
+						<sm:WFreeBlock>3</sm:WFreeBlock>
+					</sm:xhtmlContentZone>
+				</sm:Widget>
+			</sm:xhtmlContentZone>
+		</sm:Widget>
+	</sm:content>
+</sm:binaryXhtmlTransf>

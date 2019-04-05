@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Re/res.model"/>
+	<sm:content format="xhtml">
+		<sm:inDataOrder>
+			<sm:for codes="txt txtRes">
+				<sm:WSimpleBlock>
+					<sm:callSubModel/>
+				</sm:WSimpleBlock>
+			</sm:for>
+			<sm:for codes="listing">
+				<sm:WSimpleBlock widgetClass="listingBk">
+					<sm:callSubModel/>
+				</sm:WSimpleBlock>
+			</sm:for>
+			<sm:for codes="bkquote">
+				<sm:WSimpleBlock widgetClass="bkquoteOpen">
+					<sm:WSimpleBlock widgetClass="bkquoteClose">
+						<sm:WFreeBlock>
+							<blockquote xmlns="http://www.w3.org/1999/xhtml">
+								<sm:callSubModel/>
+							</blockquote>
+						</sm:WFreeBlock>
+					</sm:WSimpleBlock>
+				</sm:WSimpleBlock>
+			</sm:for>
+			<sm:for codes="res">
+				<sm:WSimpleBlock>
+					<sm:callPartMeta/>
+					<sm:choose>
+						<sm:when xpath="op:resInfoM/sp:pubMode='zoom'">
+							<sm:WFreeBlock>
+								<p xmlns="http://www.w3.org/1999/xhtml" class="zoom_p">
+									<sm:callSubModel axis="zoom"/>
+								</p>
+							</sm:WFreeBlock>
+						</sm:when>
+						<sm:otherwise>
+							<sm:callSubModel/>
+						</sm:otherwise>
+					</sm:choose>
+				</sm:WSimpleBlock>
+			</sm:for>
+			<sm:for codes="int">
+				<sm:callPartMeta/>
+				<sm:WFreeBlock>
+					<p xmlns="http://www.w3.org/1999/xhtml" class="lnkDoc">
+						<sm:addSrcPath/>
+						<!--
+<sm:WLink xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:label>
+		<sm:title>
+			<sm:subModelTitle/>
+			<sm:fixedTitle value="￼;Télécharger￼"/>
+		</sm:title>
+	</sm:label>
+	<sm:link>
+		<sm:callSubModel axis="url" navCtx="newRoot"/>
+	</sm:link>
+</sm:WLink>-->
+						<sm:callSubModel axis="lnk"/>
+					</p>
+				</sm:WFreeBlock>
+			</sm:for>
+			<sm:for codes="filtered">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:callSubModel/>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+		</sm:inDataOrder>
+	</sm:content>
+</sm:compositionXhtmlTransf>

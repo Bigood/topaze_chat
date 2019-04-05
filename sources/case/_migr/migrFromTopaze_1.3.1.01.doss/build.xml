@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="Migration Topaze 1.3.100 -> Topaze 1.4.000" default="main" basedir=".">
+	
+	<target name="main">
+		<echo>####### MIGRATION Topaze 1.3.101 -> Topaze 1.4.000</echo>
+		<tstamp><format property="timestamp" pattern="yyMMdd-HHmm"/></tstamp>
+		
+		<echo>=> migration de caseM.model ...</echo>
+		<migrateXsl style="${basedir}/caseM.xsl" filterXPath="//opa:caseM" filterXPathNs="opa:kelis.fr:opa;sc:http://www.utc.fr/ics/scenari/v3/core;sp:http://www.utc.fr/ics/scenari/v3/primitive">
+			<restrict>
+				<srcNode refid="scenari.wsp.src"/>
+				<name name="*.*"/>
+			</restrict>
+		</migrateXsl>
+
+		<tstamp><format property="timestamp" pattern="yyMMdd-HHmm"/></tstamp>
+		<tempfile property="temp.file"/>
+		<echo>=> création du fichier contenant les indicateurs avec moyenne ...</echo>
+		<echo file="${temp.file}" ><![CDATA[<?xmls version="1.0" encoding="UTF-8"?>
+			<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+				<op:expUc xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3">
+					<op:uM>
+						<sp:title>Indicateurs avec moyenne</sp:title>
+					</op:uM>
+					<sp:pb>
+						<op:pb>
+							<sp:info>
+								<op:pbTi/>
+								<op:res>
+									<sp:txt>
+										<op:txt>
+											<sc:itemizedList>
+		]]></echo>
+		<migrateXsl style="${basedir}/indAverage.xsl" filterXPath="//opa:autoIndex" filterXPathNs="opa:kelis.fr:opa;sc:http://www.utc.fr/ics/scenari/v3/core;sp:http://www.utc.fr/ics/scenari/v3/primitive">
+			<param name="pTraceFilePath" expression="${temp.file}"/>
+			<restrict>
+				<srcNode refid="scenari.wsp.src"/>
+				<name name="*.*"/>
+			</restrict>
+		</migrateXsl>
+		<echo file="${temp.file}" append="true"><![CDATA[
+											</sc:itemizedList>
+										</op:txt>
+									</sp:txt>
+								</op:res>
+							</sp:info>
+						</op:pb>
+					</sp:pb>
+				</op:expUc>
+			</sc:item>
+		]]></echo>
+
+		<!-- cleanup du fichier. Lié à insuffiances de la fonction redirect de xalan -->
+		<replaceregexp match='&lt;\?xml version="1\.0" encoding="UTF-8"\?&gt;' replace="" byline="true" flags="g" encoding="UTF-8" file="${temp.file}"/>
+		<replaceregexp match='&lt;\?xmls version="1\.0" encoding="UTF-8"\?&gt;' replace='&lt;\?xml version="1\.0" encoding="UTF-8"\?&gt;' byline="true" flags="g" encoding="UTF-8" file="${temp.file}"/>		
+
+		<srcNode id="scenari.wsp.src.test" fromId="scenari.wsp.src" path="#reportMigration_1_4_000/_indicateursAvecMoyenne_AMigrer.xml"/>
+		<concat destId="scenari.wsp.src.test">
+		   <fileset file="${temp.file}"/>
+		</concat>
+
+			
+		
+		<echo>--- Migration terminée ---</echo>
+	</target>
+	
+</project>

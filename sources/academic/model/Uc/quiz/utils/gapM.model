@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:dataFormPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="￼;Paramétrage des synonymes &amp; options￼">
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="gapM" itemExtension="xml"/>
+	<sm:structure>
+		<sm:group code="synonyms" name="￼;Synonymes￼" occurrence="zeroOrOne">
+			<sm:help quickHelp="￼;Ajoutez ici une liste de synonymes du mot présent dans le trou. Chaque synonyme est considéré comme une réponse juste.￼"/>
+			<sm:field code="synonym" name="￼;Synonyme￼" occurrence="zeroOrMore">
+				<sm:string/>
+			</sm:field>
+		</sm:group>
+		<sm:group code="options" name="￼;Options￼" occurrence="zeroOrOne">
+			<sm:help quickHelp="￼;Liste des options proposée telle qu'elle à l'apprenant. ATTENTION : le mot présent dans le trou ainsi que ses synonymes doivent être reportés dans les options.￼"/>
+			<sm:field code="option" name="￼;Option￼" occurrence="zeroOrMore">
+				<sm:string/>
+			</sm:field>
+		</sm:group>
+	</sm:structure>
+	<sm:storage/>
+	<sm:authoring>
+		<sm:formEditor indentXml="true">
+			<sm:group refCode="synonyms" defaultStyle="element">
+				<sm:help>
+					<sm:quickHelp>
+						<sm:description style="color:silver;font-style: italic;"/>
+					</sm:quickHelp>
+				</sm:help>
+			</sm:group>
+			<sm:group refCode="options" defaultStyle="element">
+				<sm:help>
+					<sm:quickHelp>
+						<sm:description style="color:silver;font-style: italic;"/>
+					</sm:quickHelp>
+				</sm:help>
+			</sm:group>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:dataFormPrim>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="persistDataUi">
+	<sm:content>
+		<div xmlns="http://www.w3.org/1999/xhtml" id="gotoLastLocation" style="display: none;">
+			<a href="#" onclick="scServices['scLoad'].loadFromRoot(scServices.locationStorage.getLocation()); return false;" title="￼Retrouver la dernière page consultée du module￼">￼;Ouvrir la dernière page consultée￼</a>
+		</div>
+		<script xmlns="http://www.w3.org/1999/xhtml">scOnLoads[scOnLoads.length] = {
+ onLoad: function() {
+  if(scServices.locationStorage &amp;&amp; scServices.locationStorage.getLocation()) {
+   sc$("gotoLastLocation").style.display = "";
+  }
+ }
+}
+
+</script>
+	</sm:content>
+</sm:openUiWidget>

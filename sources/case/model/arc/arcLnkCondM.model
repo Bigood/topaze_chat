@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:dataFormPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="￼;Lien conditionné vers une étape￼">
+	<sm:identification targetNamespace="kelis.fr:opa" targetPrefix="opa" code="arcLnkCondM" itemExtension="xml"/>
+	<sm:structure>
+		<sm:subData code="cond" name="￼;Condition￼" occurrence="one">
+			<sm:allowedDataModel sc:refUri="/case/model/arc/condM.model"/>
+			<sm:allowedDataModel sc:refUri="/case/model/arc/condSimpleM.model"/>
+		</sm:subData>
+		<sm:field code="trans" name="￼;Transition￼" occurrence="zeroOrOne" family="property">
+			<sm:otherType sc:refUri="/academic/model/Re/sPara.model"/>
+		</sm:field>
+		<sm:group code="imgTrans" name="￼;Image de transition￼" occurrence="zeroOrOne" family="property">
+			<sm:field code="type" name="￼;Type￼" occurrence="one" family="property">
+				<sm:help quickHelp="￼;Dans le cas d'une image représentative, le titre de l'étape suivante est masquée.￼"/>
+				<sm:enum>
+					<sm:option key="replace" name="￼;Représentative￼"/>
+					<sm:option key="add" name="￼;Complémentaire￼"/>
+				</sm:enum>
+			</sm:field>
+			<sm:field code="img" name="￼;Image￼" occurrence="one" family="property">
+				<sm:refItem>
+					<sm:allowedModel sc:refUri="/binaries/gif/gif.model"/>
+					<sm:allowedModel sc:refUri="/binaries/jpg/jpeg.model"/>
+					<sm:allowedModel sc:refUri="/binaries/png/png.model"/>
+				</sm:refItem>
+			</sm:field>
+		</sm:group>
+	</sm:structure>
+	<sm:storage/>
+</sm:dataFormPrim>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget code="searchMgr" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:widgetPublishFiles sc:refUri="/case/gen/_web/wdt/search/searchMgr.doss"/>
+	<sm:fillTemplateBuffers>
+		<sm:standardLibrary codeLib="PaLib"/>
+		<sm:postXslFragment keyXsl="xhtml">&lt;xsl:overlay match=&quot;body&quot;>
+	&lt;xsl:value-of select=&quot;execute(java:append($vBufJs, 'searchMgr.init();'))&quot;/>
+&lt;/xsl:overlay></sm:postXslFragment>
+		<sm:linkScript path="searchMgr.js" pathFrom="localPublishFiles" sortKey="A"/>
+	</sm:fillTemplateBuffers>
+	<sm:content>
+		<script type="text/JavaScript" xmlns="http://www.w3.org/1999/xhtml">
+			<sm:callModel>
+				<sm:root axis="initSearch"/>
+			</sm:callModel>
+		</script>
+	</sm:content>
+</sm:openUiWidget>

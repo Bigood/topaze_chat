@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Re/gallery.model"/>
+	<sm:content format="xhtml">
+		<sm:WHeadingBlock widgetClass="gallery" class="ssCutable">
+			<sm:title>
+				<sm:compositionTitle/>
+			</sm:title>
+			<sm:Widget sc:refUri="/academic/gen/_sld/widg/img/imgGal.uiwidget">
+				<sm:xhtmlContentZone key="zImg">
+					<sm:for codes="img">
+						<sm:callSubModel/>
+					</sm:for>
+				</sm:xhtmlContentZone>
+			</sm:Widget>
+		</sm:WHeadingBlock>
+	</sm:content>
+</sm:compositionXhtmlTransf>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformerList info="Imported from web">
+		<sm:transformer sc:refUri="/math/odf/odf_web.transf"/>
+		<sm:transformer sc:refUri="/math/latex/mathTex_web.transf"/>
+		<sm:transformerList info="ico">
+			<sm:transformer sc:refUri="/math/odf/odf_web@ico.transf"/>
+			<sm:transformer sc:refUri="/math/latex/mathTex_web@ico.transf"/>
+		</sm:transformerList>
+	</sm:transformerList>
+	<sm:transformer sc:refUri="/math/odf/odf_sld.transf"/>
+	<sm:transformer sc:refUri="/math/latex/mathTex_sld.transf"/>
+	<sm:transformerList info="inline">
+		<sm:transformer sc:refUri="/math/odf/odf_sld@inline.transf"/>
+		<sm:transformer sc:refUri="/math/latex/mathTex_sld@inline.transf"/>
+	</sm:transformerList>
+	<sm:transformerList info="ref">
+		<sm:transformer sc:refUri="/math/odf/odf_sld@ref.transf"/>
+		<sm:transformer sc:refUri="/math/latex/mathTex_sld@ref.transf"/>
+	</sm:transformerList>
+</sm:transformerList>

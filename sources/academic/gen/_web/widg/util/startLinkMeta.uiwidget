@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="startLinkMeta" info="Ajout d'un lien vers la première page du site en meta de chaque page">
+	<sm:widgetBsFragment contentFormat="xhtml">&lt;source type="xslOnSrc-dynamique"&gt;
+	&lt;xsl:stylesheet exclude-result-prefixes="sc sp java "
+	version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+	xmlns:sc="http://www.utc.fr/ics/scenari/v3/core"
+	xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive"
+	xmlns:java="http://xml.apache.org/xslt/java"&gt;
+
+		&lt;xsl:output omit-xml-declaration="yes" indent="no" method="xml" /&gt;
+		&lt;xsl:param name="vDialog" /&gt;
+		&lt;xsl:param name="vAgent" /&gt;
+
+		&lt;xsl:template match="*"&gt;
+			&lt;link rel="start"&gt;
+				&lt;xsl:attribute name="href"&gt;&lt;xsl:value-of select="computeStrDialog('/@@', 'act:')" /&gt;&lt;/xsl:attribute&gt;
+				&lt;xsl:attribute name="title"&gt;&lt;xsl:value-of select="computeStrAgent(concat('@', getIdFromPath(concat('src:', java:getSrcUri(srcFileAgent('@@')))), '/fullTitleText'))" /&gt;&lt;/xsl:attribute&gt;
+			&lt;/link&gt;
+		&lt;/xsl:template&gt;
+	&lt;/xsl:stylesheet&gt;
+&lt;/source&gt;</sm:widgetBsFragment>
+</sm:freeUiWidget>

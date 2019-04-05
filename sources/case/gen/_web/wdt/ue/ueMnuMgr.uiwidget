@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="ueMnuMgr">
+	<sm:widgetPublishFiles sc:refUri="/case/gen/_web/wdt/ue/ueMnuMgr.doss"/>
+	<sm:fillTemplateBuffers>
+		<sm:standardLibrary codeLib="PaLib"/>
+		<sm:standardLibrary codeLib="TiLib"/>
+		<sm:standardLibrary codeLib="SiLib"/>
+		<sm:postXslFragment keyXsl="xhtml">&lt;xsl:overlay match="div[containWord(@id, 'tplMnu')]"&gt;
+	&lt;xsl:value-of select="execute(java:append($vBufJs, 'ueMnuMgr.init();'))"/&gt;
+&lt;/xsl:overlay&gt;</sm:postXslFragment>
+		<sm:linkScript path="ueMnuMgr.js" pathFrom="localPublishFiles" sortKey="AA"/>
+	</sm:fillTemplateBuffers>
+	<sm:content>
+		<div xmlns="http://www.w3.org/1999/xhtml" class="tplMnuOn" id="tplMnu">
+			<div id="tplMnuCo">
+				<div id="tplMnuScroll">
+					<sm:Widget sc:refUri="/case/gen/_web/wdt/ue/ueMnu.uiwidget"/>
+				</div>
+			</div>
+		</div>
+	</sm:content>
+</sm:openUiWidget>

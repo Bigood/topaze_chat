@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeXed xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:se="http://www.utc.fr/ics/scenari/v3/editing" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" code="op_sizeM">
+	<sm:namespaceToDeclare prefix="op" ns="utc.fr:ics/opale3"/>
+	<sm:namespaceToDeclare prefix="sp" ns="http://www.utc.fr/ics/scenari/v3/primitive"/>
+	<se:editor se:namespaces="true">
+		<se:lib>
+			<element se:id="op_sizeM" se:bind="element" se:declareNs="sp op sc" se:title="￼Propriétés de ressources￼" se:name="op:sizeM">
+				<childs>
+					<se:ref se:refid="s_content"/>
+				</childs>
+			</element>
+			<hiddenElement se:id="op_sizeM:hideHeader" se:bind="element" se:declareNs="sp op sc" se:title="￼Propriétés de ressources￼" se:name="op:sizeM">
+				<childs>
+					<se:ref se:refid="s_content"/>
+				</childs>
+			</hiddenElement>
+			<se:template se:id="s_content">
+				<element se:bind="element" class="property" startAt="80" se:title="￼Largeur￼" se:name="sp:width" tooltipTag="￼Largeur en pixels￼" se:card="1" orientation="horizontal" se:defaultvalue="500">
+					<childs>
+						<hbox>
+							<contentElement se:bind="text" style="width:10em;" class="property">
+								<textInput validRegExp="^\d+$" style="min-height:25px;" decimalplaces="0" max="1000" min="0" type="number" notnull="true"/>
+							</contentElement>
+							<spacer flex="1"/>
+						</hbox>
+					</childs>
+				</element>
+				<element se:bind="element" class="property" startAt="80" se:title="￼Hauteur￼" se:name="sp:height" tooltipTag="￼Hauteur en pixels￼" se:card="1" orientation="horizontal" se:defaultvalue="400">
+					<childs>
+						<hbox>
+							<contentElement se:bind="text" style="width:10em;" class="property">
+								<textInput validRegExp="^\d+$" style="min-height:25px;" decimalplaces="0" max="1000" min="0" type="number" notnull="true"/>
+							</contentElement>
+							<spacer flex="1"/>
+						</hbox>
+					</childs>
+				</element>
+			</se:template>
+		</se:lib>
+	</se:editor>
+</sm:freeXed>

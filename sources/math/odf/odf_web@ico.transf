@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/math/odf/odf.model"/>
+	<sm:axis code="ico"/>
+	<sm:content>
+		<sm:WFreeBlock>
+			<addAttribute xmlns="http://www.w3.org/1999/xhtml" name="class">lnkBin lnkBinOdf</addAttribute>
+		</sm:WFreeBlock>
+	</sm:content>
+</sm:binaryXhtmlTransf>

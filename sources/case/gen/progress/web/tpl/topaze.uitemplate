@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiTemplate xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" pageUnicityCriterion="none" info="Page Topaze">
+	<sm:head>
+		<sm:windowTitle>
+			<sm:rootTitle type="fullTitle"/>
+			<sm:fixedString value=" - "/>
+			<sm:pageTitle/>
+		</sm:windowTitle>
+		<sm:meta name="keywords">
+			<sm:callRootModel axis="keywds"/>
+		</sm:meta>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/tpl/htmlMeta.uiwidget"/>
+		<sm:styleSheet src="css/html.css" srcFrom="skin"/>
+		<sm:styleSheet src="css/struct.css" srcFrom="skin"/>
+		<sm:styleSheet src="css/struct_topaze.css" srcFrom="skin"/>
+		<sm:styleSheet src="css/transf.css" srcFrom="skin"/>
+		<sm:styleSheet src="css/btn.css" srcFrom="skin"/>
+		<sm:styleSheet src="css/indexes.css" srcFrom="skin"/>
+		<sm:styleSheet src="css/assmnt.css" srcFrom="skin"/>
+		<sm:styleSheet src="ue/css/mnuFull_page.css" srcFrom="skin"/>
+		<sm:callRootModel axis="indexesCalc"/>
+		<sm:callRootModel axis="initHistMgr"/>
+		<sm:Widget sc:refUri="/case/gen/_web/wdt/mgr/histMgr.uiwidget"/>
+		<sm:Widget sc:refUri="/case/gen/_web/wdt/mgr/topazeMgr.uiwidget"/>
+		<sm:Widget sc:refUri="/case/gen/progress/web/wdt/mgr/tplMgr.uiwidget"/>
+		<sm:Widget sc:refUri="/case/gen/_web/wdt/search/indexContent.uiwidget"/>
+		<sm:Widget sc:refUri="/case/gen/_web/wdt/search/searchMgr.uiwidget"/>
+		<sm:Widget sc:refUri="/case/gen/_web/wdt/util/pageDescJason.uiwidget"/>
+		<sm:callRootModel axis="genSpecific" navCtx="preserveCurrent"/>
+	</sm:head>
+	<sm:body>
+		<div xmlns="http://www.w3.org/1999/xhtml" id="tplFra" class="topazePage">
+			<div id="tplTop">
+				<!--<div xmlns="http://www.w3.org/1999/xhtml" class="metaInfos">
+	<sm:callZone xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" key="zLegal" format="xhtml"/>
+	<span class="hidden"> | </span>
+	<sm:Widget xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" sc:refUri="/academic/gen/_web/widg/tpl/madeWithSc.uiwidget" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core"/>
+</div>-->
+				<!--<div xmlns="http://www.w3.org/1999/xhtml" id="homeBtn">
+	<sm:WLink xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+		<sm:label>Accueil</sm:label>
+		<sm:link target="newWindow">
+			<sm:callRootModel axis="home"/>
+		</sm:link>
+	</sm:WLink>
+</div>-->
+				<sm:callRootModel axis="home"/>
+				<div class="titleRoot">
+					<span>
+						<sm:title>
+							<sm:rootTitle type="fullTitle"/>
+						</sm:title>
+					</span>
+				</div>
+			</div>
+			<div id="tplMain">
+				<div id="tplCo">
+					<sm:callMainZone format="xhtml"/>
+					<sm:WBasket key="footnotes" widgetClass="footnotes" tagName="ol" suppressIfEmpty="yes"/>
+				</div>
+			</div>
+			<div id="tplLft" class="barClosed">
+				<sm:Widget sc:refUri="/case/gen/progress/web/wdt/btn/btnsLft.uiwidget"/>
+				<div class="lftCo">
+					<sm:callRootModel axis="tools"/>
+				</div>
+			</div>
+			<div id="tplRgt" class="barClosed">
+				<sm:Widget sc:refUri="/case/gen/progress/web/wdt/btn/btnsRgt.uiwidget"/>
+				<div class="rgtCo">
+					<div id="tplArc" style="visibility:hidden;">
+						<sm:callZone key="zArc" format="xhtml"/>
+					</div>
+					<sm:callZone key="zCoach" format="xhtml"/>
+				</div>
+			</div>
+		</div>
+		<sm:script src="js/skin.js" srcFrom="skin" type="text/JavaScript"/>
+		<sm:callRootModel axis="codeAnalytics"/>
+	</sm:body>
+</sm:openUiTemplate>

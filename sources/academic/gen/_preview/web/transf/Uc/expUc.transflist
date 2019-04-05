@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformer sc:refUri="/academic/gen/_preview/web/transf/Uc/expUc/expUc@btnHelp.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_preview/web/transf/Uc/expUc/expUc@lblBtnHelp.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_preview/web/transf/Uc/expUc/expUc@lblBtnPrint.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_preview/web/transf/Uc/expUc/expUc@lblBtnPrintSubWin.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_preview/web/transf/Uc/expUc/expUc@lblBtnTtInfo.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_preview/web/transf/Uc/expUc/expUc@mnuTi.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_preview/web/transf/Uc/expUc/expUc@rootLegal.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_preview/web/transf/Uc/expUc/expUc@sTitle.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_preview/web/transf/Uc/expUc/expUc@title.transf"/>
+</sm:transformerList>

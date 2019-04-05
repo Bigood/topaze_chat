@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?><sma:scormCamCompoWebSiteTransf xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/root/webRoot.model"/>
+	<sm:axis code="rootCam"/>
+	<sm:fullTitleText>
+		<sm:callSubModel codes="ue" axis="title"/>
+	</sm:fullTitleText>
+	<sm:shortTitleText>
+		<sm:callSubModel codes="ue" axis="sTitle"/>
+	</sm:shortTitleText>
+	<sm:camOrganization>
+		<sm:for codes="ue">
+			<sm:itemFolder>
+				<sm:title>
+					<sm:subModelTitle/>
+					<sm:fixedTitle value="￼;[Contenu non titré]￼"/>
+				</sm:title>
+				<sm:children>
+					<sm:callSubModel/>
+				</sm:children>
+			</sm:itemFolder>
+		</sm:for>
+		<sm:choose>
+			<sm:when xpath="op:webRootM/sp:settings[sp:glos='yes' or sp:ref='yes' or sp:acr='yes' or sp:bib='yes' or sp:quest='yes' or sp:credits='yes']">
+				<sm:itemFolder>
+					<sm:title>
+						<sm:fixedTitle value="￼;Outils￼"/>
+					</sm:title>
+					<sm:children>
+						<sm:choose>
+							<sm:when xpath="op:webRootM/sp:settings/sp:quest='yes'">
+								<sm:itemSco>
+									<sm:title>
+										<sm:fixedTitle value="￼;Questions de synthèse￼"/>
+									</sm:title>
+									<sm:itemBody>
+										<sm:callModel>
+											<sm:current axis="synth"/>
+										</sm:callModel>
+									</sm:itemBody>
+								</sm:itemSco>
+							</sm:when>
+						</sm:choose>
+						<sm:choose>
+							<sm:when xpath="op:webRootM/sp:settings/sp:glos='yes'">
+								<sm:itemSco>
+									<sm:title>
+										<sm:fixedTitle value="￼;Glossaire￼"/>
+									</sm:title>
+									<sm:itemBody>
+										<sm:callModel>
+											<sm:current axis="glos"/>
+										</sm:callModel>
+									</sm:itemBody>
+								</sm:itemSco>
+							</sm:when>
+						</sm:choose>
+						<sm:choose>
+							<sm:when xpath="op:webRootM/sp:settings/sp:acr='yes'">
+								<sm:itemSco>
+									<sm:title>
+										<sm:fixedTitle value="￼;Abréviations￼"/>
+									</sm:title>
+									<sm:itemBody>
+										<sm:callModel>
+											<sm:current axis="acr"/>
+										</sm:callModel>
+									</sm:itemBody>
+								</sm:itemSco>
+							</sm:when>
+						</sm:choose>
+						<sm:choose>
+							<sm:when xpath="op:webRootM/sp:settings/sp:ref='yes'">
+								<sm:itemSco>
+									<sm:title>
+										<sm:fixedTitle value="￼;Références￼"/>
+									</sm:title>
+									<sm:itemBody>
+										<sm:callModel>
+											<sm:current axis="ref"/>
+										</sm:callModel>
+									</sm:itemBody>
+								</sm:itemSco>
+							</sm:when>
+						</sm:choose>
+						<sm:choose>
+							<sm:when xpath="op:webRootM/sp:settings/sp:bib='yes'">
+								<sm:itemSco>
+									<sm:title>
+										<sm:fixedTitle value="￼;Bibliographie￼"/>
+									</sm:title>
+									<sm:itemBody>
+										<sm:callModel>
+											<sm:current axis="bib"/>
+										</sm:callModel>
+									</sm:itemBody>
+								</sm:itemSco>
+							</sm:when>
+						</sm:choose>
+						<sm:choose>
+							<sm:when xpath="op:webRootM/sp:settings/sp:credits='yes'">
+								<sm:itemSco>
+									<sm:title>
+										<sm:fixedTitle value="￼;Crédits￼"/>
+									</sm:title>
+									<sm:itemBody>
+										<sm:callModel>
+											<sm:current axis="cred"/>
+										</sm:callModel>
+									</sm:itemBody>
+								</sm:itemSco>
+							</sm:when>
+						</sm:choose>
+					</sm:children>
+				</sm:itemFolder>
+			</sm:when>
+		</sm:choose>
+	</sm:camOrganization>
+</sma:scormCamCompoWebSiteTransf>

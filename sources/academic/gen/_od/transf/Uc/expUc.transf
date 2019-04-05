@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionOdtTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0">
+	<sm:model sc:refUri="/academic/model/Uc/expUc.model"/>
+	<sm:content>
+		<sm:callCompositionMeta axis="keywds"/>
+		<sm:inDataOrder>
+			<sm:for codes="pb">
+				<sm:callSubModel/>
+			</sm:for>
+			<sm:for codes="div">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:heading>
+							<sm:title>
+								<sm:subModelTitle/>
+							</sm:title>
+							<sm:callSubModel/>
+						</sm:heading>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+		</sm:inDataOrder>
+	</sm:content>
+</sm:compositionOdtTransf>

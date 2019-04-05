@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:textPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Texte riche￼">
+	<sm:identification targetNamespace="kelis.fr:opa" targetPrefix="opa" code="rTxt"/>
+	<sm:structure>
+		<sm:blockTags>
+			<sm:paraTag name="￼;Paragraphe￼"/>
+			<sm:itemizedListTag name="￼;Liste à puce￼">
+				<sm:listItemTag name="￼;Item￼"/>
+			</sm:itemizedListTag>
+			<sm:orderedListTag name="￼;Liste ordonnée￼">
+				<sm:listItemTag name="￼;Item￼"/>
+			</sm:orderedListTag>
+			<sm:tableTag name="￼;Tableau￼" colSpan="forbidden" rowSpan="forbidden">
+				<sm:captionTag name="￼;Légende￼"/>
+				<sm:columnTag name="￼;Colonne￼"/>
+				<sm:rowTag name="￼;Ligne￼"/>
+				<sm:rowTag role="head" name="￼;Ligne d'entête￼"/>
+				<sm:cellTag name="￼;Cellule de texte￼"/>
+				<sm:cellTag role="num" name="￼;Cellule de nombre￼"/>
+				<sm:cellTag role="word" name="￼;Cellule de mot￼"/>
+			</sm:tableTag>
+			<sm:extBlockTag role="img" name="￼;Image￼">
+				<sm:captionBlockTag name="￼;Légende￼"/>
+				<sm:allowedModel sc:refUri="/binaries/gif/gif.model"/>
+				<sm:allowedModel sc:refUri="/binaries/jpg/jpeg.model"/>
+				<sm:allowedModel sc:refUri="/binaries/png/png.model"/>
+			</sm:extBlockTag>
+			<sm:extBlockTag role="anim" name="￼;Animation￼">
+				<sm:allowedModel sc:refUri="/binaries/flash/flash.model"/>
+				<sm:allowedModel sc:refUri="/binaries/flv/flv.model"/>
+			</sm:extBlockTag>
+		</sm:blockTags>
+		<sm:inlineTags>
+			<sm:uLinkTag role="url" name="￼;Adresse web, email￼">
+				<!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1394560330531">Migration topaze url à faire</comment></comment>-->
+				<sm:externalUrl/>
+			</sm:uLinkTag>
+			<sm:inlineStyleTag role="quote" name="￼;Citation￼"/>
+			<sm:inlineStyleTag role="emp" name="￼;Important￼"/>
+			<sm:inlineStyleTag role="spec" name="￼;Terme étranger￼"/>
+			<sm:inlineStyleTag role="code" name="￼;Commande￼"/>
+			<sm:textLeafTag role="exp" name="￼;Exposant￼"/>
+			<sm:textLeafTag role="ind" name="￼;Indice￼"/>
+			<sm:textLeafTag role="mathtex" name="￼;Equation interne LaTeX￼"/>
+			<sm:inlineImgTag role="form" name="￼;Equation￼">
+				<sm:allowedModel sc:refUri="/math/odf/odf.model"/>
+				<!--
+
+<sm:allowedModel xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" sc:refUri="/math/mml/mml.model" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core"/>-->
+				<sm:allowedModel sc:refUri="/math/latex/mathTex.model"/>
+			</sm:inlineImgTag>
+			<sm:inlineImgTag role="ico" name="￼;Imagette￼">
+				<sm:allowedModel sc:refUri="/binaries/png/png.model"/>
+				<sm:allowedModel sc:refUri="/binaries/gif/gif.model"/>
+				<sm:allowedModel sc:refUri="/binaries/jpg/jpeg.model"/>
+			</sm:inlineImgTag>
+		</sm:inlineTags>
+	</sm:structure>
+	<sm:authoring>
+		<sm:formEditor>
+			<sm:insertCharacters>
+				<sm:charGroup name="￼;Caractères spéciaux￼">
+					<sm:char value="©" name="©"/>
+					<sm:char value="®" name="®"/>
+					<sm:char value="™" name="™"/>
+					<sm:char value="œ" name="œ"/>
+					<sm:char value="« " name="«"/>
+					<sm:char value=" »" name="»"/>
+				</sm:charGroup>
+				<sm:charGroup name="￼;Majuscules accentuées￼">
+					<sm:char value="É" name="É"/>
+					<sm:char value="À" name="À"/>
+					<sm:char value="È" name="È"/>
+					<sm:char value="Ç" name="Ç"/>
+					<sm:char value="Ô" name="Ô"/>
+					<sm:char value="Ñ" name="Ñ"/>
+					<sm:char value="Ê" name="Ê"/>
+					<sm:char value="Î" name="Î"/>
+					<sm:char value="Â" name="Â"/>
+					<sm:char value="Û" name="Û"/>
+				</sm:charGroup>
+				<sm:charGroup name="￼;Symboles mathématiques￼">
+					<sm:char value="‰" name="‰"/>
+					<sm:char value="Ø" name="Ø"/>
+					<sm:char value="→" name="→"/>
+					<sm:char value="∞" name="∞"/>
+					<sm:char value="≈" name="≈"/>
+					<sm:char value="±" name="±"/>
+				</sm:charGroup>
+				<sm:charGroup name="￼;Lettres grecques courantes￼">
+					<sm:char value="Ω" name="Ω"/>
+					<sm:char value="α" name="α"/>
+					<sm:char value="β" name="β"/>
+					<sm:char value="θ" name="θ"/>
+					<sm:char value="ε" name="ε"/>
+					<sm:char value="φ" name="φ"/>
+					<sm:char value="π" name="π"/>
+					<sm:char value="λ" name="λ"/>
+				</sm:charGroup>
+			</sm:insertCharacters>
+			<sm:inlineBehaviors>
+				<sm:uLinkBehavior mode="insert">
+					<sm:keyBinding char="U"/>
+				</sm:uLinkBehavior>
+				<sm:inlineStyleBehavior role="emp" mode="insert">
+					<sm:keyBinding char="I"/>
+				</sm:inlineStyleBehavior>
+				<sm:textLeafBehavior role="exp" mode="insert">
+					<sm:keyBinding char="P"/>
+				</sm:textLeafBehavior>
+				<sm:textLeafBehavior role="ind" mode="insert">
+					<sm:keyBinding char="M"/>
+				</sm:textLeafBehavior>
+				<sm:textLeafBehavior role="mathtex" mode="insert">
+					<sm:controller sc:refUri="/math/latex/mathTexInlineController.doss"/>
+				</sm:textLeafBehavior>
+			</sm:inlineBehaviors>
+			<sm:htmlStyle tag="table">
+				<sm:htmlStyle tag="row">
+					<sm:htmlStyle tag="cell" role="word">
+						<sm:entryStyle key="text-align" value="center"/>
+					</sm:htmlStyle>
+					<sm:htmlStyle tag="cell" role="num">
+						<sm:entryStyle key="text-align" value="right"/>
+					</sm:htmlStyle>
+					<sm:htmlStyle tag="cell" role="num">
+						<sm:entryStyle key="text-align" value="right"/>
+					</sm:htmlStyle>
+				</sm:htmlStyle>
+				<sm:htmlStyle tag="row" role="head">
+					<sm:entryStyle key="text-align" value="center"/>
+					<sm:entryStyle key="font-weight" value="bold"/>
+				</sm:htmlStyle>
+				<sm:htmlStyle tag="caption">
+					<sm:entryStyle key="font-style" value="italic"/>
+				</sm:htmlStyle>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="uLink">
+				<sm:entryStyle key="text-decoration" value="underline"/>
+				<sm:entryStyle key="color" value="#0000EE"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="inlineStyle" role="quote">
+				<sm:entryStyle key="font-family" value="&quot;Times New Roman&quot;, Times, serif"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="inlineStyle" role="quote" pseudoClass="before">
+				<sm:entryStyle key="font-weight" value="normal"/>
+				<sm:entryStyle key="content" value="&quot;« &quot;"/>
+				<sm:entryStyle key="color" value="grey"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="inlineStyle" role="quote" pseudoClass="after">
+				<sm:entryStyle key="font-weight" value="normal"/>
+				<sm:entryStyle key="content" value="&quot; »&quot;"/>
+				<sm:entryStyle key="color" value="grey"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="inlineStyle" role="emp">
+				<sm:entryStyle key="font-weight" value="bold"/>
+				<sm:entryStyle key="color" value="Maroon"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="inlineStyle" role="spec">
+				<sm:entryStyle key="font-style" value="italic"/>
+				<sm:entryStyle key="color" value="Maroon"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="inlineStyle" role="code">
+				<sm:entryStyle key="font-family" value="monospace"/>
+				<sm:entryStyle key="color" value="#570302"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="textLeaf" role="mathtex">
+				<sm:entryStyle key="color" value="#6D2020"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="textLeaf" role="mathtex" pseudoClass="before">
+				<sm:entryStyle key="content" value="'$'"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="textLeaf" role="mathtex" pseudoClass="after">
+				<sm:entryStyle key="content" value="'$'"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="textLeaf" role="exp">
+				<sm:entryStyle key="font-size" value="70%"/>
+				<sm:entryStyle key="vertical-align" value="4px"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="textLeaf" role="ind">
+				<sm:entryStyle key="font-size" value="70%"/>
+				<sm:entryStyle key="vertical-align" value="-4px"/>
+			</sm:htmlStyle>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:textPrim>

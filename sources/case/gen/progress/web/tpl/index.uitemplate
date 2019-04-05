@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:searchIndexUiTemplate pageUnicityCriterion="none" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:wordIndex>
+		<sm:filters>
+			<sm:excludeShortWords minChars="1" forWords="\d+"/>
+			<sm:excludeShortWords minChars="3" forWords="\D+"/>
+			<sm:cutLongWords maxChars="20"/>
+			<sm:lowerCase locale="fr"/>
+			<sm:ignoreWords words="les nous vous ils elle elles est une des sur pour meme ici qui que"/>
+			<!--le la de du je tu il es va un-->
+			<sm:filterAccentedLatinLetters/>
+		</sm:filters>
+		<sm:serialization/>
+	</sm:wordIndex>
+</sm:searchIndexUiTemplate>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:dataFormPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="￼;Entrée de bibliographie￼">
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="bibM" itemExtension="xml"/>
+	<sm:structure>
+		<sm:field code="id" name="￼;Identifiant￼" occurrence="one" family="property">
+			<sm:help quickHelp="￼;Renseigner un identifiant￼"/>
+			<sm:string/>
+		</sm:field>
+		<sm:field code="type" name="￼;Type￼" occurrence="one" family="property">
+			<sm:help quickHelp="￼;Choisir un type de bibliographie￼"/>
+			<sm:enum>
+				<sm:option key="web" name="￼;Référence webographique￼"/>
+				<sm:option key="bib" name="￼;Référence bibliographique￼"/>
+			</sm:enum>
+		</sm:field>
+		<sm:field code="desc" name="￼;Entrée bibliographique￼" occurrence="one" family="content">
+			<sm:help quickHelp="￼;Nom de l'auteur en majuscules, utilisez les balises pour définir le titre principal￼"/>
+			<sm:otherType sc:refUri="/academic/model/Re/refs/bibTxt.model"/>
+		</sm:field>
+	</sm:structure>
+	<sm:storage>
+		<sm:fullTitleBuilder>
+			<sm:fieldValue refCode="id"/>
+		</sm:fullTitleBuilder>
+	</sm:storage>
+	<sm:authoring>
+		<sm:formEditor indentXml="true">
+			<sm:stringField refCode="id" defaultStyle="property" tagStyle="color :gray" textStyle="color :#c236e3 ;"/>
+			<sm:enumField refCode="type" defaultStyle="property" tagStyle="color :gray"/>
+			<sm:otherTypeField refCode="desc" defaultStyle="property" tagStyle="color :gray"/>
+		</sm:formEditor>
+		
+	</sm:authoring>
+</sm:dataFormPrim>

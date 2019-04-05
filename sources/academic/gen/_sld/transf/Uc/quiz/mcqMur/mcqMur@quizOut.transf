@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><sma:assmntUnitMcqHtmlTransf xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns="http://www.w3.org/1999/xhtml">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/mcqMur.model"/>
+	<sm:axis code="quizOut"/>
+	<sm:content>
+		<sm:choose>
+			<sm:when xpath="count(sc:question/op:res/sp:*)=1 and count(sc:question/op:res/sp:txt) = 1 and count(sc:question/op:res/sp:txt/op:txt/sc:para) &lt;= 2">
+				<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBk.uiwidget">
+					<sm:xhtmlContentZone key="co">
+						<div class="bkBase bkCorrections">
+							<div class="bkBase_co">
+								<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBkCo.uiwidget">
+									<sm:xhtmlContentZone key="co">
+										<div class="stepQuestion">
+											<sm:callQuestionModel/>
+										</div>
+										<sm:WChoiceList widgetClass="mcqMurChoice" solutionClassPrefix="mcqMurSol" tagName="div">
+											<sm:choiceBody>
+												<div class="mcqMurChoiceLbl">
+													<sm:callLabelModel/>
+												</div>
+											</sm:choiceBody>
+										</sm:WChoiceList>
+									</sm:xhtmlContentZone>
+								</sm:Widget>
+							</div>
+						</div>
+					</sm:xhtmlContentZone>
+				</sm:Widget>
+			</sm:when>
+			<sm:otherwise>
+				<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBk.uiwidget">
+					<sm:xhtmlContentZone key="co">
+						<div class="bkBase bkCorrections">
+							<div class="bkBase_co">
+								<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBkCo.uiwidget">
+									<sm:xhtmlContentZone key="co">
+										<sm:WChoiceList widgetClass="mcqMurChoice" solutionClassPrefix="mcqMurSol" tagName="div">
+											<sm:choiceBody>
+												<div class="mcqMurChoiceLbl">
+													<sm:callLabelModel/>
+												</div>
+											</sm:choiceBody>
+										</sm:WChoiceList>
+									</sm:xhtmlContentZone>
+								</sm:Widget>
+							</div>
+						</div>
+					</sm:xhtmlContentZone>
+				</sm:Widget>
+			</sm:otherwise>
+		</sm:choose>
+		<sm:choose>
+			<sm:when xpath="sc:globalExplanation or sc:choices/sc:choice/sc:choiceExplanation">
+				<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBk.uiwidget">
+					<sm:xhtmlContentZone key="co">
+						<div class="bkBase bkExplanations">
+							<div class="bkBase_co">
+								<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBkCo.uiwidget">
+									<sm:xhtmlContentZone key="co">
+										<sm:choose>
+											<sm:when xpath="sc:choices/sc:choice/sc:choiceExplanation">
+												<div class="mcqMurChoicesExpl">
+													<sm:WChoiceList widgetClass="mcqMurChoice" solutionClassPrefix="mcqMurSol" tagName="div">
+														<sm:choiceBody>
+															<div class="mcqMurChoiceLbl">
+																<sm:callLabelModel/>
+															</div>
+															<sm:WChoiceExplanation widgetClass="mcqMurChoiceExpl">
+																<sm:callExplanationModel/>
+															</sm:WChoiceExplanation>
+														</sm:choiceBody>
+													</sm:WChoiceList>
+												</div>
+											</sm:when>
+										</sm:choose>
+										<sm:WGlobalExplanation widgetClass="mcqMurGlobalExplanation">
+											<sm:callExplanationModel/>
+										</sm:WGlobalExplanation>
+									</sm:xhtmlContentZone>
+								</sm:Widget>
+							</div>
+						</div>
+					</sm:xhtmlContentZone>
+				</sm:Widget>
+			</sm:when>
+		</sm:choose>
+	</sm:content>
+</sma:assmntUnitMcqHtmlTransf>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:navUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="nextEval">
+	<sm:scope>
+		<sm:customized>
+			<sm:scopeStartingPoint>
+				<sm:fromCurrent ancestorOffset="100" includeInScope="no">
+					<sm:stopAtModel sc:refUri="/academic/model/Ua/assmntUa.model" includeInScope="no"/>
+				</sm:fromCurrent>
+			</sm:scopeStartingPoint>
+		</sm:customized>
+	</sm:scope>
+	<sm:selectPage>
+		<sm:step>
+			<sm:next/>
+		</sm:step>
+	</sm:selectPage>
+	<sm:content>
+		<sm:ifPageFound>
+			<sm:WLink widgetClass="nextEval btnNxt">
+				<sm:label>￼;Suivant￼</sm:label>
+				<sm:labelTitle>￼;Suivant￼</sm:labelTitle>
+				<sm:link target="sameWindow"/>
+			</sm:WLink>
+		</sm:ifPageFound>
+	</sm:content>
+</sm:navUiWidget>

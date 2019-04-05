@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Re/eSite/eSite.model"/>
+	<sm:axis code="lnk"/>
+	<sm:content format="xhtml">
+		<sm:for codes="eweb">
+			<sm:WLink widgetClass="simuLnk">
+				<sm:label>
+					<sm:callModel>
+						<sm:current axis="title"/>
+					</sm:callModel>
+				</sm:label>
+				<sm:labelTitle>
+					<sm:fixedString value="￼;Cliquez ici pour visualiser la ressource (nouvelle fenêtre)...￼"/>
+				</sm:labelTitle>
+				<sm:link target="newWindow">
+					<sm:behavior addLinkInHref="yes"/>
+					<sm:position>
+						<sm:centerScreen width="800" height="600"/>
+					</sm:position>
+					<sm:windowFeatures scrollbars="yes" resizable="yes"/>
+					<sm:callSubModel axis="url" navCtx="newRoot"/>
+				</sm:link>
+			</sm:WLink>
+		</sm:for>
+		<sm:callCompositionMeta axis="info"/>
+	</sm:content>
+</sm:compositionXhtmlTransf>

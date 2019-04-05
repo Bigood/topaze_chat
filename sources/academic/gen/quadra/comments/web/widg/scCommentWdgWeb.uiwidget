@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="scCommentWdgWeb">
+	<sm:widgetPublishFiles sc:refUri="/academic/gen/quadra/comments/web/widg/scCommentWdgWeb.doss"/>
+	<sm:fillTemplateBuffers>
+		<sm:standardLibrary codeLib="PaLib"/>
+		<sm:standardLibrary codeLib="DynUiMgr"/>
+		<sm:linkScript path="OpaleCommentWdgs.js" pathFrom="localPublishFiles" sortKey="Y"/>
+		<sm:linkScript path="scCommentMgr.local.js" pathFrom="localPublishFiles" sortKey="Y"/>
+		<sm:linkStyle path="css/commentSkin.css" pathFrom="localPublishFiles"/>
+	</sm:fillTemplateBuffers>
+	<sm:content/>
+</sm:openUiWidget>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Ue/ueDiv.model"/>
+	<sm:axis code="credits"/>
+	<sm:content format="xhtml">
+		<sm:WHeadingBlock widgetClass="credits">
+			<sm:title>
+				<sm:compositionTitle format="shortTitleText"/>
+			</sm:title>
+			<sm:for codes="intro courseUa assmntUa div courseUc practUc trainUcMcqSur trainUcMcqMur trainUcMatch trainUcOrdWord trainUcCloze trainUcField trainUcNumerical trainUcCoQuiz conclu">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:callSubModel axis="credits"/>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+		</sm:WHeadingBlock>
+	</sm:content>
+</sm:compositionXhtmlTransf>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Re/eSite/eSite.model"/>
+	<sm:axis code="zoom"/>
+	<sm:content>
+		<sm:for codes="eweb">
+			<sm:callSubModel axis="zoom"/>
+		</sm:for>
+		<sm:callCompositionMeta axis="info"/>
+	</sm:content>
+</sm:compositionXhtmlTransf>

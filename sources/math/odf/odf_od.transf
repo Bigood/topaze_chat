@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryOdTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/math/odf/odf.model"/>
+	<!--Suppression pour éviter les sous titres formule : formule 1-->
+	<!--
+<sm:fullTitleText xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:fixedString value="￼;Formule￼"/>
+</sm:fullTitleText>-->
+	<sm:content>
+		<sm:WObject globalStyle="viewPicture">
+			<sm:binaryUrl>
+				<sm:odTransform>
+					<sm:dimBounds unit="cm" maxWidth="15" maxHeight="22"/>
+				</sm:odTransform>
+			</sm:binaryUrl>
+		</sm:WObject>
+	</sm:content>
+</sm:binaryOdTransf>

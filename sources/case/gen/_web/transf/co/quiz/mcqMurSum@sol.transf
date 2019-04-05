@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sma:assmntUnitMcqDhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns="http://www.w3.org/1999/xhtml" info="Exo entraînement opa SUM (avec btn)">
+	<sm:model sc:refUri="/case/model/co/quiz/mcqMurSum.model"/>
+	<sm:axis code="sol"/>
+	<sm:scenario>
+		<sm:sequence>
+			<sm:initBody>
+				<sm:choiceInteraction mode="disabled"/>
+				<sm:solutionDisplay mode="shown"/>
+			</sm:initBody>
+			<sm:loadData>
+				<sm:responseSessionKey>
+					<sm:jsExpression expId="sessKeyQuiz">topazeMgr.fSessKeyQuiz</sm:jsExpression>
+				</sm:responseSessionKey>
+			</sm:loadData>
+			<sm:saveData>
+				<sm:responseSessionKey>
+					<sm:refExp refExpId="sessKeyQuiz"/>
+				</sm:responseSessionKey>
+				<sm:scoreSessionKey>
+					<sm:refExp refExpId="sessKeyQuiz"/>
+				</sm:scoreSessionKey>
+			</sm:saveData>
+			<sm:scoreComputing>
+				<sm:forSummedNumericScoring scoreIfUnselected="0"/>
+			</sm:scoreComputing>
+		</sm:sequence>
+	</sm:scenario>
+	<sm:assmntBody>
+		<div class="scoreBox">
+			<sm:WScore sm:id="score" widgetClass="score">
+				<sm:scoreText>
+					<sm:pointsScore step="1">
+						<sm:display>
+							<sm:scorePoints valueFormat="numeric"/>
+							<sm:fixedString value="/"/>
+							<sm:maxPoints valueFormat="numeric"/>
+						</sm:display>
+					</sm:pointsScore>
+				</sm:scoreText>
+			</sm:WScore>
+		</div>
+		<div class="headerQ">
+			<div sm:id="question" class="question">
+				<sm:addSrcPath/>
+				<sm:callQuestionModel/>
+			</div>
+		</div>
+		<div sm:id="choiceList">
+			<sm:WFeedback widgetClass="feed">
+				<sm:addSrcPath/>
+				<sm:callFeedbackModel/>
+			</sm:WFeedback>
+			<sm:WChoiceList widgetClass="choiceList">
+				<sm:choiceBody>
+					<div sm:id="choice" class="choice">
+						<div sm:id="label" class="label">
+							<sm:addSrcPath/>
+							<sm:callLabelModel/>
+						</div>
+						<sm:WChoiceExplanation widgetClass="chExpln">
+							<sm:addSrcPath/>
+							<sm:callExplanationModel/>
+						</sm:WChoiceExplanation>
+					</div>
+				</sm:choiceBody>
+			</sm:WChoiceList>
+		</div>
+		<sm:WGlobalExplanation widgetClass="gExpln">
+			<sm:addSrcPath/>
+			<a class="gExpln_closed" title="￼Explication Générale￼" onclick="scDynUiMgr.collBlkToggle(this, scPaLib.findNode('chl:div',this.parentNode),'gExpln_open','gExpln_closed');return false;" href="#" style="display: block;">
+				<span class="gExpln_ti">
+					<span class="gExpln_tiIn">￼;Explication Générale￼</span>
+				</span>
+			</a>
+			<div class="gExpln_co" style="display: none;">
+				<sm:callExplanationModel/>
+			</div>
+		</sm:WGlobalExplanation>
+	</sm:assmntBody>
+</sma:assmntUnitMcqDhtmlTransf>

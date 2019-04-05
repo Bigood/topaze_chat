@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget code="objInFlow" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:content>
+		<div class="ssCutable objInFlow" xmlns="http://www.w3.org/1999/xhtml">
+			<div class="resFra">
+				<sm:callZone key="object"/>
+				<a class="zoom" href="#" title="￼Zoom...￼" style="display:none;">
+					<span>￼;Zoom￼</span>
+				</a>
+			</div>
+			<div class="caption">
+				<sm:callZone key="caption"/>
+			</div>
+		</div>
+	</sm:content>
+</sm:openUiWidget>

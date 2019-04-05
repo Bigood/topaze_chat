@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="￼;Galerie d'images￼">
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="gallery" itemExtension="xml"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/academic/model/Re/galleryM.model" usage="required"/>
+		<sm:set usage="required">
+			<sm:part code="img" name="￼;Image￼" family="content" internalized="userDependent">
+				<sm:allowedModel sc:refUri="/binaries/jpg/jpeg.model"/>
+				<sm:allowedModel sc:refUri="/binaries/gif/gif.model"/>
+				<sm:allowedModel sc:refUri="/binaries/png/png.model"/>
+				<sm:allowedModel sc:refUri="/binaries/ods/ods.model"/>
+				<sm:allowedModel sc:refUri="/binaries/odg/odg.model"/>
+			</sm:part>
+		</sm:set>
+	</sm:structure>
+	<sm:authoring>
+		<sm:icon sc:refUri="/academic/model/_ico/gallerySmall.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;galerie￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:formEditor indentXml="true">
+			<sm:composition>
+				<sm:standardWidget tagStyle="font-family:arial;font-size:1.8em; background-color:#359632; color:white; -moz-border-radius:5px; -moz-padding-start:4px; -moz-padding-end:4px;">
+					<sm:iconTag sc:refUri="/academic/model/_ico/galleyBig.png" style="margin-right: 5px;"/>
+				</sm:standardWidget>
+			</sm:composition>
+			<sm:part refCode="img">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/icoImage.png"/>
+								<sm:name style="margin-left:5px;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/icoImageFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+		</sm:formEditor>
+		<sm:formEditor key="intern" indentXml="true">
+			<sm:composition fullTitleStyle="color: #476042; font-size: 1.5em; font-family: &quot;DejaVu Sans&quot; sans-serif; text-align: center;"/>
+			<sm:part refCode="img">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/icoImageSmall.png"/>
+								<sm:name style="margin-left:5px;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/icoImageSmallFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+		</sm:formEditor>
+		<sm:previewMini>
+			<sm:freePreview pathRootFile="mainViewMini.xul" sc:refUri="/academic/model/_pre/gallery.doss"/>
+		</sm:previewMini>
+	</sm:authoring>
+</sm:compositionPrim>

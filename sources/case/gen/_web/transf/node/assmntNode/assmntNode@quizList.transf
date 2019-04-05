@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/case/model/node/assmntNode.model"/>
+	<sm:axis code="quizList"/>
+	<sm:navigation>
+		<sm:page template="topaze">
+			<sm:title>
+				<sm:compositionTitle/>
+				<sm:fixedTitle value="￼;[Sans titre]￼"/>
+			</sm:title>
+			<sm:outlineClasses>
+				<sm:callCompositionMeta axis="noClick"/>
+			</sm:outlineClasses>
+			<sm:mainZone format="xhtml">
+				<sm:callModel>
+					<sm:current axis="listMode"/>
+				</sm:callModel>
+				<sm:WHeadingBlock widgetClass="nodeBk" class="assmntNode quizList noIndex">
+					<sm:title>
+						<sm:compositionTitle/>
+					</sm:title>
+					<sm:for codes="quiz">
+						<sm:choose>
+							<sm:when xpath="typeAgent(concat('@',gotoSubModel()))='op_coQuiz'">
+								<sm:callSubModel/>
+							</sm:when>
+							<sm:otherwise>
+								<sm:WHeadingBlock class="quizBk">
+									<sm:title>
+										<sm:subModelTitle/>
+									</sm:title>
+									<sm:callSubModel/>
+								</sm:WHeadingBlock>
+							</sm:otherwise>
+						</sm:choose>
+					</sm:for>
+					<sm:choose>
+						<sm:when xpath="opa:assmntNodeM/sp:storeResponse = 'no'">
+							<sm:callModel>
+								<sm:current axis="resetSession"/>
+							</sm:callModel>
+						</sm:when>
+					</sm:choose>
+					<sm:choose>
+						<sm:when xpath="opa:assmntNodeM/sp:attempts">
+							<sm:choose>
+								<sm:when xpath="opa:assmntNodeM/sp:attempts/sp:explanation">
+									<sm:callCompositionMeta axis="explanation"/>
+								</sm:when>
+								<sm:otherwise>
+									<sm:WSimpleBlock widgetClass="explanationBk" tagName="div">
+										<sm:WFreeBlock>
+											<p xmlns="http://www.w3.org/1999/xhtml">￼;Vous avez tenté plus de ￼<sm:callCompositionMeta axis="try"/>￼; fois cet exercice, veuillez poursuivre l'étude de cas.￼</p>
+										</sm:WFreeBlock>
+									</sm:WSimpleBlock>
+								</sm:otherwise>
+							</sm:choose>
+						</sm:when>
+					</sm:choose>
+				</sm:WHeadingBlock>
+				<sm:choose>
+					<sm:when codes="obj intro"/>
+					<sm:otherwise>
+						<sm:for codes="genRef">
+							<sm:callSubModel/>
+						</sm:for>
+					</sm:otherwise>
+				</sm:choose>
+			</sm:mainZone>
+			<sm:zone key="zArc" format="xhtml">
+				<sm:WHeadingBlock widgetClass="arcBk" class="assmntArc">
+					<sm:callModel>
+						<sm:current axis="quizBtnValid"/>
+					</sm:callModel>
+					<sm:choose>
+						<sm:when xpath="opa:assmntNodeM/sp:attempts">
+							<sm:WLink widgetClass="btnNav btnResults">
+								<sm:label>
+									<sm:title>
+										<sm:fixedTitle value="￼;Afficher les résultats￼"/>
+									</sm:title>
+								</sm:label>
+								<sm:labelTitle>
+									<sm:title>
+										<sm:fixedTitle value="￼;Afficher les résultats￼"/>
+									</sm:title>
+								</sm:labelTitle>
+								<sm:link>
+									<sm:callModel>
+										<sm:current axis="quizValid" navCtx="newRoot"/>
+									</sm:callModel>
+								</sm:link>
+							</sm:WLink>
+						</sm:when>
+					</sm:choose>
+				</sm:WHeadingBlock>
+			</sm:zone>
+			<sm:zone key="zCoach" format="xhtml">
+				<sm:callModel>
+					<sm:current axis="coach"/>
+				</sm:callModel>
+			</sm:zone>
+			<sm:zone key="zLegal" format="xhtml">
+				<sm:callModel>
+					<sm:root axis="legal"/>
+				</sm:callModel>
+			</sm:zone>
+		</sm:page>
+	</sm:navigation>
+</sm:compositionXhtmlTransf>

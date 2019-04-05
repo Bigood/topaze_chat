@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionOdtTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0">
+	<sm:model sc:refUri="/academic/model/Uc/practUcQ.model"/>
+	<sm:content>
+		<sm:for codes="desc">
+			<sm:callSubModel/>
+		</sm:for>
+		<sm:choose>
+			<sm:when codes="hint">
+				<sm:WParagraph style="hintTitle" display="always">
+					<sm:dynamicString>
+						<sm:freeSelect xpath="if(count(sp:hint)&gt;1, '￼Indices :￼', '￼Indice :￼')"/>
+					</sm:dynamicString>
+				</sm:WParagraph>
+				<sm:WSection style="hintSec">
+					<sm:label/>
+					<sm:for codes="hint">
+						<sm:callSubModel axis="notImp"/>
+					</sm:for>
+				</sm:WSection>
+				<sm:WParagraph globalStyle="spaceAfter" display="always"/>
+			</sm:when>
+		</sm:choose>
+	</sm:content>
+</sm:compositionOdtTransf>

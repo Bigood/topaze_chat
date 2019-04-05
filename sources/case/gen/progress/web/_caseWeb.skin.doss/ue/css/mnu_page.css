@@ -1,0 +1,130 @@
+/* Outline Menu CSS */
+
+ul.sw_ueMnu_navList{
+	list-style: none;
+	margin: 0px 0px;
+	padding: 0px 0px 0px 5px;
+}
+ul.sw_ueMnu_navList ul{
+	list-style: none;
+	margin: 2px 0px 0px 0px;
+	padding: 0px 0px 0px 18px;
+}
+ul.sw_ueMnu_navList li{
+	margin: 0px 0px 2px 0px;
+	padding: 0px 0px 0px 0px;
+}
+ul.sw_ueMnu_navList .mnu_sel_yes,
+ul.sw_ueMnu_navList .mnu_sel_no{
+	text-decoration: none;
+	display: block;
+	min-height: 20px;
+	color: black;
+	padding-left: 27px;
+}
+ul.sw_ueMnu_navList .mnu_sel_yes span,
+ul.sw_ueMnu_navList .mnu_sel_no span{
+	display: block;
+	padding: 2px 0px;
+}
+ul.sw_ueMnu_navList a:hover{
+	color: #7B8820;
+}
+ul.sw_ueMnu_navList .mnu_sel_yes span{
+	display: block;
+	background-color: #7B8820;
+	color: white;
+	padding-left: 5px;
+	margin-left: -5px;
+	-moz-border-radius:10px
+}
+ul.sw_ueMnu_navList > li > span.mnu_b {
+	background: url(../img/mnu/mnuOp.gif) no-repeat center left !important;
+}
+ul.sw_ueMnu_navList .mnu_intro, ul.sw_ueMnu_navList .mnu_obj {
+	/* si on ne met pas !important, IE6 ignore les images personnalisées */
+	background: url(../img/deco/introMnu.png) no-repeat center left !important;
+}
+ul.sw_ueMnu_navList .mnu_conclu {
+	background: url(../img/deco/concluMnu.png) no-repeat center left !important;
+}
+ul.sw_ueMnu_navList .mnu_expUc {
+	background: url(../img/deco/expUcMnu.png) no-repeat center left !important;
+}
+ul.sw_ueMnu_navList .mnu_practUc {
+	background: url(../img/deco/practUcMnu.png) no-repeat center left !important;
+}
+ul.sw_ueMnu_navList .mnu_trainUc {
+	background: url(../img/deco/trainUcMnu.png) no-repeat center left !important;
+}
+ul.sw_ueMnu_navList .mnu_assmntUa {
+	background: url(../img/deco/assmntUaMnu.png) no-repeat center left !important;
+}
+ul.sw_ueMnu_navList .mnu_quest {
+	background: url(../img/deco/questMnu.png) no-repeat center left !important;
+}
+ul.sw_ueMnu_navList .mnu_obj {
+	background: url(../img/deco/objPedMnu.png) no-repeat top left !important;
+}
+ul.sw_ueMnu_navList .mnu_courseUa.mnu_l,
+ul.sw_ueMnu_navList .mnu_ueDiv.mnu_l {
+	background: url(../img/mnu/mnuCl.gif) no-repeat center left;
+}
+ul.sw_ueMnu_navList .mnu_courseUa.mnu_b,
+ul.sw_ueMnu_navList .mnu_ueDiv.mnu_b {
+	background: url(../img/mnu/mnuOp.gif) no-repeat center left;
+}
+ul.sw_ueMnu_navList .mnu_courseUa.mnu_sel_yes,
+ul.sw_ueMnu_navList .mnu_ueDiv.mnu_sel_yes {
+	background: url(../img/mnu/mnuOpDyn.gif) no-repeat center left;
+}
+ul.sw_ueMnu_navList span.mnu_cursor {
+	display: none;
+}
+ul.sw_ueMnu_navList span.mnu_sel_yes span.mnu_cursor {
+}
+
+/* Barres horizontal de scroll */
+#tplMnuCo{
+	border-right: 1px solid #7B8820;
+}
+div.ueMnuSrlUp{
+	background: url(../img/mnu/top.png) no-repeat center center;
+}
+div.ueMnuSrlDwn{
+	background: url(../img/mnu/bottom.png) no-repeat center center;
+}
+div.ueMnuSrlUp a,
+div.ueMnuSrlDwn a{
+	position: absolute;
+	display: block;
+	width:100%;
+	height:100%;
+}
+div.ueMnuSrlUp span,
+div.ueMnuSrlDwn span{
+	display: none;
+}
+div.ueMnuSrlUp.btnOff,
+div.ueMnuSrlDwn.btnOff{
+	-moz-opacity:0.3;
+	filter:Alpha(opacity=30);
+	opacity:0.3;
+}
+a.btnMnuTglOn{
+	background: url(../img/mnu/collapse.png) no-repeat left center;
+}
+a.btnMnuTglOn:hover{
+	background: url(../img/mnu/collapseOver.png) no-repeat left center;
+}
+a.btnMnuTglOff{
+	background: url(../img/mnu/open.png) no-repeat left center;
+}
+a.btnMnuTglOff:hover{
+	background: url(../img/mnu/openOver.png) no-repeat left center;
+}
+
+a.btnMnuTglOn span,
+a.btnMnuTglOff span{
+	display: none;
+}

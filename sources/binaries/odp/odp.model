@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Présentation OpenDocument￼" category="￼;Ressources￼">
+	<sm:help quickHelp="￼; Ressource au format Open Document Presentation. ￼"/>
+	<sm:identification extensions="odp" mimeTypes="application/vnd.oasis.opendocument.presentation"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/academic/model/metaData/binDocM.model" usage="optional"/>
+	</sm:structure>
+	<sm:authoring>
+		<sm:preview>
+			<sm:htmlViewer>
+				<sm:fromBinary>
+					<sm:freeTransform code="odpFull2swf"/>
+				</sm:fromBinary>
+			</sm:htmlViewer>
+		</sm:preview>
+		<sm:icon sc:refUri="/binaries/odp/_res/odp.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;res￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:emptyFile sc:refUri="/binaries/odp/_res/empty.odp"/>
+	</sm:authoring>
+</sm:binaryPrim>

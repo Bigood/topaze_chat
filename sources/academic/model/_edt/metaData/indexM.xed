@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeXed xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:se="http://www.utc.fr/ics/scenari/v3/editing" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" code="op_indexM">
+	<sm:namespaceToDeclare prefix="op" ns="utc.fr:ics/opale3"/>
+	<sm:namespaceToDeclare prefix="sp" ns="http://www.utc.fr/ics/scenari/v3/primitive"/>
+	<se:editor se:namespaces="true">
+		<se:lib>
+			<element se:id="op_indexM" se:bind="element" se:declareNs="sp op sc" se:title="indexM" se:name="op:indexM">
+				<childs>
+					<se:ref se:refid="s_content"/>
+				</childs>
+			</element>
+			<hiddenElement se:id="op_indexM:hideHeader" se:bind="element" se:declareNs="sp op sc" se:title="indexM" se:name="op:indexM">
+				<childs>
+					<se:ref se:refid="s_content"/>
+				</childs>
+			</hiddenElement>
+			<se:template se:id="s_content">
+				<insert4all se:bind="current" tooltiptext="Options de publication...">
+					<element se:bind="element" class="property" startAt="80" se:title="￼Type d'index (papier)￼" se:name="sp:index" tooltipTag="￼Ressources numérotées automatiquement sur le papier. Par exemple : Tableau 1 : ....￼" se:card="?" orientation="horizontal" forcefilled="true" se:show="ifExist" insert="collapsed" styleTag="color:#8f8f8f;;font-size:0.9em;">
+						<childs>
+							<contentElement se:bind="text" class="property">
+								<choiceInput notnull="true" style="font-size:0.9em;">
+									<ciItem value="graph" label="￼Graphique￼"/>
+									<ciItem value="tab" label="￼Tableau￼"/>
+									<ciItem value="img" label="￼Image￼"/>
+									<ciItem value="form" label="￼Formule￼"/>
+									<ciItem value="anim" label="￼Animation￼"/>
+								</choiceInput>
+							</contentElement>
+						</childs>
+					</element>
+				</insert4all>
+			</se:template>
+		</se:lib>
+	</se:editor>
+</sm:freeXed>

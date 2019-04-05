@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Ua/assmntUa.model"/>
+	<sm:navigation>
+		<sm:page template="page">
+			<sm:title>
+				<sm:compositionTitle format="shortTitleText"/>
+				<sm:fixedTitle value="￼;Évaluation￼"/>
+			</sm:title>
+			<sm:outlineClasses>
+				<sm:fixedString value="mnu_assmntUa"/>
+			</sm:outlineClasses>
+			<sm:mainZone format="xhtml">
+				<sm:WHeadingBlock widgetClass="mainContent" class="assmntUaContent">
+					<sm:title>
+						<sm:compositionTitle format="fullTitleText"/>
+						<sm:fixedTitle value="￼;Évaluation￼"/>
+					</sm:title>
+					<sm:Widget sc:refUri="/academic/gen/_web/widg/util/noJsWarn.uiwidget"/>
+					<sm:Widget sc:refUri="/academic/gen/_web/widg/refs/kwrdEntries.uiwidget"/>
+					<sm:for codes="obj">
+						<sm:WSimpleBlock widgetClass="objBox">
+							<sm:title>
+								<sm:fixedTitle value="￼;Objectifs￼"/>
+							</sm:title>
+							<sm:WSimpleBlock widgetClass="objBoxIn">
+								<sm:callSubModel/>
+							</sm:WSimpleBlock>
+						</sm:WSimpleBlock>
+					</sm:for>
+					<sm:for codes="intro">
+						<sm:choose>
+							<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+								<sm:WSimpleBlock widgetClass="intro">
+									<sm:callSubModel/>
+								</sm:WSimpleBlock>
+							</sm:when>
+						</sm:choose>
+					</sm:for>
+					<sm:WSimpleBlock widgetClass="gotoEval">
+						<sm:WLink widgetClass="btnEval">
+							<sm:label>
+								<sm:fixedString value="￼;Entrer dans le test...￼"/>
+							</sm:label>
+							<sm:link target="subWindow">
+								<sm:windowFeatures extraOptions="CLOSEBTNTI :'￼Fermer￼'"/>
+								<sm:callModel>
+									<sm:current axis="index" navCtx="newRoot"/>
+								</sm:callModel>
+							</sm:link>
+						</sm:WLink>
+					</sm:WSimpleBlock>
+				</sm:WHeadingBlock>
+			</sm:mainZone>
+			<sm:zone key="zIconPage" format="xhtml">
+				<sm:WSimpleBlock widgetClass="decoAssmntUa"/>
+			</sm:zone>
+			<sm:zone key="zLegal" format="xhtml">
+				<sm:callModel>
+					<sm:current axis="legal"/>
+				</sm:callModel>
+			</sm:zone>
+			<sm:zone key="zKeywords" format="text">
+				<sm:callModel>
+					<sm:root axis="keywds"/>
+				</sm:callModel>
+				<sm:callModel>
+					<sm:current axis="keywds"/>
+				</sm:callModel>
+			</sm:zone>
+		</sm:page>
+	</sm:navigation>
+</sm:compositionXhtmlTransf>

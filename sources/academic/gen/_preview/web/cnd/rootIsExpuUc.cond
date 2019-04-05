@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:genericCond code="rootIsExpUc" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:targetModel>
+		<sm:current/>
+		<sm:ifNone>
+			<sm:fixedResult return="false"/>
+		</sm:ifNone>
+	</sm:targetModel>
+	<sm:expression>
+		<sm:freeXpath xpath=" typeAgent(concat('@',rootModel())) = 'op_expUc'"/>
+	</sm:expression>
+</sm:genericCond>

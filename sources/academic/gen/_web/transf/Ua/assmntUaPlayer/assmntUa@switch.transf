@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?><sma:assmntCompositionDhtmlTransf xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Ua/assmntUa.model"/>
+	<sm:axis code="switch"/>
+	<sm:scenario>
+		<sm:sequence code="play">
+			<sm:onLoadConditions>
+				<sm:completionStatus operator="is" status="notAttempt">
+					<sm:responseSessionKey>
+						<sm:fixedKey value="eval"/>
+					</sm:responseSessionKey>
+				</sm:completionStatus>
+			</sm:onLoadConditions>
+			<sm:initBody>
+				<sm:elementDisplay refId="pending" mode="collapsed"/>
+				<sm:elementDisplay refId="results" mode="collapsed"/>
+			</sm:initBody>
+		</sm:sequence>
+		<sm:sequence code="pending">
+			<sm:onLoadConditions>
+				<sm:completionStatus operator="is" status="attempt">
+					<sm:responseSessionKey>
+						<sm:fixedKey value="eval"/>
+					</sm:responseSessionKey>
+				</sm:completionStatus>
+			</sm:onLoadConditions>
+			<sm:initBody>
+				<sm:elementDisplay refId="play" mode="collapsed"/>
+				<sm:elementDisplay refId="results" mode="collapsed"/>
+			</sm:initBody>
+		</sm:sequence>
+		<sm:sequence code="results">
+			<sm:initBody>
+				<sm:elementDisplay refId="play" mode="collapsed"/>
+				<sm:elementDisplay refId="pending" mode="collapsed"/>
+			</sm:initBody>
+		</sm:sequence>
+	</sm:scenario>
+	<sm:assmntBody>
+		<div xmlns="http://www.w3.org/1999/xhtml" sm:id="play">
+			<p>￼;Vous allez à présent effectuer une série d'exercices d'auto-évaluation.￼</p>
+			<p>￼;Une synthèse vous sera présentée à la fin de cette série d'exercices.￼</p>
+			<p>
+				<sm:WButton widgetClass="btnStartE">
+					<sm:buttonBody>
+						<span>￼;Commencer le test...￼</span>
+					</sm:buttonBody>
+					<sm:buttonTitle>
+						<sm:fixedString value="￼;Commencer l'évaluation...￼"/>
+					</sm:buttonTitle>
+					<sm:buttonAction>
+						<sm:setCompletionStatus status="attempt">
+							<sm:responseSessionKey>
+								<sm:fixedKey value="eval"/>
+							</sm:responseSessionKey>
+						</sm:setCompletionStatus>
+						<sm:link target="sameWindow">
+							<sm:callModel>
+								<sm:current axis="quiz"/>
+							</sm:callModel>
+						</sm:link>
+					</sm:buttonAction>
+				</sm:WButton>
+			</p>
+		</div>
+		<div xmlns="http://www.w3.org/1999/xhtml" sm:id="pending">
+			<p>￼;Vous avez déjà commencé ce test.￼</p>
+			<p>￼; Vos réponses ont été conservées. Vous pouvez les revoir et poursuivre le test ou les effacer et recommencer le test.￼</p>
+			<p>
+				<sm:WButton widgetClass="btnStartE">
+					<sm:buttonBody>
+						<span>￼;Reprendre le test...￼</span>
+					</sm:buttonBody>
+					<sm:buttonTitle>
+						<sm:fixedString value="￼;Reprendre le test...￼"/>
+					</sm:buttonTitle>
+					<sm:buttonAction>
+						<sm:link target="sameWindow">
+							<sm:callModel>
+								<sm:current axis="quiz"/>
+							</sm:callModel>
+						</sm:link>
+					</sm:buttonAction>
+				</sm:WButton>
+				<sm:WButton widgetClass="btnRestartE">
+					<sm:buttonBody>
+						<span>￼;Effacer et recommencer le test...￼</span>
+					</sm:buttonBody>
+					<sm:buttonTitle>
+						<sm:fixedString value="￼;Effacer et recommencer le test...￼"/>
+					</sm:buttonTitle>
+					<sm:buttonAction>
+						<sm:resetSession response="yes" score="yes">
+							<sm:sessionKey>
+								<sm:fixedKey value="eval"/>
+							</sm:sessionKey>
+						</sm:resetSession>
+						<sm:for codes="quiz">
+							<sm:callFunction fctName="reset" axis="reset"/>
+						</sm:for>
+						<sm:link target="sameWindow">
+							<sm:callModel>
+								<sm:current axis="quiz"/>
+							</sm:callModel>
+						</sm:link>
+					</sm:buttonAction>
+				</sm:WButton>
+			</p>
+		</div>
+		<div xmlns="http://www.w3.org/1999/xhtml" sm:id="results">
+			<p>￼;Vous avez déjà réalisé ce test.￼</p>
+			<p>￼; Vous pouvez de nouveau consulter vos résultats ou effacer vos réponses et recommencer le test.￼</p>
+			<p>
+				<sm:WButton widgetClass="btnScoreE">
+					<sm:buttonBody>
+						<span>￼;Afficher les résultats...￼</span>
+					</sm:buttonBody>
+					<sm:buttonTitle>
+						<sm:fixedString value="￼;Afficher les résultats...￼"/>
+					</sm:buttonTitle>
+					<sm:buttonAction>
+						<sm:link target="sameWindow">
+							<sm:callModel>
+								<sm:current axis="result"/>
+							</sm:callModel>
+						</sm:link>
+					</sm:buttonAction>
+				</sm:WButton>
+				<sm:WButton widgetClass="btnRestartE">
+					<sm:buttonBody>
+						<span>￼;Effacer et recommencer le test...￼</span>
+					</sm:buttonBody>
+					<sm:buttonTitle>
+						<sm:fixedString value="￼;Effacer et recommencer le test...￼"/>
+					</sm:buttonTitle>
+					<sm:buttonAction>
+						<sm:resetSession response="yes" score="yes">
+							<sm:sessionKey>
+								<sm:fixedKey value="eval"/>
+							</sm:sessionKey>
+						</sm:resetSession>
+						<sm:for codes="quiz">
+							<sm:callFunction fctName="reset" axis="reset"/>
+						</sm:for>
+						<sm:setCompletionStatus status="attempt">
+							<sm:responseSessionKey>
+								<sm:fixedKey value="eval"/>
+							</sm:responseSessionKey>
+						</sm:setCompletionStatus>
+						<sm:link target="sameWindow">
+							<sm:callModel>
+								<sm:current axis="quiz"/>
+							</sm:callModel>
+						</sm:link>
+					</sm:buttonAction>
+				</sm:WButton>
+			</p>
+		</div>
+	</sm:assmntBody>
+</sma:assmntCompositionDhtmlTransf>

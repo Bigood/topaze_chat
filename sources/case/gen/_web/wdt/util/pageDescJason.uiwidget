@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="pageDescJason">
+	<sm:widgetBsFragment contentFormat="xhtml">&lt;source type="xslOnSrc-dynamique"&gt;
+	&lt;xsl:stylesheet exclude-result-prefixes="sc sp " version="1.0" 
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+	xmlns:sc="http://www.utc.fr/ics/scenari/v3/core"
+	xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive"&gt;
+
+		&lt;xsl:output omit-xml-declaration="yes" indent="no" method="xml" /&gt;
+		&lt;xsl:param name="vDialog" /&gt;
+		&lt;xsl:param name="vAgent" /&gt;
+
+		&lt;xsl:variable name="vUrl" select="resultatDialogue($vDialog, 'act:')"/&gt;
+		&lt;xsl:variable name="vTi" select="intituleAgent($vDialog)"/&gt;
+		&lt;xsl:variable name="vtype" select="srcFields(srcFileAgent(agent($vDialog)), 'itModel')"/&gt;
+		&lt;xsl:template match="*"&gt;
+			&lt;xsl:variable name="vPageDesc" select="concat('&amp;quot;co/',$vUrl,'&amp;quot;:{title:&amp;quot;',chaineProtegeJs($vTi),'&amp;quot;,type:&amp;quot;',$vtype,'&amp;quot;},')"/&gt;
+			&lt;xsl:value-of select="execute(setEntryBuffer('pageList', $vPageDesc))"/&gt;
+		&lt;/xsl:template&gt;
+	&lt;/xsl:stylesheet&gt;
+&lt;/source&gt;</sm:widgetBsFragment>
+</sm:freeUiWidget>

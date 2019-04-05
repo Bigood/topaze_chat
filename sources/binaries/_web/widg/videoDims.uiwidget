@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="videoDims">
+	<sm:widgetBsFragment contentFormat="xhtml">&lt;source type="xslOnSrc-dynamique"&gt;
+	&lt;xsl:stylesheet version="1.0" exclude-result-prefixes="xalan sc sp sfm java wm" xmlns:wm="scpf.org:webMedia" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:sfm="http://www.utc.fr/ics/scenari/v3/filemeta" xmlns:java="http://xml.apache.org/xslt/java" xmlns:xalan="http://xml.apache.org/xalan"&gt;
+		&lt;xsl:output omit-xml-declaration="yes" indent="no" method="xml"/&gt;
+		&lt;xsl:param name="vDialog"/&gt;
+		&lt;xsl:param name="vAgent"/&gt;
+		
+		&lt;xsl:template match="*"&gt;
+			&lt;xsl:variable name="vMaxSize" select="genProp('bin.size-int',630)"/&gt;
+			&lt;xsl:variable name="vDims" select="computeStrAgent('//', concat('get:src:', java:getSrcUri(srcFileAgent()), &amp;quot;?transform=ffmpeg&amp;amp;sizeRules=Px(ScSCS()Bounds(maxW'&amp;quot;,$vMaxSize,&amp;quot;'maxH'&amp;quot;,$vMaxSize,&amp;quot;'))&amp;amp;outType=DIMS&amp;amp;outRules=Str(pattern'!wpx_!hpx')&amp;quot;))" /&gt;
+			&lt;xsl:variable name="vWidth" select="round(number(substring-before($vDims,'_')))" /&gt;
+			&lt;xsl:variable name="vHeight" select="round(number(substring-after($vDims,'_')))" /&gt;
+			&lt;addAttribute name="width"&gt;
+				&lt;xsl:value-of select="$vWidth" /&gt;
+			&lt;/addAttribute&gt;
+			&lt;addAttribute name="height"&gt;
+				&lt;xsl:value-of select="$vHeight" /&gt;
+			&lt;/addAttribute&gt;
+		&lt;/xsl:template&gt;
+	&lt;/xsl:stylesheet&gt;
+&lt;/source&gt;</sm:widgetBsFragment>
+</sm:freeUiWidget>

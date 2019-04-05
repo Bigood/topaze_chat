@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:genericCond xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="isStandardPub" info="Is this a standard publication">
+	<sm:targetModel>
+		<sm:root axis="rootFilter"/>
+		<sm:ifNone>
+			<sm:fixedResult return="true"/>
+		</sm:ifNone>
+	</sm:targetModel>
+	<sm:expression>
+		<sm:comparison operator="=">
+			<sm:leftOperand>
+				<sm:shortTitleText/>
+			</sm:leftOperand>
+			<sm:rightOperand>
+				<sm:fixedString value="standard"/>
+			</sm:rightOperand>
+		</sm:comparison>
+	</sm:expression>
+</sm:genericCond>

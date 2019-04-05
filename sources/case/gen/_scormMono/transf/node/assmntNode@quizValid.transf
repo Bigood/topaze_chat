@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/case/model/node/assmntNode.model"/>
+	<sm:axis code="quizValid"/>
+	<sm:navigation>
+		<sm:page template="topaze">
+			<sm:title>
+				<sm:fixedTitle value="￼;Résultats du quiz￼"/>
+			</sm:title>
+			<sm:mainZone format="xhtml">
+				<sm:WFreeBlock>
+					<!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1374568108385">scormTopazeMgr.fPartExo : Variable permettant de différencier les trois phases d'un exercice : q -&gt; introduction, e -&gt; questionnaire, r -&gt; réponses</comment></comment>-->
+					<script xmlns="http://www.w3.org/1999/xhtml" type="text/JavaScript">scormTopazeMgr.fPartExo = "r"</script>
+				</sm:WFreeBlock>
+				<sm:choose>
+					<sm:when xpath="opa:assmntNodeM/sp:sol = 'yes'">
+						<sm:WHeadingBlock widgetClass="nodeBk" class="assmntNode quizResult noIndex">
+							<sm:title>
+								<sm:compositionTitle/>
+							</sm:title>
+							<sm:callModel>
+								<sm:current axis="listMode"/>
+							</sm:callModel>
+							<sm:callModel>
+								<sm:current axis="end"/>
+							</sm:callModel>
+							<sm:for codes="quiz">
+								<sm:WSimpleBlock class="quizBk">
+									<sm:callSubModel axis="sol"/>
+								</sm:WSimpleBlock>
+							</sm:for>
+						</sm:WHeadingBlock>
+					</sm:when>
+					<sm:otherwise>
+						<sm:WHeadingBlock widgetClass="nodeBk" class="assmntNode quizValid noIndex">
+							<sm:title>
+								<sm:compositionTitle/>
+							</sm:title>
+							<sm:callModel>
+								<sm:current axis="end"/>
+							</sm:callModel>
+						</sm:WHeadingBlock>
+					</sm:otherwise>
+				</sm:choose>
+			</sm:mainZone>
+			<sm:zone key="zArc" format="xhtml">
+				<sm:callModel>
+					<sm:current axis="arc"/>
+				</sm:callModel>
+			</sm:zone>
+		</sm:page>
+	</sm:navigation>
+</sm:compositionXhtmlTransf>

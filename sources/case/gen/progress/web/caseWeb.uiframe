@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transparentUiFrame xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:uiServices>
+		<sm:uiService sc:refUri="/case/gen/_web/svc/assmnt.uiservice"/>
+		<sm:uiService sc:refUri="/case/gen/_web/svc/scPreload.uiservice"/>
+		<sm:uiService sc:refUri="/academic/gen/_web/svc/scSearch.uiservice"/>
+	</sm:uiServices>
+	<sm:rootContext>
+		<sm:transparentIframe/>
+	</sm:rootContext>
+	<sm:callRootModel/>
+	<sm:publishFiles sc:refUri="/case/gen/progress/web/ui.doss">
+		<sm:callRootModel axis="rootModel" codeView="xhtmlContent"/>
+	</sm:publishFiles>
+	<sm:freeInitProperties mode="append">postTask.ant=build.xml</sm:freeInitProperties>
+</sm:transparentUiFrame>

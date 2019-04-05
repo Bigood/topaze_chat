@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Export Scorm Moodle (plugin topaze)￼" category="￼;Export￼">
+	<sm:identification targetNamespace="kelis.fr:opa" targetPrefix="opa" code="scormRoot" itemExtension="export"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/case/model/scormRootM.model" usage="required"/>
+		<sm:part code="case" name="￼;Étude de cas￼" internalized="never" usage="required">
+			<sm:allowedModel sc:refUri="/case/model/case.model"/>
+		</sm:part>
+	</sm:structure>
+	<sm:authoring>
+		<sm:icon sc:refUri="/case/auth/ico/scorm.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;scormRoot￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:formEditor indentXml="true">
+			<sm:composition>
+				<sm:standardWidget tagStyle="font-family:arial;font-size:20px; background-color:#d10505; color:white; -moz-border-radius:5px; padding-left:4px; padding-right:4px">
+					<sm:iconTag sc:refUri="/case/auth/ui/scorm.png"/>
+				</sm:standardWidget>
+			</sm:composition>
+			<sm:part refCode="case">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:10px; margin-bottom:10px; padding-left:5px">
+							<sm:head>
+								<sm:name style="margin-left:5px; color:black; font-size:18px; font-family:arial"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:compositionPrim>

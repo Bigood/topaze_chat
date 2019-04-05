@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://scenariWsp/content/windows/subView/subview.css" type="text/css"?>
+<?xml-stylesheet href="gallery.css" type="text/css"?>
+<window xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" onload="init()">
+	<script><![CDATA[
+		function init(){
+			try{
+				var vUriObject = document.fUriObject;
+				var vParent = window.frameElement;
+				var vAutoPlay = false;
+				while(vParent) {
+					if(vParent.localName=="tooltip") {
+						vAutoPlay = true;
+						break;
+					}
+					vParent = vParent.parentNode;
+				}
+				var vControls = document.getElementById("controls");
+				var vAnimBtn = document.getElementById("animBtn");
+				var vGallery = document.getElementById("gallery");
+				if (vAutoPlay){
+					vControls.collapsed = true;
+					setInterval(function(){next();}, 1000);
+				} else {
+					vAnimBtn.className = "play";
+					vAnimBtn.play = false;
+				}
+				function asyncLoad(pEvent){
+					var vXml = pEvent.target.responseXML;
+					var vXsl = dom.getSharedDom("gallery.xsl");
+					if(vXml && vXsl) dom.execXsl(vXsl, vXml, vGallery, null);
+					if (vGallery.children.length<2) vControls.collapsed = true;
+				}
+				vUriObject.loadDomContent(null, asyncLoad, asyncLoad);
+			}catch(e){
+				alert("previewmini : " + e);
+			}
+		}
+		function next(){
+			var vGallery = document.getElementById("gallery");
+			var vCount = vGallery.children.length;
+			if (vCount<2) return;
+			var vIdx = vGallery.selectedIndex;
+			if (vIdx<vCount-1) vGallery.selectedIndex++;
+			else vGallery.selectedIndex = 0;
+		}
+		function toggle(){
+			var vAnimBtn = document.getElementById("animBtn");
+			vAnimBtn.play = !vAnimBtn.play;
+			if (vAnimBtn.play) {
+				next();
+				vAnimBtn.className = "pause";
+				vAnimBtn.fAuto = setInterval(function(){next();}, 1000);
+			} else {
+				vAnimBtn.className = "play";
+				clearInterval(vAnimBtn.fAuto);
+			}
+		}
+	 ]]></script>
+	<script src="chrome://scenariWsp/content/windows/subView/subview.js"/>
+	<vbox flex="1" id="contentBlock">
+		<stack flex="1">
+			<deck id="gallery" selectedIndex="0" flex="1"></deck>
+			<vbox id="controls" flex="1" >
+				<spacer flex="1"/>
+				<hbox>
+					<spacer flex="1"/>
+					<button id="animBtn" oncommand="toggle();"/>
+					<spacer flex="1"/>
+				</hbox>
+				<spacer flex="1"/>
+			</vbox>
+		</stack>
+	</vbox>
+</window>

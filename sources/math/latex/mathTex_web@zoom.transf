@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/math/latex/mathTex.model"/>
+	<sm:axis code="zoom"/>
+	<sm:content>
+		<sm:WLink widgetClass="sfile_mathTex_zoom_lnk sfile_lnk">
+			<sm:label>
+				<sm:title>
+					<sm:binaryTitle axis="zoom"/>
+				</sm:title>
+			</sm:label>
+			<sm:labelTitle>
+				<sm:title>
+					<sm:binaryTitle suffix="￼; (nouvelle fenêtre)￼" axis="zoom"/>
+				</sm:title>
+			</sm:labelTitle>
+			<sm:link target="newWindow" windowName="zoom">
+				<sm:behavior addLinkInHref="yes"/>
+				<sm:position>
+					<sm:centerScreen/>
+				</sm:position>
+				<sm:windowFeatures scrollbars="no"/>
+				<sm:WImage>
+					<sm:binaryUrl>
+						<!--Pour mettre une couleur de fond : &backgroundColor=rgb%201.0%201.0%201.0-->
+						<sm:freeTransform code="latex2img" options="resolution=96&amp;scale=1.3"/>
+						<sm:imageTransform>
+							<sm:sizeBounds maxWidthInPx="900" maxHeightInPx="700"/>
+							<sm:outputPNG/>
+						</sm:imageTransform>
+					</sm:binaryUrl>
+					<sm:alt>
+						<sm:callModel>
+							<sm:current axis="altText"/>
+						</sm:callModel>
+					</sm:alt>
+					<sm:declareSize/>
+				</sm:WImage>
+			</sm:link>
+		</sm:WLink>
+		<sm:callBinaryMeta axis="info"/>
+	</sm:content>
+</sm:binaryXhtmlTransf>

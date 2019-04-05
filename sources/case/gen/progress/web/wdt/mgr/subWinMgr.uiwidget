@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="subWinMgr">
+	<sm:widgetPublishFiles sc:refUri="/case/gen/progress/web/wdt/mgr/subWinMgr.doss"/>
+	<sm:fillTemplateBuffers>
+		<sm:linkScript path="subWinMgr.js" pathFrom="localPublishFiles" sortKey="Z"/>
+	</sm:fillTemplateBuffers>
+	<sm:content/>
+</sm:openUiWidget>

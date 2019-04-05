@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeXslWebSiteTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" info="calculate index value (autoIndexInput)">
+	<sm:model sc:refUri="/case/model/index/autoIndex.model"/>
+	<sm:axis code="calcInput"/>
+	<sm:content>
+		<sm:xsl sc:refUri="/case/gen/_web/transf/index/autoIndex/autoIndex@calcInput.xsl"/>
+		<sm:callModel sc:refUri="/case/model/co/quiz/mcqMurMap.model" axis="val" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/case/model/co/quiz/mcqMurSum.model" axis="val" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/case/model/co/quiz/mcqSurPts.model" axis="val" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/academic/model/Uc/quiz/cloze.model" axis="val" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/academic/model/Uc/quiz/numerical.model" axis="val" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/academic/model/Uc/quiz/field.model" axis="val" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/academic/model/Uc/quiz/match.model" axis="val" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/academic/model/Uc/quiz/mcqMur.model" axis="val" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/academic/model/Uc/quiz/mcgMur.model" axis="val" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/academic/model/Uc/quiz/mcqSur.model" axis="val" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/academic/model/Uc/quiz/mcgSur.model" axis="val" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/academic/model/Uc/quiz/ordWord.model" axis="val" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/case/model/index/autoIndex.model" axis="calc" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/case/model/index/autoIndex.model" axis="val" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/case/model/index/userIndex.model" axis="val" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/case/model/node/assmntNode.model" axis="val" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/case/model/node/expNode.model" axis="val" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/case/model/node/heavyNode.model" axis="val" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/academic/model/Re/applet/applet.model" axis="val" codeView="xhtmlContent"/>
+	</sm:content>
+</sm:freeXslWebSiteTransf>

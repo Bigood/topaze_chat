@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Item indéfini￼" info="Item de type inconnu">
+	<sm:help quickHelp="￼;Item non reconnu.￼"/>
+	<sm:identification/>
+	<sm:structure>
+		<sm:meta sc:refUri="/academic/model/metaData/binAltM.model" usage="optional"/>
+	</sm:structure>
+	<sm:authoring>
+		<sm:icon sc:refUri="/binaries/undef/_res/undef.png"/>
+	</sm:authoring>
+</sm:binaryPrim>

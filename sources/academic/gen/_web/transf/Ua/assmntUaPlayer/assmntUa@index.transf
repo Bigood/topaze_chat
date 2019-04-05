@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Ua/assmntUa.model"/>
+	<sm:axis code="index"/>
+	<sm:navigation>
+		<sm:page template="eval">
+			<sm:title>
+				<sm:compositionTitle format="fullTitleText"/>
+				<sm:fixedTitle value="￼;Évaluation￼"/>
+			</sm:title>
+			<sm:mainZone format="xhtml">
+				<sm:callModel>
+					<sm:current axis="switch"/>
+				</sm:callModel>
+				<!--Pour utiliser les fonctions publiques des sous modèles.-->
+				<sm:for codes="quiz">
+					<sm:callSubModel axis="reset"/>
+				</sm:for>
+			</sm:mainZone>
+		</sm:page>
+	</sm:navigation>
+</sm:compositionXhtmlTransf>

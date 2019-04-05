@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:genericWebSiteTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/mcgMur.model"/>
+	<sm:axis code="bkCntInt"/>
+	<sm:content format="text">
+		<sm:choose>
+			<sm:when xpath="not(count(sc:question/op:res/sp:*)=1 and count(sc:question/op:res/sp:txt) = 1 and count(sc:question/op:res/sp:txt/op:txt/sc:para) &lt;= 2)">
+				<sm:dynamicString>
+					<sm:freeSelect xpath="execute(java:hIncreaseOne(getDialogVar('vBkCounter')))"/>
+				</sm:dynamicString>
+			</sm:when>
+		</sm:choose>
+		<sm:dynamicString>
+			<sm:freeXslFragment> &lt;xsl:for-each select="sc:choices"&gt;
+ &lt;xsl:value-of select="execute(java:hIncreaseOne(getDialogVar('vBkCounter')))"/&gt;
+ &lt;/xsl:for-each&gt;
+</sm:freeXslFragment>
+		</sm:dynamicString>
+		<sm:choose>
+			<sm:when sc:refUri="/academic/gen/_sld/cnd/includeSol.cond">
+				<sm:dynamicString>
+					<sm:freeXslFragment> &lt;xsl:for-each select="sc:choices"&gt;
+ &lt;xsl:value-of select="execute(java:hIncreaseOne(getDialogVar('vBkCounter')))"/&gt;
+ &lt;/xsl:for-each&gt;
+ &lt;xsl:if test="sc:globalExplanation or sc:choices/sc:choice/sc:choiceExplanation"&gt;
+ &lt;xsl:value-of select="execute(java:hIncreaseOne(getDialogVar('vBkCounter')))"/&gt;
+ &lt;/xsl:if&gt;
+</sm:freeXslFragment>
+				</sm:dynamicString>
+			</sm:when>
+		</sm:choose>
+	</sm:content>
+</sm:genericWebSiteTransf>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><sma:assmntUnitMcqDhtmlTransf xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/mcqSur.model"/>
+	<sm:axis code="list"/>
+	<sm:scenario>
+		<sm:sequence code="play">
+			<sm:initBody>
+				<sm:choiceInteraction mode="enabled"/>
+				<sm:solutionDisplay mode="hidden"/>
+				<sm:elementDisplay refId="score" mode="invisible"/>
+				<sm:elementDisplay refId="gExpln" mode="collapsed"/>
+				<sm:elementDisplay refId="chExpln" mode="collapsed"/>
+			</sm:initBody>
+			<sm:loadData>
+				<sm:responseSessionKey>
+					<sm:fixedKey value=""/>
+				</sm:responseSessionKey>
+			</sm:loadData>
+			<sm:saveData>
+				<sm:responseSessionKey>
+					<sm:fixedKey value=""/>
+				</sm:responseSessionKey>
+				<sm:scoreSessionKey>
+					<sm:fixedKey value=""/>
+				</sm:scoreSessionKey>
+			</sm:saveData>
+			<sm:scoreComputing>
+				<sm:forBooleanScoring scoreIfRight="1" scoreIfWrong="0"/>
+				<sm:postProcessing>
+					<sm:fixBounds minPoints="0" maxPoints="1" scoreModulation="proportionnal"/>
+				</sm:postProcessing>
+			</sm:scoreComputing>
+		</sm:sequence>
+	</sm:scenario>
+	<sm:publicFunctions>
+		<sm:function fctName="play">
+			<sm:goToSequence refCode="play"/>
+		</sm:function>
+		<sm:function fctName="displaySol">
+			<sm:choiceInteraction mode="disabled"/>
+			<sm:solutionDisplay mode="shown"/>
+			<sm:elementDisplay refId="gExpln" mode="visible"/>
+			<sm:elementDisplay refId="chExpln" mode="visible"/>
+			<sm:elementDisplay refId="score" mode="visible"/>
+		</sm:function>
+		<sm:function fctName="reset">
+			<sm:resetSession response="yes" score="yes">
+				<sm:sessionKey>
+					<sm:fixedKey value=""/>
+				</sm:sessionKey>
+			</sm:resetSession>
+			<sm:goToSequence refCode="play"/>
+		</sm:function>
+	</sm:publicFunctions>
+	<sm:assmntBody>
+		<div xmlns="http://www.w3.org/1999/xhtml" class="headerQ">
+			<div sm:id="question" class="question">
+				<sm:callQuestionModel/>
+			</div>
+		</div>
+		<div xmlns="http://www.w3.org/1999/xhtml" class="scoreBox">
+			<sm:WScore sm:id="score" widgetClass="score">
+				<sm:scoreText>
+					<sm:scaleScore min="0" max="100" step="1">
+						<sm:display scoreMoreThan="99" valueFormat="hidden" suffix="￼;Bonne réponse￼" class="answBest"/>
+						<sm:display scoreMoreThan="49" scoreLessOrEqualThan="99" valueFormat="numeric" suffix="￼;% de bonnes réponses￼" class="answGood"/>
+						<sm:display scoreMoreThan="0" scoreLessOrEqualThan="49" valueFormat="numeric" suffix="￼;% de bonnes réponses￼" class="answBad"/>
+						<sm:display scoreLessOrEqualThan="0" valueFormat="hidden" suffix="￼;Mauvaise réponse ￼" class="answWorst"/>
+					</sm:scaleScore>
+				</sm:scoreText>
+			</sm:WScore>
+		</div>
+		<div xmlns="http://www.w3.org/1999/xhtml" sm:id="choiceList">
+			<sm:WChoiceList widgetClass="choiceList">
+				<sm:choiceBody>
+					<div sm:id="choice" class="choice">
+						<div sm:id="label" class="label">
+							<sm:callLabelModel/>
+						</div>
+						<sm:WChoiceExplanation sm:id="chExpln" widgetClass="chExpln">
+							<sm:callExplanationModel/>
+						</sm:WChoiceExplanation>
+					</div>
+				</sm:choiceBody>
+			</sm:WChoiceList>
+		</div>
+		<sm:WGlobalExplanation sm:id="gExpln" widgetClass="gExpln">
+			<sm:callExplanationModel/>
+		</sm:WGlobalExplanation>
+	</sm:assmntBody>
+</sma:assmntUnitMcqDhtmlTransf>

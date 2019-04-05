@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeXed xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:se="http://www.utc.fr/ics/scenari/v3/editing" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" code="op_mwUnM">
+	<sm:chromeFiles sc:refUri="/academic/model/Re/mediaWeb/mw.doss"/>
+	<sm:namespaceToDeclare prefix="op" ns="utc.fr:ics/opale3"/>
+	<sm:namespaceToDeclare prefix="sp" ns="http://www.utc.fr/ics/scenari/v3/primitive"/>
+	<se:editor se:namespaces="true">
+		<se:uiLib>
+			<se:style>.fragPreview{
+  border:1px solid #D3D3D3;
+  overflow:hidden;
+  margin-right: 10px;
+}
+.fragToolbar{
+  -moz-appearance: none;
+}
+.fragToolbar toolbarbutton{
+  -moz-appearance:none;
+  border: none !important;
+  border: 1px solid transparent !important;
+  margin-right: 3px;
+  min-width: 26px;
+  min-height: 24px;
+  cursor:pointer;
+}
+.fragToolbar toolbarbutton:hover{
+  background-color: transparent;
+  border: 1px solid silver !important;
+  opacity:0.7;
+}
+.fragToolbar toolbarbutton[disabled]:hover{
+  border: 1px solid transparent !important;
+  opacity:1;
+  cursor:default;
+}
+.fragToolbar toolbarbutton &gt; .toolbarbutton-text{
+  padding: 0 5px 0 2px;
+}
+.fragToolbar .btnPaste{
+  list-style-image: url(chrome://scenarixedlib/content/libUiBase/skin/img/basicActionsBtnBlock.png);
+  -moz-image-region : rect(0px 120px 20px 100px);
+}
+.fragToolbar .btnCopy{
+  list-style-image: url(chrome://scenarixedlib/content/libUiBase/skin/img/basicActionsBtnBlock.png);
+  -moz-image-region : rect(0px 80px 20px 60px);
+}
+.fragToolbar .btnCopy[disabled]{
+  -moz-image-region : rect(40px 80px 60px 60px);
+}
+.fragToolbar .btnDelete{
+  list-style-image: url(chrome://scenarixedlib/content/libUiBase/skin/img/basicActionsBtnBlock.png);
+  -moz-image-region : rect(0px 140px 20px 120px);
+}
+.fragToolbar .btnDelete[disabled]{
+  -moz-image-region : rect(40px 140px 60px 120px);
+}
+.fragToolbar .btnHelp{
+  list-style-image: url("[chromeContentPrefixUrl]/_mediaWeb/img/help.png");
+}
+.fragToolbar toolbarbutton.btnHelp &gt; .toolbarbutton-text,
+.fragToolbar toolbarbutton.btnCopy &gt; .toolbarbutton-text,
+.fragToolbar toolbarbutton.btnDelete &gt; .toolbarbutton-text{
+	display:none;
+}
+</se:style>
+		</se:uiLib>
+		<se:lib>
+			<hiddenElement se:id="op_mwUnM:hideHeader" se:bind="element" se:declareNs="op sp sc" se:title="Autre Fragment" se:name="op:mwUnM">
+				<childs>
+					<element se:bind="element" class="property" startAt="80" se:title="￼Alignement￼" se:name="sp:align" tooltipTag="￼Permet de spécifier l'alignement voulu du Média Web.￼" se:card="?" orientation="horizontal">
+						<childs>
+							<contentElement se:bind="text" class="property">
+								<choiceInput notnull="true">
+									<ciItem value="auto" label="￼auto￼"/>
+									<ciSeparator/>
+									<ciItem value="left" label="￼Gauche￼"/>
+									<ciItem value="right" label="￼Droite￼"/>
+									<ciItem value="center" label="￼Centré￼"/>
+									<ciItem value="justify" label="￼Justifié￼"/>
+								</choiceInput>
+							</contentElement>
+						</childs>
+					</element>
+					<staticBox se:bind="element" se:name="sp:frag">
+						<staticBox se:bind="text" style="-moz-binding:url([chromeContentPrefixUrl]/_mediaWeb/mwFragment.xbl.xml#generic);margin-left:18px;"/>
+					</staticBox>
+					<description style="color:silver;font-style: italic;margin:0 15px;text-align:center;" flex="1">￼Cette zone de prévisualisation ne permet pas d'afficher tous les codes HTML. Si ce que vous avez collé dans ce media web ne s'affiche pas correctement ici, publiez votre module et vérifiez dans un navigateur web.￼</description>
+				</childs>
+			</hiddenElement>
+		</se:lib>
+	</se:editor>
+</sm:freeXed>

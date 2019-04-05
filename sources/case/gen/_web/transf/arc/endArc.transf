@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/case/model/arc/endArc.model"/>
+	<sm:content format="xhtml">
+		<sm:WHeadingBlock widgetClass="arcBk" class="endArc">
+			<sm:title>
+				<sm:fixedTitle value="￼;Fin￼"/>
+			</sm:title>
+			<sm:WFreeBlock>
+				<div xmlns="http://www.w3.org/1999/xhtml" class="endMsg">￼;Vous avez atteint la fin de l'étude de cas.￼</div>
+			</sm:WFreeBlock>
+		</sm:WHeadingBlock>
+	</sm:content>
+</sm:compositionXhtmlTransf>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:crossRefTableUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="crRes">
+	<sm:refEntries key="res">
+		<sm:callableModel sc:refUri="/binaries/avi/avi.model"/>
+		<sm:callableModel sc:refUri="/binaries/doc/doc.model"/>
+		<sm:callableModel sc:refUri="/binaries/eWeb/eWeb.model"/>
+		<sm:callableModel sc:refUri="/binaries/flash/flash.model"/>
+		<sm:callableModel sc:refUri="/binaries/flv/flv.model"/>
+		<sm:callableModel sc:refUri="/binaries/gif/gif.model"/>
+		<sm:callableModel sc:refUri="/binaries/jpg/jpeg.model"/>
+		<sm:callableModel sc:refUri="/binaries/mov/mov.model"/>
+		<sm:callableModel sc:refUri="/binaries/mp3/mp3.model"/>
+		<sm:callableModel sc:refUri="/binaries/mpg/mpg.model"/>
+		<sm:callableModel sc:refUri="/binaries/odg/odg.model"/>
+		<sm:callableModel sc:refUri="/binaries/odp/odp.model"/>
+		<sm:callableModel sc:refUri="/binaries/ods/ods.model"/>
+		<sm:callableModel sc:refUri="/binaries/odt/odt.model"/>
+		<sm:callableModel sc:refUri="/binaries/pdf/pdf.model"/>
+		<sm:callableModel sc:refUri="/binaries/png/png.model"/>
+		<sm:callableModel sc:refUri="/binaries/ppt/ppt.model"/>
+		<sm:callableModel sc:refUri="/binaries/rm/rm.model"/>
+		<sm:callableModel sc:refUri="/binaries/wmv/wmv.model"/>
+		<sm:callableModel sc:refUri="/binaries/xls/xls.model"/>
+		<sm:callableModel sc:refUri="/binaries/zip/zip.model"/>
+		<sm:callableModel sc:refUri="/academic/model/Uc/expUc.model"/>
+	</sm:refEntries>
+	<sm:sortEntries>
+		<sm:alphaNonCaseSensitive>
+			<sm:callEntryTitle type="fullTitleText"/>
+			<sm:categories>
+				<sm:firstLetter minEntriesByCateg="3" ifOnlyOneCateg="eliminate">
+					<sm:forceCategories from="A" to="Z"/>
+				</sm:firstLetter>
+			</sm:categories>
+		</sm:alphaNonCaseSensitive>
+	</sm:sortEntries>
+	<sm:content>
+		<ifText xmlns="http://www.w3.org/1999/xhtml">
+			<div class="refOutline">
+				<sm:forCateg>
+					<span class="refOutlineEntry">
+						<sm:WCategLink tagNameIfCategEmpty="span">
+							<sm:categLabel/>
+						</sm:WCategLink>
+					</span>
+				</sm:forCateg>
+			</div>
+		</ifText>
+		<sm:forCateg filter="ifContainEntries">
+			<sm:WCategAnchor widgetClass="refCateg" tagName="div">
+				<sm:categLabel/>
+			</sm:WCategAnchor>
+			<dl xmlns="http://www.w3.org/1999/xhtml">
+				<sm:forEntry>
+					<dt class="idxEntryTi disabled_entry">
+						<sm:callEntryTitle type="fullTitleText"/>
+					</dt>
+					<dd class="idxFra disabled_entry">
+						<div class="idxEntryCo">
+							<sm:callEntryContent axis="crResCo"/>
+						</div>
+						<sm:WCollapsableBlock widgetClass="idxEntryCallers" defaultClosed="true">
+							<sm:label>￼;Référents￼</sm:label>
+							<sm:labelTitle>￼;Cliquez ici pour voir les référents...￼</sm:labelTitle>
+							<sm:content>
+								<sm:forCaller>
+									<div class="idxEntryCaller">
+										<sm:WidgetInCallerContext sc:refUri="/academic/gen/_web/widg/refs/stack.uiwidget"/>
+										<span class="stackSep"> &gt; </span>
+										<sm:WLinkCaller widgetClass="idxEntryCallerLnk">
+											<sm:label>
+												<sm:titlePageCaller/>
+											</sm:label>
+											<sm:link/>
+										</sm:WLinkCaller>
+									</div>
+								</sm:forCaller>
+							</sm:content>
+						</sm:WCollapsableBlock>
+					</dd>
+				</sm:forEntry>
+			</dl>
+		</sm:forCateg>
+		<ifText xmlns="http://www.w3.org/1999/xhtml">
+			<dl>
+				<sm:forEntry>
+					<dt class="idxEntryTi disabled_entry">
+						<sm:callEntryTitle type="fullTitleText"/>
+					</dt>
+					<dd class="idxFra disabled_entry">
+						<div class="idxEntryCo">
+							<sm:callEntryContent axis="crResCo"/>
+						</div>
+						<sm:WCollapsableBlock widgetClass="idxEntryCallers" defaultClosed="true">
+							<sm:label>￼;Référents￼</sm:label>
+							<sm:labelTitle>￼;Cliquez ici pour voir les référents...￼</sm:labelTitle>
+							<sm:content>
+								<sm:forCaller>
+									<div class="idxEntryCaller">
+										<sm:WidgetInCallerContext sc:refUri="/academic/gen/_web/widg/refs/stack.uiwidget"/>
+										<span class="stackSep"> &gt; </span>
+										<sm:WLinkCaller widgetClass="idxEntryCallerLnk">
+											<sm:label>
+												<sm:titlePageCaller/>
+											</sm:label>
+											<sm:link/>
+										</sm:WLinkCaller>
+									</div>
+								</sm:forCaller>
+							</sm:content>
+						</sm:WCollapsableBlock>
+					</dd>
+				</sm:forEntry>
+			</dl>
+		</ifText>
+		<!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1406712412281" updateTime="1406712436082">Suppression des tooltips et de l'ancien affichage qui posait des problèmes ...</comment></comment>-->
+		<!--<div xmlns="http://www.w3.org/1999/xhtml" id="crResList">
+	<sm:forCateg xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" filter="ifContainEntries">
+		<sm:WCategAnchor widgetClass="refCateg" tagName="div">
+			<sm:categLabel/>
+		</sm:WCategAnchor>
+		<ul>
+			<sm:forEntry>
+				<li class="entry disabled_entry">
+					<sm:callEntryContent axis="crResCo"/>
+					<sm:WCollapsableBlock widgetClass="idxEntryCallers" defaultClosed="true">
+						<sm:label>￼;Référents...￼</sm:label>
+						<sm:labelTitle>￼;Cliquez ici pour voir les référents...￼</sm:labelTitle>
+						<sm:content>
+							<ul>
+								<sm:forCaller>
+									<li class="idxEntryCaller">
+										<sm:WLinkCaller widgetClass="idxEntryCallerLnk">
+											<sm:label>
+												<sm:titlePageCaller/>
+											</sm:label>
+											<sm:link/>
+										</sm:WLinkCaller>
+									</li>
+								</sm:forCaller>
+							</ul>
+						</sm:content>
+					</sm:WCollapsableBlock>
+				</li>
+			</sm:forEntry>
+		</ul>
+	</sm:forCateg>
+	<ifText>
+		<ul>
+			<sm:forEntry xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+				<li class="entry disabled_entry">
+					<sm:callEntryContent axis="crResCo"/>
+					<!-~-Todo : mettre en place les référents mais que si étape est vu-~->
+					<sm:WCollapsableBlock widgetClass="idxEntryCallers" defaultClosed="true">
+						<sm:label>￼;Référents...￼</sm:label>
+						<sm:labelTitle>￼;Cliquez ici pour voir les référents...￼</sm:labelTitle>
+						<sm:content>
+							<ul>
+								<sm:forCaller>
+									<li class="idxEntryCaller">
+										<sm:WLinkCaller widgetClass="idxEntryCallerLnk">
+											<sm:label>
+												<sm:titlePageCaller/>
+											</sm:label>
+											<sm:link/>
+										</sm:WLinkCaller>
+									</li>
+								</sm:forCaller>
+							</ul>
+						</sm:content>
+					</sm:WCollapsableBlock>
+				</li>
+			</sm:forEntry>
+		</ul>
+	</ifText>
+</div>-->
+	</sm:content>
+</sm:crossRefTableUiWidget>

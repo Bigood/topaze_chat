@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><sma:assmntUnitEditDhtmlTransf xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns="http://www.w3.org/1999/xhtml" info="Effacer la session eval">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/numerical.model"/>
+	<sm:axis code="resetSub"/>
+	<sm:scenario>
+		<sm:sequence>
+			<sm:initBody>
+				<sm:elementDisplay refId="input" mode="collapsed"/>
+			</sm:initBody>
+		</sm:sequence>
+	</sm:scenario>
+	<sm:publicFunctions>
+		<sm:function fctName="reset">
+			<sm:setCompletionStatus status="notAttempt">
+				<sm:responseSessionKey>
+					<sm:fixedKey value="eval"/>
+				</sm:responseSessionKey>
+			</sm:setCompletionStatus>
+			<sm:resetSession response="yes" score="yes">
+				<sm:sessionKey>
+					<sm:fixedKey value="eval"/>
+				</sm:sessionKey>
+			</sm:resetSession>
+		</sm:function>
+	</sm:publicFunctions>
+	<sm:assmntBody>
+		<!--besoin de déclarer une zone Input pour que le resetSession fonctionne correctement-->
+		<div sm:id="input">
+			<sm:WInputZone>
+				<sm:singleField>
+					<sm:forNumberField codes="asw">
+						<sm:WInputText/>
+					</sm:forNumberField>
+				</sm:singleField>
+			</sm:WInputZone>
+		</div>
+	</sm:assmntBody>
+</sma:assmntUnitEditDhtmlTransf>

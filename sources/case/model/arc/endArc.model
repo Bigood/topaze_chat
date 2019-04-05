@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Fin de l'étude de cas￼" category="￼;Etude de cas￼">
+	<sm:identification targetNamespace="kelis.fr:opa" targetPrefix="opa" code="endArc" itemExtension="xml"/>
+	<sm:structure/>
+	<sm:authoring>
+		<sm:formEditor indentXml="false">
+			<sm:composition>
+				<sm:standardWidget tagStyle="color : #4668ad">
+					<sm:iconTag sc:refUri="/case/auth/ui/endArc.png"/>
+				</sm:standardWidget>
+			</sm:composition>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:compositionPrim>

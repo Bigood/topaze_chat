@@ -1,0 +1,30 @@
+div#mnuFra{
+	font-size:18px;
+	margin-left:200px;
+}
+
+div#mnuFra ul{
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+}
+
+div#mnuFra a{
+	color: #7B8820;
+	text-decoration: none;
+}
+div#mnuFra a.disabled_entry{
+	color: silver;
+	cursor: default;
+}
+map area.disabled_entry{
+	cursor: default;
+}
+div#mnuFra a.disabled_entry:hover{
+	text-decoration: none;
+}
+
+div.progFra{
+	float:left;
+	margin:20px
+}

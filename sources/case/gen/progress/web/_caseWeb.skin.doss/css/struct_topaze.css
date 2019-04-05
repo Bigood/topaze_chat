@@ -1,0 +1,10 @@
+#tplMain.ueMnuFra{
+	border:2px solid #7D98CB;
+	-moz-border-radius: 10px;
+	-webkit-border-radius:10px;
+	-khtml-border-radius:10px;
+	border-radius:10px;
+}
+#tplMain.ueMnuFra h1{
+	color: #4463A1;
+}

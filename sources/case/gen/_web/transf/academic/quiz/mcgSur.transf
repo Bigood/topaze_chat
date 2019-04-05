@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sma:assmntUnitGmcqDhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns="http://www.w3.org/1999/xhtml">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/mcgSur.model"/>
+	<sm:scenario>
+		<sm:sequence>
+			<sm:loadData>
+				<sm:responseSessionKey>
+					<sm:jsExpression expId="sessKeyQuiz">topazeMgr.fSessKeyQuiz</sm:jsExpression>
+				</sm:responseSessionKey>
+			</sm:loadData>
+			<sm:saveData>
+				<sm:responseSessionKey>
+					<sm:refExp refExpId="sessKeyQuiz"/>
+				</sm:responseSessionKey>
+				<sm:scoreSessionKey>
+					<sm:refExp refExpId="sessKeyQuiz"/>
+				</sm:scoreSessionKey>
+			</sm:saveData>
+			<sm:scoreComputing>
+				<sm:forBooleanScoring scoreIfRight="1" scoreIfWrong="0"/>
+			</sm:scoreComputing>
+		</sm:sequence>
+	</sm:scenario>
+	<sm:publicFunctions>
+		<sm:function fctName="reset">
+			<sm:resetSession response="yes" score="no">
+				<sm:sessionKey>
+					<sm:refExp refExpId="sessKeyQuiz"/>
+				</sm:sessionKey>
+			</sm:resetSession>
+		</sm:function>
+	</sm:publicFunctions>
+	<sm:assmntBody>
+		<div class="headerQ">
+			<div sm:id="question" class="question">
+				<sm:addSrcPath/>
+				<sm:callQuestionModel/>
+			</div>
+		</div>
+		<div sm:id="choiceList">
+			<sm:WChoiceMap widgetClass="choiceMap">
+				<sm:callBackgroundImageModel axis="nav"/>
+				<sm:choiceArea highlight="hover">
+					<sm:tooltip class="tooltip"/>
+				</sm:choiceArea>
+				<sm:choiceBody>
+					<div sm:id="choice" class="choice">
+						<div sm:id="label" class="label">
+							<sm:callLabelModel/>
+						</div>
+					</div>
+				</sm:choiceBody>
+			</sm:WChoiceMap>
+		</div>
+	</sm:assmntBody>
+</sma:assmntUnitGmcqDhtmlTransf>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/assmntNode/assmntNode.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/assmntNode/assmntNode@arc.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/assmntNode/assmntNode@coach.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/assmntNode/assmntNode@end.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/assmntNode/assmntNode@hasRefs.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/assmntNode/assmntNode@id.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/assmntNode/assmntNode@initArc.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/assmntNode/assmntNode@initMgr.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/assmntNode/assmntNode@quizList.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/assmntNode/assmntNode@quizBtnValid.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/assmntNode/assmntNode@quizValid.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/assmntNode/assmntNode@resetSession.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/assmntNode/assmntNode@val.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/assmntNode/assmntNode@listMode.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/assmntNode/assmntNode@noClick.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/assmntNode/assmntNode@initArcStatus.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/assmntNode/assmntNodeM.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/assmntNode/assmntNodeM@coach.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/assmntNode/assmntNodeM@explanation.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/assmntNode/assmntNodeM@noClick.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/assmntNode/assmntNodeM@try.transf"/>
+</sm:transformerList>

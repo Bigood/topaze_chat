@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/case/model/scormRoot.model"/>
+	<sm:axis code="keywds"/>
+	<sm:content format="xhtml">
+		<sm:for codes="case">
+			<sm:callSubModel axis="keywds"/>
+		</sm:for>
+	</sm:content>
+</sm:compositionXhtmlTransf>

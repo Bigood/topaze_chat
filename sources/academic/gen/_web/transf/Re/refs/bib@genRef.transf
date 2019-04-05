@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Re/refs/bib.model"/>
+	<sm:axis code="genRef"/>
+	<sm:content format="xhtml">
+		<sm:choose>
+			<sm:when xpath="op:bibM/sp:type='bib'">
+				<sm:WSimpleBlock widgetClass="bib_genRef" crossRefEntries="bib"/>
+			</sm:when>
+			<sm:otherwise>
+				<sm:WSimpleBlock widgetClass="bib_genRef" crossRefEntries="bib_web"/>
+			</sm:otherwise>
+		</sm:choose>
+	</sm:content>
+</sm:compositionXhtmlTransf>

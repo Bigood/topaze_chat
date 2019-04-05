@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeXslWebSiteTransf info="display index value" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/case/model/index/userIndex.model"/>
+	<sm:axis code="disp"/>
+	<sm:fullTitleText>
+		<sm:xsl sc:refUri="/case/gen/_web/transf/index/userIndex/userIndex@title.xsl"/>
+	</sm:fullTitleText>
+	<sm:content>
+		<sm:xsl sc:refUri="/case/gen/_web/transf/index/userIndex/userIndex@disp.xsl"/>
+		<sm:callModel sc:refUri="/case/model/index/userIndex.model" axis="val" codeView="xhtmlContent"/>
+	</sm:content>
+</sm:freeXslWebSiteTransf>

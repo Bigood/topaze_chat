@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="index">
+	<sm:fillTemplateBuffers>
+		<sm:postXslFragment keyXsl="xhtml">&lt;xsl:overlay match="div[containWord( @id, 'tplCo')]"&gt;
+	&lt;xsl:apply-templates mode="index"/&gt;
+&lt;/xsl:overlay&gt;
+&lt;xsl:overlay match="meta[@name='keywords']"&gt;
+	&lt;xsl:value-of select="execute(java:com.scenari.m.ge.pages.SearchIndexPage.indexText($vDialog, 'index', 'indexBuffer', '3', string(@content)))"/&gt;
+&lt;/xsl:overlay&gt;
+&lt;xsl:template match="*[containWord(@class,'noIndex')]" mode="index"/&gt;
+&lt;xsl:template match="*[containWord(@class,'pbTi')]" mode="index"/&gt;
+&lt;xsl:template match="*[containWord(@class,'objBox_ti')]" mode="index"/&gt;
+&lt;xsl:template match="*[containWord(@class,'bkSolResOut')]" mode="index"/&gt;
+&lt;xsl:template match="*[containWord(@class,'hidden')]" mode="index"/&gt;
+&lt;xsl:template match="*[containWord(@class,'CodeMirror-linenumber')]" mode="index"/&gt;
+&lt;xsl:template match="script" mode="index"/&gt;
+&lt;xsl:template match="noscript" mode="index"/&gt;
+
+&lt;xsl:template match="scTooltipTitle" mode="index"/&gt;
+&lt;xsl:template match="scTooltipContent" mode="index"/&gt;
+&lt;xsl:template match="addAttribute" mode="index"/&gt;
+&lt;xsl:template match="text()" mode="index"&gt;
+	&lt;xsl:variable name="vCoef"&gt;
+		&lt;xsl:choose&gt;
+			&lt;xsl:when test="ancestor::*[containWord(@class, 'divQuiz') or containWord(@class, 'practUcQuest') or containWord(@class, 'practUcDesc')]"&gt;0.5&lt;/xsl:when&gt;
+			&lt;xsl:when test="ancestor::*[containWord(@class, 'mainContent_ti') or containWord(@class, 'info_ti') or containWord(@class, 'pbTiAuthor') or containWord(@class, 'expUcDiv_ti')] "&gt;2&lt;/xsl:when&gt;
+			&lt;xsl:otherwise&gt;1&lt;/xsl:otherwise&gt;
+		&lt;/xsl:choose&gt;
+	&lt;/xsl:variable&gt;
+	&lt;xsl:value-of select="execute(java:com.scenari.m.ge.pages.SearchIndexPage.indexText($vDialog, 'index', 'indexBuffer', $vCoef, string(.)))"/&gt;
+&lt;/xsl:template&gt;
+&lt;xsl:template match="*" mode="index"&gt;
+ 	&lt;xsl:apply-templates mode="index"/&gt;
+&lt;/xsl:template&gt;
+</sm:postXslFragment>
+	</sm:fillTemplateBuffers>
+	<sm:content/>
+</sm:openUiWidget>

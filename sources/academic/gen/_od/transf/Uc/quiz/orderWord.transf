@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><sma:assmntUnitMlqOdTransf xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/ordWord.model"/>
+	<sm:content>
+		<sm:callQuestionModel axis="notImp"/>
+		<sm:WList style="listOrderWord">
+			<sm:forLabel display="random">
+				<sm:WListItem>
+					<sm:callLabelModel/>
+				</sm:WListItem>
+			</sm:forLabel>
+		</sm:WList>
+		<sm:WParagraph style="answerZone">
+			<sm:WInline style="answ">
+				<sm:fixedString value="￼;Réponse : ￼"/>
+				<sm:formattingMark>
+					<sm:nonBreakingSpace/>
+				</sm:formattingMark>
+			</sm:WInline>
+			<sm:forLabel display="random">
+				<sm:fixedString value="___"/>
+				<sm:formattingMark>
+					<sm:nonBreakingSpace/>
+				</sm:formattingMark>
+				<sm:formattingMark>
+					<sm:nonBreakingSpace/>
+				</sm:formattingMark>
+			</sm:forLabel>
+		</sm:WParagraph>
+	</sm:content>
+</sma:assmntUnitMlqOdTransf>

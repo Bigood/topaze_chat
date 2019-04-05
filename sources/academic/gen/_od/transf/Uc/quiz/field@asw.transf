@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><sma:assmntUnitEditOdTransf xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" info="Réponse uniquement">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/field.model"/>
+	<sm:axis code="asw"/>
+	<sm:content>
+		<sm:WInputZone>
+			<sm:singleField>
+				<sm:forStringField codes="asw">
+					<sm:WParagraph style="fieldSol">
+						<sm:solution/>
+					</sm:WParagraph>
+				</sm:forStringField>
+			</sm:singleField>
+		</sm:WInputZone>
+		<sm:callGlobalExplanationModel/>
+	</sm:content>
+</sma:assmntUnitEditOdTransf>

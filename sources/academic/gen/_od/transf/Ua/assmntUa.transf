@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionOdtTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0">
+	<sm:model sc:refUri="/academic/model/Ua/assmntUa.model"/>
+	<sm:content>
+		<sm:for codes="genRef">
+			<sm:callSubModel/>
+		</sm:for>
+		<sm:for codes="obj">
+			<sm:WBox style="objBox">
+				<sm:title>
+					<sm:fixedTitle value="￼;Objectifs￼"/>
+				</sm:title>
+				<sm:callSubModel axis="imp"/>
+			</sm:WBox>
+		</sm:for>
+		<sm:callCompositionMeta axis="keywds"/>
+		<sm:inDataOrder>
+			<sm:for codes="intro">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:callSubModel/>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="quiz">
+				<sm:WParagraph style="quizTitle">
+					<sm:fixedString value="￼;Exercice ￼"/>
+					<sm:dynamicString>
+						<sm:freeSelect xpath="count(preceding-sibling::sp:quiz)+1"/>
+					</sm:dynamicString>
+					<sm:title>
+						<sm:subModelTitle prefix="￼; : ￼"/>
+					</sm:title>
+				</sm:WParagraph>
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_od/_cnd/filters/solAssmntUa.cond">
+						<sm:dataBlock category="solution">
+							<sm:blockId>
+								<sm:subModelId/>
+							</sm:blockId>
+							<sm:label>
+								<sm:title>
+									<sm:compositionTitle/>
+									<sm:subModelTitle prefix="￼; : ￼"/>
+								</sm:title>
+							</sm:label>
+							<sm:data>
+								<sm:callSubModel axis="asw"/>
+							</sm:data>
+						</sm:dataBlock>
+					</sm:when>
+				</sm:choose>
+				<sm:callSubModel/>
+			</sm:for>
+		</sm:inDataOrder>
+	</sm:content>
+</sm:compositionOdtTransf>

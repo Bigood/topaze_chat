@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:webSiteGenerator xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="scormMulti" name="￼;Publication SCORM multi SCO￼">
+	<sm:icon sc:refUri="/academic/model/_ico/gen/scormGen.png"/>
+	<sm:modelRoot>
+		<sm:allowedModel sc:refUri="/academic/model/root/webRoot.model"/>
+	</sm:modelRoot>
+	<sm:mode standard="HTML 4.01 Transitional (Standards mode)" debug="no"/>
+	<sm:uiFrame sc:refUri="/academic/gen/quadra/scormMulti/scormMulti.uiframe"/>
+	<sm:transformerList>
+		<sm:transformerList info="Original" sc:refUri="/academic/gen/quadra/scormMulti/web.transflist"/>
+		<sm:transformerList info="SCORM">
+			<sm:transformerList info="Surcharge" sc:refUri="/academic/gen/quadra/scormMulti/transf.transflist"/>
+			<sm:transformerList info="Cam" sc:refUri="/academic/gen/quadra/scormMulti/transfCam.transflist"/>
+		</sm:transformerList>
+	</sm:transformerList>
+	<sm:uiTemplateList>
+		<sm:uiTemplate code="page" sc:refUri="/academic/gen/quadra/scormMulti/templates/page.uitemplate"/>
+		<sm:uiTemplate code="ref" sc:refUri="/academic/gen/quadra/scormMulti/templates/ref.uitemplate"/>
+		<sm:uiTemplate code="player" sc:refUri="/academic/gen/quadra/web/templates/evalPlayer.uitemplate"/>
+		<sm:uiTemplate code="quit" sc:refUri="/academic/gen/quadra/scormMulti/templates/quit.uitemplate"/>
+	</sm:uiTemplateList>
+	<sm:defaultSkin sc:refUri="/academic/gen/quadra/web/web.skin.doss" name="￼;Quadra￼"/>
+</sm:webSiteGenerator>

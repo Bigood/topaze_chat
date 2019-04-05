@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:freeXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" info="Récupération des infos légaux les plus proches parmis les encètres d'un item donné.">
+	<!--ATTENTION : pour que les infos légaux de l'item origiaire de l'appel soit pris en compte, celui-ci DOIT être à l'origine de la page web dans lequel on désire insérer ces infos.-->
+	<sm:model sc:refUri="/academic/model/Ue/ue.model"/>
+	<sm:model sc:refUri="/academic/model/Ua/courseUa.model"/>
+	<sm:model sc:refUri="/academic/model/Ua/assmntUa.model"/>
+	<sm:model sc:refUri="/academic/model/Uc/expUc.model"/>
+	<sm:model sc:refUri="/academic/model/Uc/practUc.model"/>
+	<sm:model sc:refUri="/academic/model/Uc/quiz/cloze.model"/>
+	<sm:model sc:refUri="/academic/model/Uc/quiz/coQuiz.model"/>
+	<sm:model sc:refUri="/academic/model/Uc/quiz/field.model"/>
+	<sm:model sc:refUri="/academic/model/Uc/quiz/match.model"/>
+	<sm:model sc:refUri="/academic/model/Uc/quiz/mcgMur.model"/>
+	<sm:model sc:refUri="/academic/model/Uc/quiz/mcgSur.model"/>
+	<sm:model sc:refUri="/academic/model/Uc/quiz/mcqMur.model"/>
+	<sm:model sc:refUri="/academic/model/Uc/quiz/mcqSur.model"/>
+	<sm:model sc:refUri="/academic/model/Uc/quiz/ordWord.model"/>
+	<sm:axis code="legal"/>
+	<sm:bs sc:refUri="/academic/gen/_web/transf/metaData/xxx@legal.doss" bsPath="op_xxx_Alegal.xml"/>
+	<sm:view code="xhtmlContent">
+		<sm:callModel sc:refUri="/academic/model/Re/sPara.model" codeView="xhtmlContent"/>
+	</sm:view>
+</sm:freeXhtmlTransf>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:freeXslOdTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Re/refs/bibTxt.model"/>
+	<sm:content>
+		<sm:xsl sc:refUri="/academic/gen/_od/transf/Re/refs/bibTxt.xsl"/>
+		<sm:declareStyle>
+			<sm:WParagraph globalStyle="txtBibPara"/>
+			<sm:WInline globalStyle="txtBibUrl"/>
+			<sm:WInline globalStyle="txtBibRef"/>
+			<sm:WInline globalStyle="txtBibTitle"/>
+			<sm:WInline globalStyle="txtBibAuth"/>
+			<sm:WInline globalStyle="txtBibDate"/>
+			<sm:WInline globalStyle="txtBibEd"/>
+		</sm:declareStyle>
+	</sm:content>
+</sm:freeXslOdTransf>

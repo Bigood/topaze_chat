@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/math/latex/mathTex.model"/>
+	<sm:content>
+		<sm:WCaptionBlock widgetClass="resInFlow" position="bottom">
+			<sm:caption>
+				<sm:title>
+					<sm:binaryTitle/>
+				</sm:title>
+			</sm:caption>
+			<sm:content>
+				<sm:chooseOnBinary>
+					<sm:binary>
+						<sm:freeTransform code="latex2img" options="resolution=96&amp;scale=1.3"/>
+						<sm:imageSize/>
+					</sm:binary>
+					<sm:whenSize widthOver="genProp('bin.size-int',630)*1.1" heightOver="genProp('bin.size-int',630)*1.1">
+						<sm:WImage>
+							<sm:binaryUrl>
+								<!--Pour mettre une couleur de fond : &backgroundColor=rgb%201.0%201.0%201.0-->
+								<sm:freeTransform code="latex2img" options="resolution=96&amp;scale=1.3"/>
+								<sm:imageTransform>
+									<sm:sizeBounds maxWidthInPx="genProp('bin.size-int',630)" maxHeightInPx="genProp('bin.size-int',630)"/>
+									<sm:outputPNG/>
+								</sm:imageTransform>
+							</sm:binaryUrl>
+							<sm:alt>
+								<sm:callModel>
+									<sm:current axis="altText"/>
+								</sm:callModel>
+							</sm:alt>
+							<sm:declareSize/>
+							<sm:linkOverImage class="imgZoom">
+								<sm:binaryUrl>
+									<!--Pour mettre une couleur de fond : &backgroundColor=rgb%201.0%201.0%201.0-->
+									<sm:freeTransform code="latex2img" options="resolution=96&amp;scale=1.3"/>
+									<sm:imageTransform>
+										<sm:sizeBounds maxWidthInPx="genProp('bin.size.zoom-int',1200)" maxHeightInPx="genProp('bin.size.zoom-int',1200)"/>
+										<sm:outputPNG/>
+									</sm:imageTransform>
+								</sm:binaryUrl>
+							</sm:linkOverImage>
+						</sm:WImage>
+					</sm:whenSize>
+					<sm:otherwise>
+						<sm:WImage>
+							<sm:binaryUrl>
+								<!--Pour mettre une couleur de fond : &backgroundColor=rgb%201.0%201.0%201.0-->
+								<sm:freeTransform code="latex2img" options="resolution=96&amp;scale=1.3"/>
+								<sm:imageTransform>
+									<sm:sizeBounds maxWidthInPx="genProp('bin.size-int',630)" maxHeightInPx="genProp('bin.size-int',630)"/>
+									<sm:outputPNG/>
+								</sm:imageTransform>
+							</sm:binaryUrl>
+							<sm:alt>
+								<sm:callModel>
+									<sm:current axis="altText"/>
+								</sm:callModel>
+							</sm:alt>
+							<sm:declareSize/>
+						</sm:WImage>
+					</sm:otherwise>
+				</sm:chooseOnBinary>
+			</sm:content>
+		</sm:WCaptionBlock>
+	</sm:content>
+</sm:binaryXhtmlTransf>

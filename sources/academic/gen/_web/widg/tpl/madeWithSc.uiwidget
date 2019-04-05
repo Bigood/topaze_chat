@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="madeWithSc">
+	<sm:content>
+		<sm:WLink id="linkSp">
+			<sm:label>
+				<sm:WImg src="img/struct/scBtn.png" srcFrom="skin" alt="￼;Réalisé avec Scenari (nouvelle fenêtre)￼"/>
+			</sm:label>
+			<sm:labelTitle>￼;Réalisé avec Scenari (nouvelle fenêtre)￼</sm:labelTitle>
+			<sm:link target="newWindow">
+				<sm:fixedURL url="http://scenari-platform.org"/>
+			</sm:link>
+		</sm:WLink>
+	</sm:content>
+</sm:openUiWidget>

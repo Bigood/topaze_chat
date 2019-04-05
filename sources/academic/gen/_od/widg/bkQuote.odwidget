@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openOdWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="bkQuote">
+	<sm:content>
+		<sm:WTable style="bkQuote">
+			<sm:WTableRow id="row2">
+				<sm:WTableCell id="cell2">
+					<sm:WParagraph globalStyle="bkQuoteSpace" display="always"/>
+				</sm:WTableCell>
+				<sm:WTableCell id="cell3">
+					<sm:callZone key="content"/>
+				</sm:WTableCell>
+				<sm:WTableCell id="cell4">
+					<sm:WParagraph globalStyle="bkQuoteSpace" display="always"/>
+				</sm:WTableCell>
+			</sm:WTableRow>
+		</sm:WTable>
+	</sm:content>
+</sm:openOdWidget>

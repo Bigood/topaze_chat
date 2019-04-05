@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Feedback des enchaînements￼" category="￼;Etude de cas￼">
+	<sm:identification targetNamespace="kelis.fr:opa" targetPrefix="opa" code="fdbkArc" itemExtension="node"/>
+	<sm:structure>
+		<sm:part code="co" name="￼;Feedback￼" family="content" internalized="always" usage="optional">
+			<sm:allowedModel sc:refUri="/academic/model/Re/sTxt.model"/>
+		</sm:part>
+		<sm:part code="arc" name="￼;Étapes suivantes￼" family="content" internalized="always" usage="required">
+			<sm:allowedModel sc:refUri="/case/model/arc/unaryArc.model"/>
+			<sm:allowedModel sc:refUri="/case/model/arc/userArc.model"/>
+			<sm:allowedModel sc:refUri="/case/model/arc/chooseArc.model"/>
+			<sm:allowedModel sc:refUri="/case/model/arc/endArc.model"/>
+		</sm:part>
+	</sm:structure>
+	<sm:authoring>
+		<sm:icon sc:refUri="/academic/model/_ico/courseUaSmall.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;Noeud￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:formEditor indentXml="true"/>
+	</sm:authoring>
+</sm:compositionPrim>

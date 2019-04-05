@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/case/model/case.model"/>
+	<sm:axis code="toolMnuHome"/>
+	<sm:content format="xhtml">
+		<sm:for codes="outline">
+			<sm:WLink widgetClass="btnPlan">
+				<sm:label>
+					<sm:fixedString value="￼;Ouvrir le Plan￼"/>
+				</sm:label>
+				<sm:labelTitle>
+					<sm:fixedString value="￼;Afficher le plan de l'étude de cas￼"/>
+				</sm:labelTitle>
+				<sm:link target="subWindow" windowName="subWin">
+					<sm:callModel>
+						<sm:current axis="plan" navCtx="preserveCurrent"/>
+					</sm:callModel>
+				</sm:link>
+			</sm:WLink>
+		</sm:for>
+	</sm:content>
+</sm:compositionXhtmlTransf>

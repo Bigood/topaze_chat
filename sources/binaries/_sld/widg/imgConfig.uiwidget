@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget code="imgConfig" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:fillTemplateBuffers>
+		<sm:postXslFragment keyXsl="xhtml">&lt;xsl:template match=&quot;*[containWord('imgOthers imgLarge', @class)]/img&quot;>
+  &lt;span data-src=&quot;{@src}&quot; data-width=&quot;{@width}&quot; data-height=&quot;{@height}&quot; />
+&lt;/xsl:template>
+</sm:postXslFragment>
+	</sm:fillTemplateBuffers>
+	<sm:content/>
+</sm:openUiWidget>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:dataFormOdTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" info="Contenu de l'abréviation">
+	<sm:model sc:refUri="/academic/model/Re/refs/acrM.model"/>
+	<sm:axis code="content"/>
+	<sm:content>
+		<sm:WParagraph style="acrContent">
+			<sm:WInline style="acrTerme">
+				<sm:WInline style="acrPuce">
+					<sm:fixedString value="-"/>
+					<sm:formattingMark>
+						<sm:nonBreakingSpace/>
+					</sm:formattingMark>
+					<sm:formattingMark>
+						<sm:nonBreakingSpace/>
+					</sm:formattingMark>
+				</sm:WInline>
+				<sm:forField codes="acr">
+					<sm:fieldValueString/>
+				</sm:forField>
+				<sm:formattingMark>
+					<sm:tabulation/>
+				</sm:formattingMark>
+			</sm:WInline>
+			<sm:forField codes="desc">
+				<sm:fieldValueString/>
+			</sm:forField>
+		</sm:WParagraph>
+	</sm:content>
+</sm:dataFormOdTransf>

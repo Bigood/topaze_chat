@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeUiService xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="scormMonoConf" info="XscormMonoConf">
+	<sm:scriptAfterLinksForDeclaringService>// Paramétrage du service completionStorage :
+//   - pas de commit auto sur un changement de valeur
+scServices.completionStorage._SendDataOnSave = false;
+
+// - Complétion gérée par le service "markedPages"
+scServices.completionStorage.getCurrentCompletionStatus = function(){
+	return scServices.markedPages.getCompletionStatus();
+}
+scServices.completionStorage.getCurrentProgression = function(){
+	return scServices.markedPages.getProgression();
+}
+
+// Paramétrage du service exitModeStorage:
+//   - pas de commit auto sur un changement de valeur
+scServices.exitModeStorage._SendDataOnTerminate = false;
+//   - exit : "suspend" quand le parcours du SCO n’est pas complet, et "" (terminé) quand le parcours du SCO est complet
+scServices.exitModeStorage.getExitMode = function(){
+	return scServices.markedPages.getCompletionStatus()=="completed" ? "" : "suspend" ;
+}
+
+// Paramétrage duservice suspendDataStorage :
+//   - pas de commit sur le changement de page des assmnts
+scServices.suspendDataStorage._SendDataOnSave =false;
+
+
+// Paramétrage du service assmntMgr:
+//   - pas de commit sur le changement de page des assmnts
+scServices.assmntMgr._SendDataOnSave = false;</sm:scriptAfterLinksForDeclaringService>
+</sm:freeUiService>

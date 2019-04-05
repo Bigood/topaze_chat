@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:interactiveGenerator xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="previewWebStandardComments" name="￼;Prévisualisation web (version &quot;standard&quot;) avec commentaires￼">
+	<sm:modelRoot>
+		<sm:allowedModel sc:refUri="/academic/model/Ue/ue.model"/>
+		<sm:allowedModel sc:refUri="/academic/model/Ue/ueDiv.model"/>
+		<sm:allowedModel sc:refUri="/academic/model/Ua/courseUa.model"/>
+		<sm:allowedModel sc:refUri="/academic/model/Uc/expUc.model"/>
+	</sm:modelRoot>
+	<sm:mode standard="HTML 5" debug="no" addOriginSource="yes"/>
+	<sm:uiFrame>
+		<sm:none lookForInternContext="no">
+			<sm:uiServices>
+				<sm:uiService sc:refUri="/academic/gen/_web/svc/assmnt.uiservice"/>
+				<sm:uiService sc:refUri="/academic/gen/_comments/svc/scCommentSvc.uiservice"/>
+			</sm:uiServices>
+			<sm:callRootModel/>
+		</sm:none>
+	</sm:uiFrame>
+	<sm:transformerList>
+		<sm:transformerList info="web" sc:refUri="/academic/gen/quadra/web/web.transflist"/>
+		<sm:transformerList info="Surcharges">
+			<sm:transformerList info="Web" sc:refUri="/academic/gen/quadra/preview/_web/_common/transf.transflist"/>
+			<sm:transformerList info="Binaries" sc:refUri="/academic/gen/quadra/preview/_common/binaries/transf.transflist"/>
+		</sm:transformerList>
+		<sm:transformerList info="Filter">
+			<sm:transformer sc:refUri="/academic/gen/quadra/preview/_web/standardContent/@rootFilter/courseUa@rootFilter.transf"/>
+			<sm:transformer sc:refUri="/academic/gen/quadra/preview/_web/standardContent/@rootFilter/expUc@rootFilter.transf"/>
+			<sm:transformer sc:refUri="/academic/gen/quadra/preview/_web/standardContent/@rootFilter/ue@rootFilter.transf"/>
+		</sm:transformerList>
+	</sm:transformerList>
+	<sm:uiTemplateList>
+		<sm:uiTemplate code="page" sc:refUri="/academic/gen/quadra/comments/web/templates/page.uitemplate"/>
+		<sm:uiTemplate code="eval" sc:refUri="/academic/gen/quadra/comments/web/templates/eval.uitemplate"/>
+		<sm:uiTemplate code="ref" sc:refUri="/academic/gen/quadra/comments/web/templates/ref.uitemplate"/>
+		<sm:uiTemplate code="player" sc:refUri="/academic/gen/quadra/comments/web/templates/evalPlayer.uitemplate"/>
+		<sm:uiTemplate code="json" sc:refUri="/academic/gen/quadra/web/templates/json.uitemplate"/>
+	</sm:uiTemplateList>
+	<sm:defaultSkin sc:refUri="/academic/gen/quadra/web/web.skin.doss" name="￼;Quadra￼"/>
+</sm:interactiveGenerator>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:dataFormPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Métadonnées￼">
+	<sm:identification targetNamespace="kelis.fr:opa" targetPrefix="opa" code="nodeM" itemExtension="xml"/>
+	<sm:structure>
+		<sm:field code="title" name="￼;Titre￼" occurrence="one">
+			<sm:string/>
+		</sm:field>
+		<sm:field code="sTitle" name="￼;Titre court￼" occurrence="zeroOrOne">
+			<sm:string/>
+		</sm:field>
+		<sm:field code="noClick" name="￼;Étape accessible uniquement si visité￼" occurrence="zeroOrOne">
+			<sm:help quickHelp="￼;oui (par défaut)￼"/>
+			<sm:enum>
+				<sm:option key="yes" name="￼;Oui￼"/>
+				<sm:option key="no" name="￼;Non￼"/>
+			</sm:enum>
+		</sm:field>
+		<sm:field code="coach" name="￼;Mascotte￼" occurrence="zeroOrOne">
+			<sm:refItem>
+				<sm:allowedModel sc:refUri="/case/model/co/objects/coach.model"/>
+			</sm:refItem>
+		</sm:field>
+		<sm:subData code="info" name="￼;Méta-données￼" occurrence="zeroOrOne" family="content">
+			<sm:allowedDataModel sc:refUri="/academic/model/metaData/info.model"/>
+		</sm:subData>
+	</sm:structure>
+	<sm:storage>
+		<sm:fullTitleBuilder>
+			<sm:fieldValue refCode="title"/>
+		</sm:fullTitleBuilder>
+		<sm:shortTitleBuilder returnFullTitleIfEmpty="yes">
+			<sm:fieldValue refCode="sTitle"/>
+		</sm:shortTitleBuilder>
+	</sm:storage>
+	<sm:authoring>
+		<sm:formEditor indentXml="true">
+			<sm:stringField refCode="title" defaultStyle="property" textStyle="color :#6286cc ;"/>
+			<sm:stringField refCode="sTitle" defaultStyle="property" textStyle="color :#6286cc ;"/>
+			<sm:subData refCode="info" defaultStyle="property"/>
+			<sm:stringField refCode="coach" defaultStyle="property"/>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:dataFormPrim>

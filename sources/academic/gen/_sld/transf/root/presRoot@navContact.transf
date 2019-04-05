@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/root/presRoot.model"/>
+	<sm:axis code="navContact"/>
+	<sm:navigation>
+		<sm:choose>
+			<sm:when xpath="op:presRootM/sp:contact">
+				<sm:page template="slide">
+					<sm:title>
+						<sm:fixedTitle value="￼;Contact￼"/>
+					</sm:title>
+					<sm:outlineClasses>
+						<sm:fixedString value="tocSld tocContact bkCnt_1"/>
+					</sm:outlineClasses>
+					<sm:mainZone format="xhtml">
+						<sm:WHeadingBlock widgetClass="slideBk" class="slideContact">
+							<sm:title>
+								<sm:fixedTitle value="￼;Contact￼"/>
+							</sm:title>
+							<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBkRoot.uiwidget">
+								<sm:xhtmlContentZone key="co">
+									<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBkCoOnly.uiwidget">
+										<sm:xhtmlContentZone key="co">
+											<sm:callCompositionMeta axis="contact"/>
+										</sm:xhtmlContentZone>
+									</sm:Widget>
+								</sm:xhtmlContentZone>
+							</sm:Widget>
+						</sm:WHeadingBlock>
+					</sm:mainZone>
+				</sm:page>
+			</sm:when>
+		</sm:choose>
+	</sm:navigation>
+</sm:compositionXhtmlTransf>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sma:assmntUnitMcqPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sma="kelis.fr:scenari/modeling/assessment" name="￼;Question à Choix Multiple à plans￼" category="￼;Exercices￼">
+	<sm:help quickHelp="￼;Questionnaire à choix multiple où le score est l'addition des options￼"/>
+	<sm:identification targetNamespace="kelis.fr:opa" targetPrefix="opa" code="mcqMurMap" itemExtension="quiz"/>
+	<sm:structure>
+		<sm:questionModel name="￼;Énoncé￼" sc:refUri="/academic/model/Re/res.model"/>
+		<sm:choices name="￼;Choix￼">
+			<sm:choice name="￼;Option￼" min="2" max="10">
+				<sm:choiceLabelModel name="￼;Libellé￼" sc:refUri="/academic/model/Re/txt.model"/>
+				<sm:choiceExplanationModel name="￼;Explication￼" sc:refUri="/academic/model/Re/txt.model" usage="optional"/>
+			</sm:choice>
+		</sm:choices>
+		<sm:globalExplanationModel name="￼;Explication globale￼" sc:refUri="/academic/model/Re/res.model" usage="optional"/>
+		<sm:solution name="￼;Solution￼">
+			<sm:multipleUserResponse>
+				<sm:mappedNumericScoring>
+					<sm:response name="￼;Combinaison de réponses￼">
+						<sm:scoring name="￼;Score￼" step="1" displayFormat="numeric"/>
+					</sm:response>
+					<sm:undefinedResponse name="￼;Autres réponses￼">
+						<sm:scoring name="￼;Score￼" step="1" displayFormat="numeric"/>
+					</sm:undefinedResponse>
+					<sm:feedbackModel name="￼;Feedback￼" sc:refUri="/academic/model/Re/res.model" usage="optional"/>
+				</sm:mappedNumericScoring>
+			</sm:multipleUserResponse>
+		</sm:solution>
+	</sm:structure>
+	<sm:authoring>
+		<sm:icon sc:refUri="/academic/model/_ico/mcqMurSmall.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;QCM￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:formEditor indentXml="true">
+			<sm:assmntUnitMcq tagStyle="font-family:arial;font-size:20px; background-color:#4668ad; color:white; -moz-border-radius:5px; padding-left:4px; padding-right:4px" fullTitleStyle="color:#513245;font-size:1.7em;font-weight:bold; text-align:center;">
+				<sm:iconTag sc:refUri="/academic/model/_ico/mcqMur.png"/>
+			</sm:assmntUnitMcq>
+		</sm:formEditor>
+	</sm:authoring>
+</sma:assmntUnitMcqPrim>

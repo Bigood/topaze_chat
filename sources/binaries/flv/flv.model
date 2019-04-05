@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:videoPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Vidéo FLV - dépréciée￼" category="￼;Ressources￼">
+	<sm:identification extensions="flv" mimeTypes="video/x-flv"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/academic/model/metaData/binAltM.model" usage="optional"/>
+	</sm:structure>
+	<sm:authoring>
+		<sm:preview>
+			<sm:flvViewer>
+				<sm:fromBinary/>
+			</sm:flvViewer>
+		</sm:preview>
+		<sm:previewMini>
+			<sm:flvViewer>
+				<sm:fromBinary/>
+			</sm:flvViewer>
+		</sm:previewMini>
+		<sm:sizeBlock>
+			<sm:flvViewer>
+				<sm:fromBinary/>
+			</sm:flvViewer>
+			<sm:standardCharSize>
+				<sm:editor/>
+				<sm:defaultValue defaultWidthInPx="500"/>
+			</sm:standardCharSize>
+		</sm:sizeBlock>
+		<sm:icon sc:refUri="/binaries/flv/_res/flv.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;video￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+	</sm:authoring>
+</sm:videoPrim>

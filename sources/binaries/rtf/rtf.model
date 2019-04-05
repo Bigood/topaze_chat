@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Document RTF￼" category="￼;Ressources￼">
+	<sm:help quickHelp="￼; Ressource au format Rich Text Format. ￼"/>
+	<sm:identification extensions="rtf" mimeTypes="application/rtf"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/academic/model/metaData/binDocM.model" usage="optional"/>
+	</sm:structure>
+	<sm:authoring>
+		<sm:icon sc:refUri="/binaries/rtf/_res/rtf.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;res￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:emptyFile sc:refUri="/binaries/rtf/_res/empty.rtf"/>
+	</sm:authoring>
+</sm:binaryPrim>

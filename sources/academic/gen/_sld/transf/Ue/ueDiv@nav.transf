@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Ue/ueDiv.model"/>
+	<sm:axis code="nav"/>
+	<sm:navigation>
+		<sm:folder>
+			<sm:title>
+				<sm:compositionTitle format="shortTitleText"/>
+				<sm:fixedTitle value="￼;[sans titre]￼"/>
+			</sm:title>
+			<sm:outlineClasses>
+				<sm:fixedString value="tocPart tocUeDiv bkCnt_1"/>
+			</sm:outlineClasses>
+			<sm:folderPreview>
+				<sm:page template="slide">
+					<sm:mainZone format="xhtml">
+						<sm:WHeadingBlock widgetClass="slideBk" class="partBk ueDivBk">
+							<sm:title>
+								<sm:compositionTitle/>
+							</sm:title>
+							<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBkRoot.uiwidget">
+								<sm:xhtmlContentZone key="co"/>
+							</sm:Widget>
+						</sm:WHeadingBlock>
+					</sm:mainZone>
+				</sm:page>
+			</sm:folderPreview>
+			<sm:for codes="intro">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultShort/include.cond">
+						<sm:page template="slide">
+							<sm:title>
+								<sm:fixedTitle value="￼;Introduction￼"/>
+							</sm:title>
+							<sm:outlineClasses>
+								<sm:fixedString value="tocSld tocIntro bkCnt_1"/>
+							</sm:outlineClasses>
+							<sm:mainZone format="xhtml">
+								<sm:WHeadingBlock widgetClass="slideBk" class="slideBkIntro">
+									<sm:title>
+										<sm:fixedTitle value="￼;Introduction￼"/>
+									</sm:title>
+									<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBkRoot.uiwidget">
+										<sm:xhtmlContentZone key="co">
+											<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBkCoOnly.uiwidget">
+												<sm:xhtmlContentZone key="co">
+													<sm:callSubModel/>
+												</sm:xhtmlContentZone>
+											</sm:Widget>
+										</sm:xhtmlContentZone>
+									</sm:Widget>
+								</sm:WHeadingBlock>
+							</sm:mainZone>
+						</sm:page>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:inDataOrder>
+				<sm:for codes="div courseUa courseUc">
+					<sm:choose>
+						<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultShort/include.cond">
+							<sm:callSubModel axis="nav"/>
+						</sm:when>
+					</sm:choose>
+				</sm:for>
+				<sm:for codes="assmntUa">
+					<sm:choose>
+						<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultShort/include.cond">
+							<sm:callSubModel axis="nav"/>
+						</sm:when>
+					</sm:choose>
+				</sm:for>
+				<sm:for codes="practUc">
+					<sm:choose>
+						<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultShort/include.cond">
+							<sm:callSubModel axis="nav"/>
+						</sm:when>
+					</sm:choose>
+				</sm:for>
+				<sm:for codes="trainUcMcqSur trainUcMcqMur trainUcMcgSur trainUcMcgMur trainUcMatch trainUcOrdWord trainUcCloze trainUcField trainUcNumerical trainUcCoQuiz">
+					<sm:choose>
+						<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultShort/include.cond">
+							<sm:callSubModel axis="nav"/>
+						</sm:when>
+					</sm:choose>
+				</sm:for>
+			</sm:inDataOrder>
+			<sm:for codes="conclu">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultShort/include.cond">
+						<sm:page template="slide">
+							<sm:title>
+								<sm:fixedTitle value="￼;Conclusion￼"/>
+							</sm:title>
+							<sm:outlineClasses>
+								<sm:fixedString value="tocSld tocConclu bkCnt_1"/>
+							</sm:outlineClasses>
+							<sm:mainZone format="xhtml">
+								<sm:WHeadingBlock widgetClass="slideBk" class="slideBkConclu">
+									<sm:title>
+										<sm:fixedTitle value="￼;Conclusion￼"/>
+									</sm:title>
+									<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBkRoot.uiwidget">
+										<sm:xhtmlContentZone key="co">
+											<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBkCoOnly.uiwidget">
+												<sm:xhtmlContentZone key="co">
+													<sm:callSubModel/>
+												</sm:xhtmlContentZone>
+											</sm:Widget>
+										</sm:xhtmlContentZone>
+									</sm:Widget>
+								</sm:WHeadingBlock>
+							</sm:mainZone>
+						</sm:page>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+		</sm:folder>
+	</sm:navigation>
+</sm:compositionXhtmlTransf>

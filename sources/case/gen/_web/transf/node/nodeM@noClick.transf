@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:dataFormXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/case/model/node/nodeM.model"/>
+	<sm:axis code="noClick"/>
+	<sm:content>
+		<sm:choose>
+			<sm:when xpath="not(sp:noClick = 'no')">
+				<sm:WText value="enabled_click"/>
+			</sm:when>
+		</sm:choose>
+	</sm:content>
+</sm:dataFormXhtmlTransf>

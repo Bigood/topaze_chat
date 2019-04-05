@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/binaries/mp4/mp4.model"/>
+	<sm:axis code="crResCo"/>
+	<sm:fullTitleText>
+		<sm:returnFirst>
+			<sm:callBinaryMeta/>
+			<sm:binaryFileName format="trimExtension"/>
+		</sm:returnFirst>
+	</sm:fullTitleText>
+	<sm:shortTitleText>
+		<sm:returnFirst>
+			<sm:callBinaryMeta/>
+			<sm:binaryFileName format="trimExtension"/>
+		</sm:returnFirst>
+	</sm:shortTitleText>
+	<sm:content>
+		<sm:WCaptionBlock widgetClass="sfile_flv_resVideo resInFlow" tagName="figure" position="bottom">
+			<sm:caption>
+				<sm:WFreeBlock>
+					<span xmlns="http://www.w3.org/1999/xhtml" class="capTi">
+						<sm:title>
+							<sm:binaryMeta/>
+						</sm:title>
+					</span>
+				</sm:WFreeBlock>
+				<sm:callBinaryMeta axis="info"/>
+			</sm:caption>
+			<sm:content>
+				<sm:WFreeBlock>
+					<video xmlns="http://www.w3.org/1999/xhtml" controls="controls" preload="none">
+						<sm:Widget sc:refUri="/binaries/_web/widg/videoDims.uiwidget"/>
+						<source type="video/mp4" onerror="tplMgr.xMediaFallback(this.parentNode)">
+							<addAttribute name="src">
+								<sm:binaryUrl/>
+							</addAttribute>
+						</source>
+						<sm:WVideoFlv widgetClass="resVideo">
+							<sm:binaryUrl>
+								<sm:flvSize>
+									<sm:scaleFromStandardCharSize/>
+									<sm:sizeBounds maxWidthInPx="genProp('bin.size-int',630)" maxHeightInPx="genProp('bin.size-int',630)"/>
+								</sm:flvSize>
+							</sm:binaryUrl>
+							<sm:declareSize/>
+							<sm:player show="always"/>
+							<sm:stopButton cancelLoad="false"/>
+							<sm:volumeButton/>
+							<sm:timeButton/>
+							<sm:fullscreenButton/>
+							<sm:configFile format="text" src="player/mp4.txt" srcFrom="skin"/>
+						</sm:WVideoFlv>
+					</video>
+				</sm:WFreeBlock>
+			</sm:content>
+		</sm:WCaptionBlock>
+	</sm:content>
+</sm:binaryXhtmlTransf>

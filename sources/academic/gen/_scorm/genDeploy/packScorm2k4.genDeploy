@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sma:scormGenDeploy xmlns:sma="kelis.fr:scenari/modeling/assessment" code="packScorm2k4" name="￼;packaging SCORM 2004￼">
+	<sm:scormVersion xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+		<sm:scorm2k4>
+			<sm:code/>
+			<sm:title/>
+		</sm:scorm2k4>
+	</sm:scormVersion>
+	<sm:override xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" sc:refUri="/academic/gen/_scorm/genDeploy/scorm2k4.doss"/>
+</sma:scormGenDeploy>

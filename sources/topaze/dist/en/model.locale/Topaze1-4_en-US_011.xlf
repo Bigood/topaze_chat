@@ -1,0 +1,3981 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="gen" source-language="" datatype="plaintext">
+    <header>
+      <note>Scenari model : Topaze1-4</note>
+    </header>
+    <body>
+      <trans-unit resname="Réalisé avec Scenari (nouvelle fenêtre)">
+        <source>Réalisé avec Scenari (nouvelle fenêtre)</source>
+        <target>Created with Scenari (new window)</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Outils">
+        <source>Outils</source>
+        <target>Tools</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Revenir à la page précédente dans l'historique">
+        <source>Revenir à la page précédente dans l'historique</source>
+        <target>Go back to the previous page in history.</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Retour">
+        <source>Retour</source>
+        <target>Back</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Avancer à la page suivante dans l'historique">
+        <source>Avancer à la page suivante dans l'historique</source>
+        <target>Go to the next page in history.</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Suivant">
+        <source>Suivant</source>
+        <target>Next</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Etapes">
+        <source>Etapes</source>
+        <target>Stages</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="+">
+        <source>+</source>
+        <target>+</target>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="-">
+        <source>-</source>
+        <target>-</target>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="searchIndexUiTemplate.caseWeb.index">
+        <source>&lt;filters&gt;&lt;excludeShortWords minChars="1" forWords="\d+"/&gt;&lt;excludeShortWords minChars="3" forWords="\D+"/&gt;&lt;cutLongWords maxChars="20" forWords=""/&gt;&lt;lowerCase locale="fr"/&gt;&lt;ignoreWords words="les nous vous ils elle elles est une des sur pour meme ici qui que"/&gt;&lt;filterAccentedLatinLetters/&gt;&lt;/filters&gt;&lt;serialization/&gt;</source>
+        <target>&lt;filters&gt;&lt;excludeShortWords forWords="\d+" minChars="1"/&gt;&lt;excludeShortWords forWords="\D+" minChars="3"/&gt;&lt;cutLongWords forWords="" maxChars="20"/&gt;&lt;lowerCase locale="fr"/&gt;&lt;ignoreWords words="the a some any I you he she we they in on even who that which"/&gt;&lt;filterAccentedLatinLetters/&gt;&lt;/filters&gt;&lt;serialization/&gt;</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+      </trans-unit>
+      <trans-unit resname="précédent">
+        <source>précédent</source>
+        <target>previous</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="image précédente (flèche de gauche)">
+        <source>image précédente (flèche de gauche)</source>
+        <target>previous picture (left arrow)</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="suivant">
+        <source>suivant</source>
+        <target>next</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="image suivante (flèche de droite)">
+        <source>image suivante (flèche de droite)</source>
+        <target>next picture (right arrow)</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="fermer">
+        <source>fermer</source>
+        <target>close</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="fermer le diaporama (Echap)">
+        <source>fermer le diaporama (Echap)</source>
+        <target>close the slideshow (Esc)</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="lancer">
+        <source>lancer</source>
+        <target>launch</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="lancer le diaporama (p)">
+        <source>lancer le diaporama (p)</source>
+        <target>launch slide-show (p)</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="arrêter">
+        <source>arrêter</source>
+        <target>stop</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="arrêter le diaporama (p)">
+        <source>arrêter le diaporama (p)</source>
+        <target>stop slide-show (p)</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Cette page est en cours de chargement. Veuillez patienter.">
+        <source>Cette page est en cours de chargement. Veuillez patienter.</source>
+        <target>Loading. Please wait.</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="image précédente">
+        <source>image précédente</source>
+        <target>previous picture</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="image suivante">
+        <source>image suivante</source>
+        <target>next picture</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="lancer l'animation">
+        <source>lancer l'animation</source>
+        <target>launch the animation</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="arrêter l'animation">
+        <source>arrêter l'animation</source>
+        <target>stop the animation</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="début">
+        <source>début</source>
+        <target>start</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="aller au début de l'animation">
+        <source>aller au début de l'animation</source>
+        <target>go to the beginning of the animation</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="fin">
+        <source>fin</source>
+        <target>end</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="aller à la fin de l'animation">
+        <source>aller à la fin de l'animation</source>
+        <target>go to the end of the animation</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="vitesse">
+        <source>vitesse</source>
+        <target>speed</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="changer la vitesse de l'animation">
+        <source>changer la vitesse de l'animation</source>
+        <target>change the speed of the animation</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="image">
+        <source>image</source>
+        <target>image</target>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Consulter le diaporama à partir de :">
+        <source>Consulter le diaporama à partir de :</source>
+        <target>Consult the diaporama from:</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="boucle">
+        <source>boucle</source>
+        <target>loop</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="jouer en boucle continue">
+        <source>jouer en boucle continue</source>
+        <target>play (continuous loop)</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="fermer le zoom (Echap)">
+        <source>fermer le zoom (Echap)</source>
+        <target>close the zoom (Esc)</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="zoomer sur cette image">
+        <source>zoomer sur cette image</source>
+        <target>zoom on the image</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="num.">
+        <source>num.</source>
+        <target>num.</target>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Désactiver les numéros de ligne">
+        <source>Désactiver les numéros de ligne</source>
+        <target>Deactivate the line numbers</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="texte">
+        <source>texte</source>
+        <target>text</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Activer la vue texte brut">
+        <source>Activer la vue texte brut</source>
+        <target>Activate the raw text view</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="copie">
+        <source>copie</source>
+        <target>copy</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Sélectionner le texte brut pour le copier">
+        <source>Sélectionner le texte brut pour le copier</source>
+        <target>Select the raw text in order to copy it</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Ligne">
+        <source>Ligne</source>
+        <target>Line</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Désactiver le retour à la ligne automatique">
+        <source>Désactiver le retour à la ligne automatique</source>
+        <target>Deactivate automatic line wrap</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="CTRL+C pour copier, CTRL+V pour coller">
+        <source>CTRL+C pour copier, CTRL+V pour coller</source>
+        <target>CTRL+C to copy, CTRL-V to paste</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Activer les numéros de ligne">
+        <source>Activer les numéros de ligne</source>
+        <target>Activate the line numbers</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Désactiver la vue texte brut">
+        <source>Désactiver la vue texte brut</source>
+        <target>Deactivate the raw text view</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Activer le retour à la ligne automatique">
+        <source>Activer le retour à la ligne automatique</source>
+        <target>Activate automatic line wrap</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="ERREUR - condition incompatible : Une étape conditionnée par un indice ne peut pas utiliser un opérateur à pourcentage. Utilisez dans ce cas un opérateur à indice.">
+        <source>ERREUR - condition incompatible : Une étape conditionnée par un indice ne peut pas utiliser un opérateur à pourcentage. Utilisez dans ce cas un opérateur à indice.</source>
+        <target>ERROR – incopatible condition : An index-conditionned step cannot use a precentage operator. Use an index operator.</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Attention seules les valeurs numériques sont acceptées.">
+        <source>Attention seules les valeurs numériques sont acceptées.</source>
+        <target>Warning, only numerical numbers are accepted.</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Un problème est survenue dans l'indice javascript $s">
+        <source>Un problème est survenue dans l'indice javascript $s</source>
+        <target>A error has occurred in the %s javascript index.</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="l'indice ne retourne pas un nombre ($s)">
+        <source>l'indice ne retourne pas un nombre ($s)</source>
+        <target>The index does note return a number (%s)</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="ERREUR - condition incompatible : vous devez utiliser une variable avec cet opérateur.">
+        <source>ERREUR - condition incompatible : vous devez utiliser une variable avec cet opérateur.</source>
+        <target>ERROR – incompatible condition : you must use e variable with this operator.</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Tout afficher">
+        <source>Tout afficher</source>
+        <target>Show all</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Pas à pas">
+        <source>Pas à pas</source>
+        <target>Step by step</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Afficher tous les exercices.">
+        <source>Afficher tous les exercices.</source>
+        <target>Display all the exercises.</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Afficher les exercices un à un.">
+        <source>Afficher les exercices un à un.</source>
+        <target>Display the exercised one by one.</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Veuillez remplir le(s) champ(s) obligatoires pour continuer">
+        <source>Veuillez remplir le(s) champ(s) obligatoires pour continuer</source>
+        <target>Please fill the required fields to continue</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Fermer">
+        <source>Fermer</source>
+        <target>Close</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Question suivante.">
+        <source>Question suivante.</source>
+        <target>Next question.</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Suite">
+        <source>Suite</source>
+        <target>More</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Lire la suite.">
+        <source>Lire la suite.</source>
+        <target>Read more.</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Cliquez pour agrandir (nouvelle fenêtre)">
+        <source>Cliquez pour agrandir (nouvelle fenêtre)</source>
+        <target>Click to enlarge (new window)</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="defaultWebLangCode">
+        <source>fr</source>
+        <target>en</target>
+        <note>Langue par defaut des pages html</note>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Annuler">
+        <source>Annuler</source>
+        <target>Cancel</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Annuler la recherche">
+        <source>Annuler la recherche</source>
+        <target>Cancel the search</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Rechercher un mot">
+        <source>Rechercher un mot</source>
+        <target>Search for a word</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Aucun résultat.">
+        <source>Aucun résultat.</source>
+        <target>No results.</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="1 page trouvée.">
+        <source>1 page trouvée.</source>
+        <target>1 page found.</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="%s pages trouvées.">
+        <source>%s pages trouvées.</source>
+        <target>%s pages found.</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Précisez votre recherche...">
+        <source>Précisez votre recherche...</source>
+        <target>Narrow your search...</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Termes recherchés : &lt;span class='schTerm'&gt;%s&lt;/span&gt;">
+        <source>Termes recherchés : &lt;span class='schTerm'&gt;%s&lt;/span&gt;</source>
+        <target>Searched terms: &lt;span class='schTerm'&gt;%s&lt;/span&gt;</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Précédent">
+        <source>Précédent</source>
+        <target>Previous</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Occurrence précédente">
+        <source>Occurrence précédente</source>
+        <target>Previous occurance</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Occurrence Suivante">
+        <source>Occurrence Suivante</source>
+        <target>Next occurance</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Liste">
+        <source>Liste</source>
+        <target>List</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Afficher/cacher la liste des pages trouvées">
+        <source>Afficher/cacher la liste des pages trouvées</source>
+        <target>Show/hide the list of matching pages</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Suivant (">
+        <source>Suivant (</source>
+        <target>Next (</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+      </trans-unit>
+      <trans-unit resname=")">
+        <source>)</source>
+        <target>)</target>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="searchIndexUiTemplate.scormMono.index">
+        <source>&lt;filters&gt;&lt;excludeShortWords minChars="1" forWords="\d+"/&gt;&lt;excludeShortWords minChars="3" forWords="\D+"/&gt;&lt;cutLongWords maxChars="20" forWords=""/&gt;&lt;lowerCase locale="fr"/&gt;&lt;ignoreWords words="les nous vous ils elle elles est une des sur pour meme ici qui que"/&gt;&lt;filterAccentedLatinLetters/&gt;&lt;/filters&gt;&lt;serialization/&gt;</source>
+        <target>&lt;filters&gt;&lt;excludeShortWords forWords="\d+" minChars="1"/&gt;&lt;excludeShortWords forWords="\D+" minChars="3"/&gt;&lt;cutLongWords forWords="" maxChars="20"/&gt;&lt;lowerCase locale="fr"/&gt;&lt;ignoreWords words="the a some any I you he she we they in on even who that which"/&gt;&lt;filterAccentedLatinLetters/&gt;&lt;/filters&gt;&lt;serialization/&gt;</target>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Cette galerie utilise Javascript pour un affichage optimal.">
+        <source>Cette galerie utilise Javascript pour un affichage optimal.</source>
+        <target>This gallery uses javascript for an optimum display.</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Creative Commons Zéro">
+        <source>Creative Commons Zéro</source>
+        <target>Creative Commons Zero</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Paternité">
+        <source>Paternité</source>
+        <target>Attribution</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Paternité - Pas d'Utilisation Commerciale">
+        <source>Paternité - Pas d'Utilisation Commerciale</source>
+        <target>Attribution – Non commercial</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Paternité - Pas d'Utilisation Commerciale - Pas de Modification">
+        <source>Paternité - Pas d'Utilisation Commerciale - Pas de Modification</source>
+        <target>Attribution – Non commercial - No Derivative Work</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique">
+        <source>Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique</source>
+        <target>Attribution – Non commercial - Share Alike</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Paternité - Pas de Modification">
+        <source>Paternité - Pas de Modification</source>
+        <target>Attribution - No Derivative Work</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Paternité - Partage des Conditions Initiales à l'Identique">
+        <source>Paternité - Partage des Conditions Initiales à l'Identique</source>
+        <target>Attribution - Share Alike</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Licence de documentation libre GNU">
+        <source>Licence de documentation libre GNU</source>
+        <target>GNU Free Documentation licence (GFDL)</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Licence : Domaine Public">
+        <source>Licence : Domaine Public</source>
+        <target>Public Domain licence</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="(nouvelle fenêtre)">
+        <source>(nouvelle fenêtre)</source>
+        <target>(new window)</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Explication Générale">
+        <source>Explication Générale</source>
+        <target>General Explanation</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Exercice : ">
+        <source>Exercice : </source>
+        <target>Quiz: </target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Exercice">
+        <source>Exercice</source>
+        <target>Quiz</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Question">
+        <source>Question</source>
+        <target>Question</target>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname=" (nouvelle fenêtre)">
+        <source>(nouvelle fenêtre)</source>
+        <target>(new window)</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Informations complémentaires...">
+        <source>Informations complémentaires...</source>
+        <target>Additional information...</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="[Sans titre]">
+        <source>[Sans titre]</source>
+        <target>[No title]</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Objectifs">
+        <source>Objectifs</source>
+        <target>Objectives</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Vous avez tenté plus de ">
+        <source>Vous avez tenté plus de </source>
+        <target>You have made more than </target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname=" fois cet exercice, veuillez poursuivre l'étude de cas.">
+        <source>fois cet exercice, veuillez poursuivre l'étude de cas.</source>
+        <target>times this quiz. Please proceed with the case study.</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Commencer le quiz. ">
+        <source>Commencer le quiz. </source>
+        <target>Start the quiz.</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Commencer">
+        <source>Commencer</source>
+        <target>Start</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Afficher les résultats">
+        <source>Afficher les résultats</source>
+        <target>Display results</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Attention, votre navigateur ne supporte pas le javascript ou celui-ci a été désactivé. Certaines fonctionnalités dynamiques de ce module sont restreintes.">
+        <source>Attention, votre navigateur ne supporte pas le javascript ou celui-ci a été désactivé. Certaines fonctionnalités dynamiques de ce module sont restreintes.</source>
+        <target>Warning: your browser does not support javascript or it has been disabled. Some features of this module might be unavailable.</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="% de bonnes réponses">
+        <source>% de bonnes réponses</source>
+        <target>% of right answers</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname=" (nouvelle fenêtre - téléchargement)">
+        <source>(nouvelle fenêtre - téléchargement)</source>
+        <target>(new window – download)</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Ce widget utilise Javascript pour un affichage optimal.">
+        <source>Ce widget utilise Javascript pour un affichage optimal.</source>
+        <target>This widget uses Javascript for optimum display</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname=", ">
+        <source>, </source>
+        <target>, </target>
+        <note>Séparateur d'énumération</note>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="[sans titre]">
+        <source>[sans titre]</source>
+        <target>[no title]</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Votre navigateur ne prend pas en charge le format OPUS. Téléchargez le fichier :">
+        <source>Votre navigateur ne prend pas en charge le format OPUS. Téléchargez le fichier :</source>
+        <target>Your browser does not support the OPUS format. Please download the file:</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="« ">
+        <source>« </source>
+        <target>"</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname=" »">
+        <source> »</source>
+        <target>"</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Plus d'éléments à catégoriser">
+        <source>Plus d'éléments à catégoriser</source>
+        <target>No more elements to match</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Déposez ici">
+        <source>Déposez ici</source>
+        <target>Drop here</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Afficher les Crédits des ressources">
+        <source>Afficher les Crédits des ressources</source>
+        <target>Show the ressource credits</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Crédits">
+        <source>Crédits</source>
+        <target>Credits</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Crédits des ressources">
+        <source>Crédits des ressources</source>
+        <target>Ressource credits</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Crédits des ressources de l'étude de cas">
+        <source>Crédits des ressources de l'étude de cas</source>
+        <target>Use case ressource credits</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Fermer...">
+        <source>Fermer...</source>
+        <target>Close …</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="...">
+        <source>...</source>
+        <target>...</target>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Cliquez pour visualiser la ressource (nouvelle fenêtre)">
+        <source>Cliquez pour visualiser la ressource (nouvelle fenêtre)</source>
+        <target>Click here to view the resource (new window)</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Afficher la map">
+        <source>Afficher la map</source>
+        <target>Display the map.</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Map">
+        <source>Map</source>
+        <target>Map</target>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Bonne réponse">
+        <source>Bonne réponse</source>
+        <target>Good answer</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Mauvaise réponse ">
+        <source>Mauvaise réponse </source>
+        <target>Wrong answer</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Afficher le score et la correction">
+        <source>Afficher le score et la correction</source>
+        <target>Show score and solution</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Correction">
+        <source>Correction</source>
+        <target>Correction</target>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Effacer les réponses">
+        <source>Effacer les réponses</source>
+        <target>Erase the answers</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Recommencer">
+        <source>Recommencer</source>
+        <target>Restart</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Accueil">
+        <source>Accueil</source>
+        <target>Homepage</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Retrouver la dernière page consultée de l'étude de cas">
+        <source>Retrouver la dernière page consultée de l'étude de cas</source>
+        <target>Back to the last page visited in the case study</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Ouvrir la dernière page consultée">
+        <source>Ouvrir la dernière page consultée</source>
+        <target>Open the last page visited</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Effacer définitivement toutes mes productions relatives à cette étude de cas">
+        <source>Effacer définitivement toutes mes productions relatives à cette étude de cas</source>
+        <target>Permanently delete my productions in this case study</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Réinitialiser">
+        <source>Réinitialiser</source>
+        <target>Reset</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Retour au menu de l'étape (">
+        <source>Retour au menu de l'étape (</source>
+        <target>Back to the menu of the stage (</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Retour au menu de l'étape">
+        <source>Retour au menu de l'étape</source>
+        <target>Back to the menu of the stage</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Retour au menu">
+        <source>Retour au menu</source>
+        <target>Back to the menu</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Définition">
+        <source>Définition</source>
+        <target>Definition</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Exemple">
+        <source>Exemple</source>
+        <target>Example</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Remarque">
+        <source>Remarque</source>
+        <target>Note</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Conseil">
+        <source>Conseil</source>
+        <target>Advice</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Attention">
+        <source>Attention</source>
+        <target>Warning</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Complément">
+        <source>Complément</source>
+        <target>Complement</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Méthode">
+        <source>Méthode</source>
+        <target>Method</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Rappel">
+        <source>Rappel</source>
+        <target>Reminder</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Fondamental">
+        <source>Fondamental</source>
+        <target>Fundamental</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Syntaxe">
+        <source>Syntaxe</source>
+        <target>Syntax</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Texte légal">
+        <source>Texte légal</source>
+        <target>Legal text</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Simulation">
+        <source>Simulation</source>
+        <target>Simulation</target>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Résultats du quiz">
+        <source>Résultats du quiz</source>
+        <target>Results of the quizz</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Afficher le glossaire">
+        <source>Afficher le glossaire</source>
+        <target>Display the glossary.</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Glossaire">
+        <source>Glossaire</source>
+        <target>Glossary</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Glossaire de l'étude de cas">
+        <source>Glossaire de l'étude de cas</source>
+        <target>Glossary of the case study</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Cliquez ici pour voir les référents...">
+        <source>Cliquez ici pour voir les référents...</source>
+        <target>Click here to view the referents …</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Référents">
+        <source>Référents</source>
+        <target>Referents</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Quiz">
+        <source>Quiz</source>
+        <target>Quiz</target>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Valider la réponse">
+        <source>Valider la réponse</source>
+        <target>Validate the answer.</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Valider">
+        <source>Valider</source>
+        <target>Validate</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Afficher la bibliographie">
+        <source>Afficher la bibliographie</source>
+        <target>Display the bibliography</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Bibliographie">
+        <source>Bibliographie</source>
+        <target>Bibliography</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Bibliographie de l'étude de cas">
+        <source>Bibliographie de l'étude de cas</source>
+        <target>Bibliography of the case study</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Webographie">
+        <source>Webographie</source>
+        <target>Web bibliography</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="[Module]">
+        <source>[Module]</source>
+        <target>[Module]</target>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname=" : ">
+        <source>: </source>
+        <target>: </target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Indice">
+        <source>Indice</source>
+        <target>Hint</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Solution">
+        <source>Solution</source>
+        <target>Solution</target>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Introduction">
+        <source>Introduction</source>
+        <target>Introduction</target>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Conclusion">
+        <source>Conclusion</source>
+        <target>Conclusion</target>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Erreur - aucun item n'a été saisi">
+        <source>Erreur - aucun item n'a été saisi</source>
+        <target>Error - no item has been entered</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="enabled_click">
+        <source>enabled_click</source>
+        <target>enabled_click</target>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Afficher les ressources">
+        <source>Afficher les ressources</source>
+        <target>Display ressources.</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Ressources">
+        <source>Ressources</source>
+        <target>Ressources</target>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Ressources de l'étude de cas">
+        <source>Ressources de l'étude de cas</source>
+        <target>Ressources of the case study.</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname=" :">
+        <source> :</source>
+        <target>:</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Plus d'éléments à ordonner">
+        <source>Plus d'éléments à ordonner</source>
+        <target>No more elements to sort</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="« ">
+        <source>« </source>
+        <target>"</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname=" »">
+        <source>»</source>
+        <target>"</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Rechercher">
+        <source>Rechercher</source>
+        <target>Search</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Afficher les acronymes">
+        <source>Afficher les acronymes</source>
+        <target>Display the acronyms</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Acronymes">
+        <source>Acronymes</source>
+        <target>Acronyms</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Acronymes de l'étude de cas">
+        <source>Acronymes de l'étude de cas</source>
+        <target>Acronyms of the case study</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Afficher le plan">
+        <source>Afficher le plan</source>
+        <target>Show the outline</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Plan">
+        <source>Plan</source>
+        <target>Outline</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Votre navigateur ne prend pas en charge le format WEBM. Téléchargez la vidéo :">
+        <source>Votre navigateur ne prend pas en charge le format WEBM. Téléchargez la vidéo :</source>
+        <target>Your browser does not support the WEBM format. Please download the video:</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Si vous utilisez Internet Explorer 9 ou supérieur, vous pouvez installer ce plugin :">
+        <source>Si vous utilisez Internet Explorer 9 ou supérieur, vous pouvez installer ce plugin :</source>
+        <target>If you use Internet Explore 9 or later, you can install this plugin:</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Zoom">
+        <source>Zoom</source>
+        <target>Zoom</target>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Validez le quiz et affichez les résultats">
+        <source>Validez le quiz et affichez les résultats</source>
+        <target>Validate the quiz and display the results.</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Validez">
+        <source>Validez</source>
+        <target>Validate.</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Cliquez ici pour visualiser la ressource (nouvelle fenêtre)...">
+        <source>Cliquez ici pour visualiser la ressource (nouvelle fenêtre)...</source>
+        <target>Click here to view the resource (new window)</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Cliquez ici pour visualiser les explications...">
+        <source>Cliquez ici pour visualiser les explications...</source>
+        <target>Click here to view the explanations...</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Explications...">
+        <source>Explications...</source>
+        <target>Explanations...</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Questions de synthèse">
+        <source>Questions de synthèse</source>
+        <target>Comprehensive questions</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Galerie d'Images">
+        <source>Galerie d'Images</source>
+        <target>Image gallery</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Fin">
+        <source>Fin</source>
+        <target>End</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Vous avez atteint la fin de l'étude de cas.">
+        <source>Vous avez atteint la fin de l'étude de cas.</source>
+        <target>You have reached the end of this case study</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Prochaine étape">
+        <source>Prochaine étape</source>
+        <target>Next stage</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Liste d'exercices">
+        <source>Liste d'exercices</source>
+        <target>Quiz list</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Site web embarqué">
+        <source>Site web embarqué</source>
+        <target>Embedded website</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Effacer mes réponses">
+        <source>Effacer mes réponses</source>
+        <target>Erase my answers</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Afficher le plan de l'étude de cas">
+        <source>Afficher le plan de l'étude de cas</source>
+        <target>Display the outline of the case study</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Ouvrir le Plan">
+        <source>Ouvrir le Plan</source>
+        <target>Open the outline</target>
+        <note from="usedInGenSpecifier">caseWeb</note>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+      <trans-unit resname="Terminer et enregistrer votre parcours">
+        <source>Terminer et enregistrer votre parcours</source>
+        <target>Finish and save your work</target>
+        <note from="usedInGenSpecifier">scormMono</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="authoring" source-language="" datatype="plaintext">
+    <header>
+      <note>Scenari model : Topaze1-4</note>
+    </header>
+    <body>
+      <trans-unit resname="Image PNG">
+        <source>Image PNG</source>
+        <target>PNG image</target>
+      </trans-unit>
+      <trans-unit resname="Image JPEG">
+        <source>Image JPEG</source>
+        <target>JPEG image</target>
+      </trans-unit>
+      <trans-unit resname="Image GIF">
+        <source>Image GIF</source>
+        <target>GIF image</target>
+      </trans-unit>
+      <trans-unit resname="Graphique OpenDocument">
+        <source>Graphique OpenDocument</source>
+        <target>OpenDocument graph</target>
+      </trans-unit>
+      <trans-unit resname="Équation mathématique OpenDocument">
+        <source>Équation mathématique OpenDocument</source>
+        <target>OpenDocument formula</target>
+      </trans-unit>
+      <trans-unit resname="Équation mathématique LaTeX">
+        <source>Équation mathématique LaTeX</source>
+        <target>LaTeX formula</target>
+      </trans-unit>
+      <trans-unit resname="Classeur OpenDocument">
+        <source>Classeur OpenDocument</source>
+        <target>OpenDocument spreadsheet</target>
+      </trans-unit>
+      <trans-unit resname="Abréviation">
+        <source>Abréviation</source>
+        <target>Abbreviation</target>
+      </trans-unit>
+      <trans-unit resname="Glossaire">
+        <source>Glossaire</source>
+        <target>Glossary</target>
+      </trans-unit>
+      <trans-unit resname="Bibliographie">
+        <source>Bibliographie</source>
+        <target>Bibliography</target>
+      </trans-unit>
+      <trans-unit resname="Présentation OpenDocument">
+        <source>Présentation OpenDocument</source>
+        <target>OpenDocument presentation</target>
+      </trans-unit>
+      <trans-unit resname="Texte OpenDocument">
+        <source>Texte OpenDocument</source>
+        <target>OpenDocument text</target>
+      </trans-unit>
+      <trans-unit resname="Document PDF">
+        <source>Document PDF</source>
+        <target>PDF document</target>
+      </trans-unit>
+      <trans-unit resname="Animation Flash - déconseillée">
+        <source>Animation Flash - déconseillée</source>
+        <target>Flash animation – not recommended</target>
+      </trans-unit>
+      <trans-unit resname="Présentation Microsoft Powerpoint">
+        <source>Présentation Microsoft Powerpoint</source>
+        <target>Microsoft PowerPoint presentation</target>
+      </trans-unit>
+      <trans-unit resname="Classeur Microsoft Excel">
+        <source>Classeur Microsoft Excel</source>
+        <target>Microsoft Excel spreadsheet</target>
+      </trans-unit>
+      <trans-unit resname="Document Microsoft Word">
+        <source>Document Microsoft Word</source>
+        <target>Microsoft Word document</target>
+      </trans-unit>
+      <trans-unit resname="Archive ZIP">
+        <source>Archive ZIP</source>
+        <target>ZIP archive</target>
+      </trans-unit>
+      <trans-unit resname="Site web">
+        <source>Site web</source>
+        <target>Website</target>
+      </trans-unit>
+      <trans-unit resname="Vidéo AVI - dépréciée">
+        <source>Vidéo AVI - dépréciée</source>
+        <target>AVI video – deprecated</target>
+      </trans-unit>
+      <trans-unit resname="Vidéo FLV - dépréciée">
+        <source>Vidéo FLV - dépréciée</source>
+        <target>FLV video – deprecated</target>
+      </trans-unit>
+      <trans-unit resname="Vidéo MP4">
+        <source>Vidéo MP4</source>
+        <target>MP4 video</target>
+      </trans-unit>
+      <trans-unit resname="Vidéo MOV - dépréciée">
+        <source>Vidéo MOV - dépréciée</source>
+        <target>MOV video – deprecated</target>
+      </trans-unit>
+      <trans-unit resname="Vidéo MPEG - dépréciée">
+        <source>Vidéo MPEG - dépréciée</source>
+        <target>MPEG video – deprecated</target>
+      </trans-unit>
+      <trans-unit resname="Vidéo RM - dépréciée">
+        <source>Vidéo RM - dépréciée</source>
+        <target>RM video – deprecated</target>
+      </trans-unit>
+      <trans-unit resname="Vidéo WEBM">
+        <source>Vidéo WEBM</source>
+        <target>WEBM video</target>
+      </trans-unit>
+      <trans-unit resname="Vidéo WMV - dépréciée">
+        <source>Vidéo WMV - dépréciée</source>
+        <target>WMV video – deprecated</target>
+      </trans-unit>
+      <trans-unit resname="Audio MP3">
+        <source>Audio MP3</source>
+        <target>MP3 audio</target>
+      </trans-unit>
+      <trans-unit resname="Audio Ogg">
+        <source>Audio Ogg</source>
+        <target>Ogg audio</target>
+      </trans-unit>
+      <trans-unit resname="Audio OPUS">
+        <source>Audio OPUS</source>
+        <target>OPUS audio</target>
+      </trans-unit>
+      <trans-unit resname="Grain de contenu">
+        <source>Grain de contenu</source>
+        <target>Content element</target>
+      </trans-unit>
+      <trans-unit resname="Indicateur calculé automatiquement">
+        <source>Indicateur calculé automatiquement</source>
+        <target>Automatically calculated indicator</target>
+      </trans-unit>
+      <trans-unit resname="Indicateur apprenant">
+        <source>Indicateur apprenant</source>
+        <target>Learner indicator</target>
+      </trans-unit>
+      <trans-unit resname="Applet">
+        <source>Applet</source>
+        <target>Applet</target>
+      </trans-unit>
+      <trans-unit resname="Variable calculé automatiquement">
+        <source>Variable calculé automatiquement</source>
+        <target>Automatically calculated variable</target>
+      </trans-unit>
+      <trans-unit resname="Variable apprenant">
+        <source>Variable apprenant</source>
+        <target>Learner variable</target>
+      </trans-unit>
+      <trans-unit resname="Item indéfini">
+        <source>Item indéfini</source>
+        <target>Undefined item</target>
+      </trans-unit>
+      <trans-unit resname="Ressources">
+        <source>Ressources</source>
+        <target>Resources</target>
+      </trans-unit>
+      <trans-unit resname="Dossier du site web">
+        <source>Dossier du site web</source>
+        <target>Website folder</target>
+      </trans-unit>
+      <trans-unit resname="Ressource">
+        <source>Ressource</source>
+        <target>Resource</target>
+      </trans-unit>
+      <trans-unit resname="Math">
+        <source>Math</source>
+        <target>Math</target>
+      </trans-unit>
+      <trans-unit resname="Module web distant">
+        <source>Module web distant</source>
+        <target>Remote web module</target>
+      </trans-unit>
+      <trans-unit resname="Galerie d'images">
+        <source>Galerie d'images</source>
+        <target>Image gallery</target>
+      </trans-unit>
+      <trans-unit resname="Listing informatique">
+        <source>Listing informatique</source>
+        <target>Source code</target>
+      </trans-unit>
+      <trans-unit resname="Archive JAVA">
+        <source>Archive JAVA</source>
+        <target>JAVA archive</target>
+      </trans-unit>
+      <trans-unit resname="Question à Choix Unique à points">
+        <source>Question à Choix Unique à points</source>
+        <target>Single choice question with points</target>
+      </trans-unit>
+      <trans-unit resname="Question à Choix Multiple à addition de points">
+        <source>Question à Choix Multiple à addition de points</source>
+        <target>Multiple choice question with addition of points</target>
+      </trans-unit>
+      <trans-unit resname="Question à Choix Multiple à plans">
+        <source>Question à Choix Multiple à plans</source>
+        <target>Tiered multiple choice question </target>
+      </trans-unit>
+      <trans-unit resname="Question à Choix Unique">
+        <source>Question à Choix Unique</source>
+        <target>Single choice question</target>
+      </trans-unit>
+      <trans-unit resname="Question Graphique à Choix Unique">
+        <source>Question Graphique à Choix Unique</source>
+        <target>Single choice graphic question</target>
+      </trans-unit>
+      <trans-unit resname="Question à Choix Multiple">
+        <source>Question à Choix Multiple</source>
+        <target>Multiple choice question</target>
+      </trans-unit>
+      <trans-unit resname="Question Graphique à Choix Multiple">
+        <source>Question Graphique à Choix Multiple</source>
+        <target>Multiple choice graphic question</target>
+      </trans-unit>
+      <trans-unit resname="Catégorisation">
+        <source>Catégorisation</source>
+        <target>Matching exercise</target>
+      </trans-unit>
+      <trans-unit resname="Ordonnancement des mots">
+        <source>Ordonnancement des mots</source>
+        <target>Jumble words exercise</target>
+      </trans-unit>
+      <trans-unit resname="Texte à trous">
+        <source>Texte à trous</source>
+        <target>Fill-in the gaps exercise</target>
+      </trans-unit>
+      <trans-unit resname="Question à réponse numérique">
+        <source>Question à réponse numérique</source>
+        <target>Numerical answer question</target>
+      </trans-unit>
+      <trans-unit resname="Question à réponse courte">
+        <source>Question à réponse courte</source>
+        <target>Short answer question</target>
+      </trans-unit>
+      <trans-unit resname="Étape de quiz">
+        <source>Étape de quiz</source>
+      </trans-unit>
+      <trans-unit resname="Étape de contenu">
+        <source>Étape de contenu</source>
+        <target>Contents stage</target>
+      </trans-unit>
+      <trans-unit resname="Étape contenant un module de cours">
+        <source>Étape contenant un module de cours</source>
+        <target>Stage including a course module</target>
+      </trans-unit>
+      <trans-unit resname="Etape d'orientation">
+        <source>Etape d'orientation</source>
+        <target>Orientation stage</target>
+      </trans-unit>
+      <trans-unit resname="Etude de cas">
+        <source>Etude de cas</source>
+        <target>Case study</target>
+      </trans-unit>
+      <trans-unit resname="Exercices">
+        <source>Exercices</source>
+        <target>Exercises</target>
+      </trans-unit>
+      <trans-unit resname="Liste d'exercices">
+        <source>Liste d'exercices</source>
+        <target>Quiz list</target>
+      </trans-unit>
+      <trans-unit resname="Mascotte">
+        <source>Mascotte</source>
+        <target>Mascot</target>
+      </trans-unit>
+      <trans-unit resname="Activité d'apprentissage">
+        <source>Activité d'apprentissage</source>
+        <target>Learning activity</target>
+      </trans-unit>
+      <trans-unit resname="Module OPALE">
+        <source>Module OPALE</source>
+        <target>OPALE Module</target>
+      </trans-unit>
+      <trans-unit resname="Division">
+        <source>Division</source>
+        <target>Division</target>
+      </trans-unit>
+      <trans-unit resname="Exercice rédactionnel">
+        <source>Exercice rédactionnel</source>
+        <target>Writing task</target>
+      </trans-unit>
+      <trans-unit resname="Activité d'auto-évaluation">
+        <source>Activité d'auto-évaluation</source>
+        <target>Self-assessment activity</target>
+      </trans-unit>
+      <trans-unit resname="Plan graphique de l'étude de cas">
+        <source>Plan graphique de l'étude de cas</source>
+      </trans-unit>
+      <trans-unit resname="Item indéfini de type Xml">
+        <source>Item indéfini de type Xml</source>
+        <target>Undefined XML item</target>
+      </trans-unit>
+      <trans-unit resname="Accueil de l'étude de cas">
+        <source>Accueil de l'étude de cas</source>
+        <target>Homepage of the Case study</target>
+      </trans-unit>
+      <trans-unit resname="Classique">
+        <source>Classique</source>
+        <target>Classic</target>
+      </trans-unit>
+      <trans-unit resname="Site interactif et simulateur">
+        <source>Site interactif et simulateur</source>
+        <target>Interactive website and simulator</target>
+      </trans-unit>
+      <trans-unit resname="Export">
+        <source>Export</source>
+        <target>Export</target>
+      </trans-unit>
+      <trans-unit resname="Export Scorm Moodle (plugin topaze)">
+        <source>Export Scorm Moodle (plugin topaze)</source>
+      </trans-unit>
+      <trans-unit resname="packaging SCORM 2004">
+        <source>packaging SCORM 2004</source>
+        <target>SCORM 2004 packaging</target>
+      </trans-unit>
+      <trans-unit resname="Métadonnées des contenus pédagogiques">
+        <source>Métadonnées des contenus pédagogiques</source>
+        <target>Educational contents metadata</target>
+      </trans-unit>
+      <trans-unit resname="Métadonnées des ressources binaires">
+        <source>Métadonnées des ressources binaires</source>
+        <target>Binary resources metadata</target>
+      </trans-unit>
+      <trans-unit resname="Partie">
+        <source>Partie</source>
+        <target>Part</target>
+      </trans-unit>
+      <trans-unit resname="Sous-partie">
+        <source>Sous-partie</source>
+        <target>Sub-part</target>
+      </trans-unit>
+      <trans-unit resname="Somme">
+        <source>Somme</source>
+        <target>Sum</target>
+      </trans-unit>
+      <trans-unit resname="Moyenne">
+        <source>Moyenne</source>
+        <target>Average</target>
+      </trans-unit>
+      <trans-unit resname="Calcul Javascript">
+        <source>Calcul Javascript</source>
+        <target>Javascript calculation</target>
+      </trans-unit>
+      <trans-unit resname="Enchaînement vers les étapes suivantes ou fin de l'étude de cas">
+        <source>Enchaînement vers les étapes suivantes ou fin de l'étude de cas</source>
+        <target>Continuation to the next stages or end of the case study.</target>
+      </trans-unit>
+      <trans-unit resname="Introduction">
+        <source>Introduction</source>
+        <target>Introduction</target>
+      </trans-unit>
+      <trans-unit resname="Exercice : QCU">
+        <source>Exercice : QCU</source>
+        <target>Quiz: SCQ</target>
+      </trans-unit>
+      <trans-unit resname="Exercice : QCU graphique">
+        <source>Exercice : QCU graphique</source>
+        <target>Quiz: graphic SCQ</target>
+      </trans-unit>
+      <trans-unit resname="Exercice : QCM">
+        <source>Exercice : QCM</source>
+        <target>Quiz: MCQ</target>
+      </trans-unit>
+      <trans-unit resname="Exercice : QCM graphique">
+        <source>Exercice : QCM graphique</source>
+        <target>Quiz: graphic MCQ</target>
+      </trans-unit>
+      <trans-unit resname="Exercice : catégorisation">
+        <source>Exercice : catégorisation</source>
+        <target>Quiz: matching exercise</target>
+      </trans-unit>
+      <trans-unit resname="Exercice : ordonnancement">
+        <source>Exercice : ordonnancement</source>
+        <target>Quiz: jumble words exercise</target>
+      </trans-unit>
+      <trans-unit resname="Exercice : texte à trous">
+        <source>Exercice : texte à trous</source>
+        <target>Quiz: fill-in the gaps exercise</target>
+      </trans-unit>
+      <trans-unit resname="Exercice : question à réponse courte">
+        <source>Exercice : question à réponse courte</source>
+        <target>Quiz: short answer question</target>
+      </trans-unit>
+      <trans-unit resname="Exercice : question à réponse numérique">
+        <source>Exercice : question à réponse numérique</source>
+        <target>Quiz: numerical answer question</target>
+      </trans-unit>
+      <trans-unit resname="Conclusion">
+        <source>Conclusion</source>
+        <target>Conclusion</target>
+      </trans-unit>
+      <trans-unit resname="Map">
+        <source>Map</source>
+        <target>Map</target>
+      </trans-unit>
+      <trans-unit resname="Etape de départ">
+        <source>Etape de départ</source>
+        <target>Departure stage</target>
+      </trans-unit>
+      <trans-unit resname="Plan hiérarchique de l'étude">
+        <source>Plan hiérarchique de l'étude</source>
+      </trans-unit>
+      <trans-unit resname="Plan graphique de l'étude">
+        <source>Plan graphique de l'étude</source>
+      </trans-unit>
+      <trans-unit resname="Étape">
+        <source>Étape</source>
+        <target>Stage</target>
+      </trans-unit>
+      <trans-unit resname="Sous-dossier">
+        <source>Sous-dossier</source>
+        <target>Subfolder</target>
+      </trans-unit>
+      <trans-unit resname="Étude de cas et ses étapes">
+        <source>Étude de cas et ses étapes</source>
+        <target>Case study and its stages</target>
+      </trans-unit>
+      <trans-unit resname="Indicateurs">
+        <source>Indicateurs</source>
+        <target>Indicators</target>
+      </trans-unit>
+      <trans-unit resname="Variables">
+        <source>Variables</source>
+        <target>Variables</target>
+      </trans-unit>
+      <trans-unit resname="Contenus">
+        <source>Contenus</source>
+        <target>Contents</target>
+      </trans-unit>
+      <trans-unit resname="Ressources Riches">
+        <source>Ressources Riches</source>
+        <target>Rich ressources</target>
+      </trans-unit>
+      <trans-unit resname="Grains">
+        <source>Grains</source>
+        <target>Elements</target>
+      </trans-unit>
+      <trans-unit resname="Quiz Topaze (à points pondérés)">
+        <source>Quiz Topaze (à points pondérés)</source>
+        <target>Topaze Quiz (weighted points)</target>
+      </trans-unit>
+      <trans-unit resname="Quiz Opale (juste / faux)">
+        <source>Quiz Opale (juste / faux)</source>
+        <target>Opale quiz (right / wrong)</target>
+      </trans-unit>
+      <trans-unit resname="Exercices graphiques">
+        <source>Exercices graphiques</source>
+        <target>Graphics quizzes</target>
+      </trans-unit>
+      <trans-unit resname="Références">
+        <source>Références</source>
+        <target>References</target>
+      </trans-unit>
+      <trans-unit resname="Images">
+        <source>Images</source>
+        <target>Images</target>
+      </trans-unit>
+      <trans-unit resname="Schémas vectoriels">
+        <source>Schémas vectoriels</source>
+        <target>Vectorial schema</target>
+      </trans-unit>
+      <trans-unit resname="Tableaux">
+        <source>Tableaux</source>
+        <target>Table</target>
+      </trans-unit>
+      <trans-unit resname="Formules Mathématiques">
+        <source>Formules Mathématiques</source>
+        <target>Formulas</target>
+      </trans-unit>
+      <trans-unit resname="Vidéos, sons, interactions">
+        <source>Vidéos, sons, interactions</source>
+        <target>Video, sound, interaction</target>
+      </trans-unit>
+      <trans-unit resname="Documents bureautiques">
+        <source>Documents bureautiques</source>
+        <target>Office documents</target>
+      </trans-unit>
+      <trans-unit resname="Ressources techniques">
+        <source>Ressources techniques</source>
+        <target>Technical resources</target>
+      </trans-unit>
+      <trans-unit resname="Applets">
+        <source>Applets</source>
+        <target>Applets</target>
+      </trans-unit>
+      <trans-unit resname="Exports">
+        <source>Exports</source>
+        <target>Exports</target>
+      </trans-unit>
+      <trans-unit resname="Métadonnées pré-renseignées">
+        <source>Métadonnées pré-renseignées</source>
+        <target>Pre-filled metadata</target>
+      </trans-unit>
+      <trans-unit resname="Cas">
+        <source>Cas</source>
+        <target>Cases</target>
+      </trans-unit>
+      <trans-unit resname="Etape">
+        <source>Etape</source>
+        <target>Stage</target>
+      </trans-unit>
+      <trans-unit resname="Indicateur">
+        <source>Indicateur</source>
+        <target>Indicator</target>
+      </trans-unit>
+      <trans-unit resname="Variable">
+        <source>Variable</source>
+        <target>Variable</target>
+      </trans-unit>
+      <trans-unit resname="activiteapprentissage">
+        <source>activiteapprentissage</source>
+        <target>learningactivity</target>
+        <note>utilisé dans un nom de fichier (sans accent ou caractères spéciaux !)</note>
+      </trans-unit>
+      <trans-unit resname="module">
+        <source>module</source>
+        <target>module</target>
+        <note>utilisé dans un nom de fichier (sans accent ou caractères spéciaux !)</note>
+      </trans-unit>
+      <trans-unit resname="_">
+        <source>_</source>
+        <target>_ </target>
+      </trans-unit>
+      <trans-unit resname="grain">
+        <source>grain</source>
+        <target>element</target>
+        <note>utilisé dans un nom de fichier (sans accent ou caractères spéciaux !)</note>
+      </trans-unit>
+      <trans-unit resname="exercice">
+        <source>exercice</source>
+        <target>quiz</target>
+        <note>utilisé dans un nom de fichier (sans accent ou caractères spéciaux !)</note>
+      </trans-unit>
+      <trans-unit resname="activiteeval">
+        <source>activiteeval</source>
+        <target>assmntactivity</target>
+        <note>utilisé dans un nom de fichier (sans accent ou caractères spéciaux !)</note>
+      </trans-unit>
+      <trans-unit resname="QCU">
+        <source>QCU</source>
+        <target>scq</target>
+      </trans-unit>
+      <trans-unit resname="QCM">
+        <source>QCM</source>
+        <target>mcq</target>
+      </trans-unit>
+      <trans-unit resname="qcu">
+        <source>qcu</source>
+        <target>scq</target>
+        <note>utilisé dans un nom de fichier (sans accent ou caractères spéciaux !)</note>
+      </trans-unit>
+      <trans-unit resname="qcm">
+        <source>qcm</source>
+        <target>mcq</target>
+        <note>utilisé dans un nom de fichier (sans accent ou caractères spéciaux !)</note>
+      </trans-unit>
+      <trans-unit resname="categ">
+        <source>categ</source>
+        <target>matching</target>
+        <note>utilisé dans un nom de fichier (sans accent ou caractères spéciaux !)</note>
+      </trans-unit>
+      <trans-unit resname="ord">
+        <source>ord</source>
+        <target>jumble</target>
+        <note>utilisé dans un nom de fichier (sans accent ou caractères spéciaux !)</note>
+      </trans-unit>
+      <trans-unit resname="tat">
+        <source>tat</source>
+        <target>gap</target>
+        <note>utilisé dans un nom de fichier (sans accent ou caractères spéciaux !)</note>
+      </trans-unit>
+      <trans-unit resname="court">
+        <source>court</source>
+        <target>short</target>
+        <note>utilisé dans un nom de fichier (sans accent ou caractères spéciaux !)</note>
+      </trans-unit>
+      <trans-unit resname="num">
+        <source>num</source>
+        <target>num</target>
+        <note>utilisé dans un nom de fichier (sans accent ou caractères spéciaux !)</note>
+      </trans-unit>
+      <trans-unit resname="quizList">
+        <source>quizList</source>
+        <target>quizList</target>
+        <note>utilisé dans un nom de fichier (sans accent ou carractères spéciaux !)</note>
+      </trans-unit>
+      <trans-unit resname="qcuImage">
+        <source>qcuImage</source>
+        <target>imageScq</target>
+        <note>utilisé dans un nom de fichier (sans accent ou caractères spéciaux !)</note>
+      </trans-unit>
+      <trans-unit resname="qcmImage">
+        <source>qcmImage</source>
+        <target>imageMcq</target>
+        <note>utilisé dans un nom de fichier (sans accent ou caractères spéciaux !)</note>
+      </trans-unit>
+      <trans-unit resname="map">
+        <source>map</source>
+        <target>map</target>
+      </trans-unit>
+      <trans-unit resname="mascotte">
+        <source>mascotte</source>
+        <target>mascot</target>
+      </trans-unit>
+      <trans-unit resname="abreviation">
+        <source>abreviation</source>
+        <target>abbreviation</target>
+        <note>utilisé dans un nom de fichier (sans accent ou caractères spéciaux !)</note>
+      </trans-unit>
+      <trans-unit resname="glossaire">
+        <source>glossaire</source>
+        <target>glossary</target>
+        <note>utilisé dans un nom de fichier (sans accent ou caractères spéciaux !)</note>
+      </trans-unit>
+      <trans-unit resname="biblio">
+        <source>biblio</source>
+        <target>biblio</target>
+        <note>utilisé dans un nom de fichier (sans accent ou caractères spéciaux !)</note>
+      </trans-unit>
+      <trans-unit resname="image">
+        <source>image</source>
+        <target>image</target>
+      </trans-unit>
+      <trans-unit resname="res">
+        <source>res</source>
+        <target>res</target>
+      </trans-unit>
+      <trans-unit resname="math">
+        <source>math</source>
+        <target>math</target>
+      </trans-unit>
+      <trans-unit resname="audio">
+        <source>audio</source>
+        <target>audio</target>
+      </trans-unit>
+      <trans-unit resname="anim">
+        <source>anim</source>
+        <target>anim</target>
+      </trans-unit>
+      <trans-unit resname="video">
+        <source>video</source>
+        <target>video</target>
+      </trans-unit>
+      <trans-unit resname="siteEmb">
+        <source>siteEmb</source>
+        <target>embSite</target>
+      </trans-unit>
+      <trans-unit resname="media">
+        <source>media</source>
+        <target>media</target>
+      </trans-unit>
+      <trans-unit resname="web">
+        <source>web</source>
+        <target>web</target>
+      </trans-unit>
+      <trans-unit resname="galerie">
+        <source>galerie</source>
+        <target>gallery</target>
+      </trans-unit>
+      <trans-unit resname="code">
+        <source>code</source>
+        <target>code</target>
+      </trans-unit>
+      <trans-unit resname="scormRoot">
+        <source>scormRoot</source>
+        <target>scormRoot</target>
+      </trans-unit>
+      <trans-unit resname="Info">
+        <source>Info</source>
+        <target>Info</target>
+      </trans-unit>
+      <trans-unit resname="Edition">
+        <source>Edition</source>
+        <target>Edition</target>
+      </trans-unit>
+      <trans-unit resname="Infos.">
+        <source>Infos.</source>
+        <target>Info.</target>
+      </trans-unit>
+      <trans-unit resname="Informations techniques">
+        <source>Informations techniques</source>
+        <target>Technical information</target>
+      </trans-unit>
+      <trans-unit resname="Publi.">
+        <source>Publi.</source>
+      </trans-unit>
+      <trans-unit resname="Publications">
+        <source>Publications</source>
+        <target>Publishing</target>
+      </trans-unit>
+      <trans-unit resname="Texte">
+        <source>Texte</source>
+        <target>Text</target>
+      </trans-unit>
+      <trans-unit resname="Édition texte">
+        <source>Édition texte</source>
+        <target>Text edition</target>
+      </trans-unit>
+      <trans-unit resname="Édition">
+        <source>Édition</source>
+        <target>Edition</target>
+      </trans-unit>
+      <trans-unit resname="Visu.">
+        <source>Visu.</source>
+        <target>View</target>
+      </trans-unit>
+      <trans-unit resname="Visualisation">
+        <source>Visualisation</source>
+        <target>Overview</target>
+      </trans-unit>
+      <trans-unit resname="Dimensions">
+        <source>Dimensions</source>
+        <target>Dimensions</target>
+      </trans-unit>
+      <trans-unit resname="Props.">
+        <source>Props.</source>
+        <target>Props.</target>
+      </trans-unit>
+      <trans-unit resname="Propriétés">
+        <source>Propriétés</source>
+        <target>Properties</target>
+      </trans-unit>
+      <trans-unit resname="Aperçu">
+        <source>Aperçu</source>
+        <target>Preview</target>
+      </trans-unit>
+      <trans-unit resname="Contenu de l'étape">
+        <source>Contenu de l'étape</source>
+        <target>Contents of the stage</target>
+      </trans-unit>
+      <trans-unit resname="Références Générales">
+        <source>Références Générales</source>
+        <target>General references</target>
+      </trans-unit>
+      <trans-unit resname="Contient un exercice interactif">
+        <source>Contient un exercice interactif</source>
+        <target>Contains an interactive quiz</target>
+      </trans-unit>
+      <trans-unit resname="Objectifs de l'étape">
+        <source>Objectifs de l'étape</source>
+        <target>Aims of the stage</target>
+      </trans-unit>
+      <trans-unit resname="Quiz">
+        <source>Quiz</source>
+        <target>Quiz </target>
+      </trans-unit>
+      <trans-unit resname="Feedback">
+        <source>Feedback</source>
+        <target>Feedback</target>
+      </trans-unit>
+      <trans-unit resname="Intervalle (basé sur le pourcentage de réussite aux exercices)">
+        <source>Intervalle (basé sur le pourcentage de réussite aux exercices)</source>
+        <target>Interval (based on the percentage of success in quizzes)</target>
+      </trans-unit>
+      <trans-unit resname="Strictement supérieur à">
+        <source>Strictement supérieur à</source>
+        <target>Strictly above</target>
+      </trans-unit>
+      <trans-unit resname="Supérieur ou égal à">
+        <source>Supérieur ou égal à</source>
+        <target>Above or equal to</target>
+      </trans-unit>
+      <trans-unit resname="Strictement inférieur à">
+        <source>Strictement inférieur à</source>
+        <target>Strictly below</target>
+      </trans-unit>
+      <trans-unit resname="Inférieur ou égal à">
+        <source>Inférieur ou égal à</source>
+        <target>Below or equal to</target>
+      </trans-unit>
+      <trans-unit resname="Usage">
+        <source>Usage</source>
+        <target>Use</target>
+      </trans-unit>
+      <trans-unit resname="Définit un indice pour le calcul de parcours">
+        <source>Définit un indice pour le calcul de parcours</source>
+        <target>defines an index for path calculation</target>
+      </trans-unit>
+      <trans-unit resname="ATTENTION : retourne un pourcentage.">
+        <source>ATTENTION : retourne un pourcentage.</source>
+      </trans-unit>
+      <trans-unit resname="Code Javascript qui doit retourner un nombre">
+        <source>Code Javascript qui doit retourner un nombre</source>
+        <target>Javascript code returning a figure</target>
+      </trans-unit>
+      <trans-unit resname="Définit un indice saisi par l'apprenant">
+        <source>Définit un indice saisi par l'apprenant</source>
+        <target>defines an index keyed in by the learner</target>
+      </trans-unit>
+      <trans-unit resname="Définit une variable textuelle calculée">
+        <source>Définit une variable textuelle calculée</source>
+        <target>defines a calculated text variable</target>
+      </trans-unit>
+      <trans-unit resname="Code Javascript">
+        <source>Code Javascript</source>
+        <target>Javascript code</target>
+      </trans-unit>
+      <trans-unit resname="Définit une variable textuelle saisi par l'apprenant">
+        <source>Définit une variable textuelle saisi par l'apprenant</source>
+        <target>defines a text variable keyed in by the learner</target>
+      </trans-unit>
+      <trans-unit resname="Regroupe des contenus expositifs et des exercices">
+        <source>Regroupe des contenus expositifs et des exercices</source>
+        <target>Regroups explanatory contents and quizzes</target>
+      </trans-unit>
+      <trans-unit resname="Objectifs de l'activité">
+        <source>Objectifs de l'activité</source>
+        <target>Activity objectives</target>
+      </trans-unit>
+      <trans-unit resname="Contient un exercice rédactionnel (type travaux dirigés)">
+        <source>Contient un exercice rédactionnel (type travaux dirigés)</source>
+        <target>Contains a writing task</target>
+      </trans-unit>
+      <trans-unit resname="Contient un exercice auto-évalué de type QCU">
+        <source>Contient un exercice auto-évalué de type QCU</source>
+        <target>Contains a self-assessed SCQ</target>
+      </trans-unit>
+      <trans-unit resname="Contient un exercice auto-évalué de type QCU graphique">
+        <source>Contient un exercice auto-évalué de type QCU graphique</source>
+        <target>Contains a self-assessed graphic SCQ</target>
+      </trans-unit>
+      <trans-unit resname="Contient un exercice auto-évalué de type de type QCM">
+        <source>Contient un exercice auto-évalué de type de type QCM</source>
+        <target>Contains a self-assessed MCQ</target>
+      </trans-unit>
+      <trans-unit resname="Contient un exercice auto-évalué de type de type QCM graphique">
+        <source>Contient un exercice auto-évalué de type de type QCM graphique</source>
+        <target>Contains a self-assessed graphic MCQ</target>
+      </trans-unit>
+      <trans-unit resname="Contient un exercice auto-évalué de type catégorisation">
+        <source>Contient un exercice auto-évalué de type catégorisation</source>
+        <target>Contains a self-assessed matching exercise</target>
+      </trans-unit>
+      <trans-unit resname="Contient un exercice auto-évalué de type ordonnancement">
+        <source>Contient un exercice auto-évalué de type ordonnancement</source>
+        <target>Contains a self-assessed jumble words exercise</target>
+      </trans-unit>
+      <trans-unit resname="Contient un exercice auto-évalué de type texte à trous">
+        <source>Contient un exercice auto-évalué de type texte à trous</source>
+        <target>Contains a self-assessed fill-in the gaps exercise</target>
+      </trans-unit>
+      <trans-unit resname="Contient un exercice auto-évalué de type question à réponse courte">
+        <source>Contient un exercice auto-évalué de type question à réponse courte</source>
+        <target>Contains a self-assessed short answer exercise</target>
+      </trans-unit>
+      <trans-unit resname="Contient un exercice auto-évalué de type question à réponse numérique">
+        <source>Contient un exercice auto-évalué de type question à réponse numérique</source>
+        <target>Contains a self-assessed numerical answer exercise</target>
+      </trans-unit>
+      <trans-unit resname="Contient une liste d'exercice">
+        <source>Contient une liste d'exercice</source>
+        <target>Contains a quiz list</target>
+      </trans-unit>
+      <trans-unit resname="Question de synthèse">
+        <source>Question de synthèse</source>
+        <target>Comprehensive questions</target>
+      </trans-unit>
+      <trans-unit resname="Item racine du module">
+        <source>Item racine du module</source>
+        <target>Module's root item</target>
+      </trans-unit>
+      <trans-unit resname="Objectifs du module">
+        <source>Objectifs du module</source>
+        <target>Module's objectives</target>
+      </trans-unit>
+      <trans-unit resname="Contient les objectifs généraux du module">
+        <source>Contient les objectifs généraux du module</source>
+        <target>Contains the module's general objectives</target>
+      </trans-unit>
+      <trans-unit resname="Contient l'introduction générale du module">
+        <source>Contient l'introduction générale du module</source>
+        <target>Contains the module's main introduction</target>
+      </trans-unit>
+      <trans-unit resname="Regroupe des grains de contenus et des exercices d'apprentissage">
+        <source>Regroupe des grains de contenus et des exercices d'apprentissage</source>
+        <target>Groups contents elements and learning exercises</target>
+      </trans-unit>
+      <trans-unit resname="Regroupe des exercices interactifs auto-évalués">
+        <source>Regroupe des exercices interactifs auto-évalués</source>
+        <target>Groups self-assessed quizzes</target>
+      </trans-unit>
+      <trans-unit resname="Structure le module et contient des activités, ou directement du contenu">
+        <source>Structure le module et contient des activités, ou directement du contenu</source>
+        <target>Structures the module and contains activities, or direct content</target>
+      </trans-unit>
+      <trans-unit resname="Contient du contenu expositif">
+        <source>Contient du contenu expositif</source>
+        <target>Contains explanatory content</target>
+      </trans-unit>
+      <trans-unit resname="Contient la conclusion globale du module">
+        <source>Contient la conclusion globale du module</source>
+        <target>Contains the module's main conclusion</target>
+      </trans-unit>
+      <trans-unit resname="Permettent d'associer des acronymes, références biblio, etc. au module">
+        <source>Permettent d'associer des acronymes, références biblio, etc. au module</source>
+        <target>Allow to associate abbreviations, references etc with the module</target>
+      </trans-unit>
+      <trans-unit resname="Contient l'introduction de la division">
+        <source>Contient l'introduction de la division</source>
+        <target>Contains the division introduction</target>
+      </trans-unit>
+      <trans-unit resname="Regroupe des grains de contenus expositifs et des exercices">
+        <source>Regroupe des grains de contenus expositifs et des exercices</source>
+        <target>Groups explanatory content elements and quizzes</target>
+      </trans-unit>
+      <trans-unit resname="Contient des activités, ou directement du contenu">
+        <source>Contient des activités, ou directement du contenu</source>
+        <target>Contains activities, or direct contents</target>
+      </trans-unit>
+      <trans-unit resname="Contient la conclusion de la division">
+        <source>Contient la conclusion de la division</source>
+        <target>Contains the division conclusion</target>
+      </trans-unit>
+      <trans-unit resname="Contenu">
+        <source>Contenu</source>
+        <target>Contents</target>
+      </trans-unit>
+      <trans-unit resname="Structure le grain pédagogique et contient du contenu expositif">
+        <source>Structure le grain pédagogique et contient du contenu expositif</source>
+        <target>Structures the educational granularity and contains explanatory content</target>
+      </trans-unit>
+      <trans-unit resname="Mise en contexte">
+        <source>Mise en contexte</source>
+        <target>Contextualization</target>
+      </trans-unit>
+      <trans-unit resname="Question">
+        <source>Question</source>
+        <target>Question</target>
+      </trans-unit>
+      <trans-unit resname="Contient des exercices auto-évalués">
+        <source>Contient des exercices auto-évalués</source>
+        <target>Contains self-assessment quizzes</target>
+      </trans-unit>
+      <trans-unit resname="Exercice">
+        <source>Exercice</source>
+        <target>Quiz </target>
+      </trans-unit>
+      <trans-unit resname="Intervalle (%)">
+        <source>Intervalle (%)</source>
+        <target>Interval (%)</target>
+      </trans-unit>
+      <trans-unit resname="Questionnaire à choix unique">
+        <source>Questionnaire à choix unique</source>
+        <target>Single Choice Question</target>
+      </trans-unit>
+      <trans-unit resname="Énoncé">
+        <source>Énoncé</source>
+        <target>Question</target>
+      </trans-unit>
+      <trans-unit resname="Choix">
+        <source>Choix</source>
+        <target>Option</target>
+      </trans-unit>
+      <trans-unit resname="Réponse">
+        <source>Réponse</source>
+        <target>Answer</target>
+      </trans-unit>
+      <trans-unit resname="Score">
+        <source>Score</source>
+        <target>Score</target>
+      </trans-unit>
+      <trans-unit resname="Libellé">
+        <source>Libellé</source>
+        <target>Wording</target>
+      </trans-unit>
+      <trans-unit resname="Explication">
+        <source>Explication</source>
+        <target>Explanation</target>
+      </trans-unit>
+      <trans-unit resname="Explication globale">
+        <source>Explication globale</source>
+        <target>Comprehensive explanation</target>
+      </trans-unit>
+      <trans-unit resname="Questionnaire à choix multiple où le score est l'addition des options">
+        <source>Questionnaire à choix multiple où le score est l'addition des options</source>
+        <target>Multiple Choice Question with the score as addition of options</target>
+      </trans-unit>
+      <trans-unit resname="Option">
+        <source>Option</source>
+        <target>Option</target>
+      </trans-unit>
+      <trans-unit resname="Points si coché">
+        <source>Points si coché</source>
+        <target>Points if ticked</target>
+      </trans-unit>
+      <trans-unit resname="Points si non coché">
+        <source>Points si non coché</source>
+        <target>Points if not ticked</target>
+      </trans-unit>
+      <trans-unit resname="Solution">
+        <source>Solution</source>
+        <target>Solution</target>
+      </trans-unit>
+      <trans-unit resname="supérieur à">
+        <source>supérieur à</source>
+        <target>Above</target>
+      </trans-unit>
+      <trans-unit resname="sup. ou égal à">
+        <source>sup. ou égal à</source>
+        <target>Above or equal to</target>
+      </trans-unit>
+      <trans-unit resname="inférieur à">
+        <source>inférieur à</source>
+        <target>Below</target>
+      </trans-unit>
+      <trans-unit resname="inf. ou égal à">
+        <source>inf. ou égal à</source>
+        <target>Below or equal to</target>
+      </trans-unit>
+      <trans-unit resname="Combinaison de réponses">
+        <source>Combinaison de réponses</source>
+        <target>Combination of answers</target>
+      </trans-unit>
+      <trans-unit resname="Autres réponses">
+        <source>Autres réponses</source>
+        <target>Other answers</target>
+      </trans-unit>
+      <trans-unit resname="Questionnaire à choix multiple">
+        <source>Questionnaire à choix multiple</source>
+        <target>Multiple Choice Question</target>
+      </trans-unit>
+      <trans-unit resname="Regroupement d'étiquettes">
+        <source>Regroupement d'étiquettes</source>
+        <target>Bringing together labels</target>
+      </trans-unit>
+      <trans-unit resname="Consigne">
+        <source>Consigne</source>
+        <target>Instructions</target>
+      </trans-unit>
+      <trans-unit resname="Cible">
+        <source>Cible</source>
+        <target>Target</target>
+      </trans-unit>
+      <trans-unit resname="Libellé de la cible">
+        <source>Libellé de la cible</source>
+        <target>Target wording</target>
+      </trans-unit>
+      <trans-unit resname="Etiquette">
+        <source>Etiquette</source>
+        <target>Label</target>
+      </trans-unit>
+      <trans-unit resname="Ordonnancement de mots">
+        <source>Ordonnancement de mots</source>
+        <target>Jumble words</target>
+      </trans-unit>
+      <trans-unit resname="mot">
+        <source>mot</source>
+        <target>word</target>
+      </trans-unit>
+      <trans-unit resname="Surlignez les mots à remplacer par des trous, clic droit puis &quot;Insérer trou&quot;">
+        <source>Surlignez les mots à remplacer par des trous, clic droit puis "Insérer trou"</source>
+        <target>Select the words you want to hide, right click and choose "Insert a gap"</target>
+      </trans-unit>
+      <trans-unit resname="Question avec un champ réponse éditable">
+        <source>Question avec un champ réponse éditable</source>
+        <target>Question with an editable answer field</target>
+      </trans-unit>
+      <trans-unit resname="Réponse correcte">
+        <source>Réponse correcte</source>
+        <target>Correct answer</target>
+      </trans-unit>
+      <trans-unit resname="Spécifiez la bonne réponse">
+        <source>Spécifiez la bonne réponse</source>
+        <target>Pick the right answer</target>
+      </trans-unit>
+      <trans-unit resname="Synonyme (autre réponse acceptable)">
+        <source>Synonyme (autre réponse acceptable)</source>
+        <target>Synonym (other accepted answer)</target>
+      </trans-unit>
+      <trans-unit resname="Question avec un champ numérique éditable">
+        <source>Question avec un champ numérique éditable</source>
+        <target>Question with an editable numerical field</target>
+      </trans-unit>
+      <trans-unit resname="Spécifiez la ou les conditions numériques qui doivent être remplies ainsi que la bonne réponse ">
+        <source>Spécifiez la ou les conditions numériques qui doivent être remplies ainsi que la bonne réponse </source>
+        <target>Set the numerical condition(s) that must be fulfilled as well as the correct answer.</target>
+      </trans-unit>
+      <trans-unit resname="Problématique">
+        <source>Problématique</source>
+        <target>Problem</target>
+      </trans-unit>
+      <trans-unit resname="Questionnaire graphique à choix unique">
+        <source>Questionnaire graphique à choix unique</source>
+        <target>Single choice graphic question</target>
+      </trans-unit>
+      <trans-unit resname="Image de fond">
+        <source>Image de fond</source>
+        <target>Background image</target>
+      </trans-unit>
+      <trans-unit resname="Zone">
+        <source>Zone</source>
+        <target>Area</target>
+      </trans-unit>
+      <trans-unit resname="Questionnaire graphique à choix multiple">
+        <source>Questionnaire graphique à choix multiple</source>
+        <target>Multiple choice grapic question</target>
+      </trans-unit>
+      <trans-unit resname="Image">
+        <source>Image</source>
+        <target>Image</target>
+      </trans-unit>
+      <trans-unit resname="Texte d'aide">
+        <source>Texte d'aide</source>
+        <target>Help text</target>
+      </trans-unit>
+      <trans-unit resname="Zone de texte d'aide en dessous de l'image permettant d'indiquer quoi faire à l'utilisateur. Par exemple : Passer votre souris sur l'image pour voir les interactions possibles ...">
+        <source>Zone de texte d'aide en dessous de l'image permettant d'indiquer quoi faire à l'utilisateur. Par exemple : Passer votre souris sur l'image pour voir les interactions possibles ...</source>
+        <target>Help text area below the image indicating what to do to the user. For instance : Hover your mouse over the image to see possible interactions …</target>
+      </trans-unit>
+      <trans-unit resname="Item">
+        <source>Item</source>
+        <target>Item</target>
+      </trans-unit>
+      <trans-unit resname="Indice">
+        <source>Indice</source>
+        <target>Hint</target>
+      </trans-unit>
+      <trans-unit resname="Insérer un descriptif détaillé pour une abréviation">
+        <source>Insérer un descriptif détaillé pour une abréviation</source>
+        <target>Detailed description for an abbreviation</target>
+      </trans-unit>
+      <trans-unit resname="Renseigner une entrée de type glossaire">
+        <source>Renseigner une entrée de type glossaire</source>
+        <target>Fill in a glossary entry</target>
+      </trans-unit>
+      <trans-unit resname="Renseigner une bibliographie">
+        <source>Renseigner une bibliographie</source>
+        <target>Fill in a bibliography</target>
+      </trans-unit>
+      <trans-unit resname="Insérer une image JPEG à une résolution de 300 dpi">
+        <source>Insérer une image JPEG à une résolution de 300 dpi</source>
+        <target>Insert a 300 dpi JPEG image</target>
+      </trans-unit>
+      <trans-unit resname="Insérer une image GIF à une résolution de 96 dpi">
+        <source>Insérer une image GIF à une résolution de 96 dpi</source>
+        <target>Insert a 96 dpi GIF image</target>
+      </trans-unit>
+      <trans-unit resname="Insérer une image png à une résolution de 300 dpi">
+        <source>Insérer une image png à une résolution de 300 dpi</source>
+        <target>Insert a 300 dpi PNG image</target>
+      </trans-unit>
+      <trans-unit resname=" Ressource au format Open Document Graphics. ">
+        <source>Ressource au format Open Document Graphics. </source>
+        <target>OpenDocument Graphics resource. </target>
+      </trans-unit>
+      <trans-unit resname=" Ressource au format Open Document Spreadsheet. ">
+        <source>Ressource au format Open Document Spreadsheet. </source>
+        <target>OpenDocument Spreadsheet resource. </target>
+      </trans-unit>
+      <trans-unit resname="Ressource audio au format MP3">
+        <source>Ressource audio au format MP3</source>
+        <target>MP3 audio ressource</target>
+      </trans-unit>
+      <trans-unit resname="ATTENTION : Format pris en charge uniquement sur Firefox et Chrome.">
+        <source>ATTENTION : Format pris en charge uniquement sur Firefox et Chrome.</source>
+        <target>WARNING: Only Firefox and Chrome support this format.</target>
+      </trans-unit>
+      <trans-unit resname="Ressource au format Macromedia Flash. ">
+        <source>Ressource au format Macromedia Flash. </source>
+        <target>Adobe flash resource. </target>
+      </trans-unit>
+      <trans-unit resname="Ressource vidéo au format MP4. Seules les vidéos utilisant le codec H.264/MPEG-4 AVC sont compatibles.">
+        <source>Ressource vidéo au format MP4. Seules les vidéos utilisant le codec H.264/MPEG-4 AVC sont compatibles.</source>
+        <target>MP4 video resource, Only videos using codec H.264/MPEG-4 AVC are compatible.</target>
+      </trans-unit>
+      <trans-unit resname=" Ressource au format RealMedia. ">
+        <source>Ressource au format RealMedia. </source>
+        <target>RealMedia resource. </target>
+      </trans-unit>
+      <trans-unit resname="Format non pris en charge par Internet Explorer &lt;9 et Safari. Les codecs pour WebM doivent être installés sur Internet Explorer 9+ et Safari. ">
+        <source>Format non pris en charge par Internet Explorer &lt;9 et Safari. Les codecs pour WebM doivent être installés sur Internet Explorer 9+ et Safari. </source>
+        <target>Internet Explorer &lt;9 and Safari do not support this format. One must install WebM codecs on Internet Explorer &lt;9 and Safari.</target>
+      </trans-unit>
+      <trans-unit resname="Insérer un site web embarqué ou affiché dans une nouvelle page">
+        <source>Insérer un site web embarqué ou affiché dans une nouvelle page</source>
+        <target>Insert an embedded website in a new page</target>
+      </trans-unit>
+      <trans-unit resname="Site web interactif">
+        <source>Site web interactif</source>
+        <target>Interactive website</target>
+      </trans-unit>
+      <trans-unit resname="Largeur">
+        <source>Largeur</source>
+        <target>Width</target>
+      </trans-unit>
+      <trans-unit resname="Largeur en pixels">
+        <source>Largeur en pixels</source>
+        <target>Width (pixels)</target>
+      </trans-unit>
+      <trans-unit resname="Hauteur">
+        <source>Hauteur</source>
+        <target>Height</target>
+      </trans-unit>
+      <trans-unit resname="Hauteur en pixels">
+        <source>Hauteur en pixels</source>
+        <target>Height (pixels)</target>
+      </trans-unit>
+      <trans-unit resname="Permet d'inclure des ressources issues de sites webs externes tels que des vidéos Youtube, des cartes Google Maps etc.">
+        <source>Permet d'inclure des ressources issues de sites webs externes tels que des vidéos Youtube, des cartes Google Maps etc.</source>
+        <target>To include resources from external websites: YouTube videos, Google maps etc.</target>
+      </trans-unit>
+      <trans-unit resname="Inclusion web générique">
+        <source>Inclusion web générique</source>
+        <target>Include standard web</target>
+      </trans-unit>
+      <trans-unit resname="Insérer un site interactif ou un simulateur (par exemple, un site web interactif, ...)">
+        <source>Insérer un site interactif ou un simulateur (par exemple, un site web interactif, ...)</source>
+        <target>Insert an interactive website or simulator</target>
+      </trans-unit>
+      <trans-unit resname=" Ressource au format Microsoft Word. ">
+        <source>Ressource au format Microsoft Word. </source>
+        <target>Microsoft Word resource. </target>
+      </trans-unit>
+      <trans-unit resname=" Ressource au format Microsoft Excel. ">
+        <source>Ressource au format Microsoft Excel. </source>
+        <target>Microsoft Excel resource. </target>
+      </trans-unit>
+      <trans-unit resname=" Ressource au format Microsoft Powerpoint. ">
+        <source>Ressource au format Microsoft Powerpoint. </source>
+        <target>Microsoft PowerPoint resource. </target>
+      </trans-unit>
+      <trans-unit resname=" Ressource au format Open Document Presentation. ">
+        <source>Ressource au format Open Document Presentation. </source>
+        <target>OpenDocument Presentation resource. </target>
+      </trans-unit>
+      <trans-unit resname="Ressource au format OpenDocument Text.">
+        <source>Ressource au format OpenDocument Text.</source>
+        <target>OpenDocument Text resource.</target>
+      </trans-unit>
+      <trans-unit resname=" Ressource au format PDF. ">
+        <source>Ressource au format PDF. </source>
+        <target>PDF resource. </target>
+      </trans-unit>
+      <trans-unit resname=" Ressource au format ZIP. ">
+        <source>Ressource au format ZIP. </source>
+        <target>ZIP resource. </target>
+      </trans-unit>
+      <trans-unit resname="Code source">
+        <source>Code source</source>
+        <target>Source code</target>
+      </trans-unit>
+      <trans-unit resname="Langage">
+        <source>Langage</source>
+        <target>Language</target>
+      </trans-unit>
+      <trans-unit resname="PHP simple">
+        <source>PHP simple</source>
+        <target>Simple PHP</target>
+      </trans-unit>
+      <trans-unit resname="HTML avec PHP">
+        <source>HTML avec PHP</source>
+        <target>HTML with PHP</target>
+      </trans-unit>
+      <trans-unit resname="Perl">
+        <source>Perl</source>
+        <target>Perl</target>
+      </trans-unit>
+      <trans-unit resname="Fichiers INI">
+        <source>Fichiers INI</source>
+        <target>INI files</target>
+      </trans-unit>
+      <trans-unit resname="Fichiers properties">
+        <source>Fichiers properties</source>
+        <target>Files properties</target>
+      </trans-unit>
+      <trans-unit resname="Texte simple">
+        <source>Texte simple</source>
+        <target>Simple text</target>
+      </trans-unit>
+      <trans-unit resname="Paramètre statique textuel">
+        <source>Paramètre statique textuel</source>
+        <target>Textual static parameter</target>
+      </trans-unit>
+      <trans-unit resname="Paramètre statique de ressource">
+        <source>Paramètre statique de ressource</source>
+        <target>Resource static parameter</target>
+      </trans-unit>
+      <trans-unit resname="Paramètre dynamique">
+        <source>Paramètre dynamique</source>
+        <target>Dynamic parameter</target>
+      </trans-unit>
+      <trans-unit resname="Librairie de l'applet">
+        <source>Librairie de l'applet</source>
+        <target>Applet library</target>
+      </trans-unit>
+      <trans-unit resname="Étude de cas">
+        <source>Étude de cas</source>
+        <target>Case study</target>
+      </trans-unit>
+      <trans-unit resname="Mots-clés">
+        <source>Mots-clés</source>
+        <target>Keywords</target>
+      </trans-unit>
+      <trans-unit resname="Licence">
+        <source>Licence</source>
+        <target>License</target>
+      </trans-unit>
+      <trans-unit resname="Plus d'info : http://creativecommons.org et http://www.gnu.org">
+        <source>Plus d'info : http://creativecommons.org et http://www.gnu.org</source>
+        <target>More information: http://creativecommons.org and http://www.gnu.org </target>
+      </trans-unit>
+      <trans-unit resname="Domaine Public (dépréciée)">
+        <source>Domaine Public (dépréciée)</source>
+        <target>Public Domain (deprecated)</target>
+      </trans-unit>
+      <trans-unit resname="Creative Commons Zéro">
+        <source>Creative Commons Zéro</source>
+        <target>Creative Commons Zero</target>
+      </trans-unit>
+      <trans-unit resname="Paternité">
+        <source>Paternité</source>
+        <target>Attribution</target>
+      </trans-unit>
+      <trans-unit resname="Paternité - Pas d'Utilisation Commerciale">
+        <source>Paternité - Pas d'Utilisation Commerciale</source>
+        <target>Attribution – Non commercial</target>
+      </trans-unit>
+      <trans-unit resname="Paternité - Pas d'Utilisation Commerciale - Pas de Modification">
+        <source>Paternité - Pas d'Utilisation Commerciale - Pas de Modification</source>
+        <target>Attribution – Non commercial - No Derivative Work</target>
+      </trans-unit>
+      <trans-unit resname="Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique">
+        <source>Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique</source>
+        <target>Attribution – Non commercial - Share Alike</target>
+      </trans-unit>
+      <trans-unit resname="Paternité - Pas de Modification">
+        <source>Paternité - Pas de Modification</source>
+        <target>Attribution - No Derivative Work</target>
+      </trans-unit>
+      <trans-unit resname="Paternité - Partage des Conditions Initiales à l'Identique">
+        <source>Paternité - Partage des Conditions Initiales à l'Identique</source>
+        <target>Attribution - Share Alike</target>
+      </trans-unit>
+      <trans-unit resname="Licence de documentation libre GNU">
+        <source>Licence de documentation libre GNU</source>
+        <target>GNU Free Documentation licence (GFDL)</target>
+      </trans-unit>
+      <trans-unit resname="Version de la licence cc-by">
+        <source>Version de la licence cc-by</source>
+        <target>Cc-by license version</target>
+      </trans-unit>
+      <trans-unit resname="Renseignez le numéro de version pour les licences cc-by (Creative Commons avec Paternité) uniquement. Par défaut, la dernière version disponible est prise en compte.">
+        <source>Renseignez le numéro de version pour les licences cc-by (Creative Commons avec Paternité) uniquement. Par défaut, la dernière version disponible est prise en compte.</source>
+        <target>Select a version for cc-by licenses only (Creative Commons with Paternity). By default, the lastest version is picked.</target>
+      </trans-unit>
+      <trans-unit resname="Paternité ou copyright">
+        <source>Paternité ou copyright</source>
+        <target>Attribution or copyright</target>
+      </trans-unit>
+      <trans-unit resname="Item non reconnu.">
+        <source>Item non reconnu.</source>
+        <target>Unrecognized item</target>
+      </trans-unit>
+      <trans-unit resname="Métadonnées de l'étude de cas">
+        <source>Métadonnées de l'étude de cas</source>
+        <target>Metadata of the Case study</target>
+      </trans-unit>
+      <trans-unit resname="Titre">
+        <source>Titre</source>
+        <target>Title</target>
+      </trans-unit>
+      <trans-unit resname="Titre court">
+        <source>Titre court</source>
+        <target>Short title</target>
+      </trans-unit>
+      <trans-unit resname="Sélection du contenu">
+        <source>Sélection du contenu</source>
+        <target>Contents selection</target>
+      </trans-unit>
+      <trans-unit resname="Sélection du contenu à inclure ou à exclure de la publication">
+        <source>Sélection du contenu à inclure ou à exclure de la publication</source>
+        <target>Selecting the contents to include or exclude from the publication</target>
+      </trans-unit>
+      <trans-unit resname="Version &quot;standard&quot;">
+        <source>Version "standard"</source>
+        <target>“Standard” version</target>
+      </trans-unit>
+      <trans-unit resname="Version &quot;courte&quot;">
+        <source>Version "courte"</source>
+        <target>“Short” version</target>
+      </trans-unit>
+      <trans-unit resname="Paramétrage de la publication">
+        <source>Paramétrage de la publication</source>
+        <target>Settings of the publication.</target>
+      </trans-unit>
+      <trans-unit resname="Texte du bouton commencer de la page d'accueil">
+        <source>Texte du bouton commencer de la page d'accueil</source>
+      </trans-unit>
+      <trans-unit resname="Publier le glossaire">
+        <source>Publier le glossaire</source>
+        <target>Publish the glossary</target>
+      </trans-unit>
+      <trans-unit resname="Non par défaut">
+        <source>Non par défaut</source>
+        <target>Default No</target>
+      </trans-unit>
+      <trans-unit resname="Oui">
+        <source>Oui</source>
+        <target>Yes</target>
+      </trans-unit>
+      <trans-unit resname="Non">
+        <source>Non</source>
+        <target>No</target>
+      </trans-unit>
+      <trans-unit resname="Publier la bibliographie / webographie">
+        <source>Publier la bibliographie / webographie</source>
+        <target>Publish the bibliography / webography.</target>
+      </trans-unit>
+      <trans-unit resname="Publier les acronymes">
+        <source>Publier les acronymes</source>
+        <target>Publish the acronyms.</target>
+      </trans-unit>
+      <trans-unit resname="Publier les crédits des ressources">
+        <source>Publier les crédits des ressources</source>
+        <target>Publish the resource credits</target>
+      </trans-unit>
+      <trans-unit resname="Publier la zone de recherche">
+        <source>Publier la zone de recherche</source>
+        <target>Publish the search area.</target>
+      </trans-unit>
+      <trans-unit resname="Oui par défaut">
+        <source>Oui par défaut</source>
+        <target>Default Yes</target>
+      </trans-unit>
+      <trans-unit resname="bloc introductif">
+        <source>bloc introductif</source>
+        <target>Introduction block</target>
+      </trans-unit>
+      <trans-unit resname="Partenaires">
+        <source>Partenaires</source>
+        <target>Partners</target>
+      </trans-unit>
+      <trans-unit resname="Logo">
+        <source>Logo</source>
+        <target>Logo</target>
+      </trans-unit>
+      <trans-unit resname="Méta-données">
+        <source>Méta-données</source>
+        <target>Metadata</target>
+      </trans-unit>
+      <trans-unit resname="Plan hiérarchique de l'étude de cas">
+        <source>Plan hiérarchique de l'étude de cas</source>
+      </trans-unit>
+      <trans-unit resname="Métadonnées">
+        <source>Métadonnées</source>
+        <target>Metadata</target>
+      </trans-unit>
+      <trans-unit resname="Étape accessible uniquement si visité">
+        <source>Étape accessible uniquement si visité</source>
+      </trans-unit>
+      <trans-unit resname="oui (par défaut)">
+        <source>oui (par défaut)</source>
+        <target>Default Yes</target>
+      </trans-unit>
+      <trans-unit resname="Enchaînement simple">
+        <source>Enchaînement simple</source>
+        <target>Simple sequence</target>
+      </trans-unit>
+      <trans-unit resname="Étape suivante">
+        <source>Étape suivante</source>
+        <target>Next stage</target>
+      </trans-unit>
+      <trans-unit resname="Enchaînement libre choix">
+        <source>Enchaînement libre choix</source>
+        <target>Free choice sequence</target>
+      </trans-unit>
+      <trans-unit resname="Étape suivante possible">
+        <source>Étape suivante possible</source>
+        <target>Possible next stage</target>
+      </trans-unit>
+      <trans-unit resname="Enchaînement conditionné">
+        <source>Enchaînement conditionné</source>
+        <target>Conditioned sequence</target>
+      </trans-unit>
+      <trans-unit resname="Le premier nœud dont les conditions sont respectées est choisi.">
+        <source>Le premier nœud dont les conditions sont respectées est choisi.</source>
+        <target>The first node whose conditions are respected is chosen.</target>
+      </trans-unit>
+      <trans-unit resname="Étape suivante conditionnée">
+        <source>Étape suivante conditionnée</source>
+        <target>Conditioned next stage</target>
+      </trans-unit>
+      <trans-unit resname="Étape suivante par défaut">
+        <source>Étape suivante par défaut</source>
+        <target>Default next stage</target>
+      </trans-unit>
+      <trans-unit resname="Enchaînement par Quiz à Choix Unique">
+        <source>Enchaînement par Quiz à Choix Unique</source>
+        <target>SCQ sequence</target>
+      </trans-unit>
+      <trans-unit resname="Enchaînement si juste">
+        <source>Enchaînement si juste</source>
+        <target>Sequence if true</target>
+      </trans-unit>
+      <trans-unit resname="Enchaînement si faux">
+        <source>Enchaînement si faux</source>
+        <target>Sequence is false</target>
+      </trans-unit>
+      <trans-unit resname="Enchaînement par Quiz à Choix Multiple">
+        <source>Enchaînement par Quiz à Choix Multiple</source>
+        <target>MCQ sequence</target>
+      </trans-unit>
+      <trans-unit resname="Fin de l'étude de cas">
+        <source>Fin de l'étude de cas</source>
+        <target>End of the Case study</target>
+      </trans-unit>
+      <trans-unit resname="Référence">
+        <source>Référence</source>
+        <target>Reference</target>
+      </trans-unit>
+      <trans-unit resname="Affichage des quiz">
+        <source>Affichage des quiz</source>
+        <target>Display of the quizzes</target>
+      </trans-unit>
+      <trans-unit resname="Par défaut, tous les quiz seront affichés sur la même page">
+        <source>Par défaut, tous les quiz seront affichés sur la même page</source>
+        <target>By default all quizzes will be displayed on the same page.</target>
+      </trans-unit>
+      <trans-unit resname="Tout afficher">
+        <source>Tout afficher</source>
+        <target>Display everything.</target>
+      </trans-unit>
+      <trans-unit resname="Pas à pas">
+        <source>Pas à pas</source>
+        <target>Step by step.</target>
+      </trans-unit>
+      <trans-unit resname="Tentatives / Cumul du score">
+        <source>Tentatives / Cumul du score</source>
+        <target>Attempts / Cumulated score</target>
+      </trans-unit>
+      <trans-unit resname="S'il y a cumul, alors le nombre d'essais correspond au nombre de cumuls possible">
+        <source>S'il y a cumul, alors le nombre d'essais correspond au nombre de cumuls possible</source>
+        <target>If accumulation, number of attempts corresponds to number of possible accumulations.</target>
+      </trans-unit>
+      <trans-unit resname="Cumuler les scores à chaque visite">
+        <source>Cumuler les scores à chaque visite</source>
+        <target>Accumulate scores at each visit/</target>
+      </trans-unit>
+      <trans-unit resname="Nombre d'essais / nombre de cumuls">
+        <source>Nombre d'essais / nombre de cumuls</source>
+        <target>Number of attempts / number of accumulations</target>
+      </trans-unit>
+      <trans-unit resname="Par défaut, aucune limite n'est imposée">
+        <source>Par défaut, aucune limite n'est imposée</source>
+        <target>By default, no limit forced.</target>
+      </trans-unit>
+      <trans-unit resname="Explication après épuisement des tentatives">
+        <source>Explication après épuisement des tentatives</source>
+        <target>Explanations after all attempts used.</target>
+      </trans-unit>
+      <trans-unit resname="Par défaut, un texte est proposé">
+        <source>Par défaut, un texte est proposé</source>
+        <target>By default a text is proposed.</target>
+      </trans-unit>
+      <trans-unit resname="Mémoriser les réponses de l'apprenant pendant la session">
+        <source>Mémoriser les réponses de l'apprenant pendant la session</source>
+        <target>Keep learner's answers in memory during session</target>
+      </trans-unit>
+      <trans-unit resname="Afficher la solution">
+        <source>Afficher la solution</source>
+        <target>Display solution</target>
+      </trans-unit>
+      <trans-unit resname="Texte illustré">
+        <source>Texte illustré</source>
+        <target>Illustrated text</target>
+      </trans-unit>
+      <trans-unit resname="La ressource multimédia s'affiche dans la page web courante ou dans une nouvelle fenêtre via un lien. Par défaut, la ressource est embarquée ...">
+        <source>La ressource multimédia s'affiche dans la page web courante ou dans une nouvelle fenêtre via un lien. Par défaut, la ressource est embarquée ...</source>
+        <target>The multimedia resource appears in the current web page or in a new window via a link. By default, the resource is embedded …</target>
+      </trans-unit>
+      <trans-unit resname="Fichier en téléchargement">
+        <source>Fichier en téléchargement</source>
+        <target>File to download</target>
+      </trans-unit>
+      <trans-unit resname="Le document ou la ressource est proposée en téléchargement">
+        <source>Le document ou la ressource est proposée en téléchargement</source>
+        <target>The document or the resource is offered as a download</target>
+      </trans-unit>
+      <trans-unit resname="Citation pluriparagraphe">
+        <source>Citation pluriparagraphe</source>
+        <target>Multi-paragraph quote</target>
+      </trans-unit>
+      <trans-unit resname="Contenu filtrable">
+        <source>Contenu filtrable</source>
+        <target>Filterable content</target>
+      </trans-unit>
+      <trans-unit resname="Feedback des étapes de quiz">
+        <source>Feedback des étapes de quiz</source>
+        <target>Feedback of the stages of the quiz</target>
+      </trans-unit>
+      <trans-unit resname="Mode de navigation">
+        <source>Mode de navigation</source>
+        <target>Navigation Mode</target>
+      </trans-unit>
+      <trans-unit resname="Linéaire">
+        <source>Linéaire</source>
+        <target>Linear</target>
+      </trans-unit>
+      <trans-unit resname="Libre">
+        <source>Libre</source>
+        <target>Free</target>
+      </trans-unit>
+      <trans-unit resname="navNodeM">
+        <source>navNodeM</source>
+        <target>navNodeM</target>
+      </trans-unit>
+      <trans-unit resname="Indice Méta">
+        <source>Indice Méta</source>
+        <target>Meta index</target>
+      </trans-unit>
+      <trans-unit resname="Éléments d'indice calculé automatiquement">
+        <source>Éléments d'indice calculé automatiquement</source>
+        <target>Automatically-calculated index element</target>
+      </trans-unit>
+      <trans-unit resname="Élément de calcul de l'indice">
+        <source>Élément de calcul de l'indice</source>
+        <target>Index calculation element</target>
+      </trans-unit>
+      <trans-unit resname="Indice Javascript calculé automatiquement">
+        <source>Indice Javascript calculé automatiquement</source>
+        <target>Automatically-calculated Javascript index</target>
+      </trans-unit>
+      <trans-unit resname="Indice apprenant Méta">
+        <source>Indice apprenant Méta</source>
+        <target>Meta learner index</target>
+      </trans-unit>
+      <trans-unit resname="Saisie obligatoire">
+        <source>Saisie obligatoire</source>
+        <target>Compulsory filling</target>
+      </trans-unit>
+      <trans-unit resname="Saisie non obligatoire par défaut">
+        <source>Saisie non obligatoire par défaut</source>
+        <target>Default non compulsory filling</target>
+      </trans-unit>
+      <trans-unit resname="Variable Javascript calculé automatiquement">
+        <source>Variable Javascript calculé automatiquement</source>
+        <target>Automatically-calculated Javascript variable </target>
+      </trans-unit>
+      <trans-unit resname="Variable apprenant Méta">
+        <source>Variable apprenant Méta</source>
+        <target>Learner variable Meta</target>
+      </trans-unit>
+      <trans-unit resname="Filtre par version">
+        <source>Filtre par version</source>
+        <target>Filter by version</target>
+      </trans-unit>
+      <trans-unit resname="Exclusion de la version &quot;standard&quot;">
+        <source>Exclusion de la version "standard"</source>
+        <target>Exclusion from the “Standard” version</target>
+      </trans-unit>
+      <trans-unit resname="Exclusion de la version &quot;courte&quot;">
+        <source>Exclusion de la version "courte"</source>
+        <target>Exclusion from the “Short” version</target>
+      </trans-unit>
+      <trans-unit resname="Contient les métadonnées du module">
+        <source>Contient les métadonnées du module</source>
+        <target>Contains the module's metadata</target>
+      </trans-unit>
+      <trans-unit resname="Contient les métadonnées de la division">
+        <source>Contient les métadonnées de la division</source>
+        <target>Contains the division metadata</target>
+      </trans-unit>
+      <trans-unit resname="en Information">
+        <source>en Information</source>
+        <target>to Information</target>
+      </trans-unit>
+      <trans-unit resname="en Exemple">
+        <source>en Exemple</source>
+        <target>to Example</target>
+      </trans-unit>
+      <trans-unit resname="en Remarque">
+        <source>en Remarque</source>
+        <target>to Note</target>
+      </trans-unit>
+      <trans-unit resname="en Conseil">
+        <source>en Conseil</source>
+        <target>to Advice</target>
+      </trans-unit>
+      <trans-unit resname="en Attention">
+        <source>en Attention</source>
+        <target>to Warning</target>
+      </trans-unit>
+      <trans-unit resname="en Complément">
+        <source>en Complément</source>
+        <target>to Complement</target>
+      </trans-unit>
+      <trans-unit resname="en Méthode">
+        <source>en Méthode</source>
+        <target>to Method</target>
+      </trans-unit>
+      <trans-unit resname="en Rappel">
+        <source>en Rappel</source>
+        <target>to Reminder</target>
+      </trans-unit>
+      <trans-unit resname="en Fondamental">
+        <source>en Fondamental</source>
+        <target>to Fundamental</target>
+      </trans-unit>
+      <trans-unit resname="en Syntaxe">
+        <source>en Syntaxe</source>
+        <target>to Syntax</target>
+      </trans-unit>
+      <trans-unit resname="en Texte légal">
+        <source>en Texte légal</source>
+        <target>to Legal text</target>
+      </trans-unit>
+      <trans-unit resname="en Simulation">
+        <source>en Simulation</source>
+        <target>to Simulation</target>
+      </trans-unit>
+      <trans-unit resname="en Définition">
+        <source>en Définition</source>
+        <target>to Definition</target>
+      </trans-unit>
+      <trans-unit resname="Information">
+        <source>Information</source>
+        <target>Information</target>
+      </trans-unit>
+      <trans-unit resname="Définition">
+        <source>Définition</source>
+        <target>Definition</target>
+      </trans-unit>
+      <trans-unit resname="Exemple">
+        <source>Exemple</source>
+        <target>Example</target>
+      </trans-unit>
+      <trans-unit resname="Remarque">
+        <source>Remarque</source>
+        <target>Note</target>
+      </trans-unit>
+      <trans-unit resname="Conseil">
+        <source>Conseil</source>
+        <target>Advice</target>
+      </trans-unit>
+      <trans-unit resname="Attention">
+        <source>Attention</source>
+        <target>Warning</target>
+      </trans-unit>
+      <trans-unit resname="Complément">
+        <source>Complément</source>
+        <target>Complement</target>
+      </trans-unit>
+      <trans-unit resname="Méthode">
+        <source>Méthode</source>
+        <target>Method</target>
+      </trans-unit>
+      <trans-unit resname="Rappel">
+        <source>Rappel</source>
+        <target>Reminder</target>
+      </trans-unit>
+      <trans-unit resname="Fondamental">
+        <source>Fondamental</source>
+        <target>Fundamental</target>
+      </trans-unit>
+      <trans-unit resname="Syntaxe">
+        <source>Syntaxe</source>
+        <target>Syntax</target>
+      </trans-unit>
+      <trans-unit resname="Texte légal">
+        <source>Texte légal</source>
+        <target>Legal text</target>
+      </trans-unit>
+      <trans-unit resname="Simulation">
+        <source>Simulation</source>
+        <target>Simulation</target>
+      </trans-unit>
+      <trans-unit resname="Créer une partie dans l'unité de contenu">
+        <source>Créer une partie dans l'unité de contenu</source>
+        <target>Create a part in the content block</target>
+      </trans-unit>
+      <trans-unit resname="Titre accroche">
+        <source>Titre accroche</source>
+        <target>Catcher-title</target>
+      </trans-unit>
+      <trans-unit resname="Question d'exercice">
+        <source>Question d'exercice</source>
+        <target>Exercise question</target>
+      </trans-unit>
+      <trans-unit resname="Intitulé">
+        <source>Intitulé</source>
+        <target>Wording</target>
+      </trans-unit>
+      <trans-unit resname="indiceAide">
+        <source>Indice</source>
+        <target>Hint</target>
+        <note>Dans le sens "aide" dans un exercice</note>
+      </trans-unit>
+      <trans-unit resname="Label">
+        <source>Label</source>
+        <target>Label</target>
+      </trans-unit>
+      <trans-unit resname="Texte à trou">
+        <source>Texte à trou</source>
+        <target>Fill-in the gaps</target>
+      </trans-unit>
+      <trans-unit resname="Résumé">
+        <source>Résumé</source>
+        <target>Summary</target>
+      </trans-unit>
+      <trans-unit resname="coachM">
+        <source>coachM</source>
+        <target>coachM</target>
+      </trans-unit>
+      <trans-unit resname="Échelle de valeur">
+        <source>Échelle de valeur</source>
+        <target>Value Scale</target>
+      </trans-unit>
+      <trans-unit resname="Bornes incluses">
+        <source>Bornes incluses</source>
+        <target>Limits included</target>
+      </trans-unit>
+      <trans-unit resname="Valeur minimum">
+        <source>Valeur minimum</source>
+      </trans-unit>
+      <trans-unit resname="Valeur maximum">
+        <source>Valeur maximum</source>
+      </trans-unit>
+      <trans-unit resname="Entrée de l'abréviation">
+        <source>Entrée de l'abréviation</source>
+        <target>Abbreviation entry</target>
+      </trans-unit>
+      <trans-unit resname="Sigle, acronyme">
+        <source>Sigle, acronyme</source>
+        <target>Acronym</target>
+      </trans-unit>
+      <trans-unit resname="Renseigner le sigle">
+        <source>Renseigner le sigle</source>
+        <target>Fill in the acronym</target>
+      </trans-unit>
+      <trans-unit resname="Signification">
+        <source>Signification</source>
+        <target>Meaning</target>
+      </trans-unit>
+      <trans-unit resname="Renseigner la signification">
+        <source>Renseigner la signification</source>
+        <target>Fill in the meaning</target>
+      </trans-unit>
+      <trans-unit resname="Entrée de glossaire">
+        <source>Entrée de glossaire</source>
+        <target>Glossary entry</target>
+      </trans-unit>
+      <trans-unit resname="Terme">
+        <source>Terme</source>
+        <target>Term</target>
+      </trans-unit>
+      <trans-unit resname="Renseigner le terme">
+        <source>Renseigner le terme</source>
+        <target>Fill in the term</target>
+      </trans-unit>
+      <trans-unit resname="Renseigner la définition">
+        <source>Renseigner la définition</source>
+        <target>Fill in the definition</target>
+      </trans-unit>
+      <trans-unit resname="Entrée de bibliographie">
+        <source>Entrée de bibliographie</source>
+        <target>Bibliographical entry</target>
+      </trans-unit>
+      <trans-unit resname="Identifiant">
+        <source>Identifiant</source>
+        <target>ID</target>
+      </trans-unit>
+      <trans-unit resname="Renseigner un identifiant">
+        <source>Renseigner un identifiant</source>
+        <target>Fill in the ID</target>
+      </trans-unit>
+      <trans-unit resname="Type">
+        <source>Type</source>
+        <target>Type</target>
+      </trans-unit>
+      <trans-unit resname="Choisir un type de bibliographie">
+        <source>Choisir un type de bibliographie</source>
+        <target>Select a bibliography type</target>
+      </trans-unit>
+      <trans-unit resname="Référence webographique">
+        <source>Référence webographique</source>
+        <target>Web reference</target>
+      </trans-unit>
+      <trans-unit resname="Référence bibliographique">
+        <source>Référence bibliographique</source>
+        <target>Bibliographical reference</target>
+      </trans-unit>
+      <trans-unit resname="Entrée bibliographique">
+        <source>Entrée bibliographique</source>
+        <target>Bibliographical entry</target>
+      </trans-unit>
+      <trans-unit resname="Nom de l'auteur en majuscules, utilisez les balises pour définir le titre principal">
+        <source>Nom de l'auteur en majuscules, utilisez les balises pour définir le titre principal</source>
+        <target>Author's name in uppercase, use markup to define the main title</target>
+      </trans-unit>
+      <trans-unit resname="Alternative (accessibilité)">
+        <source>Alternative (accessibilité)</source>
+        <target>Alternative (accessibility)</target>
+      </trans-unit>
+      <trans-unit resname="Permet de saisir les informations nécessaires pour l'accessibilité de la ressource.">
+        <source>Permet de saisir les informations nécessaires pour l'accessibilité de la ressource.</source>
+        <target>Allows typing required information for the accessibility of the resource.</target>
+      </trans-unit>
+      <trans-unit resname="Type d'image">
+        <source>Type d'image</source>
+        <target>Image type</target>
+      </trans-unit>
+      <trans-unit resname="Informative">
+        <source>Informative</source>
+        <target>Informative</target>
+      </trans-unit>
+      <trans-unit resname="Décorative">
+        <source>Décorative</source>
+        <target>Decorative</target>
+      </trans-unit>
+      <trans-unit resname="Par défaut une image est informative.">
+        <source>Par défaut une image est informative.</source>
+        <target>By default, an image is informative.</target>
+      </trans-unit>
+      <trans-unit resname="Texte de remplacement">
+        <source>Texte de remplacement</source>
+        <target>Replacement text</target>
+      </trans-unit>
+      <trans-unit resname="Permet d'expliciter le sens de la ressource pour les personnes qui ne peuvent pas la voir (mal-voyants, non voyants, utilisateurs de navigateurs texte,...).">
+        <source>Permet d'expliciter le sens de la ressource pour les personnes qui ne peuvent pas la voir (mal-voyants, non voyants, utilisateurs de navigateurs texte,...).</source>
+        <target>Allows explaining the meaning of a resource for users in contexts where images are inperceptible.</target>
+      </trans-unit>
+      <trans-unit resname="Description complète">
+        <source>Description complète</source>
+        <target>Full description</target>
+      </trans-unit>
+      <trans-unit resname="Permet de décrire de manière exhaustive le contenu et le sens d'une ressource complexe.">
+        <source>Permet de décrire de manière exhaustive le contenu et le sens d'une ressource complexe.</source>
+        <target>Allows describing precisely the content and the meaning of a complex resource.</target>
+      </trans-unit>
+      <trans-unit resname="Titre, légende">
+        <source>Titre, légende</source>
+        <target>Title, caption</target>
+      </trans-unit>
+      <trans-unit resname="Permet de saisir la légende qui sera affichée sous la ressource.">
+        <source>Permet de saisir la légende qui sera affichée sous la ressource.</source>
+        <target>Allows typing the caption published beneath the resource.</target>
+      </trans-unit>
+      <trans-unit resname="Transcription">
+        <source>Transcription</source>
+        <target>Transcript</target>
+      </trans-unit>
+      <trans-unit resname="Permet de saisir une description des éléments nécessaires à la compréhension de la ressource afin de permettre à tous les utilisateurs d'accéder à l'information.">
+        <source>Permet de saisir une description des éléments nécessaires à la compréhension de la ressource afin de permettre à tous les utilisateurs d'accéder à l'information.</source>
+        <target>Allows describing the useful elements for understanding the resource, in order to enable everyone to access to the information. </target>
+      </trans-unit>
+      <trans-unit resname="Alternative vidéo (LSF, LPC)">
+        <source>Alternative vidéo (LSF, LPC)</source>
+        <target>Video alternative (LSF, LPC)</target>
+      </trans-unit>
+      <trans-unit resname="Permet de proposer une vidéo en LSF [Langue des Signes Française] ou LPC [Langage Parlé Complété] en alternative au fichier audio.">
+        <source>Permet de proposer une vidéo en LSF [Langue des Signes Française] ou LPC [Langage Parlé Complété] en alternative au fichier audio.</source>
+        <target>Allows adding an alternative to the resource, such as a LSF [Langue des Signes Française] or LPC [Langage Parlé Complété] video </target>
+      </trans-unit>
+      <trans-unit resname="Autre format">
+        <source>Autre format</source>
+        <target>Other format</target>
+      </trans-unit>
+      <trans-unit resname="Permet de proposer cette ressource dans un autre format afin d'assurer sa lisibilité dans les différents navigateurs.">
+        <source>Permet de proposer cette ressource dans un autre format afin d'assurer sa lisibilité dans les différents navigateurs.</source>
+        <target>Allows adding this resource in another format in order to guarantee its readability on every browser.</target>
+      </trans-unit>
+      <trans-unit resname="Alternative statique">
+        <source>Alternative statique</source>
+        <target>Static alternative</target>
+      </trans-unit>
+      <trans-unit resname="Pour les supports non interactifs (papier)">
+        <source>Pour les supports non interactifs (papier)</source>
+        <target>For non interactive mediums (paper)</target>
+      </trans-unit>
+      <trans-unit resname="Titre, légende (affiché)">
+        <source>Titre, légende (affiché)</source>
+        <target>Title, caption (displayed)</target>
+      </trans-unit>
+      <trans-unit resname="Sous-titrage">
+        <source>Sous-titrage</source>
+        <target>Subtitling</target>
+      </trans-unit>
+      <trans-unit resname="Permet d'associer à la vidéo un fichier de sous-titres indépendant (fichier .srt ou .webvtt) ou une vidéo avec incrustation de sous-titres.">
+        <source>Permet d'associer à la vidéo un fichier de sous-titres indépendant (fichier .srt ou .webvtt) ou une vidéo avec incrustation de sous-titres.</source>
+        <target>Allows combining a seperate sub-title file (file .srt or .webvtt) with the video or adding a video with embedded text.</target>
+      </trans-unit>
+      <trans-unit resname="Langue - Type">
+        <source>Langue - Type</source>
+        <target>Language – Type</target>
+      </trans-unit>
+      <trans-unit resname="Permet de préciser le code de la langue du sous-titrage ou le type sous-titrage sourds et malentendants">
+        <source>Permet de préciser le code de la langue du sous-titrage ou le type sous-titrage sourds et malentendants</source>
+        <target>Allows specifying the code of the subtitles language or the type deaf and hard-of-hearing subtitling.</target>
+      </trans-unit>
+      <trans-unit resname="Fichier / vidéo de sous-titrage">
+        <source>Fichier / vidéo de sous-titrage</source>
+        <target>Subtitling file / video</target>
+      </trans-unit>
+      <trans-unit resname="Permet de lier le fichier de sous-titrage à associer.">
+        <source>Permet de lier le fichier de sous-titrage à associer.</source>
+        <target>Allows linking the subtitling file to combine.</target>
+      </trans-unit>
+      <trans-unit resname="Audiodescription">
+        <source>Audiodescription</source>
+        <target>Audiodescription</target>
+      </trans-unit>
+      <trans-unit resname="Permet d'associer à la vidéo un fichier d'audiodescription (commentaires descriptifs intercalés avec la bande son de la vidéo).">
+        <source>Permet d'associer à la vidéo un fichier d'audiodescription (commentaires descriptifs intercalés avec la bande son de la vidéo).</source>
+        <target>Allows combining an audiodescription (descriptive comments inserted within the video soundtrack) with the video.</target>
+      </trans-unit>
+      <trans-unit resname="Coller">
+        <source>Coller</source>
+        <target>Paste</target>
+      </trans-unit>
+      <trans-unit resname="Coller le fragment web depuis le presse-papier">
+        <source>Coller le fragment web depuis le presse-papier</source>
+        <target>Paste the web fragment from the clipboard</target>
+      </trans-unit>
+      <trans-unit resname="Copier">
+        <source>Copier</source>
+        <target>Copy</target>
+      </trans-unit>
+      <trans-unit resname="Copier le fragment web dans le presse-papier">
+        <source>Copier le fragment web dans le presse-papier</source>
+        <target>Copy the web fragment into the clipboard</target>
+      </trans-unit>
+      <trans-unit resname="Effacer">
+        <source>Effacer</source>
+        <target>Delete</target>
+      </trans-unit>
+      <trans-unit resname="Effacer le fragment web">
+        <source>Effacer le fragment web</source>
+        <target>Delete the web fragment</target>
+      </trans-unit>
+      <trans-unit resname="Aide">
+        <source>Aide</source>
+        <target>Help</target>
+      </trans-unit>
+      <trans-unit resname="Alignement">
+        <source>Alignement</source>
+        <target>Alignment</target>
+      </trans-unit>
+      <trans-unit resname="Permet de spécifier l'alignement voulu du Média Web.">
+        <source>Permet de spécifier l'alignement voulu du Média Web.</source>
+        <target>Allows to set the desired alignment of the web medium</target>
+      </trans-unit>
+      <trans-unit resname="auto">
+        <source>auto</source>
+        <target>auto</target>
+      </trans-unit>
+      <trans-unit resname="Gauche">
+        <source>Gauche</source>
+        <target>Left</target>
+      </trans-unit>
+      <trans-unit resname="Droite">
+        <source>Droite</source>
+        <target>Right</target>
+      </trans-unit>
+      <trans-unit resname="Centré">
+        <source>Centré</source>
+        <target>Centered</target>
+      </trans-unit>
+      <trans-unit resname="Justifié">
+        <source>Justifié</source>
+        <target>Justified</target>
+      </trans-unit>
+      <trans-unit resname="Cette zone de prévisualisation ne permet pas d'afficher tous les codes HTML. Si ce que vous avez collé dans ce media web ne s'affiche pas correctement ici, publiez votre module et vérifiez dans un navigateur web.">
+        <source>Cette zone de prévisualisation ne permet pas d'afficher tous les codes HTML. Si ce que vous avez collé dans ce media web ne s'affiche pas correctement ici, publiez votre module et vérifiez dans un navigateur web.</source>
+        <target>This preview area cannot display all the HTML codes. Publish your module and check it in a web browser if the code you paste here is not displayed properly.</target>
+      </trans-unit>
+      <trans-unit resname="Meta d'une galerie d'images">
+        <source>Meta d'une galerie d'images</source>
+        <target>Image gallery metadata</target>
+      </trans-unit>
+      <trans-unit resname="Légende">
+        <source>Légende</source>
+        <target>Legend</target>
+      </trans-unit>
+      <trans-unit resname="Permet de saisir le titre du fichier.">
+        <source>Permet de saisir le titre du fichier.</source>
+        <target>Allows typing the title of the file.</target>
+      </trans-unit>
+      <trans-unit resname="Poids">
+        <source>Poids</source>
+        <target>Weight</target>
+      </trans-unit>
+      <trans-unit resname="Permet de saisir le poids du fichier, information importante pour le téléchargement.">
+        <source>Permet de saisir le poids du fichier, information importante pour le téléchargement.</source>
+        <target>Allows typing the weight of the file, important information for downloading.</target>
+      </trans-unit>
+      <trans-unit resname="Langue">
+        <source>Langue</source>
+        <target>Language</target>
+      </trans-unit>
+      <trans-unit resname="Pour supports non interactifs (papier)">
+        <source>Pour supports non interactifs (papier)</source>
+        <target>For non interactive mediums (paper)</target>
+      </trans-unit>
+      <trans-unit resname="Nom">
+        <source>Nom</source>
+        <target>Name</target>
+      </trans-unit>
+      <trans-unit resname="Valeur">
+        <source>Valeur</source>
+        <target>Value</target>
+      </trans-unit>
+      <trans-unit resname="Classe de démarrage">
+        <source>Classe de démarrage</source>
+        <target>Starting class</target>
+      </trans-unit>
+      <trans-unit resname="scormRootM">
+        <source>scormRootM</source>
+        <target>scormRootM</target>
+      </trans-unit>
+      <trans-unit resname="Suivre le parcours de l'étudiant">
+        <source>Suivre le parcours de l'étudiant</source>
+        <target>Follow the student's path</target>
+      </trans-unit>
+      <trans-unit resname="Temps d'inactivité avant interruption du décompte du temps (en secondes)">
+        <source>Temps d'inactivité avant interruption du décompte du temps (en secondes)</source>
+        <target>Duration of inactivity before time countdown stops (in seconds)</target>
+      </trans-unit>
+      <trans-unit resname="30 secondes par défaut.">
+        <source>30 secondes par défaut.</source>
+        <target>Default 30 seconds</target>
+      </trans-unit>
+      <trans-unit resname="Indice de résultats">
+        <source>Indice de résultats</source>
+        <target>Results index</target>
+      </trans-unit>
+      <trans-unit resname="Indices à suivre">
+        <source>Indices à suivre</source>
+        <target>Forthcoming indexes</target>
+      </trans-unit>
+      <trans-unit resname="Étapes à suivre dans Moodle">
+        <source>Étapes à suivre dans Moodle</source>
+        <target>Forthcoming stages in Moodle</target>
+      </trans-unit>
+      <trans-unit resname="Message de fin de parcours">
+        <source>Message de fin de parcours</source>
+      </trans-unit>
+      <trans-unit resname="Par défaut, &quot;Terminer et enregistrer votre parcours&quot;">
+        <source>Par défaut, "Terminer et enregistrer votre parcours"</source>
+      </trans-unit>
+      <trans-unit resname="Mot-clé">
+        <source>Mot-clé</source>
+        <target>Keyword</target>
+      </trans-unit>
+      <trans-unit resname="Liste de mots clés non structurés, une expression par champ">
+        <source>Liste de mots clés non structurés, une expression par champ</source>
+        <target>List of keywords, one by field</target>
+      </trans-unit>
+      <trans-unit resname="Paragraphe Simple">
+        <source>Paragraphe Simple</source>
+        <target>Simple paragraph</target>
+      </trans-unit>
+      <trans-unit resname="Dossier du plan de l'étude de cas">
+        <source>Dossier du plan de l'étude de cas</source>
+        <target>Folder of the map of the case study</target>
+      </trans-unit>
+      <trans-unit resname="Transition">
+        <source>Transition</source>
+        <target>Transition</target>
+      </trans-unit>
+      <trans-unit resname="Image de transition">
+        <source>Image de transition</source>
+        <target>Transition image</target>
+      </trans-unit>
+      <trans-unit resname="Dans le cas d'une image représentative, le titre de l'étape suivante est masquée.">
+        <source>Dans le cas d'une image représentative, le titre de l'étape suivante est masquée.</source>
+        <target>In the case of a representative image, the title of the following stage is hidden.</target>
+      </trans-unit>
+      <trans-unit resname="Représentative">
+        <source>Représentative</source>
+        <target>Representative</target>
+      </trans-unit>
+      <trans-unit resname="Complémentaire">
+        <source>Complémentaire</source>
+        <target>Complementary</target>
+      </trans-unit>
+      <trans-unit resname="Lien conditionné vers une étape">
+        <source>Lien conditionné vers une étape</source>
+        <target>Conditioned link to a stage</target>
+      </trans-unit>
+      <trans-unit resname="Condition">
+        <source>Condition</source>
+        <target>Condition</target>
+      </trans-unit>
+      <trans-unit resname="Feedback des enchaînements">
+        <source>Feedback des enchaînements</source>
+        <target>Feedbackof the sequences</target>
+      </trans-unit>
+      <trans-unit resname="Étapes suivantes">
+        <source>Étapes suivantes</source>
+        <target>Next stages</target>
+      </trans-unit>
+      <trans-unit resname="Texte riche">
+        <source>Texte riche</source>
+        <target>Rich text</target>
+      </trans-unit>
+      <trans-unit resname="Insérer un texte accompagné d'une illustration (à droite ou à gauche)">
+        <source>Insérer un texte accompagné d'une illustration (à droite ou à gauche)</source>
+        <target>Insert a text paired with a picture (on the left or right side)</target>
+      </trans-unit>
+      <trans-unit resname="Image d'illustration">
+        <source>Image d'illustration</source>
+        <target>Illustration image</target>
+      </trans-unit>
+      <trans-unit resname="Insérer une image à une résolution de 300 dpi">
+        <source>Insérer une image à une résolution de 300 dpi</source>
+        <target>Insert a 300 dpi image</target>
+      </trans-unit>
+      <trans-unit resname="Mode de publication (web et diaporama)">
+        <source>Mode de publication (web et diaporama)</source>
+        <target>Publishing mode (web and slideshow)</target>
+      </trans-unit>
+      <trans-unit resname="Ressource publiée en ligne ou comme un lien externe.">
+        <source>Ressource publiée en ligne ou comme un lien externe.</source>
+        <target>Embedded or "as a link" resource</target>
+      </trans-unit>
+      <trans-unit resname="Embarquée">
+        <source>Embarquée</source>
+        <target>Embedded</target>
+      </trans-unit>
+      <trans-unit resname="Zoom">
+        <source>Zoom</source>
+        <target>Zoom</target>
+      </trans-unit>
+      <trans-unit resname="Type d'index (papier)">
+        <source>Type d'index (papier)</source>
+        <target>Index type (paper)</target>
+      </trans-unit>
+      <trans-unit resname="Ressources numérotées automatiquement sur le papier. Par exemple : Tableau 1 : ....">
+        <source>Ressources numérotées automatiquement sur le papier. Par exemple : Tableau 1 : ....</source>
+        <target>Resources automatically numbered on paper. For example: Table 1: ....</target>
+      </trans-unit>
+      <trans-unit resname="Graphique">
+        <source>Graphique</source>
+        <target>Graphic</target>
+      </trans-unit>
+      <trans-unit resname="Tableau">
+        <source>Tableau</source>
+        <target>Table</target>
+      </trans-unit>
+      <trans-unit resname="Formule">
+        <source>Formule</source>
+        <target>Formula</target>
+      </trans-unit>
+      <trans-unit resname="Animation">
+        <source>Animation</source>
+        <target>Animation</target>
+      </trans-unit>
+      <trans-unit resname="Consignes">
+        <source>Consignes</source>
+        <target>Instructions</target>
+      </trans-unit>
+      <trans-unit resname="Précisions ou consignes opératoires.">
+        <source>Précisions ou consignes opératoires.</source>
+        <target>Details or instructions</target>
+      </trans-unit>
+      <trans-unit resname="Instructions">
+        <source>Instructions</source>
+        <target>Instructions</target>
+      </trans-unit>
+      <trans-unit resname="Consigne (pour le web et diaporama)">
+        <source>Consigne (pour le web et diaporama)</source>
+        <target>Instructions (for web and slideshow)</target>
+      </trans-unit>
+      <trans-unit resname="Préciser une consigne opératoire (comment utiliser la ressource...)">
+        <source>Préciser une consigne opératoire (comment utiliser la ressource...)</source>
+        <target>Specify the instructions (how to use the resource...)</target>
+      </trans-unit>
+      <trans-unit resname="Consigne (pour le papier)">
+        <source>Consigne (pour le papier)</source>
+        <target>Instructions (for paper)</target>
+      </trans-unit>
+      <trans-unit resname="Préciser où consulter la ressource par exemple.">
+        <source>Préciser où consulter la ressource par exemple.</source>
+        <target>For instance specify where to view the resource.</target>
+      </trans-unit>
+      <trans-unit resname="Formule à appliquer à chaque input">
+        <source>Formule à appliquer à chaque input</source>
+      </trans-unit>
+      <trans-unit resname="Coefficient multiplicateur">
+        <source>Coefficient multiplicateur</source>
+      </trans-unit>
+      <trans-unit resname="Addition d'une valeur">
+        <source>Addition d'une valeur</source>
+      </trans-unit>
+      <trans-unit resname="Réaffectation par bornes">
+        <source>Réaffectation par bornes</source>
+      </trans-unit>
+      <trans-unit resname="Si strictement supérieur à">
+        <source>Si strictement supérieur à</source>
+      </trans-unit>
+      <trans-unit resname="Si strictement inférieur à">
+        <source>Si strictement inférieur à</source>
+      </trans-unit>
+      <trans-unit resname="Valeur affectée">
+        <source>Valeur affectée</source>
+      </trans-unit>
+      <trans-unit resname="Limite entre deux valeurs">
+        <source>Limite entre deux valeurs</source>
+      </trans-unit>
+      <trans-unit resname="Bornes">
+        <source>Bornes</source>
+        <target>Limits</target>
+      </trans-unit>
+      <trans-unit resname="Comprises entre (bornes incluses)">
+        <source>Comprises entre (bornes incluses)</source>
+        <target>Within (limits included)</target>
+      </trans-unit>
+      <trans-unit resname="Non comprises entre (bornes non incluses)">
+        <source>Non comprises entre (bornes non incluses)</source>
+        <target>Not within (limits excluded)</target>
+      </trans-unit>
+      <trans-unit resname="Titre Balise Pédagogique">
+        <source>Titre Balise Pédagogique</source>
+        <target>Educational markup title</target>
+      </trans-unit>
+      <trans-unit resname="Donner un titre à la balise pédagogique">
+        <source>Donner un titre à la balise pédagogique</source>
+        <target>Give a title to the educational markup</target>
+      </trans-unit>
+      <trans-unit resname="Filtres">
+        <source>Filtres</source>
+        <target>Filters</target>
+      </trans-unit>
+      <trans-unit resname="Contient les métadonnées de la partie">
+        <source>Contient les métadonnées de la partie</source>
+        <target>Contains the part's metadata</target>
+      </trans-unit>
+      <trans-unit resname="Description">
+        <source>Description</source>
+        <target>Description</target>
+      </trans-unit>
+      <trans-unit resname="Lien conditionné vers une étape dans une visualMap">
+        <source>Lien conditionné vers une étape dans une visualMap</source>
+        <target>Conditioned link to a stage in a visualMap</target>
+      </trans-unit>
+      <trans-unit resname="Ressource alternative">
+        <source>Ressource alternative</source>
+        <target>Alternative resource</target>
+      </trans-unit>
+      <trans-unit resname="Insérer une ressource alternative destinée aux publications non interactives">
+        <source>Insérer une ressource alternative destinée aux publications non interactives</source>
+        <target>Insert an alternative, non-interactive resource</target>
+      </trans-unit>
+      <trans-unit resname="Ressource statique">
+        <source>Ressource statique</source>
+        <target>Static resource</target>
+      </trans-unit>
+      <trans-unit resname="Propriété de langue">
+        <source>Propriété de langue</source>
+        <target>Language properties</target>
+      </trans-unit>
+      <trans-unit resname="Langue (code)">
+        <source>Langue (code)</source>
+        <target>Language (code)</target>
+      </trans-unit>
+      <trans-unit resname="Code de langue ISO639 ou RFC1766 de la forme &quot;en&quot; ou &quot;pt-BR&quot;.">
+        <source>Code de langue ISO639 ou RFC1766 de la forme "en" ou "pt-BR".</source>
+        <target>Language code according to ISO639 or RFC1766: "en", "pt-BR".</target>
+      </trans-unit>
+      <trans-unit resname="Condition calculée">
+        <source>Condition calculée</source>
+        <target>Calculated condition</target>
+      </trans-unit>
+      <trans-unit resname="Indice, variable, étape de quiz, applet">
+        <source>Indice, variable, étape de quiz, applet</source>
+      </trans-unit>
+      <trans-unit resname="Calcul sur un indice, une variable apprenant ou une étape de quizz">
+        <source>Calcul sur un indice, une variable apprenant ou une étape de quizz</source>
+      </trans-unit>
+      <trans-unit resname="Opérateur">
+        <source>Opérateur</source>
+        <target>Operator</target>
+      </trans-unit>
+      <trans-unit resname="% d'une étape de quiz &gt; à">
+        <source>% d'une étape de quiz &gt; à</source>
+      </trans-unit>
+      <trans-unit resname="% d'une étape de quiz &gt;= à">
+        <source>% d'une étape de quiz &gt;= à</source>
+      </trans-unit>
+      <trans-unit resname="% d'une étape de quiz = à">
+        <source>% d'une étape de quiz = à</source>
+      </trans-unit>
+      <trans-unit resname="% d'une étape de quiz &lt; à">
+        <source>% d'une étape de quiz &lt; à</source>
+      </trans-unit>
+      <trans-unit resname="% d'une étape de quiz &lt;= à">
+        <source>% d'une étape de quiz &lt;= à</source>
+      </trans-unit>
+      <trans-unit resname="Indicateur, applet supérieur à">
+        <source>Indicateur, applet supérieur à</source>
+      </trans-unit>
+      <trans-unit resname="Indicateur, applet supérieur ou égal à">
+        <source>Indicateur, applet supérieur ou égal à</source>
+      </trans-unit>
+      <trans-unit resname="Indicateur, applet égal à">
+        <source>Indicateur, applet égal à</source>
+      </trans-unit>
+      <trans-unit resname="Indicateur, applet inférieur à">
+        <source>Indicateur, applet inférieur à</source>
+      </trans-unit>
+      <trans-unit resname="Indicateur, applet inférieur ou égal à">
+        <source>Indicateur, applet inférieur ou égal à</source>
+      </trans-unit>
+      <trans-unit resname="Variable égale à">
+        <source>Variable égale à</source>
+      </trans-unit>
+      <trans-unit resname="ATTENTION : si votre indicateur est une moyenne, il retourne un pourcentage. L'opérateur &quot;Indicateur, applet&quot; doit cependant être utilisé.">
+        <source>ATTENTION : si votre indicateur est une moyenne, il retourne un pourcentage. L'opérateur "Indicateur, applet" doit cependant être utilisé.</source>
+      </trans-unit>
+      <trans-unit resname="Condition sur une étape visitée">
+        <source>Condition sur une étape visitée</source>
+        <target>Condition on a visited stage</target>
+      </trans-unit>
+      <trans-unit resname="Vue">
+        <source>Vue</source>
+        <target>View</target>
+      </trans-unit>
+      <trans-unit resname="Paragraphe">
+        <source>Paragraphe</source>
+        <target>Paragraph</target>
+      </trans-unit>
+      <trans-unit resname="Liste à puce">
+        <source>Liste à puce</source>
+        <target>Bullet list</target>
+      </trans-unit>
+      <trans-unit resname="Liste ordonnée">
+        <source>Liste ordonnée</source>
+        <target>Numbered list</target>
+      </trans-unit>
+      <trans-unit resname="Adresse web, email, lien vers un document externe">
+        <source>Adresse web, email, lien vers un document externe</source>
+        <target>Web address, email, link to an external document</target>
+      </trans-unit>
+      <trans-unit resname="Important">
+        <source>Important</source>
+        <target>Emphasize</target>
+      </trans-unit>
+      <trans-unit resname="Terme étranger">
+        <source>Terme étranger</source>
+        <target>Foreign word</target>
+      </trans-unit>
+      <trans-unit resname="Caractères spéciaux">
+        <source>Caractères spéciaux</source>
+        <target>Special characters</target>
+      </trans-unit>
+      <trans-unit resname="Majuscules accentuées">
+        <source>Majuscules accentuées</source>
+        <target>Accented capitals</target>
+      </trans-unit>
+      <trans-unit resname="Symboles mathématiques">
+        <source>Symboles mathématiques</source>
+        <target>Mathematical symbols</target>
+      </trans-unit>
+      <trans-unit resname="Lettres grecques courantes">
+        <source>Lettres grecques courantes</source>
+        <target>Common Greek letters</target>
+      </trans-unit>
+      <trans-unit resname="Positionnement illustration">
+        <source>Positionnement illustration</source>
+        <target>Picture positioning</target>
+      </trans-unit>
+      <trans-unit resname="Position">
+        <source>Position</source>
+        <target>Position</target>
+      </trans-unit>
+      <trans-unit resname="Texte à droite, Illustration à gauche">
+        <source>Texte à droite, Illustration à gauche</source>
+        <target>Text on the right, Picture on the left</target>
+      </trans-unit>
+      <trans-unit resname="Texte à gauche, Illustration à droite">
+        <source>Texte à gauche, Illustration à droite</source>
+        <target>Text on the left, Picture on the right</target>
+      </trans-unit>
+      <trans-unit resname="ligne">
+        <source>ligne</source>
+        <target>line</target>
+      </trans-unit>
+      <trans-unit resname="Commentaire">
+        <source>Commentaire</source>
+        <target>Comment</target>
+      </trans-unit>
+      <trans-unit resname="Intrant">
+        <source>Intrant</source>
+        <target>input</target>
+      </trans-unit>
+      <trans-unit resname="Espaces">
+        <source>Espaces</source>
+        <target>Spaces</target>
+      </trans-unit>
+      <trans-unit resname="Indentation">
+        <source>Indentation</source>
+        <target>Indentation</target>
+      </trans-unit>
+      <trans-unit resname="Colonne">
+        <source>Colonne</source>
+        <target>Column</target>
+      </trans-unit>
+      <trans-unit resname="Colonne d'entête">
+        <source>Colonne d'entête</source>
+        <target>Column in header</target>
+      </trans-unit>
+      <trans-unit resname="Ligne">
+        <source>Ligne</source>
+        <target>Row</target>
+      </trans-unit>
+      <trans-unit resname="Ligne d'entête">
+        <source>Ligne d'entête</source>
+        <target>Row in header</target>
+      </trans-unit>
+      <trans-unit resname="Cellule de texte">
+        <source>Cellule de texte</source>
+        <target>Text cell</target>
+      </trans-unit>
+      <trans-unit resname="Cellule de nombre">
+        <source>Cellule de nombre</source>
+        <target>Number cell</target>
+      </trans-unit>
+      <trans-unit resname="Cellule de mot">
+        <source>Cellule de mot</source>
+        <target>Word cell</target>
+      </trans-unit>
+      <trans-unit resname="Lien vers un document">
+        <source>Lien vers un document</source>
+        <target>Link to a document</target>
+      </trans-unit>
+      <trans-unit resname="Renvoi vers une ressource">
+        <source>Renvoi vers une ressource</source>
+        <target>Reference to a resource</target>
+      </trans-unit>
+      <trans-unit resname="Renvoi vers un grain de contenu">
+        <source>Renvoi vers un grain de contenu</source>
+        <target>Reference to a contents element</target>
+      </trans-unit>
+      <trans-unit resname="Citation">
+        <source>Citation</source>
+        <target>Quote</target>
+      </trans-unit>
+      <trans-unit resname="Exposant">
+        <source>Exposant</source>
+        <target>Exponent</target>
+      </trans-unit>
+      <trans-unit resname="indiceTexte">
+        <source>Indice</source>
+        <target>Hint</target>
+        <note>Dans le sens "exposant/indice"</note>
+      </trans-unit>
+      <trans-unit resname="Formule mathématique interne LaTeX">
+        <source>Formule mathématique interne LaTeX</source>
+        <target>Internal LaTeX formula</target>
+      </trans-unit>
+      <trans-unit resname="Formule mathématique">
+        <source>Formule mathématique</source>
+        <target>Formula</target>
+      </trans-unit>
+      <trans-unit resname="Imagette">
+        <source>Imagette</source>
+        <target>Small image</target>
+      </trans-unit>
+      <trans-unit resname="Indice affiché">
+        <source>Indice affiché</source>
+        <target>Displayed index</target>
+      </trans-unit>
+      <trans-unit resname="Indice éditable">
+        <source>Indice éditable</source>
+        <target>Editable index</target>
+      </trans-unit>
+      <trans-unit resname="Variable affiché">
+        <source>Variable affiché</source>
+        <target>Displayed variable</target>
+      </trans-unit>
+      <trans-unit resname="Variable éditable">
+        <source>Variable éditable</source>
+        <target>Editable variable</target>
+      </trans-unit>
+      <trans-unit resname="Acronyme">
+        <source>Acronyme</source>
+        <target>Acronym</target>
+      </trans-unit>
+      <trans-unit resname="Référence à une ressource">
+        <source>Référence à une ressource</source>
+        <target>Reference to a resource</target>
+      </trans-unit>
+      <trans-unit resname="Commande">
+        <source>Commande</source>
+        <target>Command</target>
+      </trans-unit>
+      <trans-unit resname="TROU">
+        <source>TROU</source>
+        <target>GAP</target>
+      </trans-unit>
+      <trans-unit resname="Texte de transcription">
+        <source>Texte de transcription</source>
+        <target>Transcript text</target>
+      </trans-unit>
+      <trans-unit resname="Adresse web, email">
+        <source>Adresse web, email</source>
+        <target>Web or email address</target>
+      </trans-unit>
+      <trans-unit resname="Equation interne LaTeX">
+        <source>Equation interne LaTeX</source>
+        <target>Internal LaTeX equation</target>
+      </trans-unit>
+      <trans-unit resname="Equation">
+        <source>Equation</source>
+        <target>Equation</target>
+      </trans-unit>
+      <trans-unit resname="l10n.dir">
+        <source>ltr</source>
+      </trans-unit>
+      <trans-unit resname="Url">
+        <source>Url</source>
+        <target>Url</target>
+      </trans-unit>
+      <trans-unit resname="Url, adresse web">
+        <source>Url, adresse web</source>
+        <target>Url, web address</target>
+      </trans-unit>
+      <trans-unit resname="Permet de saisir l'adresse de la source sur internet.">
+        <source>Permet de saisir l'adresse de la source sur internet.</source>
+        <target>Allows typing the address of the source on the internet.</target>
+      </trans-unit>
+      <trans-unit resname="Permet de saisir un libellé du site web, définissant son contenu.">
+        <source>Permet de saisir un libellé du site web, définissant son contenu.</source>
+        <target>Allows typing a wording for the website, to describe its content.</target>
+      </trans-unit>
+      <trans-unit resname="Compléments pour un document lié">
+        <source>Compléments pour un document lié</source>
+        <target>Linked document supplements</target>
+      </trans-unit>
+      <trans-unit resname="Permet de saisir des précisions si l'url conduit à un document bureautique.">
+        <source>Permet de saisir des précisions si l'url conduit à un document bureautique.</source>
+        <target>Allows typing specifications for URLs leading to an office document.</target>
+      </trans-unit>
+      <trans-unit resname="Format du document (PDF...)">
+        <source>Format du document (PDF...)</source>
+        <target>Document format (PDF…)</target>
+      </trans-unit>
+      <trans-unit resname="Permet de définir le format du document (PDF, RTF...).">
+        <source>Permet de définir le format du document (PDF, RTF...).</source>
+        <target>Allows specifying the document format (PDF, RTF,...).</target>
+      </trans-unit>
+      <trans-unit resname="Permet de saisir le poids (en kO) du document, afin d'anticiper le temps de téléchargement.">
+        <source>Permet de saisir le poids (en kO) du document, afin d'anticiper le temps de téléchargement.</source>
+        <target>Allows typing the weight (kO) of the document, in order to anticipate the downloading time.</target>
+      </trans-unit>
+      <trans-unit resname="Propriétés de texte">
+        <source>Propriétés de texte</source>
+        <target>Text properties</target>
+      </trans-unit>
+      <trans-unit resname="Paramétrage d'intrant d'indice Javascript">
+        <source>Paramétrage d'intrant d'indice Javascript</source>
+        <target>Input parameter in Javascript index</target>
+      </trans-unit>
+      <trans-unit resname="Type de valeur à retourner">
+        <source>Type de valeur à retourner</source>
+        <target>Type of value to be returned.</target>
+      </trans-unit>
+      <trans-unit resname="valeur numérique (défaut)">
+        <source>valeur numérique (défaut)</source>
+        <target>Numerical value (default)</target>
+      </trans-unit>
+      <trans-unit resname="Score (pourcentage)">
+        <source>Score (pourcentage)</source>
+      </trans-unit>
+      <trans-unit resname="Score maximum possible">
+        <source>Score maximum possible</source>
+      </trans-unit>
+      <trans-unit resname="Score minimum possible">
+        <source>Score minimum possible</source>
+      </trans-unit>
+      <trans-unit resname="Score cumulé">
+        <source>Score cumulé</source>
+        <target>Cumulated score</target>
+      </trans-unit>
+      <trans-unit resname="Élément consulté">
+        <source>Élément consulté</source>
+      </trans-unit>
+      <trans-unit resname="Élément validé">
+        <source>Élément validé</source>
+      </trans-unit>
+      <trans-unit resname="Nombre d'essais">
+        <source>Nombre d'essais</source>
+        <target>Number of attempts</target>
+      </trans-unit>
+      <trans-unit resname="Identifiant interne (valeur alphanumérique)">
+        <source>Identifiant interne (valeur alphanumérique)</source>
+        <target>Internal ID (alphanumeric value)</target>
+      </trans-unit>
+      <trans-unit resname="ATTENTION : usage avancé, ce paramétrage n'est pas applicable à tous les types d'index ou d'étapes.">
+        <source>ATTENTION : usage avancé, ce paramétrage n'est pas applicable à tous les types d'index ou d'étapes.</source>
+        <target>BEWARE : advanced use. This parameter cannot be applied to all types of indexes or stages.</target>
+      </trans-unit>
+      <trans-unit resname="&quot;Score (pourcentage)&quot;, &quot;Score maximum possible&quot; et &quot;Score minimum possible&quot; fonctionneront dans le cas d'un intrant de type &quot;Quiz&quot; ou &quot;Étape de quiz&quot;.">
+        <source>"Score (pourcentage)", "Score maximum possible" et "Score minimum possible" fonctionneront dans le cas d'un intrant de type "Quiz" ou "Étape de quiz".</source>
+      </trans-unit>
+      <trans-unit resname="&quot;Score cumulé&quot; fonctionnera dans le cas d'un intrant de type &quot;Étape de quiz&quot; avec le cumul de scores actif.">
+        <source>"Score cumulé" fonctionnera dans le cas d'un intrant de type "Étape de quiz" avec le cumul de scores actif.</source>
+      </trans-unit>
+      <trans-unit resname="&quot;Élément consulté&quot; retourne un booléen qui sera &quot;true&quot; pour tout étape ou quiz qui à été tenté ou pour tout indice apprenant qui à été saisi.">
+        <source>"Élément consulté" retourne un booléen qui sera "true" pour tout étape ou quiz qui à été tenté ou pour tout indice apprenant qui à été saisi.</source>
+      </trans-unit>
+      <trans-unit resname="&quot;Élément validé&quot; retourne un booléen qui sera &quot;true&quot; pour tout étape de quiz qui à été validé.">
+        <source>"Élément validé" retourne un booléen qui sera "true" pour tout étape de quiz qui à été validé.</source>
+      </trans-unit>
+      <trans-unit resname="&quot;Nombre d'essais&quot; fonctionnera dans le cas d'un intrant de type &quot;Étape de quiz&quot; avec un nombre d'essais limité.">
+        <source>"Nombre d'essais" fonctionnera dans le cas d'un intrant de type "Étape de quiz" avec un nombre d'essais limité.</source>
+      </trans-unit>
+      <trans-unit resname="&quot;Identifiant interne&quot; est réservé à un usage très avancé permettant un accès plus large au système de stockage de Topaze. Il nécessite une connaissance approfondie des frameworks Javascript de Scenari.">
+        <source>"Identifiant interne" est réservé à un usage très avancé permettant un accès plus large au système de stockage de Topaze. Il nécessite une connaissance approfondie des frameworks Javascript de Scenari.</source>
+      </trans-unit>
+      <trans-unit resname="Propriétés de tableau">
+        <source>Propriétés de tableau</source>
+        <target>Table properties</target>
+      </trans-unit>
+      <trans-unit resname="Paramétrage des synonymes &amp; options">
+        <source>Paramétrage des synonymes &amp; options</source>
+        <target>Synonyms &amp; options setups</target>
+      </trans-unit>
+      <trans-unit resname="Synonymes">
+        <source>Synonymes</source>
+        <target>Synonyms</target>
+      </trans-unit>
+      <trans-unit resname="Ajoutez ici une liste de synonymes du mot présent dans le trou. Chaque synonyme est considéré comme une réponse juste.">
+        <source>Ajoutez ici une liste de synonymes du mot présent dans le trou. Chaque synonyme est considéré comme une réponse juste.</source>
+        <target>Add here a list of synonyms of the word in the gap. Each synonym will be considered as a valid answer.</target>
+      </trans-unit>
+      <trans-unit resname="Synonyme">
+        <source>Synonyme</source>
+        <target>Synonym</target>
+      </trans-unit>
+      <trans-unit resname="Options">
+        <source>Options</source>
+        <target>Options</target>
+      </trans-unit>
+      <trans-unit resname="Liste des options proposée telle qu'elle à l'apprenant. ATTENTION : le mot présent dans le trou ainsi que ses synonymes doivent être reportés dans les options.">
+        <source>Liste des options proposée telle qu'elle à l'apprenant. ATTENTION : le mot présent dans le trou ainsi que ses synonymes doivent être reportés dans les options.</source>
+        <target>List of options proposed to the learner as they are. BEWARE : the word in the gap and its synonyms must be reported in these options.</target>
+      </trans-unit>
+      <trans-unit resname="Lien vers la source web">
+        <source>Lien vers la source web</source>
+        <target>Link to a web source</target>
+      </trans-unit>
+      <trans-unit resname="Titre principal, titre de la publication">
+        <source>Titre principal, titre de la publication</source>
+        <target>Main title, published document title</target>
+      </trans-unit>
+      <trans-unit resname="Auteur">
+        <source>Auteur</source>
+        <target>Author</target>
+      </trans-unit>
+      <trans-unit resname="Date">
+        <source>Date</source>
+        <target>Date</target>
+      </trans-unit>
+      <trans-unit resname="Éditeur">
+        <source>Éditeur</source>
+        <target>Publisher</target>
+      </trans-unit>
+      <trans-unit resname="Locuteur">
+        <source>Locuteur</source>
+        <target>Speaker</target>
+      </trans-unit>
+      <trans-unit resname="Description - didascalie">
+        <source>Description - didascalie</source>
+        <target>Description</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeUiService code="scCommentSvc" info="Gestion des commentaires" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1391710311968">Commun avec les comments du Print</comment></comment>-->
+	<sm:serviceFiles sc:refUri="/academic/gen/_comments/svc/scCommentSvc.doss">
+		<sm:linkScriptForDeclaringService path="scCommentSvc.js"/>
+	</sm:serviceFiles>
+</sm:freeUiService>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/coQuiz.model"/>
+	<sm:axis code="quizIn"/>
+	<sm:content format="xhtml">
+		<sm:for codes="quest">
+			<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBk.uiwidget">
+				<sm:xhtmlContentZone key="co">
+					<sm:WHeadingBlock widgetClass="bkBase" class="bkQuest">
+						<sm:callSubModel axis="co"/>
+					</sm:WHeadingBlock>
+				</sm:xhtmlContentZone>
+			</sm:Widget>
+		</sm:for>
+		<sm:for codes="trainUcMcqSur trainUcMcqMur trainUcField trainUcNumerical trainUcCloze">
+			<sm:choose>
+				<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultShort/include.cond">
+					<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssContainer.uiwidget">
+						<sm:xhtmlContentZone key="co">
+							<sm:WHeadingBlock widgetClass="bkBase" class="bkCoQuiz">
+								<sm:title>
+									<sm:subModelTitle/>
+								</sm:title>
+								<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBkRoot.uiwidget">
+									<sm:xhtmlContentZone key="co">
+										<sm:callSubModel axis="quizIn"/>
+									</sm:xhtmlContentZone>
+								</sm:Widget>
+							</sm:WHeadingBlock>
+						</sm:xhtmlContentZone>
+					</sm:Widget>
+				</sm:when>
+			</sm:choose>
+		</sm:for>
+	</sm:content>
+</sm:compositionXhtmlTransf>

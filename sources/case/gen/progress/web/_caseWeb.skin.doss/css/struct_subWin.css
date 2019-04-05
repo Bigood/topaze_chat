@@ -1,0 +1,162 @@
+/* common html */
+html{
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	font: 13px 'Trebuchet MS', Arial Black, Arial;
+}
+/****** Template *****/
+#tplFra{
+	position: absolute;
+	width:100%;
+	height:100%;
+}
+
+.subFra{
+/* 	position: absolute;
+	top:20px;
+	bottom:20px;
+	left:20px;
+	right:20px;
+	border: 2px solid #8B9C03;
+	-moz-border-radius: 10px;
+	-webkit-border-radius:10px;
+	-khtml-border-radius:10px;
+	border-radius:10px;
+	background-color:#e2eeb0;
+	-moz-box-shadow: 0px 0px 20px ;
+	-khtml-box-shadow: 0px 0px 20px black;
+	-webkit-box-shadow: 0px 0px 20px black;
+	box-shadow: 0px 0px 20px black; */
+}
+
+.subHead{
+	position: absolute;
+	top:0px;
+	height:40px;
+	left:0px;
+	right:0px;
+	padding-top: 5px;
+	padding-left: 5px;
+	color: #CDD8AE;
+	background:#E0EDAC url(../img/tplTop.png) repeat-x scroll center bottom;
+	color:#627413;
+	height:40px;
+	font-size:2em;
+	-moz-border-radius: 6px 6px 0px 0px;
+	-webkit-border-radius:6px 6px 0px 0px;
+	-khtml-border-radius:6px 6px 0px 0px;
+	border-radius:6px 6px 0px 0px;
+}
+
+.subBody{
+	position: absolute;
+	left:3px;
+	right:3px;
+	bottom:3px;
+	top:46px;
+	overflow: auto;
+	padding:20px
+}
+
+.mainContent_co {
+ 	overflow: hidden; 
+	padding: 20px;
+ 	position: static; 
+}
+
+.subBodyMap{
+	position: absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	top:44px;
+	overflow: auto;
+	padding:5px;
+}
+
+.helpMap{
+	padding-top:10px;
+}
+
+.closeWin{ 
+	position: absolute;
+	display: block;
+	top: 5px;
+	right: 5px;
+	width:25px;
+	height:25px;
+	background:url(../img/closeWin.png) no-repeat;
+}
+
+.closeWin span{
+	display:none
+}
+/* ------------ crRes specifics ------------------------------------ */
+/*.resFra .subBody{
+	left:3px;
+	width:300px;
+}*/
+.refOutline{
+	text-align: center;
+}
+.refOutlineEntry{
+	margin: 0 5px;
+}
+#crResList ul{
+	padding-left:10px;
+}
+.crResTt_fra {
+	position: absolute;
+	top: 68px;
+	left:370px;
+	right:25px;
+	bottom:25px;
+	width: auto;
+	height: auto;
+}
+.crResTt {
+	position: absolute;
+	top: 0px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+}
+.crResTt_srl{
+	position: absolute;
+	top: 0px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	overflow: auto;
+}
+.crResTt_a{
+	cursor: pointer;
+	color:black;
+	font-size:16px;
+}
+.crResTt_a:hover{
+	opacity:0.7;
+	-moz-opacity:0.7;
+}
+.crResTt_act{
+	cursor: default;
+	color: black;
+	text-decoration:underline;
+}
+.crResContent {
+	background:url(../img/txt/content.png) no-repeat center right;
+	padding-right:13px;
+}
+/* ------------ map specifics ------------------------------------ */
+
+.subBodyMap img{
+	border:0px;
+}
+

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bindings xmlns="http://www.mozilla.org/xbl" xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" xmlns:xbl="http://www.mozilla.org/xbl" xmlns:html="http://www.w3.org/1999/xhtml">
+	<binding id="generic" extends="chrome://scenarixedlib/content/libUiBase/widgets/xedUiBase.xbl.xml#boundedElement">
+		<content orient="vertical" flex="1">
+			<xul:toolbar class="fragToolbar">
+				<xul:toolbarbutton anonid="btnPaste" class="btnPaste" label="￼Coller￼" oncommand="document.getBindingParent(this).pasteFrag();" tooltiptext="￼Coller le fragment web depuis le presse-papier￼"/>
+				<xul:toolbarbutton anonid="btnCopy" class="btnCopy" label="￼Copier￼" oncommand="document.getBindingParent(this).copyFrag();" tooltiptext="￼Copier le fragment web dans le presse-papier￼" disabled="true"/>
+				<xul:toolbarbutton anonid="btnDelete" class="btnDelete" label="￼Effacer￼" oncommand="document.getBindingParent(this).deleteFrag();" tooltiptext="￼Effacer le fragment web￼" disabled="true"/>
+				<xul:toolbarbutton anonid="btnHelp" class="btnHelp" label="￼Aide￼" oncommand="document.getBindingParent(this).help();" tooltiptext="￼Aide￼"/>
+			</xul:toolbar>
+			<xul:vbox>
+				<xul:iframe anonid="previewFrame" class="fragPreview" src="" flex="1" />
+			</xul:vbox>
+		</content>
+		<implementation>
+			<field name="fPreviewHeight">100</field>
+			<field name="fPreviewFrame">document.getAnonymousElementByAttribute(this, "anonid", "previewFrame")</field>
+			<field name="fBtnPaste">document.getAnonymousElementByAttribute(this, "anonid", "btnPaste")</field>
+			<field name="fBtnCopy">document.getAnonymousElementByAttribute(this, "anonid", "btnCopy")</field>
+			<field name="fBtnDelete">document.getAnonymousElementByAttribute(this, "anonid", "btnDelete")</field>
+			<property name="realValue"><!-- Get and set de value in XED -->
+				<getter>
+					var vBind = xed.getBind(this);
+					return vBind.fValue;
+				</getter>
+				<setter>
+					var vBind = xed.getBind(this);
+					vBind.fValue = val;
+					return val;
+				</setter>
+			</property>
+			<method name="help"><!-- help -->
+				<body><![CDATA[
+					system.openExternalUrl("http://www.scenari-platform.org/trac/office/wiki/mediaweb/");
+				]]></body>
+			</method>
+			<method name="onxedload"><!-- Init - called on xed load -->
+				<body><![CDATA[
+					//xed.debug("mwFragment.onxedload");
+					try{
+						var vXbl = this;
+						window.setTimeout(function(){vXbl.refresh()}, 10);
+						if (! document.fPreviewFrame) window.setInterval(function(){vXbl.autoSize()}, 400);
+						document.fPreviewFrame = this.fPreviewFrame
+					} catch(e){xed.debug("ERROR - mwFragment.onxedload: "+e)}
+				]]></body>
+			</method>
+			<method name="refresh"><!-- Refresh the preview frame with de current fragment -->
+				<body><![CDATA[
+					//xed.debug("mwFragment.refresh");
+					try{
+						var vVal = this.realValue;
+						var vStr = '<html><head><title></title></head><body style="font:caption;">';
+						if (!vVal || vVal == "") {
+							vStr += '<div style="position:absolute;height:20px;width:100%;top:50%;margin-top:-10px;text-align:center;color:silver;font-style:italic;">Veuillez coller un fragment HTML.</div>';
+						} else {
+							vStr += this.xDomString2HtmlString(vVal);
+						}
+						vStr += '</body></html>'
+						//xed.debug("preview html = "+vStr);
+						var vDataUri = "data:text/html;charset=utf-8,"+encodeURI(vStr);
+						this.fPreviewFrame.docShell.allowJavascript = true;
+						//xed.debug(vDataUri);
+						this.fPreviewFrame.parentNode.height = 100;
+						this.fPreviewFrame.setAttribute("src", vDataUri);
+						this.fBtnCopy.disabled = !(vVal && vVal.length > 0);
+						this.fBtnDelete.disabled = !(vVal && vVal.length > 0);
+					} catch(e){xed.debug("ERROR - mwFragment.refresh: "+e)}
+				]]></body>
+			</method>
+			<method name="autoSize"><!-- Update de height of the preview frame -->
+				<body><![CDATA[
+					try{
+						var vHeight = document.fPreviewFrame.contentDocument.body.scrollHeight;
+						if (vHeight != this.fPreviewHeight){
+							document.fPreviewFrame.parentNode.height = 100;
+							document.fPreviewFrame.parentNode.height = vHeight+2;
+							this.fPreviewHeight = vHeight;
+						}
+					} catch(e){xed.debug("ERROR - mwFragment.autoSize: "+e)}
+				]]></body>
+			</method>
+			<method name="pasteFrag"><!-- Paste from clipboard - resets the preview frame before pasing -->
+				<body><![CDATA[
+					//xed.debug("mwFragment.pasteFrag");
+					try{
+						var vDataUri = "data:text/html;charset=utf-8,"+encodeURI('<html><head><title></title></head><body></body></html>');
+						this.fPreviewFrame.setAttribute("src", vDataUri); // Charger une page HTML vide - on reset la page XHTML de preview
+						this.fPreviewHeight = 100;
+						var vXbl = this;
+						window.setTimeout(function(){vXbl.xPasteFrag()}, 10); // Attendre que la page html vide soit chargée
+					} catch(e){xed.debug("ERROR - mwFragment.pasteFrag: "+e)}
+				]]></body>
+			</method>
+			<method name="copyFrag"><!-- Copy fragment to clipboard -->
+				<body><![CDATA[
+					//xed.debug("mwFragment.copyFrag");
+					try{
+						Components.classes['@mozilla.org/widget/clipboardhelper;1'].getService(Components.interfaces.nsIClipboardHelper).copyString(this.xDomString2HtmlString(this.realValue));
+					} catch(e){xed.debug("ERROR - mwFragment.copyFrag: "+e)}
+				]]></body>
+			</method>
+			<method name="deleteFrag"><!-- Delete fragment -->
+				<body><![CDATA[
+					//xed.debug("mwFragment.deleteFrag");
+					try{
+						this.updateVal("");
+						this.refresh();
+					} catch(e){xed.debug("ERROR - mwFragment.deleteFrag: "+e)}
+				]]></body>
+			</method>
+			<method name="updateVal"><!-- Update undo history -->
+				<parameter name="pNewVal"/>
+				<parameter name="pNotHisto"/>
+				<body><![CDATA[
+					//xed.debug("mwFragment.updateVal");
+					try{
+						var vOldVal = this.realValue;
+						if(vOldVal) {
+							if(pNewVal == vOldVal) {
+								//Valeurs identiques
+								return false;
+							}
+						} else if(pNewVal==null || pNewVal=="") {
+							//Valeurs nulles avant et après.
+							return false;
+						}
+						this.realValue = pNewVal;
+						if( ! pNotHisto) {
+							xed.getEditor(this).addHisto(new XEDUpdateValHisto(this, vOldVal, pNewVal), true);
+						} else {
+							this.refresh();
+						}
+						var vEvent = document.createEvent("Events");
+						vEvent.initEvent(XEDDataChangeEvent, true, false);
+						this.dispatchEvent(vEvent);
+						return true;
+					} catch(e){xed.debug("ERROR - mwFragment.updateVal: "+e);}
+				]]></body>
+			</method>
+			<method name="xPasteFrag"><!-- Paste the contents of the clipboard -->
+				<body><![CDATA[
+					//xed.debug("mwFragment.xPasteFrag");
+					try{
+						this.fPreviewFrame.docShell.allowJavascript = false;
+						var vTrans = xed_transf.createTransferable();
+						vTrans.addDataFlavor(xed_transf.FLAVOUR_TEXT_UNICODE);
+						xed_transf.fClipboardService.getData(vTrans, 1);
+						var vText = xed_transf.getStringDataFromTransferable(vTrans, xed_transf.FLAVOUR_TEXT_UNICODE);
+						var vHtmlDoc = this.fPreviewFrame.contentDocument;
+						vHtmlDoc.body.innerHTML = vText;
+						var vXhtmlRoot = document.createDocumentFragment();
+						this.xCloneChildren2Xhtml(vHtmlDoc.body, vXhtmlRoot);
+						var vEncoder = Components.classes["@mozilla.org/layout/documentEncoder;1?type=application/xhtml+xml"].createInstance(Components.interfaces.nsIDocumentEncoder);
+						vEncoder.init(vXhtmlRoot.ownerDocument, "application/xhtml+xml", 0);
+						vEncoder.setContainerNode(vXhtmlRoot);
+						var vEncFrag = vEncoder.encodeToString();
+						//xed.debug("RESULT = "+vEncFrag);
+						this.updateVal(vEncFrag);
+						this.refresh();
+					} catch(e){xed.debug("ERROR - mwFragment.xPasteFrag: "+e)}
+				]]></body>
+			</method>
+			<method name="xDomString2HtmlString"><!-- transform a string representation of a DOM to a HTML string -->
+				<parameter name="pVal"/>
+				<body><![CDATA[
+					//xed.debug("mwFragment.xDomString2HtmlString");
+					try{
+						var vHtmlRoot = document.createDocumentFragment();
+						var vDoc = new DOMParser().parseFromString("<root>"+pVal+"</root>", "text/xml");
+						this.xCloneChildren2Html(vDoc.firstChild, vHtmlRoot);
+						var vEncoder = Components.classes["@mozilla.org/layout/documentEncoder;1?type=text/html"].createInstance(Components.interfaces.nsIDocumentEncoder);
+						vEncoder.init(vHtmlRoot.ownerDocument, "text/html", 0);
+						vEncoder.setContainerNode(vHtmlRoot);
+						var vEncFrag = vEncoder.encodeToString();
+						//xed.debug("RESULT = "+vEncFrag);
+						return vEncFrag;
+					} catch(e){xed.debug("ERROR - mwFragment.xDom2HtmlString: "+e)}
+				]]></body>
+			</method>
+			<method name="xCloneChildren2Xhtml"><!-- parse a DOM cloning to an XHTML DOM -->
+				<parameter name="pHtmlNode"/>
+				<parameter name="pXhtml"/>
+				<body><![CDATA[
+					var vNode = pHtmlNode.firstChild;
+					while(vNode) {
+						switch(vNode.nodeType) {
+						case 1 :
+							var vClone = pXhtml.ownerDocument.createElementNS("http://www.w3.org/1999/xhtml", "xhtml:"+vNode.nodeName.toLowerCase());
+							var vAtts = vNode.attributes;
+							for(var i = 0; i < vAtts.length; i++) {
+								var vAtt = vAtts.item(i);
+								vClone.setAttribute(vAtt.nodeName, vAtt.nodeValue);
+							}
+							pXhtml.appendChild(vClone);
+							if (vClone.localName.match(/noscript$/)) {
+								var vDoc = new DOMParser().parseFromString("<root>"+vNode.firstChild.nodeValue+"</root>", "text/xml");
+								this.xCloneChildren2Xhtml(vDoc.firstChild, vClone);
+							} else this.xCloneChildren2Xhtml(vNode, vClone);
+							break;
+						case 3 :
+						case 4 :
+							var vClone = pXhtml.ownerDocument.createTextNode(vNode.nodeValue);
+							pXhtml.appendChild(vClone);
+							break;
+						}
+						vNode = vNode.nextSibling;
+					}
+				]]></body>
+			</method>
+			<method name="xCloneChildren2Html"><!-- parse a DOM cloning to an HTML DOM -->
+				<parameter name="pHtmlNode"/>
+				<parameter name="pHtml"/>
+				<body><![CDATA[
+					var vNode = pHtmlNode.firstChild;
+					while(vNode) {
+						switch(vNode.nodeType) {
+						case 1 :
+							var vClone = pHtml.ownerDocument.createElement(vNode.localName);
+							var vAtts = vNode.attributes;
+							for(var i = 0; i < vAtts.length; i++) {
+								var vAtt = vAtts.item(i);
+								if (! vAtt.nodeName.match(/^xmlns/)) vClone.setAttribute(vAtt.localName, vAtt.nodeValue);
+							}
+							pHtml.appendChild(vClone);
+							this.xCloneChildren2Html(vNode, vClone);
+							break;
+						case 3 :
+						case 4 :
+							var vClone = pHtml.ownerDocument.createTextNode(vNode.nodeValue);
+							pHtml.appendChild(vClone);
+							break;
+						}
+						vNode = vNode.nextSibling;
+					}
+				]]></body>
+			</method>
+		</implementation>
+	</binding>
+</bindings>
+
+

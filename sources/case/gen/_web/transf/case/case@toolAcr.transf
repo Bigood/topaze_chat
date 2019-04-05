@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/case/model/case.model"/>
+	<sm:axis code="toolAcr"/>
+	<sm:content format="xhtml">
+		<sm:WLink widgetClass="btnTool btnAcr">
+			<sm:label>
+				<sm:fixedString value="￼;Acronymes￼"/>
+			</sm:label>
+			<sm:labelTitle>
+				<sm:fixedString value="￼;Afficher les acronymes￼"/>
+			</sm:labelTitle>
+			<sm:link target="subWindow" windowName="subWin">
+				<sm:page template="subWin" step="1">
+					<sm:title>
+						<sm:fixedTitle value="￼;Acronymes de l'étude de cas￼"/>
+					</sm:title>
+					<sm:mainZone format="xhtml">
+						<sm:Widget sc:refUri="/case/gen/_web/wdt/mgr/resMgr.uiwidget"/>
+						<sm:WFreeBlock>
+							<div xmlns="http://www.w3.org/1999/xhtml" class="subFra glosFra">
+								<div class="subHead">
+									<sm:title>
+										<sm:fixedTitle value="￼;Acronymes de l'étude de cas￼"/>
+									</sm:title>
+									<sm:Widget sc:refUri="/case/gen/_web/wdt/util/closeWin.uiwidget"/>
+								</div>
+								<div class="subBody">
+									<sm:Widget sc:refUri="/case/gen/_web/wdt/ref/acr.uiwidget"/>
+								</div>
+							</div>
+						</sm:WFreeBlock>
+					</sm:mainZone>
+				</sm:page>
+			</sm:link>
+		</sm:WLink>
+	</sm:content>
+</sm:compositionXhtmlTransf>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Ua/assmntUa.model"/>
+	<sm:axis code="nav"/>
+	<sm:navigation>
+		<sm:page template="slide">
+			<sm:title>
+				<sm:compositionTitle/>
+				<sm:fixedTitle value="￼;[sans titre]￼"/>
+			</sm:title>
+			<sm:outlineClasses>
+				<sm:fixedString value="tocSld tocAssmntUa"/>
+				<sm:callModel>
+					<sm:current axis="bkCnt"/>
+				</sm:callModel>
+			</sm:outlineClasses>
+			<sm:mainZone format="xhtml">
+				<sm:WHeadingBlock widgetClass="slideBk" class="slideAssmntUa">
+					<sm:title>
+						<sm:compositionTitle/>
+					</sm:title>
+					<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBkRoot.uiwidget">
+						<sm:xhtmlContentZone key="co">
+							<sm:callModel>
+								<sm:current/>
+							</sm:callModel>
+						</sm:xhtmlContentZone>
+					</sm:Widget>
+				</sm:WHeadingBlock>
+			</sm:mainZone>
+		</sm:page>
+	</sm:navigation>
+</sm:compositionXhtmlTransf>

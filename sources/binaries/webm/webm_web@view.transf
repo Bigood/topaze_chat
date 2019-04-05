@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:binaryXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/binaries/webm/webm.model"/>
+	<sm:axis code="view"/>
+	<sm:content>
+		<sm:WFreeBlock>
+			<video xmlns="http://www.w3.org/1999/xhtml" controls="controls" preload="none">
+				<sm:Widget sc:refUri="/binaries/_web/widg/videoDims.uiwidget"/>
+				<source type="video/webm; codecs=&quot;vorbis,vp8&quot;" onerror="tplMgr.xMediaFallback(this.parentNode)">
+					<addAttribute name="src">
+						<sm:binaryUrl/>
+					</addAttribute>
+				</source>
+				<div class="infoVideo">
+					<p>￼;Votre navigateur ne prend pas en charge le format WEBM. Téléchargez la vidéo :￼</p>
+					<sm:WLink>
+						<sm:label>
+							<sm:binaryFileName/>
+						</sm:label>
+						<sm:link target="newWindow">
+							<sm:binaryUrl/>
+						</sm:link>
+					</sm:WLink>
+					<p>￼;Si vous utilisez Internet Explorer 9 ou supérieur, vous pouvez installer ce plugin :￼</p>
+					<sm:WLink>
+						<sm:label>
+							<sm:WFreeBlock>https://tools.google.com/dlpage/webmmf</sm:WFreeBlock>
+						</sm:label>
+						<sm:link target="newWindow">
+							<sm:externalUrl>
+								<sm:fixedString value="https://tools.google.com/dlpage/webmmf"/>
+							</sm:externalUrl>
+						</sm:link>
+					</sm:WLink>
+				</div>
+			</video>
+		</sm:WFreeBlock>
+	<!--ATTENTION l'élément suivant à été ajouté en XSL par la dérivation.--><sm:callModel xmlns:op="utc.fr:ics/opale3" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sext="http://www.utc.fr/ics/scenari/v3/modeling/extension"><sm:current axis="credits"/></sm:callModel></sm:content>
+</sm:binaryXhtmlTransf>

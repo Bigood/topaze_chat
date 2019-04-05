@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:webSiteGenerator xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="pres" name="￼;Publication diaporama au format HTML￼">
+	<sm:icon sc:refUri="/academic/model/_ico/gen/presGen.png"/>
+	<sm:modelRoot>
+		<sm:allowedModel sc:refUri="/academic/model/root/presRoot.model"/>
+	</sm:modelRoot>
+	<sm:mode standard="HTML 5" debug="no"/>
+	<sm:uiFrame sc:refUri="/academic/gen/quadra/pres/pres.uiframe"/>
+	<sm:transformerList sc:refUri="/academic/gen/quadra/pres/pres.transflist"/>
+	<sm:uiTemplateList>
+		<sm:uiTemplate code="root" sc:refUri="/academic/gen/quadra/pres/templates/root.uitemplate"/>
+		<sm:uiTemplate code="slide" sc:refUri="/academic/gen/quadra/pres/templates/slide.uitemplate"/>
+		<sm:uiTemplate code="ref" sc:refUri="/academic/gen/quadra/pres/templates/ref.uitemplate"/>
+	</sm:uiTemplateList>
+	<sm:defaultSkin sc:refUri="/academic/gen/quadra/pres/pres.skin.doss" name="￼;Quadra￼"/>
+</sm:webSiteGenerator>

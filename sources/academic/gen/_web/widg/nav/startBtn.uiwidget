@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="startBtn">
+	<sm:content>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<sm:WLink widgetClass="startBtn btnNxt">
+				<sm:label>￼;Commencer le module￼</sm:label>
+				<sm:link target="sameWindow">
+					<sm:callUrlZone key="urlPage"/>
+				</sm:link>
+			</sm:WLink>
+		</div>
+	</sm:content>
+</sm:openUiWidget>

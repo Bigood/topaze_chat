@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:genericWebSiteTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/case/model/case.model"/>
+	<sm:axis code="index"/>
+	<sm:navigation>
+		<sm:page template="index" step="999">
+			<sm:title/>
+			<sm:path>
+				<sm:fixedPath value="index.txt"/>
+			</sm:path>
+			<sm:mainZone format="text">indexBuffer</sm:mainZone>
+		</sm:page>
+	</sm:navigation>
+</sm:genericWebSiteTransf>

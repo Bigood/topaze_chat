@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Présentation Microsoft Powerpoint￼" category="￼;Ressources￼">
+	<sm:help quickHelp="￼; Ressource au format Microsoft Powerpoint. ￼"/>
+	<sm:identification extensions="ppt pps" mimeTypes="application/vnd.ms-powerpoint"/>
+	<sm:identification extensions="pptx" mimeTypes="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
+	<sm:identification extensions="ppsx" mimeTypes="application/vnd.openxmlformats-officedocument.presentationml.slideshow"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/academic/model/metaData/binDocM.model" usage="optional"/>
+	</sm:structure>
+	<sm:authoring>
+		<sm:icon sc:refUri="/binaries/ppt/_res/ppt.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;res￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:emptyFile sc:refUri="/binaries/ppt/_res/empty.ppt" extension="ppt"/>
+		<sm:emptyFile sc:refUri="/binaries/ppt/_res/empty.ppt" extension="pps"/>
+		<sm:emptyFile sc:refUri="/binaries/ppt/_res/empty.pptx" extension="pptx"/>
+		<sm:emptyFile sc:refUri="/binaries/ppt/_res/empty.pptx" extension="ppsx"/>
+	</sm:authoring>
+</sm:binaryPrim>

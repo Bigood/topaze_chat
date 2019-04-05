@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionOdtTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0">
+	<sm:model sc:refUri="/academic/model/Re/res.model"/>
+	<sm:content>
+		<sm:inDataOrder>
+			<sm:for codes="txt txtRes">
+				<sm:callSubModel/>
+			</sm:for>
+			<sm:for codes="listing">
+				<!--paragraphe vide utile pour créer un leger espace avant le listing (la section ne possède pas de space before dans OO...)-->
+				<sm:WParagraph globalStyle="spaceBeforeKeep" display="always"/>
+				<sm:callSubModel/>
+			</sm:for>
+			<sm:for codes="bkquote">
+				<sm:WParagraph globalStyle="spaceBeforeKeep" display="always"/>
+				<sm:Widget sc:refUri="/academic/gen/_od/widg/bkQuote.odwidget">
+					<sm:odContentZone key="content">
+						<sm:callSubModel/>
+						<sm:WParagraph globalStyle="spaceAfter" display="always"/>
+					</sm:odContentZone>
+				</sm:Widget>
+				<sm:WParagraph globalStyle="bkQuoteEnd" display="always"/>
+				<sm:WParagraph globalStyle="spaceAfter" display="always"/>
+			</sm:for>
+			<sm:for codes="res int">
+				<sm:choose>
+					<sm:when xpath="//op:instructionM">
+						<sm:callPartMeta/>
+					</sm:when>
+				</sm:choose>
+				<sm:choose>
+					<!--Présence de ressource alternative-->
+					<sm:when xpath="string-length(computeStrAgent(concat(computeStrAgent(concat($vContentAgt, '/metaAgt')), '_Aalt', '/getContent')))&gt;0">
+						<!--# Crédit-->
+						<sm:dataBlock category="cprRes">
+							<sm:blockId>
+								<sm:subModelId/>
+							</sm:blockId>
+							<sm:label>
+								<sm:title>
+									<sm:subModelTitle/>
+								</sm:title>
+							</sm:label>
+							<sm:data>
+								<sm:callSubModelMeta axis="credit"/>
+							</sm:data>
+						</sm:dataBlock>
+						<!--# Ressource-->
+						<sm:dataBlock category="res">
+							<sm:overrideContentDeclaration>
+								<sm:callBlockData/>
+							</sm:overrideContentDeclaration>
+							<sm:blockId>
+								<sm:subModelId/>
+							</sm:blockId>
+							<sm:label>
+								<sm:title>
+									<sm:subModelTitle/>
+								</sm:title>
+							</sm:label>
+							<sm:data>
+								<sm:callSubModelMeta axis="alt"/>
+							</sm:data>
+						</sm:dataBlock>
+					</sm:when>
+					<sm:when xpath="typeAgent(normalize-space($vContentAgt))='op_gallery'">
+						<sm:Widget sc:refUri="/academic/gen/_od/widg/res.odwidget">
+							<sm:odContentZone key="title">
+								<sm:title>
+									<sm:subModelTitle/>
+								</sm:title>
+							</sm:odContentZone>
+							<sm:odContentZone key="content">
+								<sm:callSubModel/>
+							</sm:odContentZone>
+						</sm:Widget>
+					</sm:when>
+					<sm:when xpath="typeAgent(normalize-space($vContentAgt))='sfile_odg' or typeAgent(normalize-space($vContentAgt))='sfile_ods' or typeAgent(normalize-space($vContentAgt))='sfile_jpg_jpeg' or typeAgent(normalize-space($vContentAgt))='sfile_gif' or typeAgent(normalize-space($vContentAgt))='sfile_png' or typeAgent(normalize-space($vContentAgt))='sfile_odf' or typeAgent(normalize-space($vContentAgt))='mathTex'">
+						<!--# Crédit-->
+						<sm:dataBlock category="cprRes">
+							<sm:blockId>
+								<sm:subModelId/>
+							</sm:blockId>
+							<sm:label>
+								<sm:title>
+									<sm:subModelTitle/>
+								</sm:title>
+							</sm:label>
+							<sm:data>
+								<sm:callSubModelMeta axis="credit"/>
+							</sm:data>
+						</sm:dataBlock>
+						<!--# Ressource-->
+						<sm:dataBlock category="res">
+							<sm:overrideContentDeclaration>
+								<sm:callBlockData/>
+							</sm:overrideContentDeclaration>
+							<sm:blockId>
+								<sm:subModelId/>
+							</sm:blockId>
+							<sm:label>
+								<sm:title>
+									<sm:subModelTitle/>
+								</sm:title>
+							</sm:label>
+							<sm:data>
+								<sm:Widget sc:refUri="/academic/gen/_od/widg/res.odwidget">
+									<sm:odContentZone key="title">
+										<sm:title>
+											<sm:subModelTitle format="shortTitleText"/>
+											<sm:fixedTitle value="￼ ￼"/>
+										</sm:title>
+									</sm:odContentZone>
+									<sm:odContentZone key="content">
+										<sm:callSubModel/>
+									</sm:odContentZone>
+								</sm:Widget>
+							</sm:data>
+						</sm:dataBlock>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="filtered">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:callSubModel/>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+		</sm:inDataOrder>
+	</sm:content>
+</sm:compositionOdtTransf>

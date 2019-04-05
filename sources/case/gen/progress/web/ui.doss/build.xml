@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project name="Phone" default="main" basedir=".">
+	<taskdef resource="net/sf/antcontrib/antcontrib.properties" />
+
+	<property name="vDialog" refid="vDialog" />
+	<property name="vAgent" refid="vAgent" />
+
+	<target name="main">
+
+		<!-- Init -->
+		<delete file="${vFolderDest}/../web.zip" />
+
+		<!-- create ZIP archive  -->
+		<zip destfile="${vFolderDest}/../web.zip">
+			<fileset dir="${vFolderDest}" includes="**/*" />
+		</zip>
+
+	</target>
+</project>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryOdTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/math/latex/mathTex.model"/>
+	<sm:axis code="inline"/>
+	<sm:content>
+		<!--NOTE : obligé de passer par un odWidget pour gérer la position de la ressource (centre mathématique)-->
+		<sm:Widget sc:refUri="/math/latex/getPng.odwidget"/>
+	</sm:content>
+</sm:binaryOdTransf>

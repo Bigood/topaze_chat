@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sma:assmntUnitMcqPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sma="kelis.fr:scenari/modeling/assessment" name="￼;Question à Choix Multiple à addition de points￼" category="￼;Exercices￼">
+	<sm:help quickHelp="￼;Questionnaire à choix multiple où le score est l'addition des options￼"/>
+	<sm:identification targetNamespace="kelis.fr:opa" targetPrefix="opa" code="mcqMurSum" itemExtension="quiz"/>
+	<sm:structure>
+		<sm:questionModel name="￼;Énoncé￼" sc:refUri="/academic/model/Re/res.model"/>
+		<sm:choices name="￼;Choix￼">
+			<sm:choice name="￼;Option￼" min="2" max="10">
+				<sm:choiceLabelModel name="￼;Libellé￼" sc:refUri="/academic/model/Re/txt.model"/>
+				<sm:choiceExplanationModel name="￼;Explication￼" sc:refUri="/academic/model/Re/txt.model" usage="optional"/>
+			</sm:choice>
+		</sm:choices>
+		<sm:globalExplanationModel name="￼;Explication globale￼" sc:refUri="/academic/model/Re/res.model" usage="optional"/>
+		<sm:solution name="￼;Solution￼">
+			<sm:multipleUserResponse>
+				<sm:summedNumericScoring>
+					<sm:scoreIfSelected name="￼;Points si coché￼" step="1"/>
+					<sm:scoreIfUnselected name="￼;Points si non coché￼" step="1" default="0"/>
+					<sm:feedbackModel name="￼;Feedback￼" sc:refUri="/academic/model/Re/res.model" usage="optional">
+						<sm:pointScoreIntervals>
+							<sm:interval name="￼;Score￼" min="-1000000" max="1000000" step=".01">
+								<sm:scoreMoreThan name="￼;supérieur à￼"/>
+								<sm:scoreMoreOrEqualThan name="￼;sup. ou égal à￼"/>
+								<sm:scoreLessThan name="￼;inférieur à￼"/>
+								<sm:scoreLessOrEqualThan name="￼;inf. ou égal à￼"/>
+							</sm:interval>
+						</sm:pointScoreIntervals>
+					</sm:feedbackModel>
+				</sm:summedNumericScoring>
+			</sm:multipleUserResponse>
+		</sm:solution>
+	</sm:structure>
+	<sm:authoring>
+		<sm:icon sc:refUri="/academic/model/_ico/mcqMurSmall.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;QCM￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:formEditor indentXml="true">
+			<sm:assmntUnitMcq tagStyle="font-family:arial;font-size:20px; background-color:#4668ad; color:white; -moz-border-radius:5px; padding-left:4px; padding-right:4px" fullTitleStyle="color:#513245;font-size:1.7em;font-weight:bold; text-align:center;">
+				<sm:iconTag sc:refUri="/academic/model/_ico/mcqMur.png"/>
+			</sm:assmntUnitMcq>
+		</sm:formEditor>
+	</sm:authoring>
+</sma:assmntUnitMcqPrim>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="scImgMgr" info="SCENARI Javascript Image manager (galeries, zoom, image sequences)">
+	<sm:widgetPublishFiles sc:refUri="/academic/gen/_web/widg/img/scImgMgr.doss"/>
+	<sm:fillTemplateBuffers>
+		<sm:standardLibrary codeLib="PaLib"/>
+		<sm:standardLibrary codeLib="TiLib"/>
+		<sm:standardLibrary codeLib="SiLib"/>
+		<sm:standardLibrary codeLib="DynUiMgr"/>
+		<sm:postXslFragment keyXsl="xhtml">&lt;xsl:overlay match="body"&gt;
+  &lt;xsl:value-of select="execute(java:append($vBufJs, 'scImgMgr.init();'))"/&gt;
+&lt;/xsl:overlay&gt;</sm:postXslFragment>
+		<sm:linkScript path="scImgMgr.js" pathFrom="localPublishFiles" sortKey="B"/>
+		<sm:linkStyle path="scImgMgr.css" pathFrom="localPublishFiles"/>
+	</sm:fillTemplateBuffers>
+	<sm:content/>
+</sm:openUiWidget>

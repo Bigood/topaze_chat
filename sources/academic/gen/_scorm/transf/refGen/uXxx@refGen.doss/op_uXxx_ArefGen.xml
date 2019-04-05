@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<groupAffichage xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:op="utc.fr:ics/opale3" xmlns:java="http://xml.apache.org/xslt/java" version="1.0" codecomposant="concat(getIdNode(..), '_ArefGen')" racine="//op:ue|//op:courseUa" code="op_ue_ArefGen">
+  <valeur code="scormCam">
+    <source type="xslOnSrc-dynamique">
+      <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:op="utc.fr:ics/opale3" xmlns:java="http://xml.apache.org/xslt/java" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" exclude-result-prefixes="sc sp op java " version="1.0">
+        <xsl:output omit-xml-declaration="yes" indent="no" method="xml"/>
+        <xsl:param name="vAgent"/>
+        <xsl:param name="vDialog"/>
+        <xsl:template match="*">
+          <xsl:for-each select="sp:genRef/op:genRef/sp:ref">
+            <xsl:apply-templates mode="genRef" select="parseXml(getContent(gotoSubModel(.), 'genRef'))/*"/>
+          </xsl:for-each>
+        </xsl:template>
+        <xsl:template match="crossRef/entry" mode="genRef">
+          <xsl:value-of select="java:com.scenari.m.ge.generator.web.CrossRefEntry.addEntry($vDialog, '', @keyRef, @value)"/>
+        </xsl:template>
+        <xsl:template match="text()" mode="genRef"/>
+      </xsl:stylesheet>
+    </source>
+  </valeur>
+</groupAffichage>

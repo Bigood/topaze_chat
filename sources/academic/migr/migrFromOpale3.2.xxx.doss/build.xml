@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Migration Opale 3.2.xxx -> Opale 3.5.000" default="main" basedir=".">
+
+	<restrict id="scenari.wsp.src.all">
+		<srcNode refid="scenari.wsp.src"/>
+		<name name="*.*"/>
+	</restrict>
+	
+	<target name="main">
+		<echo>####### MIGRATION de Opale 3.2.xxx -> Opale 3.5.000</echo>
+		<tstamp><format property="timestamp" pattern="yyMMdd-HHmm"/></tstamp>
+		
+		<!-- from migrFromOpale3.2.014 -->
+		<migrateXsl style="${basedir}/3.2/migration.xsl">
+			<param name="pWspPath" expression="${scenari.wsp.path}"/>
+			<restrict>
+				<srcNode refid="scenari.wsp.src"/>
+				<or>
+					<name name="*.xml"/>
+					<name name="*.quiz"/>
+				</or>
+			</restrict>
+		</migrateXsl>
+		
+		<!-- from migrFromOpale3.3.001 -->
+		<migrateXsl style="${basedir}/3.3/eSite.xsl" filterXPath="/sc:item/op:eSite" filterXPathNs="op:utc.fr:ics/opale3;sc:http://www.utc.fr/ics/scenari/v3/core">
+			<restrict>
+				<srcNode refid="scenari.wsp.src"/>
+				<or>
+					<name name="*.xml"/>
+				</or>
+			</restrict>
+		</migrateXsl>
+		
+		<echo>--- Fin de la migration ---</echo>
+	</target>
+	
+	
+</project>

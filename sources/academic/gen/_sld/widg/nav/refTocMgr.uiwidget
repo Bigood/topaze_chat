@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="refTocMgr">
+	<sm:fillTemplateBuffers>
+		<sm:postXslFragment keyXsl="xhtml">&lt;xsl:template match="div[@class = 'refToc']"&gt;
+  &lt;xsl:if test="count(descendant::a) &amp;gt; 2"&gt;
+    &lt;xsl:copy&gt;
+      &lt;xsl:apply-templates select="@*"/&gt;
+      &lt;xsl:apply-overlays/&gt;
+      &lt;xsl:apply-templates/&gt;
+    &lt;/xsl:copy&gt;
+  &lt;/xsl:if&gt;
+&lt;/xsl:template&gt;</sm:postXslFragment>
+	</sm:fillTemplateBuffers>
+	<sm:content>
+		<sm:Widget sc:refUri="/academic/gen/_sld/widg/nav/refToc.uiwidget">
+			<sm:xhtmlContentZone key="content">
+				<sm:callZone key="content"/>
+			</sm:xhtmlContentZone>
+		</sm:Widget>
+	</sm:content>
+</sm:openUiWidget>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiTemplate xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" pageUnicityCriterion="hierarchicalContext">
+	<sm:head>
+		<sm:windowTitle>
+			<sm:rootTitle type="fullTitle"/>
+			<sm:fixedString value=" - "/>
+			<sm:pageTitle/>
+		</sm:windowTitle>
+		<sm:meta name="template">
+			<sm:fixedContent value="eval"/>
+		</sm:meta>
+		<sm:meta name="author">
+			<sm:callRootModel axis="author"/>
+		</sm:meta>
+		<sm:meta name="keywords">
+			<sm:callRootModel axis="keywds"/>
+		</sm:meta>
+		<sm:meta name="date">
+			<sm:callRootModel axis="date"/>
+		</sm:meta>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/tpl/htmlMeta.uiwidget"/>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/tpl/revisedMeta.uiwidget"/>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/util/startLinkMeta.uiwidget"/>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/tpl/tplMgr.uiwidget"/>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/tplDynElts/setSubWinTitle.uiwidget"/>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/tplDynElts/centerContentEval.uiwidget"/>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/eval/scSiLibOveride.uiwidget"/>
+		<sm:styleSheet src="css/html.css" srcFrom="skin" media="all"/>
+		<sm:styleSheet src="css/struct_eval.css" srcFrom="skin" media="screen"/>
+		<sm:styleSheet src="css/buttons.css" srcFrom="skin" media="screen"/>
+		<sm:styleSheet src="css/transf.css" srcFrom="skin" media="all"/>
+		<sm:styleSheet src="css/assmnt.css" srcFrom="skin"/>
+		<sm:styleSheet src="css/assmnt_eval.css" srcFrom="skin"/>
+		<sm:WXhtmlFragment>&lt;!--[if IE]&gt;</sm:WXhtmlFragment>
+		<sm:styleSheet src="css/ie.css" srcFrom="skin" media="screen"/>
+		<sm:WXhtmlFragment>&lt;![endif]--&gt;&lt;!--[if lt IE 7]&gt;</sm:WXhtmlFragment>
+		<sm:styleSheet src="css/ie6_eval.css" srcFrom="skin" media="screen"/>
+		<sm:WXhtmlFragment>&lt;![endif]--&gt;</sm:WXhtmlFragment>
+		<sm:styleSheet src="css/print.css" srcFrom="skin" media="print"/>
+		<sm:Widget sc:refUri="/academic/gen/_comments/widg/scCommentMgr.uiwidget"/>
+		<sm:Widget sc:refUri="/academic/gen/quadra/comments/web/widg/scCommentWdgWeb.uiwidget"/>
+	</sm:head>
+	<sm:body>
+		<div xmlns="http://www.w3.org/1999/xhtml" id="tplFra">
+			<div id="tplCo">
+				<div id="evalPlayerCo" class="scroller">
+					<div id="tplCoMarginW">
+						<div id="tplCoFlexTop"></div>
+						<div id="evalPlayerCo2">
+							<div id="mgrContainer">
+								<sm:WXhtmlFragment>&lt;script&gt;
+var currentMgr = new scCommentMgr.Mgr('mgrContainer', null, null); //deux derniers param servent pour écarter des choses de la mécanique de commentaires, un pour le namespace, l'autre pour l'xpath, normalement on gère ça côté client s'il y'a besoin
+document.getElementById('mgrContainer').mgr = currentMgr;
+&lt;/script&gt;</sm:WXhtmlFragment>
+								<sm:Widget sc:refUri="/academic/gen/quadra/comments/web/widg/commentsBtn.uiwidget"/>
+								<sm:callMainZone format="xhtml"/>
+								<sm:WBasket key="footnotes" widgetClass="footnotes" tagName="ol" suppressIfEmpty="yes"/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="evalPlayerPrint">
+				<sm:WButton class="printEval">
+					<sm:label>￼;Imprimer￼</sm:label>
+					<sm:labelTitle>￼;Imprimer la page￼</sm:labelTitle>
+					<sm:action>
+						<sm:print/>
+					</sm:action>
+				</sm:WButton>
+			</div>
+		</div>
+		<sm:script src="js/skin.js" srcFrom="skin" type="text/JavaScript"/>
+	</sm:body>
+</sm:openUiTemplate>

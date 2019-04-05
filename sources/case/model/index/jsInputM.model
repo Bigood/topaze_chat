@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:dataFormPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Paramétrage d'intrant d'indicateur Javascript￼">
+	<sm:identification targetNamespace="kelis.fr:opa" targetPrefix="opa" code="jsInputM" itemExtension="xml"/>
+	<sm:structure>
+		<sm:field code="return" name="￼;Type de valeur à retourner￼" occurrence="zeroOrOne" family="property">
+			<sm:enum>
+				<sm:option key="value" name="￼;valeur numérique (défaut)￼"/>
+				<sm:optionSeparator/>
+				<sm:option key="score" name="￼;Score (pourcentage)￼"/>
+				<sm:option key="scoreMax" name="￼;Score maximum￼"/>
+				<sm:option key="scoreMin" name="￼;Score minimum￼"/>
+				<sm:option key="scoreSum" name="￼;Score cumulé￼"/>
+				<sm:option key="minPts" name="￼;Score minimum possible￼"/>
+				<sm:option key="maxPts" name="￼;Score maximum possible￼"/>
+				<sm:optionSeparator/>
+				<sm:option key="seen" name="￼;Élément consulté￼"/>
+				<sm:option key="finished" name="￼;Élément validé￼"/>
+				<sm:option key="tryNum" name="￼;Nombre d'essais￼"/>
+				<sm:optionSeparator/>
+				<sm:option key="id" name="￼;Identifiant interne (valeur alphanumérique)￼"/>
+			</sm:enum>
+		</sm:field>
+	</sm:structure>
+	<sm:storage/>
+	<sm:authoring>
+		<sm:formEditor indentXml="true">
+			<sm:xmlEditor sc:refUri="/case/model/index/jsInputM.xed"/>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:dataFormPrim>

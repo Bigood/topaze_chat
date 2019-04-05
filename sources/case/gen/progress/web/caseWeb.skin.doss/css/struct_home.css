@@ -1,0 +1,280 @@
+body{
+	margin: 0px 0px 0px 0px;
+}
+#tplFra {
+	position: absolute;
+	height:100%;
+	width:100%;
+	min-width:900px;
+	min-height:360px;
+	overflow-y: auto;
+	background: rgb(245, 245, 245);
+}
+
+#tplTop {
+	/* position: absolute; */
+	width:100%;
+	height: 58px;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6b0889+0,5c073b+100 */
+	background: rgb(107,8,137); /* Old browsers */
+	background: -moz-linear-gradient(-45deg, rgba(107,8,137,1) 0%, rgba(92,7,59,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, rgba(107,8,137,1) 0%,rgba(92,7,59,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, rgba(107,8,137,1) 0%,rgba(92,7,59,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b0889', endColorstr='#5c073b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	top:0px;
+	border-bottom: 1px solid rgb(222, 222, 222);
+	left:0px;
+	text-align: center;
+	font-size:16px;
+	z-index: 1000;
+}
+
+.titleRoot{
+
+font-size: 16px;
+
+min-width: 100px;
+
+max-width: 400px;
+
+width: calc(100% - 150px);
+
+font-weight: 200;
+
+padding: 5px 10px 5px 0;
+
+text-align: center;
+
+background-color: rgba(0, 0, 0, 0.04);
+
+border-left: 2px solid rgba(0, 0, 0, 0.08);
+
+color: rgb(236, 236, 236);
+
+display: block;
+
+padding: 0px 120px 0px 16px;
+
+/* width: 70%; */
+
+height: 58px;
+
+line-height: 58px;
+
+float: right;
+
+font-family: 'Raleway';
+}
+
+.titleRoot span {max-width: 100%;display: inline-block;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.titleRoot::before{
+    content: "";
+    vertical-align: middle;
+    display: inline-block;
+    top: 0px;
+    height: 58px;
+    margin-left: 20px;
+    width: 10px;
+    background: rgb(232, 232, 232);
+    z-index: 2;
+    position:absolute;
+    right: 90px;
+    transform-origin: bottom left;
+    -ms-transform: skew(-30deg, 0deg);
+    -webkit-transform: skew(-30deg, 0deg);
+    transform: skew(10deg, 0deg);
+}
+.titleRoot::after{
+    content: "\f24e";
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 36px;
+    line-height: 58px;
+    text-rendering: auto;
+    color: #1b8ce0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    vertical-align: middle;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    z-index: 1;
+    display: inline-block;
+    height: 58px;
+    margin-left: 20px;
+    width: 100px;
+    background: white no-repeat;
+    background-size: 50px;
+    background-position: 50%;
+}
+#tplRgt {
+	position: absolute;
+	/* width:235px; */
+	right:0px;
+	left: 0px;
+	height: 60px;
+	bottom: 0px;
+	overflow: hidden;
+	text-align: left;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6b0889+0,5c073b+100 */
+	background: rgb(107,8,137); /* Old browsers */
+	background: -moz-linear-gradient(-45deg, rgba(107,8,137,1) 0%, rgba(92,7,59,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, rgba(107,8,137,1) 0%,rgba(92,7,59,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, rgba(107,8,137,1) 0%,rgba(92,7,59,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b0889', endColorstr='#5c073b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	/* border-top: 1px solid rgb(222, 222, 222); */
+}
+#tplRgt .rgtCo{
+	/* position: absolute; */
+	/* width:235px; */
+	/* left:0px; */
+	/* top:20px; */
+	/* bottom:0px; */
+}
+#tplRgt .homeNav{
+	position: relative;
+	width:100%;
+	/* left:0px; */
+	/* bottom:5px; */
+	white-space: nowrap;
+	text-align: center;
+}
+#tplRgt .homeNav.isCoach {
+	bottom: 133px;
+}
+#tplRgt .homeNav > div{
+	display:inline-block;
+}
+.btnStart, .btnLast, .btnPlan, .btnReset{
+	display: inline-block;
+	line-height: 35px;
+	height: 35px;
+	vertical-align:middle;
+	font-size:1.2em;
+	text-decoration:none;
+	font-weight: 400;
+	padding: 0px 15px;
+	border-radius: 4px;
+	margin-right: 14px;
+	color: #F9F9F9;
+} 
+.btnStart {
+	background-color: #1c8ce0;
+	border-bottom: 2px solid #2369ac;
+}
+.btnLast{
+	
+	background-color: #1c8ce0;
+	border-bottom: 2px solid #2369ac;
+} 
+
+.btnPlan{
+	background-color: #1c8ce0;
+	border-bottom: 2px solid #2369ac;
+} 
+
+
+
+div#resetStorageData{
+	margin-top:10px;
+}
+
+.btnReset{
+	
+	background-color: #1c8ce0;
+	border-bottom: 2px solid #2369ac;
+} 
+.btnStart::before,
+.btnLast::before,
+.btnPlan::before,
+.btnReset::before {
+	display: inline-block;
+	vertical-align: middle;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: 20px;
+	margin-right:8px;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	content: "\f021";
+}
+
+
+.btnStart::before{
+	content: "\f04b";
+
+}
+.btnLast::before{
+	content: "\f0f6";
+}
+.btnPlan::before{
+	content: "\f278";
+}
+
+img[src="../res/fond_ecran.png"] {
+  display: none;
+}
+#tplMain{
+	position: absolute;
+	/* background-color: rgb(255, 255, 255); */
+	top: 62px;
+	bottom: 52px;
+	left: 0px;
+	right: 0px;
+	background: url("../../res/fond_ecran.png") no-repeat;
+	background-size: cover;
+}
+
+#tplCo {
+	position: absolute;
+	top:10px;
+	left:0px;
+	right:0px;
+	bottom:10px;
+}
+div.home{
+	/* height:100%; */
+	width: 100%;
+	max-width: 420px;
+	margin: 0 auto;
+	margin-top: 10vh;
+	background: rgba(255, 255, 255, 0.9);
+	text-align: center;
+	padding: 24px;
+	border-radius: 2px;
+}
+div.home_co{
+	text-align: left;
+}
+div.home_ti{
+	position: absolute;
+	width:100%;
+	height:2em;
+}
+div.home_co{
+	/* position: absolute; */
+	/* left:0px; */
+	/* right:0px; */
+	/* top:2em; */
+	/* bottom:0; */
+	/* overflow: auto; */
+	/* padding:10px; */
+}
+div.home_ft{
+	position: absolute;
+	width:100%;
+	height:120px;
+	bottom:0px;
+	overflow-x:auto;
+	overflow-y:hidden;
+}
+div.home_ft .part{
+	border-collapse:collapse;
+	border-spacing:0;
+	margin:0;
+	padding:0;
+	height:100%;
+	margin: 0 auto;
+}
+div.home_ft .part td{
+	padding:10px;
+}

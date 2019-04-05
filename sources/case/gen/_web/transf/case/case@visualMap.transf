@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/case/model/case.model"/>
+	<sm:axis code="visualMap"/>
+	<sm:navigation>
+		<sm:page template="subWin">
+			<sm:title>
+				<sm:fixedTitle value="￼;Map￼"/>
+			</sm:title>
+			<sm:mainZone format="xhtml">
+				<sm:Widget sc:refUri="/case/gen/_web/wdt/mgr/mapMgr.uiwidget"/>
+				<sm:WFreeBlock>
+					<div xmlns="http://www.w3.org/1999/xhtml" class="subFra mapFra">
+						<div class="subHead">
+							<sm:title>
+								<sm:fixedTitle value="￼;Map￼"/>
+							</sm:title>
+							<sm:Widget sc:refUri="/case/gen/_web/wdt/util/closeWin.uiwidget"/>
+						</div>
+						<div class="subBodyMap">
+							<sm:for codes="map">
+								<sm:Widget sc:refUri="/case/gen/_web/wdt/util/resizer/resizerInZoneInSubWin.uiwidget">
+									<sm:xhtmlContentZone key="zMap">
+										<sm:callSubModel/>
+									</sm:xhtmlContentZone>
+									<sm:xhtmlContentZone key="zHelp">
+										<sm:callSubModel axis="help"/>
+									</sm:xhtmlContentZone>
+								</sm:Widget>
+							</sm:for>
+						</div>
+					</div>
+				</sm:WFreeBlock>
+			</sm:mainZone>
+		</sm:page>
+	</sm:navigation>
+</sm:compositionXhtmlTransf>

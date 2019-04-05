@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:dataFormXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Re/refs/glosM.model"/>
+	<sm:content>
+		<sm:forField codes="def">
+			<sm:WBlock widgetClass="mDiv" tagName="div">
+				<sm:fieldValueOtherType/>
+			</sm:WBlock>
+		</sm:forField>
+	</sm:content>
+</sm:dataFormXhtmlTransf>

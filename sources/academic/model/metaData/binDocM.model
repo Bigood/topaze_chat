@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:dataFormPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="Propriétés des documents">
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="binDocM" itemExtension="xml"/>
+	<sm:structure>
+		<sm:field code="title" name="￼;Légende￼" occurrence="zeroOrOne" family="content">
+			<sm:help quickHelp="￼;Permet de saisir le titre du fichier.￼"/>
+			<sm:string/>
+		</sm:field>
+		<sm:subData code="info" name="Métadonnées communes" occurrence="zeroOrOne">
+			<sm:allowedDataModel sc:refUri="/academic/model/metaData/infoBin.model"/>
+		</sm:subData>
+		<sm:field code="weight" name="￼;Poids￼" occurrence="zeroOrOne">
+			<sm:help quickHelp="￼;Permet de saisir le poids du fichier, information importante pour le téléchargement.￼"/>
+			<sm:string/>
+		</sm:field>
+		<sm:subData code="lang" name="￼;Langue￼" occurrence="zeroOrOne">
+			<!--<sm:help xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" quickHelp="￼;Permet de préciser le code de la langue du fichier, notamment pour les lecteurs d'écran. Une liste de suggestions apparaît au fur et à mesure de la saisie. ￼"/>-->
+			<sm:allowedDataModel sc:refUri="/academic/model/metaData/langM.model"/>
+		</sm:subData>
+		<sm:field code="altStatic" name="￼;Alternative statique￼" occurrence="zeroOrOne">
+			<sm:help quickHelp="￼;Pour les supports non interactifs (papier)￼"/>
+			<sm:otherType sc:refUri="/academic/model/Re/altRes.model"/>
+		</sm:field>
+	</sm:structure>
+	<sm:storage>
+		<sm:fullTitleBuilder>
+			<sm:fieldValue refCode="title"/>
+		</sm:fullTitleBuilder>
+	</sm:storage>
+	<sm:authoring>
+		<sm:formEditor indentXml="true">
+			<sm:stringField refCode="title" defaultStyle="property" textStyle="color :#6286cc ;"/>
+			<sm:subData refCode="info" editMode="hideRootLevel" defaultStyle="property"/>
+			<sm:stringField refCode="weight" defaultStyle="property"/>
+			<sm:subData refCode="lang" editMode="hideRootLevel" defaultStyle="property"/>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:dataFormPrim>

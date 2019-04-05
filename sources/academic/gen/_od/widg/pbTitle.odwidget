@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openOdWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="WPbTitle">
+	<sm:content>
+		<sm:choose>
+			<sm:when xpath="computeStrAgent('odContentZone_zKey') or computeStrAgent('odContentZone_zValue')">
+				<sm:WParagraph style="pbTitle" display="ifNotNull">
+					<sm:WInline style="key">
+						<sm:callZone key="zKey"/>
+					</sm:WInline>
+					<sm:choose>
+						<sm:when xpath="computeStrAgent('odContentZone_zKey') and computeStrAgent('odContentZone_zValue')">
+							<sm:formattingMark>
+								<sm:tabulation/>
+							</sm:formattingMark>
+							<sm:WInline style="separator">
+								<sm:fixedString value=":"/>
+							</sm:WInline>
+							<sm:formattingMark>
+								<sm:tabulation/>
+							</sm:formattingMark>
+						</sm:when>
+					</sm:choose>
+					<sm:WInline style="value">
+						<sm:callZone key="zValue"/>
+					</sm:WInline>
+				</sm:WParagraph>
+			</sm:when>
+		</sm:choose>
+	</sm:content>
+</sm:openOdWidget>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget code="scCommentMgr" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1391710294185">Commun avec les comments du Print</comment></comment>-->
+	<sm:widgetPublishFiles sc:refUri="/academic/gen/_comments/widg/scCommentMgr.doss"/>
+	<sm:fillTemplateBuffers>
+		<sm:standardLibrary codeLib="PaLib"/>
+		<sm:standardLibrary codeLib="DynUiMgr"/>
+		<sm:linkScript path="scCommentMgr.js" pathFrom="localPublishFiles" sortKey="X"/>
+	</sm:fillTemplateBuffers>
+	<sm:content/>
+</sm:openUiWidget>

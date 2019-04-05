@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/math/odf/odf.model"/>
+	<sm:axis code="zoom"/>
+	<sm:content>
+		<sm:WLink widgetClass="sfile_odf_zoom_lnk sfile_lnk">
+			<sm:label>
+				<sm:title>
+					<sm:binaryTitle axis="zoom"/>
+				</sm:title>
+			</sm:label>
+			<sm:labelTitle>
+				<sm:title>
+					<sm:binaryTitle suffix="￼; (nouvelle fenêtre)￼" axis="zoom"/>
+				</sm:title>
+			</sm:labelTitle>
+			<sm:link target="newWindow" windowName="zoom">
+				<sm:behavior addLinkInHref="yes"/>
+				<sm:position>
+					<sm:centerScreen/>
+				</sm:position>
+				<sm:windowFeatures scrollbars="no"/>
+				<sm:WImage>
+					<sm:binaryUrl>
+						<sm:odTransform>
+							<sm:scaleFromStandardCharSize/>
+							<sm:sizeBounds maxWidthInPx="900" maxHeightInPx="700"/>
+							<sm:outputPNG/>
+						</sm:odTransform>
+					</sm:binaryUrl>
+					<sm:alt>
+						<sm:callBinaryMeta axis="alt"/>
+					</sm:alt>
+					<sm:declareSize/>
+				</sm:WImage>
+			</sm:link>
+		</sm:WLink>
+		<sm:callBinaryMeta axis="info"/>
+	</sm:content>
+</sm:binaryXhtmlTransf>

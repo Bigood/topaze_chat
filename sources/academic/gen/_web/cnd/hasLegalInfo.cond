@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeCond xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="hasLegalInfo" info="Retourne true si un appel de l'argument selon l'axis 'legal' retourne quelque-chose.">
+	<sm:condBsFragment>    &lt;source type="xsl-dynamique"&gt;
+      &lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:java="http://xml.apache.org/xslt/java" exclude-result-prefixes="sc sp" version="1.0"&gt;
+        &lt;xsl:output method="text"/&gt;
+        &lt;xsl:param name="vAgent"/&gt;
+        &lt;xsl:param name="vDialog"/&gt;
+        &lt;xsl:param name="vArguments"/&gt;
+
+        &lt;xsl:template match="*"&gt;
+          &lt;xsl:variable name="vLegal" select="computeStrAgent(concat('@', if($vArguments/@sc:refUri, getIdFromPath($vArguments/@sc:refUri), getIdNode($vArguments)), '_Alegal/xhtmlContent'))" /&gt;
+          &lt;xsl:variable name="vResult" select="string-length($vLegal)&amp;gt;0"/&gt;
+          &lt;xsl:value-of select="bool2Str($vResult)"/&gt;
+        &lt;/xsl:template&gt;
+      &lt;/xsl:stylesheet&gt;
+    &lt;/source&gt;
+</sm:condBsFragment>
+</sm:freeCond>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:dataFormPrim name="￼;Titre Balise Pédagogique￼" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:help quickHelp="￼;Utilisez des variables calculées￼"/>
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="personnageMeta" itemExtension="xml"/>
+	<sm:structure>
+		<sm:subData code="filters" name="￼;Filtres￼" occurrence="zeroOrOne">
+			<sm:allowedDataModel sc:refUri="/academic/model/_edt/filters/filter.model"/>
+		</sm:subData>
+		<sm:field code="prenom" name="￼;Prénom￼" occurrence="one" family="property">
+			<sm:help quickHelp="￼;Vous pouvez rentrer un prénom fixe, ou utiliser un indicateur calculé pour utiliser afficher un prénom en fonction du parcours de l'utilisateur.￼"/>
+			<sm:otherType sc:refUri="/academic/model/Dialogue/dialogueMetaTxt.model"/>
+		</sm:field>
+		<sm:field code="image" name="￼;Image￼" occurrence="one" family="property">
+			<sm:help quickHelp="￼;Utilisez un indicateur calculé pour utiliser afficher une image en fonction du parcours de l'utilisateur.￼"/>
+			<sm:otherType sc:refUri="/academic/model/Dialogue/dialogueMetaTxt.model"/>
+		</sm:field>
+	</sm:structure>
+	<sm:storage>
+		<sm:fullTitleBuilder>
+			<sm:fieldValue refCode="prenom"/>
+		</sm:fullTitleBuilder>
+		<sm:shortTitleBuilder returnFullTitleIfEmpty="no">
+			<sm:fieldValue refCode="image"/>
+		</sm:shortTitleBuilder>
+	</sm:storage>
+	<sm:authoring>
+		<sm:formEditor indentXml="true">
+			<sm:otherTypeField refCode="prenom" defaultStyle="property"/>
+			<sm:otherTypeField refCode="image" defaultStyle="property"/>
+			<sm:subData refCode="filters" editMode="hideRootLevel" defaultStyle="property" tagStyle="font-size:0.6em; margin: 0px; padding:0px;color:#8f8f8f;"/>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:dataFormPrim>

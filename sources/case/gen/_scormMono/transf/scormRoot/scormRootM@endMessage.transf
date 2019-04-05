@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:dataFormXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/case/model/scormRootM.model"/>
+	<sm:axis code="endMessage"/>
+	<sm:content>
+		<sm:choose>
+			<sm:when codes="endMessage">
+				<sm:forField codes="endMessage">
+					<sm:fieldValueString/>
+				</sm:forField>
+			</sm:when>
+			<sm:otherwise>
+				<sm:WText value="￼;Terminer et enregistrer votre parcours￼"/>
+			</sm:otherwise>
+		</sm:choose>
+	</sm:content>
+</sm:dataFormXhtmlTransf>

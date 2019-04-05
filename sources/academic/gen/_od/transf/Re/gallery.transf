@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionOdtTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0">
+	<sm:model sc:refUri="/academic/model/Re/gallery.model"/>
+	<sm:content>
+		<sm:WSection style="gallerySec">
+			<sm:label/>
+			<sm:callModel>
+				<sm:current axis="res"/>
+			</sm:callModel>
+		</sm:WSection>
+	</sm:content>
+</sm:compositionOdtTransf>

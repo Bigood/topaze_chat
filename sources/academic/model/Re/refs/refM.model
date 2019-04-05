@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:dataFormPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="￼;Entrée de référence￼">
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="refM" itemExtension="xml"/>
+	<sm:structure>
+		<sm:field code="ref" name="￼;Référence￼" occurrence="one">
+			<sm:help quickHelp="￼;Saisir une référence￼"/>
+			<sm:string/>
+		</sm:field>
+		<sm:field code="desc" name="￼;Description￼" occurrence="one">
+			<sm:help quickHelp="￼;Renseigner le descriptif￼"/>
+			<sm:otherType sc:refUri="/academic/model/Re/sTxt.model"/>
+		</sm:field>
+	</sm:structure>
+	<sm:storage>
+		<sm:fullTitleBuilder>
+			<sm:fieldValue refCode="ref"/>
+		</sm:fullTitleBuilder>
+	</sm:storage>
+	<sm:authoring>
+		<sm:formEditor indentXml="true">
+			<sm:stringField refCode="ref" defaultStyle="property" tagStyle="color :gray" textStyle="color :#c236e3 ;"/>
+			<sm:otherTypeField refCode="desc" defaultStyle="property" tagStyle="color :gray"/>
+		</sm:formEditor>
+		
+	</sm:authoring>
+</sm:dataFormPrim>

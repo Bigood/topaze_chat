@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:dataFormPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="￼;Alternative (accessibilité)￼">
+	<!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1411466900833">A SUPPRIMER</comment></comment>-->
+	<sm:help quickHelp="￼;Permet de saisir les informations nécessaires pour l'accessibilité de la ressource.￼"/>
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="altAnimM" itemExtension="xml"/>
+	<sm:structure>
+		<sm:group code="subTitles" name="￼;Sous-titrage￼" occurrence="zeroOrMore">
+			<sm:help quickHelp="￼;Permet d'associer à la vidéo un fichier de sous-titres indépendant (fichier .srt ou .webvtt) ou une vidéo avec incrustation de sous-titres.￼"/>
+			<sm:field code="lang" name="￼;Langue - Type￼" occurrence="one">
+				<sm:help quickHelp="￼;Permet de préciser le code de la langue du sous-titrage ou le type sous-titrage sourds et malentendants￼"/>
+				<sm:string/>
+			</sm:field>
+			<sm:field code="subTitle" name="￼;Fichier / vidéo de sous-titrage￼" occurrence="one">
+				<sm:help quickHelp="￼;Permet de lier le fichier de sous-titrage à associer.￼"/>
+				<sm:refItem>
+					<sm:allowedModel sc:refUri="/binaries/mp4/mp4.model"/>
+					<sm:allowedModel sc:refUri="/binaries/webm/webm.model"/>
+					<sm:allowedModel sc:refUri="/binaries/srt/srt.model"/>
+					<sm:allowedModel sc:refUri="/binaries/vtt/vtt.model"/>
+				</sm:refItem>
+			</sm:field>
+		</sm:group>
+		<sm:field code="audioDesc" name="￼;Audiodescription￼" occurrence="zeroOrOne">
+			<sm:help quickHelp="￼;Permet d'associer à la vidéo un fichier d'audiodescription (commentaires descriptifs intercalés avec la bande son de la vidéo).￼"/>
+			<sm:refItem>
+				<sm:allowedModel sc:refUri="/binaries/mp4/mp4.model"/>
+				<sm:allowedModel sc:refUri="/binaries/webm/webm.model"/>
+				<sm:allowedModel sc:refUri="/binaries/mp3/mp3.model"/>
+				<sm:allowedModel sc:refUri="/binaries/oga/oga.model"/>
+			</sm:refItem>
+		</sm:field>
+		<sm:field code="transcript" name="￼;Transcription￼" occurrence="zeroOrOne">
+			<sm:help quickHelp="￼;Permet de saisir une description des éléments nécessaires à la compréhension de la ressource afin de permettre à tous les utilisateurs d'accéder à l'information.￼"/>
+			<sm:otherType sc:refUri="/academic/model/metaData/transcript.model"/>
+		</sm:field>
+		<sm:field code="altVideo" name="￼;Alternative vidéo (LSF, LPC)￼" occurrence="zeroOrOne">
+			<sm:help quickHelp="￼;Permet de proposer une vidéo en LSF [Langue des Signes Française] ou LPC [Langage Parlé Complété] en alternative au fichier audio.￼"/>
+			<sm:refItem>
+				<sm:allowedModel sc:refUri="/binaries/mp4/mp4.model"/>
+				<sm:allowedModel sc:refUri="/binaries/webm/webm.model"/>
+			</sm:refItem>
+		</sm:field>
+	</sm:structure>
+	<sm:storage/>
+	<sm:authoring>
+		<sm:formEditor indentXml="true">
+			<sm:group refCode="subTitles" displayMode="openedByDefault" defaultStyle="property"/>
+			<sm:group refCode="altSubTitles" displayMode="openedByDefault" defaultStyle="property"/>
+			<sm:stringField refCode="subTitle" defaultStyle="property"/>
+			<sm:stringField refCode="audioDesc" defaultStyle="property"/>
+			<sm:otherTypeField refCode="transcript" displayMode="openedByDefault" defaultStyle="property"/>
+			<sm:refItemField refCode="altVideo" defaultStyle="property"/>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:dataFormPrim>

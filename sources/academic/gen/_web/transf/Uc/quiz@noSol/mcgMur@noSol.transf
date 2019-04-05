@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?><sma:assmntUnitGmcqDhtmlTransf xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns="http://www.w3.org/1999/xhtml">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/mcgMur.model"/>
+	<sm:axis code="noSol"/>
+	<sm:scenario>
+		<sm:sequence code="play">
+			<sm:initBody>
+				<sm:choiceInteraction mode="enabled"/>
+				<sm:solutionDisplay mode="hidden"/>
+				<sm:elementDisplay refId="score" mode="invisible"/>
+			</sm:initBody>
+			<sm:loadData>
+				<sm:responseSessionKey>
+					<sm:fixedKey value=""/>
+				</sm:responseSessionKey>
+			</sm:loadData>
+			<sm:saveData>
+				<sm:responseSessionKey>
+					<sm:fixedKey value=""/>
+				</sm:responseSessionKey>
+				<sm:scoreSessionKey>
+					<sm:fixedKey value=""/>
+				</sm:scoreSessionKey>
+			</sm:saveData>
+			<sm:scoreComputing>
+				<sm:forBooleanScoring scoreIfRight="1" scoreIfWrong="0"/>
+			</sm:scoreComputing>
+		</sm:sequence>
+	</sm:scenario>
+	<sm:publicFunctions>
+		<sm:function fctName="play">
+			<sm:goToSequence refCode="play"/>
+		</sm:function>
+		<sm:function fctName="reset">
+			<sm:resetSession response="yes" score="yes">
+				<sm:sessionKey>
+					<sm:fixedKey value=""/>
+				</sm:sessionKey>
+			</sm:resetSession>
+			<sm:goToSequence refCode="play"/>
+		</sm:function>
+		<sm:function fctName="displaySol">
+			<sm:solutionDisplay mode="hidden"/>
+		</sm:function>
+		<sm:function fctName="cleanSol">
+			<sm:solutionDisplay mode="hidden"/>
+		</sm:function>
+	</sm:publicFunctions>
+	<sm:assmntBody>
+		<div class="bkSolResOut">
+			<div class="bkSolResFra1">
+				<div class="bkSolResFra2">
+					<div class="bkSolResFra3">
+						<div class="bkSolResCo">
+							<div class="btnCorrection">
+								<sm:WToggleButton widgetClass="btnQuiz">
+									<sm:buttonBody>
+										<span class="btnQuizCaption">￼;Correction￼</span>
+									</sm:buttonBody>
+									<sm:buttonTitle>
+										<sm:fixedString value="￼;Afficher le score￼"/>
+									</sm:buttonTitle>
+									<sm:buttonActionOn>
+										<sm:elementDisplay refId="score" mode="visible"/>
+										<sm:solutionDisplay mode="hidden"/>
+									</sm:buttonActionOn>
+									<sm:buttonActionOff>
+										<sm:elementDisplay refId="score" mode="invisible"/>
+										<sm:solutionDisplay mode="hidden"/>
+									</sm:buttonActionOff>
+								</sm:WToggleButton>
+							</div>
+							<div class="btnReset">
+								<sm:WButton widgetClass="btnQuiz">
+									<sm:buttonBody>
+										<span class="btnQuizCaption">￼;Recommencer￼</span>
+									</sm:buttonBody>
+									<sm:buttonTitle>
+										<sm:fixedString value="￼;Effacer les réponses￼"/>
+									</sm:buttonTitle>
+									<sm:buttonAction>
+										<sm:resetSession response="yes" score="yes">
+											<sm:sessionKey>
+												<sm:fixedKey value=""/>
+											</sm:sessionKey>
+										</sm:resetSession>
+										<sm:goToSequence refCode="play"/>
+									</sm:buttonAction>
+								</sm:WButton>
+							</div>
+							<div class="scoreBox">
+								<sm:WScore sm:id="score" widgetClass="score">
+									<sm:scoreText>
+										<sm:scaleScore min="0" max="100" step="1">
+											<sm:display scoreMoreThan="99" valueFormat="hidden" suffix="￼;Bonne réponse￼" class="answBest"/>
+											<sm:display scoreMoreThan="49" scoreLessOrEqualThan="99" valueFormat="numeric" suffix="￼;% de bonnes réponses￼" class="answGood"/>
+											<sm:display scoreMoreThan="0" scoreLessOrEqualThan="49" valueFormat="numeric" suffix="￼;% de bonnes réponses￼" class="answBad"/>
+											<sm:display scoreLessOrEqualThan="0" valueFormat="hidden" suffix="￼;Mauvaise réponse ￼" class="answWorst"/>
+										</sm:scaleScore>
+									</sm:scoreText>
+								</sm:WScore>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="headerQ">
+			<div sm:id="question" class="question">
+				<sm:addSrcPath/>
+				<sm:callQuestionModel/>
+			</div>
+		</div>
+		<div sm:id="choiceList">
+			<sm:WChoiceMap widgetClass="choiceMap">
+				<sm:callBackgroundImageModel axis="nav"/>
+				<sm:choiceArea highlight="hover">
+					<sm:tooltip class="tooltip"/>
+				</sm:choiceArea>
+				<sm:choiceBody>
+					<div sm:id="choice" class="choice">
+						<div sm:id="label" class="label">
+							<sm:callLabelModel/>
+						</div>
+					</div>
+				</sm:choiceBody>
+			</sm:WChoiceMap>
+		</div>
+	</sm:assmntBody>
+</sma:assmntUnitGmcqDhtmlTransf>

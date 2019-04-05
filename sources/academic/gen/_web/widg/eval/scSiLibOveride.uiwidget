@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="scSiLibOveride" info="Ce widget surcharge getContentHeight à usage des subwin">
+	<sm:fillTemplateBuffers>
+		<sm:standardLibrary codeLib="SiLib"/>
+	</sm:fillTemplateBuffers>
+	<sm:content>
+		<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript"> scSiLib.getContentHeight = function(pContainer) {
+ var vCh = pContainer.lastChild;
+ var vH = 0;
+ while(vCh &amp;&amp; ( vCh.nodeType != 1 || ! (vH = vCh.offsetHeight) || vCh.style.position=="absolute") ) vCh = vCh.previousSibling;
+ if(vCh) {
+  return vCh.offsetTop + vH;
+ }
+ return Number.NaN;
+}</script>
+	</sm:content>
+</sm:openUiWidget>

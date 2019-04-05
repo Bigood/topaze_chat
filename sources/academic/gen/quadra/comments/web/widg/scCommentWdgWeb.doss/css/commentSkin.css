@@ -1,0 +1,447 @@
+.scCommentON div.tplCoFra{
+/* les inputs pour éditer et supprimer un commentaire provoquent un ascenseur horizontal sur l tplcofra */
+	overflow-x: hidden;
+}
+
+*:focus{
+	outline: 0
+}
+
+#onOffButton_mgrContainer,
+#onOffButton_mgrContainer:focus{
+	width: 33px;
+	height: 33px;
+	border-radius:50px;
+	display: inline-block;
+	border:0;
+	cursor: hand;
+	cursor: pointer;
+	color: transparent;
+	background-image: url(../icons/comments.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+	position: absolute;
+	top: 0;
+}
+
+.unActiveCommentButton{
+	background-color: #fc00a7;
+	left: 0;
+}
+
+.activeCommentButton{
+	background-color: #7B7B7B;
+	left: 22px;
+}
+
+#onOffButton_mgrContainer:hover{
+}
+
+.activationCommentDiv{
+	position: absolute;
+	top:7px;
+	left: 10px;
+	border-radius:50px;
+	box-shadow: inset 0px 0px 5px #9a9a9a;
+	width: 55px;
+	background-color: white;
+	height: 33px
+}
+
+.globalInfoBullet{
+	position: absolute;
+	bottom:-5px;
+	left: 45px;
+	border-radius: 16px;
+	background-color: white;
+	font-weight: bold;
+	font-size: 11px;
+	color: #FC00A7;
+	border:1px solid white;
+	text-align: center;
+	display: block;
+	padding: 2px;
+	box-shadow: 0px 0px 3px #9a9a9a;
+	z-index: 2;
+	cursor: help;
+}
+
+.localInfoBullet{
+	position: absolute;
+	top:-15px;
+	border-radius: 16px;
+	background-color: white;
+	font-weight: bold;
+	color:#FFD4F2;
+	border:1px solid white;
+	text-align: center;	
+	display: inline-block;
+	border:1px solid #FFD4F2;
+	-webkit-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+	padding: 2px;
+	cursor: help;
+}
+
+.globalInfoBulletDesc,
+.localInfoBulletDesc{
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    min-width: 200px;
+    padding: 5px;
+    position: absolute;
+    text-align: left;
+    opacity: 0;
+    left: 10px;
+    border:1px solid #FC00A7;
+    top: -20px;
+    visibility: hidden;
+    color: #FC00A7;
+    box-shadow: 0px 0px 5px #9a9a9a;
+	-webkit-transition: visibility 0.1s linear 0.5s, opacity 0.1s ease-in 0.2s, left 0.2s ease-in 0.2s;
+	transition: visibility 0.1s linear 0.5s, opacity 0.1s ease-in 0.2s, left 0.2s ease-in 0.2s;
+}
+
+.globalInfoBullet:hover .globalInfoBulletDesc,
+.localInfoBullet:hover .localInfoBulletDesc{
+    opacity: 1;
+    left: 30px;
+    visibility: visible;
+	-webkit-transition: visibility 0.1s linear, opacity 0.1s ease-out 0.1s, left 0.2s ease-out;
+	transition: visibility 0.1s linear, opacity 0.1s ease-out 0.1s, left 0.2s ease-out;
+}
+
+.scCommentON [data-origin].hover .localInfoBullet{
+	background-color: #FFFAFE;
+}
+
+.scCommentON [data-origin].hover .localInfoBullet:hover{
+	background-color: white;
+}
+
+.scCommentON [data-origin].hover > .localInfoBullet,
+.scCommentOFF .localInfoBullet:hover{
+	color:#FC00A7;
+	border:1px solid #FC00A7;
+}
+
+	
+.activeCommentButton{
+	background-position: top left;
+}
+
+.activeCommentButton:hover{
+	background-position: bottom left;
+}
+
+.unActiveCommentButton{
+	background-position: top right;
+}
+
+.unActiveCommentButton:hover{
+	background-position: bottom right;
+}
+
+.commentContainer input{
+	border:1px solid white;
+	height: 19px;
+	width: 19px;
+	color: transparent;
+	cursor: hand;
+	cursor: pointer;
+	-webkit-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+	padding: 0;
+	display: inline-block;
+	background-image: url(../icons/spriteButtons.png);
+}
+
+.comment input{
+	margin: 3px 3px 3px 0
+}
+
+.commentContainer input:hover{
+	border-color:gray;
+}
+
+.meta{
+	margin: 3px;
+	color: gray;
+	display: inline-block;
+	padding: 3px;
+}
+
+.editButton{
+	background-position:-100px top; 
+}
+
+.deleteButton{
+	background-position:left top; 
+}
+
+.validButton{
+	background-position:-120px top; 
+	float: right;
+}
+
+.cancelEditButton{
+	background-position:-20px top; 
+	float: right;
+}
+
+.cancelCreateButton{
+	background-position:left top; 
+	float: right;
+}
+
+.close{
+	background-position:-120px top; 
+}
+
+.open{
+	background-position:-100px top; 
+}
+
+.minusButton{
+	background-position:-60px top; 
+}
+	
+.maximButton{
+	background-position:-40px top; 
+}
+
+.unvalidated .threadValidation{
+	background-position:-120px top; 
+}
+
+.validated .threadValidation{
+	background-position:-140px top; 
+}
+
+.open input.minusButton,
+.open input.maxiButton,
+.open input.threadValidation,
+.open input.close,
+.open input.open,
+.open input.deleteThread{
+	display: block;
+}
+
+.threadValidation{
+ margin-bottom:5px !important;
+}
+
+.commentContainer .addButton{
+	background: url(../icons/response.png);
+	border-color: #FCF7B8;
+	border-width: 2px;
+	height: 35px;
+	width: 35px;
+	box-shadow: 0px 0px 3px #C4C4C4;
+	margin: 10px
+}
+
+.tools{
+	float: right;
+}
+
+*[data-origin]{
+	border-radius: 10px;
+	border:1px solid white;
+	-webkit-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+	padding: 3px;
+}
+
+.scCommentable.hover{
+	border-color: #fc00a7;
+	cursor: url(../icons/comment.cur),url(icons/comment.cur),default;
+	background-color: #FFFAFE;
+}
+
+.scCommentable.hover .comment{
+	cursor: auto;
+}
+
+.comment.toDelete{
+	opacity: 0;
+	height: 0;
+	-webkit-transition: height 0.3s ease-out;
+	transition: height 0.3s ease-out;
+}
+
+.commentContainer .thread{
+				background:url(../icons/bkgThread.png) top left no-repeat;
+				background-size: 4px 100%;
+    margin-left: 30px;
+    padding: 0 5px 20px 10px;
+    position: relative;
+    min-height: 80px
+}
+
+.threadTools{
+	background-color: #fff9a8;
+	display: inline-block;
+	padding: 5px;
+	vertical-align: top;
+	margin-left:-35px;
+	position: absolute;
+}
+
+.bottom{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.comment{
+	display: block;
+/* max-width: 40%;*/
+	vertical-align: middle;
+	background: url(../icons/nextComment.png) left center no-repeat;
+	padding: 5px 7px 5px 20px;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	opacity: 1;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.comment.first{
+	padding-left: 7px;
+	background: none;
+}
+
+.comment.last{
+	display: inline-block;
+	width: calc(100% - 80px)
+}
+
+.commentInside{
+	background: #FFFABF; /* Old browsers */
+	background: -webkit-linear-gradient(top,  #FFFABF 0%, #ffffe0 100%);
+	background: linear-gradient(to bottom,  #FFFABF 0%, #ffffe0 100%);
+	box-shadow: 0px 0px 3px #C4C4C4;
+	position: relative;
+}
+
+.comment.first .commentInside{
+	background: #FFF57B; /* Old browsers */
+	background: -webkit-linear-gradient(top,  #FFF57B 0%, #FFFFA7 100%);
+	background: linear-gradient(to bottom,  #FFF57B 0%, #FFFFA7 100%);
+}
+
+.comment .content{
+	padding: 5px;
+	white-space: pre-wrap;
+}
+
+.edit.comment .content{
+	margin-top: -30px
+}
+
+.commentContainer{
+	overflow: visible;
+	-webkit-transition: opacity 1s ease-out;
+	transition: opacity 1s ease-out;
+	opacity: 0.65;
+	pointer-events:none;
+}
+
+.commentContainer *{
+	pointer-events:auto;
+}
+
+scCommentable.hover + .commentContainer,
+scCommentable.hover > .commentContainer,
+.commentContainer:hover{
+	opacity: 1;
+}
+
+.thread.closed .CommentResponseForm{
+	display: none;
+}
+
+.scCommentOFF .commentContainer{
+/*	height: 0 !important;
+	overflow: hidden;
+	opacity: 0*/
+	display: none;
+}
+
+.edit{
+	min-width: 300px
+}
+
+.editformArea{
+	height: 100px;
+	width: 100%;
+	resize:none;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.commentContainer .thread.closed,
+.commentContainer .thread.collapsed{
+	min-height: 0
+}
+
+.collapsed .comment{
+	display: none;
+}
+
+.scCommented{
+	margin-bottom: 5px;
+	position: relative;
+	margin-top: 25px !important;
+}
+
+.closed.open .comment{
+	display: inline-block;
+	width: auto;
+	background-image: url(../icons/nextCommentDisabled.png)
+}
+
+.closed.open .comment.first{
+	background-image: none;
+}
+
+.closed.open .comment .content{
+	max-height: 100px;
+	overflow:auto;
+}
+
+.closed.open .comment.first .commentInside {
+    background: linear-gradient(to bottom, #E8E8E8 0%, #FAFAFA 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.closed.open .comment .commentInside {
+    background: linear-gradient(to bottom, #F5F5F5 0%, #FFFFFF 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.commentContainer .thread.closed.open {
+    background-image: url("../icons/bkgThreadDisabled.png");
+}
+
+.closed .threadTools {
+    background-color: #F4F4F4;
+}
+
+/* SMALL SCREEN MODE */
+.tplFra_small .activationCommentDiv{
+	top:2px;
+	height:26px;
+	width: 48px;
+}
+.tplFra_small #onOffButton_mgrContainer, 
+.tplFra_small #onOffButton_mgrContainer:focus{
+	height:26px;
+	width:26px;
+	background-image: url(../icons/commentsSmall.png);
+}
+.tplFra_small .globalInfoBullet	{
+	
+}

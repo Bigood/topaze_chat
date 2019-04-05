@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:dataFormOdTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/metaData/binDocM.model"/>
+	<sm:axis code="alt"/>
+	<sm:content>
+		<sm:forField codes="altStatic">
+			<sm:fieldValueOtherType/>
+		</sm:forField>
+	</sm:content>
+</sm:dataFormOdTransf>

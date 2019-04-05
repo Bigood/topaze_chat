@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Re/res.model"/>
+	<sm:content format="xhtml">
+		<sm:inDataOrder>
+			<sm:for codes="txt txtRes">
+				<sm:callSubModel/>
+			</sm:for>
+			<sm:for codes="listing">
+				<sm:WSimpleBlock widgetClass="listingBk" class="ssCutable">
+					<sm:callSubModel/>
+				</sm:WSimpleBlock>
+			</sm:for>
+			<sm:for codes="bkquote">
+				<sm:WSimpleBlock widgetClass="quoteBk" class="ssCutable" tagName="blockquote">
+					<sm:callSubModel/>
+				</sm:WSimpleBlock>
+			</sm:for>
+			<sm:for codes="res">
+				<sm:callPartMeta/>
+				<sm:choose>
+					<sm:when xpath="op:resInfoM/sp:pubMode='zoom'">
+						<sm:WSimpleBlock widgetClass="zoomBk" class="ssCutable">
+							<sm:WLink widgetClass="ssZmLnk">
+								<sm:label>
+									<sm:title>
+										<sm:subModelTitle/>
+										<sm:fixedTitle value="￼;Ressource...￼"/>
+									</sm:title>
+								</sm:label>
+								<sm:labelTitle>
+									<sm:title>
+										<sm:subModelTitle suffix="￼; (nouvelle fenêtre)￼"/>
+										<sm:fixedTitle value="￼;(nouvelle fenêtre)￼"/>
+									</sm:title>
+								</sm:labelTitle>
+								<sm:link>
+									<sm:callSubModel axis="ref" navCtx="newRoot"/>
+								</sm:link>
+							</sm:WLink>
+						</sm:WSimpleBlock>
+					</sm:when>
+					<sm:otherwise>
+						<sm:callSubModel/>
+					</sm:otherwise>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="int">
+				<sm:callPartMeta/>
+				<sm:WSimpleBlock widgetClass="lnkBk" class="ssCutable">
+					<sm:callSubModel axis="lnk"/>
+				</sm:WSimpleBlock>
+			</sm:for>
+			<sm:for codes="filtered">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultShort/include.cond">
+						<sm:callSubModel/>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+		</sm:inDataOrder>
+	</sm:content>
+</sm:compositionXhtmlTransf>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="Transcription">
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="transcript" itemExtension="xml"/>
+	<sm:structure>
+		<sm:part code="transcriptTxt" name="Transcription textuelle" internalized="userDependent" usage="optional">
+			<sm:allowedModel sc:refUri="/binaries/pdf/pdf.model"/>
+			<sm:allowedModel sc:refUri="/binaries/rtf/rtf.model"/>
+			<sm:allowedModel sc:refUri="/academic/model/Re/tTxt.model"/>
+		</sm:part>
+	</sm:structure>
+	<sm:authoring>
+		<sm:formEditor indentXml="false">
+			<sm:part refCode="transcriptTxt">
+				<sm:hiddenWidget hideChildren="no"/>
+			</sm:part>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:compositionPrim>

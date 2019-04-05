@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeXslWebSiteTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" info="calculate index value">
+	<sm:model sc:refUri="/case/model/index/autoVar.model"/>
+	<sm:axis code="calc"/>
+	<sm:content>
+		<sm:xsl sc:refUri="/case/gen/_web/transf/index/autoVar/autoVar@calc.xsl"/>
+		<sm:callModel sc:refUri="/case/model/index/autoVarJs.model" axis="calc" codeView="xhtmlContent"/>
+	</sm:content>
+</sm:freeXslWebSiteTransf>

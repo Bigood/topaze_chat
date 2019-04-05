@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Re/gallery.model"/>
+	<sm:axis code="ref"/>
+	<sm:navigation>
+		<sm:page template="ref">
+			<sm:title>
+				<sm:compositionTitle/>
+				<sm:fixedTitle value="￼;Zoom￼"/>
+			</sm:title>
+			<sm:mainZone format="xhtml">
+				<sm:callModel>
+					<sm:current/>
+				</sm:callModel>
+			</sm:mainZone>
+		</sm:page>
+	</sm:navigation>
+</sm:compositionXhtmlTransf>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Texte OpenDocument￼" category="￼;Ressources￼">
+	<sm:help quickHelp="￼;Ressource au format OpenDocument Text.￼"/>
+	<sm:identification extensions="odt" mimeTypes="application/vnd.oasis.opendocument.text"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/academic/model/metaData/binDocM.model" usage="optional"/>
+	</sm:structure>
+	<sm:authoring>
+		<sm:preview>
+			<sm:htmlViewer>
+				<sm:fromBinary>
+					<sm:freeTransform code="odtFull2pdf"/>
+				</sm:fromBinary>
+			</sm:htmlViewer>
+		</sm:preview>
+		<sm:icon sc:refUri="/binaries/odt/_res/odt.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;res￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:emptyFile sc:refUri="/binaries/odt/_res/empty.odt"/>
+	</sm:authoring>
+</sm:binaryPrim>

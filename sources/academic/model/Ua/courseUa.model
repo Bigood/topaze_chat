@@ -1,0 +1,1065 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="￼;Activité d'apprentissage￼">
+	<sm:help quickHelp="￼;Regroupe des contenus expositifs et des exercices￼"/>
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="courseUa" itemExtension="xml"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/academic/model/metaData/uM.model" usage="required"/>
+		<sm:part code="obj" name="￼;Objectifs de l'activité￼" family="content" internalized="always" usage="optional">
+			<sm:allowedModel sc:refUri="/academic/model/Re/sTxt.model"/>
+		</sm:part>
+		<sm:part code="intro" name="￼;Introduction￼" family="sub-level" internalized="always" usage="optional">
+			<sm:meta sc:refUri="/academic/model/_edt/filters/filter.model" usage="optional"/>
+			<sm:allowedModel sc:refUri="/academic/model/Re/res.model"/>
+		</sm:part>
+		<sm:set usage="required">
+			<sm:part code="courseUc" name="￼;Grain de contenu￼" family="sub-level" internalized="userDependent">
+				<sm:meta sc:refUri="/academic/model/_edt/filters/filter.model" usage="optional"/>
+				<sm:allowedModel sc:refUri="/academic/model/Uc/expUc.model"/>
+			</sm:part>
+			<sm:part code="practUc" name="￼;Exercice rédactionnel￼" family="sub-level" internalized="userDependent">
+				<sm:help quickHelp="￼;Contient un exercice rédactionnel (type travaux dirigés)￼"/>
+				<sm:meta sc:refUri="/academic/model/_edt/filters/filter.model" usage="optional"/>
+				<sm:allowedModel sc:refUri="/academic/model/Uc/practUc.model"/>
+			</sm:part>
+			<sm:part code="trainUcMcqSur" name="￼;Exercice : QCU￼" family="sub-level" internalized="userDependent">
+				<sm:help quickHelp="￼;Contient un exercice auto-évalué de type QCU￼"/>
+				<sm:meta sc:refUri="/academic/model/_edt/filters/filter.model" usage="optional"/>
+				<sm:allowedModel sc:refUri="/academic/model/Uc/quiz/mcqSur.model"/>
+			</sm:part>
+			<sm:part code="trainUcMcgSur" name="￼;Exercice : QCU graphique￼" family="sub-level" internalized="userDependent">
+				<sm:help quickHelp="￼;Contient un exercice auto-évalué de type QCU graphique￼"/>
+				<sm:meta sc:refUri="/academic/model/_edt/filters/filter.model" usage="optional"/>
+				<sm:allowedModel sc:refUri="/academic/model/Uc/quiz/mcgSur.model"/>
+			</sm:part>
+			<sm:part code="trainUcMcqMur" name="￼;Exercice : QCM￼" family="sub-level" internalized="userDependent">
+				<sm:help quickHelp="￼;Contient un exercice auto-évalué de type de type QCM￼"/>
+				<sm:meta sc:refUri="/academic/model/_edt/filters/filter.model" usage="optional"/>
+				<sm:allowedModel sc:refUri="/academic/model/Uc/quiz/mcqMur.model"/>
+			</sm:part>
+			<sm:part code="trainUcMcgMur" name="￼;Exercice : QCM graphique￼" family="sub-level" internalized="userDependent">
+				<sm:help quickHelp="￼;Contient un exercice auto-évalué de type de type QCM graphique￼"/>
+				<sm:meta sc:refUri="/academic/model/_edt/filters/filter.model" usage="optional"/>
+				<sm:allowedModel sc:refUri="/academic/model/Uc/quiz/mcgMur.model"/>
+			</sm:part>
+			<sm:part code="trainUcMatch" name="￼;Exercice : catégorisation￼" family="sub-level" internalized="userDependent">
+				<sm:help quickHelp="￼;Contient un exercice auto-évalué de type catégorisation￼"/>
+				<sm:meta sc:refUri="/academic/model/_edt/filters/filter.model" usage="optional"/>
+				<sm:allowedModel sc:refUri="/academic/model/Uc/quiz/match.model"/>
+			</sm:part>
+			<sm:part code="trainUcOrdWord" name="￼;Exercice : ordonnancement￼" family="sub-level" internalized="userDependent">
+				<sm:help quickHelp="￼;Contient un exercice auto-évalué de type ordonnancement￼"/>
+				<sm:meta sc:refUri="/academic/model/_edt/filters/filter.model" usage="optional"/>
+				<sm:allowedModel sc:refUri="/academic/model/Uc/quiz/ordWord.model"/>
+			</sm:part>
+			<sm:part code="trainUcCloze" name="￼;Exercice : texte à trous￼" family="sub-level" internalized="userDependent">
+				<sm:help quickHelp="￼;Contient un exercice auto-évalué de type texte à trous￼"/>
+				<sm:meta sc:refUri="/academic/model/_edt/filters/filter.model" usage="optional"/>
+				<sm:allowedModel sc:refUri="/academic/model/Uc/quiz/cloze.model"/>
+			</sm:part>
+			<sm:part code="trainUcField" name="￼;Exercice : question à réponse courte￼" family="sub-level" internalized="userDependent">
+				<sm:help quickHelp="￼;Contient un exercice auto-évalué de type question à réponse courte￼"/>
+				<sm:meta sc:refUri="/academic/model/_edt/filters/filter.model" usage="optional"/>
+				<sm:allowedModel sc:refUri="/academic/model/Uc/quiz/field.model"/>
+			</sm:part>
+			<sm:part code="trainUcNumerical" name="￼;Exercice : question à réponse numérique￼" family="sub-level" internalized="userDependent">
+				<sm:help quickHelp="￼;Contient un exercice auto-évalué de type question à réponse numérique￼"/>
+				<sm:meta sc:refUri="/academic/model/_edt/filters/filter.model" usage="optional"/>
+				<sm:allowedModel sc:refUri="/academic/model/Uc/quiz/numerical.model"/>
+			</sm:part>
+			<sm:part code="trainUcCoQuiz" name="￼;Liste d'exercices￼" family="sub-level" internalized="userDependent">
+				<sm:help quickHelp="￼;Contient une liste d'exercice￼"/>
+				<sm:meta sc:refUri="/academic/model/_edt/filters/filter.model" usage="optional"/>
+				<sm:allowedModel sc:refUri="/academic/model/Uc/quiz/coQuiz.model"/>
+			</sm:part>
+		</sm:set>
+		<sm:part code="conclu" name="￼;Conclusion￼" family="sub-level" internalized="always" usage="optional">
+			<sm:meta sc:refUri="/academic/model/_edt/filters/filter.model" usage="optional"/>
+			<sm:allowedModel sc:refUri="/academic/model/Re/res.model"/>
+		</sm:part>
+		<sm:set usage="optional">
+			<sm:part code="quest" name="￼;Question de synthèse￼" family="content" internalized="always">
+				<sm:meta sc:refUri="/academic/model/_edt/filters/filter.model" usage="optional"/>
+				<sm:allowedModel sc:refUri="/academic/model/Re/txt.model"/>
+			</sm:part>
+		</sm:set>
+		<sm:part code="genRef" name="￼;Références Générales￼" family="content" internalized="always" usage="optional">
+			<sm:allowedModel sc:refUri="/academic/model/Re/refs/genRef.model"/>
+		</sm:part>
+		<sm:constraint>
+			<sm:forbidSameItemTwice refCodes="courseUc practUc trainUcMcqSur trainUcMcqMur trainUcMatch trainUcOrdWord trainUcCloze trainUcField"/>
+		</sm:constraint>
+	</sm:structure>
+	<sm:authoring>
+		<sm:icon sc:refUri="/academic/model/_ico/courseUaSmall.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼?note=utilis%C3%A9%20dans%20un%20nom%20de%20fichier%20(sans%20accent%20ou%20caract%C3%A8res%20sp%C3%A9ciaux%20!);activiteapprentissage￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:formEditor indentXml="true">
+			<sm:composition>
+				<sm:standardWidget tagStyle="font-family:arial;font-size:1.8em; background-color:#4668ad; color:white; -moz-border-radius:5px; -moz-padding-start:4px; -moz-padding-end:4px">
+					<sm:iconTag sc:refUri="/academic/model/_ico/courseUa.png"/>
+				</sm:standardWidget>
+			</sm:composition>
+			<sm:part refCode="intro">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:10px; margin-bottom:10px; -moz-border-start-width:4px; -moz-padding-start:5px">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/introMedium.png"/>
+								<sm:name style="margin-left:5px; color:#4668ad; font-size:1.6em; font-family:arial"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/introMediumFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openBig.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="obj">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:10px; margin-bottom:10px; -moz-border-start-width:4px; -moz-padding-start:5px">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/objPedagoMedium.png"/>
+								<sm:name style="margin-left:5px; color:#4668ad; font-size:1.6em; font-family:arial"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/objPedagoMediumFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openBig.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="conclu">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:10px; margin-bottom:10px; -moz-border-start-width:4px; -moz-padding-start:5px">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/concluMedium.png"/>
+								<sm:name style="margin-left:5px; color:#4668ad; font-size:1.6em; font-family:arial"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/concluMediumFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openBig.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="courseUc" userDependentPref="externalized">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:10px; margin-bottom:10px; -moz-border-start-width:4px; -moz-padding-start:5px">
+							<sm:head style="-moz-border-radius:10px 0px 0px 10px; background-color:#e7e7e7">
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/expUcMedium.png"/>
+								<sm:name style="margin-left:5px; color:#4668ad; font-size:1.6em; font-family:arial"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/expUcMediumFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openBig.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+				<sm:callSubModelEditor key="internalise"/>
+			</sm:part>
+			<sm:part refCode="practUc" userDependentPref="externalized">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:10px; margin-bottom:10px; -moz-border-start-width:4px; -moz-padding-start:5px">
+							<sm:head style="-moz-border-radius:10px 0px 0px 10px; background-color:#e7e7e7">
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/practUcMedium.png"/>
+								<sm:name style="margin-left:5px; color:#4668ad; font-size:1.6em; font-family:arial"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/practUcMediumFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openBig.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+				<sm:callSubModelEditor key="internalise"/>
+			</sm:part>
+			<sm:part refCode="trainUcCloze">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:10px; margin-bottom:10px; -moz-border-start-width:4px; -moz-padding-start:5px">
+							<sm:head style="-moz-border-radius:10px 0px 0px 10px; background-color:#e7e7e7">
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/clozeMedium.png"/>
+								<sm:name style="margin-left:5px; color:#4668ad; font-size:1.6em; font-family:arial"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/clozeMediumFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openBig.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="trainUcMcqSur">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:10px; margin-bottom:10px; -moz-border-start-width:4px; -moz-padding-start:5px">
+							<sm:head style="-moz-border-radius:10px 0px 0px 10px; background-color:#e7e7e7">
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/mcqSurMedium.png"/>
+								<sm:name style="margin-left:5px; color:#4668ad; font-size:1.6em; font-family:arial"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/mcqSurMediumFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openBig.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="trainUcMcgSur">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:10px; margin-bottom:10px; -moz-border-start-width:4px; -moz-padding-start:5px">
+							<sm:head style="-moz-border-radius:10px 0px 0px 10px; background-color:#e7e7e7">
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/mcgSurMedium.png"/>
+								<sm:name style="margin-left:5px; color:#4668ad; font-size:1.6em; font-family:arial"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/mcgSurMediumFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openBig.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="trainUcMcqMur">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:10px; margin-bottom:10px; -moz-border-start-width:4px; -moz-padding-start:5px">
+							<sm:head style="-moz-border-radius:10px 0px 0px 10px; background-color:#e7e7e7">
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/mcqMurMedium.png"/>
+								<sm:name style="margin-left:5px; color:#4668ad; font-size:1.6em; font-family:arial"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/mcqMurMediumFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openBig.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="trainUcMcgMur">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:10px; margin-bottom:10px; -moz-border-start-width:4px; -moz-padding-start:5px">
+							<sm:head style="-moz-border-radius:10px 0px 0px 10px; background-color:#e7e7e7">
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/mcgMurMedium.png"/>
+								<sm:name style="margin-left:5px; color:#4668ad; font-size:1.6em; font-family:arial"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/mcgMurMediumFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openBig.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="trainUcMatch">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:10px; margin-bottom:10px; -moz-border-start-width:4px; -moz-padding-start:5px">
+							<sm:head style="-moz-border-radius:10px 0px 0px 10px; background-color:#e7e7e7">
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/matchMedium.png"/>
+								<sm:name style="margin-left:5px; color:#4668ad; font-size:1.6em; font-family:arial"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/matchMediumFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openBig.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="trainUcOrdWord">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:10px; margin-bottom:10px; -moz-border-start-width:4px; -moz-padding-start:5px">
+							<sm:head style="-moz-border-radius:10px 0px 0px 10px; background-color:#e7e7e7">
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/ordWordMedium.png"/>
+								<sm:name style="margin-left:5px; color:#4668ad; font-size:1.6em; font-family:arial"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/ordWordMediumFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openBig.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="trainUcField">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:10px; margin-bottom:10px; -moz-border-start-width:4px; -moz-padding-start:5px">
+							<sm:head style="-moz-border-radius:10px 0px 0px 10px; background-color:#e7e7e7">
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/fieldMedium.png"/>
+								<sm:name style="margin-left:5px; color:#4668ad; font-size:1.6em; font-family:arial"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/fieldMediumFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openBig.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="trainUcNumerical">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:10px; margin-bottom:10px; -moz-border-start-width:4px; -moz-padding-start:5px">
+							<sm:head style="-moz-border-radius:10px 0px 0px 10px; background-color:#e7e7e7">
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/numericalMedium.png"/>
+								<sm:name style="margin-left:5px; color:#4668ad; font-size:1.6em; font-family:arial"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/numericalMediumFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openBig.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="trainUcCoQuiz">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:10px; margin-bottom:10px; -moz-border-start-width:4px; -moz-padding-start:5px">
+							<sm:head style="-moz-border-radius:10px 0px 0px 10px; background-color:#e7e7e7">
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/coQuizMedium.png"/>
+								<sm:name style="margin-left:5px; color:#4668ad; font-size:1.6em; font-family:arial"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/coQuizMediumFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openBig.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+				<sm:callSubModelEditor key="internalise"/>
+			</sm:part>
+			<sm:part refCode="genRef">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:10px; margin-bottom:10px; -moz-border-start-width:4px; -moz-padding-start:5px">
+							<sm:head style="-moz-border-radius:10px; background-color:#f1d1f9">
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/refGenMedium.png"/>
+								<sm:name style="margin-left:5px; color:#a056b0; font-size:1.6em; font-family:arial"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/refGenMediumFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openBig.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="quest">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:10px; margin-bottom:10px; -moz-border-start-width:4px; -moz-padding-start:5px">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/questSynthMedium.png"/>
+								<sm:name style="margin-left:5px; color:#4668ad; font-size:1.6em; font-family:arial"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/questSynthMediumFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openBig.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+		</sm:formEditor>
+		<sm:formEditor key="internalise" indentXml="true">
+			<sm:part refCode="intro">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:5px; margin-bottom:5px; -moz-border-start-width:4px; -moz-padding-start:5px">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/introSmall.png"/>
+								<sm:name style="margin-left:5px; color:#4668ad;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/introSmallFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openSmall.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="obj">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:5px; margin-bottom:5px; -moz-border-start-width:4px; -moz-padding-start:5px">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/objPedagoSmall.png"/>
+								<sm:name style="margin-left:5px; color:#4668ad;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/objPedagoSmallFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openSmall.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="conclu">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:5px; margin-bottom:5px; -moz-border-start-width:4px; -moz-padding-start:5px">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/concluSmall.png"/>
+								<sm:name style="margin-left:5px; color:#4668ad;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/concluSmallFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openSmall.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="courseUc" userDependentPref="externalized">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:5px; margin-bottom:5px; -moz-border-start-width:4px; -moz-padding-start:5px">
+							<sm:head style="-moz-border-radius:10px 0px 0px 10px; background-color:#e7e7e7">
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/expUcSmall.png"/>
+								<sm:name style="margin-left:5px; color:#4668ad;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/expUcSmallFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openSmall.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+				<sm:callSubModelEditor key="internalise"/>
+			</sm:part>
+			<sm:part refCode="practUc" userDependentPref="externalized">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:5px; margin-bottom:5px; -moz-border-start-width:4px; -moz-padding-start:5px">
+							<sm:head style="-moz-border-radius:10px 0px 0px 10px; background-color:#e7e7e7">
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/practUcSmall.png"/>
+								<sm:name style="margin-left:5px; color:#4668ad;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/practUcSmallFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openSmall.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+				<sm:callSubModelEditor key="internalise"/>
+			</sm:part>
+			<sm:part refCode="trainUcMcqSur" userDependentPref="externalized">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:5px; margin-bottom:5px; -moz-border-start-width:4px; -moz-padding-start:5px">
+							<sm:head style="-moz-border-radius:10px 0px 0px 10px; background-color:#e7e7e7">
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/mcqSurSmall.png"/>
+								<sm:name style="margin-left:5px; color:#4668ad;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/mcqSurSmallFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openSmall.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="trainUcMcgSur" userDependentPref="externalized">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:5px; margin-bottom:5px; -moz-border-start-width:4px; -moz-padding-start:5px">
+							<sm:head style="-moz-border-radius:10px 0px 0px 10px; background-color:#e7e7e7">
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/mcgSurSmall.png"/>
+								<sm:name style="margin-left:5px; color:#4668ad;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/mcgSurSmallFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openSmall.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="trainUcMcqMur" userDependentPref="externalized">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:5px; margin-bottom:5px; -moz-border-start-width:4px; -moz-padding-start:5px">
+							<sm:head style="-moz-border-radius:10px 0px 0px 10px; background-color:#e7e7e7">
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/mcqMurSmall.png"/>
+								<sm:name style="margin-left:5px; color:#4668ad;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/mcqMurSmallFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openSmall.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="trainUcMcgMur" userDependentPref="externalized">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:5px; margin-bottom:5px; -moz-border-start-width:4px; -moz-padding-start:5px">
+							<sm:head style="-moz-border-radius:10px 0px 0px 10px; background-color:#e7e7e7">
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/mcgMurSmall.png"/>
+								<sm:name style="margin-left:5px; color:#4668ad;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/mcgMurSmallFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openSmall.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="trainUcMatch" userDependentPref="externalized">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:5px; margin-bottom:5px; -moz-border-start-width:4px; -moz-padding-start:5px">
+							<sm:head style="-moz-border-radius:10px 0px 0px 10px; background-color:#e7e7e7">
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/matchSmall.png"/>
+								<sm:name style="margin-left:5px; color:#4668ad;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/matchSmallFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openSmall.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="trainUcOrdWord" userDependentPref="externalized">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:5px; margin-bottom:5px; -moz-border-start-width:4px; -moz-padding-start:5px">
+							<sm:head style="-moz-border-radius:10px 0px 0px 10px; background-color:#e7e7e7">
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/ordWordSmall.png"/>
+								<sm:name style="margin-left:5px; color:#4668ad;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/ordWordSmallFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openSmall.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="trainUcCloze" userDependentPref="externalized">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:5px; margin-bottom:5px; -moz-border-start-width:4px; -moz-padding-start:5px">
+							<sm:head style="-moz-border-radius:10px 0px 0px 10px; background-color:#e7e7e7">
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/clozeSmall.png"/>
+								<sm:name style="margin-left:5px; color:#4668ad;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/clozeSmallFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openSmall.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="trainUcField" userDependentPref="externalized">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:5px; margin-bottom:5px; -moz-border-start-width:4px; -moz-padding-start:5px">
+							<sm:head style="-moz-border-radius:10px 0px 0px 10px; background-color:#e7e7e7">
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/fieldSmall.png"/>
+								<sm:name style="margin-left:5px; color:#4668ad;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/fieldSmallFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openSmall.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="trainUcNumerical" userDependentPref="externalized">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:5px; margin-bottom:5px; -moz-border-start-width:4px; -moz-padding-start:5px">
+							<sm:head style="-moz-border-radius:10px 0px 0px 10px; background-color:#e7e7e7">
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/numericalSmall.png"/>
+								<sm:name style="margin-left:5px; color:#4668ad;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/numericalSmallFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openSmall.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="trainUcCoQuiz" userDependentPref="externalized">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:10px; margin-bottom:10px; border-left-width:4px; padding-left:5px">
+							<sm:head style="-moz-border-radius:10px 0px 0px 10px; background-color:#e7e7e7">
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/coQuizSmall.png"/>
+								<sm:name style="margin-left:5px; color:#4668ad;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/coQuizSmallFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openSmall.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+				<sm:callSubModelEditor key="ssInternalise"/>
+			</sm:part>
+			<sm:part refCode="genRef">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:5px; margin-bottom:5px; -moz-border-start-width:4px; -moz-padding-start:5px">
+							<sm:head style="-moz-border-radius:10px; background-color:#f1d1f9">
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/refGenSmall.png"/>
+								<sm:name style="margin-left:5px; color:#a056b0;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/refGenSmallFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openSmall.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="quest">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:5px; margin-bottom:5px; -moz-border-start-width:4px; -moz-padding-start:5px">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/questSynthSmall.png"/>
+								<sm:name style="margin-left:5px; color:#4668ad;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/questSynthSmallFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openSmall.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:compositionPrim>

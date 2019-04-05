@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformer sc:refUri="/binaries/doc/doc_web@meta.transf"/>
+	<sm:transformer sc:refUri="/binaries/odp/odp_web@meta.transf"/>
+	<sm:transformer sc:refUri="/binaries/ods/ods_web@meta.transf"/>
+	<sm:transformer sc:refUri="/binaries/odt/odt_web@meta.transf"/>
+	<sm:transformer sc:refUri="/binaries/pdf/pdf_web@meta.transf"/>
+	<sm:transformer sc:refUri="/binaries/ppt/ppt_web@meta.transf"/>
+	<sm:transformer sc:refUri="/binaries/xls/xls_web@meta.transf"/>
+	<sm:transformer sc:refUri="/binaries/undef/undefBinary_web@meta.transf"/>
+</sm:transformerList>

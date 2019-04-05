@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:textOdTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0">
+	<sm:model sc:refUri="/academic/model/Re/tTxt.model"/>
+	<sm:content>
+		<sm:paraTag/>
+		<sm:listTags>
+			<sm:itemizedListTag/>
+			<sm:orderedListTag/>
+		</sm:listTags>
+		<sm:phraseTag role="url">
+			<sm:Widget sc:refUri="/academic/gen/_od/widg/urlM.odwidget"/>
+		</sm:phraseTag>
+		<sm:inlineStyleTag role="loc" globalStyle="txtLoc">
+			<sm:textWrapper suffix="￼; :￼"/>
+		</sm:inlineStyleTag>
+		<sm:inlineStyleTag role="desc" globalStyle="txtDesc">
+			<sm:textWrapper prefix="￼;[￼" suffix="￼;]￼"/>
+		</sm:inlineStyleTag>
+		<sm:inlineStyleTag role="emp" globalStyle="txtEmp"/>
+		<sm:inlineStyleTag role="spec" globalStyle="txtSpec"/>
+	</sm:content>
+</sm:textOdTransf>

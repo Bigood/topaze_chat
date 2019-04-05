@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/case/model/case.model"/>
+	<sm:axis code="toolBib"/>
+	<sm:content format="xhtml">
+		<sm:WLink widgetClass="btnTool btnBib">
+			<sm:label>
+				<sm:fixedString value="￼;Bibliographie￼"/>
+			</sm:label>
+			<sm:labelTitle>
+				<sm:fixedString value="￼;Afficher la bibliographie￼"/>
+			</sm:labelTitle>
+			<sm:link target="subWindow" windowName="subWin">
+				<sm:page template="subWin" step="1">
+					<sm:title>
+						<sm:fixedTitle value="￼;Bibliographie￼"/>
+					</sm:title>
+					<sm:mainZone format="xhtml">
+						<sm:WFreeBlock>
+							<div xmlns="http://www.w3.org/1999/xhtml" class="subFra bibFra">
+								<div class="subHead">
+									<sm:title>
+										<sm:fixedTitle value="￼;Bibliographie de l'étude de cas￼"/>
+									</sm:title>
+									<sm:Widget sc:refUri="/case/gen/_web/wdt/util/closeWin.uiwidget"/>
+								</div>
+								<div class="subBody">
+									<sm:Widget sc:refUri="/academic/gen/_web/widg/refs/bibMgr.uiwidget">
+										<sm:xhtmlContentZone key="co">
+											<sm:WHeadingBlock widgetClass="mainContent">
+												<sm:title>
+													<sm:fixedTitle value="￼;Bibliographie￼"/>
+												</sm:title>
+												<sm:Widget sc:refUri="/academic/gen/_web/widg/refs/bib_noref.uiwidget"/>
+											</sm:WHeadingBlock>
+										</sm:xhtmlContentZone>
+									</sm:Widget>
+									<sm:Widget sc:refUri="/academic/gen/_web/widg/refs/bibMgr.uiwidget">
+										<sm:xhtmlContentZone key="co">
+											<sm:WHeadingBlock widgetClass="mainContent">
+												<sm:title>
+													<sm:fixedTitle value="￼;Webographie￼"/>
+												</sm:title>
+												<sm:Widget sc:refUri="/academic/gen/_web/widg/refs/bib_web_noref.uiwidget"/>
+											</sm:WHeadingBlock>
+										</sm:xhtmlContentZone>
+									</sm:Widget>
+								</div>
+							</div>
+						</sm:WFreeBlock>
+					</sm:mainZone>
+				</sm:page>
+			</sm:link>
+		</sm:WLink>
+	</sm:content>
+</sm:compositionXhtmlTransf>

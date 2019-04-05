@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeOdWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="mathTexInline">
+	<sm:widgetBsFragment contentFormat="od">&lt;source type="xslOnSrc-dynamique"&gt;
+&lt;xsl:stylesheet version="1.0"
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+	xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0"
+	xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive"
+	xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0"
+	xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0"
+	xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0"
+	xmlns:sl="http://www.utc.fr/ics/scenari/v3/library"
+	xmlns:fo="http://www.w3.org/1999/XSL/Format"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"
+	xmlns:java="http://xml.apache.org/xslt/java"
+	xmlns:scodPp="scenari.eu:openDocumentExtension.postprocessing:1.0"
+	xmlns:scod="scenari.eu:openDocumentExtension:1.0"
+	xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0"
+	xmlns:sc="http://www.utc.fr/ics/scenari/v3/core"
+	exclude-result-prefixes="table sp office draw style svg sl fo xlink java scodPp scod text sc "&gt;
+	&lt;xsl:output omit-xml-declaration="yes" indent="no" method="xml" /&gt;
+	&lt;xsl:param name="vAgent" /&gt;
+	&lt;xsl:param name="vDialog" /&gt;
+	&lt;xsl:variable select="getIdNode(.)" name="idRootAgt" /&gt;
+	&lt;xsl:template match="*"&gt;
+		&lt;xsl:variable name="vInfosRes" select="computeStrAgent('viewResource/genResSize')"/&gt;
+        &lt;xsl:variable name="vWidth" select="substring-before(substring-after($vInfosRes, 'w='), ';')"/&gt;
+        &lt;xsl:variable name="vHeight" select="substring-before(substring-after($vInfosRes, 'h='), ';')"/&gt;
+        &lt;xsl:variable name="vExistRes" select="boolean($vInfosRes)"/&gt;
+        
+        &lt;xsl:comment&gt; ### IMAGE ### infores : &lt;xsl:copy-of select="$vInfosRes"/&gt;&lt;/xsl:comment&gt;
+        &lt;xsl:choose&gt;
+            &lt;xsl:when test="$vExistRes"&gt;
+                &lt;draw:frame 
+                    svg:height="{normalize-space($vHeight)}cm" 
+                    svg:width="{normalize-space($vWidth)}cm"
+                    svg:y="-{normalize-space(computeStrAgent('viewResource/Dep'))}cm"
+                    svg:x="0cm"
+                    draw:z-index="{getEntryBuffer('odStyleBlocks', '_globalsStyles_viewPicture')/text:p/draw:frame/@draw:z-index}"
+                    text:anchor-type="as-char"
+                    draw:style-name="{getEntryBuffer('odStyleBlocks', '_globalsStyles_viewPicture')/text:p/draw:frame/@draw:style-name}"
+                    draw:name="{local-name()}"&gt;
+                    &lt;draw:image&gt;
+                        &lt;xsl:attribute name="scod:src"&gt;
+                            &lt;xsl:value-of select="concat('dest:', computeStrAgent('viewResource/genResUri'))" /&gt;
+                        &lt;/xsl:attribute&gt;
+                        &lt;xsl:attribute name="xlink:type"&gt;simple&lt;/xsl:attribute&gt;
+                        &lt;xsl:attribute name="xlink:show"&gt;embed&lt;/xsl:attribute&gt;
+                        &lt;xsl:attribute name="xlink:actuate"&gt;onLoad&lt;/xsl:attribute&gt;
+                    &lt;/draw:image&gt;
+                &lt;/draw:frame&gt;
+            &lt;/xsl:when&gt;
+            &lt;xsl:otherwise&gt;
+                &lt;scodPp:error text="Ressource manquante" phase="generation" type="error"&gt;La ressource '&lt;xsl:value-of select="computeStrAgent('viewResource/outFileName')"/&gt;' est introuvable.&lt;/scodPp:error&gt;
+            &lt;/xsl:otherwise&gt;
+        &lt;/xsl:choose&gt;
+	&lt;/xsl:template&gt;
+	
+&lt;/xsl:stylesheet&gt;
+&lt;/source&gt;
+
+&lt;set code="viewResource"&gt;
+	&lt;!-- parametres --&gt;
+	&lt;valeur code="maxWidth"&gt;&lt;source&gt;10&lt;/source&gt;&lt;/valeur&gt;
+	&lt;valeur code="maxHeight"&gt;&lt;source&gt;6&lt;/source&gt;&lt;/valeur&gt;
+	&lt;valeur code="scale"&gt;&lt;source&gt;1.2&lt;/source&gt;&lt;/valeur&gt;
+
+	&lt;valeur code="outFileName"&gt;
+		&lt;source type="xpathOnSrc-dynamique"&gt;
+				concat('agt',alphaHash(codeAgent('//')),'_',java:com.scenari.s.fw.utils.HCharSeqUtil.stringWithoutAccent(java:getSrcName(srcFileAgent())))
+		&lt;/source&gt;
+	&lt;/valeur&gt;
+	&lt;valeur code="odResPath"&gt;
+		&lt;source type="xpathOnSrc-dynamique"&gt;
+			concat(computeStrAgent('/@@/pathBinaryInOdFile'), '/', extractFileNameFromPath(computeStrAgent('../genResUri')))
+		&lt;/source&gt;
+	&lt;/valeur&gt;
+	&lt;valeur code="genResUri"&gt;
+		&lt;source type="xpathOnSrc-dynamique"&gt;computeStrAgent('//', concat(
+					'resUri:src=src:', java:getSrcUri(srcFileAgent()),
+					';transform=latex2img&amp;amp;resolution=300&amp;amp;scale=',computeStrAgent('../scale'),
+				'&amp;amp;;mutabledst=', computeStrAgent('/@@/destPathBinaryTmp'), '/', computeStrAgent('../outFileName'),
+				''
+				))
+		&lt;/source&gt;
+	&lt;/valeur&gt;
+	&lt;valeur code="genResSize"&gt;
+		&lt;source type="xpathOnSrc-dynamique"&gt;
+				computeStrAgent('//', concat('get:src:',java:getSrcUri(srcFileAgent()), '?',
+				'transform=latex2img&amp;amp;resolution=300&amp;amp;scale=',computeStrAgent('../scale'),'&amp;amp;transform=img2img&amp;amp;sizeRules=Dim(Sc(ratio''1''srcDpi''300'')Bounds(unit''cm''maxW''',computeStrAgent('../maxWidth'),'''maxH''',computeStrAgent('../maxHeight'),'''))&amp;amp;outType=DIMS&amp;amp;outRules='
+				, "Str(pattern'w=!wcm;h=!hcm;r=!rot(y,n);')"))
+		&lt;/source&gt;
+	&lt;/valeur&gt;
+
+
+      &lt;valeur code="Dep"&gt;
+            &lt;source type="xpath-dynamique"&gt;( 1 - number(computeStrAgent('//', concat('get:src:', java:getSrcUri(srcFileAgent()), '?transform=latex2img&amp;amp;resolution=300&amp;amp;scale=',computeStrAgent('../scale'), '&amp;amp;outType=DIMS&amp;amp;outRules=Str(pattern''!dpc'')')))) * number(substring-before(substring-after(computeStrAgent('../genResSize'), 'h='), ';'))&lt;/source&gt;
+      &lt;/valeur&gt;
+
+
+&lt;/set&gt;
+</sm:widgetBsFragment>
+</sm:freeOdWidget>

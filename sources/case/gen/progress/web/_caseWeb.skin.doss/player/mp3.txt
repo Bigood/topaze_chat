@@ -1,0 +1,2 @@
+bgcolor1=5c595a
+bgcolor2=5c595a

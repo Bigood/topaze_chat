@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<structure xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" code="op_sTxt_Atxt" racine="//op:sTxt" codecomposant="concat(getIdNode(..), '_Atxt')" version="1.0">
+  <valeur code="xhtmlContent">
+  <source type="xsl-statique">
+<xsl:stylesheet xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" exclude-result-prefixes="sc sp op" version="1.0">
+  <xsl:output omit-xml-declaration="yes" indent="no" method="xml"/>
+  <xsl:param name="vComp"/>
+  <xsl:param name="vAgent"/>
+  <xsl:template match="*"><xsl:apply-templates mode="in"/></xsl:template>
+  <xsl:template mode="in" match="*"/>
+
+<xsl:template mode="in" match="sc:para"><xsl:apply-templates mode="in"/><xsl:text>
+</xsl:text></xsl:template>
+<xsl:template mode="in" match="sc:itemizedList"><xsl:apply-templates mode="in"/></xsl:template>
+<xsl:template mode="in" match="sc:itemizedList/sc:listItem"> * <xsl:apply-templates mode="in"/></xsl:template>
+<xsl:template mode="in" match="sc:orderedList"><xsl:apply-templates mode="in"/></xsl:template>
+<xsl:template mode="in" match="sc:orderedList/sc:listItem"><xsl:text> </xsl:text><xsl:number/>) <xsl:apply-templates mode="in"/></xsl:template>
+<xsl:template mode="in" match="sc:phrase[@role='url']"><xsl:apply-templates mode="in"/> (<xsl:value-of xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" select="op:urlM/sp:url"/>)</xsl:template>
+<xsl:template mode="in" match="sc:inlineStyle[@role='emp']">_<xsl:apply-templates mode="in"/>_</xsl:template>
+<xsl:template mode="in" match="sc:inlineStyle[@role='spec']">'<xsl:apply-templates mode="in"/>'</xsl:template>
+<xsl:template mode="in" match="sc:inlineStyle/text()"><xsl:copy-of select="."/></xsl:template>
+<xsl:template mode="in" match="sc:para/text()"><xsl:copy-of select="."/></xsl:template>
+<xsl:template mode="in" match="text()"/>
+</xsl:stylesheet>
+</source>
+</valeur>
+</structure>
+

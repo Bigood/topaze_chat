@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:imagePrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Image GIF￼" category="￼;Ressource￼">
+	<sm:help quickHelp="￼;Insérer une image GIF à une résolution de 96 dpi￼"/>
+	<sm:identification extensions="gif" mimeTypes="image/gif"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/academic/model/metaData/imgM.model" usage="optional"/>
+	</sm:structure>
+	<sm:authoring>
+		<sm:sizeBlock>
+			<sm:standardCharSize>
+				<sm:editor/>
+				<sm:defaultValue readSourceDpi="false" defaultDpi="96"/>
+			</sm:standardCharSize>
+			<sm:rotation>
+				<sm:editor/>
+				<sm:defaultValue allowed="false"/>
+			</sm:rotation>
+		</sm:sizeBlock>
+		<sm:icon sc:refUri="/binaries/gif/_res/gif.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;image￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+	</sm:authoring>
+</sm:imagePrim>

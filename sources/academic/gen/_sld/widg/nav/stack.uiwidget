@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:outlineUiWidget code="stack" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:scope>
+		<sm:stack/>
+	</sm:scope>
+	<sm:treeContent>
+		<span class="sw_stack" xmlns="http://www.w3.org/1999/xhtml">
+			<strong class="hidden">￼;Position : ￼</strong>
+			<sm:outline>
+				<sm:nodeArch>
+					<sm:constraints>
+						<sm:depth max="0"/>
+					</sm:constraints>
+					<sm:inline rootElt="none">
+						<sm:children listElt="inline" childElt="none"/>
+					</sm:inline>
+				</sm:nodeArch>
+				<sm:nodeArch>
+					<sm:inline rootElt="none">
+						<sm:children listElt="none" childElt="none">
+							<sm:listPrefix>
+								<span class="stackSep">
+									<span> > </span>
+								</span>
+							</sm:listPrefix>
+						</sm:children>
+					</sm:inline>
+				</sm:nodeArch>
+				<sm:classes>
+					<sm:selected prefix="stackSel_" onContainer="no" onRoot="no" onEntry="no" onList="no" onChildContainers="no"/>
+					<sm:ownerClasses onEntry="yes"/>
+				</sm:classes>
+			</sm:outline>
+		</span>
+	</sm:treeContent>
+</sm:outlineUiWidget>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionOdtTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" info="Ressource non gérée dans OD">
+	<sm:model sc:refUri="/academic/model/Re/simu.model"/>
+	<sm:content>
+		<sm:Widget sc:refUri="/binaries/_od/widgets/noIncludeRes.odwidget">
+			<sm:odContentZone key="zData">
+				<sm:fixedString value="￼;Cf. &quot;￼"/>
+				<sm:title>
+					<sm:compositionTitle/>
+				</sm:title>
+				<sm:fixedString value="￼;&quot;￼"/>
+			</sm:odContentZone>
+		</sm:Widget>
+	</sm:content>
+</sm:compositionOdtTransf>

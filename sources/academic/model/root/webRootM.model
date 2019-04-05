@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:dataFormPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="￼;Paramétrage du support Web￼">
+	<sm:help quickHelp="￼;Permet de paramétrer les éléments que l'on souhaite faire apparaître dans la publication Web￼"/>
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="webRootM" itemExtension="xml"/>
+	<sm:structure>
+		<sm:field code="version" name="￼;Version￼" occurrence="zeroOrOne" family="property">
+			<sm:string/>
+		</sm:field>
+		<sm:field code="date" name="￼;Date de publication du support￼" occurrence="zeroOrOne" family="property">
+			<sm:string/>
+		</sm:field>
+		<sm:field code="auth" name="￼;Auteurs et copyrights￼" occurrence="zeroOrOne">
+			<sm:otherType sc:refUri="/academic/model/Re/sTxt.model"/>
+		</sm:field>
+		<sm:field code="logo" name="￼;Illustration de la page d'accueil￼" occurrence="zeroOrOne" family="property">
+			<sm:refItem>
+				<sm:allowedModel sc:refUri="/binaries/gif/gif.model"/>
+				<sm:allowedModel sc:refUri="/binaries/jpg/jpeg.model"/>
+				<sm:allowedModel sc:refUri="/binaries/png/png.model"/>
+			</sm:refItem>
+		</sm:field>
+		<sm:field code="contentFilter" name="￼;Sélection du contenu￼" occurrence="zeroOrOne" family="property">
+			<sm:help quickHelp="￼;Sélection du contenu à inclure ou à exclure de la publication￼"/>
+			<sm:enum>
+				<sm:option key="standard" name="￼;Version &quot;standard&quot;￼"/>
+				<sm:option key="short" name="￼;Version &quot;courte&quot;￼"/>
+			</sm:enum>
+		</sm:field>
+		<sm:group code="settings" name="￼;Paramétrage du support￼" occurrence="one" family="property">
+			<sm:field code="quest" name="￼;Publier les questions de synthèse￼" occurrence="zeroOrOne" family="property">
+				<sm:enum>
+					<sm:option key="yes" name="￼;Oui￼"/>
+					<sm:option key="no" name="￼;Non￼"/>
+				</sm:enum>
+			</sm:field>
+			<sm:field code="glos" name="￼;Publier le glossaire￼" occurrence="zeroOrOne" family="property">
+				<sm:enum>
+					<sm:option key="yes" name="￼;Oui￼"/>
+					<sm:option key="no" name="￼;Non￼"/>
+				</sm:enum>
+			</sm:field>
+			<sm:field code="acr" name="￼;Publier la liste des abréviations￼" occurrence="zeroOrOne" family="property">
+				<sm:enum>
+					<sm:option key="yes" name="￼;Oui￼"/>
+					<sm:option key="no" name="￼;Non￼"/>
+				</sm:enum>
+			</sm:field>
+			<sm:field code="ref" name="￼;Publier l'index des références￼" occurrence="zeroOrOne" family="property">
+				<sm:enum>
+					<sm:option key="yes" name="￼;Oui￼"/>
+					<sm:option key="no" name="￼;Non￼"/>
+				</sm:enum>
+			</sm:field>
+			<sm:field code="bib" name="￼;Publier la bibliographie￼" occurrence="zeroOrOne" family="property">
+				<sm:enum>
+					<sm:option key="yes" name="￼;Oui￼"/>
+					<sm:option key="no" name="￼;Non￼"/>
+				</sm:enum>
+			</sm:field>
+			<sm:field code="index" name="￼;Publier l'index des mots clés￼" occurrence="zeroOrOne" family="property">
+				<sm:enum>
+					<sm:option key="yes" name="￼;Oui￼"/>
+					<sm:option key="no" name="￼;Non￼"/>
+				</sm:enum>
+			</sm:field>
+			<sm:field code="credits" name="￼;Publier les crédits des ressources￼" occurrence="zeroOrOne" family="property">
+				<sm:enum>
+					<sm:option key="yes" name="￼;Oui￼"/>
+					<sm:option key="no" name="￼;Non￼"/>
+				</sm:enum>
+			</sm:field>
+			<sm:field code="solPractUc" name="￼;Publier les solutions des exercices rédactionnels￼" occurrence="zeroOrOne" family="property">
+				<sm:enum>
+					<sm:option key="yes" name="￼;Oui￼"/>
+					<sm:option key="no" name="￼;Non￼"/>
+				</sm:enum>
+			</sm:field>
+			<sm:field code="solQuiz" name="￼;Publier les solutions des exercices￼" occurrence="zeroOrOne" family="property">
+				<sm:enum>
+					<sm:option key="yes" name="￼;Oui￼"/>
+					<sm:option key="no" name="￼;Non￼"/>
+				</sm:enum>
+			</sm:field>
+			<sm:field code="solAssmntUa" name="￼;Publier les solutions des activités d'auto-évaluation￼" occurrence="zeroOrOne" family="property">
+				<sm:enum>
+					<sm:option key="yes" name="￼;Oui￼"/>
+					<sm:option key="no" name="￼;Non￼"/>
+				</sm:enum>
+			</sm:field>
+			<!--<sm:field xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="solution" name="￼;Publier les solutions des exercices￼" occurrence="zeroOrOne" family="property">
+	<sm:help quickHelp="￼;Oui par défaut￼"/>
+	<sm:enum>
+		<sm:option key="yes" name="￼;Oui￼"/>
+		<sm:option key="no" name="￼;Non￼"/>
+	</sm:enum>
+</sm:field>-->
+			<!--<sm:field xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="autoEvalSol" name="￼;Publier les solutions des activités d'auto-évaluation￼" occurrence="zeroOrOne" family="property">
+	<sm:help quickHelp="￼;Oui par défaut￼"/>
+	<sm:enum>
+		<sm:option key="yes" name="￼;Oui￼"/>
+		<sm:option key="no" name="￼;Non￼"/>
+	</sm:enum>
+</sm:field>-->
+		</sm:group>
+		<sm:group code="searchSettings" name="￼;Publication du moteur de recherche￼" occurrence="zeroOrOne" family="property">
+			<sm:help quickHelp="￼;Moteur non publié par défaut. ￼"/>
+			<sm:field code="searchEngine" name="￼;Présentation des résultats￼" occurrence="zeroOrOne" family="property">
+				<sm:help quickHelp="￼;Précisez le type de présentation des résultats d'une recherche. Deux types de présentation sont possible : une présentée sous la forme d'un menu filtré, l'autre sous la forme d'une liste simple.￼"/>
+				<sm:enum>
+					<sm:option key="treeResults" name="￼;Menu filtré￼"/>
+					<sm:option key="listResults" name="￼;Liste à plat￼"/>
+				</sm:enum>
+			</sm:field>
+		</sm:group>
+	</sm:structure>
+	<sm:storage/>
+</sm:dataFormPrim>

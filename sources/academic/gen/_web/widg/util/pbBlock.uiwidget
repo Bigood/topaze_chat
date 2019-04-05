@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="pbBlock">
+	<sm:content>
+		<scBlock xmlns="http://www.w3.org/1999/xhtml">
+			<sm:addSrcPath/>
+			<addAttribute name="class">
+				<sm:callZone key="zClass"/>
+			</addAttribute>
+			<sm:choose>
+				<sm:when sc:refUri="/academic/gen/_web/widg/util/utilFree.cond"/>
+			</sm:choose>
+			<hx>
+				<addAttribute name="class">
+					<sm:callZone key="zClass"/>_ti blocks_ti</addAttribute>
+				<span>
+					<addAttribute name="class">
+						<sm:callZone key="zClass"/>_ti_co pb_ti_co</addAttribute>
+					<span class="pbTi">
+						<sm:callZone key="zType"/>
+					</span>
+					<span class="hidden"> : </span>
+					<span class="pbTiAuthor">
+						<sm:callZone key="zTi"/>
+					</span>
+				</span>
+			</hx>
+			<div>
+				<addAttribute name="class">
+					<sm:callZone key="zClass"/>_co blocks_co</addAttribute>
+				<sm:callZone key="zCo"/>
+			</div>
+		</scBlock>
+	</sm:content>
+</sm:openUiWidget>

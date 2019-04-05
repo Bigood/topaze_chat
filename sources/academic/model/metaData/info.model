@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:dataFormPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="￼;Métadonnées des contenus pédagogiques￼">
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="info" itemExtension="xml"/>
+	<sm:structure>
+		<sm:subData code="keywds" name="￼;Mots-clés￼" occurrence="zeroOrOne">
+			<sm:allowedDataModel sc:refUri="/academic/model/metaData/keywds.model"/>
+		</sm:subData>
+		<sm:field code="cc" name="￼;Licence￼" occurrence="zeroOrOne">
+			<sm:help quickHelp="￼;Plus d'info : http://creativecommons.org et http://www.gnu.org￼"/>
+			<sm:enum>
+				<sm:option key="publicdomain" name="￼;Domaine Public (dépréciée)￼"/>
+				<sm:option key="zero" name="￼;Creative Commons Zéro￼"/>
+				<sm:optionSeparator/>
+				<sm:option key="by" name="￼;Paternité￼"/>
+				<sm:option key="by-nc" name="￼;Paternité - Pas d'Utilisation Commerciale￼"/>
+				<sm:option key="by-nc-nd" name="￼;Paternité - Pas d'Utilisation Commerciale - Pas de Modification￼"/>
+				<sm:option key="by-nc-sa" name="￼;Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique￼"/>
+				<sm:option key="by-nd" name="￼;Paternité - Pas de Modification￼"/>
+				<sm:option key="by-sa" name="￼;Paternité - Partage des Conditions Initiales à l'Identique￼"/>
+				<sm:optionSeparator/>
+				<sm:option key="gnu-fdl" name="￼;Licence de documentation libre GNU￼"/>
+			</sm:enum>
+		</sm:field>
+		<sm:field code="ccVersion" name="￼;Version de la licence cc-by￼" occurrence="zeroOrOne">
+			<sm:help quickHelp="￼;Renseignez le numéro de version pour les licences cc-by (Creative Commons avec Paternité) uniquement. Par défaut, la dernière version disponible est prise en compte.￼"/>
+			<sm:enum>
+				<sm:option key="4.0" name="4.0"/>
+				<sm:option key="3.0" name="3.0"/>
+				<sm:option key="2.5" name="2.5"/>
+				<sm:option key="2.0" name="2.0"/>
+				<sm:option key="1.0" name="1.0"/>
+			</sm:enum>
+		</sm:field>
+		<sm:field code="cpyrgt" name="￼;Paternité ou copyright￼" occurrence="zeroOrOne">
+			<sm:otherType sc:refUri="/academic/model/Re/sPara.model"/>
+		</sm:field>
+	</sm:structure>
+	<sm:storage/>
+	<sm:authoring>
+		<sm:icon sc:refUri="/academic/model/_ico/metaPredefPedago.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;Info￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:formEditor indentXml="true">
+			<sm:dataForm defaultStyle="element" tagStyle="font-family:arial;font-size:1.8em; background-color:gray; color:white; -moz-border-radius:5px; -moz-padding-start:4px; -moz-padding-end:4px; margin-left:5px">
+				<sm:iconTag sc:refUri="/academic/model/_ico/metaPredefPedagoBig.png"/>
+			</sm:dataForm>
+			<sm:subData refCode="keywds" defaultStyle="property"/>
+			<sm:stringField refCode="keywd" autoRepeatField="yes" defaultStyle="property" textStyle="color :#6286cc;"/>
+			<sm:enumField refCode="cc" defaultStyle="property"/>
+			<sm:stringField refCode="cpyrgt" defaultStyle="property" textStyle="color :#6286cc;"/>
+			<sm:subData refCode="lang" displayMode="closedByDefault" defaultStyle="property"/>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:dataFormPrim>

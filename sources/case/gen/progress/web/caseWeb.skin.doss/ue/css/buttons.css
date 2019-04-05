@@ -1,0 +1,19 @@
+
+/*****************/
+/* informations */
+/*****************/
+.infoBtn_a {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: url(../img/blocks/info.png) no-repeat top right;
+	text-decoration: none;
+	height: 33px;
+	width: 33px;
+	display: block;
+	margin: 5px 5px 0px 0px;
+	cursor: pointer;
+}
+.infoBtn_a span {
+	visibility: hidden;
+}

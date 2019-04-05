@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeXslWebSiteTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" info="display index value">
+	<sm:model sc:refUri="/academic/model/Re/applet/applet.model"/>
+	<sm:axis code="disp"/>
+	<sm:content>
+		<sm:xsl sc:refUri="/case/gen/_web/transf/re/applet/applet@disp.xsl"/>
+		<sm:callModel sc:refUri="/academic/model/Re/applet/applet.model" axis="val" codeView="xhtmlContent"/>
+	</sm:content>
+</sm:freeXslWebSiteTransf>

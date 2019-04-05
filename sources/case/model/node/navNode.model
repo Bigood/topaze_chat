@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sext="http://www.utc.fr/ics/scenari/v3/modeling/extension" sext:assmnt="true" name="￼;Etape d'orientation￼" category="￼;Etude de cas￼">
+	<sm:identification targetNamespace="kelis.fr:opa" targetPrefix="opa" code="navNode" itemExtension="node"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/case/model/node/navNodeM.model" usage="required"/>
+		<sm:part code="visualMap" name="￼;Map￼" family="sub-level" internalized="never" usage="required">
+			<sm:allowedModel sc:refUri="/case/model/plan/visualMap/visualMap.model"/>
+		</sm:part>
+	</sm:structure>
+	<sm:authoring>
+		<sm:icon sc:refUri="/case/auth/ico/navNode.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;Etape￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:formEditor indentXml="true">
+			<sm:composition>
+				<sm:standardWidget tagStyle="font-family:arial;font-size:20px; background-color:#446e43; color:white; -moz-border-radius:5px; padding-left:4px; padding-right:4px">
+					<sm:iconTag sc:refUri="/case/auth/ui/navNode.png"/>
+				</sm:standardWidget>
+			</sm:composition>
+			<sm:part refCode="visualMap">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="margin-top:10px; margin-bottom:10px; padding-left:5px">
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/case/auth/ui/visualMapMed.png"/>
+								<sm:name style="margin-left:5px; color:#446e43; font-size:18px; font-family:arial"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:compositionPrim>

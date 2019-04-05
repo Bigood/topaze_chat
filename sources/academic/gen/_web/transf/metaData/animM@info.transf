@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:dataFormXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/metaData/animM.model"/>
+	<sm:axis code="info"/>
+	<sm:content>
+		<sm:choose>
+			<sm:when xpath="sp:info/op:infoBin/sp:cc or sp:info/op:infoBin/sp:cpyrgt">
+				<sm:Widget sc:refUri="/academic/gen/_web/widg/util/ttInfo.uiwidget">
+					<sm:xhtmlContentZone key="ttContent">
+						<sm:WBlock widgetClass="mField" tagName="p">
+							<sm:forSubData codes="info">
+								<sm:callSubModel axis="legal"/>
+							</sm:forSubData>
+						</sm:WBlock>
+					</sm:xhtmlContentZone>
+				</sm:Widget>
+			</sm:when>
+		</sm:choose>
+	</sm:content>
+</sm:dataFormXhtmlTransf>

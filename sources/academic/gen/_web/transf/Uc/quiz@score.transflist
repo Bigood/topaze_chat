@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/quiz@score/cloze@score.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/quiz@score/cloze@scoreSub.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/quiz@score/coQuiz@score.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/quiz@score/coQuiz@scoreSub.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/quiz@score/field@score.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/quiz@score/field@scoreSub.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/quiz@score/match@score.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/quiz@score/mcgMur@score.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/quiz@score/mcgSur@score.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/quiz@score/mcqMur@score.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/quiz@score/mcqMur@scoreSub.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/quiz@score/mcqSur@score.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/quiz@score/mcqSur@scoreSub.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/quiz@score/numerical@score.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/quiz@score/numerical@scoreSub.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/Uc/quiz@score/ordWord@score.transf"/>
+</sm:transformerList>

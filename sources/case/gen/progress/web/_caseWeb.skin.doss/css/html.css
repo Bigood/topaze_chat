@@ -1,0 +1,69 @@
+/* General HTML CSS */
+
+
+html{
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	font: 12px Tahoma, Arial, Sans-serif;
+}
+
+table{
+	padding: 0px;
+	margin: 0px;
+	border-collapse: collapse; 
+}
+
+h1, h2, h3, h4, h5, h6{
+	padding:0px;
+	margin:0px;
+	font-weight: bold;
+}
+h1{
+	font-size: 1.6em;
+	color: #627413;
+	padding-left: 5px;
+}
+h2{
+	font-size:1.5em;
+	color:#97b15d;
+}
+h3{
+	font-size: 1.4em;
+	color: #c0ce9b;
+}
+h4, h5, h6{
+	font-size: 1.3em;
+	color: #cdd8ae;
+}
+p{
+	font-size: 1.2em;
+	margin:0px;
+	padding:0px;
+	margin-top:5px;
+	margin-bottom:5px
+}
+
+img {
+	border:none;
+}
+
+a:hover{
+	-moz-opacity:0.7;
+	opacity:0.7; 	
+}
+.hidden{
+	position: absolute;
+	top:-5000px;
+	left:-5000px;
+	overflow: hidden;
+	width:1px;
+	height:1px;
+	color:black
+}

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sma:assmntCompositionDhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns="http://www.w3.org/1999/xhtml">
+	<sm:model sc:refUri="/case/model/node/assmntNode.model"/>
+	<sm:axis code="end"/>
+	<sm:scenario>
+		<sm:sequence code="play">
+			<sm:loadData>
+				<sm:scoreSessionKey>
+					<sm:fixedKey value=""/>
+				</sm:scoreSessionKey>
+			</sm:loadData>
+			<sm:saveData>
+				<sm:scoreSessionKey>
+					<sm:fixedKey value=""/>
+				</sm:scoreSessionKey>
+			</sm:saveData>
+			<sm:scoreComputing>
+				<sm:computeScoreSubAssmnt codes="quiz">
+					<sm:scoreSessionKey>
+						<sm:jsExpression expId="sessKeyQuiz">topazeMgr.fSessKeyQuiz</sm:jsExpression>
+					</sm:scoreSessionKey>
+				</sm:computeScoreSubAssmnt>
+				<sm:postProcessing>
+					<sm:jsEval>var vMaxScorePts = scServices.assmntMgr.getResponse(this.fId, topazeMgr.fSessKey, "maxScorePts");
+if (typeof vMaxScorePts == "undefined") vMaxScorePts = this.fScorePts;
+var vMinScorePts = scServices.assmntMgr.getResponse(this.fId, topazeMgr.fSessKey, "minScorePts");
+if (typeof vMinScorePts == "undefined") vMinScorePts = this.fScorePts;
+scServices.assmntMgr.setResponse(this.fId, topazeMgr.fSessKey, "maxScorePts", Math.max(this.fScorePts, vMaxScorePts));
+scServices.assmntMgr.setResponse(this.fId, topazeMgr.fSessKey, "minScorePts", Math.min(this.fScorePts, vMinScorePts));
+
+if (scServices.assmntMgr.getResponse(this.fId, '', 'addScore') == 'true') {
+  if (scServices.assmntMgr.getResponse(this.fId, '', 'newScore') == 'true') {
+    scServices.assmntMgr.setResponse(this.fId, '', 'scoreSum',scCoLib.toInt(scServices.assmntMgr.getResponse(this.fId, '', 'scoreSum'))+scCoLib.toInt(this.fScorePts));
+    scServices.assmntMgr.setResponse(this.fId, '', 'newScore','false');
+  }
+  this.fScorePts = scCoLib.toInt(scServices.assmntMgr.getResponse(this.fId, '', 'scoreSum'));
+  scServices.assmntMgr.setPts(this.fId, this.fSessKey, this.fMinPts, this.fScorePts, this.fMaxPts);
+}
+
+scServices.assmntMgr.commit();
+</sm:jsEval>
+				</sm:postProcessing>
+			</sm:scoreComputing>
+			<sm:onEnter>
+				<sm:setCompletionStatus status="complete">
+					<sm:responseSessionKey>
+						<sm:fixedKey value=""/>
+					</sm:responseSessionKey>
+				</sm:setCompletionStatus>
+			</sm:onEnter>
+		</sm:sequence>
+	</sm:scenario>
+	<sm:assmntBody>
+		<!--Pas de score remonté à l'aprenant. c.f. mail de katia le 11/03/09-->
+		<!--<div xmlns="http://www.w3.org/1999/xhtml" class="scoreBox">
+	<sm:WScore xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" sm:id="score" widgetClass="score">
+		<sm:scoreText>
+			<sm:scaleScore min="0" max="100" step="1">
+				<sm:display scoreMoreThan="99" valueFormat="numeric" suffix="% de bonnes réponses" class="answBest"/>
+				<sm:display scoreMoreThan="49" scoreLessOrEqualThan="99" valueFormat="numeric" suffix="% de bonnes réponses" class="answGood"/>
+				<sm:display scoreLessOrEqualThan="49" valueFormat="numeric" suffix="% de bonnes réponses" class="answBad"/>
+			</sm:scaleScore>
+		</sm:scoreText>
+	</sm:WScore>
+</div>-->
+		<div sm:id="fdbk" class="assmntNodeFdbk">
+			<sm:WFeedback>
+				<sm:callFeedbackModel/>
+			</sm:WFeedback>
+		</div>
+	</sm:assmntBody>
+</sma:assmntCompositionDhtmlTransf>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiTemplate xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" pageUnicityCriterion="none">
+	<sm:head>
+		<sm:windowTitle>
+			<sm:pageTitle/>
+		</sm:windowTitle>
+		<sm:meta name="author">
+			<sm:callRootModel axis="author"/>
+		</sm:meta>
+		<sm:meta name="keywords">
+			<sm:callRootModel axis="keywds"/>
+		</sm:meta>
+		<sm:meta name="date">
+			<sm:callRootModel axis="date"/>
+		</sm:meta>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/tpl/htmlMeta.uiwidget"/>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/tpl/revisedMeta.uiwidget"/>
+		<sm:Widget sc:refUri="/academic/gen/_sld/widg/mgr/tplMgr.uiwidget"/>
+		<sm:styleSheet src="css/refHtml.css" srcFrom="skin" title="modeHTML" rel="stylesheet" media="screen"/>
+		<sm:styleSheet src="css/refSS.css" srcFrom="skin" title="modeSS" rel="alternate stylesheet" media="screen"/>
+		<sm:WXhtmlFragment>&lt;!--[if IE]&gt;</sm:WXhtmlFragment>
+		<sm:styleSheet src="css/ie.css" srcFrom="skin"/>
+		<sm:WXhtmlFragment>&lt;![endif]--&gt;&lt;!--[if lt IE 7]&gt;</sm:WXhtmlFragment>
+		<sm:styleSheet src="css/ie6.css" srcFrom="skin"/>
+		<sm:WXhtmlFragment>&lt;![endif]--&gt;</sm:WXhtmlFragment>
+		<sm:Widget sc:refUri="/academic/gen/_sld/widg/mgr/scHPSRef.uiwidget"/>
+	</sm:head>
+	<sm:body>
+		<div xmlns="http://www.w3.org/1999/xhtml" id="tplRootPge">
+			<div id="tplSldFra" class="tplSldFraTocOff">
+				<sm:callMainZone format="xhtml"/>
+			</div>
+			<div id="tplRootNav"></div>
+			<div id="tplTools">
+				<sm:Widget sc:refUri="/academic/gen/_sld/widg/nav/btnModeSs.uiwidget"/>
+			</div>
+		</div>
+		<div xmlns="http://www.w3.org/1999/xhtml" id="tplZoomFra">
+			<div class="tplZoomOvr"></div>
+			<div id="tplZoomCo"></div>
+		</div>
+		<sm:script src="js/ref.js" srcFrom="skin" type="text/JavaScript"/>
+	</sm:body>
+</sm:openUiTemplate>

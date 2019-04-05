@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="ueStart">
+	<sm:fillTemplateBuffers>
+		<sm:standardLibrary codeLib="PaLib"/>
+	</sm:fillTemplateBuffers>
+	<sm:content>
+		<script xmlns="http://www.w3.org/1999/xhtml" type="text/JavaScript">try{
+  var vHistMgr = new histMgr;
+  vHistMgr.init(false);
+} catch(e){}
+window.location.replace(scPaLib.findNode("des:a.ueStart").href);</script>
+	</sm:content>
+</sm:openUiWidget>

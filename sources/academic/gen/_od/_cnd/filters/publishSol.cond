@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:formulaCond xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="publishSol" info="Publication d'un ou plusieurs type de solution">
+	<sm:orGroup>
+		<sm:condition sc:refUri="/academic/gen/_od/_cnd/filters/solAssmntUa.cond"/>
+		<sm:condition sc:refUri="/academic/gen/_od/_cnd/filters/solPractUc.cond"/>
+		<sm:condition sc:refUri="/academic/gen/_od/_cnd/filters/solQuiz.cond"/>
+	</sm:orGroup>
+</sm:formulaCond>

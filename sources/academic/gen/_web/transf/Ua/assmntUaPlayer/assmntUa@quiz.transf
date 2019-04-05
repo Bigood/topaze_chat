@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Ua/assmntUa.model"/>
+	<sm:axis code="quiz"/>
+	<sm:navigation>
+		<sm:inDataOrder>
+			<sm:for codes="quiz">
+				<sm:page template="player">
+					<sm:title>
+						<sm:fixedTitle value="￼;Exercice d'auto-évaluation￼"/>
+					</sm:title>
+					<sm:mainZone format="xhtml">
+						<!--Titre d'accroche-->
+						<sm:WHeadingBlock>
+							<sm:title>
+								<sm:subModelTitle/>
+							</sm:title>
+							<sm:callSubModel axis="eval"/>
+						</sm:WHeadingBlock>
+					</sm:mainZone>
+					<sm:zone key="counter" format="xhtml">
+						<sm:WSimpleBlock widgetClass="evalCounter">
+							<sm:Widget sc:refUri="/academic/gen/_web/widg/eval/evalCounter.uiwidget"/>
+						</sm:WSimpleBlock>
+					</sm:zone>
+				</sm:page>
+			</sm:for>
+		</sm:inDataOrder>
+		<sm:page template="player">
+			<sm:title>
+				<sm:fixedTitle value="￼;Fin de l'évaluation￼"/>
+			</sm:title>
+			<sm:mainZone format="xhtml">
+				<sm:WFreeBlock>
+					<table xmlns="http://www.w3.org/1999/xhtml" class="Tcenter">
+						<tr>
+							<td>
+								<p>￼;Vous avez fini l'évaluation, en allant à la page suivante, vous allez valider vos réponses et il ne vous sera plus possible de les modifier.￼</p>
+								<p>
+									<sm:WLink widgetClass="btnValidateE">
+										<sm:label>
+											<sm:WFreeBlock>
+												<span>￼;Validez votre évaluation￼</span>
+											</sm:WFreeBlock>
+										</sm:label>
+										<sm:labelTitle>
+											<sm:fixedString value="￼;Validez votre évaluation￼"/>
+										</sm:labelTitle>
+										<sm:link target="sameWindow">
+											<sm:callModel>
+												<sm:current axis="result" navCtx="newRoot"/>
+											</sm:callModel>
+										</sm:link>
+									</sm:WLink>
+								</p>
+							</td>
+						</tr>
+					</table>
+				</sm:WFreeBlock>
+			</sm:mainZone>
+			<sm:zone key="counter" format="xhtml"/>
+		</sm:page>
+	</sm:navigation>
+</sm:compositionXhtmlTransf>

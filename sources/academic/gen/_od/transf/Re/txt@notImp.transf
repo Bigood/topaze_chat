@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:textOdTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0">
+	<sm:model sc:refUri="/academic/model/Re/txt.model"/>
+	<sm:axis code="notImp"/>
+	<sm:content>
+		<sm:paraTag/>
+		<sm:listTags>
+			<sm:itemizedListTag/>
+			<sm:orderedListTag/>
+		</sm:listTags>
+		<sm:tableTag targetFontSizeInPt="10" headerRowRole="head">
+			<sm:captionTag position="after" category="tab">
+				<sm:WParagraph globalStyle="gTableTitle">
+					<sm:title>
+						<sm:caption/>
+					</sm:title>
+				</sm:WParagraph>
+			</sm:captionTag>
+			<sm:stylesList>
+				<sm:rowTag role="head" id="row2" axis="tbHead"/>
+				<sm:cellTag role="num" id="cell3" axis="right"/>
+				<sm:cellTag role="word" id="cell2" axis="center"/>
+				<sm:rowTag id="row2"/>
+				<sm:columnTag id="column2"/>
+				<sm:cellTag id="cell2"/>
+			</sm:stylesList>
+			<sm:dimBounds maxWidth="15"/>
+		</sm:tableTag>
+		<sm:uLinkTag role="acr">
+			<sm:WInline globalStyle="txtAcr">
+				<sm:textLink/>
+				<sm:dataBlock category="acr">
+					<sm:blockId>
+						<sm:callSubModelId/>
+					</sm:blockId>
+					<sm:sortKey>
+						<sm:subModelTitle format="shortTitleText"/>
+					</sm:sortKey>
+					<sm:label>
+						<sm:subModelTitle/>
+					</sm:label>
+					<sm:data>
+						<sm:callSubModelMeta axis="content"/>
+					</sm:data>
+				</sm:dataBlock>
+			</sm:WInline>
+		</sm:uLinkTag>
+		<sm:uLinkTag role="glos">
+			<sm:WInline globalStyle="txtGlos">
+				<sm:textLink/>
+				<sm:dataBlock category="glos">
+					<sm:blockId>
+						<sm:callSubModelId/>
+					</sm:blockId>
+					<sm:label>
+						<sm:subModelTitle/>
+					</sm:label>
+					<sm:data>
+						<sm:callSubModelMeta axis="content"/>
+					</sm:data>
+				</sm:dataBlock>
+			</sm:WInline>
+		</sm:uLinkTag>
+		<sm:uLinkTag role="bib">
+			<sm:WInline globalStyle="txtBib">
+				<sm:textLink/>
+				<sm:subModelTitle prefix="￼; [￼" suffix="￼;]￼" format="shortTitleText"/>
+				<sm:callSubModel axis="genRef"/>
+			</sm:WInline>
+		</sm:uLinkTag>
+		<sm:uLinkTag role="ref">
+			<sm:WInline globalStyle="txtRef">
+				<sm:textLink/>
+				<sm:dataBlock category="ref">
+					<sm:blockId>
+						<sm:callSubModelId/>
+					</sm:blockId>
+					<sm:label>
+						<sm:subModelTitle/>
+					</sm:label>
+					<sm:data>
+						<sm:callSubModelMeta axis="content"/>
+					</sm:data>
+				</sm:dataBlock>
+			</sm:WInline>
+		</sm:uLinkTag>
+		<sm:uLinkTag role="docLnk">
+			<sm:WInline globalStyle="txtDocLnk">
+				<sm:textLink/>
+				<sm:fixedString value="￼; (cf. ￼"/>
+				<sm:subModelTitle format="shortTitleText"/>
+				<sm:fixedString value="￼;)￼"/>
+			</sm:WInline>
+		</sm:uLinkTag>
+		<sm:uLinkTag role="resLnk">
+			<sm:WInline globalStyle="txtResLnk">
+				<sm:textLink/>
+			</sm:WInline>
+			<sm:dataBlock category="res">
+				<sm:blockId>
+					<sm:callSubModelId/>
+				</sm:blockId>
+				<sm:label>
+					<sm:subModelTitle/>
+				</sm:label>
+				<sm:data>
+					<sm:callSubModel/>
+				</sm:data>
+			</sm:dataBlock>
+		</sm:uLinkTag>
+		<sm:uLinkTag role="ucLnk">
+			<sm:WInline globalStyle="txtUcLnk">
+				<sm:textLink/>
+			</sm:WInline>
+			<sm:dataBlock category="uc">
+				<sm:blockId>
+					<sm:callSubModelId/>
+				</sm:blockId>
+				<sm:label>
+					<sm:subModelTitle/>
+				</sm:label>
+				<sm:data>
+					<sm:callSubModel/>
+				</sm:data>
+			</sm:dataBlock>
+		</sm:uLinkTag>
+		<sm:phraseTag role="url">
+			<sm:Widget sc:refUri="/academic/gen/_od/widg/urlM.odwidget"/>
+		</sm:phraseTag>
+		<sm:inlineStyleTag role="quote" globalStyle="txtQuote">
+			<sm:textWrapper prefix="￼;« ￼" suffix="￼; »￼"/>
+		</sm:inlineStyleTag>
+		<sm:inlineStyleTag role="emp" globalStyle="txtEmp"/>
+		<sm:inlineStyleTag role="spec" globalStyle="txtSpec"/>
+		<sm:inlineStyleTag role="representative" globalStyle="txtRepresentative"/>
+		<sm:inlineStyleTag role="code" globalStyle="txtCode"/>
+		<sm:textLeafTag role="exp" globalStyle="txtExp"/>
+		<sm:textLeafTag role="ind" globalStyle="txtInd"/>
+		<sm:textLeafTag role="mathtex">
+			<sm:Widget sc:refUri="/math/latex/mathTexInline_od.odwidget">
+				<sm:odContentZone key="zMathTex"/>
+			</sm:Widget>
+		</sm:textLeafTag>
+		<sm:inlineImgTag role="form" axis="inline"/>
+		<sm:inlineImgTag role="ico" axis="inline"/>
+	</sm:content>
+</sm:textOdTransf>

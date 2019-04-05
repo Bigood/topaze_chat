@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/case/model/node/navNode.model"/>
+	<sm:navigation>
+		<sm:page template="topaze">
+			<sm:title>
+				<sm:compositionTitle/>
+				<sm:fixedTitle value="￼;[Sans titre]￼"/>
+			</sm:title>
+			<sm:outlineClasses>
+				<sm:callCompositionMeta axis="noClick"/>
+			</sm:outlineClasses>
+			<sm:mainZone format="xhtml">
+				<sm:Widget sc:refUri="/case/gen/_web/wdt/mgr/mapMgr.uiwidget"/>
+				<sm:WHeadingBlock widgetClass="nodeBk" class="navNode">
+					<sm:title>
+						<sm:compositionTitle/>
+					</sm:title>
+					<sm:for codes="visualMap">
+						<sm:Widget sc:refUri="/case/gen/_web/wdt/util/resizer/resizerInZone.uiwidget">
+							<sm:xhtmlContentZone key="zMap">
+								<sm:callSubModel/>
+							</sm:xhtmlContentZone>
+							<sm:xhtmlContentZone key="zHelp">
+								<sm:callSubModel axis="help"/>
+							</sm:xhtmlContentZone>
+						</sm:Widget>
+					</sm:for>
+				</sm:WHeadingBlock>
+			</sm:mainZone>
+			<sm:zone key="zCoach" format="xhtml">
+				<sm:callModel>
+					<sm:current axis="coach"/>
+				</sm:callModel>
+			</sm:zone>
+			<sm:zone key="zLegal" format="xhtml">
+				<sm:callModel>
+					<sm:root axis="legal"/>
+				</sm:callModel>
+			</sm:zone>
+		</sm:page>
+	</sm:navigation>
+</sm:compositionXhtmlTransf>

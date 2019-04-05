@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:outlineUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="ueMnu">
+	<sm:scope>
+		<sm:customized>
+			<sm:scopeStartingPoint>
+				<sm:fromAbsoluteTop descendantOffset="999" includeInScope="yes">
+					<sm:stopAtModel sc:refUri="/academic/model/Ue/ue.model" includeInScope="yes"/>
+					<sm:stopAtModel sc:refUri="/academic/model/Ua/courseUa.model" includeInScope="yes"/>
+					<sm:stopAtModel sc:refUri="/academic/model/Ue/ueDiv.model" includeInScope="yes"/>
+				</sm:fromAbsoluteTop>
+			</sm:scopeStartingPoint>
+			<sm:currentAndAncestorSiblings>
+				<sm:siblingsStartingPoint direction="scopeStartingPointToCurrent" offset="0"/>
+				<sm:siblingsEndingPoint direction="currentToScopeStartingPoint" offset="0"/>
+			</sm:currentAndAncestorSiblings>
+			<sm:currentDescendants>
+				<sm:depthLimit from="current" depth="1"/>
+			</sm:currentDescendants>
+		</sm:customized>
+	</sm:scope>
+	<sm:treeContent>
+		<sm:outline>
+			<sm:link ifSelected="noLink" ifUnselected="link" ifNoFolderPreview="noLink"/>
+			<sm:classes>
+				<sm:selected prefix="mnu_sel_" onContainer="no" onRoot="no" onEntry="yes" onList="no" onChildContainers="no"/>
+				<sm:treePosition branchClass="mnu_b" leafClass="mnu_l" onEntry="yes"/>
+				<sm:ownerClasses onEntry="yes"/>
+				<sm:elementType prefix="mnu_" onEntry="yes"/>
+			</sm:classes>
+		</sm:outline>
+	</sm:treeContent>
+</sm:outlineUiWidget>

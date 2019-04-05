@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformerList>
+		<sm:transformerList sc:refUri="/binaries/_web/binaries.transflist"/>
+		<sm:transformerList sc:refUri="/math/_web/math.transflist"/>
+	</sm:transformerList>
+	<sm:transformerList info="inline">
+		<sm:transformerList sc:refUri="/binaries/_web/binaries@inline.transflist"/>
+		<sm:transformerList sc:refUri="/math/_web/math@inline.transflist"/>
+	</sm:transformerList>
+	<sm:transformerList info="gallery" sc:refUri="/binaries/_web/binaries@gal.transflist"/>
+	<sm:transformerList info="lnk" sc:refUri="/binaries/_web/binaries@lnk.transflist"/>
+	<sm:transformerList info="meta" sc:refUri="/binaries/_web/binaries@meta.transflist"/>
+	<sm:transformerList info="txtRes" sc:refUri="/binaries/_web/binaries@txtRes.transflist"/>
+	<sm:transformerList info="nav" sc:refUri="/binaries/_web/binaries@nav.transflist"/>
+	<sm:transformerList info="legal">
+		<sm:transformerList sc:refUri="/binaries/_web/binaries@legal.transflist"/>
+		<sm:transformerList sc:refUri="/math/_web/math@legal.transflist"/>
+	</sm:transformerList>
+	<sm:transformerList info="url">
+		<sm:transformerList sc:refUri="/binaries/_web/binaries@url.transflist"/>
+		<sm:transformerList sc:refUri="/math/_web/math@url.transflist"/>
+	</sm:transformerList>
+	<sm:transformerList info="ref">
+		<sm:transformerList sc:refUri="/binaries/_web/binaries@ref.transflist"/>
+	</sm:transformerList>
+	<sm:transformerList info="view">
+		<sm:transformerList sc:refUri="/binaries/_web/binaries@view.transflist"/>
+	</sm:transformerList>
+	<sm:transformerList info="zoom">
+		<sm:transformerList sc:refUri="/binaries/_web/binaries@zoom.transflist"/>
+		<sm:transformerList sc:refUri="/math/_web/math@zoom.transflist"/>
+	</sm:transformerList>
+	<sm:transformerList info="icons">
+		<sm:transformerList sc:refUri="/binaries/_web/binaries@ico.transflist"/>
+		<sm:transformerList sc:refUri="/math/_web/math@ico.transflist"/>
+	</sm:transformerList>
+</sm:transformerList>

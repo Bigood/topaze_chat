@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:crossRefTableUiWidget xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" code="bib">
+	<!--ATTENTION : ce widget DOIT être compris dans un bibMgr.uiwidget-->
+	<sm:refEntries key="bib">
+		<sm:callableModel sc:refUri="/academic/model/Re/refs/bib.model"/>
+	</sm:refEntries>
+	<sm:sortEntries>
+		<sm:alphaNonCaseSensitive>
+			<sm:callEntryTitle type="fullTitleText" axis=""/>
+		</sm:alphaNonCaseSensitive>
+	</sm:sortEntries>
+	<sm:content>
+		<ifText xmlns="http://www.w3.org/1999/xhtml">
+			<dl>
+				<sm:forEntry>
+					<bibElt>
+						<dt class="idxEntryTi">
+							<sm:callEntryTitle type="fullTitleText"/>
+						</dt>
+						<dd class="idxFra">
+							<!--<span xmlns="http://www.w3.org/1999/xhtml" sm:commonClass="idxEntryTi" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling"><sm:callEntryTitle type="fullTitleText"/></span>-->
+							<div class="idxEntryCo">
+								<sm:callEntryContent/>
+							</div>
+						</dd>
+					</bibElt>
+				</sm:forEntry>
+			</dl>
+		</ifText>
+	</sm:content>
+</sm:crossRefTableUiWidget>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:binaryXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/binaries/oga/oga.model"/>
+	<sm:fullTitleText>
+		<sm:callBinaryMeta/>
+	</sm:fullTitleText>
+	<sm:shortTitleText>
+		<sm:callBinaryMeta/>
+	</sm:shortTitleText>
+	<sm:content>
+		<sm:WCaptionBlock widgetClass="sfile_oga_resAudio resInFlow" tagName="figure" position="bottom">
+			<sm:caption>
+				<sm:WFreeBlock>
+					<span xmlns="http://www.w3.org/1999/xhtml" class="capTi">
+						<sm:title>
+							<sm:binaryMeta/>
+						</sm:title>
+					</span>
+				</sm:WFreeBlock>
+				<sm:callBinaryMeta axis="info"/>
+			</sm:caption>
+			<sm:content>
+				<sm:callModel>
+					<sm:current axis="view"/>
+				</sm:callModel>
+			</sm:content>
+		</sm:WCaptionBlock>
+	<!--ATTENTION l'élément suivant à été ajouté en XSL par la dérivation.--><sm:callModel xmlns:op="utc.fr:ics/opale3" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sext="http://www.utc.fr/ics/scenari/v3/modeling/extension"><sm:current axis="credits"/></sm:callModel></sm:content>
+</sm:binaryXhtmlTransf>

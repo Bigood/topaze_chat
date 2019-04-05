@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Uc/practUc.model"/>
+	<sm:navigation>
+		<sm:page template="page">
+			<sm:title>
+				<sm:compositionTitle prefix="￼;Exercice : ￼"/>
+				<sm:fixedTitle value="￼;Exercice￼"/>
+			</sm:title>
+			<sm:outlineClasses>
+				<sm:fixedString value="mnu_practUc"/>
+			</sm:outlineClasses>
+			<sm:mainZone format="xhtml">
+				<sm:WHeadingBlock widgetClass="mainContent">
+					<sm:title>
+						<sm:compositionTitle format="fullTitleText"/>
+					</sm:title>
+					<sm:Widget sc:refUri="/academic/gen/_web/widg/refs/kwrdEntries.uiwidget"/>
+					<sm:inDataOrder>
+						<sm:for codes="desc">
+							<sm:WHeadingBlock widgetClass="practUcDesc">
+								<sm:title>
+									<sm:partTitle/>
+								</sm:title>
+								<sm:callSubModel/>
+							</sm:WHeadingBlock>
+						</sm:for>
+						<sm:for codes="quest">
+							<sm:WHeadingBlock widgetClass="practUcQuest">
+								<sm:title>
+									<sm:fixedTitle value="￼;Question￼"/>
+								</sm:title>
+								<sm:callSubModel/>
+							</sm:WHeadingBlock>
+						</sm:for>
+					</sm:inDataOrder>
+				</sm:WHeadingBlock>
+			</sm:mainZone>
+			<sm:zone key="zIconPage" format="xhtml">
+				<sm:WSimpleBlock widgetClass="decoPractUc"/>
+			</sm:zone>
+			<sm:zone key="zLegal" format="xhtml">
+				<sm:callModel>
+					<sm:current axis="legal"/>
+				</sm:callModel>
+			</sm:zone><!--ATTENTION l'élément suivant à été ajouté en XSL par la dérivation.--><sm:zone xmlns:op="utc.fr:ics/opale3" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sext="http://www.utc.fr/ics/scenari/v3/modeling/extension" format="xhtml" key="zCoach"><sm:callModel><sm:lookForAscendants axis="coach" direction="currentToRoot"><sm:callableModel sc:refUri="/case/model/node/heavyNode.model"/></sm:lookForAscendants></sm:callModel></sm:zone>
+			<sm:zone key="zKeywords" format="text">
+				<sm:callModel>
+					<sm:root axis="keywds"/>
+				</sm:callModel>
+				<sm:callModel>
+					<sm:current axis="keywds"/>
+				</sm:callModel>
+			</sm:zone>
+		</sm:page>
+	</sm:navigation>
+</sm:compositionXhtmlTransf>

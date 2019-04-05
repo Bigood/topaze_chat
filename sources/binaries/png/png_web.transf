@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:binaryXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/binaries/png/png.model"/>
+	<sm:fullTitleText>
+		<sm:callBinaryMeta/>
+	</sm:fullTitleText>
+	<sm:shortTitleText>
+		<sm:callBinaryMeta/>
+	</sm:shortTitleText>
+	<sm:content>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/img/imgZoom.uiwidget"/>
+		<sm:WCaptionBlock widgetClass="resInFlow" tagName="figure" position="bottom">
+			<sm:caption>
+				<sm:WFreeBlock>
+					<span xmlns="http://www.w3.org/1999/xhtml" class="capTi">
+						<sm:title>
+							<sm:binaryMeta/>
+						</sm:title>
+					</span>
+				</sm:WFreeBlock>
+				<sm:callBinaryMeta axis="info"/>
+			</sm:caption>
+			<sm:content>
+				<sm:chooseOnBinary>
+					<sm:binary>
+						<sm:imageSize>
+							<sm:scaleFromStandardCharSize>
+								<sm:ifNoStandardCharSize>
+									<sm:scale ratio="0.32"/>
+								</sm:ifNoStandardCharSize>
+							</sm:scaleFromStandardCharSize>
+						</sm:imageSize>
+					</sm:binary>
+					<sm:whenSize widthOver="genProp('bin.size-int',630)*1.1" heightOver="genProp('bin.size-int',630)*1.1">
+						<sm:WImage>
+							<sm:binaryUrl>
+								<sm:imageTransform>
+									<sm:scaleFromStandardCharSize>
+										<sm:ifNoStandardCharSize>
+											<sm:scale ratio="0.32"/>
+										</sm:ifNoStandardCharSize>
+									</sm:scaleFromStandardCharSize>
+									<sm:sizeBounds maxWidthInPx="genProp('bin.size-int',630)" maxHeightInPx="genProp('bin.size-int',630)"/>
+									<sm:outputPNG/>
+								</sm:imageTransform>
+							</sm:binaryUrl>
+							<sm:alt>
+								<sm:callBinaryMeta axis="alt"/>
+							</sm:alt>
+							<sm:declareSize/>
+							<sm:linkOverImage class="imgZoom">
+								<sm:binaryUrl>
+									<sm:imageTransform>
+										<sm:scaleFromStandardCharSize>
+											<sm:ifNoStandardCharSize>
+												<sm:scale ratio="0.32"/>
+											</sm:ifNoStandardCharSize>
+										</sm:scaleFromStandardCharSize>
+										<sm:sizeBounds maxWidthInPx="genProp('bin.size.zoom-int',1200)" maxHeightInPx="genProp('bin.size.zoom-int',1200)"/>
+										<sm:outputPNG/>
+									</sm:imageTransform>
+								</sm:binaryUrl>
+							</sm:linkOverImage>
+						</sm:WImage>
+					</sm:whenSize>
+					<sm:otherwise>
+						<sm:WImage>
+							<sm:binaryUrl>
+								<sm:imageTransform>
+									<sm:scaleFromStandardCharSize>
+										<sm:ifNoStandardCharSize>
+											<sm:scale ratio="0.32"/>
+										</sm:ifNoStandardCharSize>
+									</sm:scaleFromStandardCharSize>
+									<sm:sizeBounds maxWidthInPx="genProp('bin.size-int',630)" maxHeightInPx="genProp('bin.size-int',630)"/>
+									<sm:outputPNG/>
+								</sm:imageTransform>
+							</sm:binaryUrl>
+							<sm:alt>
+								<sm:callBinaryMeta axis="alt"/>
+							</sm:alt>
+							<sm:declareSize/>
+						</sm:WImage>
+					</sm:otherwise>
+				</sm:chooseOnBinary>
+			</sm:content>
+		</sm:WCaptionBlock>
+	<!--ATTENTION l'élément suivant à été ajouté en XSL par la dérivation.--><sm:callModel xmlns:op="utc.fr:ics/opale3" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sext="http://www.utc.fr/ics/scenari/v3/modeling/extension"><sm:current axis="credits"/></sm:callModel></sm:content>
+</sm:binaryXhtmlTransf>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="commentsBtn">
+	<sm:content>
+		<div xmlns="http://www.w3.org/1999/xhtml" class="activationCommentDiv">
+			<input type="button" class="activeCommentButton" id="onOffButton_mgrContainer" title="￼Activer le mode commentaire￼" value="￼Activer le mode commentaire￼" onClick="sc$('mgrContainer').mgr.Controller.onOffCommentMode();" />
+		</div>
+	</sm:content>
+</sm:openUiWidget>

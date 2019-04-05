@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:formulaCond code="include" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:orGroup>
+		<sm:andGroup>
+			<sm:condition sc:refUri="/academic/gen/_cnd/filters/defaultShort/isShortPub.cond"/>
+			<sm:condition sc:refUri="/academic/gen/_cnd/filters/includeInShort.cond"/>
+		</sm:andGroup>
+		<sm:andGroup>
+			<sm:condition sc:refUri="/academic/gen/_cnd/filters/defaultShort/isStandardPub.cond"/>
+			<sm:condition sc:refUri="/academic/gen/_cnd/filters/includeInStandard.cond"/>
+		</sm:andGroup>
+	</sm:orGroup>
+</sm:formulaCond>

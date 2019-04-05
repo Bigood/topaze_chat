@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:dataFormPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="￼;Autre Fragment￼">
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="mwUnM" itemExtension="xml"/>
+	<sm:structure>
+		<sm:field code="align" name="￼;Alignement￼" occurrence="zeroOrOne" family="property">
+			<sm:help quickHelp="￼;Permet de spécifier l'alignement voulu du Média Web.￼"/>
+			<sm:enum>
+				<sm:option key="auto" name="￼;auto￼"/>
+				<sm:optionSeparator/>
+				<sm:option key="left" name="￼;Gauche￼"/>
+				<sm:option key="right" name="￼;Droite￼"/>
+				<sm:option key="center" name="￼;Centré￼"/>
+				<sm:option key="justify" name="￼;Justifié￼"/>
+			</sm:enum>
+		</sm:field>
+		<sm:field code="frag" name="￼;Fragment￼" occurrence="one">
+			<sm:string/>
+		</sm:field>
+	</sm:structure>
+	<sm:storage/>
+	<sm:authoring>
+		<sm:formEditor indentXml="true">
+			<sm:xmlEditor sc:refUri="/academic/model/Re/mediaWeb/mwUnM.xed"/>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:dataFormPrim>

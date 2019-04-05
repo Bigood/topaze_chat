@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:videoPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Vidéo MP4￼" category="￼;Ressources￼">
+	<sm:help quickHelp="￼;Ressource vidéo au format MP4. Seules les vidéos utilisant le codec H.264/MPEG-4 AVC sont compatibles.￼"/>
+	<sm:identification extensions="mp4 f4v" mimeTypes="video/mp4"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/academic/model/metaData/animM.model" usage="optional"/>
+	</sm:structure>
+	<sm:authoring>
+		<sm:preview>
+			<sm:flvViewer>
+				<sm:fromBinary/>
+			</sm:flvViewer>
+		</sm:preview>
+		<sm:previewMini>
+			<sm:flvViewer>
+				<sm:fromBinary/>
+			</sm:flvViewer>
+		</sm:previewMini>
+		<sm:sizeBlock>
+			<sm:flvViewer>
+				<sm:fromBinary/>
+			</sm:flvViewer>
+			<sm:standardCharSize>
+				<sm:editor/>
+				<sm:defaultValue defaultWidthInPx="500"/>
+			</sm:standardCharSize>
+		</sm:sizeBlock>
+		<sm:icon sc:refUri="/binaries/mp4/_res/mp4.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;video￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+	</sm:authoring>
+</sm:videoPrim>

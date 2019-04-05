@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformer sc:refUri="/academic/gen/_sld/transf/root/presRoot.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_sld/transf/root/presRoot@author.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_sld/transf/root/presRoot@coHome.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_sld/transf/root/presRoot@date.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_sld/transf/root/presRoot@includeSol.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_sld/transf/root/presRoot@keywds.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_sld/transf/root/presRoot@legal.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_sld/transf/root/presRoot@navContact.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_sld/transf/root/presRoot@root.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_sld/transf/root/presRoot@rootFilter.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_sld/transf/root/presRootM.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_sld/transf/root/presRootM@author.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_sld/transf/root/presRootM@contact.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_sld/transf/root/presRootM@date.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_sld/transf/root/presRootM@home.transf"/>
+</sm:transformerList>

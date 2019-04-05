@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget code="ssContainer" info="SlideShow Container" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:content>
+		<div class="ssContainer" xmlns="http://www.w3.org/1999/xhtml">
+			<sm:callZone key="co"/>
+		</div>
+	</sm:content>
+</sm:openUiWidget>

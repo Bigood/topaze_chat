@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformer sc:refUri="/case/gen/progress/web/pre/transf/case@initSearch.transf"/>
+	<sm:transformer sc:refUri="/case/gen/progress/web/pre/transf/case@root.transf"/>
+	<sm:transformer sc:refUri="/case/gen/progress/web/pre/transf/case@tools.transf"/>
+</sm:transformerList>

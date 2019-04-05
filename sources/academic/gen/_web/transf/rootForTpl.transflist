@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRoot@btnHelp.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRoot@btnHome.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRoot@btnPlay.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRoot@btnTools.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRootM.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRootM@img.transf"/>
+	<!--<sm:transformer xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" sc:refUri="/academic/gen/_web/transf/root/webRoot@mnuTi.transf" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core"/>-->
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRoot@isSearch.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRoot@date.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRootM@date.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRoot@keywds.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRoot@btnHomeSel.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRoot@lblBtnTtInfo.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRoot@author.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRootM@author.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRoot@mnuModePage.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRoot@mnuModeTools.transf"/>
+	<sm:transformerList>
+		<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRoot@lblBtnHelp.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRoot@lblBtnHome.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRoot@lblBtnHomeSel.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRoot@lblBtnNext.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRoot@lblBtnNextNo.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRoot@lblBtnPlay.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRoot@lblBtnPlaySel.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRoot@lblBtnPrev.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRoot@lblBtnPrevNo.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRoot@lblBtnPrint.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRoot@lblBtnPrintSubWin.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRoot@lblBtnTools.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_web/transf/root/webRoot@lblBtnToolsSel.transf"/>
+	</sm:transformerList>
+</sm:transformerList>

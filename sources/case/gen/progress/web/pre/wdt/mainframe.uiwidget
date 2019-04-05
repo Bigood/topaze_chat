@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="mainframe">
+	<sm:fillTemplateBuffers>
+		<sm:otherBuffers keyBuffer="css">html, body{width100%; height:100%; margin:0; padding:0;}
+iframe{position:absolute; top:0; left:0; width:100%; height:100%;border:0px;}</sm:otherBuffers>
+	</sm:fillTemplateBuffers>
+	<sm:content>
+		<iframe xmlns="http://www.w3.org/1999/xhtml" id="mainframe">
+			<addAttribute name="data-src">
+				<sm:callUrlZone key="zRootUrl"/>
+			</addAttribute>
+		</iframe>
+		<script xmlns="http://www.w3.org/1999/xhtml" type="text/JavaScript">scOnLoads[scOnLoads.length] = {
+	loadSortKey :"Z",
+	onLoad: function() {
+		var vMainFrame = sc$("mainframe") ;
+		vMainFrame.src = vMainFrame.getAttribute("data-src");
+	}
+}
+</script>
+	</sm:content>
+</sm:openUiWidget>

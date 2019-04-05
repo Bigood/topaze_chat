@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiTemplate xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" pageUnicityCriterion="hierarchicalContext">
+	<sm:head>
+		<sm:windowTitle>
+			<sm:pageTitle/>
+		</sm:windowTitle>
+		<sm:meta name="author">
+			<sm:callRootModel axis="author"/>
+		</sm:meta>
+		<sm:meta name="keywords">
+			<sm:callRootModel axis="keywds"/>
+		</sm:meta>
+		<sm:meta name="date">
+			<sm:callRootModel axis="date"/>
+		</sm:meta>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/tpl/htmlMeta.uiwidget"/>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/tpl/revisedMeta.uiwidget"/>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/util/startLinkMeta.uiwidget"/>
+		<sm:Widget sc:refUri="/academic/gen/_sld/widg/mgr/tplMgr.uiwidget"/>
+		<sm:styleSheet src="css/slideHtml.css" srcFrom="skin" title="modeHTML" rel="stylesheet" media="screen"/>
+		<sm:styleSheet src="css/slideSS.css" srcFrom="skin" title="modeSS" rel="alternate stylesheet" media="screen"/>
+		<sm:WXhtmlFragment>&lt;!--[if IE]&gt;</sm:WXhtmlFragment>
+		<sm:styleSheet src="css/ie.css" srcFrom="skin"/>
+		<sm:WXhtmlFragment>&lt;![endif]--&gt;&lt;!--[if lt IE 7]&gt;</sm:WXhtmlFragment>
+		<sm:styleSheet src="css/ie6.css" srcFrom="skin"/>
+		<sm:WXhtmlFragment>&lt;![endif]--&gt;</sm:WXhtmlFragment>
+		<sm:Widget sc:refUri="/academic/gen/_sld/widg/mgr/scHPSSlide.uiwidget"/>
+	</sm:head>
+	<sm:body>
+		<div xmlns="http://www.w3.org/1999/xhtml" id="tplPge">
+			<div id="tplSld">
+				<sm:callMainZone format="xhtml"/>
+			</div>
+			<hr class="hidden" />
+			<strong class="hidden">￼;Navigation :￼</strong>
+			<div id="tplNav">
+				<sm:WLink id="btnRoot" class="outNav_i">
+					<sm:label>￼;Accueil￼</sm:label>
+					<sm:labelTitle>￼;Retourner à l'accueil￼</sm:labelTitle>
+					<sm:link>
+						<sm:callRootModel axis="root"/>
+					</sm:link>
+				</sm:WLink>
+				<sm:Widget sc:refUri="/academic/gen/_sld/widg/util/separator.uiwidget"/>
+				<sm:Widget sc:refUri="/academic/gen/_sld/widg/nav/stack.uiwidget"/>
+				<sm:Widget sc:refUri="/academic/gen/_sld/widg/util/separator.uiwidget"/>
+				<sm:Widget sc:refUri="/academic/gen/_sld/widg/nav/btnPrv.uiwidget"/>
+				<sm:Widget sc:refUri="/academic/gen/_sld/widg/util/separator.uiwidget"/>
+				<sm:Widget sc:refUri="/academic/gen/_sld/widg/nav/btnNxt.uiwidget"/>
+			</div>
+		</div>
+		<sm:script src="js/slide.js" srcFrom="skin" type="text/JavaScript"/>
+	</sm:body>
+</sm:openUiTemplate>

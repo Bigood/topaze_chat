@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/Uc/expUc.model"/>
+	<sm:axis code="co"/>
+	<sm:content format="xhtml">
+		<sm:WHeadingBlock widgetClass="mainContent">
+			<!--Demande du 15/09/2010 : enlever le titre du grain de contenu-->
+			<!--
+
+<sm:title xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+
+	<sm:compositionTitle format="fullTitleText"/>
+
+</sm:title>-->
+			<sm:for codes="pb">
+				<sm:callSubModel/>
+			</sm:for>
+			<sm:for codes="div">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:WHeadingBlock widgetClass="expUcDiv">
+							<sm:title>
+								<sm:subModelTitle/>
+							</sm:title>
+							<sm:callSubModel/>
+						</sm:WHeadingBlock>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+		</sm:WHeadingBlock>
+	</sm:content>
+</sm:compositionXhtmlTransf>

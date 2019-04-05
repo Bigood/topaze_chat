@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:genericCond xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="heavySpider">
+	<sm:targetModel>
+		<sm:lookForAscendants direction="currentToRoot">
+			<sm:callableModel sc:refUri="/case/model/node/heavyNode.model"/>
+		</sm:lookForAscendants>
+		<sm:ifNone>
+			<sm:fixedResult return="false"/>
+		</sm:ifNone>
+	</sm:targetModel>
+	<sm:expression>
+		<sm:comparison operator="=">
+			<sm:leftOperand>
+				<sm:freeXpath xpath="sp:use/opa:heavyNodeM/sp:mode">
+					<sm:extraNamespace prefix="opa" namespace="kelis.fr:opa"/>
+				</sm:freeXpath>
+			</sm:leftOperand>
+			<sm:rightOperand>
+				<sm:fixedString value="spider"/>
+			</sm:rightOperand>
+		</sm:comparison>
+	</sm:expression>
+</sm:genericCond>

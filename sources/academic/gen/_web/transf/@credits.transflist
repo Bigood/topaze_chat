@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/@credits/ue@credits.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/@credits/ueDiv@credits.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/@credits/courseUa@credits.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/@credits/assmntUa@credits.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/@credits/expUc@credits.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/@credits/expUcDiv@credits.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/@credits/practUc@credits.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/@credits/pb@credits.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/@credits/res@credits.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/@credits/txt@credits.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/@credits/txtRes@credits.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/@credits/xxxBinaries@credits.transf"/>
+	<sm:transformerList sc:refUri="/academic/gen/_web/transf/@credits/quiz@credits.transflist"/>
+</sm:transformerList>

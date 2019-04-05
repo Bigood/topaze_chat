@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformer sc:refUri="/case/gen/_scormMono/transf/node/assmntNode.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_scormMono/transf/node/assmntNode@quizList.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_scormMono/transf/node/assmntNode@quizValid.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_scormMono/transf/node/assmntNode@stepsList.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_scormMono/transf/node/expNode@stepsList.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_scormMono/transf/node/heavyNode@stepsList.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_scormMono/transf/node/navNode@stepsList.transf"/>
+</sm:transformerList>

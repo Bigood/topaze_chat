@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:binaryPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="￼;Archive JAVA￼" category="￼;Ressources￼">
+	<sm:help quickHelp="￼; Ressource au format JAR. ￼"/>
+	<sm:identification extensions="jar" mimeTypes="application/java-archive"/>
+	<sm:structure/>
+	<sm:authoring>
+		<sm:icon sc:refUri="/academic/model/_ico/jar.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;res￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+	</sm:authoring>
+</sm:binaryPrim>

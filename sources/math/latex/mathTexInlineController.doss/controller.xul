@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window hidechrome="false" style="background-color: #F8EAEA; " orient="vertical" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" xmlns:html="http://www.w3.org/1999/xhtml" onload="onload()">
+	<script><![CDATA[
+    Components.utils.import("chrome://scenariWsp/content/commons.jsm");
+   
+    document.fUriObject = uriObj.searchUriObject(window.frameElement.contentWindow.frameElement);
+    
+    var fPrevText = null;
+    function setNewSource(pSrcNode) {
+        try {
+            var vNewText = pSrcNode.textContent;
+            if(vNewText && vNewText != fPrevText) {
+                 function xRefresh(){
+                     try {
+                        var vTransform = "transform=latex2img&resolution=96";
+                        if(vNewText) vTransform+="&content="+window.encodeURIComponent(vNewText);
+                        var vUrl = document.fUriObject.getContentUrl(document.fUriObject.getRefUri(), vTransform);
+                        document.getElementById('imgBox').setAttribute("src", vUrl);
+                        delete window._Timeout;
+                     }catch(e) {log.debug(e)}
+                }
+                if(window._Timeout) window.clearTimeout(window._Timeout);
+                window._Timeout = window.setTimeout(xRefresh.bind(this), 500);
+                fPrevText = vNewText;
+            }
+        }catch(e) {log.debug(e)}
+    }
+    
+    function onchange(){
+     	setNewSource(window.frameElement.fNodeToControl);
+    }
+    
+    function onload(){
+    	setNewSource(window.frameElement.fNodeToControl);
+    	window.frameElement.fNodeToControl.addEventListener('DOMSubtreeModified', onchange.bind(this), false);
+    }
+    ]]></script>
+    <hbox style="overflow: auto" pack="center" flex="1">
+        <box flex="1"/>
+        <vbox>
+            <box flex="1"/>
+               <image id="imgBox" style="-moz-binding: url('chrome://scenariWsp/content/widgets/renderers/image.xbl.xml#itemimage')" src="about:blank"/>
+            <box flex="1"/>
+        </vbox>
+        <box flex="1"/>
+    </hbox>
+</window>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/case/model/node/heavyNode.model"/>
+	<sm:axis code="nav"/>
+	<sm:fullTitleText>
+		<sm:callCompositionMeta/>
+	</sm:fullTitleText>
+	<sm:shortTitleText>
+		<sm:callCompositionMeta/>
+	</sm:shortTitleText>
+	<sm:navigation>
+		<sm:choose>
+			<sm:when sc:refUri="/case/gen/_web/cnd/heavySpider.cond">
+				<sm:folder>
+					<sm:title>
+						<sm:compositionTitle/>
+					</sm:title>
+					<sm:folderPreview>
+						<sm:page template="topaze">
+							<sm:mainZone format="xhtml">
+								<sm:WHeadingBlock widgetClass="nodeBk" class="heavyNode ueMnu">
+									<sm:title>
+										<sm:compositionTitle/>
+									</sm:title>
+									<sm:Widget sc:refUri="/case/gen/_web/wdt/ue/ueMnuFull.uiwidget"/>
+								</sm:WHeadingBlock>
+							</sm:mainZone>
+							<sm:zone key="zArc" format="xhtml">
+								<sm:callModel>
+									<sm:current axis="arc"/>
+								</sm:callModel>
+							</sm:zone>
+							<sm:zone key="zCoach" format="xhtml">
+								<sm:callModel>
+									<sm:current axis="coach"/>
+								</sm:callModel>
+							</sm:zone>
+						</sm:page>
+					</sm:folderPreview>
+					<sm:for codes="co">
+						<sm:callSubModel/>
+					</sm:for>
+				</sm:folder>
+			</sm:when>
+			<sm:otherwise>
+				<sm:for codes="co">
+					<sm:callSubModel/>
+				</sm:for>
+			</sm:otherwise>
+		</sm:choose>
+	</sm:navigation>
+</sm:compositionXhtmlTransf>

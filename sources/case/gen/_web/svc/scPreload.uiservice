@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeUiService xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="scPreload" info="Précharement des pages">
+	<sm:publicService key="scPreload"/>
+	<sm:serviceFiles sc:refUri="/academic/gen/_scorm/svc/scPreload.doss">
+		<sm:linkScriptForDeclaringService path="scPreload.js"/>
+	</sm:serviceFiles>
+	<sm:standardLibraryForService codeLib="PaLib"/>
+	<sm:scriptAfterLinksForDeclaringService>scServices.scPreload.addLnkPath("des:.btnNav");
+scServices.scPreload.addLnkPath("des:a.mnu_entry");
+scServices.scPreload.addLnkPath("des:a.enabled_entry");
+scServices.scPreload.addLnkPath("des:area.enabled_entry");
+scServices.scPreload.addLnkPath("des:ul.sw_child_navList/des:a");
+</sm:scriptAfterLinksForDeclaringService>
+</sm:freeUiService>

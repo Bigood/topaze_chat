@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:genericWebSiteTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/math/odf/odf.model"/>
+	<sm:axis code="ref"/>
+	<sm:navigation>
+		<sm:page template="ref">
+			<sm:title>
+				<sm:callModel view="fullTitleText">
+					<sm:current/>
+				</sm:callModel>
+			</sm:title>
+			<sm:mainZone format="xhtml">
+				<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssSlide.uiwidget">
+					<sm:xhtmlContentZone key="co">
+						<scBlock xmlns="http://www.w3.org/1999/xhtml" class="sldHome ">
+							<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBkRoot.uiwidget">
+								<sm:xhtmlContentZone key="co">
+									<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBkCoOnly.uiwidget">
+										<sm:xhtmlContentZone key="co">
+											<sm:callModel view="xhtmlContent">
+												<sm:current/>
+											</sm:callModel>
+										</sm:xhtmlContentZone>
+									</sm:Widget>
+								</sm:xhtmlContentZone>
+							</sm:Widget>
+						</scBlock>
+					</sm:xhtmlContentZone>
+				</sm:Widget>
+			</sm:mainZone>
+		</sm:page>
+	</sm:navigation>
+</sm:genericWebSiteTransf>

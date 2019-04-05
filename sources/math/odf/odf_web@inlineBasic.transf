@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/math/odf/odf.model"/>
+	<sm:axis code="inlineBasic"/>
+	<sm:content>
+		<sm:WImage>
+			<sm:binaryUrl>
+				<sm:odTransform>
+					<sm:scaleFromStandardCharSize/>
+					<sm:sizeBounds maxWidthInPx="400" maxHeightInPx="100"/>
+					<sm:outputPNG/>
+				</sm:odTransform>
+			</sm:binaryUrl>
+			<sm:alt>
+				<sm:callBinaryMeta axis="altTitle"/>
+			</sm:alt>
+			<sm:declareSize/>
+		</sm:WImage>
+	</sm:content>
+</sm:binaryXhtmlTransf>

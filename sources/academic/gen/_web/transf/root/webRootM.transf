@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:dataFormXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/root/webRootM.model"/>
+	<sm:content>
+		<sm:WBlock widgetClass="dataHome">
+			<sm:forField codes="auth">
+				<sm:WBlock widgetClass="authHome">
+					<sm:fieldValueOtherType/>
+				</sm:WBlock>
+			</sm:forField>
+			<sm:forField codes="version">
+				<sm:WBlock widgetClass="versionHome">
+					<sm:fieldValueString/>
+				</sm:WBlock>
+			</sm:forField>
+			<sm:forField codes="date">
+				<sm:WBlock widgetClass="dateHome">
+					<sm:fieldValueString/>
+				</sm:WBlock>
+			</sm:forField>
+		</sm:WBlock>
+	</sm:content>
+</sm:dataFormXhtmlTransf>

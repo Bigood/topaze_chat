@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:textXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Re/txt.model"/>
+	<sm:content classConstructionType="standard">
+		<sm:paraTag tagName="p"/>
+		<sm:listTags>
+			<sm:itemizedListTag widgetClass="txt"/>
+			<sm:orderedListTag widgetClass="txt"/>
+		</sm:listTags>
+		<sm:tableTag widgetClass="txt" targetFontSizeInPt="16.5">
+			<sm:captionTag/>
+			<sm:columnTag/>
+			<sm:columnTag widgetClass="col" role="head" preferedCellTagName="th"/>
+			<sm:rowTag/>
+			<sm:rowTag widgetClass="row" role="head" preferedCellTagName="th"/>
+			<sm:cellTag/>
+			<sm:cellTag role="num"/>
+			<sm:cellTag role="word"/>
+		</sm:tableTag>
+		<sm:uLinkTag widgetClass="txt_zm txt_acr" role="acr">
+			<sm:refItem>
+				<sm:label class="ssZmLnk">
+					<sm:textLink/>
+				</sm:label>
+				<sm:labelTitle>
+					<sm:callSubModel axis="title"/>
+					<sm:fixedString value="￼; (nouvelle fenêtre)￼"/>
+				</sm:labelTitle>
+				<sm:link target="newWindow">
+					<sm:callSubModel axis="ref" navCtx="newRoot"/>
+				</sm:link>
+			</sm:refItem>
+		</sm:uLinkTag>
+		<sm:uLinkTag widgetClass="txt_zm txt_glos" role="glos">
+			<sm:refItem>
+				<sm:label class="ssZmLnk">
+					<sm:textLink/>
+				</sm:label>
+				<sm:labelTitle>
+					<sm:subModelTitle/>
+					<sm:fixedString value="￼; (nouvelle fenêtre)￼"/>
+				</sm:labelTitle>
+				<sm:link target="newWindow">
+					<sm:callSubModel axis="ref" navCtx="newRoot"/>
+				</sm:link>
+			</sm:refItem>
+		</sm:uLinkTag>
+		<sm:uLinkTag widgetClass="txt_zm txt_bib" role="bib">
+			<sm:refItem>
+				<sm:label class="ssZmLnk">
+					<sm:textLink/>
+				</sm:label>
+				<sm:labelTitle>
+					<sm:subModelTitle/>
+					<sm:fixedString value="￼; (nouvelle fenêtre)￼"/>
+				</sm:labelTitle>
+				<sm:link target="newWindow">
+					<sm:callSubModel axis="ref" navCtx="newRoot"/>
+				</sm:link>
+			</sm:refItem>
+		</sm:uLinkTag>
+		<sm:uLinkTag widgetClass="txt_zm txt_ref" role="ref">
+			<sm:refItem>
+				<sm:label class="ssZmLnk">
+					<sm:textLink/>
+				</sm:label>
+				<sm:labelTitle>
+					<sm:subModelTitle/>
+					<sm:fixedString value="￼; (nouvelle fenêtre)￼"/>
+				</sm:labelTitle>
+				<sm:link target="newWindow">
+					<sm:callSubModel axis="ref" navCtx="newRoot"/>
+				</sm:link>
+			</sm:refItem>
+		</sm:uLinkTag>
+		<sm:uLinkTag widgetClass="txt_docLnk" role="docLnk">
+			<sm:refItem>
+				<sm:label>
+					<sm:callSubModel axis="ico"/>
+					<sm:textLink/>
+				</sm:label>
+				<sm:labelTitle>
+					<sm:subModelTitle prefix="￼;Référence : ￼" format="fullTitleText"/>
+					<sm:fixedString value="￼; (nouvelle fenêtre)￼"/>
+				</sm:labelTitle>
+				<sm:link target="newWindow">
+					<sm:callSubModel axis="ref" navCtx="newRoot"/>
+				</sm:link>
+			</sm:refItem>
+		</sm:uLinkTag>
+		<sm:uLinkTag widgetClass="txt_resLnk" role="resLnk">
+			<sm:refItem>
+				<sm:label class="ssZmLnk">
+					<sm:textLink/>
+				</sm:label>
+				<sm:labelTitle>
+					<sm:subModelTitle prefix="￼;Référence : ￼" format="fullTitleText"/>
+					<sm:fixedString value="￼; (nouvelle fenêtre)￼"/>
+				</sm:labelTitle>
+				<sm:link target="newWindow">
+					<sm:callSubModel axis="ref" navCtx="newRoot"/>
+				</sm:link>
+			</sm:refItem>
+		</sm:uLinkTag>
+		<sm:uLinkTag widgetClass="txt_ucLnk" role="ucLnk">
+			<sm:refItem>
+				<sm:label class="htmlZmLnk">
+					<sm:textLink/>
+				</sm:label>
+				<sm:labelTitle>
+					<sm:subModelTitle prefix="￼;Référence : ￼" format="fullTitleText"/>
+					<sm:fixedString value="￼; (nouvelle fenêtre)￼"/>
+				</sm:labelTitle>
+				<sm:link target="newWindow">
+					<sm:callSubModel axis="ref" navCtx="newRoot"/>
+				</sm:link>
+			</sm:refItem>
+		</sm:uLinkTag>
+		<sm:phraseTag role="url" tagName="none">
+			<sm:Widget sc:refUri="/academic/gen/_web/widg/util/urlM.uiwidget"/>
+		</sm:phraseTag>
+		<sm:inlineStyleTag role="quote" tagName="q">
+			<sm:textWrapper prefix="￼;« ￼" suffix="￼; »￼"/>
+		</sm:inlineStyleTag>
+		<sm:inlineStyleTag widgetClass="txt_emphasis" role="emp" tagName="strong"/>
+		<sm:inlineStyleTag widgetClass="txt_special" role="spec" tagName="em">
+			<sm:Widget sc:refUri="/academic/gen/_web/widg/util/txtLangAttr.uiwidget"/>
+		</sm:inlineStyleTag>
+		<sm:inlineStyleTag role="code" tagName="code"/>
+		<sm:textLeafTag widgetClass="txt_exp" role="exp" tagName="sup"/>
+		<sm:textLeafTag widgetClass="txt_ind" role="ind" tagName="sub"/>
+		<sm:textLeafTag role="mathtex">
+			<sm:Widget sc:refUri="/math/latex/mathTexInline_sld.uiwidget"/>
+		</sm:textLeafTag><!--ATTENTION l'élément suivant à été ajouté en XSL par la dérivation.--><sm:objectLeafTag xmlns:op="utc.fr:ics/opale3" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sext="http://www.utc.fr/ics/scenari/v3/modeling/extension" role="indDisplay"><sm:refItem><sm:label><sm:callSubModel axis="disp"/></sm:label><sm:labelTitle><sm:subModelTitle axis="disp"/></sm:labelTitle></sm:refItem></sm:objectLeafTag><!--ATTENTION l'élément suivant à été ajouté en XSL par la dérivation.--><sm:objectLeafTag xmlns:op="utc.fr:ics/opale3" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sext="http://www.utc.fr/ics/scenari/v3/modeling/extension" role="indField"><sm:refItem><sm:label><sm:callSubModel axis="edit"/></sm:label><sm:labelTitle><sm:subModelTitle axis="edit"/></sm:labelTitle></sm:refItem></sm:objectLeafTag><!--ATTENTION l'élément suivant à été ajouté en XSL par la dérivation.--><sm:objectLeafTag xmlns:op="utc.fr:ics/opale3" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sext="http://www.utc.fr/ics/scenari/v3/modeling/extension" role="varDisplay"><sm:refItem><sm:label><sm:callSubModel axis="disp"/></sm:label><sm:labelTitle><sm:subModelTitle axis="disp"/></sm:labelTitle></sm:refItem></sm:objectLeafTag><!--ATTENTION l'élément suivant à été ajouté en XSL par la dérivation.--><sm:objectLeafTag xmlns:op="utc.fr:ics/opale3" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sext="http://www.utc.fr/ics/scenari/v3/modeling/extension" role="varField"><sm:refItem><sm:label><sm:callSubModel axis="edit"/></sm:label><sm:labelTitle><sm:subModelTitle axis="edit"/></sm:labelTitle></sm:refItem></sm:objectLeafTag>
+		<sm:inlineImgTag widgetClass="txt_form" role="form">
+			<sm:callSubModel axis="inline"/>
+		</sm:inlineImgTag>
+		<sm:inlineImgTag widgetClass="txt_ico" role="ico">
+			<sm:callSubModel axis="inline"/>
+		</sm:inlineImgTag>
+	</sm:content>
+</sm:textXhtmlTransf>

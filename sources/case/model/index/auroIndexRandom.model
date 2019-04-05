@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:dataFormPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Indicateur Méta￼">
+	<sm:help quickHelp="￼;Retourne un nombre entier aléatoire compris entre &quot;Minimum&quot; et &quot;Maximum&quot;. Cet indicateur peut avoir plusieurs degrés de persistance, soit &quot;Pas de persistance&quot; (recalculé systématiquement), soit une persistance dans &quot;l'Étape en cours&quot; (le nombre est calculé une seule fois par étape), soit &quot;l'Étude de cas&quot; (le nombre est calculé une seule fois pour toute l'étude de cas et sera stocké avec les données de l'apprenant).￼"/>
+	<sm:identification targetNamespace="kelis.fr:opa" targetPrefix="opa" code="auroIndexRandom" itemExtension="xml"/>
+	<sm:structure>
+		<sm:field code="min" name="￼;Minimum￼" occurrence="one">
+			<sm:number min="0" max="Infinity" allowedDecimals="0"/>
+		</sm:field>
+		<sm:field code="max" name="￼;Maximum￼" occurrence="one">
+			<sm:number min="1" max="Infinity" allowedDecimals="0"/>
+		</sm:field>
+		<sm:field code="persistance" name="￼;Persistance￼" occurrence="zeroOrOne">
+			<sm:enum>
+				<sm:option key="page" name="￼;Étape en cours￼"/>
+				<sm:option key="session" name="￼;Étude de cas￼"/>
+				<sm:optionSeparator/>
+				<sm:option key="none" name="￼;Pas de persistance￼"/>
+			</sm:enum>
+		</sm:field>
+	</sm:structure>
+	<sm:storage/>
+	<sm:authoring>
+		<sm:formEditor indentXml="true">
+			<sm:dataForm defaultStyle="element">
+				<sm:help>
+					<sm:quickHelp>
+						<sm:description style="color:gray; font-style: italic;"/>
+					</sm:quickHelp>
+				</sm:help>
+			</sm:dataForm>
+			<sm:numberField refCode="min" defaultStyle="property" tagStyle="color:#446e43;" increment="1"/>
+			<sm:numberField refCode="max" defaultStyle="property" tagStyle="color:#446e43;" increment="1"/>
+			<sm:enumField refCode="persistance" defaultStyle="property" tagStyle="color:#446e43;"/>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:dataFormPrim>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sext="http://www.utc.fr/ics/scenari/v3/modeling/extension" sext:assmnt="true" name="￼;Applet￼">
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="applet" itemExtension="applet"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/academic/model/Re/applet/appletM.model" usage="required"/>
+		<sm:set usage="required">
+			<sm:part code="statParamText" name="￼;Paramètre statique textuel￼" internalized="always">
+				<sm:meta sc:refUri="/academic/model/Re/applet/statParamTextM.model" usage="required"/>
+			</sm:part>
+			<sm:part code="statParamRes" name="￼;Paramètre statique de ressource￼" internalized="always">
+				<sm:meta sc:refUri="/academic/model/Re/applet/statParamResM.model" usage="required"/>
+			</sm:part><!--ATTENTION l'élément suivant a été ajouté en XSL par la dérivation.--><sm:part xmlns:op="utc.fr:ics/opale3" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:sma="kelis.fr:scenari/modeling/assessment" internalized="never" name="￼;Paramètre dynamique￼" code="dynParam"><sm:meta usage="required" sc:refUri="/case/model/re/applet/dynParamM.model"/><sm:allowedModel sc:refUri="/case/model/index/autoIndex.model"/><sm:allowedModel sc:refUri="/case/model/index/userIndex.model"/><sm:allowedModel sc:refUri="/case/model/index/autoVar.model"/><sm:allowedModel sc:refUri="/case/model/index/userVar.model"/><sm:allowedModel sc:refUri="/academic/model/Re/applet/applet.model"/></sm:part>
+		</sm:set>
+		<sm:part code="library" name="￼;Librairie de l'applet￼" family="content" internalized="never" usage="required">
+			<sm:meta sc:refUri="/academic/model/Re/applet/libraryM.model" usage="required"/>
+			<sm:allowedModel sc:refUri="/academic/model/Re/applet/jar.model"/>
+		</sm:part>
+	</sm:structure>
+	<sm:authoring>
+		<sm:icon sc:refUri="/academic/model/_ico/applet_small.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;res￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:formEditor indentXml="true">
+			<sm:composition>
+				<sm:standardWidget tagStyle="font-family:arial;font-size:1.8em; background-color:#359632; color:white; -moz-border-radius:5px; -moz-padding-start:4px; -moz-padding-end:4px;">
+					<sm:iconTag sc:refUri="/academic/model/_ico/applet.png" style="margin-right: 5px;"/>
+				</sm:standardWidget>
+			</sm:composition>
+			<sm:part refCode="statParam">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/statParam.png"/>
+								<sm:name style="margin-left:5px;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+					<sm:styles statusCondition="empty">
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/statParamFade.png"/>
+								<sm:name/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="library">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/lib.png"/>
+								<sm:name style="margin-left:5px;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="folder">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/academic/model/_ico/lib.png"/>
+								<sm:name style="margin-left:5px;"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:compositionPrim>

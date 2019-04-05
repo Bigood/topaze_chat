@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:imagePrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Image PNG￼" category="￼;Ressource￼">
+	<sm:help quickHelp="￼;Insérer une image png à une résolution de 300 dpi￼"/>
+	<sm:identification extensions="png" mimeTypes="image/png"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/academic/model/metaData/imgM.model" usage="optional"/>
+	</sm:structure>
+	<sm:authoring>
+		<sm:sizeBlock>
+			<sm:standardCharSize>
+				<sm:editor/>
+				<sm:defaultValue readSourceDpi="false" defaultDpi="300"/>
+			</sm:standardCharSize>
+			<sm:rotation>
+				<sm:editor/>
+				<sm:defaultValue allowed="false"/>
+			</sm:rotation>
+		</sm:sizeBlock>
+		<sm:icon sc:refUri="/binaries/png/_res/png.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;image￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+	</sm:authoring>
+</sm:imagePrim>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/case/model/case.model"/>
+	<sm:axis code="tools"/>
+	<sm:content format="xhtml">
+		<sm:WFreeBlock>
+			<ul xmlns="http://www.w3.org/1999/xhtml" class="toolcase">
+				<sm:choose>
+					<sm:when codes="outline">
+						<sm:WFreeBlock>
+							<li>
+								<sm:callModel>
+									<sm:current axis="toolMnu"/>
+								</sm:callModel>
+							</li>
+						</sm:WFreeBlock>
+					</sm:when>
+				</sm:choose>
+				<sm:choose>
+					<sm:when codes="map">
+						<sm:WFreeBlock>
+							<li>
+								<sm:callModel>
+									<sm:current axis="toolMap"/>
+								</sm:callModel>
+							</li>
+						</sm:WFreeBlock>
+					</sm:when>
+				</sm:choose>
+				<sm:choose>
+					<sm:when xpath="opa:caseM/sp:param/sp:biblio = 'yes'">
+						<sm:WFreeBlock>
+							<li>
+								<sm:callModel>
+									<sm:current axis="toolBib"/>
+								</sm:callModel>
+							</li>
+						</sm:WFreeBlock>
+					</sm:when>
+				</sm:choose>
+				<sm:choose>
+					<sm:when xpath="opa:caseM/sp:param/sp:glos = 'yes'">
+						<sm:WFreeBlock>
+							<li>
+								<sm:callModel>
+									<sm:current axis="toolGlos"/>
+								</sm:callModel>
+							</li>
+						</sm:WFreeBlock>
+					</sm:when>
+				</sm:choose>
+				<sm:choose>
+					<sm:when xpath="opa:caseM/sp:param/sp:acr = 'yes'">
+						<sm:WFreeBlock>
+							<li>
+								<sm:callModel>
+									<sm:current axis="toolAcr"/>
+								</sm:callModel>
+							</li>
+						</sm:WFreeBlock>
+					</sm:when>
+				</sm:choose>
+				<sm:choose>
+					<sm:when xpath="opa:caseM/sp:param/sp:credits= 'yes'">
+						<sm:WFreeBlock>
+							<li>
+								<sm:callModel>
+									<sm:current axis="toolCredits"/>
+								</sm:callModel>
+							</li>
+						</sm:WFreeBlock>
+					</sm:when>
+				</sm:choose>
+				<sm:choose>
+					<sm:when sc:refUri="/case/gen/_web/cnd/hasRefs.cond">
+						<sm:WFreeBlock>
+							<li>
+								<sm:callModel>
+									<sm:current axis="toolRes"/>
+								</sm:callModel>
+							</li>
+						</sm:WFreeBlock>
+					</sm:when>
+				</sm:choose>
+				<sm:choose>
+					<sm:when xpath="not(opa:caseM/sp:param/sp:search = 'no')">
+						<sm:WFreeBlock>
+							<li>
+								<sm:callModel>
+									<sm:current axis="toolSearch"/>
+								</sm:callModel>
+							</li>
+						</sm:WFreeBlock>
+					</sm:when>
+				</sm:choose>
+			</ul>
+		</sm:WFreeBlock>
+		<sm:choose>
+			<sm:when xpath="not(opa:caseM/sp:param/sp:navBtns = 'no')">
+				<sm:WFreeBlock>
+					<sm:Widget sc:refUri="/case/gen/_web/wdt/btns/tplNav.uiwidget"/>
+				</sm:WFreeBlock>
+			</sm:when>
+		</sm:choose>
+	</sm:content>
+</sm:compositionXhtmlTransf>

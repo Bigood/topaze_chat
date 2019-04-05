@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformerList info="doc">
+		<sm:transformer sc:refUri="/binaries/doc/doc_web@legal.transf"/>
+		<sm:transformer sc:refUri="/binaries/odp/odp_web@legal.transf"/>
+		<sm:transformer sc:refUri="/binaries/ods/ods_web@legal.transf"/>
+		<sm:transformer sc:refUri="/binaries/odt/odt_web@legal.transf"/>
+		<sm:transformer sc:refUri="/binaries/pdf/pdf_web@legal.transf"/>
+		<sm:transformer sc:refUri="/binaries/ppt/ppt_web@legal.transf"/>
+		<sm:transformer sc:refUri="/binaries/xls/xls_web@legal.transf"/>
+		<sm:transformer sc:refUri="/binaries/zip/zip_web@legal.transf"/>
+	</sm:transformerList>
+	<sm:transformerList info="img">
+		<sm:transformer sc:refUri="/binaries/gif/gif_web@legal.transf"/>
+		<sm:transformer sc:refUri="/binaries/jpg/jpeg_web@legal.transf"/>
+		<sm:transformer sc:refUri="/binaries/odg/odg_web@legal.transf"/>
+		<sm:transformer sc:refUri="/binaries/png/png_web@legal.transf"/>
+	</sm:transformerList>
+	<sm:transformerList info="mm">
+		<sm:transformer sc:refUri="/binaries/avi/avi_web@legal.transf"/>
+		<sm:transformer sc:refUri="/binaries/flash/flash_web@legal.transf"/>
+		<sm:transformer sc:refUri="/binaries/flv/flv_web@legal.transf"/>
+		<sm:transformer sc:refUri="/binaries/mov/mov_web@legal.transf"/>
+		<sm:transformer sc:refUri="/binaries/mp4/mp4_web@legal.transf"/>
+		<sm:transformer sc:refUri="/binaries/mp3/mp3_web@legal.transf"/>
+		<sm:transformer sc:refUri="/binaries/mpg/mpg_web@legal.transf"/>
+		<sm:transformer sc:refUri="/binaries/oga/oga_web@legal.transf"/>
+		<sm:transformer sc:refUri="/binaries/opus/opus_web@legal.transf"/>
+		<sm:transformer sc:refUri="/binaries/rm/rm_web@legal.transf"/>
+		<sm:transformer sc:refUri="/binaries/mov/mov_web@legal.transf"/>
+		<sm:transformer sc:refUri="/binaries/rm/rm_web@legal.transf"/>
+		<sm:transformer sc:refUri="/binaries/webm/webm_web@legal.transf"/>
+		<sm:transformer sc:refUri="/binaries/wmv/wmv_web@legal.transf"/>
+	</sm:transformerList>
+	<sm:transformer sc:refUri="/binaries/undef/undefBinary_web@legal.transf"/>
+</sm:transformerList>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:binaryXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/binaries/png/png.model"/>
+	<sm:fullTitleText>
+		<sm:callBinaryMeta/>
+	</sm:fullTitleText>
+	<sm:shortTitleText>
+		<sm:callBinaryMeta/>
+	</sm:shortTitleText>
+	<sm:content>
+		<sm:Widget sc:refUri="/binaries/_sld/widg/imgInFlow.uiwidget">
+			<sm:xhtmlContentZone key="img">
+				<sm:WImage widgetClass="imgBase">
+					<sm:binaryUrl>
+						<sm:imageTransform>
+							<sm:scaleFromStandardCharSize targetFontSizeInPt="24">
+								<sm:ifNoStandardCharSize>
+									<sm:scale ratio="1.5"/>
+								</sm:ifNoStandardCharSize>
+							</sm:scaleFromStandardCharSize>
+							<sm:sizeBounds maxWidthInPx="800" maxHeightInPx="533"/>
+							<sm:outputPNG/>
+						</sm:imageTransform>
+					</sm:binaryUrl>
+					<sm:declareSize/>
+				</sm:WImage>
+			</sm:xhtmlContentZone>
+			<sm:xhtmlContentZone key="imgOthers">
+				<sm:chooseOnBinary>
+					<sm:binary>
+						<sm:imageSize>
+							<sm:scaleFromStandardCharSize targetFontSizeInPt="24">
+								<sm:ifNoStandardCharSize>
+									<sm:scale ratio="1.5"/>
+								</sm:ifNoStandardCharSize>
+							</sm:scaleFromStandardCharSize>
+						</sm:imageSize>
+					</sm:binary>
+					<sm:whenSize widthOver="800" heightOver="533">
+						<sm:WImage>
+							<sm:binaryUrl>
+								<sm:imageTransform>
+									<sm:scaleFromStandardCharSize targetFontSizeInPt="24">
+										<sm:ifNoStandardCharSize>
+											<sm:scale ratio="1.5"/>
+										</sm:ifNoStandardCharSize>
+									</sm:scaleFromStandardCharSize>
+									<sm:sizeBounds maxWidthInPx="1200" maxHeightInPx="800"/>
+									<sm:outputPNG/>
+								</sm:imageTransform>
+							</sm:binaryUrl>
+							<sm:declareSize/>
+						</sm:WImage>
+					</sm:whenSize>
+				</sm:chooseOnBinary>
+			</sm:xhtmlContentZone>
+			<sm:xhtmlContentZone key="caption">
+				<sm:WFreeBlock>
+					<sm:title>
+						<sm:binaryMeta/>
+					</sm:title>
+				</sm:WFreeBlock>
+			</sm:xhtmlContentZone>
+		</sm:Widget>
+	<!--ATTENTION l'élément suivant à été ajouté en XSL par la dérivation.--><sm:callModel xmlns:op="utc.fr:ics/opale3" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sext="http://www.utc.fr/ics/scenari/v3/modeling/extension"><sm:current axis="credits"/></sm:callModel></sm:content>
+</sm:binaryXhtmlTransf>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sma:scormCamUiFrame xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sma="kelis.fr:scenari/modeling/assessment">
+	<sm:uiServices>
+		<sm:uiService sc:refUri="/academic/gen/_scorm/svc/scormMulti.uiservice"/>
+		<sm:uiService sc:refUri="/academic/gen/_scorm/svc/lmsHack.uiservice"/>
+		<sm:uiService sc:refUri="/academic/gen/_scorm/svc/annotSvc.uiservice"/>
+		<sm:uiService sc:refUri="/academic/gen/_scorm/svc/scormMultiConf.uiservice"/>
+	</sm:uiServices>
+	<sm:rootContext>
+		<sm:transparentFrameset/>
+	</sm:rootContext>
+	<sm:callRootModel axis="rootCam"/>
+	<sm:publishFiles sc:refUri="/academic/gen/quadra/scormMulti/scorm.doss"/>
+	<sm:freeInitProperties mode="append"># Pas de bouton 'télécharger'
+destination.onestream.mimetype=
+destination.onestream.builder=</sm:freeInitProperties>
+</sma:scormCamUiFrame>

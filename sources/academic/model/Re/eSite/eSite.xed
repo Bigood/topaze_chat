@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeXed xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:se="http://www.utc.fr/ics/scenari/v3/editing" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" code="op_eSite">
+	<sm:chromeFiles sc:refUri="/academic/model/Re/eSite/eSite.doss"/>
+	<sm:namespaceToDeclare prefix="op" ns="utc.fr:ics/opale3"/>
+	<sm:namespaceToDeclare prefix="sp" ns="http://www.utc.fr/ics/scenari/v3/primitive"/>
+	<se:editor se:namespaces="true">
+		<se:uiLib>
+			<se:style>@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@namespace se url("http://www.utc.fr/ics/scenari/v3/editing");
+element[type="op_eSite##eweb"] {
+	-moz-binding:url("chrome://scenarixedlib/content/libUiXml/widgets/xedUiXmlElt.xbl.xml#hiddenElement");
+}
+element[type="op_eSite##eweb"]&gt;childs{
+	-moz-margin-start:0px;
+}
+
+.fragPreview{
+  border:1px solid #D3D3D3;
+  overflow:hidden;
+  margin-left: 12px;
+  margin-right: 10px;
+}</se:style>
+		</se:uiLib>
+		<se:lib>
+			<dropPasteItem se:id="op_eSite" se:bind="element" childrenRoot="true" regexpSgn=".*@op_eSite\b.*" se:declareNs="sp op sc" se:title="￼Site web￼" se:name="op:eSite" type="op_eSite#">
+				<element tooltipTag="￼Insérer un site web embarqué ou affiché dans une nouvelle page￼" styleTag="font-family:arial;font-size:1.8em; background-color:#359632; color:white; -moz-border-radius:5px; -moz-padding-start:4px; -moz-padding-end:4px;" icon="[chromeContentPrefixUrl]/_eSite/img/eSiteBig.png" styleIcon="margin-right: 5px;">
+					<childs>
+						<se:ref se:refid="s_content"/>
+					</childs>
+				</element>
+			</dropPasteItem>
+			<dropPasteItem se:id="op_eSite:hideHeader" se:bind="element" childrenRoot="true" regexpSgn=".*@op_eSite\b.*" se:declareNs="sp op sc" se:title="￼Site web￼" se:name="op:eSite" type="op_eSite#">
+				<hiddenElement>
+					<childs>
+						<se:ref se:refid="s_content"/>
+					</childs>
+				</hiddenElement>
+			</dropPasteItem>
+			<se:template se:id="s_content">
+				<sm:refModel sc:refUri="/academic/model/metaData/binAltM.model" sm:editorType="hideHeader" se:card="1"/>
+				<element se:bind="element" se:title="￼Site web interactif￼" se:name="sp:eweb" opened="true" type="op_eSite##eweb" style="margin-top:0.5em; -moz-binding: url([chromeContentPrefixUrl]/_eSite/eSite.xbl.xml#eweb)">
+					<childs>
+						<ptritem se:bind="attribute" eWebPtr="true" notnull="true" regexpSgn=".*@sfile_eWeb\b.*" class="formview" se:name="sc:refUri" se:title="Ref"/>
+						<hiddenElement se:bind="element" sizeElt="true" se:declareNs="sp op sc" se:title="" se:name="op:sizeM">
+							<childs>
+								<element se:bind="element" widthElt="true" class="property" startAt="80" se:title="￼Largeur￼" se:name="sp:width" tooltipTag="￼Largeur en pixels￼" se:card="?" orientation="horizontal">
+									<childs>
+										<hbox>
+											<contentElement se:bind="text" style="width:4em;" class="property">
+												<textInput widthInput="true" validRegExp="^\d+$" style="min-height:25px;" decimalplaces="0" max="2000" min="0" type="number" notnull="true"/>
+											</contentElement>
+											<spacer flex="1"/>
+										</hbox>
+									</childs>
+								</element>
+								<element se:bind="element" class="property" startAt="80" se:title="￼Hauteur￼" se:name="sp:height" tooltipTag="￼Hauteur en pixels￼" se:card="1" orientation="horizontal">
+									<childs>
+										<hbox>
+											<contentElement se:bind="text" style="width:4em;" class="property">
+												<textInput heightInput="true" validRegExp="^\d+$" style="min-height:25px;" decimalplaces="0" max="2000" min="0" type="number" notnull="true"/>
+											</contentElement>
+											<spacer flex="1"/>
+										</hbox>
+									</childs>
+								</element>
+							</childs>
+						</hiddenElement>
+					</childs>
+				</element>
+			</se:template>
+		</se:lib>
+		<xmlview se:bind="document">
+			<hiddenElement se:bind="element" se:title="Item" se:name="sc:item">
+				<childs>
+					<dropPasteItem se:bind="element" childrenRoot="true" regexpSgn=".*@op_eSite\b.*" se:declareNs="sp op sc" se:title="￼Site web￼" se:name="op:eSite" type="op_eSite#">
+						<element opened="always" insert="collapsed" tooltipTag="￼Insérer un site web embarqué ou affiché dans une nouvelle page￼" styleTag="font-family:arial;font-size:1.8em; background-color:#359632; color:white; -moz-border-radius:5px; -moz-padding-start:4px; -moz-padding-end:4px;" icon="[chromeContentPrefixUrl]/_eSite/img/eSiteBig.png" styleIcon="margin-right: 5px;">
+							<childs>
+								<se:ref se:refid="s_content"/>
+							</childs>
+						</element>
+					</dropPasteItem>
+				</childs>
+			</hiddenElement>
+		</xmlview>
+	</se:editor>
+</sm:freeXed>

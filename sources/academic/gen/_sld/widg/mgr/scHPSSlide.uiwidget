@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="scHPSSlide" info="SCENARI HTML Presentation system - slide template (requires scHPS in window.parent)">
+	<sm:fillTemplateBuffers>
+		<sm:standardLibrary codeLib="SiLib"/>
+		<sm:postXslFragment keyXsl="xhtml"><!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1364484028206">Les boutons de navigation du mode HTML doivent charger les pages en mode HTML.</comment></comment>-->&lt;xsl:template match="@href[contains(parent::a/@class,'outNav_i')]"&gt;
+  &lt;xsl:attribute name="href"&gt;&lt;xsl:value-of select="."/&gt;?mode=html&lt;/xsl:attribute&gt;
+&lt;/xsl:template&gt;
+
+</sm:postXslFragment>
+		<sm:postXslFragment keyXsl="xhtml"><!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1364484037252">Les boutons de zoom du mode HTML doivent charger les pages en mode HTML.</comment></comment>-->&lt;xsl:template match="@href[contains(parent::a/@class,'ssZmLnk')]"&gt;
+  &lt;xsl:attribute name="href"&gt;&lt;xsl:value-of select="."/&gt;?mode=html&lt;/xsl:attribute&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match="@href[contains(parent::a/@class,'htmlZmLnk')]"&gt;
+  &lt;xsl:attribute name="href"&gt;&lt;xsl:value-of select="."/&gt;?mode=html&lt;/xsl:attribute&gt;
+&lt;/xsl:template&gt;
+
+</sm:postXslFragment>
+		<sm:otherBuffers keyBuffer="js.postLink">/* A - sort key */
+try{if (window.parent &amp;&amp; window.parent.scHPS){
+   var scHPS = window.parent.scHPS;
+   var scSldMgr = new scHPS.SldMgr("ide:tplPge", window);
+   (function(pSldMgr){
+     pSldMgr.addBindableBlk("des:div.imgInFlow",{ratioHeightAlone:1,ratioHeight:.85,captionHeight:45},scHPS.SizeBlkImg);
+     pSldMgr.addBindableBlk("des:div.imgIllus",{ratioHeightAlone:.6,ratioHeight:.5,captionHeight:45},scHPS.SizeBlkImg);
+     pSldMgr.addBindableBlk("des:span.imgInline",{captionHeight:0},scHPS.SizeBlkImg);
+     pSldMgr.addBindableBlk("des:span.imgLabel",{ratioHeight:.5,captionHeight:0},scHPS.SizeBlkImg);
+     pSldMgr.addBindableBlk("des:div.objInFlow",null,scHPS.SizeBlkObj);
+     pSldMgr.addBindableBlk("des:div.vidInFlow",{onAction:function(pRes){try{this.fObj.SetVariable("player:jsPause", "")}catch(e){};try{this.fObj.pause()}catch(e){};}},scHPS.SizeBlkObj);
+     pSldMgr.addBindableBlk("des:span.objInline",{captionHeight:0},scHPS.SizeBlkObj);
+     pSldMgr.addBindableBlk("des:a.ssZmLnk",null,scHPS.FraZmBlk);
+     pSldMgr.addBindableBlk("des:a.htmlZmLnk",{setModeHtml:true},scHPS.FraZmBlk);
+     pSldMgr.addBindableBlk("des:div.imgGal",{autoStart:false},scHPS.AnimBlk);
+   })(scSldMgr);
+}}catch(e){}
+</sm:otherBuffers>
+	</sm:fillTemplateBuffers>
+	<sm:content/>
+</sm:openUiWidget>

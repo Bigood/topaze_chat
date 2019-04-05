@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:dataFormXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/case/model/scormRootM.model"/>
+	<sm:axis code="parcours"/>
+	<sm:content>
+		<sm:forField codes="routes">
+			<sm:fieldValueEnum format="key"/>
+		</sm:forField>
+	</sm:content>
+</sm:dataFormXhtmlTransf>

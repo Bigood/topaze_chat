@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="getPng">
+	<!--NOTE : Le free est nécessaire pour gérer le décalage de la ressource (centre mathématique)-->
+	<!--NOTE : La borne maximum de la taille est désactivée (stp) pour le web. Ceci nous obligerais a lancer 3 latex + 2 imagemagick au lieu de seulement 2 latex.-->
+	<sm:zoneToDeclare key="scale" occurrence="ZeroOrOne"/>
+	<sm:zoneToDeclare key="class" occurrence="ZeroOrOne"/>
+	<sm:zoneToDeclare key="alt" occurrence="ZeroOrOne"/>
+	<sm:widgetBsFragment contentFormat="xhtml">&lt;source type="xslOnSrc-dynamique"&gt;
+	&lt;xsl:stylesheet exclude-result-prefixes="sc sp java"
+	version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+	xmlns:sc="http://www.utc.fr/ics/scenari/v3/core"
+	xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive"
+	xmlns:java="http://xml.apache.org/xslt/java"&gt;
+
+		&lt;xsl:output omit-xml-declaration="yes" indent="no" method="xml" /&gt;
+		&lt;xsl:param name="vDialog" /&gt;
+		&lt;xsl:param name="vAgent" /&gt;
+		&lt;xsl:param name="vArguments" /&gt;
+
+		&lt;xsl:template match="*"&gt;
+			&lt;xsl:variable name="vClass" select="returnFirst(computeStrAgent('xhtmlContentZone_class'),'')"/&gt;
+			&lt;xsl:variable name="vScale" select="returnFirst(computeStrAgent('xhtmlContentZone_scale'),'1.3')"/&gt;
+			&lt;xsl:variable name="vDep" select="number(computeStrAgent('//', concat('get:src:', java:getSrcUri(srcFileAgent()), '?transform=latex2img&amp;amp;resolution=96&amp;amp;scale=',$vScale, '&amp;amp;outType=DIMS&amp;amp;outRules=Str(pattern''!dpx'')')))"/&gt;
+			&lt;xsl:variable name="vWidth" select="computeStrAgent('//', concat('get:src:', java:getSrcUri(srcFileAgent()), '?transform=latex2img&amp;amp;resolution=96&amp;amp;scale=',$vScale, '&amp;amp;fileExt=.png&amp;amp;transform=img2img&amp;amp;outType=DIMS&amp;amp;outRules=Str(pattern''!wpx'')'))"/&gt;
+			&lt;xsl:variable name="vHeight" select="computeStrAgent('//', concat('get:src:', java:getSrcUri(srcFileAgent()), '?transform=latex2img&amp;amp;resolution=96&amp;amp;scale=',$vScale, '&amp;amp;fileExt=.png&amp;amp;transform=img2img&amp;amp;outType=DIMS&amp;amp;outRules=Str(pattern''!hpx'')'))"/&gt;
+			&lt;img class="{$vClass}" lookForAlt="{computeStrAgent('xhtmlContentZone_alt')}" width="{number($vWidth)}" height="{number($vHeight)}" src="{computeStrAgent('//', concat('res:src=src:', java:getSrcUri(srcFileAgent()), ';transform=latex2img&amp;amp;resolution=96&amp;amp;scale=',$vScale, '&amp;amp;fileExt=.png&amp;amp;'))}" style="vertical-align:-{$vDep}px;"/&gt;
+		&lt;/xsl:template&gt;
+	&lt;/xsl:stylesheet&gt;
+&lt;/source&gt;
+
+
+</sm:widgetBsFragment>
+</sm:freeUiWidget>

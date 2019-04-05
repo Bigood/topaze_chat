@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Graphique OpenDocument￼">
+	<sm:help quickHelp="￼; Ressource au format Open Document Graphics. ￼"/>
+	<sm:identification extensions="odg" mimeTypes="application/vnd.oasis.opendocument.graphics"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/academic/model/metaData/imgM.model" usage="optional"/>
+	</sm:structure>
+	<sm:storage>
+		<sm:glimpseImage>
+			<sm:fromBinary>
+				<sm:freeTransform code="od2img" options="outType=PNG&amp;sizeRules=Px(ScSCS(fontPt'10')Bounds(maxW'360'maxH'160'))"/>
+			</sm:fromBinary>
+		</sm:glimpseImage>
+	</sm:storage>
+	<sm:authoring>
+		<sm:preview>
+			<sm:imageViewer>
+				<sm:fromBinary>
+					<sm:freeTransform code="od2img" options="outType=PNG&amp;sizeRules=Px(ScSCS(fontPt'10')Bounds(maxW'550'maxH'550'))"/>
+				</sm:fromBinary>
+			</sm:imageViewer>
+		</sm:preview>
+		<sm:previewMini>
+			<sm:imageViewer>
+				<sm:fromBinary>
+					<sm:freeTransform code="od2img" options="outType=PNG&amp;sizeRules=Px(ScSCS(fontPt'10')Bounds(maxW'360'maxH'160'))"/>
+				</sm:fromBinary>
+			</sm:imageViewer>
+		</sm:previewMini>
+		<sm:sizeBlock>
+			<sm:standardCharSize>
+				<sm:editor/>
+				<sm:defaultValue scaleFromSource="100"/>
+			</sm:standardCharSize>
+			<sm:rotation>
+				<sm:editor/>
+				<sm:defaultValue allowed="false"/>
+			</sm:rotation>
+		</sm:sizeBlock>
+		<sm:icon sc:refUri="/binaries/odg/_res/odg.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;res￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:emptyFile sc:refUri="/binaries/odg/_res/empty.odg"/>
+	</sm:authoring>
+</sm:binaryPrim>

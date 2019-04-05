@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="htmlMeta" info="Tags métas génériques à ajouter au pages web générés par Opale">
+	<sm:fillTemplateBuffers>
+		<sm:postXslFragment keyXsl="xhtml"><!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1436431748596">Ajout d'un attribut lang sur html</comment></comment>-->&lt;xsl:overlay match="html"&gt;
+	&lt;xsl:attribute name="lang"&gt;&lt;xsl:value-of select="'￼?note=Langue%20par%20defaut%20des%20pages%20html&amp;amp;key=defaultWebLangCode;fr￼'"/&gt;&lt;/xsl:attribute&gt;
+&lt;/xsl:overlay&gt;
+
+</sm:postXslFragment>
+		<sm:postXslFragment keyXsl="xhtml"><!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1436431766082">Ajouter la directive x-ua-compatible EDGE pour IE en tête de head</comment></comment>-->&lt;xsl:overlay match="head" mode="startHeadTags"&gt;
+	&lt;meta http-equiv="x-ua-compatible" content="IE=EDGE" /&gt;
+&lt;/xsl:overlay&gt;</sm:postXslFragment>
+	</sm:fillTemplateBuffers>
+	<sm:content>
+		<meta xmlns="http://www.w3.org/1999/xhtml" name="generator">
+			<addAttribute name="content">
+				<sm:wspInfo type="scenariVersionFull" prefix="SCENARI " suffix=" / "/>
+				<sm:wspInfo type="modKey" suffix=" "/>
+				<sm:wspInfo type="modVersionFull" suffix=" - http://scenari-platform.org/opale"/>
+			</addAttribute>
+		</meta>
+		<meta xmlns="http://www.w3.org/1999/xhtml" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	</sm:content>
+</sm:openUiWidget>

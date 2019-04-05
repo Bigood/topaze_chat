@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformer sc:refUri="/case/gen/_web/transf/re/applet/applet@code.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/re/applet/applet@disp.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/re/applet/applet@id.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/re/applet/applet@initArc.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/re/applet/applet@type.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/re/applet/applet@val.transf"/>
+</sm:transformerList>

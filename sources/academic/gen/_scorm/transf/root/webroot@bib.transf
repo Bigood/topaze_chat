@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/root/webRoot.model"/>
+	<sm:axis code="bib"/>
+	<sm:fullTitleText>
+		<sm:callSubModel codes="ue" axis="title"/>
+	</sm:fullTitleText>
+	<sm:shortTitleText>
+		<sm:callSubModel codes="ue" axis="sTitle"/>
+	</sm:shortTitleText>
+	<sm:navigation>
+		<sm:page template="page" step="1">
+			<sm:title>
+				<sm:fixedTitle value="￼;Bibliographie￼"/>
+			</sm:title>
+			<sm:mainZone format="xhtml">
+				<sm:Widget sc:refUri="/academic/gen/_web/widg/refs/bibMgr.uiwidget">
+					<sm:xhtmlContentZone key="co">
+						<sm:WHeadingBlock widgetClass="mainContent">
+							<sm:title>
+								<sm:fixedTitle value="￼;Bibliographie￼"/>
+							</sm:title>
+							<sm:Widget sc:refUri="/academic/gen/_web/widg/refs/bib_noref.uiwidget"/>
+						</sm:WHeadingBlock>
+					</sm:xhtmlContentZone>
+				</sm:Widget>
+				<sm:Widget sc:refUri="/academic/gen/_web/widg/refs/bibMgr.uiwidget">
+					<sm:xhtmlContentZone key="co">
+						<sm:WHeadingBlock widgetClass="mainContent">
+							<sm:title>
+								<sm:fixedTitle value="￼;Webographie￼"/>
+							</sm:title>
+							<sm:Widget sc:refUri="/academic/gen/_web/widg/refs/bib_web_noref.uiwidget"/>
+						</sm:WHeadingBlock>
+					</sm:xhtmlContentZone>
+				</sm:Widget>
+			</sm:mainZone>
+		</sm:page>
+	</sm:navigation>
+</sm:compositionXhtmlTransf>

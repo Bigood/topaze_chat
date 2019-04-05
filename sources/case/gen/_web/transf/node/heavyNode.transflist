@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/heavyNode/heavyNode.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/heavyNode/heavyNode@arc.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/heavyNode/heavyNode@btnReturn.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/heavyNode/heavyNode@coach.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/heavyNode/heavyNode@hasRefs.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/heavyNode/heavyNode@id.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/heavyNode/heavyNode@initArc.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/heavyNode/heavyNode@initMgr.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/heavyNode/heavyNode@nav.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/heavyNode/heavyNode@val.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/heavyNode/heavyNodeM.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/heavyNode/heavyNode@noClick.transf"/>
+	<sm:transformer sc:refUri="/case/gen/_web/transf/node/heavyNode/heavyNode@initArcStatus.transf"/>
+</sm:transformerList>

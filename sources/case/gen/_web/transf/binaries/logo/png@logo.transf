@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/binaries/png/png.model"/>
+	<sm:axis code="logo"/>
+	<sm:content>
+		<sm:WTooltip widgetClass="ttSimple">
+			<sm:label>
+				<sm:WImage>
+					<sm:binaryUrl>
+						<sm:imageTransform>
+							<sm:sizeBounds maxWidthInPx="200" maxHeightInPx="100"/>
+							<sm:outputPNG/>
+						</sm:imageTransform>
+					</sm:binaryUrl>
+					<sm:declareSize/>
+				</sm:WImage>
+			</sm:label>
+			<sm:tooltip>
+				<sm:ttContent>
+					<sm:title>
+						<sm:binaryTitle/>
+					</sm:title>
+				</sm:ttContent>
+			</sm:tooltip>
+		</sm:WTooltip>
+		<sm:callModel>
+			<sm:current axis="credits"/>
+		</sm:callModel>
+	</sm:content>
+</sm:binaryXhtmlTransf>

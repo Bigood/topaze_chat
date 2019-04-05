@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transparentUiFrame xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:callRootModel axis="root"/>
+</sm:transparentUiFrame>

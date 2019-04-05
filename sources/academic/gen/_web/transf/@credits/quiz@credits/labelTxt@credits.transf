@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:freeXslWebSiteTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/utils/labelTxt.model"/>
+	<sm:axis code="credits"/>
+	<sm:content>
+		<sm:xsl sc:refUri="/academic/gen/_web/transf/@credits/txt@credits.xsl"/>
+		<sm:callModel sc:refUri="/academic/model/Re/eSite/eSite.model" axis="credits" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/binaries/avi/avi.model" axis="credits" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/binaries/doc/doc.model" axis="credits" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/binaries/flash/flash.model" axis="credits" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/binaries/flv/flv.model" axis="credits" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/binaries/gif/gif.model" axis="credits" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/binaries/jpg/jpeg.model" axis="credits" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/binaries/mov/mov.model" axis="credits" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/binaries/mp3/mp3.model" axis="credits" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/binaries/mp4/mp4.model" axis="credits" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/binaries/mpg/mpg.model" axis="credits" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/binaries/odg/odg.model" axis="credits" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/binaries/odp/odp.model" axis="credits" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/binaries/ods/ods.model" axis="credits" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/binaries/odt/odt.model" axis="credits" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/binaries/pdf/pdf.model" axis="credits" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/binaries/png/png.model" axis="credits" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/binaries/ppt/ppt.model" axis="credits" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/binaries/rm/rm.model" axis="credits" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/binaries/wmv/wmv.model" axis="credits" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/binaries/xls/xls.model" axis="credits" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/binaries/zip/zip.model" axis="credits" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/math/latex/mathTex.model" axis="credits" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/math/odf/odf.model" axis="credits" codeView="xhtmlContent"/>
+	</sm:content>
+</sm:freeXslWebSiteTransf>

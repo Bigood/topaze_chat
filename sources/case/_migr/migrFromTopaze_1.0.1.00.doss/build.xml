@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="Migration Topaze_1.0.1.00 -> Topaze_1.0.9.02" default="main" basedir=".">
+	
+	<target name="main">
+		<echo>####### Migration Topaze_1.0.1.00 -> Topaze_1.0.9.02</echo>
+		<tstamp><format property="timestamp" pattern="yyMMdd-HHmm"/></tstamp>
+		
+		<property name="pReportDir" location="${vWspRoot}/#migrationReport/${timestamp}"/>
+		<property name="pTraceFilePath" location="${pReportDir}/report.log.xml"/>
+		<mkdir dir="${pReportDir}"/>
+
+		<!-- # XSL de migration -->
+		<echo file="${pTraceFilePath}" ><![CDATA[<?xml version="1.0" encoding="UTF-8"  ?>
+			<migration date="]]>${timestamp}<![CDATA[">
+		]]></echo>
+
+		<migrateXsl style="${basedir}/main.xsl">
+			<param name="pWspPath" expression="${vWspRoot}"/>
+			<param name="pTraceFilePath" expression="${pTraceFilePath}"/>
+
+			<fileset dir="${vWspRoot}" includes="**/*.node" excludes="**/*.log.xml"/>
+		</migrateXsl>
+
+		<!-- cleanup du fichier de trace. lié à insuffiances de la fonction redirect de xalan -->
+		<replaceregexp match='&lt;\?xml version="1\.0" encoding="UTF-8"\?&gt;' replace="" byline="true" flags="g" encoding="UTF-8" file="${pTraceFilePath}"/>		
+		<replaceregexp match=' xmlns:.*?&quot;.*?&quot;' replace="" byline="true" flags="g" encoding="UTF-8" file="${pTraceFilePath}"/>		
+		
+		<echo>--- Migration terminée ---</echo>
+	</target>
+	
+</project>

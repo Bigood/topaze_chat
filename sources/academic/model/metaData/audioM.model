@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:dataFormPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="Meta des audios">
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="audioM" itemExtension="xml"/>
+	<sm:structure>
+		<sm:field code="title" name="￼;Titre, légende￼" occurrence="zeroOrOne" family="content">
+			<sm:help quickHelp="￼;Permet de saisir la légende qui sera affichée sous la ressource.￼"/>
+			<sm:string/>
+		</sm:field>
+		<sm:subData code="info" name="Métadonnées communes" occurrence="zeroOrOne" family="content">
+			<sm:allowedDataModel sc:refUri="/academic/model/metaData/infoBin.model"/>
+		</sm:subData>
+		<sm:group code="alt" name="￼;Alternative (accessibilité)￼" occurrence="zeroOrOne">
+			<sm:help quickHelp="￼;Permet de saisir les informations nécessaires pour l'accessibilité de la ressource.￼"/>
+			<sm:field code="transcript" name="￼;Transcription￼" occurrence="zeroOrOne">
+				<!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1381399209959">Transcript mis sur audio en inline - en tooltip</comment></comment>-->
+				<sm:help quickHelp="￼;Permet de saisir une description des éléments nécessaires à la compréhension de la ressource afin de permettre à tous les utilisateurs d'accéder à l'information.￼"/>
+				<sm:otherType sc:refUri="/academic/model/metaData/transcript.model"/>
+			</sm:field>
+			<sm:field code="altVideo" name="￼;Alternative vidéo (LSF, LPC)￼" occurrence="zeroOrOne">
+				<sm:help quickHelp="￼;Permet de proposer une vidéo en LSF [Langue des Signes Française] ou LPC [Langage Parlé Complété] en alternative au fichier audio.￼"/>
+				<sm:refItem>
+					<sm:allowedModel sc:refUri="/binaries/mp4/mp4.model"/>
+					<sm:allowedModel sc:refUri="/binaries/webm/webm.model"/>
+				</sm:refItem>
+			</sm:field>
+		</sm:group>
+		<sm:field code="otherEncoding" name="￼;Autre format￼" occurrence="zeroOrOne">
+			<sm:help quickHelp="￼;Permet de proposer cette ressource dans un autre format afin d'assurer sa lisibilité dans les différents navigateurs.￼"/>
+			<sm:refItem>
+				<sm:allowedModel sc:refUri="/binaries/mp3/mp3.model"/>
+				<sm:allowedModel sc:refUri="/binaries/oga/oga.model"/>
+			</sm:refItem>
+		</sm:field>
+		<sm:field code="altStatic" name="￼;Alternative statique￼" occurrence="zeroOrOne">
+			<sm:help quickHelp="￼;Pour les supports non interactifs (papier)￼"/>
+			<sm:otherType sc:refUri="/academic/model/Re/altRes.model"/>
+		</sm:field>
+	</sm:structure>
+	<sm:storage>
+		<sm:fullTitleBuilder>
+			<sm:fieldValue refCode="title"/>
+		</sm:fullTitleBuilder>
+	</sm:storage>
+	<sm:authoring>
+		<sm:formEditor indentXml="true">
+			<sm:stringField refCode="title" defaultStyle="property"/>
+			<sm:subData refCode="info" editMode="hideRootLevel" defaultStyle="property"/>
+			<sm:group refCode="alt" displayMode="openedByDefault" defaultStyle="property"/>
+			<sm:otherTypeField refCode="transcript" displayMode="openedByDefault" defaultStyle="property"/>
+			<sm:otherTypeField refCode="altStatic" defaultStyle="property"/>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:dataFormPrim>

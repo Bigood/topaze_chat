@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:navUiWidget code="btnModeSs" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:scope>
+		<sm:stack/>
+	</sm:scope>
+	<sm:selectPage>
+		<sm:step>
+			<sm:home/>
+		</sm:step>
+	</sm:selectPage>
+	<sm:content>
+		<sm:ifPageFound>
+			<sm:WLink id="btnModeSs">
+				<sm:label>￼;Mode diaporama￼</sm:label>
+				<sm:labelTitle>￼;Basculer en mode diaporama￼</sm:labelTitle>
+				<sm:link/>
+			</sm:WLink>
+		</sm:ifPageFound>
+	</sm:content>
+</sm:navUiWidget>

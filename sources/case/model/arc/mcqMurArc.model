@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sma:assmntUnitMcqPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sma="kelis.fr:scenari/modeling/assessment" name="￼;Enchaînement par Quiz à Choix Multiple￼" category="￼;Etude de cas￼">
+	<sm:identification targetNamespace="kelis.fr:opa" targetPrefix="opa" code="mcqMurArc" itemExtension="xml"/>
+	<sm:structure>
+		<sm:questionModel name="￼;Question￼" sc:refUri="/academic/model/Re/sTxt.model"/>
+		<sm:choices name="￼;Choix￼">
+			<sm:choice name="￼;Réponse￼" min="2" max="10">
+				<sm:choiceLabelModel name="￼;Libellé￼" sc:refUri="/academic/model/Re/sTxt.model"/>
+			</sm:choice>
+		</sm:choices>
+		<sm:solution name="￼;Solution￼">
+			<sm:multipleUserResponse>
+				<sm:booleanScoring>
+					<sm:feedbackModel sc:refUri="/case/model/co/fdbkArc.model" usage="required">
+						<sm:ifRight name="￼;Enchaînement si juste￼"/>
+						<sm:ifWrong name="￼;Enchaînement si faux￼"/>
+					</sm:feedbackModel>
+				</sm:booleanScoring>
+			</sm:multipleUserResponse>
+		</sm:solution>
+	</sm:structure>
+	<sm:authoring>
+		<sm:icon sc:refUri="/academic/model/_ico/mcqSurSmall.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;QCU￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:formEditor indentXml="true">
+			<sm:assmntUnitMcq tagStyle="color: #4668ad;" fullTitleStyle="color:#513245;font-size:1.7em;font-weight:bold; text-align:center;">
+				<sm:iconTag sc:refUri="/case/auth/ui/mcqMurArc.png"/>
+			</sm:assmntUnitMcq>
+		</sm:formEditor>
+	</sm:authoring>
+</sma:assmntUnitMcqPrim>

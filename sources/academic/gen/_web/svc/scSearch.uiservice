@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeUiService xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="scSearch" info="Moteur de recherche">
+	<sm:publicService key="scSearch"/>
+	<sm:serviceFiles sc:refUri="/academic/gen/_web/svc/scSearch.doss">
+		<sm:linkScriptForDeclaringService path="scSearch.js"/>
+	</sm:serviceFiles>
+</sm:freeUiService>

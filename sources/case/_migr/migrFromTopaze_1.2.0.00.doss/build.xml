@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="Migration Topaze 1.2.000 -> Topaze 1.2.001" default="main" basedir=".">
+	
+	<target name="main">
+		<echo>####### MIGRATION Topaze 1.2.000 -> Topaze 1.2.001</echo>
+		<tstamp><format property="timestamp" pattern="yyMMdd-HHmm"/></tstamp>
+		
+		
+		<migrateXsl style="${basedir}/migration.xsl">
+			<param name="pWspPath" expression="${scenari.wsp.path}"/>
+			<fileset dir="${scenari.wsp.path}" includes="**/*.xml **/*.quiz **/*.node"/>
+		</migrateXsl>
+		
+		<echo>--- Migration terminée ---</echo>
+	</target>
+	
+</project>

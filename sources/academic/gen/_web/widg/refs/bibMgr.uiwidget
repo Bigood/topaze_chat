@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:openUiWidget xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" code="bibMgr">
+	<sm:fillTemplateBuffers>
+		<sm:postXslFragment keyXsl="xhtml">&lt;xsl:template match="bibMgr"&gt;
+ &lt;xsl:if test="count(descendant::bibElt) &amp;gt; 0"&gt;
+  &lt;xsl:apply-overlays/&gt;
+  &lt;xsl:apply-templates/&gt;
+ &lt;/xsl:if&gt;
+&lt;/xsl:template&gt; 
+&lt;xsl:template match="bibElt"&gt;
+  &lt;xsl:apply-overlays/&gt;
+  &lt;xsl:apply-templates/&gt;
+&lt;/xsl:template&gt; 
+</sm:postXslFragment>
+	</sm:fillTemplateBuffers>
+	<sm:content>
+		<bibMgr xmlns="http://www.w3.org/1999/xhtml">
+			<sm:callZone key="co"/>
+		</bibMgr>
+	</sm:content>
+</sm:openUiWidget>

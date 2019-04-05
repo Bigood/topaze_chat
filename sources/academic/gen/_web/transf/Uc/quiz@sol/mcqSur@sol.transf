@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><sma:assmntUnitMcqDhtmlTransf xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns="http://www.w3.org/1999/xhtml">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/mcqSur.model"/>
+	<sm:axis code="sol"/>
+	<sm:scenario>
+		<sm:sequence>
+			<sm:initBody>
+				<sm:choiceInteraction mode="disabled"/>
+				<sm:solutionDisplay mode="shown"/>
+			</sm:initBody>
+			<sm:loadData>
+				<sm:responseSessionKey>
+					<sm:fixedKey value="eval"/>
+				</sm:responseSessionKey>
+				<sm:scoreSessionKey>
+					<sm:fixedKey value="eval"/>
+				</sm:scoreSessionKey>
+			</sm:loadData>
+		</sm:sequence>
+	</sm:scenario>
+	<sm:assmntBody>
+		<div class="evalSol">
+			<sm:choose>
+				<sm:when xpath="sc:question">
+					<div sm:id="quest" class="question">
+						<h1 class="question_ti">
+							<span>￼;Énoncé￼</span>
+						</h1>
+						<div sm:id="question" class="question_co">
+							<sm:callQuestionModel/>
+						</div>
+					</div>
+				</sm:when>
+			</sm:choose>
+			<div class="score">
+				<h1 class="score_ti">
+					<span>￼;Résultat￼</span>
+				</h1>
+				<div class="score_co">
+					<sm:WScore widgetClass="scoreEval">
+						<sm:scoreText>
+							<sm:pointsScore step="1">
+								<sm:display pointsLessOrEqualThan="0" class="answWorst">
+									<sm:fixedString value="￼;Votre réponse est incorrecte.￼"/>
+								</sm:display>
+								<sm:display class="answBest">
+									<sm:fixedString value="￼;Votre réponse est juste.￼"/>
+								</sm:display>
+							</sm:pointsScore>
+						</sm:scoreText>
+					</sm:WScore>
+				</div>
+			</div>
+			<div class="sol">
+				<h1 class="sol_ti">
+					<span>￼;Correction￼</span>
+				</h1>
+				<div class="sol_co">
+					<sm:WChoiceList widgetClass="choiceList">
+						<sm:choiceBody>
+							<div sm:id="choice" class="choice">
+								<div sm:id="label" class="label">
+									<sm:callLabelModel/>
+								</div>
+								<sm:WChoiceExplanation widgetClass="choiceExplain">
+									<sm:callExplanationModel/>
+								</sm:WChoiceExplanation>
+							</div>
+						</sm:choiceBody>
+					</sm:WChoiceList>
+				</div>
+			</div>
+			<sm:choose>
+				<sm:when xpath="sc:globalExplanation">
+					<sm:WGlobalExplanation widgetClass="explain">
+						<h1 class="explain_ti">
+							<span>￼;Explications￼</span>
+						</h1>
+						<div class="explain_co">
+							<sm:callExplanationModel/>
+						</div>
+					</sm:WGlobalExplanation>
+				</sm:when>
+			</sm:choose>
+		</div>
+	</sm:assmntBody>
+</sma:assmntUnitMcqDhtmlTransf>

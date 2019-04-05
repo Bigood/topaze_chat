@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:dataFormXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Re/refs/bibM.model"/>
+	<sm:content>
+		<sm:choose>
+			<sm:when xpath="op:type='web'">
+				<sm:WBlock widgetClass="bibTypeWeb">
+					<sm:forField codes="desc">
+						<sm:WBlock widgetClass="mDiv" tagName="div">
+							<sm:fieldValueOtherType/>
+						</sm:WBlock>
+					</sm:forField>
+				</sm:WBlock>
+			</sm:when>
+			<sm:otherwise>
+				<sm:WBlock widgetClass="bibTypeBib">
+					<sm:forField codes="desc">
+						<sm:WBlock widgetClass="mDiv" tagName="div">
+							<sm:fieldValueOtherType/>
+						</sm:WBlock>
+					</sm:forField>
+				</sm:WBlock>
+			</sm:otherwise>
+		</sm:choose>
+	</sm:content>
+</sm:dataFormXhtmlTransf>

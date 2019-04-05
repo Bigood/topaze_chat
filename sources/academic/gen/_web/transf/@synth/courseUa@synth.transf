@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Ua/courseUa.model"/>
+	<sm:axis code="synth"/>
+	<sm:content format="xhtml">
+		<sm:WHeadingBlock widgetClass="synth">
+			<sm:title>
+				<sm:compositionTitle format="shortTitleText"/>
+			</sm:title>
+			<sm:for codes="quest">
+				<sm:WSimpleBlock widgetClass="quest">
+					<sm:WSimpleBlock widgetClass="quest_Q">
+						<sm:callSubModel/>
+					</sm:WSimpleBlock>
+					<sm:Widget sc:refUri="/academic/gen/_web/widg/eval/questResp.uiwidget"/>
+				</sm:WSimpleBlock>
+			</sm:for>
+		</sm:WHeadingBlock>
+	</sm:content>
+</sm:compositionXhtmlTransf>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformer sc:refUri="/academic/gen/_sld/transf/Ue/ue.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_sld/transf/Ue/ue@nav.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_sld/transf/Ue/ue@root.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_sld/transf/Ue/ue@title.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_sld/transf/Ue/ueDiv.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_sld/transf/Ue/ueDiv@nav.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_sld/transf/Ue/ueDivM.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_sld/transf/Ue/ueM.transf"/>
+	<sm:transformerList info="Import depuis les tranformers web">
+		<sm:transformer sc:refUri="/academic/gen/_web/transf/Ue/ue@keywds.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_web/transf/Ue/ueM@keywds.transf"/>
+	</sm:transformerList>
+</sm:transformerList>

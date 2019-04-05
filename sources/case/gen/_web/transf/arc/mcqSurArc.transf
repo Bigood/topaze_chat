@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sma:assmntUnitMcqDhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/case/model/arc/mcqSurArc.model"/>
+	<sm:scenario>
+		<sm:sequence code="play">
+			<sm:initBody>
+				<sm:elementDisplay refId="fdbk" mode="collapsed"/>
+				<sm:elementDisplay refId="quiz" mode="visible"/>
+			</sm:initBody>
+			<sm:loadData>
+				<sm:responseSessionKey>
+					<sm:fixedKey value=""/>
+				</sm:responseSessionKey>
+				<sm:scoreSessionKey>
+					<sm:fixedKey value=""/>
+				</sm:scoreSessionKey>
+			</sm:loadData>
+			<sm:saveData>
+				<sm:responseSessionKey>
+					<sm:fixedKey value=""/>
+				</sm:responseSessionKey>
+				<sm:scoreSessionKey>
+					<sm:fixedKey value=""/>
+				</sm:scoreSessionKey>
+			</sm:saveData>
+			<sm:scoreComputing>
+				<sm:forBooleanScoring scoreIfRight="1" scoreIfWrong="0"/>
+			</sm:scoreComputing>
+		</sm:sequence>
+	</sm:scenario>
+	<sm:assmntBody>
+		<scBlock xmlns="http://www.w3.org/1999/xhtml" sm:id="quiz" class=" arcBk mcqArc">
+			<hx class="arcBk_ti">￼;Quiz￼</hx>
+			<div class="arcBk_co">
+				<div class="arcHeaderQ">
+					<div sm:id="question" class="question">
+						<sm:callQuestionModel/>
+					</div>
+				</div>
+			</div>
+			<div sm:id="choiceList" class="arcChoiceList">
+				<sm:WChoiceList widgetClass="choiceList">
+					<sm:choiceBody>
+						<div sm:id="choice" class="choice">
+							<div sm:id="label" class="label">
+								<sm:callLabelModel/>
+							</div>
+						</div>
+					</sm:choiceBody>
+				</sm:WChoiceList>
+			</div>
+			<div class="btnArcValid">
+				<sm:WButton widgetClass="btnQuiz">
+					<sm:buttonBody>
+						<span class="btnQuizCaption">￼;Valider￼</span>
+					</sm:buttonBody>
+					<sm:buttonTitle>
+						<sm:fixedString value="￼;Valider la réponse￼"/>
+					</sm:buttonTitle>
+					<sm:buttonAction>
+						<sm:choiceInteraction mode="disabled"/>
+						<sm:elementDisplay refId="fdbk" mode="visible"/>
+						<sm:elementDisplay refId="quiz" mode="collapsed"/>
+					</sm:buttonAction>
+				</sm:WButton>
+			</div>
+		</scBlock>
+		<div xmlns="http://www.w3.org/1999/xhtml" sm:id="fdbk" class="arcFdbk">
+			<sm:WFeedback>
+				<sm:callFeedbackModel/>
+			</sm:WFeedback>
+		</div>
+	</sm:assmntBody>
+</sma:assmntUnitMcqDhtmlTransf>

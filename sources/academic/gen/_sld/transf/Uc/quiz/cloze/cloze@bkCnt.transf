@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:genericWebSiteTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/cloze.model"/>
+	<sm:axis code="bkCnt"/>
+	<sm:content format="text">
+		<sm:dynamicString>
+			<sm:freeSelect xpath="execute(setDialogVar('vBkCounter',java:com.scenari.s.fw.utils.HDouble.new()))"/>
+		</sm:dynamicString>
+		<sm:callModel view="xhtmlContent">
+			<sm:current axis="bkCntInt"/>
+		</sm:callModel>
+		<sm:dynamicString>
+			<sm:freeSelect xpath="concat(' bkCnt_',java:hGet(getDialogVar('vBkCounter')))"/>
+		</sm:dynamicString>
+		<sm:dynamicString>
+			<sm:freeSelect xpath="execute(removeDialogVar('vBkCounter'))"/>
+		</sm:dynamicString>
+	</sm:content>
+</sm:genericWebSiteTransf>

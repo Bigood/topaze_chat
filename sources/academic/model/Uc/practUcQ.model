@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionPrim name="￼;Question d'exercice￼" category="￼;Exercice￼" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="practUcQ" itemExtension="xml"/>
+	<sm:structure>
+		<sm:part code="desc" name="￼;Intitulé￼" family="content" internalized="always" usage="required">
+			<sm:allowedModel sc:refUri="/academic/model/Re/res.model"/>
+		</sm:part>
+		<sm:set usage="optional">
+			<sm:part code="hint" name="￼?note=Dans%20le%20sens%20%22aide%22%20dans%20un%20exercice&amp;key=indiceAide;Indice￼" family="content" internalized="always">
+				<sm:allowedModel sc:refUri="/academic/model/Re/res.model"/>
+			</sm:part>
+		</sm:set>
+		<sm:set usage="optional">
+			<sm:part code="sol" name="￼;Solution￼" family="content" internalized="always">
+				<sm:allowedModel sc:refUri="/academic/model/Pb/pb.model"/>
+				<sm:allowedModel sc:refUri="/academic/model/Dialogue/dialogue.model"/>
+			</sm:part>
+		</sm:set>
+	</sm:structure>
+	<sm:authoring>
+		<sm:formEditor indentXml="false">
+			<sm:part refCode="hint">
+				<sm:stylableWidget>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openSmall.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+			<sm:part refCode="sol">
+				<sm:stylableWidget>
+					<sm:styles displayCondition="closed">
+						<sm:container>
+							<sm:head>
+								<sm:name/>
+								<sm:suffixIcon sc:refUri="/academic/model/_ico/openSmall.png" style="margin-left:3px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:compositionPrim>

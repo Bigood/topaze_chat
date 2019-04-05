@@ -1,0 +1,14 @@
+(stylage des titres)
+=== Taille des polices en EM ===
+Titre principal des items externalisés : 1.8
+Grandes sections hiérarchiques (cours, activités, division, au premier niveau) : 1.6
+BP : 1.3
+
+=== Couleurs texte ===
+normal / empty
+BP information : 8f8f8f / cccccc
+BP classiques : 99b1da / b9c5da
+BP attention : de0004 / cb8486
+
+
+

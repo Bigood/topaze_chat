@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="ssBk" info="SlideShow Block">
+	<sm:fillTemplateBuffers>
+		<!--Ajout class 'bkBase_noti' sur les WHeadingBlocks 'bkBase' sans titre-->
+		<sm:postXslFragment keyXsl="xhtml">&lt;xsl:overlay match="scBlock[contains(@class,'bkBase')]"&gt;
+&lt;xsl:if test="string-length(normalize-space(ifText/hx/descendant::text()))=0"&gt;
+&lt;xsl:attribute name="class"&gt;&lt;xsl:value-of select="concat(@class,' bkBase_noti')"/&gt;&lt;/xsl:attribute&gt;
+&lt;/xsl:if&gt;
+&lt;/xsl:overlay&gt;</sm:postXslFragment>
+	</sm:fillTemplateBuffers>
+	<sm:content>
+		<div xmlns="http://www.w3.org/1999/xhtml" class="ssBk">
+			<sm:callZone key="co"/>
+		</div>
+	</sm:content>
+</sm:openUiWidget>

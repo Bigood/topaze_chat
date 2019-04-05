@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:navUiWidget code="btnPrv" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:scope>
+		<sm:all startAtLevel="0"/>
+	</sm:scope>
+	<sm:selectPage>
+		<sm:step>
+			<sm:previous/>
+		</sm:step>
+	</sm:selectPage>
+	<sm:content>
+		<sm:ifPageFound>
+			<sm:WLink widgetClass="outNav_i" id="btnPrv">
+				<sm:label>￼;&lt; Précédent￼</sm:label>
+				<sm:labelTitle>
+					<sm:targetTitle/>￼; (page précédente)￼</sm:labelTitle>
+				<sm:link/>
+			</sm:WLink>
+		</sm:ifPageFound>
+		<sm:ifPageNotFound>
+			<span class="outNav_i" title="￼Début (pas de page Précédente)￼" xmlns="http://www.w3.org/1999/xhtml">￼;&lt; Précédent￼</span>
+		</sm:ifPageNotFound>
+	</sm:content>
+</sm:navUiWidget>

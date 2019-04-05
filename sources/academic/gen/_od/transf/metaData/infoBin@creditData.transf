@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:freeXslOdTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/metaData/infoBin.model"/>
+	<sm:axis code="creditData"/>
+	<sm:content>
+		<sm:xsl sc:refUri="/academic/gen/_od/transf/metaData/infoBin@creditData.xsl"/>
+	</sm:content>
+</sm:freeXslOdTransf>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="kwrdEntries">
+	<sm:widgetBsFragment contentFormat="xhtml">&lt;source type="xsl-statique"&gt;
+	&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" exclude-result-prefixes="sc sp op" version="1.0" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive"&gt;
+		&lt;xsl:output omit-xml-declaration="yes" indent="no" method="xml"/&gt;
+		&lt;xsl:template match="*"&gt;
+			&lt;xsl:variable name="vListKwrds" select="*[1]/sp:info/*/sp:keywds/op:keywds/sp:keywd"/&gt;
+			&lt;xsl:if test="$vListKwrds"&gt;
+				&lt;crossRef&gt;
+				&lt;xsl:for-each select="$vListKwrds"&gt;
+					&lt;entry value="{.}" keyRef="keywords"/&gt;
+				&lt;/xsl:for-each&gt;
+				&lt;/crossRef&gt;
+			&lt;/xsl:if&gt;
+		&lt;/xsl:template&gt;
+	&lt;/xsl:stylesheet&gt;
+&lt;/source&gt;</sm:widgetBsFragment>
+</sm:freeUiWidget>

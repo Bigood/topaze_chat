@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="progMgr" info="Progress bar manager">
+	<sm:widgetPublishFiles sc:refUri="/academic/gen/_sld/widg/nav/progMgr.doss"/>
+	<sm:fillTemplateBuffers>
+		<sm:standardLibrary codeLib="PaLib"/>
+		<sm:postXslFragment keyXsl="xhtml">&lt;xsl:overlay match="body"&gt;
+	&lt;xsl:value-of select="execute(java:append($vBufJs, 'progMgr.init();'))"/&gt;
+&lt;/xsl:overlay&gt;
+</sm:postXslFragment>
+		<sm:postXslFragment keyXsl="xhtml">&lt;xsl:overlay match="body" mode="endTags"&gt;
+	&lt;xsl:apply-templates select="/descendant::progMgrInit/*"/&gt;
+&lt;/xsl:overlay&gt;
+&lt;xsl:template match="progMgrInit"/&gt;</sm:postXslFragment>
+		<sm:linkScript path="progMgr.js" pathFrom="localPublishFiles" sortKey="AB"/>
+	</sm:fillTemplateBuffers>
+	<sm:content>
+		<sm:Widget sc:refUri="/academic/gen/_sld/widg/nav/prog.uiwidget"/>
+	</sm:content>
+</sm:openUiWidget>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/case/model/case.model"/>
+	<sm:fullTitleText>
+		<sm:callCompositionMeta/>
+	</sm:fullTitleText>
+	<sm:shortTitleText>
+		<sm:callCompositionMeta/>
+	</sm:shortTitleText>
+	<sm:navigation>
+		<sm:page template="home">
+			<sm:title>
+				<sm:fixedTitle value="￼;Accueil￼"/>
+			</sm:title>
+			<sm:mainZone format="xhtml">
+				<sm:WFreeBlock>
+					<sm:dynamicString>
+						<sm:freeSelect xpath="execute(initBuffer('pageList',java:java.lang.StringBuilder.new()))"/>
+					</sm:dynamicString>
+				</sm:WFreeBlock>
+				<sm:callCompositionMeta axis="intro"/>
+			</sm:mainZone>
+			<sm:zone key="zNav" format="xhtml">
+				<sm:for codes="start">
+					<sm:WSimpleBlock>
+						<sm:WLink widgetClass="btnNav btnStart">
+							<sm:label>
+								<sm:WFreeBlock>
+									<sm:dynamicString>
+										<sm:freeSelect xpath="if(preceding-sibling::opa:caseM/sp:param/sp:txtStartBtn,preceding-sibling::opa:caseM/sp:param/sp:txtStartBtn,'￼Commencer￼')"/>
+									</sm:dynamicString>
+								</sm:WFreeBlock>
+							</sm:label>
+							<sm:link>
+								<sm:callSubModel navCtx="preserveCurrent"/>
+							</sm:link>
+						</sm:WLink>
+					</sm:WSimpleBlock>
+				</sm:for>
+				<sm:Widget sc:refUri="/case/gen/_web/wdt/nav/persistDataUi.uiwidget"/>
+			</sm:zone>
+			<sm:zone key="zFoot" format="xhtml">
+				<sm:callCompositionMeta axis="part"/>
+			</sm:zone>
+			<sm:zone key="zLegal" format="xhtml">
+				<sm:callCompositionMeta axis="legal"/>
+			</sm:zone>
+			<sm:zone key="zCoach" format="xhtml">
+				<sm:callModel>
+					<sm:current axis="coach"/>
+				</sm:callModel>
+			</sm:zone>
+			<sm:zone key="zCoachClass" format="xhtml">
+				<sm:callModel>
+					<sm:current axis="coachClass"/>
+				</sm:callModel>
+			</sm:zone>
+		</sm:page>
+		<sm:for codes="outline">
+			<sm:callSubModel/>
+		</sm:for>
+	</sm:navigation>
+</sm:compositionXhtmlTransf>

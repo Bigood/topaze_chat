@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformerList info="ua">
+		<sm:transformer sc:refUri="/academic/gen/_scorm/transfCam/Ua/courseUa.transf"/>
+	</sm:transformerList>
+	<sm:transformerList info="uc">
+		<sm:transformerList info="quiz">
+			<sm:transformer sc:refUri="/academic/gen/_scorm/transfCam/Uc/quiz/cloze@nav.transf"/>
+			<sm:transformer sc:refUri="/academic/gen/_scorm/transfCam/Uc/quiz/coQuiz@nav.transf"/>
+			<sm:transformer sc:refUri="/academic/gen/_scorm/transfCam/Uc/quiz/field@nav.transf"/>
+			<sm:transformer sc:refUri="/academic/gen/_scorm/transfCam/Uc/quiz/match@nav.transf"/>
+			<sm:transformer sc:refUri="/academic/gen/_scorm/transfCam/Uc/quiz/mcgMur@nav.transf"/>
+			<sm:transformer sc:refUri="/academic/gen/_scorm/transfCam/Uc/quiz/mcgSur@nav.transf"/>
+			<sm:transformer sc:refUri="/academic/gen/_scorm/transfCam/Uc/quiz/mcqMur@nav.transf"/>
+			<sm:transformer sc:refUri="/academic/gen/_scorm/transfCam/Uc/quiz/mcqSur@nav.transf"/>
+			<sm:transformer sc:refUri="/academic/gen/_scorm/transfCam/Uc/quiz/numerical@nav.transf"/>
+			<sm:transformer sc:refUri="/academic/gen/_scorm/transfCam/Uc/quiz/ordWord@nav.transf"/>
+		</sm:transformerList>
+	</sm:transformerList>
+	<sm:transformerList info="ue">
+		<sm:transformer sc:refUri="/academic/gen/_scorm/transfCam/Ue/ue.transf"/>
+		<sm:transformer sc:refUri="/academic/gen/_scorm/transfCam/Ue/ueDiv.transf"/>
+	</sm:transformerList>
+	<sm:transformer sc:refUri="/academic/gen/_scorm/transfCam/webRootMulti@rootCam.transf"/>
+</sm:transformerList>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:dataFormPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="￼;Propriétés de ressources￼">
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="sizeM" itemExtension="xml"/>
+	<sm:structure>
+		<sm:field code="width" name="￼;Largeur￼" occurrence="zeroOrOne" family="property">
+			<sm:help quickHelp="￼;Largeur en pixels￼"/>
+			<sm:number min="0" max="2000" allowedDecimals="0"/>
+		</sm:field>
+		<sm:field code="height" name="￼;Hauteur￼" occurrence="one" family="property">
+			<sm:help quickHelp="￼;Hauteur en pixels￼"/>
+			<sm:number min="0" max="2000" allowedDecimals="0"/>
+		</sm:field>
+	</sm:structure>
+	<sm:storage/>
+	<sm:authoring>
+		<sm:formEditor indentXml="true">
+			<sm:xmlEditor sc:refUri="/academic/model/_edt/metaData/sizeM.xed"/>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:dataFormPrim>

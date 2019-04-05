@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/coQuiz.model"/>
+	<sm:content format="xhtml">
+		<sm:WHeadingBlock widgetClass="coQuiz">
+			<sm:title>
+				<sm:compositionTitle/>
+			</sm:title>
+			<sm:for codes="quest">
+				<sm:WSimpleBlock widgetClass="questCoQuiz">
+					<sm:callSubModel/>
+				</sm:WSimpleBlock>
+			</sm:for>
+			<sm:inDataOrder>
+				<sm:for codes="trainUcMcqSur trainUcMcqMur trainUcField trainUcNumerical trainUcCloze">
+					<sm:WHeadingBlock class="quizBk">
+						<sm:title>
+							<sm:subModelTitle/>
+						</sm:title>
+						<sm:callSubModel/>
+					</sm:WHeadingBlock>
+				</sm:for>
+			</sm:inDataOrder>
+		</sm:WHeadingBlock>
+	</sm:content>
+</sm:compositionXhtmlTransf>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/utils/label.model"/>
+	<sm:content format="xhtml">
+		<sm:for codes="img">
+			<sm:callSubModel/>
+		</sm:for>
+		<sm:for codes="txt">
+			<sm:callSubModel/>
+		</sm:for>
+		<!--<sm:for xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" codes="string"><sm:callSubModel/></sm:for>-->
+	</sm:content>
+</sm:compositionXhtmlTransf>

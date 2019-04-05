@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformerList sc:refUri="/academic/gen/_web/transf/binaries.transflist"/>
+	<sm:transformerList sc:refUri="/academic/gen/_web/transf/metaData.transflist"/>
+	<sm:transformerList sc:refUri="/academic/gen/_web/transf/Pb.transflist"/>
+	<sm:transformerList sc:refUri="/academic/gen/_web/transf/Re.transflist"/>
+	<sm:transformerList sc:refUri="/academic/gen/_web/transf/root.transflist"/>
+	<sm:transformerList sc:refUri="/academic/gen/_web/transf/rootForTpl.transflist"/>
+	<sm:transformerList sc:refUri="/academic/gen/_web/transf/Ua.transflist"/>
+	<sm:transformerList sc:refUri="/academic/gen/_web/transf/Uc.transflist"/>
+	<sm:transformerList sc:refUri="/academic/gen/_web/transf/Ue.transflist"/>
+	<sm:transformerList sc:refUri="/academic/gen/_web/transf/UeForTpl.transflist"/>
+	<sm:transformerList sc:refUri="/academic/gen/_web/transf/@credits.transflist"/>
+	<sm:transformerList sc:refUri="/academic/gen/_web/transf/@synth.transflist"/>
+</sm:transformerList>

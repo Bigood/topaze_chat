@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="scHPSRoot" info="SCENARI HTML Presentation system - root template (requires scHPS)">
+	<sm:fillTemplateBuffers>
+		<sm:otherBuffers keyBuffer="js.postLink">/* A - sort key */
+var scPresMgr = new scHPS.PresMgr("ide:tplSldFra","ide:tplRootNav","ide:tplTocCo/des:a.toc_lnk");
+scPresMgr.initZoomPaths("ide:tplZoomFra","ide:tplZoomCo");
+scPresMgr.initToolsPath("ide:tplTools");
+if (scHPS.fNavie8) scPresMgr.enableEffects(false);
+
+</sm:otherBuffers>
+	</sm:fillTemplateBuffers>
+	<sm:content>
+		<sm:Widget sc:refUri="/academic/gen/_sld/widg/mgr/scHPS.uiwidget"/>
+	</sm:content>
+</sm:openUiWidget>

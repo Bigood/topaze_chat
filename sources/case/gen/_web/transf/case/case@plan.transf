@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/case/model/case.model"/>
+	<sm:axis code="plan"/>
+	<sm:navigation>
+		<sm:page template="subWin">
+			<sm:title>
+				<sm:fixedTitle value="￼;Plan￼"/>
+			</sm:title>
+			<sm:mainZone format="xhtml">
+				<sm:Widget sc:refUri="/case/gen/_web/wdt/mgr/mnuMgr.uiwidget"/>
+				<sm:WFreeBlock>
+					<div xmlns="http://www.w3.org/1999/xhtml" class="subFra outlineFra">
+						<div class="subHead">
+							<sm:title>
+								<sm:fixedTitle value="￼;Plan￼"/>
+							</sm:title>
+							<sm:Widget sc:refUri="/case/gen/_web/wdt/util/closeWin.uiwidget"/>
+						</div>
+						<div class="subBody">
+							<div class="progFra"/>
+							<sm:Widget sc:refUri="/case/gen/_web/wdt/nav/mnu.uiwidget"/>
+						</div>
+					</div>
+				</sm:WFreeBlock>
+			</sm:mainZone>
+		</sm:page>
+	</sm:navigation>
+</sm:compositionXhtmlTransf>

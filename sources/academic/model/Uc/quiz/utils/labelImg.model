@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="￼;Image￼">
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="labelImg" itemExtension="xml"/>
+	<sm:structure>
+		<sm:part code="img" name="￼;Image￼" family="content" internalized="never" usage="required">
+			<sm:allowedModel sc:refUri="/binaries/gif/gif.model"/>
+			<sm:allowedModel sc:refUri="/binaries/jpg/jpeg.model"/>
+			<sm:allowedModel sc:refUri="/binaries/png/png.model"/>
+		</sm:part>
+		<sm:part code="desc" name="￼;Description￼" family="zoom" internalized="always" usage="optional">
+			<sm:allowedModel sc:refUri="/academic/model/Re/sTxt.model"/>
+		</sm:part>
+	</sm:structure>
+	<sm:authoring/>
+</sm:compositionPrim>

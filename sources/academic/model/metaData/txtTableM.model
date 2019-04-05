@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:dataFormPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="￼;Propriétés de tableau￼">
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="txtTableM" itemExtension="xml"/>
+	<sm:structure>
+		<sm:field code="index" name="￼;Type d'index (papier)￼" occurrence="zeroOrOne">
+			<sm:help quickHelp="￼;Ressources numérotées automatiquement sur le papier. Par exemple : Tableau 1 : ....￼"/>
+			<sm:enum>
+				<sm:option key="graph" name="￼;Graphique￼"/>
+				<sm:option key="tab" name="￼;Tableau￼"/>
+				<sm:option key="img" name="￼;Image￼"/>
+				<sm:option key="form" name="￼;Formule￼"/>
+				<sm:option key="anim" name="￼;Animation￼"/>
+			</sm:enum>
+		</sm:field>
+	</sm:structure>
+	<sm:storage/>
+</sm:dataFormPrim>

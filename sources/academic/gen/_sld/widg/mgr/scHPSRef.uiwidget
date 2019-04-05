@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="scHPSRef" info="SCENARI HTML Presentation system - reference template (requires scHPS)">
+	<sm:fillTemplateBuffers>
+		<!--Les boutons de zoom du mode HTML doivent charger les pages en mode HTML.-->
+		<sm:postXslFragment keyXsl="xhtml">&lt;xsl:template match="@href[contains(parent::a/@class,'ssZmLnk')]"&gt;
+  &lt;xsl:attribute name="href"&gt;&lt;xsl:value-of select="."/&gt;?mode=html&lt;/xsl:attribute&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match="@href[contains(parent::a/@class,'htmlZmLnk')]"&gt;
+  &lt;xsl:attribute name="href"&gt;&lt;xsl:value-of select="."/&gt;?mode=html&lt;/xsl:attribute&gt;
+&lt;/xsl:template&gt;
+
+</sm:postXslFragment>
+		<sm:otherBuffers keyBuffer="js.postLink">/* A - sort key */
+var scPresMgr = new scHPS.PresMgr("ide:tplSldFra","ide:tplRootNav");
+scPresMgr.initZoomPaths("ide:tplZoomFra","ide:tplZoomCo");
+scPresMgr.initToolsPath("ide:tplTools");
+if (scHPS.fNavie8) scPresMgr.enableEffects(false);
+
+scPresMgr.addLocalSlideRule(function(pSldMgr){
+  pSldMgr.addBindableBlk("des:div.imgInFlow",{ratioHeightAlone:1,ratioHeight:.85,captionHeight:45},scHPS.SizeBlkImg);
+  pSldMgr.addBindableBlk("des:div.imgIllus",{ratioHeightAlone:.6,ratioHeight:.5,captionHeight:45},scHPS.SizeBlkImg);
+  pSldMgr.addBindableBlk("des:span.imgInline",{captionHeight:0},scHPS.SizeBlkImg);
+  pSldMgr.addBindableBlk("des:span.imgLabel",{ratioHeight:.5,captionHeight:0},scHPS.SizeBlkImg);
+  pSldMgr.addBindableBlk("des:div.objInFlow",null,scHPS.SizeBlkObj);
+  pSldMgr.addBindableBlk("des:div.vidInFlow",{onAction:function(pRes){try{this.fObj.SetVariable("player:jsPause", "")}catch(e){};try{this.fObj.pause()}catch(e){};}},scHPS.SizeBlkObj);
+  pSldMgr.addBindableBlk("des:span.objInline",{captionHeight:0},scHPS.SizeBlkObj);
+  pSldMgr.addBindableBlk("des:a.ssZmLnk",null,scHPS.FraZmBlk);
+  pSldMgr.addBindableBlk("des:a.htmlZmLnk",{setModeHtml:true},scHPS.FraZmBlk);
+  pSldMgr.addBindableBlk("des:div.imgGal",{autoStart:false},scHPS.AnimBlk);
+});
+</sm:otherBuffers>
+	</sm:fillTemplateBuffers>
+	<sm:content>
+		<sm:Widget sc:refUri="/academic/gen/_sld/widg/mgr/scHPS.uiwidget"/>
+	</sm:content>
+</sm:openUiWidget>
