@@ -1,7 +1,7 @@
 # Modèle Topaze Chat (code GEVPITopaze)
-Modèle topaze avec des bulles de commentaires, à la manière d'une application de discussion instantanée.
+Modèle topaze avec des bulles de commentaires, à la manière d'une application de discussion instantanée. 
 
-Voir [le wiki pour la documentation technique](wiki/Home)
+Voir [un exemple de réalisation](https://ledroitdesavoir.imt-atlantique.fr/savoir-etre-net/) (voir Etude de cas), et [le wiki pour la documentation technique](https://github.com/Bigood/topaze_chat/wiki/)
 
 Topaze Scenari 4.1 - v1.4.017
 SVN : Sources trouvées pour v1.4.017 - dernière mise à jour début 2016
